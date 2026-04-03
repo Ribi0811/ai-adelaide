@@ -1,0 +1,59 @@
+[
+  {
+    "id": "7542f8c4-cbf9-4073-8b13-25869e88343d",
+    "sessionId": "lead-test-5",
+    "timestamp": "2026-03-13T08:07:25.434Z",
+    "name": "Dave",
+    "phone": "0412 345 681",
+    "business": "Dave’s Plumbing",
+    "summary": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 681.",
+    "transcript": [
+      {
+        "role": "user",
+        "content": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 681."
+      },
+      {
+        "role": "assistant",
+        "content": "Cheers Dave! Missed calls are a pain — especially when you're under a sink and can't get to the phone. An AI receptionist could answer those calls instantly, book jobs, and even handle after-hours enquiries. What's the best number to reach you on? I can have Ivan give you a call to chat through how we can help."
+      }
+    ]
+  },
+  {
+    "id": "2e99752c-b656-41f6-b0e1-4651d094e594",
+    "sessionId": "lead-test-3",
+    "timestamp": "2026-03-13T08:05:52.586Z",
+    "name": "Dave",
+    "phone": "0412 345 679",
+    "business": "Dave’s Plumbing in Norwood and need help",
+    "summary": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 679.",
+    "transcript": [
+      {
+        "role": "user",
+        "content": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 679."
+      },
+      {
+        "role": "assistant",
+        "content": "G'day Dave! Missed calls are a killer for tradies — every missed call is potentially a job gone elsewhere.\n\nAn AI voice receptionist could answer your calls 24/7, book jobs, and even handle those after-hours emergencies. I've got all your details, so I'll have Ivan give you a call to chat through how we can help Dave's Plumbing stay on top of every call. Cheers!"
+      }
+    ]
+  },
+  {
+    "id": "bd23abe5-ef96-49ba-9828-12c562296fd1",
+    "sessionId": "lead-test",
+    "timestamp": "2026-03-13T08:04:46.349Z",
+    "name": "Dave and",
+    "phone": "0412 345 678",
+    "business": "Dave",
+    "summary": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 678.",
+    "transcript": [
+      {
+        "role": "user",
+        "content": "Hey, I run Dave’s Plumbing in Norwood and need help with missed calls. My name is Dave and my number is 0412 345 678."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks Dave! Missed calls are a killer for plumbers — that's job enquiries going straight to competitors. An AI voice receptionist could answer every call 24/7, book jobs, and even handle after-hours emergencies.\n\nI've got your details — Ivan from our team will give you"
+      }
+    ]
+  }
+]

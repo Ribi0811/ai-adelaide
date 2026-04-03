@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-textPrimary bg-bgPrimary;
+  }
+}
+
+@layer components {
+  /* ─── Layout ─────────────────────────────────────────────────── */
+
+  .section-shell {
+    @apply w-full;
+  }
+
+  .max-w-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ─── Buttons ────────────────────────────────────────────────── */
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-[#0B1929] transition-all duration-200 hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent/50 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-transparent px-6 py-3 text-sm font-semibold text-textPrimary transition-all duration-200 hover:border-accent/50 hover:bg-bgSecondary focus:outline-none focus:ring-2 focus:ring-accent/30 active:scale-[0.98];
+  }
+
+  /* ─── Dark panels (hero / dark bg sections) ──────────────────── */
+
+  .panel {
+    @apply rounded-2xl border border-[#1C3444] bg-[#0B1929] overflow-hidden isolate;
+  }
+
+  .panel-soft {
+    @apply rounded-xl border border-slate-200 bg-white/90;
+  }
+
+  /* ─── Light panels (light bg sections) ──────────────────────── */
+
+  .panel-light {
+    @apply rounded-2xl border border-slate-100 bg-white shadow-light-card;
+  }
+
+  .panel-light-soft {
+    @apply rounded-xl border border-slate-100/80 bg-white/70;
+  }
+
+  /* ─── Brand / neutral cards ──────────────────────────────────── */
+
+  .brand-card {
+    @apply rounded-2xl border border-bgTertiary bg-bgSecondary;
+  }
+
+  .metric-card {
+    @apply flex flex-col items-start justify-center rounded-xl border border-slate-200 bg-white/80 p-5;
+  }
+
+  /* ─── "Sky" cards (light blue tint — suburb/location pages) ─── */
+
+  .sky-panel {
+    @apply rounded-2xl border border-[#c5dff8] bg-[#e8f3fc] shadow-sm;
+  }
+
+  .sky-card {
+    @apply rounded-2xl border border-[#d1e7f8] bg-[#f0f7fe] shadow-sm;
+  }
+
+  /* ─── Grid overlay backgrounds ───────────────────────────────── */
+
+  .grid-overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(130, 166, 255, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(130, 166, 255, 0.08) 1px,
+        transparent 1px
+      );
+    background-size: 32px 32px;
+  }
+
+  .grid-overlay-light {
+    background-image: linear-gradient(
+        to right,
+        rgba(130, 166, 255, 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(130, 166, 255, 0.06) 1px,
+        transparent 1px
+      );
+    background-size: 32px 32px;
+  }
+
+  /* ─── Eyebrow labels ──────────────────────────────────────────── */
+
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-widest text-accent;
+  }
+
+  .eyebrow-light {
+    @apply inline-block text-xs font-semibold uppercase tracking-widest text-[#00b899];
+  }
+
+  .eyebrow-dark {
+    @apply inline-block text-xs font-semibold uppercase tracking-widest text-accent;
+  }
+
+  /* ─── Section typography (suburb/location pages) ─────────────── */
+
+  .section-eyebrow {
+    @apply text-sm font-semibold uppercase tracking-widest text-[#2a7abf];
+  }
+
+  .section-title {
+    @apply text-3xl font-bold leading-tight tracking-[-0.03em] text-[#0c1930] md:text-4xl lg:text-5xl;
+  }
+
+  /* ─── Animated scan line (metric card accent) ────────────────── */
+
+  .scan-line {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scan-line::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(94, 242, 214, 0.06) 50%,
+      transparent 100%
+    );
+    animation: scanLine 3s ease-in-out infinite;
+  }
+
+  /* ─── Services ticker ────────────────────────────────────────── */
+
+  .services-ticker-mask {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 80px,
+      black calc(100% - 80px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 80px,
+      black calc(100% - 80px),
+      transparent 100%
+    );
+  }
+
+  .services-ticker-track {
+    animation: ticker 30s linear infinite;
+  }
+}
+
+/* ─── Keyframes ───────────────────────────────────────────────── */
+
+@keyframes scanLine {
+  0%,
+  100% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 242, 214, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(94, 242, 214, 0.12);
+  }
+}

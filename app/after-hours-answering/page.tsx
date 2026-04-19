@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "After-Hours AI Answering Adelaide | Never Miss a Late Job",
   description:
-    "AI-powered after-hours call answering for Adelaide tradies. Captures job details, sends instant SMS No more missed late calls.",
+    "After-hours AI call answering for Adelaide tradies. Never miss a late call — AI answers 24/7, captures every job detail, sends instant SMS summaries. From $99/month. No hidden fees. Book your free demo today.",
   alternates: {
     canonical: "/after-hours-answering",
   },

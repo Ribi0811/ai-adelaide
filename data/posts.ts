@@ -810,6 +810,8 @@ export const posts: Post[] = [
   <li><strong>No waitlist to draw from:</strong> Automated fill only works if you have a list of patients who want short-notice appointments. Building that list starts on day one.</li>
 </ul>
 <p>The technology is rarely the problem. The setup and the process around it determine whether it works.</p>
+`,
+  },
 {
     slug: "ai-tools-adelaide-hospitality-2026",
     title: "AI Tools for Adelaide Hospitality: What Actually Works in 2026",
@@ -945,6 +947,8 @@ export const posts: Post[] = [
   <li><strong>Month 2:</strong> Measure results. If the tool is working, expand. If not, pivot to a different approach</li>
 </ul>
 <p>The venues winning with AI in 2026 are not those who adopted everything early. They are the ones who identified one clear problem, implemented a focused solution, and measured whether it worked.</p>
+`,
+  },
 {
     slug: "5-signs-ready-for-ai-automation",
     title: "5 Signs Your Adelaide Business Is Ready for AI Automation",
@@ -1020,6 +1024,8 @@ export const posts: Post[] = [
   <li><strong>Build one consistent habit:</strong> The most useful habit for any small business is responding to every enquiry within two hours. If you can do that manually, automation becomes a scaling tool rather than a rescue tool.</li>
 </ul>
 <p>Automation works best when it enforces good habits that already exist rather than trying to replace chaotic ones. Get the basics right first, then scale with AI.</p>
+`,
+  },
 {
     slug: "adelaide-plumbers-booking-more-jobs",
     title: "Adelaide Plumbers: Book 30% More Jobs Without Hiring",
@@ -1109,6 +1115,8 @@ export const posts: Post[] = [
 <h2>The Compounding Effect</h2>
 <p>What many tradies do not anticipate is how automation compounds over time. Each recovered job is not just that job's revenue — it is the referral that job might generate, the review it might produce, and the lifetime value of a customer who had a good experience and comes back.</p>
 <p>One extra job per week at $350 is $18,200 per year in directly recovered revenue. But if that customer refers two others over the next two years, the real value is higher. Automation quietly builds your business in the background while you focus on the work in front of you.</p>
+`,
+  },
 {
     slug: "admin-tasks-killing-adelaide-tradies",
     title: "5 Admin Tasks Killing Adelaide Tradies (And How to Fix)",
@@ -1319,6 +1327,8 @@ export const posts: Post[] = [
 <p>Most patients can receive SMS. For those who cannot, alternatives like email reminders or voice call reminders can fill the gap. Your booking system should capture communication preferences at intake so you know who needs what.</p>
 <h3>"How do we handle patients who repeatedly no-show?"</h3>
 <p>Patterns emerge in any clinic. If a patient has three no-shows in six months, it is worth a direct conversation. Some clinics implement a policy — deposits for patients with repeated no-show history, or formal acknowledgement required before rebooking. This is a business decision for each clinic to make based on their patient base and cancellation policy.</p>
+`,
+  },
 {
     slug: "glenelg-hospitality-ai-automation",
     title: "AI for Glenelg Hospitality: How Jetty Road Wins Year-Round",
@@ -1534,6 +1544,8 @@ export const posts: Post[] = [
 <p>If you have read through this assessment and think you might be in the 4-6 or 7-8 range but are not sure, the best next step is a honest conversation with someone who does this work daily. Not a sales call — a diagnostic conversation where someone looks at your specific situation and tells you what they see.</p>
 <p>Most Adelaide businesses we talk to fall into the 4-6 range and are genuinely surprised by how affordable and practical the solution is once they understand where the leaks actually are. The gap between where most businesses think they are and where they could be is usually significant.</p>
 <p>The assessment above tells you where you are. The next step is deciding whether to do something about it. Our team offers <a href="/services/automation">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation about what is possible for your business.</p>
+`,
+  },
 {
     slug: "ai-for-plumbers-adelaide",
     title: "How Adelaide Plumbers Are Using AI to Book More Jobs While They Sleep",

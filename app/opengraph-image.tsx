@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "AI Adelaide automation workflows for Adelaide small businesses";
+export const alt = "AI Adelaide — Websites, SEO & AI Automation for Adelaide Small Businesses";
 export const size = {
   width: 1200,
   height: 630,
@@ -45,7 +45,7 @@ export default function OpenGraphImage() {
               background: "#14b8a6",
             }}
           />
-          Adelaide AI Automation
+          AI Adelaide
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -53,7 +53,7 @@ export default function OpenGraphImage() {
             Stop Losing Leads
           </p>
           <p style={{ margin: 0, fontSize: 38, lineHeight: 1.15, color: "#334155" }}>
-            AI workflows for tradies and service businesses
+            Websites, SEO & AI Automation for Adelaide Small Business
           </p>
         </div>
 

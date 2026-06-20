@@ -70,7 +70,7 @@ export default function ClinicsAutomationPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "AI Adelaide",
-            url: "https://www.aiadelaide.com.au",
+            url: "https://aiadelaide.com.au",
             telephone: "+61871009788",
             email: "hello@aiadelaide.com.au",
             address: {
@@ -97,7 +97,7 @@ export default function ClinicsAutomationPage() {
             provider: {
               "@type": "LocalBusiness",
               name: "AI Adelaide",
-              url: "https://www.aiadelaide.com.au",
+              url: "https://aiadelaide.com.au",
             },
             areaServed: { "@type": "City", name: "Adelaide" },
             description:

@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Book Free Chat",
+  title: "Send a Message or Book a Free Chat | AI Adelaide",
   description:
-    "15-minute free discovery call. We'll tell you exactly what would make the biggest difference for your Adelaide business.",
+    "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot. No pressure.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Book Free Chat | AI Adelaide",
-    description:
-      "15-minute free discovery call. We'll tell you exactly what would make the biggest difference for your Adelaide business.",
-    url: "/contact",
+    title: "Send a Message or Book a Free Chat | AI Adelaide",
+    description: "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot.",
+    url: `${siteConfig.url}/contact`,
     images: ["/opengraph-image"],
   },
   twitter: {
-    title: "Book Free Chat | AI Adelaide",
-    description:
-      "15-minute free discovery call. We'll tell you exactly what would make the biggest difference for your Adelaide business.",
+    title: "Send a Message or Book a Free Chat | AI Adelaide",
+    description: "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot.",
     images: ["/twitter-image"],
   },
 };
@@ -28,17 +27,22 @@ const faqs = [
   {
     question: "How long does setup take?",
     answer:
-      "Most implementations are live within 2-5 business days from the day we start.",
+      "Websites are live in 48 hours (Starter) to 14 days (Growth). SEO shows first movement in 30-60 days. AI automation is live in 2-5 business days.",
   },
   {
     question: "Do I need any technical knowledge?",
     answer:
-      "None. We handle everything. You just tell us what's driving you crazy — we handle the rest.",
+      "None. We handle everything. You tell us what you do, we design, write, and build. You review once, then we push it live.",
   },
   {
     question: "What if it doesn't work for my business?",
     answer:
-      "That's what the free chat is for. If we don't think automation will genuinely help you, we'll tell you upfront.",
+      "That's what the free chat is for. If we don't think a website, SEO, or automation will genuinely help you, we'll tell you upfront — and recommend someone else if that's the right answer.",
+  },
+  {
+    question: "How much does it cost?",
+    answer:
+      "Websites from $699 (one-off). SEO from $399/month. AI automation from $199/month. No lock-in, no agency bloat. You'll get a fixed quote on the free chat.",
   },
 ];
 
@@ -48,14 +52,14 @@ export default function ContactPage() {
     "@graph": [
       {
         "@type": "ContactPage",
-        "@id": "https://aiadelaide.com.au/contact#webpage",
+        "@id": `${siteConfig.url}/contact#webpage`,
         name: "Book Free Chat",
-        url: "https://aiadelaide.com.au/contact",
+        url: `${siteConfig.url}/contact`,
         inLanguage: "en-AU",
       },
       {
         "@type": "FAQPage",
-        "@id": "https://aiadelaide.com.au/contact#faq",
+        "@id": `${siteConfig.url}/contact#faq`,
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
@@ -74,19 +78,24 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
       />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Contact" },
+        ]}
+      />
       <section className="mb-14 max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light relative overflow-hidden p-8 text-center md:p-12">
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-electric/8 via-transparent to-accent/8" />
           <div className="relative">
             <div className="mb-6">
-              <span className="eyebrow-light">Free 15-minute discovery chat</span>
+              <span className="eyebrow-light">Message us — we reply within 2 business hours</span>
             </div>
             <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-              Let&apos;s Talk
+              Send Us a Message
             </h1>
             <p className="mx-auto max-w-2xl text-body-mobile text-slate-600 md:text-body">
-              Tell us what&apos;s eating your time. 15 minutes. No pressure. No hard
-              sell. We&apos;ll tell you the fastest automation win first.
+              Browsing at night? Send a message now, we&apos;ll reply in the morning. Tell us about your Adelaide business — what you do, what&apos;s not working, what you&apos;re trying to figure out. We&apos;ll send a useful reply (and a fixed quote if a website, SEO, or AI automation makes sense).
             </p>
           </div>
         </div>
@@ -95,9 +104,9 @@ export default function ContactPage() {
       <section className="mb-12 max-w-container mx-auto px-6">
         <div className="grid gap-4 md:grid-cols-3">
           {[
-            ["01", "Bring your biggest bottleneck"],
-            ["02", "We map the workflow leak"],
-            ["03", "You get a clear next step"],
+            ["01", "Tell us about your business"],
+            ["02", "We recommend the right service (website, SEO, or automation)"],
+            ["03", "You get a fixed quote on the spot"],
           ].map(([step, copy]) => (
             <div key={step} className="panel-light-soft p-4">
               <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
@@ -110,7 +119,9 @@ export default function ContactPage() {
       </section>
 
       <section className="mb-12 max-w-container mx-auto px-6">
-        <ContactForm />
+        <div id="send-message">
+          <ContactForm />
+        </div>
       </section>
 
       <section className="mb-20 max-w-container mx-auto px-6">

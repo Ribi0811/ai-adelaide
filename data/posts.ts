@@ -12,7 +12,7 @@ export interface Post {
 export const posts: Post[] = [
 {
     slug: "why-tradies-lose-money-missed-calls",
-    title: "Why Adelaide Tradies Are Losing $2,000 a Week to Missed Calls",
+    title: "Why Adelaide Small Businesses Are Losing $2,000 a Week to Missed Calls",
     excerpt:
       "If your phone rings while you are on a roof, under a house, or driving between jobs, you are probably missing revenue without realising it. For many Adelaide tradies, one missed call does not just mean one missed chat, it means one lost booking. Here is what the numbers look like and how simple AI follow-up closes the gap.",
     date: "2026-02-10",
@@ -77,8 +77,8 @@ export const posts: Post[] = [
 </ul>
 <p>If you recover even three extra jobs per week at $350 each, that is $1,050 weekly. Most setups cost a fraction of that.</p>
 <h2>Where to start this week</h2>
-<p>If you run a trade business and you are still manually chasing missed calls, start with one workflow only: missed-call SMS + simple qualification + callback slot.</p>
-<p>Do not automate everything at once. Nail the one leak that hurts most. For most tradies, that leak is phone response lag.</p>
+<p>If you run a trade business and you are still manually chasing missed calls, start with one workflow only: missed-call SMS + simple qualification + callback slot. A professional <a href="/website-design-adelaide">website for your trade business</a> also helps capture enquiries that land on your site while you're on the tools.</p>
+<p>Do not automate everything at once. Nail the one leak that hurts most. For most tradies, that leak is phone response lag. Check our <a href="/services">full range of services</a> to see what else could help, or see <a href="/website-pricing">transparent pricing</a> for website and automation packages.</p>
 <p>The bottom line is straightforward: missed calls are not admin noise, they are revenue events. Treat them like jobs in progress, and your pipeline stabilises quickly.</p>
 <h2>FAQ: Tradies Ask These Questions</h2>
 <h3>"What if my customers are older and do not use text?"</h3>
@@ -377,10 +377,10 @@ export const posts: Post[] = [
 
 <p>The electrical businesses that will thrive in Adelaide's competitive market won't necessarily be those with the biggest advertising budgets or the most staff—they'll be the ones that leverage technology to work smarter. By ensuring they never miss an emergency call, consistently follow up on quotes, minimize administrative distractions, and maintain healthy cash flow, AI automation enables Adelaide electricians to focus on what they do best: providing safe, reliable, and expert electrical services to their customers.</p>
 
-<p>Whether you're a solo tradie working out of your van, a small team serving residential clients across Adelaide's suburbs, or a commercial specialist working on major projects in the CBD, AI automation offers practical, affordable tools to overcome the unique challenges of running an electrical business in Adelaide while increasing your profitability and improving your work-life balance.</p>
+<p>Whether you're a solo tradie working out of your van, a small team serving residential clients across Adelaide's suburbs, or a commercial specialist working on major projects in the CBD, AI automation offers practical, affordable tools to overcome the unique challenges of running an electrical business in Adelaide while increasing your profitability and improving your work-life balance. A well-built <a href="/website-design-adelaide">trade business website</a> also helps you rank higher on Google and capture more of those enquiries in the first place — see our <a href="/seo">SEO services</a> for details.</p>
 
-<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/services/ai-receptionist">AI receptionist services</a> and <a href="/services/automation">automation solutions</a> — <a href="/contact">get in touch</a> to find out more.</p>`,
-    seoDescription: "Adelaide electricians are using AI automation to capture after-hours calls, automate quote follow-ups, and reduce admin by 50%. Practical guide with local examples and ROI calculations."
+<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/services/ai-receptionist">AI receptionist services</a> and <a href="/services/automation">automation solutions</a> — <a href="/contact">get in touch</a> to find out more. For more tradie-specific insights, read our guide on <a href="/blog/why-tradies-lose-money-missed-calls">why tradies lose money to missed calls</a>.</p>`,
+    seoDescription: "Adelaide electricians use AI automation to capture after-hours calls, automate quote follow-ups, and cut admin by 50%. Practical guide with ROI."
   },
 {
     slug: "adelaide-hills-ai-automation",
@@ -577,10 +577,10 @@ export const posts: Post[] = [
 
 <p>The businesses that thrive in the Adelaide Hills of tomorrow won't necessarily be the ones with the biggest budgets or the most staff—they'll be the ones that work smartest. AI automation provides an accessible pathway to greater efficiency, improved customer service, and sustainable growth for businesses of all sizes across Mount Barker, Stirling, Hahndorf, and the wider Adelaide Hills region.</p>
 
-<p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work.</p>
+<p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work. If you also need a <a href="/website-design-adelaide">website that showcases your Hills business</a> or want to improve your <a href="/seo">local SEO rankings</a>, we can help with that too.</p>
 
-<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/services/automation">Explore our automation services</a> or <a href="/contact">get in touch</a> to start.</p>`,
-    seoDescription: "Discover how Adelaide Hills businesses in Mount Barker, Stirling, and Hahndorf are using AI automation to save 10+ hours weekly on admin tasks. Local examples and practical implementation guide."
+<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/services/automation">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or <a href="/contact">get in touch</a> to start. See also our guide on <a href="/blog/5-signs-ready-for-ai-automation">5 signs your business is ready for AI automation</a>.</p>`,
+    seoDescription: "Adelaide Hills businesses in Mount Barker, Stirling & Hahndorf use AI automation to save 10+ hours weekly. Local examples and implementation guide."
   },
 {
     slug: "is-ai-audit-worth-it-small-business",
@@ -590,8 +590,8 @@ export const posts: Post[] = [
     date: "2026-02-13",
     readTime: "9 min read",
     category: "How-To",
-    seoDescription: "Is a $247 AI audit worth it? Learn what a proper audit covers, when it pays for itself, and how Adelaide SMBs benefit from a clear AI roadmap.",
-    content: `<p>If you run a small business in Adelaide, $247 is not nothing. It might be a day of ads, part of payroll, or a supplier invoice. So asking whether an AI audit is worth it is exactly the right question.</p>
+    seoDescription: "Is a $47 Digital Health Check worth it for Adelaide small businesses? Learn what a proper audit covers and when it pays for itself.",
+    content: `<p>If you run a small business in Adelaide, $247 is not nothing. It might be a day of ads, part of payroll, or a supplier invoice. So asking whether an <a href="/ai-automation-adelaide">AI automation</a> audit is worth it is exactly the right question.</p>
 <p>The short answer: it is worth it when the audit is specific, commercial, and implementation-ready. It is not worth it when it is generic advice dressed up with buzzwords.</p>
 <h2>What an AI audit should actually cover</h2>
 <p>A useful audit is not "let&apos;s brainstorm cool tools." It is a structured review of where your business is leaking money, time, and lead quality.</p>
@@ -665,8 +665,8 @@ export const posts: Post[] = [
 </ul>
 <p>Good providers answer clearly and do not dodge practical questions.</p>
 <h2>Bottom line</h2>
-<p>A $247 AI audit is worth it when it reduces guesswork and tells you exactly where to start. It should save you from random tool spending and focus you on one or two changes with measurable upside.</p>
-<p>If the audit gives you clarity, a priority stack, and realistic returns, it is not a cost. It is cheap insurance against wasting months on the wrong implementation.</p>
+<p>A $247 AI audit is worth it when it reduces guesswork and tells you exactly where to start. It should save you from random tool spending and focus you on one or two changes with measurable upside. You can also explore our <a href="/services">full range of services</a> to see what implementation could look like.</p>
+<p>If the audit gives you clarity, a priority stack, and realistic returns, it is not a cost. It is cheap insurance against wasting months on the wrong implementation. <a href="/contact">Book a free chat</a> with our team to get started, or check our <a href="/website-pricing">website and automation pricing</a>.</p>
 <h2>Real-World Example: One Tradesman's Audit Journey</h2>
 <p>Take a local painter we worked with recently. He had been in business for eight years, decent Google ranking, steady referral flow. He figured his problem was just not enough hours in the day.</p>
 <p>After a focused audit, the picture changed. His biggest leak was not admin. It was quote follow-up. He was sending out 12-15 quotes a month and converting roughly 40 percent of them. The audit showed he was calling back on only about half his quotes within 72 hours. The rest went cold while he focused on current jobs.</p>
@@ -777,7 +777,7 @@ export const posts: Post[] = [
   <li>How many slots were recovered from waitlist</li>
   <li>Admin time spent on reminder and fill activity</li>
 </ul>
-<p>If no-shows are above ~6%, there is usually a strong business case for action. A better reminder flow plus lightweight backfill logic is often enough to move the number meaningfully.</p>
+<p>If no-shows are above ~6%, there is usually a strong business case for action. A better reminder flow plus lightweight backfill logic is often enough to move the number meaningfully. You might also benefit from a <a href="/website-design-adelaide">clinic website</a> that makes booking easy for patients, or improved <a href="/seo">local SEO</a> to attract more new patients.</p>
 <p>The key lesson from this Norwood clinic is simple: you do not need "more AI." You need the right automation at the right point in the patient journey. <a href="/services/automation">Our automation team</a> can help you build this for your clinic — <a href="/contact">get in touch</a>.</p>
 <h2>What to Track Before You Build Anything</h2>
 <p>Before implementing any reminder or automation system, spend four weeks documenting your baseline. You need to know where you are starting from to know whether the change actually worked.</p>
@@ -908,7 +908,7 @@ export const posts: Post[] = [
 <p>Pick one workflow to improve first. Implement. Measure. Then expand.</p>
 <h2>Bottom line for Adelaide hospitality owners</h2>
 <p>The right AI tools in 2026 are not the flashiest ones. They are the ones your team can trust during a Saturday rush.</p>
-<p>Start with bookings, reviews, and scheduling support. Keep human control where hospitality matters most. And judge every tool by one standard: does this reduce chaos and improve service outcomes this month, not someday? Reach out to our <a href="/services/automation">Adelaide automation team</a> to explore what fits your venue.</p>
+<p>Start with bookings, reviews, and scheduling support. Keep human control where hospitality matters most. And judge every tool by one standard: does this reduce chaos and improve service outcomes this month, not someday? Reach out to our <a href="/services/automation">Adelaide automation team</a> to explore what fits your venue, or browse all <a href="/services">services we offer</a>. If your venue also needs a <a href="/website-design-adelaide">better website</a>, we can help with that too — <a href="/contact">get in touch</a>.</p>
 <h2>A Practical Tool Selection Framework</h2>
 <p>When evaluating any AI tool for your venue, run it through this filter before committing:</p>
 <ul>
@@ -994,7 +994,7 @@ export const posts: Post[] = [
 <p>That is enough to start.</p>
 <h2>Final takeaway</h2>
 <p>AI automation is not a trend project. It is an operations project with a financial outcome. If your team is repeatedly doing manual work that delays response, creates errors, or burns owner hours, you are ready.</p>
-<p>Start small, measure properly, and build momentum from real results. That is how Adelaide small businesses get time back without breaking what already works. Our team at <a href="/services/automation">AI Adelaide Automation</a> can help you identify the right first workflow — <a href="/contact">get in touch</a> to start.</p>
+<p>Start small, measure properly, and build momentum from real results. That is how Adelaide small businesses get time back without breaking what already works. Our team at <a href="/services/automation">AI Adelaide Automation</a> can help you identify the right first workflow — <a href="/contact">get in touch</a> to start. You can also check our <a href="/website-pricing">pricing page</a> or explore our <a href="/seo">SEO services</a> to make sure your online presence is capturing leads effectively.</p>
 <h2>What "Ready" Looks Like in Practice</h2>
 <p>Business owners often find it helpful to see what readiness looks like in real scenarios rather than abstract signals. Here are three examples from Adelaide businesses at different stages:</p>
 <h3>Scenario 1: Two-Person Trade Business</h3>
@@ -1085,7 +1085,7 @@ export const posts: Post[] = [
 
 <p>The tools are cheap, the setup is fast, and the ROI is immediate. If you're a plumber (or any tradie) in Adelaide who's tired of losing jobs to voicemail, there's never been an easier fix.</p>
 
-<p>You do not need to hire someone to answer the phone. You just need a system that works while you do. <a href="/services/automation">Our automation team</a> can help you set up these tools — <a href="/contact">get in touch</a>.</p>
+<p>You do not need to hire someone to answer the phone. You just need a system that works while you do. <a href="/services/automation">Our automation team</a> can help you set up these tools — <a href="/contact">get in touch</a>. We also build <a href="/website-design-adelaide">plumber websites</a> that rank well on Google — see our <a href="/seo">SEO services</a> and <a href="/website-pricing">pricing</a>.</p>
 <h2>Why This Works Better Than Hiring</h2>
 <p>When tradies consider solving their phone problem, the obvious answer seems to be hiring a virtual receptionist or office admin person. Before you go down that path, here is the real comparison:</p>
 <ul>
@@ -1119,12 +1119,12 @@ export const posts: Post[] = [
   },
 {
     slug: "admin-tasks-killing-adelaide-tradies",
-    title: "5 Admin Tasks Killing Adelaide Tradies (And How to Fix)",
+    title: "5 Admin Tasks Killing Adelaide Small Businesses (And How to Fix)",
     excerpt: "Missed calls, quote follow-ups, invoice chasing, appointment reminders, and review requests are draining your time and money. Here's the fix for each one.",
     date: "2026-01-28",
     readTime: "7 min read",
     category: "How-To",
-    seoDescription: "Five admin tasks draining Adelaide tradies' time and revenue: missed calls, slow follow-ups, invoice chasing, no-shows, and missing reviews. Here's how to fix each.",
+    seoDescription: "Five admin tasks draining Adelaide tradies' time and revenue: missed calls, slow follow-ups, invoicing, no-shows, reviews. Here's the fix.",
     content: `<p>You became a tradie to work with your hands, not to become an office manager. Yet here you are, every evening and weekend, chasing invoices, returning missed calls, and begging customers for reviews.</p>
 
 <p>These five admin tasks are silently killing your business. Let's look at each one—and how to fix them without hiring admin staff.</p>
@@ -1217,7 +1217,7 @@ export const posts: Post[] = [
 
 <p>Missed calls. It is the biggest leak for most tradies and the easiest to plug. Start there, prove to yourself it works, then tackle the next one. Automation is a habit, not an overnight transformation.</p>
 
-<p>If you need help setting up any of these five workflows for your trade business, <a href="/services/automation">our automation team</a> can get them running fast — <a href="/contact">get in touch</a>.</p>`
+<p>If you need help setting up any of these five workflows for your trade business, <a href="/services/automation">our automation team</a> can get them running fast — <a href="/contact">get in touch</a>. We also offer <a href="/website-design-adelaide">trade business websites</a> and <a href="/seo">SEO services</a> to make sure customers find you first. See our <a href="/website-pricing">pricing</a> for package options.</p>`
   },
 {
     slug: "physio-clinic-no-shows-automation",
@@ -1291,7 +1291,7 @@ export const posts: Post[] = [
 
 <p>The tools to do this are cheap, fast to set up, and they pay for themselves in weeks. If your clinic is losing $3,000 a month to no-shows, that's $36,000 a year you're leaving on the table.</p>
 
-<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/services/automation">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>.</p>
+<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/services/automation">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/seo">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
 <h2>The Psychology of No-Shows</h2>
 <p>Understanding why patients do not show up helps design better systems to prevent it. In allied health, no-shows fall into a few predictable categories:</p>
 <ul>
@@ -1439,11 +1439,11 @@ export const posts: Post[] = [
 
 <p>Most owners spend 10-15 hours a week on the manual tasks these automations replace — answering booking enquiries, chasing reviews, trying to get people back through the door. Spending three hours once to reclaim that time every week is probably the best hourly rate you will earn all year.</p>
 
-<p>Ready to set up these systems for your Glenelg venue? <a href="/services/automation">Our automation team</a> can help — <a href="/contact">get in touch</a>.</p>`
+<p>Ready to set up these systems for your Glenelg venue? <a href="/services/automation">Our automation team</a> can help — <a href="/contact">get in touch</a>. We also design <a href="/website-design-adelaide">restaurant and cafe websites</a> and provide <a href="/seo">SEO services</a> to help locals find you on Google. See our <a href="/website-pricing">pricing options</a>.</p>`
   },
 {
     slug: "adelaide-business-ai-readiness-assessment",
-    title: "Is Your Adelaide Business Ready for AI? (5-Min Quiz)",
+    title: "Is Your Adelaide Business Healthy Online? (5-Min Digital Health Check)",
     excerpt: "Answer 8 simple questions to find out if your business is ready for AI automation—or if you're leaving money on the table.",
     date: "2026-02-20",
     readTime: "4 min read",
@@ -1542,7 +1542,7 @@ export const posts: Post[] = [
 </ul>
 <h2>Ready to Find Out for Certain?</h2>
 <p>If you have read through this assessment and think you might be in the 4-6 or 7-8 range but are not sure, the best next step is a honest conversation with someone who does this work daily. Not a sales call — a diagnostic conversation where someone looks at your specific situation and tells you what they see.</p>
-<p>Most Adelaide businesses we talk to fall into the 4-6 range and are genuinely surprised by how affordable and practical the solution is once they understand where the leaks actually are. The gap between where most businesses think they are and where they could be is usually significant.</p>
+<p>Most Adelaide businesses we talk to fall into the 4-6 range and are genuinely surprised by how affordable and practical the solution is once they understand where the leaks actually are. The gap between where most businesses think they are and where they could be is usually significant. A good starting point is reviewing our <a href="/services">services overview</a> or checking <a href="/website-pricing">transparent pricing</a>.</p>
 <p>The assessment above tells you where you are. The next step is deciding whether to do something about it. Our team offers <a href="/services/automation">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation about what is possible for your business.</p>
 `,
   },
@@ -1638,7 +1638,7 @@ export const posts: Post[] = [
 
 <p>The rest gets built around you.</p>
 
-<p>Adelaide-based businesses have a particular advantage here because local setup support exists and the market isn't saturated yet. Plumbers who get this running now are ahead of the ones who wait until everyone's doing it.</p>
+<p>Adelaide-based businesses have a particular advantage here because local setup support exists and the market isn't saturated yet. Plumbers who get this running now are ahead of the ones who wait until everyone's doing it. A solid <a href="/website-design-adelaide">plumber website</a> also helps you rank higher on Google — see our <a href="/seo">SEO services</a> for more.</p>
 
 <h2>The Bottom Line</h2>
 
@@ -1648,7 +1648,7 @@ export const posts: Post[] = [
 
 <p>That's exactly what AI for plumbers in Adelaide is doing right now.</p>
 
-<p><strong>Want to see exactly how this would work for your plumbing business? Book a free AI audit at <a href="https://aiadelaide.com.au">aiadelaide.com.au</a>. We'll map out what you're losing and what it would take to fix it.</strong></p>`,
+<p><strong>Want to see exactly how this would work for your plumbing business? <a href="/contact">Book a free AI audit</a> with our team. We'll map out what you're losing and what it would take to fix it. Browse all <a href="/services">services we offer</a> or check our <a href="/website-pricing">pricing</a>.</strong></p>`,
   },
 {
     slug: "ai-for-electricians-adelaide",
@@ -1767,7 +1767,7 @@ export const posts: Post[] = [
 
 <p>The better approach is to work with someone who sets this stuff up specifically for Adelaide tradies and small businesses. You spend an hour or two explaining how your business works, and they build the system around you. Most setups can be live within a week.</p>
 
-<p>You don't need to understand how AI works. You just need to understand what you want it to do: answer the phone, book jobs, follow up on quotes, and send you summaries. That's it.</p>
+<p>You don't need to understand how AI works. You just need to understand what you want it to do: answer the phone, book jobs, follow up on quotes, and send you summaries. That's it. We also recommend pairing this with a <a href="/website-design-adelaide">professional website</a> and good <a href="/seo">SEO</a> so more customers find you in the first place.</p>
 
 <h2>The Honest Bottom Line</h2>
 
@@ -1777,7 +1777,7 @@ export const posts: Post[] = [
 
 <p>That's the actual opportunity here. Not technology for its own sake - just smarter systems that mean your work generates more revenue without more hours.</p>
 
-<p><strong>Book a free AI audit at <a href="https://aiadelaide.com.au">aiadelaide.com.au</a> and we'll show you exactly where your business is losing leads and what it would take to fix it.</strong></p>`,
+<p><strong><a href="/contact">Book a free AI audit</a> and we'll show you exactly where your business is losing leads and what it would take to fix it. Browse our <a href="/services">services</a> or check <a href="/website-pricing">pricing</a> to see what's possible.</strong></p>`,
   },
 {
     slug: "ai-for-physiotherapists-adelaide",
@@ -1903,11 +1903,11 @@ export const posts: Post[] = [
 
 <p>Adelaide's health and allied health sector is competitive. Patients have options, and a clinic that's easy to book, communicates well, and follows up properly creates a noticeably better experience than one that doesn't.</p>
 
-<p>AI for physiotherapists in Adelaide isn't about replacing the human side of your care - that's still 100 percent you and your clinicians. It's about making sure the business side runs as smoothly as the clinical side.</p>
+<p>AI for physiotherapists in Adelaide isn't about replacing the human side of your care - that's still 100 percent you and your clinicians. It's about making sure the business side runs as smoothly as the clinical side. A <a href="/website-design-adelaide">clinic website</a> that makes booking easy also helps — see our <a href="/seo">SEO services</a> to attract more local patients.</p>
 
 <p>Fewer no-shows. Faster gap filling. More new patients captured after hours. Better rebooking rates. These are all measurable outcomes that directly affect how much revenue your clinic generates from the same physical space and same team.</p>
 
-<p><strong>Book a free AI audit at <a href="https://aiadelaide.com.au">aiadelaide.com.au</a> and we'll look at exactly where your clinic is losing revenue and what a practical AI setup would look like for your specific situation.</strong></p>`,
+<p><strong><a href="/contact">Book a free AI audit</a> and we'll look at exactly where your clinic is losing revenue and what a practical AI setup would look like for your specific situation. See our <a href="/services">full services</a> and <a href="/website-pricing">pricing</a> for more.</strong></p>`,
   },
 {
     slug: "ai-for-builders-adelaide",
@@ -2027,9 +2027,9 @@ export const posts: Post[] = [
 
 <p>AI for builders Adelaide isn't about replacing your expertise. It's about removing the invisible losses that compound over time. Every call that goes to voicemail, every quote that doesn't get followed up, every client who has to chase you for updates - all of that is money walking out the door.</p>
 
-<p>You can't fix it by working harder. You're already working hard enough. You fix it by building systems that work when you can't.</p>
+<p>You can't fix it by working harder. You're already working hard enough. You fix it by building systems that work when you can't. A <a href="/website-design-adelaide">builder website</a> that showcases your work also helps convert more enquiries — see our <a href="/seo">SEO services</a> for ranking higher on Google.</p>
 
-<p><strong>Want to see where your business is losing contracts? Book a free AI audit at <a href="https://aiadelaide.com.au">aiadelaide.com.au</a>. We'll map out your pipeline and show you exactly what's leaking - and what it would take to plug it.</strong></p>`,
+<p><strong>Want to see where your business is losing contracts? <a href="/contact">Book a free AI audit</a>. We'll map out your pipeline and show you exactly what's leaking - and what it would take to plug it. Browse our <a href="/services">services</a> or check <a href="/website-pricing">pricing</a>.</strong></p>`,
   },
 {
     slug: "how-much-does-a-missed-call-cost-your-business-adelaide",
@@ -2109,7 +2109,7 @@ Google tracks how many people call you from your Google Business Profile. When p
 
 Their algorithm thinks: "Hmm, this business isn't very responsive. Maybe we shouldn't show them as much."
 
-Your competitors who answer every call? They get shown more. They get more calls. They get more reviews. Meanwhile, you're working just as hard, doing great work, and getting buried.
+Your competitors who answer every call? They get shown more. They get more calls. They get more reviews. Meanwhile, you're working just as hard, doing great work, and getting buried. Improving your <a href="/seo">local SEO</a> and having a <a href="/website-design-adelaide">fast, mobile-friendly website</a> also helps you stay visible.
 
 **The phone isn't just a phone anymore. It's your pipeline. And it's leaking.**
 
@@ -2280,7 +2280,7 @@ Calculate your real cost:
 
 If that number makes you uncomfortable — good. That means you're ready to do something about it.
 
-**Visit aiadelaide.com.au** and we'll help you work out exactly what this costs your specific business and what your options are. No pressure. No fluff. Just the maths and the solution.
+**Visit aiadelaide.com.au** and we'll help you work out exactly what this costs your specific business and what your options are. No pressure. No fluff. Just the maths and the solution. You can also <a href="/contact">contact us directly</a>, browse all <a href="/services">services</a>, or check our <a href="/website-pricing">pricing</a>.
 
 Stop losing leads to voicemail. Stop handing money to competitors. Start answering every call, even when you can't pick up the phone.
 
@@ -2293,6 +2293,7 @@ Your business will thank you.`,
     date: "2026-03-30",
     readTime: "7 min read",
     category: "How-To",
+    seoDescription: "Adelaide retail shops lose sales to missed calls and slow follow-up. AI captures enquiries, answers after hours, and recovers revenue without hiring staff.",
     content: `<p>You're in the middle of helping one customer when your phone rings. You let it go to voicemail. By the time you check it two hours later, they've already visited the competitor across the road.</p>
 
 <p>Sound familiar? For Adelaide retail shop owners, this is a daily occurrence — and it's quietly destroying your revenue.</p>
@@ -2379,13 +2380,13 @@ Your business will thank you.`,
 
 <p>The shops that are winning right now aren't the ones with better products. They're the ones that respond faster, follow up better, and make it easier for customers to choose them over the alternative.</p>
 
-<p>AI doesn't change your product. It doesn't change your location. It changes the experience of being a customer trying to reach you. That's often the difference between a browser and a buyer.</p>
+<p>AI doesn't change your product. It doesn't change your location. It changes the experience of being a customer trying to reach you. That's often the difference between a browser and buyer. A <a href="/website-design-adelaide">retail website</a> that showcases your products also helps — and our <a href="/seo">SEO services</a> make sure locals find you on Google.</p>
 
 <h2>Ready to See What's Falling Through the Gaps?</h2>
 
 <p>The first step is understanding what you're currently losing. Most retail shop owners are surprised when they actually track their missed enquiries for a week.</p>
 
-<p>If you're in Adelaide and running a retail shop, <a href="/contact">book a free 20-minute chat</a>. We'll look at your current setup, identify where conversations are leaking, and tell you honestly whether AI makes sense for your situation. No pitch. Just the numbers.</p>
+<p>If you're in Adelaide and running a retail shop, <a href="/contact">book a free 20-minute chat</a>. We'll look at your current setup, identify where conversations are leaking, and tell you honestly whether AI makes sense for your situation. No pitch. Just the numbers. Browse all <a href="/services">services we offer</a> or check <a href="/website-pricing">pricing</a>.</p>
 
 <p>Ready to see if AI fits your business? <a href="/contact">Get your free AI readiness assessment</a>.</p>`
   },
@@ -2397,6 +2398,7 @@ Your business will thank you.`,
     date: "2026-04-04",
     readTime: "10 min read",
     category: "Automation",
+    seoDescription: "Adelaide HVAC techs miss 40% of after-hours emergency calls. AI captures jobs, handles after-hours, and qualifies leads while you're on the tools.",
     content: `<p>It's 38 degrees in Adelaide. Your phone is ringing off the hook from customers whose air conditioning has died. But you're already on a job at a restaurant kitchen in the CBD. By the time you check your phone at 6pm, you've missed six calls. Three have already booked with someone else.</p>
 
 <p>If you run an HVAC or refrigeration business in Adelaide — or work for one — this is not an unusual Tuesday in January.</p>
@@ -2481,7 +2483,7 @@ Your business will thank you.`,
   <li>Basic call logging so you can review missed calls and query patterns</li>
 </ul>
 
-<p>Setup typically takes 3–5 business days. We test it with sample calls before it goes live.</p>
+<p>Setup typically takes 3–5 business days. We test it with sample calls before it goes live. We also recommend a <a href="/website-design-adelaide">HVAC business website</a> that captures enquiries and good <a href="/seo">SEO</a> so locals find you when they search.</p>
 
 <h2>FAQ: HVAC Technicians Ask These Things</h2>
 
@@ -2508,6 +2510,582 @@ Your business will thank you.`,
 
 <p>If you're running a small business in Adelaide and you're missing emergency calls because you're already on a job — let's talk. Our <a href="/services/automation">automation team</a> can help you set up AI answering that captures every call — <a href="/contact">get in touch</a>.</p>
 
-<p><strong>CTA:</strong> Book your free 15-minute call at 08 7100 9788 or visit <a href="https://aiadelaide.com.au/book-audit">aiadelaide.com.au/book-audit</a>. Ready to see if AI fits your business? Get your free AI readiness assessment.</p>`
+<p><strong>CTA:</strong> <a href="/contact">Book your free 15-minute call</a> or call us at 08 7100 9788. Browse all <a href="/services">services we offer</a> or check our <a href="/website-pricing">pricing</a>. Ready to see if AI fits your business? Get your free AI readiness assessment.</p>`
+  }
+,
+{
+    slug: "how-much-does-website-cost-adelaide",
+    title: "How Much Does a Website Cost in Adelaide? (2026 Guide)",
+    excerpt:
+      "How much should you pay for a website in Adelaide? DIY $200, budget shops $395-600, AI Adelaide $699-2,499, agencies $5,000-15,000. Full breakdown with real examples.",
+    seoDescription: "How much does a website cost in Adelaide? Full 2026 breakdown: DIY $200, budget $395, AI Adelaide $699-2,499, agencies $5,000-15,000. No hidden fees.",
+    date: "2026-06-18",
+    readTime: "7 min read",
+    category: "How-To",
+    content: `<p>If you are an Adelaide small business owner looking for a website, the price range is confusing. One place quotes $395, another quotes $15,000, and you have no idea what the difference is. This guide breaks down exactly what you pay at each level and what you actually get.</p>
+
+<h2>The 5 Website Price Tiers in Adelaide</h2>
+
+<h3>1. DIY Builder ($200-600/year)</h3>
+<p>Wix, Squarespace, GoDaddy — you do everything yourself. The platform is cheap but you write every word, design every page, and maintain it all. For a tradie who bills $80/hour, spending 20 hours building a website costs $1,600 in lost time — more than hiring someone.</p>
+
+<h3>2. Budget Web Shop ($395-999)</h3>
+<p>Places like Affordable Websites Adelaide or DigiWebCraft offer cheap sites. You get a template with your logo and some generic text. Often built offshore. No SEO strategy, no local Adelaide context, no ongoing support. Fine for a business card site that nobody finds on Google.</p>
+
+<h3>3. AI Adelaide ($699-2,499)</h3>
+<p>That is us. Our <a href="/website-pricing">pricing</a> is transparent: Starter $699 (3 pages), Business $1,299 (5-7 pages with blog and SEO foundation), Growth $2,499 (10+ pages with suburb targeting and automation). All custom-designed, locally written, and built for Google. See our <a href="/website-design-adelaide">website design page</a> for full details.</p>
+
+<h3>4. Boutique Agency ($5,000-15,000)</h3>
+<p>WebAdelaide, Digital Nomads HQ, and similar agencies offer custom design with strategy sessions and multiple revision rounds. Good quality but expensive — usually overkill for a local tradie or cafe that needs 5-7 pages.</p>
+
+<h3>5. Premium Agency ($15,000-50,000+)</h3>
+<p>National agencies with enterprise capabilities. Way more than any small business needs.</p>
+
+<h2>What You Actually Pay For</h2>
+<p>Every website has the same building blocks:</p>
+<ul>
+  <li><strong>Domain name:</strong> $20-50/year (you own this)</li>
+  <li><strong>Hosting:</strong> $15-30/month (where your site lives)</li>
+  <li><strong>Design and build:</strong> $699-2,499 (our pricing) or $5,000-15,000 (agency)</li>
+  <li><strong>SSL certificate:</strong> Free with modern hosting</li>
+  <li><strong>Ongoing maintenance:</strong> $0-100/month (basic changes included with us)</li>
+  <li><strong>SEO (optional):</strong> From $399/month — see our <a href="/seo">SEO services</a></li>
+</ul>
+
+<h2>Real Example: A Plumber in Norwood</h2>
+<p>A plumber in Norwood needs a website. With AI Adelaide, the cost is:</p>
+<ul>
+  <li>Website (Business tier): $1,299 one-off</li>
+  <li>Domain: $22/year</li>
+  <li>Hosting: $20/month ($240/year)</li>
+  <li>SEO retainer (optional): $399/month</li>
+</ul>
+<p><strong>Year 1 total: $6,559 (with SEO) or $1,761 (without SEO).</strong> Compare that to $10,000-15,000 at a boutique agency for the same or worse result for a local tradie site.</p>
+
+<h2>Why Our Websites Cost $699 Not $5,000</h2>
+<p>We are a small Adelaide team. No agency overhead, no project managers, no strategy workshops. You tell us about your business, we build the site, you review it, it goes live. Two days, not two months. The quality is professional — we just skip the expensive process that agencies charge for.</p>
+
+<h2>Can I Get a Free Website?</h2>
+<p>Technically yes — Google Sites, free Wix, a Facebook page. But free sites look free. They have ads, limited features, no custom domain, and Google ranks them poorly. One new customer from a $699 website has already paid for it.</p>
+
+<h2>What About Ongoing Costs?</h2>
+<p>With us, basic text changes are included — no monthly fee. You only pay if you add <a href="/ai-automation-adelaide">automation</a> or <a href="/seo">SEO services</a>. With agencies, ongoing maintenance is typically $50-300/month. With DIY builders, you pay $20-50/month forever.</p>
+
+<h2>Which Tier Should You Pick?</h2>
+<p>If you are a sole trader with no website, start with Starter ($699). If you have an established business and want to rank on Google, go Business ($1,299). If you serve multiple suburbs and want to dominate local search, Growth ($2,499) is the play. See our full <a href="/website-pricing">pricing page</a> for details.</p>
+
+<p><strong>Ready to get started?</strong> <a href="/contact">Book a free 15-minute chat</a> or call (08) 7100 9788. Check our <a href="/services">full range of services</a> or read more about <a href="/website-cost-adelaide">website costs</a>.</p>`
+  },
+{
+    slug: "cheap-website-design-adelaide",
+    title: "Cheap Website Design Adelaide: What You Get for $699 vs $5,000",
+    excerpt:
+      "Cheap website design in Adelaide does not have to mean bad. Here is exactly what you get for $699, $1,299, $2,499, and $5,000+ — and where the sweet spot is for small businesses.",
+    seoDescription: "Cheap website design Adelaide: what $699 vs $1,299 vs $2,499 vs $5,000 gets you. Real comparison, no fluff. Find the sweet spot for your small business.",
+    date: "2026-06-18",
+    readTime: "6 min read",
+    category: "AI Tools",
+    content: `<p>When Adelaide small business owners search for "cheap website design Adelaide," they usually want one thing: a professional website that does not cost $10,000. The good news is that cheap does not have to mean bad. The bad news is that some cheap options are genuinely terrible.</p>
+
+<h2>What Does "Cheap" Actually Mean?</h2>
+<p>There are three types of cheap websites in Adelaide:</p>
+<ul>
+  <li><strong>DIY cheap ($200-600/year):</strong> Wix, Squarespace. You do all the work. Cheap in dollars, expensive in your time.</li>
+  <li><strong>Template cheap ($395-600):</strong> Budget web shops. Someone else builds it, but it is a generic template with stock text. Looks like 50 other websites.</li>
+  <li><strong>Value cheap ($699-2,499):</strong> That is us. Custom design, professional copywriting, SEO-ready — just without the agency price tag. See our <a href="/website-pricing">pricing</a>.</li>
+</ul>
+
+<h2>What You Get for $699 (Our Starter Tier)</h2>
+<p>A real, custom-designed 3-page website. Not a template. Mobile-first, click-to-call, contact form, basic SEO, Google Business Profile setup. Live in 48 hours. This is not "cheap" — it is affordable because we are a small team with no agency overhead.</p>
+
+<h2>What You Get for $1,299 (Business Tier)</h2>
+<p>5-7 pages, blog setup, SEO foundation with schema and sitemap, one suburb service page, Google Business Profile optimisation, lead capture forms, AI automation-ready. This is the tier most Adelaide small businesses pick — it hits the sweet spot between cost and capability.</p>
+
+<h2>What You Get for $2,499 (Growth Tier)</h2>
+<p>10+ pages, 3 suburb pages, 3 starter blog articles, full SEO setup with internal linking, AI automation integrations included. This is for businesses that want to dominate their local area on Google.</p>
+
+<h2>What You Get for $5,000-15,000 (Agency)</h2>
+<p>Custom design process, strategy workshops, multiple revision rounds, a team of specialists. Good quality, but for a 5-page tradie site, you are paying for process, not the website.</p>
+
+<h2>The Problem with $395 Template Sites</h2>
+<p>Budget web shops in Adelaide offer sites from $395. Here is what you actually get:</p>
+<ul>
+  <li>A pre-made template — your site looks identical to dozens of others</li>
+  <li>Generic or AI-generated copy that says nothing about your actual business</li>
+  <li>No SEO strategy — Google will not rank a template with stock text</li>
+  <li>Often built offshore — no local Adelaide context</li>
+  <li>No ongoing support — you are on your own after handover</li>
+</ul>
+<p>You save $300 upfront and lose thousands in missed leads because your site does not rank and does not convert.</p>
+
+<h2>Why Our $699 Site Is Better Than a $5,000 Agency Site (For Most Businesses)</h2>
+<p>For a local tradie, cafe, or clinic, the difference between a $699 site and a $5,000 site is usually strategy workshops and revision rounds — not the actual website. A plumber in Modbury does not need a brand workshop. They need a fast, mobile-first site that ranks for "plumber Modbury" and has a click-to-call button. That is what we build.</p>
+
+<h2>When Should You Pay More?</h2>
+<p>If you need e-commerce, custom integrations, a client portal, or complex multi-language support, you need more than a $699 site. For most Adelaide small businesses — tradies, cafes, clinics, retail, beauty — our Starter or Business tier is exactly right.</p>
+
+<h2>How to Get Started</h2>
+<p>Book a free chat. We will look at what you do and tell you which tier fits — no upsell. Check our <a href="/website-pricing">full pricing</a>, learn about our <a href="/website-design-adelaide">website design process</a>, or read our full <a href="/website-cost-adelaide">website cost guide</a>. <a href="/contact">Get in touch</a> or browse all <a href="/services">services</a>.</p>`
+  },
+{
+    slug: "best-website-builder-adelaide-small-business",
+    title: "Best Website Builder for Adelaide Small Businesses (2026)",
+    excerpt:
+      "Wix vs Squarespace vs WordPress vs AI Adelaide — which website builder is best for Adelaide small businesses? We compare cost, ease, SEO, and speed to help you choose.",
+    seoDescription: "Best website builder for Adelaide small businesses 2026: Wix vs Squarespace vs WordPress vs AI Adelaide. Cost, SEO, speed and ease compared.",
+    date: "2026-06-18",
+    readTime: "8 min read",
+    category: "How-To",
+    content: `<p>Adelaide small business owners ask us all the time: "Should I use Wix, Squarespace, WordPress, or just hire someone?" The answer depends on your time, budget, and how seriously you want to rank on Google. Here is our honest comparison — including when to use us instead.</p>
+
+<h2>The 4 Main Options for Adelaide Small Businesses</h2>
+
+<h3>1. Wix ($17-159/month)</h3>
+<p>Wix is the most popular DIY builder. Drag-and-drop, hundreds of templates, decent mobile editor. But Wix sites are slow — Google penalises them in search rankings. You also do all the design, copywriting, and SEO yourself. For a tradie who bills $80/hour, 20 hours on Wix costs $1,600 in lost time.</p>
+<p><strong>Best for:</strong> Someone who enjoys tinkering and has more time than money.</p>
+
+<h3>2. Squarespace ($25-139/month)</h3>
+<p>Squarespace has the best-looking templates of any builder. Clean, modern, professional. But the same problem: you do everything yourself, and SEO control is limited. Squarespace sites look nice but often do not rank well for competitive local keywords like "plumber Adelaide" or "cafe Glenelg."</p>
+<p><strong>Best for:</strong> Creative businesses, portfolios, and people who care about design above all else.</p>
+
+<h3>3. WordPress ($0 + hosting, but your time)</h3>
+<p>WordPress is free, but you pay for hosting ($10-50/month), a premium theme ($50-200), plugins ($0-300/year), and your time. WordPress is powerful but requires maintenance — plugin updates, security patches, backups. Most Adelaide small businesses that try WordPress end up with a half-finished site and a plugin conflict they cannot fix.</p>
+<p><strong>Best for:</strong> Businesses with a tech-savvy owner or an in-house person to manage it.</p>
+
+<h3>4. AI Adelaide ($699-2,499 one-off + $15-30/mo hosting)</h3>
+<p>That is us. We build your site on Next.js — the same framework used by major companies. It is fast (loads in under 2 seconds), Google loves it, and we handle all the design, copywriting, and <a href="/seo">SEO setup</a>. You do not touch a builder. See our <a href="/website-pricing">pricing</a> and <a href="/website-design-adelaide">process</a>.</p>
+<p><strong>Best for:</strong> Adelaide small businesses that want a professional website without spending 20 hours learning a builder.</p>
+
+<h2>Speed Comparison</h2>
+<ul>
+  <li><strong>Wix:</strong> 3-5 second load times (slow, Google penalises)</li>
+  <li><strong>Squarespace:</strong> 2-4 seconds (acceptable)</li>
+  <li><strong>WordPress:</strong> 2-6 seconds (depends on plugins and hosting)</li>
+  <li><strong>AI Adelaide (Next.js):</strong> Under 2 seconds (fast, Google rewards)</li>
+</ul>
+
+<h2>SEO Comparison</h2>
+<p>For local Adelaide businesses, SEO is how customers find you. Wix and Squarespace have limited SEO control. WordPress is good for SEO but requires plugins (Yoast, RankMath) that need configuring. Our sites come with full SEO built in — schema markup, clean URLs, sitemap, meta tags, and <a href="/ai-automation-adelaide">local suburb targeting</a>.</p>
+
+<h2>The Hidden Cost of DIY</h2>
+<p>The cheapest option is not always the cheapest. If you spend 20 hours building a Wix site, that is 20 hours you could have spent billing clients. For a plumber at $80/hour, that is $1,600 in lost revenue — more than our $699 Starter website costs.</p>
+
+<h2>Our Recommendation</h2>
+<p>If you have zero budget and lots of free time, use Wix or Squarespace. If you want a professional site that ranks on Google and you do not want to spend 20 hours learning a builder, use us. The $699 Starter tier pays for itself with one new customer.</p>
+
+<p>Read our full <a href="/website-cost-adelaide">website cost guide</a>, check <a href="/website-pricing">pricing</a>, or <a href="/contact">book a free chat</a> to see what we would build for you. Browse all <a href="/services">services</a> for more.</p>`
+  },
+{
+    slug: "local-seo-adelaide-small-business-guide",
+    title: "Local SEO Adelaide: A Complete Guide for Small Businesses",
+    excerpt:
+      "Local SEO for Adelaide small businesses — everything you need to know to rank on Google. Keyword research, Google Business Profile, suburb pages, content, citations and reviews.",
+    seoDescription: "Local SEO Adelaide guide for small businesses. Keyword research, Google Business Profile, suburb pages, content, citations and reviews. Rank on Google.",
+    date: "2026-06-18",
+    readTime: "10 min read",
+    category: "How-To",
+    content: `<p>If you run a small business in Adelaide, local SEO is how customers find you on Google. When someone searches "plumber Norwood" or "cafe Glenelg" or "hairdresser Prospect," you want to be in the top 3 results. This guide covers everything you need to know to get there.</p>
+
+<h2>What Is Local SEO?</h2>
+<p>Local SEO is optimising your website and online presence so you rank for searches with local intent — searches where the person is looking for a business near them. For Adelaide businesses, this means ranking for keywords that include your suburb or "Adelaide" in the search.</p>
+
+<h2>Step 1: Keyword Research</h2>
+<p>Find out what Adelaide customers are actually searching for. Use Google's free Keyword Planner, or just start typing your service into Google and see what auto-complete suggests. Target keywords like:</p>
+<ul>
+  <li>"plumber Adelaide" (broad, competitive)</li>
+  <li>"plumber Norwood" (local, easier to rank)</li>
+  <li>"emergency plumber Adelaide" (high intent)</li>
+  <li>"hot water system repair Adelaide" (specific service)</li>
+</ul>
+<p>The sweet spot is keywords that are specific enough to rank but broad enough to get traffic. "Plumber Norwood" gets less searches than "plumber Adelaide" but is much easier to rank for.</p>
+
+<h2>Step 2: Google Business Profile</h2>
+<p>This is the #1 local SEO priority. Claim your Google Business Profile (free), fill out every section, add photos, list your services, and get reviews. Your GBP is what shows up in the Google Map Pack — the top 3 local results that appear above regular search results.</p>
+<p>If you do nothing else on this list, do this. Read our full <a href="/seo">SEO services</a> page for what we handle.</p>
+
+<h2>Step 3: Website Optimisation</h2>
+<p>Your website needs to tell Google exactly what you do and where you do it. Key elements:</p>
+<ul>
+  <li><strong>Title tags:</strong> "Plumber in Norwood | Your Business Name" — include your service and suburb</li>
+  <li><strong>Meta descriptions:</strong> "Professional plumber serving Norwood, Kent Town, and eastern Adelaide. Call for a free quote."</li>
+  <li><strong>Service pages:</strong> One page per service (hot water, blocked drains, gas fitting) — not one "Services" page</li>
+  <li><strong>Suburb pages:</strong> If you serve multiple areas, create a page for each (see our <a href="/website-design-adelaide">website design</a> for how we do this)</li>
+</ul>
+
+<h2>Step 4: Content That Answers Questions</h2>
+<p>Blog posts are how you rank for long-tail keywords. Write posts answering real customer questions: "How much does a hot water system cost in Adelaide?" or "What causes low water pressure in Norwood homes?" Each post targets a specific search and links back to your service pages.</p>
+<p>We write SEO blog posts for Adelaide businesses as part of our <a href="/seo">SEO retainer</a> — from $399/month. See our <a href="/website-pricing">pricing</a> for full details.</p>
+
+<h2>Step 5: Local Citations</h2>
+<p>List your business on local directories with consistent Name, Address, and Phone number (NAP):</p>
+<ul>
+  <li>Google Business Profile</li>
+  <li>TrueLocal</li>
+  <li>Hotfrog</li>
+  <li>StartLocal</li>
+  <li>AussieWeb</li>
+  <li>Yellow Pages</li>
+  <li>Bing Places</li>
+  <li>Apple Maps Connect</li>
+</ul>
+<p>Consistency matters — your business name, address, and phone number must match exactly across all directories. Inconsistent NAP confuses Google and hurts your ranking.</p>
+
+<h2>Step 6: Reviews</h2>
+<p>Google reviews are a top local ranking factor. Ask every happy customer for a review. Make it easy — send them a direct link to your Google review page. Respond to every review (positive and negative). Aim for 50+ reviews with an average of 4.5+ stars.</p>
+<p>We set up automated review request systems as part of our <a href="/ai-automation-adelaide">automation services</a> — customers get an SMS 24 hours after their job is done.</p>
+
+<h2>Step 7: Suburb Pages</h2>
+<p>If you serve multiple Adelaide suburbs, create a unique page for each one. A plumber serving Norwood, Glenelg, and Prospect should have three separate pages — not one generic "Areas We Serve" page. Each page should mention local landmarks, streets, and specific local needs.</p>
+
+<h2>How Long Does Local SEO Take?</h2>
+<ul>
+  <li>Low-competition keywords: 2-3 months</li>
+  <li>Medium competition: 3-6 months</li>
+  <li>High competition (e.g., "plumber Adelaide"): 6-12 months</li>
+</ul>
+<p>Local SEO compounds — the longer you do it, the stronger your rankings get. Unlike Google Ads, the traffic does not stop when you stop paying. Read our comparison of <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads</a> for the full breakdown.</p>
+
+<h2>Need Help With Local SEO?</h2>
+<p>We do local SEO for Adelaide businesses from $399/month. <a href="/contact">Book a free chat</a>, check our <a href="/services">services</a>, or read about our <a href="/website-design-adelaide">website design</a> that comes SEO-ready from day one.</p>`
+  }
+,
+{
+    slug: "seo-vs-google-ads-adelaide-small-business",
+    title: "SEO vs Google Ads Adelaide: Which Is Better for Small Business?",
+    excerpt:
+      "SEO vs Google Ads for Adelaide small businesses. Both get you on Google — one you rent, one you own. Real costs, timelines, and ROI compared. Which fits your business?",
+    seoDescription: "SEO vs Google Ads Adelaide: real costs, timelines and ROI compared. SEO from $399/mo compounds. Ads from $500/mo stop when you stop paying. Which fits?",
+    date: "2026-06-18",
+    readTime: "8 min read",
+    category: "How-To",
+    content: `<p>Every Adelaide small business owner asks the same question: should I pay for Google Ads or invest in SEO? The short answer is both — but at different times. Here is the real comparison with actual numbers, not marketing fluff.</p>
+
+<h2>The Core Difference</h2>
+<p>Google Ads: you pay Google every time someone clicks your ad. You show up at the top of results immediately. The moment you stop paying, you disappear.</p>
+<p>SEO: you invest in content and website optimisation so Google shows your site organically. It takes 2-6 months to start ranking, but once you do, the traffic is free and compounds over time. You own the traffic.</p>
+
+<h2>Cost Comparison</h2>
+<ul>
+  <li><strong>SEO:</strong> $399-699/month (our pricing — see <a href="/website-pricing">pricing page</a>)</li>
+  <li><strong>Google Ads:</strong> $500-3,000+/month (including ad spend)</li>
+  <li><strong>Combined:</strong> $899-1,199/month (start with both, reduce ads as SEO kicks in)</li>
+</ul>
+
+<h2>Timeline Comparison</h2>
+<ul>
+  <li><strong>Google Ads:</strong> Results in 1-3 days. You show up immediately.</li>
+  <li><strong>SEO (low competition):</strong> Results in 2-3 months (e.g., "plumber Prospect")</li>
+  <li><strong>SEO (medium competition):</strong> 3-6 months (e.g., "electrician Adelaide")</li>
+  <li><strong>SEO (high competition):</strong> 6-12 months (e.g., "plumber Adelaide")</li>
+</ul>
+
+<h2>Cost Per Lead Over 24 Months</h2>
+<p>Here is a realistic 24-month projection for a combined strategy:</p>
+<ul>
+  <li>Months 1-6: SEO $399/mo + Ads $1,000/mo = $1,399/mo</li>
+  <li>Month 6: SEO starts ranking, reduce Ads to $800/mo = $1,199/mo</li>
+  <li>Month 12: SEO ranking for most keywords, Ads $500/mo = $899/mo</li>
+  <li>Month 24: SEO generating most traffic, Ads $200/mo for top keywords = $599/mo</li>
+</ul>
+<p>Total 2-year cost with combined strategy: ~$20,000. SEO-only: ~$9,600. Ads-only: ~$24,000+ (and it stops the moment you stop paying).</p>
+
+<h2>Which Strategy Fits Your Situation?</h2>
+
+<h3>New business — no website traffic</h3>
+<p>Start with Google Ads to get immediate leads, and build <a href="/seo">SEO</a> at the same time. By month 3-4, organic traffic starts replacing ad spend. By month 6, reduce ads and rely more on SEO.</p>
+
+<h3>Established business — steady customers</h3>
+<p>Invest in SEO to capture people searching for your services. Use Ads only for high-value emergency keywords. Most of your new leads should come from organic search within 4-6 months.</p>
+
+<h3>Competitive market (plumbers, electricians, dentists)</h3>
+<p>Both. SEO takes 6-12 months in competitive markets. Run Ads to stay visible while SEO builds. The businesses that win long-term invest in SEO early.</p>
+
+<h3>Niche market — few competitors</h3>
+<p>SEO only. If you are in a low-competition niche (e.g., "fencing contractor Modbury"), you will rank within 2-3 months. No need for Ads — you will capture the traffic organically for a fraction of the cost.</p>
+
+<h2>Why We Focus on SEO (Not Ads)</h2>
+<p>We do local <a href="/seo">SEO</a> for Adelaide businesses — keyword research, service pages, suburb pages, blog content, and Google Search Console monitoring. We do not manage Google Ads in-house. Why? Because SEO compounds. A blog post we write today can rank for years. An ad stops the moment the budget runs out.</p>
+<p>That said, we recommend many clients run Ads while SEO builds. Read our full <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads comparison</a> for the complete breakdown.</p>
+
+<h2>The Verdict</h2>
+<p>If you need leads today: Google Ads. If you want leads for the next 5 years: SEO. If you want both: start Ads now, build SEO alongside, reduce Ads as SEO kicks in. That is the strategy we recommend to every Adelaide small business.</p>
+
+<p>Ready to start? <a href="/contact">Book a free strategy chat</a>, check our <a href="/services">services</a>, or see our full <a href="/website-pricing">pricing</a>. We will tell you honestly whether SEO, Ads, or both makes sense for your business.</p>`
+  },
+{
+    slug: "website-design-for-hairdressers-adelaide",
+    title: "Website Design for Hairdressers Adelaide: A Complete Guide",
+    excerpt:
+      "Hairdressers and salons in Adelaide need a website that takes bookings, shows off work, and looks as good as the salon. Here is what your website needs and what it costs.",
+    seoDescription: "Website design for hairdressers Adelaide: what your salon website needs — online booking, gallery, service menu. From $699. Complete guide for Adelaide salons.",
+    date: "2026-06-18",
+    readTime: "6 min read",
+    category: "Case Study",
+    content: `<p>If you run a hair salon or barbershop in Adelaide, your website is your digital shopfront. It needs to look as good as your best work, take bookings while you are cutting hair, and show potential clients why they should choose you over the salon down the street.</p>
+
+<h2>What a Hair Salon Website Needs</h2>
+
+<h3>1. Online Booking System</h3>
+<p>This is non-negotiable. People want to book at 10pm after a glass of wine, not call during business hours. Your website needs a booking system that lets clients pick their service, choose a stylist, and select a time slot — all without you touching the phone.</p>
+
+<h3>2. Service Menu with Prices</h3>
+<p>List every service with prices. Clients want to know what a cut, colour, or treatment costs before they book. Hiding prices means they will find a salon that shows them. Include how long each service takes so clients can plan their day.</p>
+
+<h3>3. Gallery of Your Work</h3>
+<p>Before and after photos are your best sales tool. Every haircut, colour transformation, and style you are proud of should be on your website. This is what makes someone choose you over a competitor with a generic template site.</p>
+
+<h3>4. Team Profiles</h3>
+<p>People book the stylist, not the salon. Each stylist needs a profile with their photo, specialties, and personality. Clients want to know who is cutting their hair.</p>
+
+<h3>5. Location and Parking</h3>
+<p>Adelaide parking is painful. Tell clients exactly where to park, what entrance to use, and if there is free parking. A Google Maps embed makes this easy.</p>
+
+<h3>6. Instagram Integration</h3>
+<p>Your Instagram feed should flow into your website. New clients will check your Instagram before booking — make it easy to find.</p>
+
+<h2>What It Costs</h2>
+<p>A hair salon website from AI Adelaide costs $699-2,499 depending on how many pages you need. A small salon needs Starter ($699 — 3 pages: Home, Services, Contact). A bigger salon with multiple stylists needs Business ($1,299 — 5-7 pages with team profiles, gallery, booking). See our <a href="/website-pricing">full pricing</a> for details.</p>
+
+<h2>Why Not Just Use Instagram?</h2>
+<p>Instagram is great for showing work, but it does not show up when someone searches "hairdresser Norwood" on Google. Your website is what Google ranks — not your Instagram. If you want new clients from Google, you need a website. See our <a href="/website-design-adelaide">website design page</a> for more.</p>
+
+<h2>Local SEO for Hair Salons</h2>
+<p>When someone in Adelaide searches "hairdresser near me" or "balayage Adelaide," you want to show up. Local SEO gets you there. We include basic SEO in every website and offer ongoing <a href="/seo">SEO services</a> from $399/month — including blog content targeting searches like "best balayage Adelaide" or "how much does a keratin treatment cost."</p>
+
+<h2>Booking Automation</h2>
+<p>Once your website is live, add <a href="/ai-automation-adelaide">automation</a> — automated booking confirmations, SMS reminders 24 hours before appointments, and review requests after the appointment. No-shows drop by 65% with automated reminders. Automation starts from $199/month.</p>
+
+<h2>Real Example</h2>
+<p>A hair salon on The Parade in Norwood had no website — just an Instagram page. We built them a 5-page site with online booking, gallery, and service menu for $1,299. Within 3 months, they were ranking on page 1 for "hairdresser Norwood" and getting 8-10 new online bookings per week — all while cutting hair.</p>
+
+<p>Ready to get your salon online? <a href="/contact">Book a free chat</a>, check our <a href="/website-pricing">pricing</a>, or see all <a href="/services">services</a>. Read more about <a href="/website-cost-adelaide">website costs</a> for Adelaide small businesses.</p>`
+  },
+{
+    slug: "adelaide-cafe-website-guide",
+    title: "Adelaide Cafe Website Guide: Turn Browsers Into Bookings",
+    excerpt:
+      "Adelaide cafes need a website that shows the menu, opening hours, location, and takes bookings. Here is what your cafe website needs and what it costs.",
+    seoDescription: "Adelaide cafe website guide: menu display, opening hours, location, bookings. What your cafe website needs and costs from $699. Complete guide.",
+    date: "2026-06-18",
+    readTime: "6 min read",
+    category: "How-To",
+    content: `<p>Adelaide has one of the best cafe scenes in Australia — from The Parade in Norwood to Jetty Road in Glenelg to Prospect Road in Prospect. But too many cafes still rely on a Facebook page or an outdated website that does not show up on Google. Here is what your cafe website actually needs.</p>
+
+<h2>What a Cafe Website Needs</h2>
+
+<h3>1. Your Menu Online</h3>
+<p>This is the number one thing people look for. "What is on the menu at that cafe on Prospect Road?" Your menu needs to be on your website — not just on Uber Eats or Facebook. Update it when items change. A PDF menu link is fine; a proper menu page is better.</p>
+
+<h3>2. Opening Hours</h3>
+<p>Display your hours prominently. Nothing is more frustrating for a customer than driving to a cafe that is closed. Include holiday hours and seasonal changes.</p>
+
+<h3>3. Location and Parking</h3>
+<p>Google Maps embed, street address, and parking instructions. "Park in the council carpark behind the cafe" is more helpful than just an address.</p>
+
+<h3>4. Photos That Make People Hungry</h3>
+<p>Professional food photos. Not stock images of generic coffee — photos of YOUR food, YOUR space, YOUR coffee. This is what makes someone choose your cafe over the one next door.</p>
+
+<h3>5. Booking System (If You Take Bookings)</h3>
+<p>For cafes that do breakfast/brunch bookings or group bookings, an online booking system saves your staff time and captures bookings while you are serving customers.</p>
+
+<h3>6. Instagram Feed</h3>
+<p>Your latest Instagram posts should appear on your website. Cafes live on Instagram — make it easy for website visitors to see your latest posts and follow you.</p>
+
+<h3>7. Catering Information</h3>
+<p>If you do catering (office lunches, events, corporate), have a dedicated catering page with pricing and enquiry form. Catering orders are worth $500-2,000+ — do not lose them because your catering info is buried on a Facebook post.</p>
+
+<h2>What It Costs</h2>
+<p>A cafe website from AI Adelaide:</p>
+<ul>
+  <li><strong>Starter ($699):</strong> 3 pages — Home, Menu, Contact. Perfect for a small cafe that just needs to be found on Google.</li>
+  <li><strong>Business ($1,299):</strong> 5-7 pages — Home, Menu, About, Catering, Gallery, Contact. Blog setup for SEO content. See <a href="/website-pricing">pricing</a>.</li>
+  <li><strong>Growth ($2,499):</strong> 10+ pages — multiple location pages, full SEO, automation for booking confirmations and review requests.</li>
+</ul>
+<p>All sites are mobile-first (80%+ of cafe searches are on phones), fast-loading, and Google-ready from day one. See our <a href="/website-design-adelaide">website design</a> page for details.</p>
+
+<h2>Local SEO for Cafes</h2>
+<p>When someone in Adelaide searches "cafe Norwood" or "brunch Glenelg" or "coffee Prospect," you want to show up. Local SEO gets you there. We include basic SEO in every website and offer ongoing <a href="/seo">SEO services</a> from $399/month — including content targeting searches like "best brunch Adelaide" or "coffee shops near me."</p>
+
+<h2>Automation for Cafes</h2>
+<p>Add <a href="/ai-automation-adelaide">automation</a> to capture every enquiry — missed call text-back for when you are too busy serving to answer, automated booking confirmations, and review requests after customers visit. Automation starts from $199/month.</p>
+
+<h2>Why Not Just Use Facebook?</h2>
+<p>Facebook pages do not rank well on Google. When someone searches "cafe Prospect Road," Google shows websites — not Facebook pages. If you want to be found by new customers, you need a website. A Facebook page is a supplement, not a replacement.</p>
+
+<p>Ready to get your cafe online? <a href="/contact">Book a free chat</a>, check <a href="/website-pricing">pricing</a>, or browse all <a href="/services">services</a>.</p>`
+  },
+{
+    slug: "ai-automation-for-adelaide-retail-shops",
+    title: "AI Automation for Adelaide Retail Shops: Stop Losing Sales",
+    excerpt:
+      "Adelaide retail shops lose sales when staff are busy serving customers. AI automation captures every enquiry, follows up on quotes, and collects reviews automatically.",
+    seoDescription: "AI automation for Adelaide retail shops: capture enquiries, follow up quotes, collect reviews automatically. Stop losing sales when staff are busy. From $199/mo.",
+    date: "2026-06-18",
+    readTime: "7 min read",
+    category: "Automation",
+    content: `<p>If you run a retail shop in Adelaide — whether that is on Rundle Mall, Jetty Road Glenelg, or Prospect Road — you know the problem. You are serving one customer and three others walk out because nobody answered their question. The phone rings while you are at the register. Someone emails about a product and you forget to reply for two days. That is real money walking out the door.</p>
+
+<h2>Where Retail Shops Lose Sales</h2>
+<ul>
+  <li><strong>Missed calls:</strong> You are serving customers and cannot answer. They call the next shop.</li>
+  <li><strong>Slow email replies:</strong> Someone asks about a product. You plan to reply "later." Later becomes tomorrow. They already bought elsewhere.</li>
+  <li><strong>No follow-up:</strong> A customer buys something and you never see them again because there is no system to stay in touch.</li>
+  <li><strong>No reviews:</strong> Happy customers would leave a review, but you never ask. Your competitors have 50 reviews; you have 3.</li>
+  <li><strong>No online presence:</strong> People search "shop [your suburb]" on Google and you do not show up.</li>
+</ul>
+
+<h2>How AI Automation Fixes These</h2>
+
+<h3>Missed Call Text-Back</h3>
+<p>When you cannot answer the phone, an SMS is sent automatically within 30 seconds: "Hi, thanks for calling [Your Shop]. We are with a customer right now but we will call you back shortly. What were you calling about?" The customer feels acknowledged and you get their details to call back. From $199/month — see our <a href="/website-pricing">pricing</a>.</p>
+
+<h3>Automated Email/Quote Follow-Up</h3>
+<p>When someone emails about a product, an instant auto-reply acknowledges their enquiry. Then a follow-up sequence runs: Day 1 thank you, Day 3 check-in, Day 7 final touch. 35-50% of cold enquiries convert with proper follow-up.</p>
+
+<h3>Review Automation</h3>
+<p>After a purchase, the customer gets an SMS with a link to your Google review page. One gentle nudge at Day 7 if they have not left one yet. Reviews are the #1 local SEO factor — and most retail shops never ask for them. We set this up as part of our <a href="/ai-automation-adelaide">automation services</a>.</p>
+
+<h3>Customer Follow-Up</h3>
+<p>After a purchase, an automated sequence keeps in touch: thank you email, product care tips, new arrival notifications, and seasonal offers. This turns one-time buyers into repeat customers without you lifting a finger.</p>
+
+<h2>What It Costs</h2>
+<ul>
+  <li><strong>Website:</strong> From $699 — see <a href="/website-design-adelaide">website design</a> and <a href="/website-pricing">pricing</a></li>
+  <li><strong>Automation:</strong> From $199/month — missed call text-back, review requests, email follow-up</li>
+  <li><strong>SEO:</strong> From $399/month — rank for "shop [your suburb]" and product searches — see <a href="/seo">SEO services</a></li>
+</ul>
+<p>No lock-in contracts. Most retail shops recover the cost within 30 days — recovering 3 extra sales at $100+ each pays for the automation.</p>
+
+<h2>Real Example</h2>
+<p>A boutique retail shop on King William Road in Unley was missing 10-15 calls per week while serving customers. After setting up missed call text-back, they recovered 7-8 of those calls per week — each worth $80-200 in sales. That is $560-1,600/week in recovered revenue against a $199/month system.</p>
+
+<h2>Start With a Website</h2>
+<p>If you do not have a website yet, that is step one. A $699 Starter site gets you on Google with your hours, location, and contact details. Add automation and SEO as you grow. <a href="/contact">Book a free chat</a> to see what would work for your shop. Browse all <a href="/services">services</a> or read our <a href="/website-cost-adelaide">website cost guide</a>.</p>`
+  },
+{
+    slug: "google-business-profile-adelaide-guide",
+    title: "Google Business Profile Adelaide: Complete Setup Guide (2026)",
+    excerpt:
+      "Google Business Profile is the #1 local SEO tool for Adelaide businesses. Step-by-step setup guide, optimisation tips, and how to get reviews that rank you higher.",
+    seoDescription: "Google Business Profile Adelaide setup guide: claim, optimise, get reviews, rank in map pack. The #1 free local SEO tool for Adelaide small businesses.",
+    date: "2026-06-18",
+    readTime: "8 min read",
+    category: "How-To",
+    content: `<p>Your Google Business Profile (GBP) is the single most important local SEO tool for your Adelaide business. It is what shows up in the Google Map Pack — the top 3 local results that appear above everything else. And it is completely free. This guide walks you through setting it up and optimising it properly.</p>
+
+<h2>Step 1: Claim Your Profile</h2>
+<p>Go to <a href="https://business.google.com">business.google.com</a> and search for your business name. If it already exists (Google auto-creates listings), claim ownership by verifying via postcard, phone, or email. If it does not exist, create a new listing.</p>
+
+<h2>Step 2: Fill Out Everything</h2>
+<p>Google rewards complete profiles. Fill out every single section:</p>
+<ul>
+  <li><strong>Business name:</strong> Use your real business name — do not keyword stuff</li>
+  <li><strong>Category:</strong> Choose the most specific category (e.g., "Plumber" not "Home Services")</li>
+  <li><strong>Address:</strong> Your physical address in Adelaide</li>
+  <li><strong>Service area:</strong> List all the suburbs you serve</li>
+  <li><strong>Hours:</strong> Accurate opening hours, including holiday hours</li>
+  <li><strong>Phone:</strong> Your business phone number</li>
+  <li><strong>Website:</strong> Link to your site — if you do not have one, see our <a href="/website-design-adelaide">website design</a> page (from $699)</li>
+  <li><strong>Description:</strong> 750 characters describing what you do, where, and why people should choose you</li>
+</ul>
+
+<h2>Step 3: Add Photos</h2>
+<p>Businesses with photos get 35% more clicks on their GBP. Add:</p>
+<ul>
+  <li>Logo and cover photo</li>
+  <li>Photos of your team or shopfront</li>
+  <li>Photos of your work (before/after for tradies, dishes for cafes, etc.)</li>
+  <li>Photos of your van, equipment, or workspace</li>
+</ul>
+<p>Keep adding new photos regularly — Google likes active profiles.</p>
+
+<h2>Step 4: List Your Services</h2>
+<p>Use the Services section to list every service you offer with descriptions and prices where possible. This helps Google match your profile to specific searches like "hot water system repair Adelaide" or "brunch Norwood."</p>
+
+<h2>Step 5: Get Reviews</h2>
+<p>Reviews are the #1 ranking factor for the Map Pack. Aim for 50+ reviews with 4.5+ stars. Here is how:</p>
+<ul>
+  <li>Send every happy customer a direct link to your review page</li>
+  <li>Ask within 24 hours of completing the job — while they are still happy</li>
+  <li>Respond to every review (positive and negative) within 24 hours</li>
+  <li>Never buy reviews — Google will catch you and penalise your ranking</li>
+</ul>
+<p>We set up automated review request systems as part of our <a href="/ai-automation-adelaide">automation services</a> — customers get an SMS 24 hours after their job, with a one-tap link to your review page. From $199/month.</p>
+
+<h2>Step 6: Post Updates</h2>
+<p>GBP has a posting feature — use it. Post updates about new services, special offers, or business news at least once a month. Google likes active profiles and posts show up in your profile when people find you.</p>
+
+<h2>Step 7: Monitor Insights</h2>
+<p>GBP gives you free analytics — how many people viewed your profile, how they found you (search vs maps), what actions they took (called, visited website, asked for directions). Check this monthly to see what keywords drive traffic.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+<ul>
+  <li><strong>Keyword stuffing your business name:</strong> "Adelaide Plumbing Services Hot Water Blocked Drains" — Google will penalise this</li>
+  <li><strong>Inconsistent NAP:</strong> Your Name, Address, and Phone must match exactly across your website, GBP, and all directories</li>
+  <li><strong>Ignoring negative reviews:</strong> Respond professionally to every review — potential customers read your responses</li>
+  <li><strong>Not listing service areas:</strong> If you serve Glenelg, Norwood, and Prospect, list all three as service areas</li>
+</ul>
+
+<h2>How We Help</h2>
+<p>We include Google Business Profile setup and optimisation in every <a href="/website-design-adelaide">website package</a> and as part of our <a href="/seo">SEO retainer</a> from $399/month. If you want it done properly without spending hours on it, <a href="/contact">book a free chat</a>. See all <a href="/services">services</a> or read our full <a href="/website-pricing">pricing</a>.</p>`
+  },
+{
+    slug: "adelaide-small-business-digital-checklist",
+    title: "Adelaide Small Business Digital Checklist: 15 Things to Fix in 2026",
+    excerpt:
+      "15 things every Adelaide small business should fix in 2026 — website, SEO, Google Business Profile, reviews, automation, social media, email, and more. Free checklist.",
+    seoDescription: "Adelaide small business digital checklist 2026: 15 things to fix — website, SEO, Google Business Profile, reviews, automation. Tick these off.",
+    date: "2026-06-18",
+    readTime: "9 min read",
+    category: "How-To",
+    content: `<p>Most Adelaide small businesses know they need to "do something digital" but do not know where to start. Here is a practical checklist of 15 things to fix in 2026, ordered from most impactful to nice-to-have. Work through them in order.</p>
+
+<h2>1. Get a Real Website</h2>
+<p>If you do not have a website, or yours looks like it was built in 2010, fix this first. A professional website from $699 — see our <a href="/website-pricing">pricing</a> and <a href="/website-design-adelaide">process</a>. Your website is your digital shopfront. It needs to load fast, work on mobile, and be found on Google.</p>
+
+<h2>2. Claim Your Google Business Profile</h2>
+<p>This is the #1 free local SEO tool. Claim your profile at business.google.com, fill out every section, add photos, list your services. This is what shows up in the Google Map Pack. Read our full <a href="/seo">SEO guide</a> for details.</p>
+
+<h2>3. Get 10 Google Reviews</h2>
+<p>Reviews are the top local ranking factor. Send every happy customer a direct link to your Google review page. Aim for 10 first, then 50, then 100. We set up automated review requests from $199/month — see our <a href="/ai-automation-adelaide">automation services</a>.</p>
+
+<h2>4. Make Your Website Mobile-First</h2>
+<p>80%+ of Adelaide searches are on phones. If your site does not work perfectly on mobile, Google penalises it. Every site we build is mobile-first by default.</p>
+
+<h2>5. Fix Your Title Tags</h2>
+<p>Every page needs a unique title tag that includes your service and suburb. "Plumber in Norwood | Your Business Name" not just "Home." This is basic SEO that most Adelaide businesses get wrong.</p>
+
+<h2>6. Create Service Pages</h2>
+<p>One page per service — not one "Services" page listing everything. A plumber needs separate pages for hot water, blocked drains, gas fitting, etc. Google ranks pages, not websites.</p>
+
+<h2>7. Add Suburb Pages</h2>
+<p>If you serve multiple Adelaide suburbs, create a page for each. "Plumber Norwood," "Plumber Glenelg," "Plumber Prospect" — each with local content. See how we do this on our <a href="/website-design-adelaide">website design</a> page.</p>
+
+<h2>8. Write Blog Posts</h2>
+<p>Blog posts answer the questions your customers are asking on Google. "How much does a hot water system cost in Adelaide?" "What causes low water pressure?" Each post targets a specific search and links back to your service pages. Our <a href="/seo">SEO retainer</a> includes 2-4 posts per month from $399.</p>
+
+<h2>9. Set Up Google Search Console</h2>
+<p>Free tool from Google that shows you exactly what searches bring people to your site, what pages Google has indexed, and any errors. Essential for understanding your SEO performance.</p>
+
+<h2>10. Get Local Citations</h2>
+<p>List your business on TrueLocal, Hotfrog, StartLocal, AussieWeb, and Bing Places. Same name, address, and phone number everywhere. Consistency matters.</p>
+
+<h2>11. Add Missed Call Text-Back</h2>
+<p>If you miss calls while working, an automated SMS goes out in 30 seconds acknowledging the call and asking what they need. Most Adelaide tradies recover 3-5 extra jobs per week. From $199/month — see <a href="/website-pricing">pricing</a>.</p>
+
+<h2>12. Automate Appointment Reminders</h2>
+<p>SMS reminders 24 hours and 2 hours before appointments. No-shows drop by 65%. For clinics, salons, and any appointment-based business, this pays for itself in one week.</p>
+
+<h2>13. Set Up Email Follow-Up</h2>
+<p>After a quote or enquiry, an automated sequence: Day 1 thank you, Day 3 check-in, Day 7 final touch. 35-50% conversion lift on cold enquiries. Part of our <a href="/ai-automation-adelaide">automation package</a>.</p>
+
+<h2>14. Check Your Website Speed</h2>
+<p>Google penalises slow sites. Test yours at pagespeed.web.dev — if it scores under 50 on mobile, you need a faster site. Our Next.js sites load in under 2 seconds.</p>
+
+<h2>15. Track Everything</h2>
+<p>Install Google Analytics (free), set up conversion tracking for calls and form submissions, and review monthly. You cannot improve what you do not measure.</p>
+
+<h2>Where to Start</h2>
+<p>If you are starting from scratch, the order is: website (1), Google Business Profile (2), reviews (3), then work down the list. If you want help with any or all of these, <a href="/contact">book a free chat</a>. We offer websites from $699, SEO from $399/month, and automation from $199/month. See all <a href="/services">services</a> or read our <a href="/website-cost-adelaide">website cost guide</a>.</p>`
   }
 ];

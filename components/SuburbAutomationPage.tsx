@@ -70,7 +70,7 @@ export default function SuburbAutomationPage({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "AI Adelaide",
-            url: `https://www.aiadelaide.com.au/ai-automation-${suburb.toLowerCase()}`,
+            url: `https://aiadelaide.com.au/ai-automation-${suburb.toLowerCase()}`,
             telephone: "+61871009788",
             email: "hello@aiadelaide.com.au",
             address: {
@@ -100,7 +100,7 @@ export default function SuburbAutomationPage({
             provider: {
               "@type": "LocalBusiness",
               name: "AI Adelaide",
-              url: "https://www.aiadelaide.com.au",
+              url: "https://aiadelaide.com.au",
             },
             areaServed: { "@type": "AdministrativeArea", name: `${suburb}, SA` },
             description: `Custom AI automation for ${suburb} tradies and small businesses — missed-call capture, quote follow-up, booking reminders, 24/7 AI receptionist.`,

@@ -102,12 +102,12 @@ const faqs = [
       {
         question: "What trades do you work with?",
         answer:
-          "Plumbers, electricians, builders, HVAC, painters, landscapers, and most service-based trades. If you're getting calls from customers and missing some of them, we can help.",
+          "Plumbers, electricians, builders, HVAC, painters, landscapers, allied health clinics, cafes, beauty salons, hairdressers, and retail shops. If you're getting calls from customers and missing some of them, we can help.",
       },
       {
         question: "Do you only work with tradies?",
         answer:
-          "Tradies are our main focus, but we also work with allied health clinics, small retail, and any local Adelaide business that relies on phone enquiries.",
+          "We work with tradies, allied health clinics, cafes, beauty salons, hairdressers, retail shops, and any local Adelaide business that relies on phone enquiries and online leads.",
       },
       {
         question: "I'm a one-man band — is this overkill?",
@@ -128,7 +128,7 @@ export default function FAQPage() {
             Common Questions, Straight Answers
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            No fluff. Just the questions we hear most often from Adelaide tradies and small businesses — answered plainly.
+            No fluff. Just the questions we hear most often from Adelaide small businesses — answered plainly.
           </p>
         </div>
       </section>
@@ -161,8 +161,8 @@ export default function FAQPage() {
             Book a free 15-minute call. We'll answer everything specific to your business and tell you exactly what we'd recommend.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="/contact" className="btn-primary px-8 py-4">
-              Book Free Audit <span aria-hidden>→</span>
+            <a href="/contact#send-message" className="btn-primary px-8 py-4">
+              Send a Message <span aria-hidden>→</span>
             </a>
             <a href="/services" className="btn-secondary px-8 py-4">
               See Our Services <span aria-hidden>→</span>

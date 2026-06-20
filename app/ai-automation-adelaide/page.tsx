@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "AI Automation Adelaide | Automate Admin, Capture Every Lead",
@@ -85,7 +86,7 @@ function LocalBusinessJsonLd() {
     name: "AI Adelaide",
     description:
       "AI Automation Adelaide helps local businesses automate lead capture, quote follow-up, scheduling, and admin. 24/7 coverage.",
-    url: "https://www.aiadelaide.com.au",
+    url: "https://aiadelaide.com.au",
     telephone: "+61871009788",
     email: "hello@aiadelaide.com.au",
     address: {
@@ -133,7 +134,7 @@ function ServiceJsonLd() {
     provider: {
       "@type": "LocalBusiness",
       name: "AI Adelaide",
-      url: "https://www.aiadelaide.com.au",
+      url: "https://aiadelaide.com.au",
     },
     areaServed: {
       "@type": "City",
@@ -168,6 +169,13 @@ export default function AIAutomationAdelaidePage() {
       <ServiceJsonLd />
 
       <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services" },
+            { label: "AI Automation Adelaide" },
+          ]}
+        />
         {/* ── Hero ──────────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6">
           <div className="panel-light grid-overlay-light p-8 md:p-12">

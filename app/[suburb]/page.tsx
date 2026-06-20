@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import suburbs from "@/data/suburbs.json";
 import { siteConfig, services, testimonials } from "@/lib/constants";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type Suburb = (typeof suburbs)[number];
 
@@ -22,12 +23,12 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   const suburb = getSuburb(params.suburb);
   if (!suburb) return {};
   return {
-    title: `AI Automation in ${suburb.name}, Adelaide | AI Adelaide`,
-    description: suburb.intro,
+    title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+    description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in. Call ${siteConfig.phone}.`,
     alternates: { canonical: `${siteConfig.url}/${suburb.slug}` },
     openGraph: {
-      title: `AI Automation in ${suburb.name}, Adelaide | AI Adelaide`,
-      description: suburb.intro,
+      title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+      description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
     },
   };
 }
@@ -35,28 +36,28 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
 function buildFaqs(suburb: Suburb) {
   return [
     {
-      question: `How does AI automation help a tradie in ${suburb.name}?`,
-      answer: `When you're on a job in ${suburb.name} and can't answer, the AI sends an SMS acknowledgement in 10–20 seconds, qualifies the call, and books a callback slot — all automatically. Details go straight into your CRM so when you're off the tools you have full context, not just a missed-call notification. Most ${suburb.name} tradies recover 3–5 extra jobs per week.`,
+      question: `How much does a website cost for a ${suburb.name} business?`,
+      answer: `Our Starter website is $699 for a 3-page site — perfect for getting online fast. The Business tier is $1,299 for 5-7 pages with blog and SEO foundation. The Growth tier is $2,499 for 10+ pages with suburb targeting and automation integrations. All prices are one-off, no lock-in. See our ${suburb.name} website pricing page for full details.`,
     },
     {
-      question: `What types of businesses in ${suburb.name} benefit most?`,
-      answer: `Tradies and owner-operators in ${suburb.name} see the fastest ROI — plumbers, electricians, builders, painters, and HVAC techs who miss 25–40% of calls while on-site. Allied health clinics (physio, chiro, dental) reduce no-shows from 20% to 7% with automated reminders. Cafes, restaurants, and retail capture after-hours bookings that would otherwise go to competitors.`,
+      question: `Can you help my ${suburb.name} business rank on Google?`,
+      answer: `Yes. We do local SEO for ${suburb.name} businesses — keyword research tied to your services and suburb, service pages that target buying intent, suburb pages, blog content answering real customer questions, and Google Search Console monitoring. SEO retainers start from $399/month. Most ${suburb.name} businesses see results within 2-4 months for local keywords.`,
     },
     {
-      question: `Can it handle after-hours and weekend calls from ${suburb.name} customers?`,
-      answer: `Yes — 24/7 including weekends and public holidays. Whether it's a ${suburb.name} homeowner with a burst pipe at 9pm or a Saturday brunch booking for Jetty Road, the AI qualifies urgency, books appointments, answers FAQs, and escalates genuine emergencies to your mobile. It uses an Australian accent and most callers don't realise they're talking to AI.`,
+      question: `What types of businesses in ${suburb.name} do you work with?`,
+      answer: `We work with ${suburb.name} tradies (plumbers, electricians, builders, HVAC), allied health clinics (physio, chiro, dental), cafes and restaurants, retail shops, beauty salons, professional services, and automotive. If you're a small business in ${suburb.name} that needs a website, SEO or automation, we can help.`,
     },
     {
-      question: `Will it integrate with ServiceM8, Tradify, or my existing tools?`,
-      answer: `Almost certainly. We connect with ServiceM8, Tradify, Jobber, Xero, MYOB, Google Calendar, Calendly, Cliniko, and most CRMs and job management platforms. If your tool has an API or webhook we can usually integrate within 1–2 days. You keep using the tools you already know — we layer automation on top.`,
+      question: `How quickly can you build a website for my ${suburb.name} business?`,
+      answer: `Starter websites are live in 48 hours. Business tier takes 5-7 days. Growth tier takes 10-14 days. We handle all copywriting, design and setup — you just tell us about your business and review the result.`,
     },
     {
-      question: `How quickly can I get set up and see results?`,
-      answer: `Setup takes 2–5 business days. Most ${suburb.name} tradies see measurable improvement within the first week — response times drop from hours to under 30 seconds, missed-call recovery jumps from ~28% to ~67%, and recovered revenue starts flowing immediately. Most businesses recover their setup cost within the first 30 days.`,
+      question: `Do you offer automation for ${suburb.name} businesses?`,
+      answer: `Yes. We set up missed call text-back systems, AI receptionist, quote follow-up sequences, appointment reminders and review automation for ${suburb.name} businesses. Automation starts from $199/month. Most ${suburb.name} tradies recover 3-5 extra jobs per week.`,
     },
     {
       question: `What does it cost for a ${suburb.name} business?`,
-      answer: `Entry-level automation (missed-call SMS or basic AI receptionist) starts from $99/month. A comprehensive setup with AI receptionist, quote follow-up, scheduling, and ongoing improvements runs $299–699/month. No lock-in contracts. Most businesses recover their investment within 30 days — recovering 3 extra jobs at $350 each = $1,050/week against a $99–150/mo system.`,
+      answer: `Websites from $699 one-off. SEO from $399/month. Automation from $199/month. No lock-in contracts. Most ${suburb.name} businesses recover their investment within 30 days — a $699 website that brings in one extra $800 job has already paid for itself.`,
     },
   ];
 }
@@ -145,28 +146,38 @@ export default function SuburbPage({ params }: SuburbPageProps) {
       />
 
       <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Locations", href: "/locations" },
+            { label: suburb.name },
+          ]}
+        />
         {/* ── Hero ──────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6">
-          <div className="panel-light grid-overlay-light p-8 md:p-12">
-            <div className="mb-6">
-              <span className="eyebrow-light">{suburb.name} AI automation services</span>
-            </div>
-            <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-              AI Automation for {suburb.name} Small Businesses &amp; Tradies
-            </h1>
-            <p className="mb-3 max-w-3xl text-lg font-medium text-[#1E3A5F] md:text-xl">
-              {suburb.heroLine}
-            </p>
-            <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-              {suburb.intro} <strong>We set up the automation in 2–5 business days — Adelaide-based, no lock-in contracts.</strong>
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary px-8 py-4">
-                Book your free {suburb.name} audit <span aria-hidden>→</span>
-              </Link>
+          <div className="panel-light grid-overlay-light relative overflow-hidden p-8 md:p-12">
+            <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${suburb.heroColor || "from-accent/15 via-electric/10 to-accent/15"}`} />
+            <div className="relative">
+              <div className="mb-6">
+                <span className="eyebrow-light">{suburb.name} websites, SEO & automation</span>
+              </div>
+              <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
+                Websites, SEO &amp; AI Automation for {suburb.name} Businesses
+              </h1>
+              <p className="mb-3 max-w-3xl text-lg font-medium text-[#1E3A5F] md:text-xl">
+                {suburb.heroLine}
+              </p>
+              <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
+                {suburb.intro} <strong>Websites from $699, SEO from $399/month, automation from $199/month — Adelaide-based, no lock-in contracts.</strong>
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link href="/contact" className="btn-primary px-8 py-4">
+                  Book Free Chat <span aria-hidden>→</span>
+                </Link>
               <a href={siteConfig.phoneHref} className="btn-outline-light px-8 py-4">
                 {siteConfig.phone}
               </a>
+              </div>
             </div>
           </div>
         </section>
@@ -353,13 +364,13 @@ export default function SuburbPage({ params }: SuburbPageProps) {
         <section className="max-w-container mx-auto px-6 pt-12 pb-2 text-center md:pt-16">
           <div className="panel-light p-8 md:p-10">
             <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-              Ready to stop missing jobs in {suburb.name}?
+              Ready to grow your {suburb.name} business?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-              Book a free 15-minute audit. We&apos;ll map your call flow, show you where jobs are leaking, and give you a clear automation plan — no obligation.
+              Book a free 15-minute chat. We'll look at your website, your Google ranking, and your admin bottlenecks — then tell you exactly what we'd recommend. No obligation, no pressure.
             </p>
             <Link href="/contact" className="btn-primary inline-flex px-8 py-4">
-              Book your free {suburb.name} audit <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
             <p className="mt-4 text-body-mobile text-slate-600 md:text-body">
               Or call{" "}

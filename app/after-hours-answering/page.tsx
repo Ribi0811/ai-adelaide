@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "After-Hours AI Answering Adelaide | Never Miss a Late Job",
@@ -35,7 +36,7 @@ export default function AfterHoursAnsweringPage() {
       {
         "@type": "LocalBusiness",
         name: "AI Adelaide",
-        url: "https://aiadelaide.com.au/after-hours-answering",
+        url: `${siteConfig.url}/after-hours-answering`,
         telephone: "+61871009788",
         address: {
           "@type": "PostalAddress",
@@ -90,10 +91,10 @@ export default function AfterHoursAnsweringPage() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">
-              Book Free Demo <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
             <Link href="/contact" className="btn-secondary px-8 py-4">
-              Get Started <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
           </div>
         </div>
@@ -141,7 +142,7 @@ export default function AfterHoursAnsweringPage() {
             </p>
             <div className="mt-6">
               <Link href="/contact" className="btn-primary px-8 py-4">
-                Book Free Demo <span aria-hidden>→</span>
+                Book Free Chat <span aria-hidden>→</span>
               </Link>
             </div>
           </div>

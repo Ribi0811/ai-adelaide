@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist Adelaide | 24/7 Phone Answering for Local Businesses",
+  title: "AI Receptionist Adelaide | Part of Our AI Automation Service",
   description:
-    "Never miss another call. Your AI receptionist answers 24/7, books appointments, and handles customer enquiries. Local Adelaide setup. Call 08 7100 9788.",
+    "AI receptionist for Adelaide small businesses. Part of our AI automation service — answers 24/7, captures leads, books appointments, and texts you the summary. From $199/mo.",
   alternates: {
     canonical: "/ai-receptionist-adelaide",
   },
@@ -16,14 +16,22 @@ export default function AIReceptionistAdelaidePage() {
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
-            <span className="eyebrow-light">AI Services</span>
+            <span className="eyebrow-light">AI Automation Feature</span>
           </div>
           <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-            Stop Missing Calls. Your AI Receptionist Answers 24/7.
+            AI Receptionist for Adelaide Small Businesses
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Never miss another call. Your AI receptionist answers 24/7, books appointments, and handles customer enquiries. Local Adelaide setup. Call 08 7100 9788.
+            An AI receptionist is one feature of our AI Automation service. It answers your phone 24/7, books appointments, captures every lead, and sends you the full summary — so you never miss a job. From $199/month as part of the full automation stack. Adelaide-based setup, no lock-in.
           </p>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link href="/ai-automation-adelaide" className="btn-primary px-6 py-3">
+              See Full AI Automation Service →
+            </Link>
+            <Link href="/website-pricing" className="btn-secondary px-6 py-3">
+              See Website Pricing
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -50,16 +58,16 @@ export default function AIReceptionistAdelaidePage() {
             Why Adelaide Businesses Are Switching to AI
           </h2>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Here's the reality: you're probably missing 30-40% of your phone calls. Maybe more if you're a tradie working onsite or a clinic with limited front desk hours.
+            Here&apos;s the reality: most Adelaide small businesses are missing 30-40% of their phone calls. Maybe more if you&apos;re a tradie working onsite or a clinic with limited front desk hours.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
             Every missed call is a potential customer calling your competitor instead.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            A local plumber in Glenelg told us he used to miss about 15 calls a week while on jobs. That's 60 potential jobs a month, gone. Now his AI receptionist answers everything, books the urgent ones straight into his calendar, and takes details for quote callbacks.
+            A local plumber in Glenelg told us he used to miss about 15 calls a week while on jobs. That&apos;s 60 potential jobs a month, gone. Now his AI receptionist answers everything, books the urgent ones straight into his calendar, and takes details for quote callbacks.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            His callback rate went from "whenever I remember" to "within 2 hours, every time."
+            His callback rate went from &ldquo;whenever I remember&rdquo; to &ldquo;within 2 hours, every time.&rdquo;
           </p>
         </div>
       </section>
@@ -72,15 +80,15 @@ export default function AIReceptionistAdelaidePage() {
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Answer Calls Instantly</h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No hold music. No "please wait for the next available operator." Your customer calls, your AI picks up on the first or second ring.
+            No hold music. No &ldquo;please wait for the next available operator.&rdquo; Your customer calls, your AI picks up on the first or second ring.
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Book Appointments Directly</h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Your AI receptionist connects to your calendar — whether that's Google Calendar, Calendly, or your booking software. It finds available slots and books them in real-time.
+            Your AI receptionist connects to your calendar — whether that&apos;s Google Calendar, Calendly, or your booking software. It finds available slots and books them in real-time.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            For tradies, it can ask the right questions: "Is this an emergency?" "What's the job address?" "Do you have photos you can send?"
+            For tradies, it can ask the right questions: &ldquo;Is this an emergency?&rdquo; &ldquo;What&apos;s the job address?&rdquo; &ldquo;Do you have photos you can send?&rdquo;
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Handle After-Hours Enquiries</h3>
@@ -104,7 +112,7 @@ export default function AIReceptionistAdelaidePage() {
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Answer FAQs</h3>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            "How much do you charge?" "What suburbs do you service?" "Do you offer free quotes?"
+            &ldquo;How much do you charge?&rdquo; &ldquo;What suburbs do you service?&rdquo; &ldquo;Do you offer free quotes?&rdquo;
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
             Your AI receptionist knows all your standard answers. It sounds consistent every time, because it is consistent.
@@ -188,17 +196,15 @@ export default function AIReceptionistAdelaidePage() {
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 3: You Start Answering Every Call</h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Your phone number stays the same. Your customers won't know it's AI unless you tell them. You just start getting fewer missed calls and more booked jobs.
+            Your phone number stays the same. Your customers won&apos;t know it&apos;s AI unless you tell them. You just start getting fewer missed calls and more booked jobs.
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 4: We Tweak as Needed</h3>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            After a week or two, we check in. Are there questions the AI isn't handling well? Do you need to add a new service? We adjust it as your business changes.
+            After a week or two, we check in. Are there questions the AI isn&apos;t handling well? Do you need to add a new service? We adjust it as your business changes.
           </p>
         </div>
       </section>
-
-
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
@@ -210,18 +216,18 @@ export default function AIReceptionistAdelaidePage() {
             Will it sound robotic?
           </h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No. Modern AI voices are genuinely good. You can choose an Australian accent (Adelaide-specific if you want), adjust the speaking speed, and set the tone to match your brand. Most callers don't realise they're talking to AI.
+            No. Modern AI voices are genuinely good. You can choose an Australian accent (Adelaide-specific if you want), adjust the speaking speed, and set the tone to match your brand. Most callers don&apos;t realise they&apos;re talking to AI.
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            What if the AI doesn't understand something?
+            What if the AI doesn&apos;t understand something?
           </h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            It's trained to know when it's stuck. If a caller asks something outside its knowledge, it can:
+            It&apos;s trained to know when it&apos;s stuck. If a caller asks something outside its knowledge, it can:
           </p>
           <ul className="list-disc pl-6 mb-4 space-y-2 text-body-mobile text-slate-700 md:text-body">
             <li>Take a detailed message for you to callback</li>
-            <li>Transfer to a human if it's urgent</li>
+            <li>Transfer to a human if it&apos;s urgent</li>
             <li>Politely explain the limits and offer alternatives</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
@@ -239,7 +245,7 @@ export default function AIReceptionistAdelaidePage() {
             Do I need to keep my existing phone number?
           </h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No problem. You keep your current number. We just redirect calls to the AI system, or integrate it with your existing phone setup. Your customers won't notice any difference.
+            No problem. You keep your current number. We just redirect calls to the AI system, or integrate it with your existing phone setup. Your customers won&apos;t notice any difference.
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
@@ -253,7 +259,7 @@ export default function AIReceptionistAdelaidePage() {
             Can it speak languages other than English?
           </h3>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Yes. We can set up multi-language support. Common requests in Adelaide include Mandarin, Vietnamese, Greek, and Italian. The AI can detect the caller's language or ask them to choose at the start.
+            Yes. We can set up multi-language support. Common requests in Adelaide include Mandarin, Vietnamese, Greek, and Italian. The AI can detect the caller&apos;s language or ask them to choose at the start.
           </p>
 
           <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
@@ -278,13 +284,18 @@ export default function AIReceptionistAdelaidePage() {
             Ready to Stop Missing Calls?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free 15-minute audit. We'll look at your current call setup, show you what you're probably missing, and give you a clear quote for getting it fixed.
+            The AI receptionist is one part of our full AI automation stack. Book a free chat and we&apos;ll show you the full setup — websites, SEO, and automation — with a fixed quote for your business.
           </p>
-          <Link href="/contact" className="btn-primary px-8 py-4">
-            Book your free call audit <span aria-hidden>→</span>
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="/ai-automation-adelaide" className="btn-primary px-8 py-4">
+              See AI Automation Service <span aria-hidden>→</span>
+            </Link>
+            <Link href="/contact" className="btn-secondary px-8 py-4">
+              Book Free Chat
+            </Link>
+          </div>
           <p className="mt-4 text-body-mobile text-slate-600 md:text-body">
-            Or call 08 7100 9788
+            Or call 08 7100 9788 to hear it live.
           </p>
         </div>
       </section>

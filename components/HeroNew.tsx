@@ -53,7 +53,7 @@ export default function HeroNew() {
           {/* CTAs */}
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <Link href="/contact" className="btn-primary px-8 py-4">
-              Book Your Free Audit <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
             <Link href="#how-it-works" className="btn-secondary px-8 py-4">
               See How It Works

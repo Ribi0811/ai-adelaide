@@ -61,7 +61,7 @@ export default function PricingSection() {
 
         <div className="mt-8 text-center">
           <Link href="/audit" className="btn-primary px-8 py-4">
-            Get Free Missed Call Audit <span aria-hidden>→</span>
+            Book Free Chat <span aria-hidden>→</span>
           </Link>
         </div>
       </div>

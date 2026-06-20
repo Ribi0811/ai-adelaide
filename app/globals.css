@@ -175,6 +175,85 @@
   }
 }
 
+/* ─── Home V2 overrides (orange accent + dark theme) ─────────── */
+
+.home-v2-wrapper {
+  /* Override accent to orange for navbar/footer consistency */
+}
+
+.home-v2-wrapper .btn-primary {
+  @apply bg-[#FF6B35] text-white hover:bg-[#E55A2B];
+}
+
+.home-v2-wrapper nav .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #FF6B35, #3B82F6) !important;
+}
+
+.home-v2-wrapper nav .bg-accent {
+  background-color: #FF6B35 !important;
+}
+
+.home-v2-wrapper nav .text-accent {
+  color: #FF6B35 !important;
+}
+
+.home-v2-wrapper nav .border-accent\/30 {
+  border-color: rgba(255, 107, 53, 0.3) !important;
+}
+
+.home-v2-wrapper nav .bg-accent\/10 {
+  background-color: rgba(255, 107, 53, 0.1) !important;
+}
+
+.home-v2-wrapper nav .animate-\[pulseGlow_2\.5s_ease-in-out_infinite\] {
+  animation: pulseGlowOrange 2.5s ease-in-out infinite;
+}
+
+.home-v2-wrapper footer .bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #FF6B35, #3B82F6) !important;
+}
+
+.home-v2-wrapper footer .text-accent {
+  color: #FF6B35 !important;
+}
+
+.home-v2-wrapper footer .border-accent\/25 {
+  border-color: rgba(255, 107, 53, 0.25) !important;
+}
+
+.home-v2-wrapper footer .bg-accent\/10 {
+  background-color: rgba(255, 107, 53, 0.1) !important;
+}
+
+.home-v2-wrapper footer .bg-accent {
+  background-color: #FF6B35 !important;
+}
+
+.home-v2-wrapper .panel-light {
+  @apply border-slate-200 bg-white shadow-sm;
+}
+
+.home-v2-wrapper .panel-light-soft {
+  @apply border-slate-100 bg-slate-50;
+}
+
+.home-v2-wrapper .focus\:border-accent\/40:focus {
+  border-color: rgba(255, 107, 53, 0.4) !important;
+}
+
+.home-v2-wrapper .focus\:shadow-\[0_0_0_4px_rgba\(94\,242\,214\,0\.12\)\]:focus {
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12) !important;
+}
+
+@keyframes pulseGlowOrange {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(255, 107, 53, 0.12);
+  }
+}
+
 /* ─── Keyframes ───────────────────────────────────────────────── */
 
 @keyframes scanLine {

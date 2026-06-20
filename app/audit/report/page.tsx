@@ -46,7 +46,7 @@ export default function AuditReportPage() {
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(24);
       doc.setTextColor(0, 184, 148);
-      doc.text('AI Adelaide - Automation Readiness Report', 52, y);
+      doc.text('AI Adelaide - Digital Health Report', 52, y);
       y += 34;
 
       write(`Generated: ${new Date().toLocaleDateString('en-AU')}`, 10, [71, 85, 105], 8);
@@ -103,7 +103,7 @@ export default function AuditReportPage() {
         <section className="panel-light p-6 sm:p-8">
         <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Generate Your Full PDF Report</h1>
         <p className="mt-3 text-sm text-slate-700">
-          Thanks for purchasing the detailed audit report. Click below to generate and download your personalised PDF.
+          Thanks for purchasing the detailed digital health report. Click below to generate and download your personalised PDF covering websites, SEO, and AI automation for your Adelaide business.
         </p>
 
         <div className="mt-5 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
@@ -136,10 +136,10 @@ export default function AuditReportPage() {
 
         <div className="mt-6 rounded-2xl border border-[#00D4AA]/30 bg-[#00D4AA]/10 p-4">
           <p className="text-sm text-slate-800">
-            Want help implementing this roadmap? Book a free chat and we can scope your next best automation win.
+            Want help implementing this roadmap? Book a free chat and we can scope your next website, SEO, or AI automation win.
           </p>
           <Link href="/contact" className="btn-primary mt-4 inline-flex w-full justify-center">
-            Book Free 15-Min Chat →
+            Book Free Chat →
           </Link>
         </div>
       </section>

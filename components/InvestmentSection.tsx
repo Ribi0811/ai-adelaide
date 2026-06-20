@@ -83,7 +83,7 @@ export default function InvestmentSection() {
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link href="/contact" className="btn-primary px-6 py-3">
-                  Book Your Free Audit <span aria-hidden>→</span>
+                  Book Free Chat <span aria-hidden>→</span>
                 </Link>
                 <a
                   href="tel:+61871009788"

@@ -1,26 +1,41 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import Hero from "@/components/Hero";
-import ResultsStrip from "@/components/ResultsStrip";
-import LostLeadsCalculator from "@/components/LostLeadsCalculator";
-import Problem from "@/components/Problem";
-import BeforeAfterCase from "@/components/BeforeAfterCase";
-import OfferPath from "@/components/OfferPath";
-
-import WhatWeBuild from "@/components/WhatWeBuild";
-import WhyUs from "@/components/WhyUs";
-
-import FooterCTA from "@/components/FooterCTA";
 import { siteConfig } from "@/lib/constants";
+import ContactForm from "@/components/ContactForm";
+import HomeV2Hero from "@/components/home-v2/Hero";
+import HomeV2Stats from "@/components/home-v2/Stats";
+import HomeV2Services from "@/components/home-v2/Services";
+import HomeV2Problem from "@/components/home-v2/Problem";
+import HomeV2Process from "@/components/home-v2/Process";
+import HomeV2Proof from "@/components/home-v2/Proof";
+import HomeV2Pricing from "@/components/home-v2/Pricing";
+import HomeV2CTA from "@/components/home-v2/CTA";
 
 export const metadata: Metadata = {
-  title: "AI Adelaide — AI Receptionist & Automation Services for Adelaide Businesses",
+  title: "AI Adelaide | AI-Powered Websites, SEO & AI Automation for Adelaide Businesses",
   description:
-    "AI Adelaide helps Adelaide businesses never miss a call. AI receptionist, missed call text-back, and workflow automation. 24/7 coverage, Adelaide-based support. Call (08) 7100 9788.",
+    "AI Adelaide builds AI-powered websites from $699, AI-driven local SEO from $399/mo, and AI automation (receptionist, missed call text-back, quote follow-ups) from $199/mo. Faster builds, smarter SEO, 24/7 lead capture. Book a free chat.",
+  keywords: [
+    "AI Adelaide",
+    "AI websites Adelaide",
+    "AI SEO Adelaide",
+    "AI automation Adelaide",
+    "AI receptionist Adelaide",
+    "website design Adelaide",
+    "affordable websites Adelaide",
+    "small business websites Adelaide",
+    "local SEO Adelaide",
+    "AI-powered websites",
+    "AI-driven SEO",
+    "small business automation Adelaide",
+  ],
+  alternates: {
+    canonical: "/",
+  },
 };
 
-export default function Home() {
+export default function HomeV2() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -29,9 +44,20 @@ export default function Home() {
         "@id": `${siteConfig.url}#organization`,
         name: siteConfig.name,
         url: siteConfig.url,
-        description: siteConfig.description,
+        description:
+          "AI Adelaide builds AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses. Websites from $699, SEO from $399/month, AI automation from $199/month.",
         email: siteConfig.email,
         areaServed: "Adelaide",
+        knowsAbout: [
+          "AI-powered website design",
+          "AI-driven local SEO",
+          "AI automation",
+          "AI receptionist",
+          "missed call text-back",
+          "quote follow-up automation",
+          "Google Business Profile optimisation",
+          "local search marketing",
+        ],
       },
       {
         "@type": "WebSite",
@@ -46,20 +72,33 @@ export default function Home() {
       {
         "@type": "LocalBusiness",
         "@id": `${siteConfig.url}#localbusiness`,
-        name: siteConfig.name,
-        description: "AI receptionist for Adelaide tradies.",
+        name: "AI Adelaide",
+        description:
+          "AI Adelaide builds AI-powered websites from $699, AI-driven local SEO from $399/month, and AI automation (AI receptionist, missed call text-back, quote follow-ups) from $199/month for Adelaide small businesses.",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Adelaide",
           addressRegion: "SA",
           postalCode: "5000",
-          streetAddress: "Adelaide SA",
+          streetAddress: "5 Peel St",
           addressCountry: "AU",
         },
         areaServed: "Adelaide",
         url: siteConfig.url,
         telephone: "+61871009788",
-        serviceType: ["AI Receptionist", "Missed Call Handling"],
+        priceRange: "$$",
+        serviceType: [
+          "AI-Powered Website Design",
+          "AI-Driven Local SEO",
+          "AI Automation",
+          "AI Receptionist",
+        ],
+        knowsAbout: [
+          "AI-powered website design",
+          "AI-driven local SEO",
+          "AI automation",
+          "AI receptionist",
+        ],
       },
     ],
   };
@@ -67,87 +106,91 @@ export default function Home() {
   return (
     <>
       <Script
-        id="home-schema"
+        id="home-v2-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Hero — carousel with 3 slides */}
-      <Hero />
+      {/* Hero — bold dark section with gradient */}
+      <HomeV2Hero />
 
-      {/* AI Readiness CTA */}
-      <section className="section-shell bg-[linear-gradient(180deg,#f8fcff_0%,#eef8f7_100%)] py-8 md:py-12">
+      {/* Stats bar — full-bleed dark continuation */}
+      <HomeV2Stats />
+
+      {/* Services — three pillars with visual cards */}
+      <HomeV2Services />
+
+      {/* Problem — pain points with bold contrast */}
+      <HomeV2Problem />
+
+      {/* Process — how it works, numbered steps */}
+      <HomeV2Process />
+
+      {/* Proof — testimonials + case studies */}
+      <HomeV2Proof />
+
+      {/* Pricing — quick glance */}
+      <HomeV2Pricing />
+
+      {/* Contact form section */}
+      <section id="send-message" className="bg-white py-20 md:py-28">
         <div className="max-w-container mx-auto px-6">
-          <div className="rounded-[32px] border border-[#cdebe4] bg-white/90 p-8 shadow-[0_20px_60px_rgba(15,29,43,0.08)] md:p-10">
-            <div className="grid gap-6 md:grid-cols-[1.25fr_0.75fr] md:items-center">
-              <div>
-                <span className="inline-flex rounded-full border border-[#bfeee6] bg-[#ecfffb] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#00b899]">
-                  Free AI Readiness Quiz
-                </span>
-                <h2 className="mt-4 text-h2-mobile text-slate-950 md:text-h2">
-                  Not sure where to start?
-                </h2>
-                <p className="mt-4 max-w-2xl text-body-mobile leading-7 text-slate-700 md:text-body">
-                  Take our free AI Readiness Quiz in 5 minutes and get your personalised score. It’s a simple way to see where your business stands before investing in automation or an AI receptionist.
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
+            <div>
+              <span className="inline-block text-sm font-semibold uppercase tracking-widest text-[#FF6B35]">
+                Send us a message
+              </span>
+              <h2 className="mb-4 mt-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+                Prefer to message instead of call?
+              </h2>
+              <p className="mb-4 text-lg text-slate-600">
+                Fill in the form and we&apos;ll get back to you within <strong>2 business hours</strong>. No phone call required, no pressure, no spam. Tell us about your business and what you&apos;re trying to figure out — we&apos;ll send a useful reply.
+              </p>
+              <p className="mb-6 text-lg text-slate-600">
+                Browsing at 11pm? Send a message now and we&apos;ll reply in the morning.
+              </p>
+              <div className="space-y-3">
+                {[
+                  ["Reply within 2 business hours", "usually faster"],
+                  ["No phone call required", "reply by email"],
+                  ["No pressure", "useful reply whether you book or not"],
+                  ["Fixed quote on the spot", "no back-and-forth"],
+                ].map(([title, sub]) => (
+                  <div key={title} className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF6B35]/10 text-sm text-[#FF6B35]">
+                      ✓
+                    </span>
+                    <p className="text-base text-slate-900">
+                      <strong>{title}</strong> — {sub}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-8 border-t border-slate-200 pt-6 text-sm text-slate-500">
+                <p>
+                  Or if you&apos;d rather call:{" "}
+                  <a href={siteConfig.phoneHref} className="font-semibold text-slate-900 underline hover:text-[#FF6B35]">
+                    {siteConfig.phone}
+                  </a>{" "}
+                  (Adelaide hours, Mon-Fri)
+                </p>
+                <p className="mt-1">
+                  Or email:{" "}
+                  <a href={`mailto:${siteConfig.email}`} className="font-semibold text-slate-900 underline hover:text-[#FF6B35]">
+                    {siteConfig.email}
+                  </a>
                 </p>
               </div>
-
-              <div className="flex flex-col gap-3 md:items-end">
-                <Link
-                  href="/tools/ai-readiness-calculator"
-                  className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-[#0B1929] transition hover:bg-accent-hover"
-                >
-                  Take the Free AI Readiness Quiz <span aria-hidden className="ml-2">→</span>
-                </Link>
-                <p className="text-sm text-slate-600 md:max-w-xs md:text-right">
-                  Get a clear score, instant tier result, and tailored next-step guidance.
-                </p>
-              </div>
+            </div>
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+              <ContactForm />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Results strip — stats bar */}
-      <ResultsStrip />
-
-      {/* Lost Leads Calculator */}
-      <LostLeadsCalculator compact />
-
-      {/* Problem — pain points */}
-      <Problem />
-
-      {/* Before/After case study */}
-      <BeforeAfterCase />
-
-      {/* Offer Path — audit → strategy → build → support */}
-      <OfferPath />
-
-      {/* What We Build — practical systems */}
-      <WhatWeBuild />
-
-      {/* Why Us — trust signals */}
-      <WhyUs />
-
-      {/* Footer CTA */}
-      <FooterCTA />
-
       {/* Demo CTA */}
-      <section className="section-shell bg-bgPrimary py-section-mobile md:py-section">
-        <div className="max-w-container mx-auto px-6">
-          <div className="panel-light p-8 md:p-10 text-center">
-            <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-              Hear it yourself — call our demo line
-            </h2>
-            <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-700 md:text-body">
-              Want to hear how the AI receptionist sounds? Call <strong>(08) 7100 9788</strong> anytime — it&apos;s live 24/7. Ask about pricing, booking a job, or anything else. See how it handles real conversations.
-            </p>
-            <a href="tel:+61871009788" className="btn-primary inline-flex px-8 py-4">
-              Call Demo Line Now <span aria-hidden>→</span>
-            </a>
-          </div>
-        </div>
-      </section>
+      <HomeV2CTA />
     </>
   );
 }

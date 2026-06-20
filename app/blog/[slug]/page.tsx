@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts } from "@/data/posts";
 import { siteConfig } from "@/lib/constants";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type PageProps = {
   params: {
@@ -116,6 +117,13 @@ export default function BlogPostPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: post.title },
+        ]}
       />
 
       <section className="max-w-container mx-auto px-6">

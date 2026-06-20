@@ -65,7 +65,7 @@ export default function HowItWorksNew() {
 
         <div className="mt-12 text-center">
           <a href="/contact" className="btn-primary px-8 py-4">
-            Book Your $247 Audit <span aria-hidden>→</span>
+            Book Free Chat <span aria-hidden>→</span>
           </a>
         </div>
       </div>

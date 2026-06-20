@@ -169,24 +169,26 @@ export default function ContactForm() {
             onChange={(e) => setForm((prev) => ({ ...prev, service: e.target.value }))}
             className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none ring-0 transition focus:border-accent/40 focus:shadow-[0_0_0_4px_rgba(94,242,214,0.12)]"
           >
-            <option value="">Select an option</option>
-            <option value="missed-calls">Missed call follow-up / lead capture</option>
-            <option value="admin">Admin / reminders / workflows</option>
-            <option value="bookkeeping">Bookkeeping prep automation</option>
-            <option value="audit">Efficiency Audit (Free)</option>
-            <option value="other">Something else</option>
+            <option value="">Select what you need</option>
+            <option value="website">New website or redesign</option>
+            <option value="seo">Local SEO — rank on Google</option>
+            <option value="automation">AI Automation — receptionist, missed calls, follow-ups</option>
+            <option value="website-seo">Website + SEO together</option>
+            <option value="all-three">Website + SEO + AI Automation (full stack)</option>
+            <option value="audit">Free Digital Health Check (audit)</option>
+            <option value="other">Not sure yet — just want a chat</option>
           </select>
         </label>
 
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-slate-700">What is the biggest bottleneck right now? *</span>
+          <span className="mb-2 block text-sm font-medium text-slate-700">Tell us about your business — what do you do and what's not working? *</span>
           <textarea
             required
             rows={5}
             value={form.message}
             onChange={(e) => setForm((prev) => ({ ...prev, message: e.target.value }))}
             className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none ring-0 transition focus:border-accent/40 focus:shadow-[0_0_0_4px_rgba(94,242,214,0.12)]"
-            placeholder="Example: We miss calls while on-site and lose leads because we reply too late."
+            placeholder="Example: I'm a plumber in Norwood. I don't have a website and I'm missing calls while on jobs. I want to rank on Google and capture more leads."
           />
         </label>
 

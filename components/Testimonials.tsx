@@ -1,58 +1,72 @@
-"use client";
-
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import { testimonials } from "@/lib/constants";
 
-export default function Testimonials() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+type TestimonialsProps = {
+  /** Filter by industry. If omitted, shows the first 3. */
+  industry?: string;
+  /** Show 2 or 3 testimonials (default 3). */
+  count?: number;
+  /** Optional heading override. */
+  heading?: string;
+  /** Optional eyebrow text. */
+  eyebrow?: string;
+  /** Optional subheadline. */
+  subheadline?: string;
+};
+
+export default function Testimonials({
+  industry,
+  count = 3,
+  heading = "What Adelaide businesses say",
+  eyebrow = "Real results",
+  subheadline = "From tradies to clinics to cafes — see what our clients say about their new website, SEO, and automation.",
+}: TestimonialsProps) {
+  const filtered = industry
+    ? testimonials.filter((t) => t.industry === industry)
+    : testimonials;
+
+  const items = filtered.length > 0 ? filtered.slice(0, count) : testimonials.slice(0, count);
 
   return (
     <section className="section-shell bg-bgSecondary py-section-mobile md:py-section">
       <div className="max-w-container mx-auto px-6">
         <div className="mb-6 text-center">
-          <span className="eyebrow">Client outcomes</span>
+          <span className="eyebrow">{eyebrow}</span>
         </div>
+
         <h2 className="mb-4 text-center text-h2-mobile text-textPrimary md:text-h2">
-          Real businesses. Real admin pain gone.
+          {heading}
         </h2>
+
         <p className="mx-auto mb-12 max-w-2xl text-center text-body-mobile text-textSecondary md:text-body">
-          Small business owners don&apos;t care about AI buzzwords. They care
-          about fewer missed leads, less admin, and calmer evenings.
+          {subheadline}
         </p>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.name}
-              ref={index === 0 ? ref : undefined}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="brand-card relative flex h-full flex-col overflow-hidden p-7 md:p-8"
+        <div className={`grid gap-6 ${count === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}`}>
+          {items.map((t, index) => (
+            <figure
+              key={`${t.name}-${index}`}
+              className="brand-card flex h-full flex-col p-6 md:p-8"
             >
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/80 to-transparent" />
-              <div className="mb-5 flex flex-wrap items-center gap-2">
-                <span className="rounded-full border border-slate-200/80 bg-white/90 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-textSecondary">
-                  Customer note
-                </span>
-                <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
-                  Verified outcome
-                </span>
+              <div className="mb-4 text-3xl text-accent" aria-hidden>
+                &ldquo;
               </div>
-              <p className="mb-6 flex-1 text-body-mobile italic text-textPrimary md:text-body">
-                &ldquo;{testimonial.quote}&rdquo;
-              </p>
-              <p className="text-body font-semibold text-textPrimary">
-                {testimonial.name}
-              </p>
-              <p className="mt-1 text-sm text-textSecondary">
-                {testimonial.role}, {testimonial.location}
-              </p>
-            </motion.div>
+              <blockquote
+                className="flex-1 text-body-mobile text-textPrimary md:text-body"
+                dangerouslySetInnerHTML={{ __html: t.quote }}
+              />
+              <figcaption className="mt-6 border-t border-slate-200/80 pt-4">
+                <p className="font-semibold text-textPrimary">{t.name}</p>
+                <p className="text-sm text-textSecondary">
+                  {t.role} &middot; {t.location}
+                </p>
+              </figcaption>
+            </figure>
           ))}
         </div>
+
+        <p className="mt-8 text-center text-xs text-textSecondary">
+          Testimonials shown are samples illustrating typical results. Individual outcomes vary based on business, industry, and local market.
+        </p>
       </div>
     </section>
   );

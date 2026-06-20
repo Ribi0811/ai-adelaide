@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "SEO for Tradies Adelaide — Get Found on Google",
+  title: "Local SEO Adelaide — Get Your Business Found on Google",
   description:
-    "Local SEO for Adelaide tradies. We get your business found on Google — GBP optimisation, suburb targeting, and ongoing content. No lock-in.",
+    "Local SEO for Adelaide small businesses. We get you found on Google — suburb targeting, Google Business Profile, content, citations. No lock-in contracts.",
   alternates: {
     canonical: "/seo",
   },
@@ -39,10 +40,13 @@ const includedItems = [
 ];
 
 const whoItsFor = [
-  "Plumbers, electricians, builders, painters, landscapers",
+  "Trades businesses — plumbers, electricians, builders, painters, landscapers",
   "HVAC and air conditioning installers",
-  "Allied health clinics (physio, chiro, massage)",
-  "Any local service business that relies on inbound leads",
+  "Allied health clinics — physio, chiro, dental, massage",
+  "Cafes, restaurants, and retail shops",
+  "Beauty salons, hairdressers, and wellness studios",
+  "Professional services — accountants, real estate, legal",
+  "Any Adelaide small business that relies on inbound leads",
 ];
 
 const timeline = [
@@ -102,14 +106,21 @@ export default function SeoPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "Local SEO Adelaide" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">SEO for Adelaide Tradies</span>
+          <span className="eyebrow-light">Local SEO for Adelaide Businesses</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
             Get Found on Google Before Your Competitors Do
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Most tradies in Adelaide have great skills and zero Google visibility. When someone in Norwood searches &quot;plumber near me&quot; or a homeowner in Salisbury types &quot;electrician Adelaide&quot;, the jobs go to whoever shows up first. We help you be that business.
+            Most Adelaide small businesses have great service and zero Google visibility. When someone in Norwood searches &quot;plumber near me&quot; or a homeowner in Salisbury types &quot;electrician Adelaide&quot;, the jobs go to whoever shows up first. We help you be that business — across trades, clinics, retail, hospitality, and professional services.
           </p>
         </div>
       </section>
@@ -145,7 +156,7 @@ export default function SeoPage() {
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Built for Adelaide Tradies and Local Service Businesses</h2>
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Built for Adelaide Small Businesses</h2>
           <ul className="grid gap-3 md:grid-cols-2">
             {whoItsFor.map((item) => (
               <li
@@ -202,11 +213,11 @@ export default function SeoPage() {
             Book a free audit — no obligation. We'll look at where you're ranking now and tell you exactly what it would take to get you in front of more Adelaide customers.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary px-8 py-4">
-              Book Free SEO Chat <span aria-hidden>→</span>
+            <Link href="/contact#send-message" className="btn-primary px-8 py-4">
+              Send a Message <span aria-hidden>→</span>
             </Link>
             <Link href="/audit" className="btn-secondary px-8 py-4">
-              Get Free Missed Call Audit <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
           </div>
         </div>

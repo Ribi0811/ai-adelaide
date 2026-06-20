@@ -51,7 +51,7 @@ export default function Navbar() {
                     AI Adelaide
                   </span>
                   <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-textSecondary">
-                    AI receptionist for Adelaide businesses
+                    Websites, SEO &amp; AI Automation
                   </span>
                 </span>
               </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   </a>
                 ))}
                 <a href="/contact" className="btn-primary ml-1 px-4 py-2">
-                  Book Free Audit
+                  Book Free Chat
                 </a>
               </div>
 
@@ -146,11 +146,11 @@ export default function Navbar() {
               </div>
 
               <a
-                href="/contact"
+                href="/contact#send-message"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="btn-primary mt-6 w-full justify-center py-3"
               >
-                Book Free Audit
+                Send a Message
               </a>
               <a
                 href="tel:+61871009788"

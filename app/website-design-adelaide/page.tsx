@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Website Design Adelaide — Tradie Websites Built in 48hrs",
+  title: "Website Design Adelaide — From $699, Live in 48 Hours",
   description:
-    "Professional websites for Adelaide tradies and small businesses. Built fast, built to convert. Mobile-first, Google-ready, and live in 48 hours. No lock-in.",
+    "Professional websites for Adelaide small businesses. Built fast, built to convert. Mobile-first, Google-ready, live in 48 hours. No lock-in contracts.",
   alternates: {
     canonical: "/website-design-adelaide",
   },
@@ -48,7 +50,7 @@ const portfolio = [
   {
     name: "Electrician",
     label: "Electrician Business Website",
-    caption: "Bold, trustworthy layout built for tradies. Fast load, suburb targeting, 24/7 AI call capture ready.",
+    caption: "Bold, trustworthy layout built for trades. Fast load, suburb targeting, ready for AI call capture.",
     img: "/portfolio/electrician-website.jpg",
   },
 ];
@@ -77,9 +79,9 @@ const steps = [
 ];
 
 const whoItsFor = [
-  "Tradies with no website, or one that's embarrassing",
+  "Adelaide small businesses with no website, or one that's embarrassing",
   "Businesses using a Facebook page as a website (it's not the same)",
-  "Anyone who got quoted thousands by an agency by an agency and walked away",
+  "Anyone who got quoted thousands by an agency and walked away",
   "Existing clients who want to add website design to their AI package",
 ];
 
@@ -126,14 +128,21 @@ export default function WebsiteDesignAdelaidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "Website Design Adelaide" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">Website Design for Adelaide Tradies</span>
+          <span className="eyebrow-light">Website Design for Adelaide Small Businesses</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
             A Professional Website, Live in 48 Hours
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Not a template you have to figure out yourself. Not a big agency build. A clean, fast, mobile-first website built for Adelaide tradies — designed to turn visitors into booked jobs. Done for you, live in two days.
+            Not a template you have to figure out yourself. Not a big agency build. A clean, fast, mobile-first website built for Adelaide small businesses — designed to turn visitors into enquiries, bookings, and sales. Done for you, live in two days.
           </p>
         </div>
       </section>
@@ -161,8 +170,14 @@ export default function WebsiteDesignAdelaidePage() {
           <div className="grid gap-6 md:grid-cols-2">
             {portfolio.map((item) => (
               <div key={item.name} className="panel-light-soft overflow-hidden p-5 md:p-6">
-                <div className="mb-5 flex h-48 items-center justify-center overflow-hidden rounded-2xl border border-dashed border-slate-300 bg-slate-100">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-slate-400">Preview coming soon</p>
+                <div className="relative mb-5 aspect-[2/3] overflow-hidden rounded-2xl border border-slate-200/80 bg-slate-50">
+                  <Image
+                    src={item.img}
+                    alt={`${item.label} — example website we build`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain"
+                  />
                 </div>
                 <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">{item.label}</h3>
                 <p className="text-body-mobile text-slate-700 md:text-body">{item.caption}</p>
@@ -226,8 +241,8 @@ export default function WebsiteDesignAdelaidePage() {
             Book a free audit — no obligation. We'll scope your site, tell you exactly what we'd build, and give you a quote on the spot.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary px-8 py-4">
-              Book Free Website Chat <span aria-hidden>→</span>
+            <Link href="/contact#send-message" className="btn-primary px-8 py-4">
+              Send a Message <span aria-hidden>→</span>
             </Link>
             <Link href="/services" className="btn-secondary px-8 py-4">
               See Our Services <span aria-hidden>→</span>

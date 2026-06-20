@@ -117,7 +117,7 @@ export default function AIOfficeWorkerAdelaidePage() {
               Start AI Audit <span aria-hidden>→</span>
             </Link>
             <Link href="/contact" className="btn-secondary px-8 py-4">
-              Book Free Call <span aria-hidden>→</span>
+              Book Free Chat <span aria-hidden>→</span>
             </Link>
           </div>
         </div>

@@ -3,9 +3,9 @@
     "name": "Norwood",
     "slug": "norwood",
     "postcode": "5067",
-    "heroLine": "Stop losing jobs to missed calls on The Parade.",
-    "intro": "Norwood's Parade is busy - plumbers, electricians, cafe owners compete. AI ensures you never miss a booking.",
-    "whyNow": "The Parade foot traffic is back to pre-pandemic levels, and competition has never been fiercer. Businesses using automated booking and follow-up are capturing 30% more local customers while others are still playing phone tag.",
+    "heroLine": "Websites, SEO & AI automation for businesses on The Parade.",
+    "intro": "Norwood's Parade is Adelaide's busiest eastern strip — plumbers, electricians, cafes, clinics and boutiques all competing for the same local crowd. We help Norwood businesses get online fast, rank on Google for their services, and automate the admin that eats their evenings.",
+    "whyNow": "The Parade foot traffic is back to pre-pandemic levels, and competition has never been fiercer. Businesses with proper websites, local SEO and automated booking are capturing 30% more customers while others rely on word-of-mouth and hope.",
     "industries": [
       "Plumbing & Electrical",
       "Cafes & Restaurants",
@@ -14,18 +14,22 @@
       "Boutique Retail"
     ],
     "painPoints": [
-      "A plumber in Norwood misses 3-4 calls a day on the job \u2014 each one a potential $800 booking gone to a competitor",
+      "A plumber in Norwood misses 3-4 calls a day on the job — each one a potential $800 booking gone to a competitor on Magill Road",
       "Busy cafe owners on The Parade lose takeaway orders during peak rush because they can't answer the phone",
       "Physio practices get no-shows costing $120 per slot because reminder calls aren't happening consistently"
-    ]
+    ],
+    "websiteLine": "A clean, mobile-first website for your Norwood business — live in 48 hours, from $699. Built to convert Parade foot traffic into booked jobs.",
+    "seoLine": "We get Norwood businesses ranking for 'plumber Norwood', 'cafe The Parade', 'physio Norwood' — the searches locals are already doing.",
+    "automationLine": "Missed call text-back, AI receptionist and quote follow-up for Norwood tradies and clinics. Never lose another Parade enquiry to a competitor.",
+    "heroColor": "from-accent/20 via-electric/10 to-accent/15"
   },
   {
     "name": "Glenelg",
     "slug": "glenelg",
     "postcode": "5045",
-    "heroLine": "Turn summer rush into year-round revenue, not chaos.",
-    "intro": "Glenelg lives and breathes tourism \u2014 Jetty Road restaurants, beachfront hotels, and tour operators see wild swings between summer chaos and winter quiet. Staff get overwhelmed during peak season, bookings slip through the cracks, and customer data vanishes into the off-season void. AI systems keep your pipeline full year-round, automatically nurturing past guests and filling slow periods.",
-    "whyNow": "South Australia's tourism rebound is real, but seasonal businesses that don't capture and reuse customer data are leaving money on the table. Automation turns one-time beach visitors into repeat customers who book direct, not through commission-heavy platforms.",
+    "heroLine": "Websites, SEO & automation for Glenelg's tourism and hospitality scene.",
+    "intro": "Glenelg lives and breathes tourism — Jetty Road restaurants, beachfront hotels, and tour operators see wild swings between summer chaos and winter quiet. We build websites that capture direct bookings, SEO that ranks for Glenelg searches, and automation that nurtures past visitors into repeat customers year-round.",
+    "whyNow": "South Australia's tourism rebound is real, but seasonal businesses that don't capture and reuse customer data are leaving money on the table. A proper website plus SEO turns one-time beach visitors into repeat customers who book direct, not through commission-heavy platforms.",
     "industries": [
       "Restaurants & Bars",
       "Hotels & Accommodation",
@@ -37,15 +41,19 @@
       "Jetty Road restaurants lose 40% of phone bookings during summer rush because hosts can't answer while seating diners",
       "Tour operators watch customers book through competitors just because they responded to an enquiry 2 hours faster",
       "Accommodation providers pay 15-20% commissions to booking platforms when they could've captured direct repeat bookings"
-    ]
+    ],
+    "websiteLine": "A website for your Glenelg business that takes direct bookings — no more paying 15-20% to Booking.com or Wotif. From $699.",
+    "seoLine": "Rank for 'Glenelg restaurant', 'Glenelg accommodation', 'things to do Glenelg' — the searches tourists are already doing before they visit.",
+    "automationLine": "Automated booking confirmations, reminder texts and review requests for Glenelg hospitality. Turn summer tourists into winter regulars.",
+    "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15"
   },
   {
     "name": "Unley",
     "slug": "unley",
     "postcode": "5061",
-    "heroLine": "Your King William Road practice deserves full books, not gaps.",
-    "intro": "King William Road is Unley's professional heart \u2014 allied health clinics, lawyers, accountants, and boutique retailers all serve a discerning local crowd. These businesses run on appointments and relationships, but admin overload means follow-ups get forgotten and valuable slots sit empty. AI handles the scheduling grind so you can focus on what actually matters \u2014 your clients.",
-    "whyNow": "Unley's professional services market is crowded, and clients expect instant responses. Practices using automated reminders and self-booking have cut no-shows by half and freed up 10+ hours a week for actual billable work.",
+    "heroLine": "Websites, SEO & automation for King William Road professionals.",
+    "intro": "King William Road is Unley's professional heart — allied health clinics, lawyers, accountants, and boutique retailers all serve a discerning local crowd. These businesses run on appointments and relationships. We build websites that book appointments, SEO that ranks for Unley services, and automation that handles the scheduling grind.",
+    "whyNow": "Unley's professional services market is crowded, and clients expect instant responses. Practices with proper websites, automated reminders and self-booking have cut no-shows by half and freed up 10+ hours a week for actual billable work.",
     "industries": [
       "Allied Health & Physio",
       "Legal & Accounting",
@@ -57,15 +65,19 @@
       "Allied health practitioners lose $4,000+ monthly to no-shows because manual reminder calls aren't consistent",
       "Professional services waste 2 hours daily playing email tag just to schedule initial consultations",
       "Boutique retailers miss repeat customer opportunities because there's no system to follow up after purchase"
-    ]
+    ],
+    "websiteLine": "A professional website for your Unley practice or boutique — online booking, service pages, King William Road credibility. From $699.",
+    "seoLine": "Rank for 'physio Unley', 'lawyer King William Road', 'accountant Unley' — the searches Unley residents are already doing.",
+    "automationLine": "Automated appointment reminders, no-show reduction and client follow-up for Unley professionals. Cut admin by 70%.",
+    "heroColor": "from-emerald-400/20 via-teal-300/10 to-cyan-400/15"
   },
   {
     "name": "Prospect",
     "slug": "prospect",
     "postcode": "5082",
-    "heroLine": "Keep up with Prospect's growth without burning out.",
-    "intro": "Prospect's exploding \u2014 new families moving in, Prospect Road's food scene booming, and tradies working flat-chat to keep up with renovations and builds. Everyone's stretched thin, juggling quotes, call-backs, and actual work while trying not to miss the next big job. Smart automation handles the admin chaos so you can stay on the tools where you earn money.",
-    "whyNow": "Prospect's renovation boom means more competition for local trades. Those responding to enquiries within minutes are winning jobs over competitors who take hours \u2014 automation makes instant response possible even when you're on a roof.",
+    "heroLine": "Websites, SEO & automation for Prospect's growing business scene.",
+    "intro": "Prospect's exploding — new families moving in, Prospect Road's food scene booming, and tradies working flat-chat to keep up with renovations and builds. We help Prospect businesses get online, rank locally, and automate the admin so they can stay on the tools where they earn money.",
+    "whyNow": "Prospect's renovation boom means more competition for local trades. Those with proper websites and fast enquiry response are winning jobs over competitors who take hours — automation makes instant response possible even when you're on a roof.",
     "industries": [
       "Building & Construction",
       "Cafes & Takeaway",
@@ -77,15 +89,19 @@
       "Tradie quoting jobs around Prospect loses 2-3 leads daily because they can't respond to enquiries until 6pm",
       "Prospect Road cafe owners miss catering orders worth $500+ during morning rush when phones go unanswered",
       "Small builders lose track of follow-ups and let $50k renovation jobs slip to competitors with better systems"
-    ]
+    ],
+    "websiteLine": "A website for your Prospect tradie or cafe business — click-to-call, quote forms, service area pages. From $699, live in 48 hours.",
+    "seoLine": "Rank for 'builder Prospect', 'cafe Prospect Road', 'mechanic Prospect' — locals are searching, make sure they find you.",
+    "automationLine": "Missed call text-back, quote follow-up and booking automation for Prospect tradies. Stop losing jobs to the competitor who answered first.",
+    "heroColor": "from-violet-400/20 via-purple-300/10 to-fuchsia-400/15"
   },
   {
     "name": "Burnside",
     "slug": "burnside",
     "postcode": "5066",
-    "heroLine": "Premium clients expect premium response \u2014 deliver it automatically.",
-    "intro": "Burnside's affluent residents run successful businesses and expect the same professionalism they deliver. Allied health clinics, financial advisors, and premium service providers here can't afford dropped calls or slow responses \u2014 reputation is everything. AI automation ensures every enquiry gets immediate, polished attention that matches the suburb's high standards.",
-    "whyNow": "Burnside clients have options and high expectations. Businesses with automated booking, instant confirmations, and professional follow-up sequences stand out in a market where word-of-mouth travels fast among tight-knit professional networks.",
+    "heroLine": "Premium websites, SEO & automation for Burnside's high-end market.",
+    "intro": "Burnside's affluent residents run successful businesses and expect the same professionalism they deliver. Allied health clinics, financial advisors, and premium service providers here can't afford dropped calls or slow responses — reputation is everything. We build premium websites, SEO that targets Burnside's discerning market, and automation that ensures every enquiry gets immediate, polished attention.",
+    "whyNow": "Burnside clients have options and high expectations. Businesses with professional websites, instant confirmations and polished follow-up stand out in a market where word-of-mouth travels fast among tight-knit professional networks.",
     "industries": [
       "Specialist Medical",
       "Financial & Legal Services",
@@ -97,15 +113,19 @@
       "Specialist practices lose affluent patients to competitors simply because booking took three phone calls instead of one click",
       "Financial advisors miss follow-up opportunities with high-value clients because CRM updates get pushed to tomorrow",
       "Premium service providers damage reputation with slow email responses in a suburb where everyone expects same-day replies"
-    ]
+    ],
+    "websiteLine": "A premium website for your Burnside practice or advisory — online booking, professional copywriting, credibility that matches your fees. From $699.",
+    "seoLine": "Rank for 'financial advisor Burnside', 'specialist doctor Burnside' — the searches Burnside's affluent residents do before choosing a provider.",
+    "automationLine": "Automated booking, client follow-up and review generation for Burnside professionals. Match your digital experience to your service quality.",
+    "heroColor": "from-amber-400/20 via-orange-300/10 to-rose-400/15"
   },
   {
     "name": "Walkerville",
     "slug": "walkerville",
     "postcode": "5081",
-    "heroLine": "Small suburb, big reputation \u2014 protect both with better systems.",
-    "intro": "Walkerville's a tight-knit community where boutique professional businesses thrive on reputation and referrals. A single missed call or forgotten follow-up spreads fast in a suburb this size. AI automation helps small practices and consultancies punch above their weight with professional systems that match their expertise.",
-    "whyNow": "Walkerville's professional scene is growing, and new entrants are competing for the same local network. Established businesses with polished, automated client experiences maintain their edge without hiring admin staff they don't need.",
+    "heroLine": "Websites, SEO & automation for Walkerville's boutique professionals.",
+    "intro": "Walkerville's a tight-knit community where boutique professional businesses thrive on reputation and referrals. A single missed call or forgotten follow-up spreads fast in a suburb this size. We build professional websites, local SEO and automation systems that help small practices punch above their weight.",
+    "whyNow": "Walkerville's professional scene is growing, and new entrants are competing for the same local network. Established businesses with polished websites and automated client experiences maintain their edge without hiring admin staff they don't need.",
     "industries": [
       "Boutique Law Firms",
       "Specialist Accounting",
@@ -117,15 +137,19 @@
       "Solo practitioners lose weekend peace because they're constantly checking phones for urgent client messages",
       "Small firms miss referral opportunities because there's no system to stay in touch with past clients between jobs",
       "Professional services turn away work they could handle because admin overload makes them seem at capacity"
-    ]
+    ],
+    "websiteLine": "A professional website for your Walkerville firm — credibility, online booking, client portal-ready. From $699.",
+    "seoLine": "Rank for 'lawyer Walkerville', 'accountant Walkerville' — when locals search for professional services, make sure they find you first.",
+    "automationLine": "Automated client communication, follow-up sequences and scheduling for Walkerville professionals. Look bigger than you are.",
+    "heroColor": "from-rose-400/20 via-pink-300/10 to-fuchsia-400/15"
   },
   {
     "name": "Hindmarsh",
     "slug": "hindmarsh",
     "postcode": "5007",
-    "heroLine": "Stop losing jobs because you're too busy working to answer.",
-    "intro": "Hindmarsh is trades territory \u2014 mechanics, fabricators, industrial contractors, and automotive specialists keeping Adelaide's infrastructure running. When you're under a car or welding onsite, the phone rings unanswered and the job goes to the competitor who picked up. Automated systems capture every enquiry and book work while you keep your hands on the tools.",
-    "whyNow": "Hindmarsh's industrial precinct is busier than ever, with more contractors competing for the same commercial jobs. Those with automated quoting and booking are winning more fleet contracts simply because they respond faster and look more professional.",
+    "heroLine": "Websites, SEO & automation for Hindmarsh's industrial contractors.",
+    "intro": "Hindmarsh is trades territory — mechanics, fabricators, industrial contractors, and automotive specialists keeping Adelaide's infrastructure running. When you're under a car or welding onsite, the phone rings unanswered and the job goes to the competitor who picked up. We build trade websites, local SEO and automation that captures every enquiry while you keep your hands on the tools.",
+    "whyNow": "Hindmarsh's industrial precinct is busier than ever, with more contractors competing for the same commercial jobs. Those with proper websites and automated quoting are winning more fleet contracts simply because they respond faster and look more professional.",
     "industries": [
       "Automotive & Mechanical",
       "Metal Fabrication",
@@ -137,15 +161,19 @@
       "Mechanic loses 2-3 fleet service jobs weekly because fleet managers call the first business that answers",
       "Fabricators miss urgent commercial repair calls worth $5k+ because they're onsite and can't take the call",
       "Industrial contractors lose repeat business because there's no automated system to follow up after job completion"
-    ]
+    ],
+    "websiteLine": "A no-nonsense website for your Hindmarsh trade business — service lists, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'mechanic Hindmarsh', 'fabricator Adelaide', 'industrial contractor Hindmarsh' — the searches fleet managers and commercial clients do.",
+    "automationLine": "Missed call capture, quote automation and follow-up for Hindmarsh contractors. Win more fleet work by responding first.",
+    "heroColor": "from-lime-400/20 via-green-300/10 to-emerald-400/15"
   },
   {
     "name": "Mawson Lakes",
     "slug": "mawson-lakes",
     "postcode": "5095",
-    "heroLine": "Tech-savvy suburb, tech-smart business systems.",
-    "intro": "Mawson Lakes is Adelaide's tech corridor \u2014 UniSA students, startups, and professional services all expect digital-first interactions. Paper diaries and phone-tag booking feel outdated here. AI automation matches the tech-forward expectations of clients who want instant confirmations, online booking, and seamless digital experiences.",
-    "whyNow": "Mawson Lakes businesses serve a demographic that defaults to online solutions. Professional services still relying on phone booking are losing clients to competitors offering one-click appointments \u2014 automation isn't optional anymore, it's table stakes.",
+    "heroLine": "Websites, SEO & automation for Mawson Lakes' tech-forward businesses.",
+    "intro": "Mawson Lakes is Adelaide's tech corridor — UniSA students, startups, and professional services all expect digital-first interactions. Paper diaries and phone-tag booking feel outdated here. We build modern websites, SEO and automation that matches the tech-forward expectations of clients who want instant confirmations and online booking.",
+    "whyNow": "Mawson Lakes businesses serve a demographic that defaults to online solutions. Professional services still relying on phone booking are losing clients to competitors offering one-click appointments — a proper website isn't optional anymore, it's table stakes.",
     "industries": [
       "Tech Startups",
       "Professional Services",
@@ -157,15 +185,19 @@
       "Professional services lose millennial clients who abandon phone booking for competitors with online scheduling",
       "Training providers waste hours manually sending zoom links and reminders instead of automating the entire process",
       "Startups look unprofessional to investors and clients because their booking and follow-up processes feel 2010"
-    ]
+    ],
+    "websiteLine": "A modern, fast website for your Mawson Lakes business — online booking, clean design, built for a tech-savvy audience. From $699.",
+    "seoLine": "Rank for 'professional services Mawson Lakes', 'training provider Mawson Lakes' — capture the UniSA and startup crowd searching online.",
+    "automationLine": "Automated booking, reminder sequences and client onboarding for Mawson Lakes professionals. Match your digital experience to your audience.",
+    "heroColor": "from-blue-400/20 via-indigo-300/10 to-violet-400/15"
   },
   {
     "name": "Modbury",
     "slug": "modbury",
     "postcode": "5092",
-    "heroLine": "Northern suburbs' busiest tradies work smarter, not harder.",
-    "intro": "Modbury's the northern hub \u2014 Westfield Tea Tree Plaza drives retail traffic, but it's the tradies servicing hundreds of families across the northern suburbs who need systems that work. Between school runs, sports, and actual jobs, there's no time for admin chaos. Automated booking and reminders keep the work flowing without constant phone juggling.",
-    "whyNow": "Modbury's growing family population means more homes needing maintenance, renovations, and services. Tradies with automated systems are booking 3-4 jobs per week more than competitors still playing phone tag during dinner time.",
+    "heroLine": "Websites, SEO & automation for Modbury's busy northern tradies.",
+    "intro": "Modbury's the northern hub — Westfield Tea Tree Plaza drives retail traffic, but it's the tradies servicing hundreds of families across the northern suburbs who need systems that work. Between school runs, sports, and actual jobs, there's no time for admin chaos. We build tradie websites, local SEO and automation that keeps the work flowing.",
+    "whyNow": "Modbury's growing family population means more homes needing maintenance, renovations, and services. Tradies with proper websites and automated booking are booking 3-4 jobs per week more than competitors still playing phone tag during dinner time.",
     "industries": [
       "Home Trades",
       "Retail & Services",
@@ -177,15 +209,19 @@
       "Electrician servicing Modbury families misses evening call-backs because they're offline during dinner with their own kids",
       "Dental clinics near Tea Tree Plaza lose after-school appointment bookings to competitors with online booking",
       "Retail businesses around Westfield lose corporate catering orders because phone enquiries go unanswered during rushes"
-    ]
+    ],
+    "websiteLine": "A tradie website for your Modbury business — click-to-call, service area pages, quote forms. From $699, live in 48 hours.",
+    "seoLine": "Rank for 'electrician Modbury', 'dentist Tea Tree Plaza', 'plumber Modbury' — northern suburbs families are searching, be visible.",
+    "automationLine": "Missed call text-back, booking automation and reminders for Modbury tradies and clinics. Never miss a family enquiry again.",
+    "heroColor": "from-teal-400/20 via-cyan-300/10 to-sky-400/15"
   },
   {
     "name": "Marion",
     "slug": "marion",
     "postcode": "5043",
-    "heroLine": "Southern suburbs deserve service that shows up on time, every time.",
-    "intro": "Marion's the southern gateway \u2014 Westfield Marion anchors the retail scene, but healthcare, trades, and professional services serve a massive residential base. Competition is fierce across every category, and businesses slow to respond lose out. AI automation ensures every enquiry gets instant attention and every booked job gets confirmed, reminded, and followed up.",
-    "whyNow": "Marion's healthcare and retail sectors are saturated \u2014 standing out requires operational excellence, not just good service. Automated systems give solo practitioners and small businesses the polish of a corporate operation without the overhead.",
+    "heroLine": "Websites, SEO & automation for Marion's southern businesses.",
+    "intro": "Marion's the southern gateway — Westfield Marion anchors the retail scene, but healthcare, trades, and professional services serve a massive residential base. Competition is fierce across every category. We build websites that stand out, SEO that ranks for Marion searches, and automation that ensures every enquiry gets instant attention.",
+    "whyNow": "Marion's healthcare and retail sectors are saturated — standing out requires operational excellence, not just good service. A proper website with SEO and automation gives solo practitioners and small businesses the polish of a corporate operation without the overhead.",
     "industries": [
       "Healthcare & Medical",
       "Retail & Shopping",
@@ -197,15 +233,19 @@
       "Healthcare providers near Westfield lose patients to clinics with online booking because nobody waits on hold anymore",
       "Tradies servicing Marion's 50,000+ residents lose morning jobs because they can't take calls while driving between sites",
       "Retail businesses miss repeat customer opportunities because there's no system to capture and follow up with buyers"
-    ]
+    ],
+    "websiteLine": "A website for your Marion business — online booking, service pages, mobile-first. From $699.",
+    "seoLine": "Rank for 'doctor Marion', 'plumber Marion', 'mechanic Marion' — 50,000+ residents are searching for local services every day.",
+    "automationLine": "Missed call capture, appointment reminders and review automation for Marion businesses. Out-polish your competitors without hiring admin.",
+    "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15"
   },
   {
     "name": "Port Adelaide",
     "slug": "port-adelaide",
     "postcode": "5015",
-    "heroLine": "Port's creative boom demands booking that keeps up.",
-    "intro": "Port Adelaide's reinvented \u2014 maritime heritage meets creative cafes, breweries, and a booming hospitality scene. New businesses are opening monthly, all competing for the same locals and tourists. In a suburb moving this fast, businesses without smooth booking and communication systems look stuck in the past. AI automation helps you move at Port speed.",
-    "whyNow": "Port Adelaide's transformation is attracting both customers and competition. Hospitality and creative businesses with seamless online booking and automated marketing are building loyal followings while others rely on walk-ins and hope.",
+    "heroLine": "Websites, SEO & automation for Port Adelaide's creative boom.",
+    "intro": "Port Adelaide's reinvented — maritime heritage meets creative cafes, breweries, and a booming hospitality scene. New businesses open monthly, all competing for the same locals and tourists. We build websites that capture bookings, SEO that ranks for Port Adelaide searches, and automation that keeps up with the Port's creative speed.",
+    "whyNow": "Port Adelaide's transformation is attracting both customers and competition. Hospitality and creative businesses with proper websites, online booking and SEO are building loyal followings while others rely on walk-ins and hope.",
     "industries": [
       "Hospitality & Brewing",
       "Creative Studios",
@@ -217,15 +257,19 @@
       "New Port cafes lose group booking enquiries worth $2k+ because responses take 24+ hours via email",
       "Creative studios miss workshop sign-ups when interest is hot because manual enrolment takes too many steps",
       "Maritime contractors lose urgent repair jobs to competitors who quote and confirm while still on the wharf"
-    ]
+    ],
+    "websiteLine": "A website for your Port Adelaide cafe, brewery or studio — online booking, events page, Instagram-ready. From $699.",
+    "seoLine": "Rank for 'cafe Port Adelaide', 'brewery Port Adelaide', 'things to do Port Adelaide' — capture the tourists and locals searching.",
+    "automationLine": "Automated booking confirmations, event reminders and review requests for Port Adelaide hospitality. Move at Port speed.",
+    "heroColor": "from-slate-400/20 via-gray-300/10 to-zinc-400/15"
   },
   {
     "name": "Mount Barker",
     "slug": "mount-barker",
     "postcode": "5251",
-    "heroLine": "Hills' growth corridor rewards businesses ready to scale.",
-    "intro": "Mount Barker's exploding \u2014 new estates, young families, and a retail boom that's transformed the Hills. Tradies can't keep up with demand, retailers are competing for foot traffic, and healthcare can't book patients fast enough. AI automation helps businesses scale without drowning in admin, turning the growth boom into sustainable success.",
-    "whyNow": "Mount Barker's population growth means more competition for customer attention. Businesses that automate booking, reminders, and follow-ups are handling 40% more volume with the same staff while competitors turn work away due to admin overload.",
+    "heroLine": "Websites, SEO & automation for Mount Barker's growth boom.",
+    "intro": "Mount Barker's exploding — new estates, young families, and a retail boom that's transformed the Hills. Tradies can't keep up with demand, retailers compete for foot traffic, and healthcare can't book patients fast enough. We build websites, SEO and automation that help businesses scale without drowning in admin.",
+    "whyNow": "Mount Barker's population growth means more competition for customer attention. Businesses with proper websites, automated booking and local SEO are handling 40% more volume with the same staff while competitors turn work away due to admin overload.",
     "industries": [
       "Building & Construction",
       "Retail & Shopping",
@@ -237,15 +281,19 @@
       "Builder in Mount Barker turns down $100k+ jobs because quoting and follow-up overhead maxes out current capacity",
       "Healthcare clinics can't fill new appointment slots fast enough because phone booking creates bottlenecks",
       "Retail businesses lose new residents to online giants because there's no system to build local customer relationships"
-    ]
+    ],
+    "websiteLine": "A website for your Mount Barker business — service pages, online booking, suburb targeting. From $699.",
+    "seoLine": "Rank for 'builder Mount Barker', 'doctor Mount Barker', 'mechanic Mount Barker' — new residents are searching for local services.",
+    "automationLine": "Missed call capture, quote automation and booking for Mount Barker tradies. Handle 40% more volume without hiring admin.",
+    "heroColor": "from-emerald-500/25 via-green-300/15 to-teal-400/15"
   },
   {
     "name": "Mitcham",
     "slug": "mitcham",
     "postcode": "5062",
-    "heroLine": "Turn missed calls into booked jobs while you're on the tools.",
-    "intro": "Mitcham is a family-focused suburb with a mix of established homes, schools, and a busy shopping strip along Belair Road. Tradies serving Mitcham \u2014 plumbers, electricians, builders and landscapers \u2014 are in constant demand, but lose work to competitors when they're on-site and can't pick up the phone. AI automation ensures every call, text, and web enquiry gets captured and followed up within seconds.",
-    "whyNow": "Mitcham's housing stock is ageing \u2014 renovations, extensions, and maintenance work are booming. With multiple primary schools, childcare centres, and medical practices along Belair Road, local businesses that can't handle the call volume are bleeding revenue to competitors who answer first. Automation is becoming the difference between a full pipeline and a quiet week.",
+    "heroLine": "Websites, SEO & automation for Mitcham's family-focused businesses.",
+    "intro": "Mitcham is a family-focused suburb with a mix of established homes, schools, and a busy shopping strip along Belair Road. Tradies serving Mitcham — plumbers, electricians, builders and landscapers — are in constant demand. We build tradie websites, local SEO and automation that captures every enquiry while you're on the tools.",
+    "whyNow": "Mitcham's housing stock is ageing — renovations, extensions, and maintenance work are booming. With multiple primary schools, childcare centres, and medical practices along Belair Road, local businesses that can't handle the call volume are bleeding revenue to competitors who answer first.",
     "industries": [
       "Plumbing & Electrical",
       "Building & Renovation",
@@ -254,9 +302,13 @@
       "Professional Services"
     ],
     "painPoints": [
-      "A Mitcham plumber misses 15 calls a week \u2014 at $400 average job value, that's $6,000 in lost revenue walking out the door every week",
+      "A Mitcham plumber misses 15 calls a week — at $400 average job value, that's $6,000 in lost revenue walking out the door every week",
       "Medical practices along Belair Road lose 20% of appointments to no-shows because reminder calls aren't happening consistently",
       "Builders working on Mitcham renos spend hours each week playing phone tag with subcontractors instead of managing projects"
-    ]
+    ],
+    "websiteLine": "A tradie website for your Mitcham business — click-to-call, service area pages, quote forms. From $699, live in 48 hours.",
+    "seoLine": "Rank for 'plumber Mitcham', 'builder Mitcham', 'doctor Belair Road' — Mitcham families are searching for reliable local services.",
+    "automationLine": "Missed call text-back, booking reminders and quote follow-up for Mitcham tradies and clinics. Stop losing $6k/week to missed calls.",
+    "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15"
   }
 ]

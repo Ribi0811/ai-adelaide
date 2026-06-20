@@ -1,26 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { posts } from "@/data/posts";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Automation Blog for Adelaide Businesses",
+  title: "AI Adelaide Blog | Websites, SEO & Automation for Adelaide Businesses",
   description:
-    "Practical AI and automation insights for Adelaide tradies, allied health, retail, and hospitality. Real results for real businesses — free to read.",
+    "Practical insights on websites, local SEO, and AI automation for Adelaide small businesses across trades, allied health, retail, hospitality, and professional services.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "AI Automation Blog for Adelaide Businesses",
-    description:
-      "Practical AI and automation insights for Adelaide tradies, allied health, retail, and hospitality. Real results for real businesses.",
-    url: "/blog",
+    title: "AI Adelaide Blog | Websites, SEO & Automation for Adelaide Businesses",
+    description: "Practical insights on websites, local SEO, and AI automation for Adelaide small businesses.",
+    url: `${siteConfig.url}/blog`,
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "AI Adelaide Blog" }],
     type: "website",
   },
   twitter: {
-    title: "AI Automation Blog for Adelaide Businesses",
-    description:
-      "Practical AI and automation insights for Adelaide tradies, allied health, retail, and hospitality. Real results for real businesses.",
+    title: "AI Adelaide Blog | Websites, SEO & Automation for Adelaide Businesses",
+    description: "Practical insights on websites, local SEO, and AI automation for Adelaide small businesses.",
     images: ["/twitter-image"],
   },
 };
@@ -38,57 +38,57 @@ const sortedPosts = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 );
 
-export default function BlogPage() {
+export default function BlogIndexPage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
-      <section className="mb-14 max-w-container mx-auto px-6 text-center">
-        <div className="panel-light grid-overlay-light relative overflow-hidden p-8 md:p-12">
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-electric/8 via-transparent to-accent/8" />
-          <div className="relative">
-            <div className="mb-6">
-              <span className="eyebrow-light">Adelaide business playbook</span>
-            </div>
-            <h1 className="mx-auto mb-6 max-w-3xl text-h1-mobile text-slate-950 md:text-h1">
-              AI Automation Insights for Adelaide Businesses
-            </h1>
-            <p className="mx-auto max-w-2xl text-body-mobile text-slate-600 md:text-body">
-              Real-world guides and case studies for tradies, allied health,
-              hospitality, and retail owners who want practical systems that
-              save time and recover revenue.
-            </p>
-          </div>
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog" },
+        ]}
+      />
+      <section className="max-w-container mx-auto px-6">
+        <div className="panel-light grid-overlay-light p-8 md:p-12">
+          <span className="eyebrow-light">AI Adelaide Blog</span>
+          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
+            Practical insights for Adelaide small businesses
+          </h1>
+          <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
+            Real numbers, real examples, and real advice on websites, local SEO, and AI automation for Adelaide small businesses — across trades, allied health, retail, hospitality, beauty, and professional services.
+          </p>
         </div>
       </section>
 
-      <section className="max-w-container mx-auto px-6">
-        <div className="grid gap-6 md:grid-cols-2">
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {sortedPosts.map((post) => (
-            <Link
+            <article
               key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block"
+              className="panel-light flex h-full flex-col p-6 md:p-8"
             >
-              <article className="panel-light h-full p-6 transition-shadow hover:shadow-md md:p-8">
-                <div className="mb-4 flex flex-wrap items-center gap-3">
-                  <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-600">
-                    {post.category}
-                  </span>
-                  <span className="text-sm text-slate-500">{formatDate(post.date)}</span>
-                  <span className="text-sm text-slate-500">• {post.readTime}</span>
-                </div>
-
-                <h2 className="mb-3 text-h3-mobile text-slate-950 transition-colors group-hover:text-accent md:text-h3">
-                  {post.title}
-                </h2>
-                <p className="mb-6 text-body-mobile text-slate-600 md:text-body">
-                  {post.excerpt}
-                </p>
-
-                <span className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900 transition-colors group-hover:text-accent">
-                  Read article <span aria-hidden>→</span>
+              <div className="mb-4 flex flex-wrap items-center gap-2">
+                <span className="rounded-full border border-slate-200/80 bg-slate-50 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-slate-500">
+                  {post.category}
                 </span>
-              </article>
-            </Link>
+                <span className="text-xs text-slate-500">{formatDate(post.date)}</span>
+                <span className="text-xs text-slate-500">· {post.readTime}</span>
+              </div>
+              <h2 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
+                <Link href={`/blog/${post.slug}`} className="hover:text-accent">
+                  {post.title}
+                </Link>
+              </h2>
+              <p className="flex-1 text-body-mobile text-slate-600 md:text-body">
+                {post.excerpt.slice(0, 180)}
+                {post.excerpt.length > 180 ? "…" : ""}
+              </p>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline"
+              >
+                Read more <span aria-hidden>→</span>
+              </Link>
+            </article>
           ))}
         </div>
       </section>

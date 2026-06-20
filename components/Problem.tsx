@@ -2,22 +2,22 @@
 
 const problems = [
   {
-    title: "You miss calls when you're on a job",
+    title: "You've got no website — or one that embarrasses you",
     description:
-      "Every missed call is a lost customer. They don't leave voicemails. They call the next number.",
-    impact: "Revenue leak",
+      "Customers Google you before they call. If nothing shows up, or what shows up is slow and ugly, they call the next result. You're losing jobs you should be winning.",
+    impact: "Invisible online",
   },
   {
-    title: "Quotes disappear into the void",
+    title: "You're not ranking on Google for your services",
     description:
-      "You send the quote. They never reply. You forget to follow up. They book someone else.",
-    impact: "Lost jobs",
+      "Your competitors show up on page one for 'plumber Norwood' and 'cafe Glenelg'. You don't. Every day that doesn't change, those customers go to them — not you.",
+    impact: "Lost enquiries",
   },
   {
-    title: "You never get around to asking for reviews",
+    title: "Leads fall through the cracks after they enquire",
     description:
-      "Every happy customer would leave a review, but you never ask. Your competitors have 50 reviews. You have 3.",
-    impact: "Trust gap",
+      "Someone calls while you're on a job. They don't leave a voicemail. They try the next business. The lead is gone, and you never even knew it existed.",
+    impact: "Wasted ad spend",
   },
 ];
 
@@ -26,7 +26,7 @@ export default function Problem() {
     <section className="section-shell bg-bgPrimary py-section-mobile md:py-section">
       <div className="max-w-container mx-auto px-6">
         <div className="mb-6 text-center">
-          <span className="eyebrow">Where businesses leak time</span>
+          <span className="eyebrow">Where Adelaide businesses lose customers</span>
         </div>
 
         <h2 className="mb-4 text-center text-h2-mobile text-textPrimary md:text-h2">
@@ -34,8 +34,7 @@ export default function Problem() {
         </h2>
 
         <p className="mx-auto mb-12 max-w-2xl text-center text-body-mobile text-textSecondary md:text-body">
-          These are the gaps we typically automate first because they directly
-          affect bookings, cash flow, and owner sanity.
+          These are the gaps we fix first because they directly affect how many customers find you, contact you, and book.
         </p>
 
         <div className="grid gap-8 md:grid-cols-3">

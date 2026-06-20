@@ -6,36 +6,36 @@ import { useRef } from "react";
 const stages = [
   {
     step: "01",
-    title: "Free AI Readiness Audit",
+    title: "Free Digital Health Check",
     label: "3-min quiz",
     description:
-      "Answer a few quick questions so we can spot the best place to start your first AI hire.",
+      "Tell us about your website, your Google ranking, and how leads find you. We&apos;ll show you where you&apos;re losing customers and what to fix first.",
     outcome: "A clear score and next-step recommendation",
   },
   {
     step: "02",
-    title: "Strategy Call",
-    label: "Scope your role",
+    title: "Free Strategy Chat",
+    label: "Scope the work",
     description:
-      "We review your bottlenecks and scope the first AI employee role that will create the fastest impact.",
-    outcome: "A practical plan for your first AI hire",
+      "We look at your business, your services, and your service area. We recommend the website, SEO, or automation build that will move the needle first.",
+    outcome: "A practical plan with a fixed quote",
     highlight: true,
   },
   {
     step: "03",
-    title: "We Build Your AI Employee",
-    label: "2-5 day build",
+    title: "We Build It",
+    label: "48 hrs to 14 days",
     description:
-      "We build and connect your AI employee so it can start handling calls, follow-ups, and admin tasks.",
-    outcome: "Your AI employee live in days",
+      "We design, write, and build — website, SEO setup, or automation system. You review once. We push it live. You own everything.",
+    outcome: "Live, ranking, and capturing leads",
   },
   {
     step: "04",
     title: "Ongoing Support",
-    label: "Continuous improvement",
+    label: "Month to month",
     description:
-      "We monitor performance and improve prompts, workflows, and routing as your business evolves.",
-    outcome: "Smarter outcomes over time",
+      "Monthly SEO content, automation improvements, and ad-hoc fixes. No lock-in contracts — we earn the work each month.",
+    outcome: "Compounding results over time",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function OfferPath() {
     <section className="section-shell bg-bgPrimary py-section-mobile md:py-section">
       <div className="max-w-container mx-auto px-6">
         <div className="mb-6 text-center">
-          <span className="eyebrow">Your path to an AI employee</span>
+          <span className="eyebrow">How it works</span>
         </div>
         <motion.h2
           ref={ref}
@@ -59,8 +59,7 @@ export default function OfferPath() {
           Audit. Strategy. Build. Ongoing support.
         </motion.h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-body-mobile md:text-body text-textSecondary">
-          We keep this simple: validate where AI will help, scope the right role,
-          launch quickly, then keep improving it as your business grows.
+          We keep this simple: figure out what&apos;s leaking, scope the right fix, build it properly, then keep it working.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -104,11 +103,11 @@ export default function OfferPath() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href="/audit" className="btn-primary px-8 py-4">
-            See What AI Could Do For You <span aria-hidden>→</span>
+          <a href="/contact" className="btn-primary px-8 py-4">
+            Book Free Chat <span aria-hidden>→</span>
           </a>
-          <a href="/contact" className="btn-secondary px-8 py-4">
-            Book a Free Call
+          <a href="/website-pricing" className="btn-secondary px-8 py-4">
+            See Website Pricing
           </a>
         </div>
       </div>

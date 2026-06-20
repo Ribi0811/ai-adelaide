@@ -46,8 +46,8 @@ export default function AuditResultsPage() {
       <main className="flex min-h-[calc(100vh-8rem)] items-center justify-center px-4 py-10">
         <div className="w-full max-w-2xl">
           <div className="panel-light p-6">
-            <p className="text-slate-700">No quiz data found. Please start from the audit quiz.</p>
-            <Link href="/audit/quiz" className="btn-primary mt-4 inline-flex">Go to Quiz</Link>
+            <p className="text-slate-700">No quiz data found. Please start from the health check.</p>
+            <Link href="/audit/quiz" className="btn-primary mt-4 inline-flex">Start Health Check</Link>
           </div>
         </div>
       </main>
@@ -67,7 +67,7 @@ export default function AuditResultsPage() {
       <div className="w-full max-w-3xl">
         <section className="panel-light p-6 sm:p-8">
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">Free Results</p>
-        <h1 className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">Your Automation Readiness Score</h1>
+        <h1 className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">Your Digital Health Score</h1>
         <div className="mt-5 flex items-end gap-2">
           <span className="text-5xl font-bold text-[#00B894] sm:text-6xl">{displayScore}</span>
           <span className="mb-2 text-lg text-slate-500">/100</span>
@@ -120,7 +120,7 @@ export default function AuditResultsPage() {
 
         <div className="mt-6 rounded-2xl border border-[#00D4AA]/30 bg-[#00D4AA]/10 p-4">
           <p className="text-sm text-slate-800">
-            Your score is free. Want the full personalised PDF with detailed ROI estimates and an action plan? Unlock it for <strong>$47 AUD</strong>.
+            Your score is free. Want the full personalised PDF with detailed ROI estimates and an action plan for websites, SEO, and AI automation? Unlock it for <strong>$47 AUD</strong>.
           </p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <a

@@ -11,7 +11,7 @@ export default function BeforeAfterCase() {
     <section className="section-shell bg-bgSecondary py-section-mobile md:py-section">
       <div className="max-w-container mx-auto px-6">
         <div className="mb-6 text-center">
-          <span className="eyebrow">What this feels like in practice</span>
+          <span className="eyebrow">What changes after we build your site</span>
         </div>
         <motion.h2
           ref={ref}
@@ -20,10 +20,10 @@ export default function BeforeAfterCase() {
           transition={{ duration: 0.55 }}
           className="mb-4 text-center text-h2-mobile md:text-h2 text-textPrimary"
         >
-          Before vs After: missed-call follow-up
+          Before vs After: a proper website
         </motion.h2>
         <p className="mx-auto mb-12 max-w-3xl text-center text-body-mobile md:text-body text-textSecondary">
-          Most owners don&apos;t need &ldquo;AI&rdquo;. They need the phone ringing less painfully. This is the kind of practical workflow we build first.
+          Most owners don&apos;t need a fancy redesign. They need a site that loads fast, ranks on Google, and makes the phone ring. This is what that looks like in practice.
         </p>
 
         <div className="grid gap-6 lg:grid-cols-[1fr_auto_1fr] lg:items-stretch">
@@ -40,13 +40,13 @@ export default function BeforeAfterCase() {
               </span>
             </div>
             <h3 className="text-h3-mobile md:text-h3 text-textPrimary mb-4">
-              Leads leak while you&apos;re on the job
+              No website, or one that&apos;s invisible
             </h3>
             <ul className="space-y-3 text-body-mobile md:text-body text-textSecondary">
-              <li className="panel-soft px-4 py-3">Customer calls. You miss it.</li>
-              <li className="panel-soft px-4 py-3">No voicemail. They try the next business.</li>
-              <li className="panel-soft px-4 py-3">You call back later. Lead is already gone.</li>
-              <li className="panel-soft px-4 py-3">End result: wasted ad spend and an empty booking slot.</li>
+              <li className="panel-soft px-4 py-3">Customer Googles your service. You don&apos;t show up.</li>
+              <li className="panel-soft px-4 py-3">They click the next result — your competitor.</li>
+              <li className="panel-soft px-4 py-3">Your Facebook page is the only thing that comes up. It looks half-done.</li>
+              <li className="panel-soft px-4 py-3">End result: invisible online, paying full price for ads that don&apos;t convert.</li>
             </ul>
           </motion.div>
 
@@ -71,13 +71,13 @@ export default function BeforeAfterCase() {
               </span>
             </div>
             <h3 className="text-h3-mobile md:text-h3 text-textPrimary mb-4">
-              AI answers the call — you get the full story
+              Live, ranking, and capturing every lead
             </h3>
             <ul className="space-y-3 text-body-mobile md:text-body text-textSecondary">
-              <li className="panel-soft px-4 py-3">AI receptionist picks up and has a real conversation with the caller.</li>
-              <li className="panel-soft px-4 py-3">Gets their name, number, and exactly what they need.</li>
-              <li className="panel-soft px-4 py-3">Lets them know someone will call back shortly — no dead end.</li>
-              <li className="panel-soft px-4 py-3">You get an SMS/email with the full summary and their number — ready to call back.</li>
+              <li className="panel-soft px-4 py-3">Customer Googles. Your site loads in under 2 seconds.</li>
+              <li className="panel-soft px-4 py-3">Clear services, click-to-call, suburb targeting — they call you.</li>
+              <li className="panel-soft px-4 py-3">Missed call? AI text-back replies within 30 seconds.</li>
+              <li className="panel-soft px-4 py-3">End result: more calls, more bookings, lower cost per lead.</li>
             </ul>
           </motion.div>
         </div>

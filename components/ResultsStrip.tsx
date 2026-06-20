@@ -2,24 +2,24 @@
 
 const results = [
   {
-    value: "12+ calls/wk",
-    title: "Often missed before setup",
-    description: "Common for busy tradies once site work, quoting, and after-hours calls stack up.",
+    value: "from $699",
+    title: "Starter website",
+    description: "One-off setup, you own the site, no lock-in. Live in 48 hours.",
   },
   {
-    value: "<60 sec",
-    title: "Summary back to you",
-    description: "Fast handoff so you know who called, what they need, and what they were told.",
+    value: "48 hrs",
+    title: "Brief to live",
+    description: "From your first 15-minute call to a live, Google-ready site.",
   },
   {
-    value: "2-5 days",
-    title: "Typical setup",
-    description: "We keep it simple and get the system live fast.",
+    value: "from $399/mo",
+    title: "Local SEO",
+    description: "Rank for '[your trade] [suburb]' and stop paying for every click.",
   },
   {
-    value: "24/7",
-    title: "Coverage",
-    description: "While you&apos;re on the tools, we handle your missed calls.",
+    value: "30-90 days",
+    title: "First SEO movement",
+    description: "Depends on your niche and suburb — we'll be honest about timing.",
   },
 ];
 

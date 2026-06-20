@@ -28,20 +28,25 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "AI Automation Adelaide | AI Adelaide — Stop Losing Leads While You Sleep",
+    default: "AI Adelaide | Websites, SEO & AI Automation for Adelaide Small Business",
     template: "%s | AI Adelaide",
   },
   description:
-    "AI automation for Adelaide tradies and small businesses. Missed call response, quote follow-up, reviews — automate the work that loses you jobs. Free audit.",
+    "AI Adelaide builds AI-powered websites from $699, AI-driven local SEO from $399/mo, and AI automation from $199/mo for Adelaide small businesses. Faster builds, smarter SEO, 24/7 lead capture.",
   keywords: [
+    "AI Adelaide",
+    "AI websites Adelaide",
+    "AI SEO Adelaide",
     "AI automation Adelaide",
-    "AI for tradies Adelaide",
-    "missed call service Adelaide",
-    "small business automation Adelaide",
     "AI receptionist Adelaide",
-    "quote follow-up automation",
-    "Google reviews automation Adelaide",
-    "business automation Adelaide",
+    "AI-powered websites Adelaide",
+    "AI-driven SEO Adelaide",
+    "website design Adelaide",
+    "affordable websites Adelaide",
+    "small business websites Adelaide",
+    "SEO Adelaide",
+    "local SEO Adelaide",
+    "small business automation Adelaide",
   ],
   authors: [{ name: "AI Adelaide" }],
   creator: "AI Adelaide",
@@ -53,9 +58,9 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "/",
     siteName: "AI Adelaide",
-    title: "Stop Losing Leads | AI Adelaide — AI Automation for Small Business",
+    title: "AI Adelaide | Websites, SEO & AI Automation for Adelaide Small Business",
     description:
-      "Adelaide-based automation for tradies, allied health, and small business. Instant follow-ups, 24/7 AI assistants, bookkeeping prep. Get your time back.",
+      "Website design from $699, local SEO, and AI automation for Adelaide small businesses. Affordable websites, SEO that ranks, automation that saves time.",
     images: [
       {
         url: "/images/og-image.png",
@@ -67,9 +72,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stop Losing Leads | AI Adelaide",
+    title: "AI Adelaide | Websites, SEO & AI Automation",
     description:
-      "Adelaide-based automation for tradies, allied health, and small business. Get your time back.",
+      "Affordable websites, local SEO, and AI automation for Adelaide small businesses. From $699. AI Adelaide.",
     images: ["/images/og-image.png"],
   },
   icons: {
@@ -131,10 +136,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://www.aiadelaide.com.au/#organization",
+              "@id": "https://aiadelaide.com.au/#organization",
               name: "AI Adelaide",
-              description: "AI receptionist and automation services for Adelaide businesses",
-              url: "https://www.aiadelaide.com.au",
+              description: "AI Adelaide — AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses",
+              url: "https://aiadelaide.com.au",
               telephone: "+61871009788",
               email: "hello@aiadelaide.com.au",
               address: {
@@ -156,6 +161,43 @@ export default function RootLayout({
               },
               priceRange: "$$",
               sameAs: ["https://share.google/sQ9EA93N5bVW9qdTn"],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "AI Adelaide Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "AI-Powered Website Design",
+                      description: "AI-powered website design for Adelaide small businesses, from $699. AI-accelerated builds, copywriting, and SEO setup.",
+                    },
+                    price: "699",
+                    priceCurrency: "AUD",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "AI-Driven Local SEO",
+                      description: "AI-driven local SEO for Adelaide businesses, from $399/month. AI keyword research, content, and rank tracking.",
+                    },
+                    price: "399",
+                    priceCurrency: "AUD",
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "AI Automation",
+                      description: "AI automation for Adelaide small businesses — missed call text-back, AI receptionist, quote follow-up, from $199/month.",
+                    },
+                    price: "199",
+                    priceCurrency: "AUD",
+                  },
+                ],
+              },
+              aggregateRating: undefined,
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

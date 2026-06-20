@@ -5,117 +5,116 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const slides = [
   {
-    badge: "AI RECEPTIONIST FOR ADELAIDE TRADIES",
-    headline: "AI Adelaide — AI Receptionist & Automation Services for Adelaide Businesses",
+    badge: "WEBSITES FOR ADELAIDE SMALL BUSINESSES",
+    headline: "Get a Professional Website from $699 — Live in 48 Hours",
     subheadline:
-      "Stop losing jobs to missed calls and slow follow-ups. We build AI systems that answer, follow up, and book — so you don't have to.",
+      "Mobile-first, Google-ready, built to turn visitors into calls. No templates, no agency bloat, no lock-in. You own everything.",
     stats: [
       {
-        label: "Response Time",
-        value: "< 60s",
-        detail: "for missed call follow-up",
-        accent: "scan-line",
+        label: "Starting price",
+        value: "$699",
+        detail: "one-off setup, you own it",
       },
       {
-        label: "Setup Time",
-        value: "2-5 days",
-        detail: "for most tradie clients",
+        label: "Live in",
+        value: "48 hrs",
+        detail: "from brief to live site",
       },
       {
-        label: "Contract Terms",
-        value: "No lock-in",
-        detail: "month to month",
+        label: "Lock-in",
+        value: "None",
+        detail: "month to month, your site",
       },
     ],
     card: {
-      label: "Missed call system",
-      title: "What happens after a customer calls",
+      label: "Starter website",
+      title: "What's included from $699",
+      badge: "Most affordable tier",
+      timeline: [
+        ["3-page custom site (Home, Services, Contact)", "Built"],
+        ["Mobile-first, click-to-call, fast load", "Built"],
+        ["Title tags, meta, sitemap, schema", "Built"],
+        ["Contact form + Google Business Profile setup", "Built"],
+      ],
+      notes: [
+        {
+          label: "Best for",
+          text: "Sole traders, new businesses, anyone with no website or one they're embarrassed by.",
+        },
+        {
+          label: "Upgrade later",
+          text: "Add SEO or automation anytime. No penalty, no migration headaches.",
+        },
+      ],
+    },
+  },
+  {
+    badge: "LOCAL SEO FOR ADELAIDE BUSINESSES",
+    headline: "Get Found on Google When Adelaide Customers Search",
+    subheadline:
+      "We get your business ranking for searches like 'plumber Norwood' or 'cafe Glenelg' — the searches that actually bring customers. Local SEO from $399/month.",
+    stats: [
+      { label: "Local SEO", value: "from $399/mo", detail: "no lock-in" },
+      { label: "First movement", value: "30-60 days", detail: "for niche suburbs" },
+      { label: "Sustainable rank", value: "3-6 mo", detail: "for competitive areas" },
+    ],
+    card: {
+      label: "SEO setup",
+      title: "What we do each month",
+      badge: "No long contracts",
+      timeline: [
+        ["Keyword research + suburb targeting", "Month 1"],
+        ["Service + suburb pages built", "Month 1-2"],
+        ["Google Business Profile + citations", "Ongoing"],
+        ["Blog content + rank tracking", "Ongoing"],
+      ],
+      notes: [
+        {
+          label: "You get",
+          text: "A clear monthly report — where you're ranking, what's improving, and what we're working on next.",
+        },
+        {
+          label: "We focus on",
+          text: "Searches with buying intent. Not vanity keywords. Real customers in your service area.",
+        },
+      ],
+    },
+  },
+  {
+    badge: "AI AUTOMATION FOR ADELAIDE BUSINESSES",
+    headline: "Capture Every Lead — Even When You're on the Job or Asleep",
+    subheadline:
+      "Missed call text-back, AI receptionist, quote follow-ups, and review requests. The boring (and expensive) stuff handled automatically, from $199/month.",
+    stats: [
+      { label: "Automation", value: "from $199/mo", detail: "setup in 2-5 days" },
+      { label: "Missed call reply", value: "< 30s", detail: "instant text back" },
+      { label: "Coverage", value: "24/7", detail: "while you sleep" },
+    ],
+    card: {
+      label: "Automation stack",
+      title: "What runs in the background",
       badge: "Live in days",
       timeline: [
-        ["Call comes in while you're on the tools", "0s"],
-        ["AI receptionist answers and finds out what they need", "12s"],
-        ["Caller is told a callback is coming", "35s"],
-        ["You get a full summary by SMS or email", "< 60s"],
+        ["Missed call triggers instant SMS reply", "Auto"],
+        ["AI receptionist answers 24/7", "Auto"],
+        ["Quote follow-ups sent Day 2 + Day 5", "Auto"],
+        ["Review request after every job", "Auto"],
       ],
       notes: [
         {
-          label: "Caller hears",
-          text: "“No worries — I'll pass this on and someone will call you back shortly.”",
+          label: "Best for",
+          text: "Tradies, clinics, and busy businesses losing leads to missed calls and slow follow-up.",
         },
         {
-          label: "You receive",
-          text: "Name, suburb, job type, urgency, and exactly what they were told.",
-        },
-      ],
-    },
-  },
-  {
-    badge: "AUTOMATED FOLLOW-UP FOR ADELAIDE TRADIES",
-    headline: "Stop Losing Quotes You Never Followed Up.",
-    subheadline:
-      "We automate quote follow-ups for Adelaide tradies. Sent a quote and heard nothing? We follow up automatically — so you win more jobs without lifting a finger.",
-    stats: [
-      { label: "Win Rate", value: "+30%", detail: "more quotes turning into jobs" },
-      { label: "Setup Time", value: "2-5 days", detail: "for most tradie clients" },
-      { label: "Contract", value: "No lock-in", detail: "month to month" },
-    ],
-    card: {
-      label: "Quote follow-up system",
-      title: "What happens after a quote goes out",
-      badge: "Runs automatically",
-      timeline: [
-        ["Quote sent to customer", "Day 0"],
-        ["Automated follow-up SMS sent", "Day 2"],
-        ["Second follow-up if no reply", "Day 5"],
-        ["You get notified when they respond", "Instant"],
-      ],
-      notes: [
-        {
-          label: "Customer gets",
-          text: "A polite nudge that keeps your business front of mind without you chasing manually.",
-        },
-        {
-          label: "You receive",
-          text: "A notification as soon as they reply, so you can jump back in when the lead is hot.",
-        },
-      ],
-    },
-  },
-  {
-    badge: "REVIEW AUTOMATION FOR ADELAIDE TRADIES",
-    headline: "Turn Every Finished Job Into a 5-Star Review.",
-    subheadline:
-      "We automate Google review requests for Adelaide tradies. Job done? We send a polite follow-up asking for a review — while the experience is still fresh.",
-    stats: [
-      { label: "Avg Reviews/Month", value: "+8", detail: "more fresh Google reviews" },
-      { label: "Setup Time", value: "2-5 days", detail: "for most tradie clients" },
-      { label: "Contract", value: "No lock-in", detail: "month to month" },
-    ],
-    card: {
-      label: "Review request system",
-      title: "What happens once the job is finished",
-      badge: "Fresh reviews faster",
-      timeline: [
-        ["Job completed", "Day 0"],
-        ["Automated thank-you + review request sent", "2hrs later"],
-        ["Reminder if no review left", "Day 3"],
-        ["New Google review live", "Day 3-7"],
-      ],
-      notes: [
-        {
-          label: "Customer gets",
-          text: "A simple thank-you message with an easy review link while the job is still fresh in their head.",
-        },
-        {
-          label: "You build",
-          text: "More trust, more social proof, and more reasons for the next customer to choose you.",
+          label: "Connects with",
+          text: "ServiceM8, Tradify, Xero, Google Calendar, Calendly, and most CRMs.",
         },
       ],
     },
   },
 ] as const;
 
-const slideIntervalMs = 5500;
+const slideIntervalMs = 6000;
 
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -161,17 +160,20 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                  <a href="/audit" className="btn-primary px-8 py-4">
-                    Get Free Missed Call Audit <span aria-hidden>→</span>
+                  <a href="/contact#send-message" className="btn-primary px-8 py-4">
+                    Send a Message <span aria-hidden>→</span>
                   </a>
-                  <a href="/contact" className="btn-primary px-8 py-4">
-                    Book Free Audit <span aria-hidden>→</span>
+                  <a href="/website-pricing" className="btn-primary px-8 py-4">
+                    See Pricing <span aria-hidden>→</span>
                   </a>
                 </div>
+                <p className="mt-3 text-xs text-textSecondary">
+                  We reply within 2 business hours. No phone call required.
+                </p>
 
                 <div className="mt-7 grid gap-3 sm:grid-cols-3">
                   {activeSlide.stats.map((stat) => (
-                    <div key={stat.label} className={`metric-card ${"accent" in stat ? stat.accent : ""}`}>
+                    <div key={stat.label} className="metric-card">
                       <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-textSecondary">
                         {stat.label}
                       </p>

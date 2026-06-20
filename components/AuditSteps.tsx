@@ -68,7 +68,7 @@ export default function AuditSteps() {
             className="btn-primary inline-flex items-center gap-2 px-8 py-4"
           >
             <span>📞</span>
-            <span>Book Your Audit — 08 7100 9788</span>
+            <span>Book Free Chat — 08 7100 9788</span>
           </a>
         </div>
       </div>

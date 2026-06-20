@@ -1,29 +1,34 @@
 "use client";
 
+import Link from "next/link";
+
 const builds = [
   {
-    title: "AI Receptionist",
-    href: "/ai-receptionist-adelaide",
+    title: "Website Design",
+    href: "/website-design-adelaide",
     description:
-      "Answers calls, captures job details, and tells the caller a callback is coming while you stay focused on the job.",
-    metric: "Phone coverage",
-    flow: ["Call comes in", "AI answers", "Details captured", "Summary sent to you"],
+      "A proper website built for Adelaide small businesses — not a generic template. Mobile-first, fast, Google-ready, and live in 48 hours. From $699.",
+    metric: "Lead service",
+    price: "from $699",
+    flow: ["15-min call", "We design + write", "You review once", "Live in 48 hours"],
   },
   {
-    title: "Automated Admin System",
-    href: "/ai-office-worker-adelaide",
+    title: "Local SEO",
+    href: "/seo",
     description:
-      "Handles quote follow-ups, reminders, and routine admin tasks so fewer leads slip through the cracks.",
-    metric: "Back-office support",
-    flow: ["Task triggered", "Reminder sent", "Status tracked", "Owner updated"],
+      "Get your business ranking on Google for the searches your customers actually type. Suburb pages, content, citations, Google Business Profile — done for you.",
+    metric: "Get found",
+    price: "from $399/mo",
+    flow: ["Keyword research", "Suburb + service pages", "Content + citations", "Rank tracking monthly"],
   },
   {
-    title: "Review + Follow-up System",
-    href: "/ai-automation-for-tradies-adelaide",
+    title: "AI Automation",
+    href: "/ai-automation-adelaide",
     description:
-      "Requests reviews, chases follow-ups, and keeps your pipeline moving without more manual admin.",
-    metric: "Growth support",
-    flow: ["Job completed", "Review request sent", "Follow-up runs", "More jobs booked"],
+      "Missed call text-back, AI receptionist, quote follow-ups, review requests. Capture every lead and stop the manual admin drain. From $199/month.",
+    metric: "Capture leads",
+    price: "from $199/mo",
+    flow: ["Map your workflow", "We set up the system", "Goes live in days", "Improves every month"],
   },
 ];
 
@@ -32,15 +37,15 @@ export default function WhatWeBuild() {
     <section className="section-shell bg-bgSecondary py-section-mobile md:py-section">
       <div className="max-w-container mx-auto px-6">
         <div className="mb-6 text-center">
-          <span className="eyebrow">What we set up</span>
+          <span className="eyebrow">What we build</span>
         </div>
 
         <h2 className="mb-4 text-center text-h2-mobile text-textPrimary md:text-h2">
-          Practical systems Adelaide tradies actually use
+          Three things Adelaide small businesses need to grow
         </h2>
 
         <p className="mx-auto mb-12 max-w-2xl text-center text-body-mobile text-textSecondary md:text-body">
-          No buzzwords. Just phone answering, follow-up, and admin systems that stop leads going cold.
+          Websites, SEO, and AI automation. Pick one, two, or all three — no lock-in, no agency bloat.
         </p>
 
         <div className="grid gap-8 md:grid-cols-3">
@@ -52,6 +57,9 @@ export default function WhatWeBuild() {
                 <span className="rounded-full border border-slate-200/80 bg-white/90 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-textSecondary">
                   {build.metric}
                 </span>
+                <span className="rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+                  {build.price}
+                </span>
               </div>
 
               <h3 className="mb-4 min-h-[3.4rem] text-h3-mobile text-textPrimary md:min-h-[4.2rem] md:text-h3">
@@ -61,9 +69,9 @@ export default function WhatWeBuild() {
                 {build.description}
               </p>
 
-              <a href={build.href} className="mt-4 inline-block text-sm font-semibold text-accent underline">
+              <Link href={build.href} className="mt-4 inline-block text-sm font-semibold text-accent underline">
                 View service page →
-              </a>
+              </Link>
 
               <div className="panel-soft mt-6 p-4">
                 <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-textSecondary">

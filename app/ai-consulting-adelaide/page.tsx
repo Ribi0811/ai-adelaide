@@ -4,6 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: "AI Consulting Adelaide | Practical, Affordable, No Bullshit",
   description: "AI consulting for Adelaide businesses. Audit, implement, support. From $247 audit. For tradies, clinics, retailers. Call 08 7100 9788 for a chat.",
+  alternates: { canonical: "/ai-consulting-adelaide" },
 }
 
 export default function AiConsultingAdelaidePage() {

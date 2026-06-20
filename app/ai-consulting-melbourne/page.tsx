@@ -4,6 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'AI Consulting Melbourne — Practical AI for Small Businesses',
   description: 'AI Adelaide helps Melbourne tradies, cafes, clinics & retail automate phone calls, bookings & admin. Remote setup. From $247 audit. Book your free call.',
+  alternates: { canonical: "/ai-consulting-melbourne" },
 }
 
 export default function AIConsultingMelbournePage() {
@@ -62,7 +63,7 @@ export default function AIConsultingMelbournePage() {
 
         <div className="mt-12 p-8 bg-slate-50 rounded-2xl text-center">
           <Link href="/contact" className="inline-flex items-center gap-2 rounded-xl px-8 py-4 text-base font-semibold text-white transition-colors" style={{ backgroundColor: '#00D4AA' }}>
-            Book Your Free 15-Min Call →
+            Book Free Chat →
           </Link>
         </div>
       </div>

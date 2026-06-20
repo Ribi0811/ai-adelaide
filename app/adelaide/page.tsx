@@ -53,7 +53,7 @@ export default function AdelaidePage() {
         <div className="panel-light p-8 md:p-10">
           <h2 className="text-h2-mobile text-slate-950 md:text-h2">Ready to automate your Adelaide business?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-700">Get a practical roadmap and clear ROI targets for your first automation sprint.</p>
-          <Link href="/contact" className="btn-primary mt-8 inline-flex px-8 py-4">Book Free Audit <span aria-hidden>→</span></Link>
+          <Link href="/contact" className="btn-primary mt-8 inline-flex px-8 py-4" >Book Free Chat <span aria-hidden>→</span></Link>
         </div>
       </section>
     </div>

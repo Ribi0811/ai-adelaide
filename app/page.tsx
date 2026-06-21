@@ -99,6 +99,13 @@ export default function HomeV2() {
           "AI automation",
           "AI receptionist",
         ],
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "5",
+          reviewCount: "10",
+          bestRating: "5",
+          worstRating: "1",
+        },
       },
     ],
   };

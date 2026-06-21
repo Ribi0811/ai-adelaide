@@ -4,20 +4,20 @@ import ContactForm from "@/components/ContactForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Send a Message or Book a Free Chat | AI Adelaide",
+  title: "Contact AI Adelaide | Free Chat",
   description:
     "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot. No pressure.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Send a Message or Book a Free Chat | AI Adelaide",
+    title: "Contact AI Adelaide | Free Chat",
     description: "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot.",
     url: `${siteConfig.url}/contact`,
     images: ["/opengraph-image"],
   },
   twitter: {
-    title: "Send a Message or Book a Free Chat | AI Adelaide",
+    title: "Contact AI Adelaide | Free Chat",
     description: "Free 15-minute consultation. We look at your Adelaide business and recommend the right website, SEO, or AI automation plan — with a fixed quote on the spot.",
     images: ["/twitter-image"],
   },

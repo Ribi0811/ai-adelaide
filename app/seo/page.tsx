@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Local SEO Adelaide — Get Your Business Found on Google",
+  title: "Local SEO Adelaide | From $399/mo",
   description:
     "Local SEO for Adelaide small businesses. We get you found on Google — suburb targeting, Google Business Profile, content, citations. No lock-in contracts.",
   alternates: {

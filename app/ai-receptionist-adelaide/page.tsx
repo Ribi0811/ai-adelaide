@@ -2,17 +2,172 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist Adelaide | Part of Our AI Automation Service",
+  title: "AI Receptionist Adelaide | From $199/mo",
   description:
-    "AI receptionist for Adelaide small businesses. Part of our AI automation service — answers 24/7, captures leads, books appointments, and texts you the summary. From $199/mo.",
+    "AI receptionist for Adelaide small businesses. Part of our AI automation — answers 24/7, books appointments, sends SMS. From $199/mo.",
   alternates: {
     canonical: "/ai-receptionist-adelaide",
   },
 };
 
+/* ------------------------------------------------------------------ */
+/*  FAQ data — extracted by the Next.js schema pattern as FAQPage      */
+/* ------------------------------------------------------------------ */
+const faqItems = [
+  {
+    question: "Will an AI receptionist sound robotic?",
+    answer:
+      "No. Modern AI voices are genuinely good. You can choose an Australian accent (Adelaide-specific if you want), adjust the speaking speed, and set the tone to match your brand. Most callers don't realise they're talking to AI.",
+  },
+  {
+    question: "What if the AI doesn't understand something?",
+    answer:
+      "It's trained to know when it's stuck. If a caller asks something outside its knowledge, it can take a detailed message, transfer to a human, or politely explain its limits and offer alternatives. You're always in control — you set the escalation rules.",
+  },
+  {
+    question: "Can an AI receptionist handle multiple calls at once?",
+    answer:
+      "Yes — unlimited simultaneous calls. A tradie missing 15 calls a week on jobs sees all 15 answered instead of going to voicemail. No busy signals, no queueing, no frustrated customers.",
+  },
+  {
+    question: "Do I need to keep my existing phone number?",
+    answer:
+      "Yes. You keep your current number. We redirect calls to the AI system, or integrate it with your existing phone setup. Your customers won't notice any difference.",
+  },
+  {
+    question: "What happens after hours?",
+    answer:
+      "The AI answers 24/7 — weekends, public holidays, 2am emergencies. For tradies, it can flag urgent calls (gas leaks, burst pipes, no-hot-water) and SMS you immediately while still taking the caller's details.",
+  },
+  {
+    question: "Can the AI speak languages other than English?",
+    answer:
+      "Yes. We can set up multi-language support. Common requests in Adelaide include Mandarin, Vietnamese, Greek, and Italian. The AI can detect the caller's language or ask them to choose at the start.",
+  },
+  {
+    question: "How long does setup take?",
+    answer:
+      "2-5 business days from kickoff. We map your call flow, configure the AI with your services and FAQs, test with sample calls, and hand it over with a 15-minute walkthrough.",
+  },
+  {
+    question: "What if I want to change how it works later?",
+    answer:
+      "Easy. Message us or jump on a quick call. We update scripts, add new FAQs, change routing rules, or add new workflows within 24-48 hours. The AI grows with your business.",
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/*  JSON‑LD Schemas                                                    */
+/* ------------------------------------------------------------------ */
+
+function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
+  if (faqs.length === 0) return null;
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      }}
+    />
+  );
+}
+
+function LocalBusinessJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://aiadelaide.com.au/#organization",
+    name: "AI Adelaide",
+    description:
+      "AI Adelaide provides AI receptionist services for Adelaide small businesses as part of its AI automation stack. 24/7 call answering, booking, and lead capture from $199/mo.",
+    url: "https://aiadelaide.com.au",
+    telephone: "+61871009788",
+    email: "hello@aiadelaide.com.au",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "5 Peel St",
+      addressLocality: "Adelaide",
+      addressRegion: "SA",
+      postalCode: "5000",
+      addressCountry: "AU",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -34.9285,
+      longitude: 138.6007,
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Adelaide",
+    },
+    priceRange: "$$",
+    serviceType: [
+      "AI Receptionist",
+      "AI Automation",
+      "AI-Powered Website Design",
+      "AI-Driven Local SEO",
+    ],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
+function ServiceJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "AI Receptionist Adelaide",
+    serviceType: "AI Receptionist",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "AI Adelaide",
+      url: "https://aiadelaide.com.au",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Adelaide",
+    },
+    description:
+      "AI receptionist service for Adelaide small businesses. 24/7 call answering, appointment booking, lead capture, after-hours coverage. Part of AI automation stack from $199/mo.",
+    offers: {
+      "@type": "Offer",
+      price: "199",
+      priceCurrency: "AUD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "199",
+        priceCurrency: "AUD",
+        unitText: "MONTH",
+      },
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function AIReceptionistAdelaidePage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <LocalBusinessJsonLd />
+      <ServiceJsonLd />
+      <FaqJsonLd faqs={faqItems} />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
@@ -47,7 +202,7 @@ export default function AIReceptionistAdelaidePage() {
             Think of it as having a receptionist who never goes home, never takes a sick day, and never puts a customer on hold.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            You know those calls you miss while you're under a sink, in a meeting, or closed for the weekend? An AI receptionist catches all of them.
+            You know those calls you miss while you&apos;re under a sink, in a meeting, or closed for the weekend? An AI receptionist catches all of them.
           </p>
         </div>
       </section>
@@ -208,73 +363,21 @@ export default function AIReceptionistAdelaidePage() {
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            FAQ: Your Questions Answered
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
+            FAQ: AI Receptionist Adelaide
           </h2>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            Will it sound robotic?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No. Modern AI voices are genuinely good. You can choose an Australian accent (Adelaide-specific if you want), adjust the speaking speed, and set the tone to match your brand. Most callers don&apos;t realise they&apos;re talking to AI.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            What if the AI doesn&apos;t understand something?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            It&apos;s trained to know when it&apos;s stuck. If a caller asks something outside its knowledge, it can:
-          </p>
-          <ul className="list-disc pl-6 mb-4 space-y-2 text-body-mobile text-slate-700 md:text-body">
-            <li>Take a detailed message for you to callback</li>
-            <li>Transfer to a human if it&apos;s urgent</li>
-            <li>Politely explain the limits and offer alternatives</li>
-          </ul>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            We also review call logs regularly and add missing knowledge as we find gaps.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            Can it handle multiple calls at once?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Yes. Unlike a human receptionist, your AI can answer 10 calls at the exact same time if needed. No hold queues, no frustrated customers.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            Do I need to keep my existing phone number?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No problem. You keep your current number. We just redirect calls to the AI system, or integrate it with your existing phone setup. Your customers won&apos;t notice any difference.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            What happens after hours?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            You decide. Some businesses want the AI to handle everything 24/7. Others want it to answer after-hours calls but forward emergencies to a mobile number. You set the rules.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            Can it speak languages other than English?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Yes. We can set up multi-language support. Common requests in Adelaide include Mandarin, Vietnamese, Greek, and Italian. The AI can detect the caller&apos;s language or ask them to choose at the start.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            How long does setup take?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Most businesses are up and running within 2-3 business days. Complex integrations (like connecting to multiple calendars or a custom CRM) might take a week.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-            What if I want to change how it works?
-          </h3>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            Easy. Send us a message or jump on a quick call. We can update scripts, add new FAQs, or change routing rules within 24-48 hours.
-          </p>
+          <div className="space-y-6">
+            {faqItems.map((faq) => (
+              <div key={faq.question}>
+                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">
+                  {faq.question}
+                </h3>
+                <p className="text-body-mobile text-slate-700 md:text-body">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

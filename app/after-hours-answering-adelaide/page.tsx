@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "After Hours Answering Adelaide | 24/7 AI Receptionist",
+  title: "After Hours Answering Adelaide | 24/7",
   description:
     "24/7 after hours answering for Adelaide small businesses. Your AI receptionist handles calls when you're closed, captures leads, and texts you the summary. Part of AI automation from $199/mo.",
   alternates: {

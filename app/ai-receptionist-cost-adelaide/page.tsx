@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist Cost Adelaide | AI Automation Pricing",
+  title: "AI Receptionist Cost Adelaide | 2026",
   description:
     "How much does an AI receptionist cost in Adelaide? Honest pricing — from $199/mo as part of our AI automation stack. Compare to hiring a real receptionist ($4k+/mo).",
   alternates: {

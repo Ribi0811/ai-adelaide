@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "SEO vs Google Ads Adelaide | Which Is Better for Small Business?",
+  title: "SEO vs Google Ads Adelaide | 2026",
   description:
     "SEO vs Google Ads for Adelaide small businesses. Real costs, timelines, and ROI comparison. SEO from $399/mo vs Ads from $500/mo. Which fits your business?",
   alternates: {

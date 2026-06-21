@@ -13,9 +13,9 @@ import HomeV2Pricing from "@/components/home-v2/Pricing";
 import HomeV2CTA from "@/components/home-v2/CTA";
 
 export const metadata: Metadata = {
-  title: "AI Adelaide | AI-Powered Websites, SEO & AI Automation for Adelaide Businesses",
+  title: "AI Adelaide | AI Websites, SEO & Automation",
   description:
-    "AI Adelaide builds AI-powered websites from $699, AI-driven local SEO from $399/mo, and AI automation (receptionist, missed call text-back, quote follow-ups) from $199/mo. Faster builds, smarter SEO, 24/7 lead capture. Book a free chat.",
+    "AI Adelaide builds AI websites from $699, AI SEO from $399/mo, AI automation from $199/mo for Adelaide small businesses. Book a free chat.",
   keywords: [
     "AI Adelaide",
     "AI websites Adelaide",

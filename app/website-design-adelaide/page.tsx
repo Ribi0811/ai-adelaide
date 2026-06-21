@@ -4,7 +4,7 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Website Design Adelaide — From $699, Live in 48 Hours",
+  title: "Website Design Adelaide | From $699",
   description:
     "Professional websites for Adelaide small businesses. Built fast, built to convert. Mobile-first, Google-ready, live in 48 hours. No lock-in contracts.",
   alternates: {

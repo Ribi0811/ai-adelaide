@@ -3,9 +3,9 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "AI Automation Adelaide | Automate Admin, Capture Every Lead",
+  title: "AI Automation Adelaide | From $199/mo",
   description:
-    "AI Automation Adelaide helps local businesses automate lead capture, quote follow-up, scheduling, and admin. 24/7 coverage. Adelaide-based setup. Call 08 7100 9788.",
+    "AI automation for Adelaide businesses — missed call text-back, AI receptionist, quote follow-ups. Setup in 2-5 days. From $199/mo.",
   alternates: { canonical: "/ai-automation-adelaide" },
 };
 

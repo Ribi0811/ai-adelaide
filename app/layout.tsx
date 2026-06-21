@@ -28,7 +28,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "AI Adelaide | Websites, SEO & AI Automation for Adelaide Small Business",
+    default: "AI Adelaide | AI Websites & Automation",
     template: "%s | AI Adelaide",
   },
   description:

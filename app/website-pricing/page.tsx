@@ -5,9 +5,9 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "Website Pricing Adelaide | Affordable Websites from $699",
+  title: "Website Pricing Adelaide | From $699",
   description:
-    "Transparent website design pricing for Adelaide small businesses. Starter from $699, Business $1,299, Growth $2,499. SEO and automation add-ons available. No hidden fees.",
+    "AI-powered website pricing for Adelaide small businesses. Starter from $699, Business $1,299, Growth $2,499. One-off, you own it.",
   alternates: {
     canonical: "/website-pricing",
   },

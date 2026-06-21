@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Plumbers Adelaide | Plumbing Website Design",
+  title: "Plumber Website Adelaide | From $699",
   description:
-    "Professional plumbing websites for Adelaide. Tap-to-call emergency buttons, service area maps, quote forms, Google reviews. Mobile-first, Google-ready. From $699.",
+    "Plumber websites built for Adelaide tradies. Mobile-first, Google-ready, click-to-call, quote forms. AI-built in 48 hours. From $699.",
   alternates: {
     canonical: "/websites-for-plumbers-adelaide",
   },

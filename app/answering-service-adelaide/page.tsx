@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Answering Service Adelaide | 24/7 AI Call Handling",
   description:
-    "AI answering service for Adelaide small businesses. 24/7 call handling, lead capture, appointment booking, instant SMS summaries. Part of AI automation from $199/mo.",
+    "AI answering service for Adelaide. 24/7 call handling, lead capture, SMS summaries. From $199/mo.",
   alternates: {
     canonical: "/answering-service-adelaide",
   },

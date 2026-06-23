@@ -12,28 +12,8 @@ const nextConfig = {
       // Old /ai-for-X pages directly conflict with new /websites-for-X pages.
       // Redirect to the new positioning equivalents.
       {
-        source: "/ai-for-plumbers-adelaide",
-        destination: "/websites-for-plumbers-adelaide",
-        permanent: true,
-      },
-      {
-        source: "/ai-for-electricians-adelaide",
-        destination: "/websites-for-electricians-adelaide",
-        permanent: true,
-      },
-      {
-        source: "/ai-for-builders-adelaide",
-        destination: "/website-design-adelaide",
-        permanent: true,
-      },
-      {
-        source: "/ai-for-allied-health",
-        destination: "/websites-for-clinics-adelaide",
-        permanent: true,
-      },
-      {
         source: "/ai-for-tradies",
-        destination: "/services",
+        destination: "/tradie-website-bundle",
         permanent: true,
       },
       {
@@ -48,16 +28,6 @@ const nextConfig = {
       },
       // Old AI-receptionist-focused pages — fold into the AI Automation offering.
       {
-        source: "/ai-office-worker-adelaide",
-        destination: "/ai-automation-adelaide",
-        permanent: true,
-      },
-      {
-        source: "/missed-call-service",
-        destination: "/ai-automation-adelaide",
-        permanent: true,
-      },
-      {
         source: "/ai-automation-for-tradies-adelaide",
         destination: "/ai-automation-adelaide",
         permanent: true,
@@ -69,18 +39,55 @@ const nextConfig = {
       },
       // Legacy variations and related redirects.
       {
-        source: "/after-hours-answering",
-        destination: "/ai-automation-adelaide",
-        permanent: true,
-      },
-      {
         source: "/adelaide",
         destination: "/services",
         permanent: true,
       },
+      // Tier 7 — consolidate /ai-for-X onto /websites-for-X (web dev focus)
       {
-        source: "/tradie-website-bundle",
-        destination: "/website-design-adelaide",
+        source: "/ai-for-plumbers-adelaide",
+        destination: "/websites-for-plumbers-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-electricians-adelaide",
+        destination: "/websites-for-electricians-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-builders-adelaide",
+        destination: "/websites-for-retail-shops-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-allied-health",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      // Tier 7 — consolidate marketing cluster onto /seo + /ai-marketing-adelaide
+      {
+        source: "/marketing-adelaide",
+        destination: "/seo",
+        permanent: true,
+      },
+      {
+        source: "/marketing-agencies-adelaide",
+        destination: "/ai-marketing-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/marketing-consulting-adelaide",
+        destination: "/ai-marketing-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/digital-marketing-adelaide",
+        destination: "/ai-marketing-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-marketing-automation",
+        destination: "/ai-automation-adelaide",
         permanent: true,
       },
     ];

@@ -29,7 +29,7 @@ const readinessBreakdown = [
   {
     title: 'AI Explorer',
     range: '21-40',
-    description: "You're using some AI tools but not consistently. There's a lot of room to grow.",
+    description: "Free AI readiness score for your Adelaide small business. Get a PDF report in 5 minutes covering website, SEO, automation gaps.",
   },
   {
     title: 'AI Ready',

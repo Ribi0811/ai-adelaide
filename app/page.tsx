@@ -60,6 +60,77 @@ export default function HomeV2() {
         ],
       },
       {
+        "@type": "FAQPage",
+        "@id": `${siteConfig.url}#faq`,
+        url: siteConfig.url,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "How much does a website cost in Adelaide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "AI Adelaide websites start at $699 one-off for a Starter site (3-5 pages, live in 48 hours), $1,299 for a Business site (5-10 pages, blog setup, suburb targeting), and $2,499 for a Growth site (10+ pages, full SEO stack, booking system). You own the site — no monthly fees, no lock-in.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does SEO take to rank in Adelaide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "For local Adelaide keywords (e.g. 'plumber Norwood', 'café Glenelg'), most clients see first-page rankings within 60-90 days. National keywords take 4-6 months. We track rankings weekly and report progress monthly — no guessing, no 6-month silent periods.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What does AI automation actually do for a small business?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The three highest-ROI automations for Adelaide small businesses: (1) missed-call text-back (recovers 30-60% of lost leads), (2) AI receptionist (answers 24/7 for $199/mo vs $4,000/mo hire), (3) quote follow-up sequences (doubles close rate on warm leads). Most clients recover $2,000-$5,000/week in week one.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does a website take to build?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Starter websites are live in 48 hours. Business websites take 5-7 days. Growth websites take 10-14 days. We handle everything — design, copy, SEO setup, integrations — so you can keep running your business. No tech skills required on your end.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can you help if I already have a website?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Absolutely. Most of our clients come to us with an existing website that isn't working. We'll audit it for free, tell you what to fix vs scrap, and either improve it or rebuild it. No upsell if the existing site is fine.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you only work with Adelaide businesses?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes — we're Adelaide-based and built for South Australian small businesses. Tradies, allied health, retail, hospitality, professional services. We're local, we know the market, and we don't pretend to be a global agency.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I have to sign a long-term contract?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No. Websites are one-off, you own them outright. SEO and automation are month-to-month. You own your content, your data, your domain. If you want to leave, you take everything with you — no lock-in, no exit fees.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How much does an AI receptionist cost in Adelaide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "AI receptionist pricing for Adelaide businesses starts at $199/month setup + $99/month ongoing. Compare that to a virtual receptionist at $300-$800/month or a full-time hire at $4,000+/month. You get 24/7 call answering, instant text-back, and calendar booking — and you only pay for what you use.",
+            },
+          },
+        ],
+      },
+      {
         "@type": "WebSite",
         "@id": `${siteConfig.url}#website`,
         url: siteConfig.url,
@@ -198,6 +269,95 @@ export default function HomeV2() {
 
       {/* Demo CTA */}
       <HomeV2CTA />
+
+      {/* More from AI Adelaide — internal linking + sibling discovery */}
+      <section className="section-shell bg-bgPrimary py-section-mobile md:py-section">
+        <div className="max-w-container mx-auto px-6">
+          <div className="mb-10 text-center">
+            <span className="eyebrow">More from AI Adelaide</span>
+            <h2 className="mt-3 text-h2-mobile text-textPrimary md:text-h2">
+              Industries we serve & tools you can use
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-body-mobile text-textSecondary md:text-body">
+              We build conversion-ready websites and run SEO for Adelaide small businesses across every trade. Pick your industry to see exactly what we&apos;d build for you.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            <Link href="/websites-for-plumbers-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Plumbers</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Plumbing websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Tap-to-call, suburb targeting, click-to-call built in. Live in 48 hours.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See plumber sites →</span>
+            </Link>
+
+            <Link href="/websites-for-electricians-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Electricians</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Electrician websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Trust-first design for emergency callouts. Booking, suburb pages, and reviews ready.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See electrician sites →</span>
+            </Link>
+
+            <Link href="/websites-for-clinics-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Clinics</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Clinic websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Online bookings, no-show reminders, privacy-first design. Health-compliant copy.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See clinic sites →</span>
+            </Link>
+
+            <Link href="/websites-for-cafes-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Cafes</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Cafe websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Menu display, online reservations, location maps. Drives weekend foot traffic.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See cafe sites →</span>
+            </Link>
+
+            <Link href="/websites-for-hairdressers-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Hairdressers</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Salon websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Online booking, service menus, transformation galleries. Books clients 24/7.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See salon sites →</span>
+            </Link>
+
+            <Link href="/websites-for-retail-shops-adelaide" className="brand-card group flex h-full flex-col p-6 transition hover:border-accent/60 hover:shadow-lg md:p-7">
+              <span className="mb-3 inline-block w-fit rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Retail</span>
+              <h3 className="text-h4-mobile text-textPrimary md:text-h4">Retail shop websites Adelaide</h3>
+              <p className="mt-2 flex-1 text-sm text-textSecondary">Product showcase, hours, location, and reviews. E-commerce integration ready.</p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent group-hover:underline">See retail sites →</span>
+            </Link>
+          </div>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-4">
+            <Link href="/ai-automation-adelaide" className="brand-card group p-5 transition hover:border-accent/60 hover:shadow-lg">
+              <h3 className="text-sm font-semibold text-textPrimary">AI Automation</h3>
+              <p className="mt-1 text-xs text-textSecondary">From $199/mo</p>
+              <span className="mt-3 inline-flex items-center text-xs font-semibold text-accent group-hover:underline">Explore →</span>
+            </Link>
+            <Link href="/ai-receptionist-adelaide" className="brand-card group p-5 transition hover:border-accent/60 hover:shadow-lg">
+              <h3 className="text-sm font-semibold text-textPrimary">AI Receptionist</h3>
+              <p className="mt-1 text-xs text-textSecondary">From $199/mo</p>
+              <span className="mt-3 inline-flex items-center text-xs font-semibold text-accent group-hover:underline">Explore →</span>
+            </Link>
+            <Link href="/ai-marketing-adelaide" className="brand-card group p-5 transition hover:border-accent/60 hover:shadow-lg">
+              <h3 className="text-sm font-semibold text-textPrimary">AI Marketing</h3>
+              <p className="mt-1 text-xs text-textSecondary">From $497/mo</p>
+              <span className="mt-3 inline-flex items-center text-xs font-semibold text-accent group-hover:underline">Explore →</span>
+            </Link>
+            <Link href="/tools/ai-readiness-calculator" className="brand-card group p-5 transition hover:border-accent/60 hover:shadow-lg">
+              <h3 className="text-sm font-semibold text-textPrimary">AI Readiness Score</h3>
+              <p className="mt-1 text-xs text-textSecondary">Free tool</p>
+              <span className="mt-3 inline-flex items-center text-xs font-semibold text-accent group-hover:underline">Take the test →</span>
+            </Link>
+          </div>
+
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <Link href="/about" className="btn-secondary px-6 py-3">About AI Adelaide</Link>
+            <Link href="/testimonials" className="btn-secondary px-6 py-3">Client Reviews</Link>
+            <Link href="/bookkeeping-adelaide" className="btn-secondary px-6 py-3">AI Bookkeeping Adelaide</Link>
+            <Link href="/virtual-receptionist-adelaide" className="btn-secondary px-6 py-3">Virtual Receptionist</Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

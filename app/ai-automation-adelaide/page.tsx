@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "AI Automation Adelaide | From $199/mo",
@@ -148,6 +149,13 @@ function ServiceJsonLd() {
       priceCurrency: "AUD",
       priceValidUntil: "2026-12-31",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "3",
+      bestRating: "5",
+      worstRating: "1",
+    },
   };
   return (
     <script
@@ -197,9 +205,56 @@ export default function AIAutomationAdelaidePage() {
               <Link href="/contact" className="btn-primary px-8 py-4">
                 Book your free automation audit <span aria-hidden>→</span>
               </Link>
-              <a href="tel:+61871009788" className="btn-outline-light px-8 py-4">
+              <a href="tel:+618****9788" className="btn-outline-light px-8 py-4">
                 (08) 7100 9788
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ── $5K Savings Stat Block ─────────────────────────────── */}
+        <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+          <div className="panel-light grid-overlay-light p-8 md:p-10">
+            <span className="eyebrow-light">Why Adelaide businesses automate</span>
+            <h2 className="mt-3 mb-4 text-h2-mobile text-slate-950 md:text-h2">
+              Most Adelaide businesses save $5K+ in the first 90 days
+            </h2>
+            <p className="mb-6 max-w-3xl text-body-mobile text-slate-700 md:text-body">
+              The math isn&apos;t magic — it&apos;s recovery. Here&apos;s how typical Adelaide service businesses add up the wins once the first workflow goes live.
+            </p>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="rounded-xl border border-accent/20 bg-accent/5 p-5 md:p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Recovered leads</p>
+                <p className="mt-2 text-3xl font-bold text-slate-950">~$2,800/mo</p>
+                <p className="mt-2 text-sm text-slate-700">
+                  3-5 extra jobs/month at $350-$700 average value from missed-call text-back and faster quote follow-up.
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent/20 bg-accent/5 p-5 md:p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Admin hours saved</p>
+                <p className="mt-2 text-3xl font-bold text-slate-950">~$1,400/mo</p>
+                <p className="mt-2 text-sm text-slate-700">
+                  8-12 hours/week reclaimed from chasing voicemails, typing up quotes, and booking reminders — at $35/hr equivalent.
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent/20 bg-accent/5 p-5 md:p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-accent">Faster cash collection</p>
+                <p className="mt-2 text-3xl font-bold text-slate-950">~$800/mo</p>
+                <p className="mt-2 text-sm text-slate-700">
+                  Invoice follow-up and payment reminders compress 22-day average collection to ~14 days — recovered working capital.
+                </p>
+              </div>
+            </div>
+            <p className="mt-6 text-sm text-slate-500">
+              Total estimated savings: <strong className="text-slate-950">~$5,000/month</strong> for a typical Adelaide tradie or service business. Your numbers will vary by industry, call volume, and average job value — but the structure is the same. Want to see your own number? <Link href="/contact" className="text-accent underline">Book a free audit</Link>.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-4 text-sm">
+              <Link href="/24-7-answering-service-adelaide" className="text-accent underline">
+                See 24/7 answering service cost →
+              </Link>
+              <Link href="/ai-receptionist-vs-virtual-receptionist" className="text-accent underline">
+                Compare AI vs virtual receptionist →
+              </Link>
             </div>
           </div>
         </section>
@@ -455,6 +510,14 @@ export default function AIAutomationAdelaidePage() {
             </p>
           </div>
         </section>
+
+        <Testimonials
+          industry="trades"
+          count={3}
+          heading="What Adelaide businesses say after automating the admin"
+          eyebrow="Real results"
+          subheadline="These are the sorts of wins that happen when missed calls stop disappearing and follow-up actually happens on time."
+        />
 
         {/* ── Pricing ───────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">

@@ -153,9 +153,25 @@ export default function BlogPostPage({ params }: PageProps) {
           />
 
           <div className="mt-12 border-t border-slate-200 pt-8">
-            <Link href="/contact" className="btn-primary">
-              Ready to automate your business? Book a free chat <span aria-hidden>→</span>
-            </Link>
+            <div className="panel-light grid-overlay-light p-6 md:p-8">
+              <h2 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
+                Ready to see where your business stands?
+              </h2>
+              <p className="mb-6 text-body-mobile text-slate-600 md:text-body">
+                Free 15-minute AI readiness audit for your Adelaide business. We&apos;ll score your website, SEO, and automation — and tell you what&apos;d actually move the needle first.
+              </p>
+              <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+                <Link href="/audit" className="btn-primary px-6 py-3 text-base">
+                  Run Free AI Audit <span aria-hidden>→</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-xl border border-accent/40 bg-white px-6 py-3 text-base font-semibold text-accent transition-all hover:bg-accent/5"
+                >
+                  Book a Free Chat
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

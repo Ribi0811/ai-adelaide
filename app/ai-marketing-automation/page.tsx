@@ -7,7 +7,7 @@ import CaseStudies from "@/components/CaseStudies";
 export const metadata: Metadata = {
   title: "AI Marketing Automation Adelaide | Capture Every Lead 24/7",
   description:
-    "AI marketing automation for Adelaide small businesses. Missed call text-back, AI receptionist, quote follow-ups, review requests. From $199/month, live in 2-5 days.",
+    "AI marketing automation for Adelaide. Missed-call text-back, AI receptionist, quote follow-ups. From $199/mo.",
   alternates: {
     canonical: "/ai-marketing-automation",
   },

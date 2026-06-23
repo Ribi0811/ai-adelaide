@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Cafes Adelaide | Cafe Website Design",
+  title: "Cafe Website Adelaide | From $699",
   description:
     "Cafe websites for Adelaide coffee shops and restaurants. Menu display, online reservations, location maps, Google reviews. Built fast, mobile-first, from $699.",
   alternates: {

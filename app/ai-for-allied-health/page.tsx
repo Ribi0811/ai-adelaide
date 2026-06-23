@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI for Allied Health Adelaide | Automate Appointments & Admin",
+  title: "AI for Allied Health Adelaide | $199/mo",
   description:
     "AI phone answering for Adelaide physios, chiros, OTs and allied health. Booking automation, after-hours calls, NDIS admin help. Call 08 7100 9788 today.",
   alternates: {

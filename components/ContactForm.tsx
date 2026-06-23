@@ -39,43 +39,46 @@ export default function ContactForm() {
     }
 
     try {
-      const payload = {
-        _subject: `New enquiry from ${form.name.trim()} — AI Adelaide`,
-        _captcha: "false",
-        _template: "table",
-        _replyto: form.email.trim(),
-        name: form.name.trim(),
-        email: form.email.trim(),
-        phone: form.phone.trim() || "Not provided",
-        business: form.business.trim() || "Not provided",
-        service: form.service.trim() || "Not provided",
-        message: form.message.trim(),
-      };
-
-      const res = await fetch("https://formsubmit.co/ajax/hello@aiadelaide.com.au", {
+      // Single endpoint fires BOTH Telegram ping AND email (via SMTP)
+      const res = await fetch("/api/contact-submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          business: form.business.trim(),
+          service: form.service.trim(),
+          message: form.message.trim(),
+          source: typeof window !== "undefined" ? window.location.pathname : "contact form",
+        }),
       });
 
       const raw = await res.text();
-      let data = {} as { success?: string | boolean; message?: string };
+      let data = {} as {
+        ok?: boolean;
+        telegram?: { ok: boolean; error?: string };
+        email?: { ok: boolean; error?: string };
+      };
       try {
-        data = (JSON.parse(raw) as { success?: string | boolean; message?: string }) || {};
+        data = (JSON.parse(raw) as typeof data) || {};
       } catch {
         data = {};
       }
 
-      const failed = !res.ok || data.success === "false" || data.success === false;
-      if (failed) {
-        const activationDetected = /needs\s*Activation|Activate Form/i.test(`${data.message || ""} ${raw}`);
-        const message = activationDetected
-          ? 'Form is awaiting activation. Open the FormSubmit email sent to hello@aiadelaide.com.au and click "Activate Form", then try again.'
-          : data.message || "Something went wrong. Please email us instead.";
-        throw new Error(message);
+      if (!res.ok || !data.ok) {
+        const telegramMsg = data.telegram?.error ? `Telegram: ${data.telegram.error}` : null;
+        const emailMsg = data.email?.error ? `Email: ${data.email.error}` : null;
+        const detail = [telegramMsg, emailMsg].filter(Boolean).join("; ");
+        throw new Error(detail || `HTTP ${res.status}`);
+      }
+
+      // Warn (non-blocking) if either channel failed but lead still captured
+      const channelErrors: string[] = [];
+      if (data.telegram && !data.telegram.ok) channelErrors.push("Telegram");
+      if (data.email && !data.email.ok) channelErrors.push("Email");
+      if (channelErrors.length) {
+        console.warn(`Lead saved, but ${channelErrors.join(" and ")} notification(s) failed.`);
       }
 
       setStatus("success");

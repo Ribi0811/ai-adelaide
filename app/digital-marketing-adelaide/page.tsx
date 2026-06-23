@@ -5,14 +5,14 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Adelaide | SEO, Content & AI Marketing",
+  title: "Digital Marketing Adelaide",
   description:
-    "Digital marketing for Adelaide small businesses. SEO, content, Google Business Profile, AI automation \u2014 the digital channels that actually drive customers. From $399/month.",
+    "Digital marketing for Adelaide. SEO, content, GBP, AI automation. From $399/mo.",
   alternates: {
     canonical: "/digital-marketing-adelaide",
   },
   openGraph: {
-    title: "Digital Marketing Adelaide | SEO, Content & AI Marketing",
+    title: "Digital Marketing Adelaide",
     description: "Digital marketing for Adelaide small businesses. SEO, content, GBP, AI automation. From $399/mo.",
     url: "https://aiadelaide.com.au/digital-marketing-adelaide",
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Digital Marketing Adelaide" }],

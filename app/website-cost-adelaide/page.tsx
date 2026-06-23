@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Website Cost Adelaide | How Much Does a Website Cost?",
+  title: "Website Cost Adelaide | From $699 (2026 Guide)",
   description:
     "How much does a website cost in Adelaide? Full breakdown: DIY $200, budget $395-600, AI Adelaide $699-2,499, agencies $5,000-15,000. No hidden fees.",
   alternates: {

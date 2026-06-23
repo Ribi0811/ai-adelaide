@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Electricians Adelaide | Electrical Website Design",
+  title: "Websites for Electricians Adelaide | From $699",
   description:
     "Electrical websites for Adelaide sparkies. Emergency call buttons, safety compliance info, service area pages, quote forms. Mobile-first, from $699.",
   alternates: {

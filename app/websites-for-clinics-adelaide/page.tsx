@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Clinics Adelaide | Health Practice Website Design",
+  title: "Websites for Clinics Adelaide | From $699",
   description:
     "Healthcare websites for Adelaide clinics — physio, chiro, dental, allied health. Online booking, practitioner profiles, patient forms. From $699.",
   alternates: {

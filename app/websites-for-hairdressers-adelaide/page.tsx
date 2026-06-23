@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Hairdressers Adelaide | Salon Website Design",
+  title: "Websites for Hairdressers Adelaide | From $699",
   description:
-    "Professional salon websites for Adelaide hairdressers. Online booking, service menus, galleries, Google reviews. Built fast, mobile-first, Google-ready. From $699.",
+    "Professional salon websites for Adelaide hairdressers. Online booking, service menus, galleries. Built fast, mobile-first, Google-ready. From $699.",
   alternates: {
     canonical: "/websites-for-hairdressers-adelaide",
   },

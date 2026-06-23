@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "Website Design Adelaide | From $699",
@@ -43,8 +44,9 @@ const buildItems = [
 const portfolio = [
   {
     name: "Plumbing",
-    label: "Plumbing Business Website",
-    caption: "Clean, conversion-focused design. Mobile-first, click-to-call, Google-ready from day one.",
+    label: "Adelaide Plumbing Co. — sample website design",
+    caption:
+      "Sample design (concept layout, not a live client site). Click-to-call, Google-ready, mobile-first, suburb targeting.",
     img: "/portfolio/plumbing-website.jpg",
   },
   {
@@ -127,6 +129,51 @@ const faqs = [
   },
 ];
 
+function ServiceJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Website Design Adelaide",
+    serviceType: "Website Design",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "AI Adelaide",
+      url: "https://aiadelaide.com.au",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Adelaide",
+    },
+    description:
+      "AI-powered website design for Adelaide small businesses. Built in 48 hours, mobile-first, Google-ready. From $699 one-off.",
+    offers: {
+      "@type": "Offer",
+      price: "699",
+      priceCurrency: "AUD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "699",
+        priceCurrency: "AUD",
+        unitText: "ONE_OFF",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "3",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function WebsiteDesignAdelaidePage() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -139,6 +186,7 @@ export default function WebsiteDesignAdelaidePage() {
   };
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <ServiceJsonLd />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -188,7 +236,7 @@ export default function WebsiteDesignAdelaidePage() {
                 <div className="relative mb-5 aspect-[2/3] overflow-hidden rounded-2xl border border-slate-200/80 bg-slate-50">
                   <Image
                     src={item.img}
-                    alt={`${item.label} — example website we build`}
+                    alt={`${item.label} — example website design (concept layout)`}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-contain"
@@ -234,6 +282,13 @@ export default function WebsiteDesignAdelaidePage() {
           </ul>
         </div>
       </section>
+
+      <Testimonials
+        count={3}
+        heading="What Adelaide businesses say"
+        eyebrow="Real results"
+        subheadline="These are the kinds of results that happen when the website is finally fast, clear, and built to convert."
+      />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

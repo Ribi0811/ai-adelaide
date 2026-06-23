@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Adelaide Tradies | Capture Every Job, Reduce Admin",
+  title: "AI Automation for Tradies Adelaide | $199/mo",
   description:
-    "AI automation for Adelaide tradies — capture missed calls in 20 seconds, follow up quotes automatically, and cut admin by 70%. Plumbers, sparkies, builders. Call 08 7100 9788.",
+    "AI automation for Adelaide tradies — missed-call text-back, quote follow-up, job reminders. From $199/mo.",
   alternates: { canonical: "/ai-automation-for-tradies-adelaide" },
 };
 

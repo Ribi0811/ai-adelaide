@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Beauty Salons Adelaide | Salon Website Design",
+  title: "Beauty Salon Website Adelaide | From $699",
   description:
     "Beauty salon websites for Adelaide. Online booking, service menus, transformation galleries, retail integration. From $699, live in 48 hours.",
   alternates: {

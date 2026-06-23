@@ -5,7 +5,7 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "Marketing Adelaide | Affordable Marketing for Adelaide Small Businesses",
+  title: "Marketing Adelaide | From $497/mo for SMBs",
   description:
     "Marketing for Adelaide small businesses. Websites, SEO, and AI automation that actually move the needle. From $699. Fixed pricing, no lock-in, Adelaide-based.",
   alternates: {

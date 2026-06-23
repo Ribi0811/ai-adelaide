@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Retail Shops Adelaide | Shop Website Design",
+  title: "Retail Shop Website Adelaide | From $699",
   description:
     "Retail websites for Adelaide shops. Product showcase, location & hours, Google reviews, e-commerce integration. From $699, live in 48 hours.",
   alternates: {

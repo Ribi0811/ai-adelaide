@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Websites, SEO & AI Automation for Adelaide Businesses",
+  title: "Websites, SEO & AI for Adelaide",
   description:
-    "Website design from $699, local SEO, and AI automation for Adelaide small businesses. Three services that actually grow your bottom line. Book a free chat.",
+    "Websites from $699, local SEO from $399/mo, and AI automation for Adelaide small businesses. Free chat, no lock-in.",
   alternates: {
     canonical: "/services",
   },

@@ -35,3 +35,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local lead capture log (contains PII - never commit)
+data/contact-leads.json
+data/chat-leads.json
+data/chat-leads.csv

@@ -19,8 +19,8 @@ type LeadEntry = {
   timestamp: string;
 };
 
-const TELEGRAM_TOKEN = "8323105052:AAGAQRXykHrpLjd4JBns561_YPrvLDVLdWE";
-const TELEGRAM_CHAT_ID = "1140438132";
+const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_HOME_CHAT_ID || "1140438132";
 const LEADS_FILE_PATH =
   "/Users/ivanribicic/.openclaw/workspace/projects/ai-adelaide/lost-leads-submissions.json";
 

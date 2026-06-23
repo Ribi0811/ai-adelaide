@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Hairdressers Adelaide | Salon Website Design",
+  title: "Websites for Hairdressers Adelaide | From $699",
   description:
-    "Professional salon websites for Adelaide hairdressers. Online booking, service menus, galleries, Google reviews. Built fast, mobile-first, Google-ready. From $699.",
+    "Professional salon websites for Adelaide hairdressers. Online booking, service menus, galleries. Built fast, mobile-first, Google-ready. From $699.",
   alternates: {
     canonical: "/websites-for-hairdressers-adelaide",
   },
@@ -242,6 +242,47 @@ export default function WebsitesForHairdressersPage() {
       </section>
 
       {/* Testimonials */}
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Hairdressers
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for Adelaide service businesses. Browse related beauty and small business guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/websites-for-beauty-salons-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Beauty Salon Websites Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/website-design-for-hairdressers-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Website Design for Hairdressers Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/cheap-website-design-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Cheap Website Design Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Testimonials
         industry="hairdresser"
         count={2}

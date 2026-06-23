@@ -12,7 +12,7 @@ export interface Post {
 export const posts: Post[] = [
 {
     slug: "why-tradies-lose-money-missed-calls",
-    title: "Why Adelaide Small Businesses Are Losing $2,000 a Week to Missed Calls",
+    title: "Missed Calls Cost Adelaide Tradies",
     excerpt:
       "If your phone rings while you are on a roof, under a house, or driving between jobs, you are probably missing revenue without realising it. For many Adelaide tradies, one missed call does not just mean one missed chat, it means one lost booking. Here is what the numbers look like and how simple AI follow-up closes the gap.",
     date: "2026-02-10",
@@ -102,7 +102,7 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-automation-adelaide-electrical",
-    title: "AI Automation for Adelaide Electricians | Stop Missing Jobs",
+    title: "AI Automation for Adelaide Sparkies",
     excerpt: "Adelaide electricians are using AI automation to capture after-hours calls, automate quote follow-ups, and reduce admin by 50%. Practical guide with local examples and ROI calculations for electrical contractors, tradies, and electrical businesses across Adelaide.",
     date: "2026-03-18",
     readTime: "15 min read",
@@ -384,7 +384,7 @@ export const posts: Post[] = [
   },
 {
     slug: "adelaide-hills-ai-automation",
-    title: "Adelaide Hills AI Automation: Work Smarter, Not Harder",
+    title: "AI Automation for Adelaide Hills",
     excerpt: "Discover how Adelaide Hills businesses in Mount Barker, Stirling, and Hahndorf are using AI automation to save 10+ hours weekly on admin tasks. Local examples and practical implementation guide for cafes, retail stores, trades, and service providers.",
     date: "2026-03-18",
     readTime: "11 min read",
@@ -696,7 +696,7 @@ export const posts: Post[] = [
   },
 {
     slug: "norwood-physio-cut-no-shows-automation",
-    title: "Norwood Physio Cut No-Shows by 60% With One Automation",
+    title: "Norwood Physio: 60% Fewer No-Shows",
     excerpt:
       "No-shows quietly drain allied health clinics: empty appointment slots, lost clinician time, and avoidable admin stress. This Norwood case study shows how one focused reminder and waitlist workflow reduced missed appointments by 60% in six weeks. No new reception hires, no huge software overhaul.",
     date: "2026-02-17",
@@ -814,7 +814,7 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-tools-adelaide-hospitality-2026",
-    title: "AI Tools for Adelaide Hospitality: What Actually Works in 2026",
+    title: "AI Tools for Adelaide Cafés 2026",
     excerpt:
       "Hospitality owners are being pitched new AI tools every week, but most are either overkill or badly matched to service reality. This guide focuses on what works for Adelaide venues in 2026: bookings, reviews, staff scheduling, and practical customer messaging. If it does not reduce pressure during service, it is not worth your time.",
     date: "2026-02-21",
@@ -951,7 +951,7 @@ export const posts: Post[] = [
   },
 {
     slug: "5-signs-ready-for-ai-automation",
-    title: "5 Signs Your Adelaide Business Is Ready for AI Automation",
+    title: "5 Signs You Need AI Automation",
     excerpt:
       "Not every business should automate everything straight away, but many are more ready than they think. If you are seeing repeated admin bottlenecks, inconsistent follow-up, or after-hours lead leakage, you are likely leaving money on the table. These five signs help you decide if now is the right time.",
     date: "2026-02-24",
@@ -1028,7 +1028,7 @@ export const posts: Post[] = [
   },
 {
     slug: "adelaide-plumbers-booking-more-jobs",
-    title: "Adelaide Plumbers: Book 30% More Jobs Without Hiring",
+    title: "Adelaide Plumbers: Book More Jobs",
     excerpt: "A sole trader plumber was losing $1,500 a week to missed calls. Here's how he fixed it with three simple automation tools.",
     date: "2026-01-20",
     readTime: "6 min read",
@@ -1119,7 +1119,7 @@ export const posts: Post[] = [
   },
 {
     slug: "admin-tasks-killing-adelaide-tradies",
-    title: "5 Admin Tasks Killing Adelaide Small Businesses (And How to Fix)",
+    title: "Stop Admin Killing Your Trade Biz",
     excerpt: "Missed calls, quote follow-ups, invoice chasing, appointment reminders, and review requests are draining your time and money. Here's the fix for each one.",
     date: "2026-01-28",
     readTime: "7 min read",
@@ -1221,7 +1221,7 @@ export const posts: Post[] = [
   },
 {
     slug: "physio-clinic-no-shows-automation",
-    title: "Why Your Unley Physio Clinic Is Losing $3,000 a Month to No-Shows",
+    title: "Cut Physio No-Shows With AI",
     excerpt: "No-shows are costing your clinic thousands. Here's how two simple automations cut no-shows by 60% and saved $36,000 annually.",
     date: "2026-02-05",
     readTime: "5 min read",
@@ -1331,7 +1331,7 @@ export const posts: Post[] = [
   },
 {
     slug: "glenelg-hospitality-ai-automation",
-    title: "AI for Glenelg Hospitality: How Jetty Road Wins Year-Round",
+    title: "AI for Glenelg Hospitality",
     excerpt: "Seasonal tourism kills hospitality profits. Here's how Glenelg restaurants and cafes are using automation to fill tables in winter and build loyalty that lasts.",
     date: "2026-02-14",
     readTime: "7 min read",
@@ -1443,7 +1443,7 @@ export const posts: Post[] = [
   },
 {
     slug: "adelaide-business-ai-readiness-assessment",
-    title: "Is Your Adelaide Business Healthy Online? (5-Min Digital Health Check)",
+    title: "Adelaide Business AI Health Check",
     excerpt: "Answer 8 simple questions to find out if your business is ready for AI automation—or if you're leaving money on the table.",
     date: "2026-02-20",
     readTime: "4 min read",
@@ -1548,7 +1548,7 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-for-plumbers-adelaide",
-    title: "How Adelaide Plumbers Are Using AI to Book More Jobs While They Sleep",
+    title: "AI for Adelaide Plumbers",
     excerpt: "Adelaide plumbers are losing jobs every time their phone goes unanswered. AI for plumbers Adelaide fixes that - book more work without lifting a finger.",
     seoDescription: "Adelaide plumbers are losing jobs every time their phone goes unanswered. AI for plumbers Adelaide fixes that - book more work without lifting a finger.",
     date: "2026-03-18",
@@ -1652,7 +1652,7 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-for-electricians-adelaide",
-    title: "AI Tools That Are Helping Adelaide Electricians Win More Work (Without More Admin)",
+    title: "AI for Adelaide Electricians",
     excerpt: "Adelaide electricians are winning more jobs with AI - automated booking, quote follow-ups and after-hours lead capture. Less admin, more revenue.",
     seoDescription: "Adelaide electricians are winning more jobs with AI - automated booking, quote follow-ups and after-hours lead capture. Less admin, more revenue.",
     date: "2026-03-18",
@@ -1781,7 +1781,7 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-for-physiotherapists-adelaide",
-    title: "How Adelaide Physio Clinics Are Filling Appointment Gaps and Reducing No-Shows With AI",
+    title: "AI for Adelaide Physio Clinics",
     excerpt: "AI for physiotherapists Adelaide: fill cancellation gaps fast, cut no-shows with automated reminders, capture missed calls 24/7. Fuller books.",
     seoDescription: "AI for physiotherapists Adelaide: fill cancellation gaps fast, cut no-shows with automated reminders, capture missed calls 24/7. Fuller books.",
     date: "2026-03-18",
@@ -2033,7 +2033,7 @@ export const posts: Post[] = [
   },
 {
     slug: "how-much-does-a-missed-call-cost-your-business-adelaide",
-    title: "How Much Does a Missed Call Really Cost Your Business?",
+    title: "Missed Call Cost Calculator",
     excerpt: "Every missed call is a customer calling your competitor. For Adelaide plumbers, that's $62,400 walking out the door annually. Here's the brutal maths and the fix.",
     seoDescription: "Missed calls are draining your Adelaide business. Calculate the real cost: $62,400 per year for a plumber. Here's how to fix it.",
     date: "2026-03-08",
@@ -2288,7 +2288,7 @@ Your business will thank you.`,
   },
   {
     slug: "ai-for-retail-shops-adelaide",
-    title: "AI for Adelaide Retail Shops: Stop Losing Sales When You're Busy Serving Customers",
+    title: "AI for Adelaide Retail Shops",
     excerpt: "Adelaide retail shops are losing sales to missed conversations, poor follow-up, and no after-hours presence. Here's the AI system that fixes it — without hiring more staff.",
     date: "2026-03-30",
     readTime: "7 min read",
@@ -2392,7 +2392,7 @@ Your business will thank you.`,
   },
 {
     slug: "ai-for-hvac-adelaide",
-    title: "AI for HVAC Technicians Adelaide | Stop Losing Emergency Call-Outs",
+    title: "AI for Adelaide HVAC Techs",
     excerpt:
       "Adelaide HVAC techs miss 40% of after-hours emergency calls. AI books jobs, handles after-hours, and qualifies leads while you're on the tools. Here's how it works.",
     date: "2026-04-04",
@@ -2515,7 +2515,7 @@ Your business will thank you.`,
 ,
 {
     slug: "how-much-does-website-cost-adelaide",
-    title: "How Much Does a Website Cost in Adelaide? (2026 Guide)",
+    title: "Website Cost Adelaide (2026)",
     excerpt:
       "How much should you pay for a website in Adelaide? DIY $200, budget shops $395-600, AI Adelaide $699-2,499, agencies $5,000-15,000. Full breakdown with real examples.",
     seoDescription: "How much does a website cost in Adelaide? Full 2026 breakdown: DIY $200, budget $395, AI Adelaide $699-2,499, agencies $5,000-15,000. No hidden fees.",
@@ -2578,7 +2578,7 @@ Your business will thank you.`,
   },
 {
     slug: "cheap-website-design-adelaide",
-    title: "Cheap Website Design Adelaide: What You Get for $699 vs $5,000",
+    title: "Cheap Adelaide Website Design",
     excerpt:
       "Cheap website design in Adelaide does not have to mean bad. Here is exactly what you get for $699, $1,299, $2,499, and $5,000+ — and where the sweet spot is for small businesses.",
     seoDescription: "Cheap website design Adelaide: what $699 vs $1,299 vs $2,499 vs $5,000 gets you. Real comparison, no fluff. Find the sweet spot for your small business.",
@@ -2629,7 +2629,7 @@ Your business will thank you.`,
   },
 {
     slug: "best-website-builder-adelaide-small-business",
-    title: "Best Website Builder for Adelaide Small Businesses (2026)",
+    title: "Best Website Builder Adelaide 2026",
     excerpt:
       "Wix vs Squarespace vs WordPress vs AI Adelaide — which website builder is best for Adelaide small businesses? We compare cost, ease, SEO, and speed to help you choose.",
     seoDescription: "Best website builder for Adelaide small businesses 2026: Wix vs Squarespace vs WordPress vs AI Adelaide. Cost, SEO, speed and ease compared.",
@@ -2677,7 +2677,7 @@ Your business will thank you.`,
   },
 {
     slug: "local-seo-adelaide-small-business-guide",
-    title: "Local SEO Adelaide: A Complete Guide for Small Businesses",
+    title: "Adelaide Local SEO Guide",
     excerpt:
       "Local SEO for Adelaide small businesses — everything you need to know to rank on Google. Keyword research, Google Business Profile, suburb pages, content, citations and reviews.",
     seoDescription: "Local SEO Adelaide guide for small businesses. Keyword research, Google Business Profile, suburb pages, content, citations and reviews. Rank on Google.",
@@ -2751,7 +2751,7 @@ Your business will thank you.`,
 ,
 {
     slug: "seo-vs-google-ads-adelaide-small-business",
-    title: "SEO vs Google Ads Adelaide: Which Is Better for Small Business?",
+    title: "SEO vs Google Ads: Adelaide SMB",
     excerpt:
       "SEO vs Google Ads for Adelaide small businesses. Both get you on Google — one you rent, one you own. Real costs, timelines, and ROI compared. Which fits your business?",
     seoDescription: "SEO vs Google Ads Adelaide: real costs, timelines and ROI compared. SEO from $399/mo compounds. Ads from $500/mo stop when you stop paying. Which fits?",
@@ -2814,7 +2814,7 @@ Your business will thank you.`,
   },
 {
     slug: "website-design-for-hairdressers-adelaide",
-    title: "Website Design for Hairdressers Adelaide: A Complete Guide",
+    title: "Websites for Adelaide Salons",
     excerpt:
       "Hairdressers and salons in Adelaide need a website that takes bookings, shows off work, and looks as good as the salon. Here is what your website needs and what it costs.",
     seoDescription: "Website design for hairdressers Adelaide: what your salon website needs — online booking, gallery, service menu. From $699. Complete guide for Adelaide salons.",
@@ -2862,7 +2862,7 @@ Your business will thank you.`,
   },
 {
     slug: "adelaide-cafe-website-guide",
-    title: "Adelaide Cafe Website Guide: Turn Browsers Into Bookings",
+    title: "Adelaide Café Website Guide",
     excerpt:
       "Adelaide cafes need a website that shows the menu, opening hours, location, and takes bookings. Here is what your cafe website needs and what it costs.",
     seoDescription: "Adelaide cafe website guide: menu display, opening hours, location, bookings. What your cafe website needs and costs from $699. Complete guide.",
@@ -2916,7 +2916,7 @@ Your business will thank you.`,
   },
 {
     slug: "ai-automation-for-adelaide-retail-shops",
-    title: "AI Automation for Adelaide Retail Shops: Stop Losing Sales",
+    title: "AI Automation for Adelaide Retail",
     excerpt:
       "Adelaide retail shops lose sales when staff are busy serving customers. AI automation captures every enquiry, follows up on quotes, and collects reviews automatically.",
     seoDescription: "AI automation for Adelaide retail shops: capture enquiries, follow up quotes, collect reviews automatically. Stop losing sales when staff are busy. From $199/mo.",
@@ -2964,7 +2964,7 @@ Your business will thank you.`,
   },
 {
     slug: "google-business-profile-adelaide-guide",
-    title: "Google Business Profile Adelaide: Complete Setup Guide (2026)",
+    title: "GBP Adelaide: 2026 Setup Guide",
     excerpt:
       "Google Business Profile is the #1 local SEO tool for Adelaide businesses. Step-by-step setup guide, optimisation tips, and how to get reviews that rank you higher.",
     seoDescription: "Google Business Profile Adelaide setup guide: claim, optimise, get reviews, rank in map pack. The #1 free local SEO tool for Adelaide small businesses.",
@@ -3031,7 +3031,7 @@ Your business will thank you.`,
   },
 {
     slug: "adelaide-small-business-digital-checklist",
-    title: "Adelaide Small Business Digital Checklist: 15 Things to Fix in 2026",
+    title: "Adelaide Digital Checklist 2026",
     excerpt:
       "15 things every Adelaide small business should fix in 2026 — website, SEO, Google Business Profile, reviews, automation, social media, email, and more. Free checklist.",
     seoDescription: "Adelaide small business digital checklist 2026: 15 things to fix — website, SEO, Google Business Profile, reviews, automation. Tick these off.",

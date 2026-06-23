@@ -28,7 +28,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "AI Adelaide | Websites, SEO & AI Automation for Adelaide Small Business",
+    default: "AI Adelaide | AI Websites & Automation",
     template: "%s | AI Adelaide",
   },
   description:
@@ -52,6 +52,9 @@ export const metadata: Metadata = {
   creator: "AI Adelaide",
   alternates: {
     canonical: "/",
+    types: {
+      "application/rss+xml": `${siteConfig.url}/feed.xml`,
+    },
   },
   openGraph: {
     type: "website",
@@ -140,7 +143,7 @@ export default function RootLayout({
               name: "AI Adelaide",
               description: "AI Adelaide — AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses",
               url: "https://aiadelaide.com.au",
-              telephone: "+61871009788",
+              telephone: process.env.NEXT_PUBLIC_PHONE || "+618****9788",
               email: "hello@aiadelaide.com.au",
               address: {
                 "@type": "PostalAddress",
@@ -160,7 +163,10 @@ export default function RootLayout({
                 name: "Adelaide",
               },
               priceRange: "$$",
-              sameAs: ["https://share.google/sQ9EA93N5bVW9qdTn"],
+              sameAs: [
+                "https://share.google/cpcxmI66WmeoHWMwu",
+                "https://www.linkedin.com/company/ai-adelaide",
+              ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "AI Adelaide Services",

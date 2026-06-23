@@ -8,37 +8,37 @@ const testimonials = [
     quote:
       "I used to lose 2-3 leads a week to missed calls. Now everything comes through automatically. Paid for itself in the first month.",
     name: "Dave S.",
-    role: "Plumber, Adelaide",
+    role: "Trades business owner",
   },
   {
     quote:
       "Since the new site went live, my online bookings are up 40%. I barely touch the phone for new clients anymore. Best $1,299 I've ever spent.",
     name: "Chloe M.",
-    role: "Salon Owner, Adelaide",
+    role: "Salon owner",
   },
   {
     quote:
       "We were paying an agency $800 a month for SEO that wasn't moving the needle. AI Adelaide got us ranking on page 1 for our suburb in three months.",
     name: "Tom W.",
-    role: "Cafe Owner, Adelaide",
+    role: "Cafe owner",
   },
   {
     quote:
       "Clients used to cancel last-minute all the time. Now the reminder system drops no-shows to almost zero. My front desk spends less time on the phone.",
     name: "James L.",
-    role: "Health Clinic, Adelaide",
+    role: "Clinic owner",
   },
   {
     quote:
       "I was invisible on Google. Within 6 weeks of the new site + SEO, I was getting 4-5 new client enquiries a week from search. Wish I'd done it sooner.",
     name: "Megan R.",
-    role: "Beauty Salon, Adelaide",
+    role: "Beauty salon owner",
   },
   {
     quote:
       "The site paid for itself in the first weekend. One customer found us on Google and spent $1,200. The SEO keeps working even when I'm not marketing.",
     name: "Josh K.",
-    role: "Retail Shop, Adelaide",
+    role: "Retail shop owner",
   },
 ];
 

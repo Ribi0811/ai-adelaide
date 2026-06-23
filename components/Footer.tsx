@@ -6,6 +6,13 @@ const serviceLinks = [
   { href: "/website-pricing", label: "Website Pricing" },
   { href: "/seo", label: "Local SEO" },
   { href: "/ai-automation-adelaide", label: "AI Automation" },
+  { href: "/ai-receptionist-adelaide", label: "AI Receptionist" },
+  { href: "/virtual-receptionist-adelaide", label: "Virtual Receptionist" },
+  { href: "/24-7-answering-service-adelaide", label: "24/7 Answering Service" },
+  { href: "/bookkeeping-adelaide", label: "AI Bookkeeping" },
+  { href: "/ai-receptionist-vs-virtual-receptionist", label: "AI vs Virtual Reception" },
+  { href: "/missed-call-text-back-adelaide", label: "Missed-Call Text-Back" },
+  { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile" },
   { href: "/services", label: "All Services →" },
 ];
 
@@ -29,10 +36,16 @@ const suburbLinks = [
   { href: "/locations", label: "View All Locations →" },
 ];
 
+const socialLinks = [
+  { href: "https://www.linkedin.com/company/ai-adelaide", label: "LinkedIn" },
+  { href: "https://share.google/cpcxmI66WmeoHWMwu", label: "Google Business" },
+];
+
 const resourceLinks = [
   { href: "/marketing-adelaide", label: "Marketing Adelaide" },
   { href: "/ai-marketing-adelaide", label: "AI Marketing" },
   { href: "/digital-marketing-adelaide", label: "Digital Marketing" },
+  { href: "/best-ai-receptionist-australia", label: "Best AI Receptionist 2026" },
   { href: "/blog", label: "Blog" },
   { href: "/website-cost-adelaide", label: "Website Cost Guide" },
   { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads" },
@@ -40,6 +53,8 @@ const resourceLinks = [
   { href: "/marketing-consulting-adelaide", label: "Marketing Consulting" },
   { href: "/ai-marketing-automation", label: "AI Marketing Automation" },
   { href: "/audit", label: "Free Audit" },
+  { href: "/tools/ai-readiness-calculator", label: "AI Readiness Score" },
+  { href: "/testimonials", label: "Client Reviews" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
@@ -84,6 +99,20 @@ export default function Footer() {
                 <Link href="/contact" className="btn-primary inline-flex px-5 py-3 text-sm">
                   Book Free Chat <span aria-hidden>→</span>
                 </Link>
+              </div>
+              <div className="mt-5 flex flex-wrap items-center gap-2">
+                {socialLinks.map((s) => (
+                  <a
+                    key={s.href}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.label}
+                    className="inline-flex h-9 items-center rounded-full border border-slate-200/80 bg-white px-3 text-xs font-medium text-slate-700 transition-colors hover:border-accent/40 hover:text-accent"
+                  >
+                    {s.label}
+                  </a>
+                ))}
               </div>
             </div>
 

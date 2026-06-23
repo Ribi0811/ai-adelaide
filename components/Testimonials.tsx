@@ -56,9 +56,7 @@ export default function Testimonials({
               />
               <figcaption className="mt-6 border-t border-slate-200/80 pt-4">
                 <p className="font-semibold text-textPrimary">{t.name}</p>
-                <p className="text-sm text-textSecondary">
-                  {t.role} &middot; {t.location}
-                </p>
+                <p className="text-sm text-textSecondary">{t.role}</p>
               </figcaption>
             </figure>
           ))}

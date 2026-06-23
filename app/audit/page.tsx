@@ -3,13 +3,13 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free Digital Health Check for Adelaide Small Businesses',
-  description: 'Take our free 3-minute digital health check to find where you\'re losing customers online. Get an instant score across website, SEO, lead capture, and bookings — with tailored recommendations for your Adelaide business.',
+  title: 'Free AI Audit for Adelaide SMBs',
+  description: 'Free AI readiness audit for Adelaide small businesses. Get a scored PDF report on website, SEO, automation in 15 minutes.',
   alternates: {
     canonical: '/audit',
   },
   openGraph: {
-    title: 'Free Digital Health Check | AI Adelaide',
+    title: 'Free Digital Health Check ',
     description: 'Take our free 3-minute digital health check to find where you\'re losing customers online. Get an instant score with tailored recommendations for your Adelaide business.',
     url: 'https://aiadelaide.com.au/audit',
   },

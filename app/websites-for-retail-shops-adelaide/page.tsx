@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Retail Shops Adelaide | Shop Website Design",
+  title: "Retail Shop Website Adelaide | From $699",
   description:
     "Retail websites for Adelaide shops. Product showcase, location & hours, Google reviews, e-commerce integration. From $699, live in 48 hours.",
   alternates: {
@@ -246,6 +246,47 @@ export default function WebsitesForRetailShopsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Retail Shops
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for Adelaide retail and small businesses. Browse related guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/blog/ai-for-retail-shops-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI for Adelaide Retail Shops</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/ai-automation-for-adelaide-retail-shops"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation for Adelaide Retail</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/google-business-profile-adelaide-guide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Google Business Profile Adelaide Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

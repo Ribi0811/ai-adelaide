@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Automation for Adelaide Clinics | Reduce No-Shows, Streamline Admin",
+  title: "AI Automation for Clinics Adelaide | $199/mo",
   description:
-    "AI automation for Adelaide clinics and allied health — cut no-shows by 65%, book appointments 24/7, and free your front desk from repetitive admin. Call 08 7100 9788.",
+    "AI automation for Adelaide clinics — cut no-shows by 65%, book 24/7, free your front desk. From $199/mo.",
   alternates: { canonical: "/ai-automation-for-clinics-adelaide" },
 };
 
@@ -352,7 +352,7 @@ export default function ClinicsAutomationPage() {
             <p className="text-body-mobile text-slate-700 md:text-body">
               "I honestly didn't think it would work for a small clinic like mine. Now my front desk
               spends half the time on admin and we've had zero no-shows since we set up the reminders."
-              — Dr. Sarah K., Physiotherapist
+              — Sarah K., Clinic owner
             </p>
           </div>
         </section>

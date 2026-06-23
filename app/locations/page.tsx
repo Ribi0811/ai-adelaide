@@ -5,14 +5,14 @@ import suburbs from "@/data/suburbs.json";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Adelaide Locations | Website Design, SEO & AI Automation Near You",
+  title: "Adelaide Locations | Web Design, SEO & AI",
   description:
     "We build websites, do local SEO, and set up AI automation for Adelaide small businesses across 13 metro suburbs and the Adelaide Hills. Find your local page.",
   alternates: {
     canonical: `${siteConfig.url}/locations`,
   },
   openGraph: {
-    title: "Adelaide Locations | AI Adelaide",
+    title: "Adelaide Locations ",
     description: "Websites, SEO, and AI automation for Adelaide small businesses across 13 metro suburbs and the Adelaide Hills. Find your local page.",
     url: `${siteConfig.url}/locations`,
     siteName: siteConfig.name,

@@ -5,9 +5,9 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "Website Pricing Adelaide | Affordable Websites from $699",
+  title: "Website Pricing Adelaide | From $699",
   description:
-    "Transparent website design pricing for Adelaide small businesses. Starter from $699, Business $1,299, Growth $2,499. SEO and automation add-ons available. No hidden fees.",
+    "AI-powered website pricing for Adelaide small businesses. Starter from $699, Business $1,299, Growth $2,499. One-off, you own it.",
   alternates: {
     canonical: "/website-pricing",
   },
@@ -184,8 +184,60 @@ export default function WebsitePricingPage() {
     })),
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Website Design & Build",
+    serviceType: "Web Design",
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": "https://aiadelaide.com.au/#organization",
+      name: "AI Adelaide",
+      url: "https://aiadelaide.com.au",
+      telephone: process.env.NEXT_PUBLIC_PHONE || "+618****9788",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "5 Peel St",
+        addressLocality: "Adelaide",
+        addressRegion: "SA",
+        postalCode: "5000",
+        addressCountry: "AU",
+      },
+    },
+    areaServed: { "@type": "City", name: "Adelaide" },
+    description:
+      "Website design and build for Adelaide small businesses. Three tiers: Starter $699, Business $1,299, Growth $2,499. Live in 48 hours, mobile-first, Google-ready.",
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Starter Website",
+        price: "699",
+        priceCurrency: "AUD",
+        description: "3-5 pages, mobile-first, click-to-call, basic SEO",
+      },
+      {
+        "@type": "Offer",
+        name: "Business Website",
+        price: "1299",
+        priceCurrency: "AUD",
+        description: "5-10 pages, copywriting, SEO setup, suburb targeting",
+      },
+      {
+        "@type": "Offer",
+        name: "Growth Website",
+        price: "2499",
+        priceCurrency: "AUD",
+        description: "10+ pages, full SEO stack, booking system, integrations",
+      },
+    ],
+  };
+
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

@@ -23,11 +23,11 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   const suburb = getSuburb(params.suburb);
   if (!suburb) return {};
   return {
-    title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+    title: `${suburb.name} Websites, SEO & AI Automation`,
     description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in. Call ${siteConfig.phone}.`,
     alternates: { canonical: `${siteConfig.url}/${suburb.slug}` },
     openGraph: {
-      title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+      title: `${suburb.name} Websites, SEO & AI Automation`,
       description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
     },
   };
@@ -67,9 +67,12 @@ export default function SuburbPage({ params }: SuburbPageProps) {
   if (!suburb) notFound();
 
   const faqs = buildFaqs(suburb);
-  const matchedTestimonial = testimonials.find(
-    (t) => t.location.toLowerCase() === suburb.name.toLowerCase()
+  // Suburb-specific testimonials no longer exist (privacy — locations removed).
+  // Show a generic Adelaide testimonial as fallback.
+  const suburbTestimonial = testimonials.find(
+    (t) => (t as { location?: string }).location?.toLowerCase() === suburb.name.toLowerCase()
   );
+  const matchedTestimonial = suburbTestimonial ?? testimonials[0];
 
   return (
     <>
@@ -281,7 +284,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
                 &ldquo;{matchedTestimonial.quote}&rdquo;
               </blockquote>
               <p className="text-sm text-slate-500">
-                — {matchedTestimonial.name}, {matchedTestimonial.role}, {matchedTestimonial.location}
+                — {matchedTestimonial.name}, {matchedTestimonial.role}
               </p>
             </div>
           </section>

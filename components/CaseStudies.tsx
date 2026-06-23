@@ -53,7 +53,6 @@ export default function CaseStudies({
               <h3 className="mb-2 text-h3-mobile text-textPrimary md:text-h3">
                 {c.business}
               </h3>
-              <p className="mb-4 text-sm text-textSecondary">{c.location}</p>
 
               <div className="panel-soft mb-5 p-4">
                 <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-textSecondary">

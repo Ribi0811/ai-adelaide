@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "About AI Adelaide — Adelaide Websites, SEO & AI Automation Team",
+  title: "About AI Adelaide | Adelaide AI Specialists",
   description:
     "Adelaide-based team building websites, SEO, and AI automation for small businesses. Not a Sydney agency, not a chatbot vendor. Real systems, local support.",
   alternates: {
@@ -47,6 +47,61 @@ export default function AboutPage() {
           name: "Ivan",
           jobTitle: "Founder",
         },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${siteConfig.url}/about#faq`,
+        url: `${siteConfig.url}/about`,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Who is behind AI Adelaide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "AI Adelaide is founded by Ivan, an Adelaide-based builder with a background in web development, SEO, and AI automation. We're a small, focused team — not a faceless agency.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long has AI Adelaide been around?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "AI Adelaide launched in 2026, built on years of prior freelance web and automation work for Adelaide small businesses. We've rebranded and productised the offering around AI-powered delivery to keep prices low for local SMBs.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Where are you based?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We're based in Adelaide CBD at 5 Peel St, Adelaide SA 5000. We work with clients across all of South Australia — metro and regional.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you work with businesses outside Adelaide?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Our primary focus is Adelaide and South Australia. For Brisbane-based projects, see Clear Sky AI (our sister brand). We don't take on international clients — local focus is what makes our pricing work.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How is AI Adelaide different from a typical agency?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Three things: AI-accelerated delivery (faster, cheaper), month-to-month engagement (no lock-in), and a local-only focus (we know Adelaide). Most agencies charge 3-5x what we do because they have offices, sales teams, and account managers. We don't.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What&apos;s your team size?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Small by design — fewer than 5 people, all based in Adelaide. We use AI tools to amplify our output and keep our costs (and your invoice) low.",
+            },
+          },
+        ],
       },
     ],
   };

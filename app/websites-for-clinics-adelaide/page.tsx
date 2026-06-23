@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Clinics Adelaide | Health Practice Website Design",
+  title: "Websites for Clinics Adelaide | From $699",
   description:
     "Healthcare websites for Adelaide clinics — physio, chiro, dental, allied health. Online booking, practitioner profiles, patient forms. From $699.",
   alternates: {
@@ -246,6 +246,47 @@ export default function WebsitesForClinicsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Health Clinics
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for all Adelaide small businesses. Browse related clinic and allied health resources:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/blog/ai-for-physiotherapists-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI for Adelaide Physiotherapists</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/norwood-physio-cut-no-shows-automation"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">How Norwood Physio Cut No-Shows by 60%</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/physio-clinic-no-shows-automation"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Why Your Physio Clinic Is Losing $3k/Month</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

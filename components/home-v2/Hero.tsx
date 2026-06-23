@@ -93,10 +93,16 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Headline */}
-            <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-              {slide.headline}
-            </h1>
+            {/* Headline — slide 1 is H1 (canonical), other slides are H2 for SEO clarity */}
+            {activeIndex === 0 ? (
+              <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+                {slide.headline}
+              </h1>
+            ) : (
+              <h2 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+                {slide.headline}
+              </h2>
+            )}
 
             {/* Subheadline */}
             <p className="mt-6 max-w-2xl text-lg text-white/70 md:text-xl">

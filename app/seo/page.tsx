@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Local SEO Adelaide — Get Your Business Found on Google",
+  title: "Local SEO Adelaide | From $399/mo",
   description:
     "Local SEO for Adelaide small businesses. We get you found on Google — suburb targeting, Google Business Profile, content, citations. No lock-in contracts.",
   alternates: {
@@ -90,6 +91,51 @@ const faqs = [
   },
 ];
 
+function ServiceJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Local SEO Adelaide",
+    serviceType: "Local SEO",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "AI Adelaide",
+      url: "https://aiadelaide.com.au",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Adelaide",
+    },
+    description:
+      "Local SEO for Adelaide small businesses. We help you show up on Google with suburb targeting, Google Business Profile optimisation, and content that ranks.",
+    offers: {
+      "@type": "Offer",
+      price: "399",
+      priceCurrency: "AUD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "399",
+        priceCurrency: "AUD",
+        unitText: "MONTH",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "3",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function SeoPage() {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -102,6 +148,7 @@ export default function SeoPage() {
   };
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <ServiceJsonLd />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -191,6 +238,13 @@ export default function SeoPage() {
           </p>
         </div>
       </section>
+
+      <Testimonials
+        count={3}
+        heading="What Adelaide businesses say after the rankings start moving"
+        eyebrow="Real results"
+        subheadline="SEO takes a bit longer than ads, but once it lands, it keeps sending leads without you paying per click."
+      />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

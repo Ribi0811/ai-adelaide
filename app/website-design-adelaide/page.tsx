@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Website Design Adelaide — From $699, Live in 48 Hours",
+  title: "Website Design Adelaide | From $699",
   description:
-    "Professional websites for Adelaide small businesses. Built fast, built to convert. Mobile-first, Google-ready, live in 48 hours. No lock-in contracts.",
+    "AI-powered website design for Adelaide small businesses. Built in 48 hours, mobile-first, Google-ready. From $699 one-off. No lock-in. Live in 2 days.",
   alternates: {
     canonical: "/website-design-adelaide",
   },
@@ -43,8 +44,9 @@ const buildItems = [
 const portfolio = [
   {
     name: "Plumbing",
-    label: "Plumbing Business Website",
-    caption: "Clean, conversion-focused design. Mobile-first, click-to-call, Google-ready from day one.",
+    label: "Adelaide Plumbing Co. — sample website design",
+    caption:
+      "Sample design (concept layout, not a live client site). Click-to-call, Google-ready, mobile-first, suburb targeting.",
     img: "/portfolio/plumbing-website.jpg",
   },
   {
@@ -88,29 +90,89 @@ const whoItsFor = [
 const faqs = [
   {
     question: "Do I need to write my own content?",
-    answer: "No. We handle all the copywriting. You tell us about your business, we write it.",
+    answer: "No. We handle all the copywriting using AI trained on your industry. You tell us about your business in a 15-minute call, we write it. You review and request changes — we don't publish until you're happy.",
   },
   {
     question: "What platform is it built on?",
     answer:
-      "We build on Next.js — fast, modern, and optimised for Google. No WordPress bloat, no page builders.",
+      "We build on Next.js — fast, modern, and optimised for Google. No WordPress bloat, no page builders, no plugin updates to worry about. Your site loads in under 2 seconds on mobile, which is faster than 90% of Adelaide small business websites.",
   },
   {
     question: "Can I update it myself?",
     answer:
-      "For basic text changes, yes. For structural changes, most clients just ask us — it's usually done same day.",
+      "For basic text changes and image swaps, yes. For structural changes, most clients just ask us — it's usually done same day. We include 30 days of free changes after launch, then a small monthly maintenance fee if you want ongoing support.",
   },
   {
-    question: "What does it cost?",
+    question: "What does website design cost in Adelaide?",
     answer:
-      "We keep it simple — one setup fee, then a small monthly for hosting + maintenance. Book a call and we'll quote you specifically.",
+      "Our Starter tier is $699 one-off (3-5 pages), Business is $1,499 (5-10 pages with copywriting and SEO setup), Growth is $2,499+ (10+ pages with full SEO integration). All include mobile-first design, Google-ready setup, suburb targeting pages, and click-to-call integration. One-off, you own it. Compare to typical Adelaide agencies quoting $3,000-$10,000+ for the same scope.",
+  },
+  {
+    question: "How long until my website is live?",
+    answer:
+      "48 hours from our kickoff call. We do a 15-minute brief, build the site overnight using AI-assisted workflows, you review the next day, we make your changes, and it's live the following morning. If we need a custom domain, add 24 hours for DNS setup.",
+  },
+  {
+    question: "Do you write the SEO content too?",
+    answer:
+      "Yes. Every page is built with SEO best practices baked in: keyword research tied to your services and Adelaide suburbs, proper title tags, meta descriptions, header structure, internal linking, and local business schema. Most Adelaide websites we audit are missing half of this — we include it as standard.",
   },
   {
     question: "Can I add the AI receptionist later?",
     answer:
-      "Absolutely. The website is built to connect with our AI missed call system whenever you're ready.",
+      "Absolutely. The website is built to connect with our AI missed call system whenever you're ready. Most clients add it 1-3 months after launch once they've seen the enquiry volume from the new site. From $199/month as part of the AI automation stack.",
+  },
+  {
+    question: "Will my website work on phones?",
+    answer:
+      "Yes — every site we build is mobile-first by default. 80%+ of your visitors will be on a phone, so we design for that screen first, then scale up to tablet and desktop. Tap-to-call buttons, fast load times, thumb-friendly layouts — all standard.",
   },
 ];
+
+function ServiceJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Website Design Adelaide",
+    serviceType: "Website Design",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "AI Adelaide",
+      url: "https://aiadelaide.com.au",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Adelaide",
+    },
+    description:
+      "AI-powered website design for Adelaide small businesses. Built in 48 hours, mobile-first, Google-ready. From $699 one-off.",
+    offers: {
+      "@type": "Offer",
+      price: "699",
+      priceCurrency: "AUD",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: "699",
+        priceCurrency: "AUD",
+        unitText: "ONE_OFF",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "3",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
 
 export default function WebsiteDesignAdelaidePage() {
   const faqSchema = {
@@ -124,6 +186,7 @@ export default function WebsiteDesignAdelaidePage() {
   };
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <ServiceJsonLd />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -173,7 +236,7 @@ export default function WebsiteDesignAdelaidePage() {
                 <div className="relative mb-5 aspect-[2/3] overflow-hidden rounded-2xl border border-slate-200/80 bg-slate-50">
                   <Image
                     src={item.img}
-                    alt={`${item.label} — example website we build`}
+                    alt={`${item.label} — example website design (concept layout)`}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-contain"
@@ -219,6 +282,13 @@ export default function WebsiteDesignAdelaidePage() {
           </ul>
         </div>
       </section>
+
+      <Testimonials
+        count={3}
+        heading="What Adelaide businesses say"
+        eyebrow="Real results"
+        subheadline="These are the kinds of results that happen when the website is finally fast, clear, and built to convert."
+      />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

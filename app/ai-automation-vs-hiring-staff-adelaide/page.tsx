@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Automation vs Hiring Staff Adelaide — The Real Cost Comparison",
+  title: "AI Automation vs Hiring Staff Adelaide | Cost",
   description:
     "Hiring a receptionist in Adelaide costs $55K+ per year. AI automation costs from $99/mo. Here's the honest comparison for Adelaide small businesses.",
   alternates: {

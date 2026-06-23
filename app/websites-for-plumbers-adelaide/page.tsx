@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Plumbers Adelaide | Plumbing Website Design",
+  title: "Plumber Website Adelaide | From $699",
   description:
-    "Professional plumbing websites for Adelaide. Tap-to-call emergency buttons, service area maps, quote forms, Google reviews. Mobile-first, Google-ready. From $699.",
+    "Plumber websites built for Adelaide tradies. Mobile-first, Google-ready, click-to-call, quote forms. AI-built in 48 hours. From $699.",
   alternates: {
     canonical: "/websites-for-plumbers-adelaide",
   },
@@ -255,6 +255,47 @@ export default function WebsitesForPlumbersPage() {
         heading="What Adelaide tradies say"
         eyebrow="From our clients"
       />
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Tradies
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for all Adelaide trade businesses. Browse our industry-specific pages or read our latest tradie guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/websites-for-electricians-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Electrician Websites Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/adelaide-plumbers-booking-more-jobs"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">How Adelaide Plumbers Book 30% More Jobs</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/why-tradies-lose-money-missed-calls"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Why Tradies Lose Money to Missed Calls</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/missed-call-text-back-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Missed Call Text-Back Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

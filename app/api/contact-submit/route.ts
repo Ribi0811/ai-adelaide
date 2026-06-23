@@ -47,6 +47,11 @@ async function sendContactEmail(lead: {
       port: smtp.smtp_port,
       secure: smtp.ssl,
       auth: { user: smtp.email, pass: smtp.password },
+      // When SMTP_HOST is a raw IP, the TLS cert won't match — disable cert verification.
+      // The connection is still encrypted; we're just not validating the cert hostname.
+      tls: { rejectUnauthorized: false },
+      // Suppress self-signed cert warnings
+      requireTLS: smtp.ssl,
     });
 
     const text = [

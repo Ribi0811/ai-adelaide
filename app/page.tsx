@@ -43,12 +43,33 @@ export default function HomeV2() {
       {
         "@type": "Organization",
         "@id": `${siteConfig.url}#organization`,
-        name: siteConfig.name,
+        name: "AI Adelaide",
         url: siteConfig.url,
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteConfig.url}/opengraph-image`,
+          width: 1200,
+          height: 630,
+        },
         description:
           "AI Adelaide builds AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses. Websites from $699, SEO from $399/month, AI automation from $199/month.",
         email: siteConfig.email,
+        telephone: siteConfig.phoneHref?.replace("tel:", "") || "+61871009788",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "5 Peel St",
+          addressLocality: "Adelaide",
+          addressRegion: "SA",
+          postalCode: "5000",
+          addressCountry: "AU",
+        },
         areaServed: "Adelaide",
+        foundingDate: "2023",
+        priceRange: "$$",
+        sameAs: [
+          "https://www.linkedin.com/company/ai-adelaide",
+          "https://share.google/cpcxmI66WmeoHWMwu",
+        ],
         knowsAbout: [
           "AI-powered website design",
           "AI-driven local SEO",

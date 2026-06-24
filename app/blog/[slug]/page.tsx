@@ -119,9 +119,17 @@ export default function BlogPostPage({ params }: PageProps) {
     inLanguage: "en-AU",
     url: `${siteConfig.url}/blog/${post.slug}`,
     author: {
-      "@type": "Organization",
-      name: "AI Adelaide",
+      "@type": "Person",
+      name: "AI Adelaide Editorial Team",
       url: siteConfig.url,
+      sameAs: [
+        "https://www.linkedin.com/company/ai-adelaide",
+      ],
+      worksFor: {
+        "@type": "Organization",
+        name: "AI Adelaide",
+        url: siteConfig.url,
+      },
     },
     publisher: {
       "@type": "Organization",
@@ -138,6 +146,31 @@ export default function BlogPostPage({ params }: PageProps) {
       "@type": "WebPage",
       "@id": `${siteConfig.url}/blog/${post.slug}`,
     },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${siteConfig.url}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${siteConfig.url}/blog/${post.slug}`,
+      },
+    ],
   };
 
   const faqJsonLd = faqs.length > 0
@@ -157,6 +190,10 @@ export default function BlogPostPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       {faqJsonLd && (
         <script

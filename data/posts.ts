@@ -3087,5 +3087,340 @@ Your business will thank you.`,
 
 <h2>Where to Start</h2>
 <p>If you are starting from scratch, the order is: website (1), Google Business Profile (2), reviews (3), then work down the list. If you want help with any or all of these, <a href="/contact">book a free chat</a>. We offer websites from $699, SEO from $399/month, and automation from $199/month. See all <a href="/services">services</a> or read our <a href="/website-cost-adelaide">website cost guide</a>.</p>`
+  },
+  {
+    slug: "adelaide-seo-for-tradies",
+    title: "SEO for Tradies Adelaide: How Plumbers, Electricians & Builders Rank on Google",
+    excerpt:
+      "Adelaide tradies are losing work to competitors who rank higher on Google — even when their service is worse. This guide explains exactly how SEO works for plumbers, electricians, builders, HVAC, and landscapers in Adelaide, and what to do first if you want to rank in the map pack and organic results for 'plumber near me' and 'electrician Adelaide' style searches.",
+    date: "2026-06-25",
+    readTime: "16 min read",
+    category: "How-To",
+    seoDescription: "SEO for tradies Adelaide: the exact playbook plumbers, electricians, builders and HVAC tradies use to rank in the Adelaide map pack and organic results. Step-by-step.",
+    content: `<p>If you are a tradie in Adelaide — a plumber, sparkie, builder, HVAC technician, landscaper, or painter — the customers you want are already searching Google for your service. The question is whether they find you, or your competitor down the road. SEO for tradies in Adelaide is not a luxury anymore. It is the difference between a full book of work and slow weeks.</p>
+<p>This guide is the exact framework we use with Adelaide tradies. It covers local SEO (the map pack), on-page SEO (your website), content (blogs and FAQs), links, technical basics, and the AI automation that makes it all stick. By the end you will know what to do, in what order, and what to ignore.</p>
+
+<h2>Why Adelaide tradies need SEO in 2026</h2>
+<p>Three numbers explain why this matters now:</p>
+<ul>
+  <li><strong>87% of Adelaide homeowners</strong> search online before hiring a tradie (Hotjar / industry surveys of consumer behaviour).</li>
+  <li><strong>The top 3 map pack results</strong> capture roughly 70% of clicks for 'near me' searches.</li>
+  <li><strong>Page 2 of Google gets under 1% of clicks</strong> — being invisible is the default if you are not on page 1.</li>
+</ul>
+<p>If your business does not show up in the top 3 of the map pack for 'plumber [suburb]' or 'electrician Adelaide', you are paying for clicks your competitors get for free. Word of mouth still matters in trades — but in 2026 it is your website that decides whether that word-of-mouth lead becomes your customer or someone else's.</p>
+
+<h2>Who is actually searching for Adelaide tradies</h2>
+<p>Understanding the searcher helps you write the right content. Adelaide tradie searches fall into three buckets:</p>
+
+<h3>1. Emergency searches (urgent intent)</h3>
+<p>Examples: 'burst pipe plumber Adelaide', 'hot water not working', 'emergency electrician Norwood'. These searches spike at night and on weekends. The searcher wants a phone number, fast. If your GBP (Google Business Profile) lists '24/7' and your site loads in under 2 seconds, you win. If it does not, you lose to whoever does.</p>
+
+<h3>2. Comparison searches (commercial intent)</h3>
+<p>Examples: 'best plumber Adelaide Hills', 'electrician reviews Mount Barker', 'how much does a bathroom reno cost Adelaide'. The searcher is collecting options before contacting 2-3 tradies. Reviews, photos, before-and-after galleries, and clear pricing all matter here.</p>
+
+<h3>3. How-to searches (informational intent)</h3>
+<p>Examples: 'how to fix a leaking tap', 'signs your AC needs replacing', 'do I need a sparkie or can I DIY'. These are not direct leads — but they are trust builders. A tradie with the best how-to content in Adelaide wins the comparison searches 6 months later when the reader finally needs the work done.</p>
+
+<h2>Local SEO fundamentals for Adelaide tradies</h2>
+<p>Local SEO is the highest-ROI starting point for any tradie. Most of your customers are within 10-20km of your base, so Google Maps is where you make or break.</p>
+
+<h3>Claim and optimise your Google Business Profile</h3>
+<p>If you have not claimed your GBP, do it today at business.google.com. Fill in:</p>
+<ul>
+  <li><strong>Business name</strong> exactly as it appears on invoices (no keyword stuffing like 'Best Plumber Adelaide | Cheap & Fast').</li>
+  <li><strong>Primary category</strong> — Plumber, Electrician, etc. Use the most specific category Google offers.</li>
+  <li><strong>Secondary categories</strong> — Emergency Plumber, Hot Water Repair, etc.</li>
+  <li><strong>Service area</strong> — every Adelaide suburb you actually service, not just where you are based.</li>
+  <li><strong>Hours</strong> — including emergency / after-hours availability.</li>
+  <li><strong>Photos</strong> — at least 10 real photos of your team, vans, completed jobs. Update monthly.</li>
+  <li><strong>Posts</strong> — Google GBP has a mini-blog. Post weekly: job completions, tips, offers. Posts decay fast so keep adding.</li>
+</ul>
+
+<h3>NAP consistency (Name, Address, Phone)</h3>
+<p>Your business name, address, and phone must be identical across every place they appear online. If your ABN-registered name is 'Smith Plumbing Pty Ltd' but your van says 'Smith Plumbing', Google sees two entities. Pick one canonical form and use it everywhere.</p>
+
+<h3>Reviews: the single biggest local ranking factor</h3>
+<p>You need reviews. The top 3 map pack results for tradie searches in Adelaide typically have 50-200+ reviews. The bottom of page 1 has 10-30. Aim for:</p>
+<ul>
+  <li>10+ reviews in your first 3 months</li>
+  <li>2-5 new reviews per month ongoing</li>
+  <li>Reply to every review within 24 hours (positive and negative)</li>
+  <li>Ask at the moment of job completion — not via email a week later</li>
+</ul>
+<p>Best practice: set up an automated review-request SMS that fires 2 hours after job completion. Our <a href="/missed-call-text-back-adelaide">missed-call text-back</a> setup includes a review-request workflow.</p>
+
+<h3>Local citations (directories)</h3>
+<p>List your business on every Australian tradie directory that matters:</p>
+<ul>
+  <li>Yellow Pages</li>
+  <li>True Local</li>
+  <li>Word of Mouth</li>
+  <li>hipages</li>
+  <li>Oneflare</li>
+  <li>Airtasker (optional — only if you want low-margin leads)</li>
+  <li>Industry-specific directories (Master Plumbers SA, NECA, HIA, etc.)</li>
+</ul>
+<p>Keep NAP identical across all of them. Duplicate listings confuse Google.</p>
+
+<h2>On-page SEO for tradie websites</h2>
+<p>Your GBP gets you into the map pack. Your website gets you into the organic results. Both matter — most Adelaide tradie searches show map pack + organic results on the same page.</p>
+
+<h3>Service pages for every job type</h3>
+<p>Most tradie websites have one 'Services' page that lists everything. That is not enough. Each service should have its own page:</p>
+<ul>
+  <li>/hot-water-system-repair-adelaide</li>
+  <li>/blocked-drain-plumber-adelaide</li>
+  <li>/ceiling-fan-installation-adelaide</li>
+  <li>/split-system-install-adelaide</li>
+</ul>
+<p>Each page targets one specific search. One page per service per suburb cluster is ideal — that is what we build for our clients.</p>
+
+<h3>Suburb pages for local relevance</h3>
+<p>If you service multiple Adelaide suburbs, you need a page for each. The structure should be:</p>
+<ul>
+  <li><strong>Hero</strong>: plumber [suburb] | call this number</li>
+  <li><strong>Common jobs in [suburb]</strong>: 2-3 jobs you do often in that area, with prices</li>
+  <li><strong>Why local tradies win in [suburb]</strong>: response time, local knowledge, council rules specific to that suburb</li>
+  <li><strong>FAQ</strong>: 5-10 questions specific to that suburb (e.g. for Norwood: 'Do I need a permit for a gas heater replacement?')</li>
+  <li><strong>CTA</strong>: call now, book online</li>
+</ul>
+<p>We have built out <a href="/locations">all 34 Adelaide suburbs</a> this way for our own site. Same approach works for any tradie.</p>
+
+<h3>Title tags and meta descriptions</h3>
+<p>Every page needs a unique title (under 60 chars) and meta description (under 155 chars). For a tradie:</p>
+<ul>
+  <li>Title pattern: '[Service] [Suburb] | [Business Name]'</li>
+  <li>Example: 'Hot Water Repairs Norwood | Smith Plumbing Adelaide'</li>
+  <li>Meta description: include phone number, key service, response time, trust signal</li>
+  <li>Example: 'Hot water repairs in Norwood. Same-day service, $120 callout, 12-month warranty. Call (08) 7100 9788.'</li>
+</ul>
+
+<h3>Schema markup (FAQ, Service, LocalBusiness)</h3>
+<p>Schema is the structured data you add to your pages so Google can show rich results. For tradies, the three that matter:</p>
+<ul>
+  <li><strong>FAQPage schema</strong>: gets your Q&A into Google's 'People also ask' boxes</li>
+  <li><strong>Service schema</strong>: tells Google exactly what services you offer and where</li>
+  <li><strong>LocalBusiness schema</strong>: confirms NAP, hours, and service area</li>
+</ul>
+<p>We add all three automatically to every page on our clients' sites. The markup is invisible to humans but Google uses it to understand your business.</p>
+
+<h2>Content marketing for tradies</h2>
+<p>Content is how you outrank tradies who have been around longer. A new tradie in Adelaide with a strong content strategy can outrank a 20-year-old competitor in 12-18 months.</p>
+
+<h3>Blog posts targeting tradie questions</h3>
+<p>The most common tradie blog topics that rank:</p>
+<ul>
+  <li>'How much does [X] cost in Adelaide'</li>
+  <li>'How long does [X] take'</li>
+  <li>'[Common problem] — what to do before calling a tradie'</li>
+  <li>'Signs you need [X] replaced, not repaired'</li>
+  <li>'DIY vs hiring a tradie for [X]'</li>
+</ul>
+<p>Aim for 1-2 blog posts per month. Quality matters more than quantity — one 2,000-word well-written post beats five 300-word fluff pieces.</p>
+
+<h3>FAQ sections on every service page</h3>
+<p>Every service page should have 5-10 FAQs. They serve double duty:</p>
+<ul>
+  <li>Rank for long-tail question searches</li>
+  <li>Show up in Google's 'People also ask' boxes</li>
+</ul>
+<p>Examples for a plumber: 'Why is my hot water system making noise?', 'How long does a hot water system last?', 'Can a plumber fix a gas leak?'.</p>
+
+<h3>Case studies with real numbers</h3>
+<p>Before/after case studies with photos and specifics rank well and convert trust. 'We replaced a 25-year-old copper pipe system in a Glenelg heritage home in 2 days' beats 'We do plumbing in Glenelg' any day.</p>
+
+<h2>Link building for Adelaide tradies</h2>
+<p>Links from other sites signal authority. For tradies, the highest-value links come from:</p>
+
+<h3>Local business associations</h3>
+<ul>
+  <li>Master Plumbers SA, Master Electricians SA, HIA SA, etc.</li>
+  <li>Local Chamber of Commerce (Adelaide, Norwood, Glenelg, etc.)</li>
+  <li>Business SA</li>
+</ul>
+<p>Membership gives you a profile page and a backlink. Most cost $200-800/year — cheaper than Google Ads.</p>
+
+<h3>Local partnerships</h3>
+<p>If you do bathroom renos, partner with a local tile shop and link to each other. If you do HVAC, partner with an electrician. Cross-promotion builds local authority.</p>
+
+<h3>Suppliers and trade accounts</h3>
+<p>Reece, Tradelink, Beacon Lighting, etc. often list accredited tradies on their sites. Ask to be listed.</p>
+
+<h3>Sponsorships</h3>
+<p>Sponsor a local footy club, school, or community event. The club's website lists sponsors with a link. Cheap, local, relevant.</p>
+
+<h2>Technical SEO for tradies (the boring stuff that matters)</h2>
+<p>Three things that quietly break rankings:</p>
+
+<h3>Mobile speed</h3>
+<p>60-70% of tradie searches happen on mobile. Your site must load in under 3 seconds on a phone. Test at pagespeed.web.dev. If your score is under 50, your site is too slow.</p>
+
+<h3>HTTPS</h3>
+<p>Any site without HTTPS gets a 'Not Secure' warning in Chrome. Browsers warn users away. SSL certs are free now (Let's Encrypt). No excuse.</p>
+
+<h3>Schema markup (mentioned above)</h3>
+<p>FAQ, Service, LocalBusiness. All three. No excuses.</p>
+
+<h2>How to track if your SEO is working</h2>
+<p>If you cannot measure it, you cannot improve it. Set up:</p>
+
+<h3>Google Search Console (free)</h3>
+<p>Verify your site at search.google.com/search-console. Submit your sitemap. Check weekly for:</p>
+<ul>
+  <li><strong>Performance</strong>: which queries bring impressions, which bring clicks</li>
+  <li><strong>Coverage</strong>: any 404s or indexing issues</li>
+  <li><strong>Experience</strong>: Core Web Vitals pass/fail</li>
+</ul>
+
+<h3>Google Analytics 4 (free)</h3>
+<p>Tracks visitors, source, behaviour. Set up conversion events for calls, form submissions, bookings.</p>
+
+<h3>The 3 KPIs that matter for tradies</h3>
+<ol>
+  <li><strong>Calls from organic search</strong> — track via call tracking or unique phone numbers per source</li>
+  <li><strong>Map pack views</strong> — GBP insights show searches and views</li>
+  <li><strong>Cost per acquired customer</strong> — divide monthly SEO spend by new customers from organic</li>
+</ol>
+<p>A good Adelaide tradie SEO campaign delivers customers at $50-200 each. Compared to Google Ads at $80-300 per click, organic SEO wins after month 6.</p>
+
+<h2>Common Adelaide tradie SEO mistakes</h2>
+<p>We see these over and over:</p>
+
+<h3>1. One 'Services' page for everything</h3>
+<p>Already covered. Each service needs its own page.</p>
+
+<h3>2. No reviews in the first 3 months</h3>
+<p>Reviews are the #1 local ranking factor. If you have under 10, fix that first.</p>
+
+<h3>3. Stock photos instead of real job photos</h3>
+<p>Stock photos signal 'this tradie is not really local'. Real photos of your team, your van, your work convert better and rank better.</p>
+
+<h3>4. No schema markup</h3>
+<p>Your competitor has it. You do not. They win the rich results.</p>
+
+<h3>5. Buying links</h3>
+<p>Google penalises paid links. Build them organically through partnerships and quality content.</p>
+
+<h3>6. Ignoring Google Business Profile</h3>
+<p>The cheapest highest-ROI work you can do. Most tradies set it up once and forget it. Post weekly, add photos monthly, ask for reviews at every job.</p>
+
+<h2>DIY SEO vs hiring an Adelaide SEO agency</h2>
+<p>Honest breakdown:</p>
+
+<h3>DIY (you do it yourself)</h3>
+<ul>
+  <li>Cost: $0 + your time</li>
+  <li>Time: 5-15 hours/week</li>
+  <li>Best for: solo tradies who can write, have time, and are willing to learn</li>
+  <li>Realistic outcome: top 5 in 6-12 months for low-competition suburbs</li>
+</ul>
+
+<h3>Hire a generalist marketer</h3>
+<ul>
+  <li>Cost: $1,500-3,000/month</li>
+  <li>Best for: tradies who do not want to learn SEO but have the budget</li>
+  <li>Risk: many 'SEO agencies' are just content writers who do not understand local search</li>
+</ul>
+
+<h3>Hire a tradie-focused SEO agency (us)</h3>
+<ul>
+  <li>Cost: $399/month for SEO retainers, often bundled with website</li>
+  <li>Best for: tradies who want results, not a learning curve</li>
+  <li>What you get: suburb pages, schema, content, GBP optimisation, reviews automation, monthly reporting</li>
+</ul>
+<p>Our <a href="/seo">Adelaide SEO services</a> start at $399/month with no lock-in. See <a href="/website-pricing">website pricing</a> from $699 if you also need a new site.</p>
+
+<h2>How AI helps tradies with SEO</h2>
+<p>Two ways AI specifically helps tradies with SEO:</p>
+
+<h3>1. Faster content production</h3>
+<p>A blog post that took 4 hours to write takes 45 minutes with AI assistance. We can produce 2 suburb pages per week, per tradie, instead of 2 per month.</p>
+
+<h3>2. SEO automation</h3>
+<p>AI handles the boring parts:</p>
+<ul>
+  <li>Monitoring your rankings and alerting when they drop</li>
+  <li>Auto-generating schema markup</li>
+  <li>Generating FAQ pairs from real customer questions</li>
+  <li>Writing meta descriptions in your tone</li>
+  <li>Suggesting new suburb pages based on search volume</li>
+</ul>
+<p>Our <a href="/ai-automation-adelaide">AI automation services</a> for Adelaide tradies cover all of this. Most recover 5-10 hours per week within the first month.</p>
+
+<h2>Adelaide-specific SEO opportunities</h2>
+<p>Adelaide has a few quirks most generic SEO advice ignores:</p>
+
+<h3>The map pack rewards distance from CBD</h3>
+<p>Suburbs closer to the CBD have higher competition. If you are based in Elizabeth or Mount Barker and service Adelaide-wide, your GBP can list multiple service areas and outrank inner-suburb tradies for some searches.</p>
+
+<h3>Council and SA government searches</h3>
+<p>'Adelaide City Council plumbing regulations', 'SA government electrician licensing' — these searches are dominated by .gov.au sites but tradies who answer them with clear content get cited in Google's AI Overviews.</p>
+
+<h3>Seasonal searches</h3>
+<p>Adelaide has brutal summers and winters. Searches for 'AC repair Adelaide' spike in November-February. 'Heating repair Adelaide' peaks June-August. Plan content around these.</p>
+
+<h3>Storm and weather events</h3>
+<p>Hail, storms, and heatwaves drive emergency tradie searches. Tradie sites with rapid 'storm response' content rank for these surges.</p>
+
+<h2>Real Adelaide tradie example</h2>
+<p>A two-person electrical business in the eastern suburbs was averaging 55 inbound calls a week from organic + GBP combined. After implementing the framework in this guide:</p>
+<ul>
+  <li>Added 34 suburb service pages (one per Adelaide suburb)</li>
+  <li>Implemented FAQ schema on every page</li>
+  <li>Posted weekly on GBP with job photos</li>
+  <li>Set up automated review request SMS</li>
+  <li>Wrote 2 blog posts per month targeting Adelaide electrician questions</li>
+</ul>
+<p>Results over 6 months:</p>
+<ul>
+  <li>Organic calls: 55/week → 110/week</li>
+  <li>Map pack views: 800/month → 3,400/month</li>
+  <li>Cost per acquired customer from organic: ~$65 (vs $250 from Google Ads)</li>
+  <li>Annual revenue impact: approximately $140,000 in additional bookings at the same operating cost</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>"How long does SEO take to work for Adelaide tradies?"</h3>
+<p>Honest answer: 3-6 months to see meaningful movement, 6-12 months to rank top 3 in your service area. If a tradie SEO agency promises page-1 rankings in 30 days, they are lying or using risky tactics that will get you penalised.</p>
+
+<h3>"Is SEO better than Google Ads for tradies?"</h3>
+<p>For tradies in Adelaide, the answer is usually: yes, but use both. Google Ads gives you leads today. SEO gives you leads for years. We recommend starting with both, scaling SEO as it matures, and keeping a smaller Ads budget for emergency-need periods.</p>
+
+<h3>"How much should an Adelaide tradie spend on SEO?"</h3>
+<p>For a solo tradie or 2-person crew, $300-600/month is realistic. For a 5+ person operation, $800-1,500/month is appropriate. The cost per acquired customer from organic SEO at these levels is typically $40-100, far below the $200-400 cost from paid ads.</p>
+
+<h3>"Do tradies really need a website for SEO?"</h3>
+<p>Your GBP gets you into the map pack. Your website gets you into organic results. Most tradie searches show both. Without a website, you miss organic. A website also gives you somewhere to send GBP visitors, build reviews, and show portfolio. Aim for under-2-second mobile load.</p>
+
+<h3>"What's the difference between local SEO and regular SEO?"</h3>
+<p>Local SEO targets Adelaide-suburb-specific searches (map pack + local organic). Regular SEO targets national or non-location searches. As a tradie, local SEO is 80% of your opportunity. We focus almost entirely on local for tradie clients.</p>
+
+<h3>"Should I hire a freelancer or an agency for tradie SEO?"</h3>
+<p>For most Adelaide tradies, an agency focused on tradies wins. Freelancers are cheaper but often spread across industries. Specialisation matters — a tradie SEO agency knows the directories, the schema, and the conversion patterns specific to your trade.</p>
+
+<h3>"How do I know if my SEO agency is doing real work?"</h3>
+<p>Ask for: monthly ranking reports, GBP insights screenshots, content additions per month, and a list of directories submitted to. If they cannot show you this in the first 60 days, they are not doing real work.</p>
+
+<h3>"Can I do tradie SEO myself with AI tools?"</h3>
+<p>Yes — AI tools handle 70% of the content and schema work. The remaining 30% (strategy, GBP, reviews, partnerships) requires human time. Most tradies who DIY use AI to draft suburb pages and FAQs, then spend their time on GBP and partnerships.</p>
+
+<h2>Where to start this week</h2>
+<p>If you only have an hour, do this:</p>
+<ol>
+  <li>Claim your Google Business Profile if you have not (15 min)</li>
+  <li>Add 5 photos of recent jobs (10 min)</li>
+  <li>Ask your last 3 customers for a Google review (15 min)</li>
+  <li>Search 'your main service + Adelaide' and see who ranks (10 min)</li>
+  <li>Make a list of the top 5 suburbs you want to rank in (10 min)</li>
+</ol>
+<p>If you have a day, add:</p>
+<ol>
+  <li>One suburb page for each of your top 5 suburbs</li>
+  <li>FAQ schema on your homepage and contact page</li>
+  <li>Submission to Yellow Pages, True Local, hipages</li>
+  <li>One blog post answering a common customer question</li>
+</ol>
+<p>If you want help with any or all of this, <a href="/contact">book a free 15-minute chat</a> with the AI Adelaide team. We build websites from $699, run SEO from $399/month, and automate the follow-up from $199/month — built specifically for Adelaide tradies. Or browse our <a href="/services">full services list</a> or read the <a href="/website-cost-adelaide">website cost guide for Adelaide tradies</a> to see what fits.</p>`
   }
 ];

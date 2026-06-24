@@ -90,6 +90,48 @@ const nextConfig = {
         destination: "/ai-automation-adelaide",
         permanent: true,
       },
+      // Tier 9 — restore /blog/adelaide-seo-for-tradies (Google had it indexed)
+      // and consolidate URL variants that may also be linked from the web.
+      {
+        source: "/blog/seo-for-tradies-adelaide",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/tradies-seo-adelaide",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/seo-adelaide-tradies",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-seo-tradies",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/seo-for-adelaide-tradies",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-tradies-seo",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/seo-tradies-adelaide",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/tradies-adelaide-seo",
+        destination: "/blog/adelaide-seo-for-tradies",
+        permanent: true,
+      },
     ];
   },
 };

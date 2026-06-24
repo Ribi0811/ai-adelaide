@@ -203,6 +203,51 @@ export default function SuburbPage({ params }: SuburbPageProps) {
         }}
       />
 
+      {/* ── WebPage Schema ─────────────────────────────── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${siteConfig.url}/${suburb.slug}#webpage`,
+            url: `${siteConfig.url}/${suburb.slug}`,
+            name: suburb.heroLine ? `${suburb.heroLine} | AI Adelaide` : `${suburb.name} Websites, SEO & AI Automation`,
+            description: suburb.intro,
+            inLanguage: "en-AU",
+            isPartOf: {
+              "@type": "Organization",
+              "@id": `${siteConfig.url}#organization`,
+              name: "AI Adelaide",
+              url: siteConfig.url,
+            },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: siteConfig.url,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Locations",
+                  item: `${siteConfig.url}/locations`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: suburb.name,
+                  item: `${siteConfig.url}/${suburb.slug}`,
+                },
+              ],
+            },
+          }),
+        }}
+      />
+
       <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
         <Breadcrumbs
           items={[

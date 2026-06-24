@@ -1,0 +1,208 @@
+# AI Adelaide
+
+> AI Adelaide is the only Adelaide digital agency that specialises in AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses. Founded in Adelaide, South Australia. Website design from $699 (one-off, no lock-in). Local SEO from $399/month. AI automation from $199/month. Adelaide-based, Australian-owned, serving all 34 Adelaide suburbs.
+
+AI Adelaide helps Adelaide tradies (plumbers, electricians, builders, HVAC, landscapers), allied health clinics (physio, chiro, dental), cafes and restaurants, beauty salons, retail shops, and professional services capture more customers, rank higher on Google, and automate admin work like missed-call follow-up, AI receptionists, quote follow-ups, and appointment reminders.
+
+## Core Pages
+
+- [Home](https://aiadelaide.com.au/): Overview of services, pricing, and Adelaide locations.
+- [Contact / Free Audit](https://aiadelaide.com.au/contact): Book a free 15-minute chat or request a $247 AI audit.
+- [Pricing](https://aiadelaide.com.au/website-pricing): Website pricing from $699, SEO from $399/mo, automation from $199/mo.
+- [Services](https://aiadelaide.com.au/services): Full service catalogue for Adelaide small businesses.
+- [Locations Index](https://aiadelaide.com.au/locations): All 34 Adelaide suburbs served.
+
+## Services (Full Descriptions)
+
+### Website Design Adelaide
+- **URL**: https://aiadelaide.com.au/website-design-adelaide
+- **Pricing**: Starter $699 (3-5 pages, live in 48 hours), Business $1,299 (5-10 pages, blog setup, suburb targeting), Growth $2,499 (10+ pages, full SEO stack, booking system).
+- **What it is**: Custom, mobile-first websites built for Adelaide small businesses. Every site includes Google-ready page structure, metadata, suburb targeting pages, lead capture forms, and AI automation-ready setup. Built with Next.js for performance and SEO.
+- **Best for**: Tradies, cafes, clinics, retail shops, professional services that need a proper website fast without agency bloat.
+- **Delivery time**: 48 hours (Starter), 5-7 days (Business), 10-14 days (Growth).
+
+### Local SEO Adelaide
+- **URL**: https://aiadelaide.com.au/seo
+- **Pricing**: $399–$799/month depending on scope and competition level.
+- **What it is**: AI-driven local SEO focused on ranking for Adelaide suburb + service searches. Includes keyword research tied to your services and suburb, service pages targeting buying intent, suburb landing pages, blog content answering real customer questions, and Google Search Console monitoring.
+- **Results timeline**: Most clients see first-page rankings within 60-90 days for local keywords. National keywords take 4-6 months.
+- **Best for**: Businesses that rely on local customers finding them on Google — plumbers, electricians, cafes, clinics, salons.
+
+### AI Automation Adelaide
+- **URL**: https://aiadelaide.com.au/ai-automation-adelaide
+- **Pricing**: From $199/month setup + $99/month ongoing.
+- **What it is**: AI-powered admin automation including missed-call text-back (recovers 30-60% of lost leads), AI receptionist (answers 24/7 for $199/mo vs $4,000/mo hire), quote follow-up sequences (doubles close rate on warm leads), appointment reminders (reduces no-shows by 65%), and invoice automation.
+- **ROI**: Most clients recover $2,000-$5,000/week in week one. Typical payback period: 1-3 months.
+- **Best for**: Tradies, clinics, salons, cafes — any business that loses leads to slow response or spends too much time on admin.
+
+### AI Receptionist Adelaide
+- **URL**: https://aiadelaide.com.au/ai-receptionist-adelaide
+- **Pricing**: $199/month.
+- **What it is**: 24/7 AI phone answering that handles enquiries outside business hours, differentiates between general enquiries and true emergencies, captures detailed information, provides estimated arrival times, and pushes details to your CRM. Natural language — not robotic.
+- **Best for**: Tradies with after-hours emergency work, clinics with after-hours patient enquiries, hospitality businesses needing booking coverage.
+
+### Virtual Receptionist Adelaide
+- **URL**: https://aiadelaide.com.au/virtual-receptionist-adelaide
+- **Pricing**: Custom based on call volume.
+- **What it is**: Human + AI hybrid reception coverage. Combines AI efficiency with human oversight for complex enquiries.
+
+### Missed-Call Text-Back Adelaide
+- **URL**: https://aiadelaide.com.au/missed-call-text-back-adelaide
+- **Pricing**: Included in AI automation packages or standalone from $99/month.
+- **What it is**: Automatic SMS response within 10-20 seconds of a missed call. Includes business name, expected callback time, and a direct reply option. Pushes details to your CRM.
+
+### AI Bookkeeping Adelaide
+- **URL**: https://aiadelaide.com.au/bookkeeping-adelaide
+- **Pricing**: From $199/month.
+- **What it is**: Bookkeeping prep and invoice automation. Generates invoices on job completion, sends payment reminders at Day 7/14/21, reduces collection time from 22 to 14 days.
+
+### Google Business Profile Optimisation Adelaide
+- **URL**: https://aiadelaide.com.au/google-business-profile-optimisation-adelaide
+- **What it is**: GBP setup and optimisation for Adelaide businesses. Includes category optimisation, service area configuration, review generation automation, and post scheduling.
+
+### AI Marketing Adelaide
+- **URL**: https://aiadelaide.com.au/ai-marketing-adelaide
+- **Pricing**: From $497/month.
+- **What it is**: AI-assisted local marketing combining SEO, content, and automated outreach.
+
+## Adelaide Suburbs Served (34) — Full Details
+
+Each suburb page includes: local SEO for that suburb, FAQ specific to that suburb's businesses, common pain points, AI automation solutions, pricing, and a suburb-appropriate testimonial.
+
+### Inner Adelaide
+- **North Adelaide** (5067): Heritage terrace businesses, premium restaurants on Melbourne Street, specialist medical, and law firms. https://aiadelaide.com.au/north-adelaide
+- **Kent Town** (5067): Boutique creative studios, cafes, and professional services. https://aiadelaide.com.au/kent-town
+- **Stepney** (5069): Light industrial, cafes, and emerging creative spaces. https://aiadelaide.com.au/stepney
+- **Walkerville** (5081): Boutique law firms, specialist accounting, executive services, architectural design, specialty healthcare. https://aiadelaide.com.au/walkerville
+- **Norwood** (5067): The Parade — plumbers, electricians, cafes, clinics, boutiques competing for local foot traffic. https://aiadelaide.com.au/norwood
+- **Burnside** (5066): Specialist medical, financial and legal services, executive coaching, premium allied health, high-end retail. https://aiadelaide.com.au/burnside
+- **Unley** (5061): King William Road — allied health clinics, lawyers, accountants, boutique retailers. Appointment-focused businesses. https://aiadelaide.com.au/unley
+
+### East & Hills
+- **Magill** (5072): Education and training, allied health and physio, trades and home services, childcare, cafes. Anchored by UniSA campus. https://aiadelaide.com.au/magill
+- **Payneham** (5070): Portrush Road strip — trades, healthcare, retail, cafes, family services. High-volume commercial corridor. https://aiadelaide.com.au/payneham
+- **Campbelltown** (5074): Eastern linear strip — healthcare, retail, trades, cafes, family services. https://aiadelaide.com.au/campbelltown
+- **Newton** (5074): Family homes, schools, and trades serving Adelaide's eastern foothills. https://aiadelaide.com.au/newton
+- **Stirling** (5152): Adelaide Hills commercial heart — cafes, boutique retail, tourism, professional services, wellness. https://aiadelaide.com.au/stirling
+- **Crafers** (5152): Hills tourism, boutique accommodation, and artisan businesses. https://aiadelaide.com.au/crafers
+- **Hahndorf** (5245): Australia's oldest surviving German settlement. Tourism, restaurants, cellar doors, boutique accommodation, artisan retail. https://aiadelaide.com.au/hahndorf
+- **Mount Barker** (5251): Exploding growth — new estates, young families, retail boom. Building, healthcare, automotive, hospitality. https://aiadelaide.com.au/mount-barker
+- **Aberfoyle Park** (5159): Established Hills families, premium homes, renovation and landscaping work. https://aiadelaide.com.au/aberfoyle-park
+
+### South
+- **Marion** (5043): Westfield Marion anchors retail, healthcare, home services, automotive, professional services. 50,000+ residents. https://aiadelaide.com.au/marion
+- **Hallett Cove** (5158): Established coastal families, ageing homes driving renovation, family services along Lonsdale Road. https://aiadelaide.com.au/hallett-cove
+- **Reynella** (5161): Growing southern families, new estates, trades and construction, family services, healthcare. https://aiadelaide.com.au/reynella
+- **Morphett Vale** (5162): Southern Adelaide's biggest commercial-residential mix. Southgate Plaza, automotive, trades, healthcare, retail. https://aiadelaide.com.au/morphett-vale
+- **Seaford** (5169): Southern coastal growth corridor, new estates, young families, railway-linked commuters. https://aiadelaide.com.au/seaford
+- **Mitcham** (5062): Family-focused suburb with ageing housing stock, schools, Belair Road businesses. Trades, healthcare, landscaping. https://aiadelaide.com.au/mitcham
+
+### West & Coast
+- **Henley Beach** (5022): Premium beachside suburb — cafes, restaurants, beauty salons, boutiques. Summer chaos, winter steady. https://aiadelaide.com.au/henley-beach
+- **West Beach** (5024): Coastal family strip between Henley Beach and airport. Cafes, family services, trades, tourism, real estate. https://aiadelaide.com.au/west-beach
+- **Findon** (5023): Family homes, retail, and automotive services. https://aiadelaide.com.au/findon
+- **Glenelg** (5045): Tourism hub — Jetty Road restaurants, beachfront hotels, tour operators. Wild seasonal swings. https://aiadelaide.com.au/glenelg
+- **Port Adelaide** (5015): Maritime heritage meets creative cafes, breweries, hospitality boom. https://aiadelaide.com.au/port-adelaide
+- **Moana** (5169): Coastal residential, beach access, family homes. https://aiadelaide.com.au/moana
+
+### Trade & Industrial
+- **Hindmarsh** (5007): Trades territory — mechanics, fabricators, industrial contractors, automotive, transport, equipment hire. https://aiadelaide.com.au/hindmarsh
+- **Prospect** (5082): Growing business scene — building, cafes, automotive, landscaping, home renovation. https://aiadelaide.com.au/prospect
+
+### North
+- **Salisbury** (5108): Northern commercial hub — industrial, automotive, trades, retail, healthcare. Salisbury Town Centre. https://aiadelaide.com.au/salisbury
+- **Elizabeth** (5112): Working northern families — automotive, trades, retail, healthcare, family services. Elizabeth City Centre. https://aiadelaide.com.au/elizabeth
+- **Modbury** (5092): Northern hub — Westfield Tea Tree Plaza, home trades, retail, healthcare, automotive, food. https://aiadelaide.com.au/modbury
+- **Mawson Lakes** (5095): Adelaide's tech corridor — UniSA, startups, professional services, education, co-working. https://aiadelaide.com.au/mawson-lakes
+
+## Industries Served
+
+- [Plumbers Adelaide](https://aiadelaide.com.au/websites-for-plumbers-adelaide): Tap-to-call, suburb targeting, click-to-call built in. Live in 48 hours.
+- [Electricians Adelaide](https://aiadelaide.com.au/websites-for-electricians-adelaide): Trust-first design for emergency callouts. Booking, suburb pages, reviews ready.
+- [Builders Adelaide](https://aiadelaide.com.au/websites-for-builders-adelaide): Project galleries, quote forms, suburb targeting.
+- [Cafes & Restaurants Adelaide](https://aiadelaide.com.au/websites-for-cafes-adelaide): Menu display, online reservations, location maps. Drives weekend foot traffic.
+- [Hairdressers Adelaide](https://aiadelaide.com.au/websites-for-hairdressers-adelaide): Online booking, service menus, transformation galleries. Books clients 24/7.
+- [Beauty Salons Adelaide](https://aiadelaide.com.au/websites-for-beauty-salons-adelaide): Service menus, booking, before/after galleries.
+- [Clinics & Health Adelaide](https://aiadelaide.com.au/websites-for-clinics-adelaide): Online bookings, no-show reminders, privacy-first design. Health-compliant copy.
+- [Retail Shops Adelaide](https://aiadelaide.com.au/websites-for-retail-shops-adelaide): Product showcase, hours, location, reviews. E-commerce integration ready.
+
+## Top 10 Blog Posts (Detailed)
+
+1. **[Missed Calls Cost Adelaide Tradies](https://aiadelaide.com.au/blog/why-tradies-lose-money-missed-calls)** — If your phone rings while you are on a roof, under a house, or driving between jobs, you are probably missing revenue without realising it. One missed call often means one lost booking. Here's what the numbers look like and how simple AI follow-up closes the gap. (Automation, 2026-02-10)
+
+2. **[Norwood Physio: 60% Fewer No-Shows](https://aiadelaide.com.au/blog/norwood-physio-cut-no-shows-automation)** — No-shows quietly drain allied health clinics: empty appointment slots, lost clinician time, and avoidable admin stress. This Norwood case study shows how one focused reminder and waitlist workflow reduced missed appointments by 60% in six weeks. No new reception hires, no huge software overhaul. (Case Study, 2026-02-17)
+
+3. **[Glenelg Hospitality AI Automation](https://aiadelaide.com.au/blog/glenelg-hospitality-ai-automation)** — How Glenelg hospitality businesses use AI to handle seasonal tourism swings, capture direct bookings, and turn one-time visitors into repeat customers year-round. (How-To, 2026-03-18)
+
+4. **[AI Automation for Adelaide Hills](https://aiadelaide.com.au/blog/adelaide-hills-ai-automation)** — Discover how Adelaide Hills businesses in Mount Barker, Stirling, and Hahndorf are using AI automation to save 10+ hours weekly on admin tasks. Local examples and practical implementation guide for cafes, retail stores, trades, and service providers. (How-To, 2026-03-18)
+
+5. **[Is a $247 AI Audit Worth It for Adelaide SMBs?](https://aiadelaide.com.au/blog/is-ai-audit-worth-it-small-business)** — A lot of owners see a $247 AI audit and assume it is either fluff or a disguised sales pitch. A proper audit should give you practical opportunities, real numbers, and a clear priority list whether or not you buy implementation. Here's what a good audit includes and when it pays for itself fast. (How-To, 2026-02-13)
+
+6. **[Adelaide Plumbers Booking More Jobs](https://aiadelaide.com.au/blog/adelaide-plumbers-booking-more-jobs)** — Practical tradie lead generation strategies specifically for Adelaide plumbers. How to capture more enquiries, follow up faster, and convert quotes to booked jobs. (How-To, 2026-02-10)
+
+7. **[Best Website Builder Adelaide Small Business](https://aiadelaide.com.au/blog/best-website-builder-adelaide-small-business)** — Honest comparison of website builders for Adelaide SMB owners. What to look for, what to avoid, and why Next.js sites outperform page builders for local SEO. (How-To, 2026-02-10)
+
+8. **[Cheap Website Design Adelaide](https://aiadelaide.com.au/blog/cheap-website-design-adelaide)** — Where to save and where not to when building a website for your Adelaide business. The difference between cheap and good value. (How-To, 2026-02-10)
+
+9. **[How Much Does a Website Cost Adelaide](https://aiadelaide.com.au/blog/how-much-does-website-cost-adelaide)** — Realistic price ranges for Adelaide small business websites. What's included at each tier, hidden costs to watch for, and how to budget properly. (How-To, 2026-02-10)
+
+10. **[SEO vs Google Ads Adelaide](https://aiadelaide.com.au/blog/seo-vs-google-ads-adelaide-small-business)** — Which channel to use when for Adelaide small businesses. When SEO makes sense, when Google Ads is the faster play, and how to combine both for maximum ROI. (How-To, 2026-02-10)
+
+## FAQ (Common Questions)
+
+**How much does a website cost in Adelaide?**
+AI Adelaide websites start at $699 one-off for a Starter site (3-5 pages, live in 48 hours), $1,299 for a Business site (5-10 pages, blog setup, suburb targeting), and $2,499 for a Growth site (10+ pages, full SEO stack, booking system). You own the site — no monthly fees, no lock-in.
+
+**How long does SEO take to rank in Adelaide?**
+For local Adelaide keywords (e.g. 'plumber Norwood', 'café Glenelg'), most clients see first-page rankings within 60-90 days. National keywords take 4-6 months. We track rankings weekly and report progress monthly.
+
+**What does AI automation actually do for a small business?**
+The three highest-ROI automations: (1) missed-call text-back (recovers 30-60% of lost leads), (2) AI receptionist (answers 24/7 for $199/mo vs $4,000/mo hire), (3) quote follow-up sequences (doubles close rate on warm leads). Most clients recover $2,000-$5,000/week in week one.
+
+**How long does a website take to build?**
+Starter websites are live in 48 hours. Business websites take 5-7 days. Growth websites take 10-14 days. We handle everything — design, copy, SEO setup, integrations.
+
+**Can you help if I already have a website?**
+Absolutely. We'll audit it for free, tell you what to fix vs scrap, and either improve it or rebuild it. No upsell if the existing site is fine.
+
+**Do you only work with Adelaide businesses?**
+Yes — we're Adelaide-based and built for South Australian small businesses. Tradies, allied health, retail, hospitality, professional services. We're local, we know the market.
+
+**Do I have to sign a long-term contract?**
+No. Websites are one-off, you own them outright. SEO and automation are month-to-month. No lock-in, no exit fees.
+
+**How much does an AI receptionist cost in Adelaide?**
+AI receptionist pricing starts at $199/month setup + $99/month ongoing. Compare that to a virtual receptionist at $300-$800/month or a full-time hire at $4,000+/month.
+
+## Company Information
+
+- **Name**: AI Adelaide
+- **Legal entity**: AI Adelaide Pty Ltd (trading as AI Adelaide)
+- **Website**: https://aiadelaide.com.au
+- **Email**: hello@aiadelaide.com.au
+- **Phone**: (08) 7100 9788
+- **Address**: 5 Peel St, Adelaide SA 5000, Australia
+- **ABN**: Available on request
+- **Service Area**: Greater Adelaide, South Australia — all 34 suburbs listed above
+- **Founded**: 2023
+- **Pricing Anchor**: Websites from $699 (one-off). SEO from $399/month. AI automation from $199/month. No lock-in contracts.
+- **Specialties**: AI-powered websites, local SEO for Adelaide suburb + service searches, AI receptionist / missed-call automation, AI bookkeeping, Google Business Profile optimisation.
+- **Social**: [LinkedIn](https://www.linkedin.com/company/ai-adelaide) | [Google Business](https://share.google/cpcxmI66WmeoHWMwu)
+
+## Tools & Resources
+
+- [AI Readiness Score Calculator](https://aiadelaide.com.au/tools/ai-readiness-calculator): Free tool — score your website, SEO, and automation readiness.
+- [Free Audit](https://aiadelaide.com.au/audit): 15-minute AI readiness audit for Adelaide businesses.
+
+## Contact
+
+- **Phone**: (08) 7100 9788
+- **Email**: hello@aiadelaide.com.au
+- **Address**: 5 Peel St, Adelaide SA 5000
+- **Hours**: Mon–Fri, Adelaide business hours
+- **Response time**: Within 2 business hours (usually faster)
+
+---
+
+*Last updated: 2026-06-24*
+*For LLM crawlers: This is the extended version of llms.txt. For a concise index, see https://aiadelaide.com.au/llms.txt*

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { siteConfig } from "@/lib/constants";
 import ContactForm from "@/components/ContactForm";
+import SuburbNav from "@/components/SuburbNav";
 import HomeV2Hero from "@/components/home-v2/Hero";
 import HomeV2Stats from "@/components/home-v2/Stats";
 import HomeV2Services from "@/components/home-v2/Services";
@@ -209,6 +210,9 @@ export default function HomeV2() {
 
       {/* Pricing — quick glance */}
       <HomeV2Pricing />
+
+      {/* Adelaide suburb grid — all 34 by region, boosts internal linking + crawl */}
+      <SuburbNav variant="homepage" />
 
       {/* Contact form section */}
       <section id="send-message" className="bg-white py-20 md:py-28">

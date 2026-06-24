@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import suburbs from "@/data/suburbs.json";
 import { siteConfig, services, testimonials } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SuburbHero from "@/components/SuburbHero";
 
 type Suburb = (typeof suburbs)[number];
 
@@ -22,19 +23,55 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: SuburbPageProps): Metadata {
   const suburb = getSuburb(params.suburb);
   if (!suburb) return {};
+  const ogImageUrl = `${siteConfig.url}/${suburb.slug}/opengraph-image`;
+  const ogImageAlt = `AI Adelaide — ${suburb.name} (${suburb.postcode}) websites, SEO and AI automation services`;
   return {
     title: `${suburb.name} Websites, SEO & AI Automation`,
     description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in. Call ${siteConfig.phone}.`,
+    keywords: [
+      `AI websites ${suburb.name}`,
+      `SEO ${suburb.name}`,
+      `AI automation ${suburb.name}`,
+      `website design ${suburb.name}`,
+      `local SEO ${suburb.name}`,
+      `small business ${suburb.name}`,
+      `${suburb.name} web design`,
+      `Adelaide ${suburb.name} web design`,
+    ],
     alternates: { canonical: `${siteConfig.url}/${suburb.slug}` },
     openGraph: {
       title: `${suburb.name} Websites, SEO & AI Automation`,
       description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
+      url: `${siteConfig.url}/${suburb.slug}`,
+      siteName: siteConfig.name,
+      locale: "en_AU",
+      type: "website",
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: ogImageAlt,
+          type: "image/png",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+      description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
+      images: [
+        {
+          url: ogImageUrl,
+          alt: ogImageAlt,
+        },
+      ],
     },
   };
 }
 
 function buildFaqs(suburb: Suburb) {
-  return [
+  const standard = [
     {
       question: `How much does a website cost for a ${suburb.name} business?`,
       answer: `Our Starter website is $699 for a 3-page site — perfect for getting online fast. The Business tier is $1,299 for 5-7 pages with blog and SEO foundation. The Growth tier is $2,499 for 10+ pages with suburb targeting and automation integrations. All prices are one-off, no lock-in. See our ${suburb.name} website pricing page for full details.`,
@@ -42,10 +79,6 @@ function buildFaqs(suburb: Suburb) {
     {
       question: `Can you help my ${suburb.name} business rank on Google?`,
       answer: `Yes. We do local SEO for ${suburb.name} businesses — keyword research tied to your services and suburb, service pages that target buying intent, suburb pages, blog content answering real customer questions, and Google Search Console monitoring. SEO retainers start from $399/month. Most ${suburb.name} businesses see results within 2-4 months for local keywords.`,
-    },
-    {
-      question: `What types of businesses in ${suburb.name} do you work with?`,
-      answer: `We work with ${suburb.name} tradies (plumbers, electricians, builders, HVAC), allied health clinics (physio, chiro, dental), cafes and restaurants, retail shops, beauty salons, professional services, and automotive. If you're a small business in ${suburb.name} that needs a website, SEO or automation, we can help.`,
     },
     {
       question: `How quickly can you build a website for my ${suburb.name} business?`,
@@ -60,6 +93,33 @@ function buildFaqs(suburb: Suburb) {
       answer: `Websites from $699 one-off. SEO from $399/month. Automation from $199/month. No lock-in contracts. Most ${suburb.name} businesses recover their investment within 30 days — a $699 website that brings in one extra $800 job has already paid for itself.`,
     },
   ];
+  // Merge suburb-specific FAQs (1-2 unique Qs per suburb from data/suburbs.json)
+  const custom = (suburb as { customFaqs?: { question: string; answer: string }[] }).customFaqs ?? [];
+  return [...standard, ...custom];
+}
+
+/**
+ * Pick a suburb-appropriate testimonial based on the suburb's primary industries.
+ * Each suburb has an industries array (e.g. "Plumbing & Electrical", "Cafes").
+ * We map keywords → testimonial industry tags defined in lib/constants.ts.
+ */
+function pickTestimonial(suburb: Suburb) {
+  const industryMap: { keywords: RegExp; tag: string }[] = [
+    { keywords: /(cafe|restaurant|hospitality|tourism|winery|cafe|brewery|cafe)/i, tag: "cafe" },
+    { keywords: /(beauty|salon|hairdresser|wellness|spa)/i, tag: "hairdresser" },
+    { keywords: /(health|clinic|medical|physio|dental|allied|pharmacy)/i, tag: "health" },
+    { keywords: /(retail|shop|boutique)/i, tag: "retail" },
+    { keywords: /(trades|trade|plumb|electric|build|construct|landscap|renovat|auto|mechanic)/i, tag: "trades" },
+  ];
+  for (const ind of suburb.industries ?? []) {
+    for (const m of industryMap) {
+      if (m.keywords.test(ind)) {
+        const match = testimonials.find((t) => t.industry === m.tag);
+        if (match) return match;
+      }
+    }
+  }
+  return testimonials[0];
 }
 
 export default function SuburbPage({ params }: SuburbPageProps) {
@@ -67,12 +127,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
   if (!suburb) notFound();
 
   const faqs = buildFaqs(suburb);
-  // Suburb-specific testimonials no longer exist (privacy — locations removed).
-  // Show a generic Adelaide testimonial as fallback.
-  const suburbTestimonial = testimonials.find(
-    (t) => (t as { location?: string }).location?.toLowerCase() === suburb.name.toLowerCase()
-  );
-  const matchedTestimonial = suburbTestimonial ?? testimonials[0];
+  const matchedTestimonial = pickTestimonial(suburb);
 
   return (
     <>
@@ -165,11 +220,8 @@ export default function SuburbPage({ params }: SuburbPageProps) {
                 <span className="eyebrow-light">{suburb.name} websites, SEO & automation</span>
               </div>
               <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-                Websites, SEO &amp; AI Automation for {suburb.name} Businesses
+                {suburb.heroLine ? suburb.heroLine : `Websites, SEO & AI Automation for ${suburb.name} Businesses`}
               </h1>
-              <p className="mb-3 max-w-3xl text-lg font-medium text-[#1E3A5F] md:text-xl">
-                {suburb.heroLine}
-              </p>
               <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
                 {suburb.intro} <strong>Websites from $699, SEO from $399/month, automation from $199/month — Adelaide-based, no lock-in contracts.</strong>
               </p>
@@ -183,6 +235,11 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Inline hero image — ranks in Google Images + gives the page a visual anchor */}
+        <section className="max-w-container mx-auto px-6 pt-10 md:pt-12">
+          <SuburbHero suburb={suburb} />
         </section>
 
         {/* ── Pain Points ────────────────────────────────────── */}

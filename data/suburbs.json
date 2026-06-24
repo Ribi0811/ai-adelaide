@@ -21,7 +21,14 @@
     "websiteLine": "A clean, mobile-first website for your Norwood business — live in 48 hours, from $699. Built to convert Parade foot traffic into booked jobs.",
     "seoLine": "We get Norwood businesses ranking for 'plumber Norwood', 'cafe The Parade', 'physio Norwood' — the searches locals are already doing.",
     "automationLine": "Missed call text-back, AI receptionist and quote follow-up for Norwood tradies and clinics. Never lose another Parade enquiry to a competitor.",
-    "heroColor": "from-accent/20 via-electric/10 to-accent/15"
+    "heroColor": "from-accent/20 via-electric/10 to-accent/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites specifically for businesses on The Parade, or for Norwood in general?",
+        "answer": "Both — we build Norwood-wide websites but also have specific experience with The Parade's mix of cafes, allied health and boutique retail. The Parade foot traffic is unique, so we design pages that convert both walk-ins and online searchers."
+      }
+    ],
+    "region": "Inner Adelaide"
   },
   {
     "name": "Glenelg",
@@ -45,7 +52,14 @@
     "websiteLine": "A website for your Glenelg business that takes direct bookings — no more paying 15-20% to Booking.com or Wotif. From $699.",
     "seoLine": "Rank for 'Glenelg restaurant', 'Glenelg accommodation', 'things to do Glenelg' — the searches tourists are already doing before they visit.",
     "automationLine": "Automated booking confirmations, reminder texts and review requests for Glenelg hospitality. Turn summer tourists into winter regulars.",
-    "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15"
+    "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15",
+    "customFaqs": [
+      {
+        "question": "Can you help my Glenelg business capture direct bookings instead of paying commission to Booking.com or Wotif?",
+        "answer": "Yes — that's one of our most-requested projects for Glenelg hospitality. We build direct-booking websites for hotels, B&Bs and tour operators with payment integration, calendar sync, and automated confirmation emails. Most clients save 15-20% in commission within their first quarter."
+      }
+    ],
+    "region": "West & Coast"
   },
   {
     "name": "Unley",
@@ -69,7 +83,14 @@
     "websiteLine": "A professional website for your Unley practice or boutique — online booking, service pages, King William Road credibility. From $699.",
     "seoLine": "Rank for 'physio Unley', 'lawyer King William Road', 'accountant Unley' — the searches Unley residents are already doing.",
     "automationLine": "Automated appointment reminders, no-show reduction and client follow-up for Unley professionals. Cut admin by 70%.",
-    "heroColor": "from-emerald-400/20 via-teal-300/10 to-cyan-400/15"
+    "heroColor": "from-emerald-400/20 via-teal-300/10 to-cyan-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites with online booking for allied health clinics on King William Road?",
+        "answer": "Yes. We build Practice Management-integrated booking for physio, chiro, psychology and dental clinics along King William Road and the broader Unley area. Online booking typically reduces phone time by 60% and cuts no-shows by half within the first month."
+      }
+    ],
+    "region": "Inner Adelaide"
   },
   {
     "name": "Prospect",
@@ -93,7 +114,14 @@
     "websiteLine": "A website for your Prospect tradie or cafe business — click-to-call, quote forms, service area pages. From $699, live in 48 hours.",
     "seoLine": "Rank for 'builder Prospect', 'cafe Prospect Road', 'mechanic Prospect' — locals are searching, make sure they find you.",
     "automationLine": "Missed call text-back, quote follow-up and booking automation for Prospect tradies. Stop losing jobs to the competitor who answered first.",
-    "heroColor": "from-violet-400/20 via-purple-300/10 to-fuchsia-400/15"
+    "heroColor": "from-violet-400/20 via-purple-300/10 to-fuchsia-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help builders and tradies in Prospect win more renovation work?",
+        "answer": "Yes — Prospect's renovation boom means fierce competition for reno work. We build tradie websites with instant quote forms, automated follow-up sequences and suburb-targeted landing pages. Most Prospect tradies we work with book 3-4 extra jobs per month just from showing up better in local search."
+      }
+    ],
+    "region": "Trade & Industrial"
   },
   {
     "name": "Burnside",
@@ -117,7 +145,14 @@
     "websiteLine": "A premium website for your Burnside practice or advisory — online booking, professional copywriting, credibility that matches your fees. From $699.",
     "seoLine": "Rank for 'financial advisor Burnside', 'specialist doctor Burnside' — the searches Burnside's affluent residents do before choosing a provider.",
     "automationLine": "Automated booking, client follow-up and review generation for Burnside professionals. Match your digital experience to your service quality.",
-    "heroColor": "from-amber-400/20 via-orange-300/10 to-rose-400/15"
+    "heroColor": "from-amber-400/20 via-orange-300/10 to-rose-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build premium websites for specialist medical and financial practices in Burnside?",
+        "answer": "Yes. We work with specialist medical, financial advisors and legal practices across Burnside who need websites that match the address. Online booking, secure client portals, and professional copywriting that reflects your fee structure. Designed for affluent Burnside clients who compare three options before calling."
+      }
+    ],
+    "region": "Inner Adelaide"
   },
   {
     "name": "Walkerville",
@@ -141,7 +176,14 @@
     "websiteLine": "A professional website for your Walkerville firm — credibility, online booking, client portal-ready. From $699.",
     "seoLine": "Rank for 'lawyer Walkerville', 'accountant Walkerville' — when locals search for professional services, make sure they find you first.",
     "automationLine": "Automated client communication, follow-up sequences and scheduling for Walkerville professionals. Look bigger than you are.",
-    "heroColor": "from-rose-400/20 via-pink-300/10 to-fuchsia-400/15"
+    "heroColor": "from-rose-400/20 via-pink-300/10 to-fuchsia-400/15",
+    "customFaqs": [
+      {
+        "question": "Can you help my small Walkerville firm look bigger online?",
+        "answer": "That's the most common brief we get from Walkerville. We build professional websites with proper photography, polished copy, online enquiry forms and automated follow-up that make a 1-2 person firm look like a polished mid-tier operation — without the agency overhead."
+      }
+    ],
+    "region": "Inner Adelaide"
   },
   {
     "name": "Hindmarsh",
@@ -165,7 +207,14 @@
     "websiteLine": "A no-nonsense website for your Hindmarsh trade business — service lists, quote forms, click-to-call. From $699.",
     "seoLine": "Rank for 'mechanic Hindmarsh', 'fabricator Adelaide', 'industrial contractor Hindmarsh' — the searches fleet managers and commercial clients do.",
     "automationLine": "Missed call capture, quote automation and follow-up for Hindmarsh contractors. Win more fleet work by responding first.",
-    "heroColor": "from-lime-400/20 via-green-300/10 to-emerald-400/15"
+    "heroColor": "from-lime-400/20 via-green-300/10 to-emerald-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for fleet maintenance and industrial contractors in Hindmarsh?",
+        "answer": "Yes. We build trade websites for Hindmarsh mechanics, fabricators and industrial contractors — service lists, fleet enquiry forms, instant quote calculators and click-to-call. Most Hindmarsh fleet operators win more work just by responding first."
+      }
+    ],
+    "region": "Trade & Industrial"
   },
   {
     "name": "Mawson Lakes",
@@ -189,7 +238,14 @@
     "websiteLine": "A modern, fast website for your Mawson Lakes business — online booking, clean design, built for a tech-savvy audience. From $699.",
     "seoLine": "Rank for 'professional services Mawson Lakes', 'training provider Mawson Lakes' — capture the UniSA and startup crowd searching online.",
     "automationLine": "Automated booking, reminder sequences and client onboarding for Mawson Lakes professionals. Match your digital experience to your audience.",
-    "heroColor": "from-blue-400/20 via-indigo-300/10 to-violet-400/15"
+    "heroColor": "from-blue-400/20 via-indigo-300/10 to-violet-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for tech startups and UniSA-area businesses in Mawson Lakes?",
+        "answer": "Yes. We build modern, fast-loading websites for Mawson Lakes' tech-forward community — startups, co-working spaces, professional services and education providers. Built with online booking and self-service workflows that match the digital expectations of UniSA staff and students."
+      }
+    ],
+    "region": "North"
   },
   {
     "name": "Modbury",
@@ -213,7 +269,14 @@
     "websiteLine": "A tradie website for your Modbury business — click-to-call, service area pages, quote forms. From $699, live in 48 hours.",
     "seoLine": "Rank for 'electrician Modbury', 'dentist Tea Tree Plaza', 'plumber Modbury' — northern suburbs families are searching, be visible.",
     "automationLine": "Missed call text-back, booking automation and reminders for Modbury tradies and clinics. Never miss a family enquiry again.",
-    "heroColor": "from-teal-400/20 via-cyan-300/10 to-sky-400/15"
+    "heroColor": "from-teal-400/20 via-cyan-300/10 to-sky-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for the northern suburbs around Modbury?",
+        "answer": "Yes. We build tradie websites for plumbers, electricians, builders and landscapers servicing Modbury, Tea Tree Plaza, Golden Grove and the broader northern corridor. Click-to-call, service area pages, and instant quote forms designed for families searching after-hours."
+      }
+    ],
+    "region": "North"
   },
   {
     "name": "Marion",
@@ -237,7 +300,14 @@
     "websiteLine": "A website for your Marion business — online booking, service pages, mobile-first. From $699.",
     "seoLine": "Rank for 'doctor Marion', 'plumber Marion', 'mechanic Marion' — 50,000+ residents are searching for local services every day.",
     "automationLine": "Missed call capture, appointment reminders and review automation for Marion businesses. Out-polish your competitors without hiring admin.",
-    "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15"
+    "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help healthcare practices near Westfield Marion get more patient bookings?",
+        "answer": "Yes. We build healthcare websites for practices around Marion and the southern corridor — online booking, patient reminder systems, and suburb-targeted service pages. Most Marion practices we work with fill empty appointment slots within their first quarter."
+      }
+    ],
+    "region": "South"
   },
   {
     "name": "Port Adelaide",
@@ -261,7 +331,14 @@
     "websiteLine": "A website for your Port Adelaide cafe, brewery or studio — online booking, events page, Instagram-ready. From $699.",
     "seoLine": "Rank for 'cafe Port Adelaide', 'brewery Port Adelaide', 'things to do Port Adelaide' — capture the tourists and locals searching.",
     "automationLine": "Automated booking confirmations, event reminders and review requests for Port Adelaide hospitality. Move at Port speed.",
-    "heroColor": "from-slate-400/20 via-gray-300/10 to-zinc-400/15"
+    "heroColor": "from-slate-400/20 via-gray-300/10 to-zinc-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for Port Adelaide cafes, breweries and creative studios?",
+        "answer": "Yes. We build hospitality and creative websites for the Port — online booking, event pages, Instagram-ready galleries and seasonal promotion features. Designed to capture the Port's tourist crowd and convert them into year-round regulars."
+      }
+    ],
+    "region": "West & Coast"
   },
   {
     "name": "Mount Barker",
@@ -285,7 +362,14 @@
     "websiteLine": "A website for your Mount Barker business — service pages, online booking, suburb targeting. From $699.",
     "seoLine": "Rank for 'builder Mount Barker', 'doctor Mount Barker', 'mechanic Mount Barker' — new residents are searching for local services.",
     "automationLine": "Missed call capture, quote automation and booking for Mount Barker tradies. Handle 40% more volume without hiring admin.",
-    "heroColor": "from-emerald-500/25 via-green-300/15 to-teal-400/15"
+    "heroColor": "from-emerald-500/25 via-green-300/15 to-teal-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help Mount Barker tradies and builders keep up with the growth boom?",
+        "answer": "Yes — Mount Barker's growth means more competition for reno and build work. We build tradie websites with instant quote forms, automated follow-up sequences and service area pages targeting the new estates. Most Mount Barker builders we work with book 3-4 extra jobs a month just from showing up better in local search."
+      }
+    ],
+    "region": "East & Hills"
   },
   {
     "name": "Mitcham",
@@ -309,6 +393,664 @@
     "websiteLine": "A tradie website for your Mitcham business — click-to-call, service area pages, quote forms. From $699, live in 48 hours.",
     "seoLine": "Rank for 'plumber Mitcham', 'builder Mitcham', 'doctor Belair Road' — Mitcham families are searching for reliable local services.",
     "automationLine": "Missed call text-back, booking reminders and quote follow-up for Mitcham tradies and clinics. Stop losing $6k/week to missed calls.",
-    "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15"
+    "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help Mitcham tradies stop losing calls during the school run?",
+        "answer": "Yes — missed calls during the after-school window are the #1 revenue leak for Mitcham tradies. We set up missed-call text-back so every missed call gets an SMS within 20 seconds, plus automated booking reminders. Most Mitcham tradies recover 3-5 jobs a week just from this alone."
+      }
+    ],
+    "region": "South"
+  },
+  {
+    "name": "North Adelaide",
+    "slug": "north-adelaide",
+    "postcode": "5006",
+    "heroLine": "Websites, SEO & automation for North Adelaide's heritage strip.",
+    "intro": "North Adelaide lives between the parklands and the cathedral — heritage terrace businesses, premium restaurants on Melbourne Street, specialist medical, and law firms serving Adelaide's most affluent postcodes. The customers here expect polish. We build websites that match the address, SEO that ranks for the prestige searches, and automation that handles bookings with white-glove care.",
+    "whyNow": "North Adelaide businesses serve a clientele with options and high expectations. Practices that still rely on phone-tag booking lose affluent clients to competitors offering online appointments and instant confirmations. A proper website isn't optional in North Adelaide — it's the price of entry.",
+    "industries": [
+      "Specialist Medical",
+      "Restaurants & Bars",
+      "Legal & Professional Services",
+      "Boutique Retail",
+      "Beauty & Wellness"
+    ],
+    "painPoints": [
+      "Melbourne Street restaurants lose private dining bookings worth $2k+ because responses take a full day during service",
+      "Specialist practices lose new patients to competitors with online booking because affluent clients refuse phone-only scheduling",
+      "Heritage terrace professional firms look dated online compared to competitors with modern websites and instant enquiry forms"
+    ],
+    "websiteLine": "A polished website for your North Adelaide practice or venue — heritage credibility, online booking, premium copy. From $699.",
+    "seoLine": "Rank for 'Melbourne Street restaurant', 'specialist North Adelaide', 'lawyer North Adelaide' — affluent locals and CBD spillover are already searching.",
+    "automationLine": "Automated booking, reminders and follow-up for North Adelaide professionals. Match your digital experience to your address.",
+    "heroColor": "from-amber-500/20 via-yellow-300/10 to-orange-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build premium websites for heritage strip businesses on Melbourne Street?",
+        "answer": "Yes. We build websites for North Adelaide restaurants, specialist medical, legal and boutique retail that match the heritage address. Online booking, premium copy and gallery-led design that converts Melbourne Street foot traffic and CBD spillover."
+      }
+    ],
+    "region": "Inner Adelaide"
+  },
+  {
+    "name": "Henley Beach",
+    "slug": "henley-beach",
+    "postcode": "5022",
+    "heroLine": "Websites, SEO & automation for Henley Beach's coastal business strip.",
+    "intro": "Henley Beach is Adelaide's premium beachside suburb — the square hums with cafes, restaurants, beauty salons and boutiques serving both locals and weekend crowds. Hospitality runs on summer chaos and winter steady. We build hospitality websites that take direct bookings, SEO that ranks for Henley Beach searches, and automation that turns first-time beach visitors into year-round regulars.",
+    "whyNow": "Henley Beach's hospitality market is crowded with options, and customers book whoever responds first. Restaurants and salons still playing phone tag during dinner service are losing group bookings worth $500+ to competitors with proper online booking and instant confirmations.",
+    "industries": [
+      "Cafes & Restaurants",
+      "Beauty & Wellness",
+      "Boutique Retail",
+      "Real Estate",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Henley Square restaurants lose group dinner bookings worth $500+ because phones go unanswered during weekend service rush",
+      "Beachside salons lose new clients to competitors with online booking because nobody calls salons anymore",
+      "Real estate agents miss weekend opens because enquiry forms aren't automated and leads sit until Monday morning"
+    ],
+    "websiteLine": "A hospitality-ready website for your Henley Beach business — online booking, gallery, mobile-first. From $699.",
+    "seoLine": "Rank for 'cafe Henley Beach', 'restaurant Henley Square', 'salon Henley Beach' — beach crowd and locals are searching daily.",
+    "automationLine": "Booking confirmations, reminders and review requests for Henley Beach hospitality. Stop losing the weekend crowd.",
+    "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites with online booking for Henley Beach cafes and salons?",
+        "answer": "Yes. We build hospitality websites for Henley Beach's square and surrounds — online booking, gallery-led design, and reservation systems. Most Henley Square venues we work with fill more weekend slots within their first month."
+      }
+    ],
+    "region": "West & Coast"
+  },
+  {
+    "name": "Magill",
+    "slug": "magill",
+    "postcode": "5072",
+    "heroLine": "Websites, SEO & automation for Magill's education and family scene.",
+    "intro": "Magill's anchored by UniSA's big campus and a long strip of family homes, schools and trades. Education providers, allied health, and tradies serving Magill families all compete for the same local search results. We build websites that book appointments, SEO that ranks for Magill services, and automation that handles the school-run chaos of running a business here.",
+    "whyNow": "Magill families default to Google for everything from plumbers to physio. Tradies and clinics still relying on phone booking lose parents to competitors offering one-click appointments and instant confirmations — the demographic that books online is exactly the Magill demographic.",
+    "industries": [
+      "Education & Training",
+      "Allied Health & Physio",
+      "Trades & Home Services",
+      "Childcare",
+      "Cafes & Takeaway"
+    ],
+    "painPoints": [
+      "Tradies servicing Magill miss 10+ evening calls a week because they're offline during the after-school dinner zone",
+      "Allied health practices lose UniSA staff clients to competitors with online booking because nobody calls during work hours",
+      "Childcare centres lose enrolments to competitors whose enquiry forms auto-reply within minutes instead of days"
+    ],
+    "websiteLine": "A tradie or family-services website for your Magill business — quote forms, click-to-call, online booking. From $699.",
+    "seoLine": "Rank for 'plumber Magill', 'physio Magill', 'childcare Magill' — UniSA staff and Magill families search online first.",
+    "automationLine": "Missed call capture, booking reminders and quote follow-up for Magill tradies and clinics. Match the school-run pace.",
+    "heroColor": "from-violet-400/20 via-purple-300/10 to-indigo-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for education providers and UniSA-area businesses?",
+        "answer": "Yes. We work with Magill's education providers, allied health practices and tradies serving the UniSA community. Online booking, enquiry forms, and digital workflows built for the Magill demographic that defaults to online-first."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Salisbury",
+    "slug": "salisbury",
+    "postcode": "5108",
+    "heroLine": "Websites, SEO & automation for Salisbury's northern commercial hub.",
+    "intro": "Salisbury anchors Adelaide's north — Salisbury Town Centre drives retail, the industrial precinct feeds automotive and logistics, and a growing residential base keeps tradies flat out. We build trade and retail websites that convert, SEO that ranks for northern searches, and automation that handles the volume Salisbury businesses need to keep up with.",
+    "whyNow": "Salisbury's commercial mix means fierce competition across every category. Industrial contractors and retail businesses with proper websites, fast enquiry response and automated quoting are winning more work — those still relying on phone tag are losing to competitors who reply first.",
+    "industries": [
+      "Industrial & Logistics",
+      "Automotive",
+      "Trades & Construction",
+      "Retail & Big-Box",
+      "Healthcare"
+    ],
+    "painPoints": [
+      "Industrial contractors in Salisbury miss fleet service enquiries worth $5k+ because phones go unanswered on the workshop floor",
+      "Tradies servicing northern suburbs lose 2-3 jobs a week because they can't quote fast enough while driving between sites",
+      "Retail around Salisbury Town Centre loses corporate enquiries to online competitors because response takes 24+ hours"
+    ],
+    "websiteLine": "A no-nonsense website for your Salisbury trade or retail business — quote forms, service lists, click-to-call. From $699.",
+    "seoLine": "Rank for 'mechanic Salisbury', 'plumber Salisbury', 'Salisbury Town Centre' — northern residents and commercial clients search here first.",
+    "automationLine": "Missed call text-back, quote automation and fleet enquiry follow-up for Salisbury industrial and trades. Win more fleet work.",
+    "heroColor": "from-stone-400/20 via-neutral-300/10 to-zinc-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for industrial contractors in the Salisbury precinct?",
+        "answer": "Yes. We build trade websites for Salisbury industrial, automotive and commercial trades — fleet enquiry forms, instant quote calculators, and service area pages targeting the broader northern corridor. Designed for Salisbury businesses competing on response time."
+      }
+    ],
+    "region": "North"
+  },
+  {
+    "name": "Elizabeth",
+    "slug": "elizabeth",
+    "postcode": "5112",
+    "heroLine": "Websites, SEO & automation for Elizabeth's working northern families.",
+    "intro": "Elizabeth is Adelaide's working northern heart — Elizabeth City Centre anchors retail, automotive and trade services keep the suburb running, and families need everything from mechanics to medical. We build websites that rank for working-class local searches, SEO that beats franchise competitors, and automation that helps small Elizabeth businesses compete without big budgets.",
+    "whyNow": "Elizabeth's small businesses compete against national franchises with bigger budgets. The edge goes to whoever responds fastest and ranks highest locally — proper SEO and automated enquiry handling close the gap without matching franchise spend.",
+    "industries": [
+      "Automotive",
+      "Trades & Home Services",
+      "Retail & Services",
+      "Healthcare",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Independent mechanics in Elizabeth lose fleet and family work to franchise competitors with better Google rankings",
+      "Tradies miss after-work calls because they're onsite until 6pm and the phone goes to voicemail",
+      "Healthcare practices lose patients to bulk-billing clinics with online booking because nobody waits on hold anymore"
+    ],
+    "websiteLine": "A practical website for your Elizabeth business — service pages, click-to-call, quote forms. From $699.",
+    "seoLine": "Rank for 'mechanic Elizabeth', 'plumber Elizabeth', 'doctor Elizabeth' — beat the franchises to the local search results.",
+    "automationLine": "Missed call capture, booking reminders and quote follow-up for Elizabeth small business. Compete without franchise budgets.",
+    "heroColor": "from-red-400/20 via-rose-300/10 to-pink-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help Elizabeth small businesses compete against national franchises?",
+        "answer": "Yes. We work with Elizabeth mechanics, tradies, healthcare and retail businesses competing against franchise budgets. Proper local SEO, fast response, automated enquiry handling — the edge that closes the gap without matching franchise spend."
+      }
+    ],
+    "region": "North"
+  },
+  {
+    "name": "Stirling",
+    "slug": "stirling",
+    "postcode": "5152",
+    "heroLine": "Websites, SEO & automation for Stirling's premium Hills market.",
+    "intro": "Stirling is the Adelaide Hills' commercial heart — cafes, boutique retail, premium services, and tourism gateway businesses all serve a high-spending local and visitor crowd. We build Hills-ready websites that capture direct bookings, SEO that ranks for premium Hills searches, and automation that turns one-time visitors into Adelaide Hills regulars.",
+    "whyNow": "Stirling customers have options across the Hills and the city. Businesses with proper websites, instant enquiry handling and automated booking stand out — those still relying on phone-only lose high-value customers to competitors who respond in minutes.",
+    "industries": [
+      "Cafes & Restaurants",
+      "Boutique Retail",
+      "Tourism & Accommodation",
+      "Professional Services",
+      "Wellness & Beauty"
+    ],
+    "painPoints": [
+      "Stirling cafes lose weekend brunch bookings worth $400+ because phones go unanswered during morning service",
+      "Boutique retailers miss Hills tourist spending because their websites don't show product ranges or capture email enquiries",
+      "Tourism businesses lose direct bookings to Booking.com because their own websites don't take instant reservations"
+    ],
+    "websiteLine": "A premium website for your Stirling business — gallery, online booking, Hills credibility. From $699.",
+    "seoLine": "Rank for 'cafe Stirling', 'Stirling Hills', 'things to do Adelaide Hills' — premium local and tourist searches.",
+    "automationLine": "Booking confirmations, follow-up sequences and review requests for Stirling hospitality. Capture the Hills tourist spend.",
+    "heroColor": "from-emerald-500/20 via-green-300/10 to-teal-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for Stirling cafes, boutiques and tourism businesses?",
+        "answer": "Yes. We build Hills websites for Stirling cafes, boutique retail, professional services and tourism operators. Gallery-led design, online booking, and suburb-targeted SEO that captures both Hills locals and weekend tourists."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Hallett Cove",
+    "slug": "hallett-cove",
+    "postcode": "5158",
+    "heroLine": "Websites, SEO & automation for Hallett Cove's established coastal families.",
+    "intro": "Hallett Cove is established southern coastal — ageing homes driving constant renovation work, family services along Lonsdale Road, and schools keeping tradies busy year-round. We build tradie and family-services websites that rank locally, SEO that captures southern coastal searches, and automation that helps Hallett Cove businesses handle volume without burning out.",
+    "whyNow": "Hallett Cove's renovation boom means fierce competition among tradies. Those with proper websites, fast quote turnaround and automated follow-up are winning 3-4 extra jobs per month — competitors still playing phone tag lose those jobs to whoever responded first.",
+    "industries": [
+      "Trades & Renovation",
+      "Family Services",
+      "Healthcare",
+      "Schools & Childcare",
+      "Cafes & Takeaway"
+    ],
+    "painPoints": [
+      "Hallett Cove builders miss 5+ reno enquiries a week because they can't quote fast enough between active job sites",
+      "Healthcare practices along Lonsdale Road lose after-school appointments because reminder calls aren't consistent",
+      "Childcare and family services lose new enrolments because enquiry forms go unanswered for 2-3 days"
+    ],
+    "websiteLine": "A tradie website for your Hallett Cove business — service pages, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'builder Hallett Cove', 'plumber Hallett Cove', 'doctor Hallett Cove' — established coastal families are searching.",
+    "automationLine": "Missed call capture, quote automation and reminders for Hallett Cove tradies. Win 3-4 extra reno jobs a month.",
+    "heroColor": "from-blue-400/20 via-indigo-300/10 to-cyan-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for established southern coastal suburbs like Hallett Cove?",
+        "answer": "Yes. We build tradie websites for plumbers, electricians, builders and landscapers across Hallett Cove and the southern coastal corridor. Click-to-call, instant quote forms, and service area pages targeting the established homes driving ongoing reno work."
+      }
+    ],
+    "region": "South"
+  },
+  {
+    "name": "Reynella",
+    "slug": "reynella",
+    "postcode": "5161",
+    "heroLine": "Websites, SEO & automation for Reynella's growing southern families.",
+    "intro": "Reynella is southern Adelaide's growing family hub — new estates going in, established homes needing renos, and a commercial strip keeping tradies flat-out. We build tradie and family-services websites that convert, SEO that ranks for southern suburb searches, and automation that handles the volume Reynella businesses need to keep up with.",
+    "whyNow": "Reynella's growth means more homes needing services, more families searching online, and more competition among local businesses. Those with proper websites and automated enquiry handling are capturing the new family market — competitors still relying on phone-only lose those customers to whoever responds first.",
+    "industries": [
+      "Trades & Construction",
+      "Family Services",
+      "Healthcare",
+      "Cafes & Takeaway",
+      "Automotive"
+    ],
+    "painPoints": [
+      "Tradies servicing Reynella's growing estates miss 4-6 calls a week because phones go unanswered on the tools",
+      "Healthcare practices lose new patients to clinics with online booking because Reynella families default to digital",
+      "Cafes and takeaway lose catering orders worth $300+ during morning rush when phones are tied up with front-counter service"
+    ],
+    "websiteLine": "A tradie website for your Reynella business — quote forms, service area pages, click-to-call. From $699.",
+    "seoLine": "Rank for 'plumber Reynella', 'builder Reynella', 'cafe Reynella' — new families and established locals are searching.",
+    "automationLine": "Missed call capture, quote automation and booking for Reynella tradies and family services. Handle the growth without the chaos.",
+    "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for the growing southern suburbs around Reynella?",
+        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Reynella's growing estates and the surrounding southern corridor. Instant quote forms, automated follow-up and click-to-call — built for the volume southern tradies handle."
+      }
+    ],
+    "region": "South"
+  },
+  {
+    "name": "Aberfoyle Park",
+    "slug": "aberfoyle-park",
+    "postcode": "5159",
+    "heroLine": "Websites, SEO & automation for Aberfoyle Park's established Hills families.",
+    "intro": "Aberfoyle Park is established Adelaide Hills family suburb — premium homes, lots of school traffic, and a steady stream of renovation and maintenance work for local tradies. We build tradie websites that rank for Hills family searches, SEO that captures Aberfoyle Park enquiries, and automation that helps small Hills businesses punch above their weight.",
+    "whyNow": "Aberfoyle Park's housing stock is mature, which means ongoing renovation, landscaping and maintenance work. Tradies with proper websites, fast quote turnaround and automated booking are winning more of this recurring work — competitors still playing phone tag lose the high-value jobs.",
+    "industries": [
+      "Trades & Renovation",
+      "Landscaping & Gardening",
+      "Healthcare",
+      "Schools & Childcare",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Aberfoyle Park builders lose reno quotes worth $20k+ because they take 2-3 days to respond while competitors reply same-day",
+      "Landscapers miss spring rush enquiries because seasonal volume crashes their phone-based booking system",
+      "Healthcare practices lose working parents to competitors with after-hours online booking"
+    ],
+    "websiteLine": "A tradie website for your Aberfoyle Park business — gallery, quote forms, service area pages. From $699.",
+    "seoLine": "Rank for 'builder Aberfoyle Park', 'landscaper Aberfoyle Park', 'doctor Aberfoyle Park' — Hills families search online first.",
+    "automationLine": "Quote automation, missed call capture and booking reminders for Aberfoyle Park tradies. Handle the Hills volume.",
+    "heroColor": "from-lime-400/20 via-green-300/10 to-emerald-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for established Hills suburbs like Aberfoyle Park?",
+        "answer": "Yes. We build tradie websites for the Hills corridor — plumbers, electricians, builders and landscapers serving Aberfoyle Park's mature housing stock. Instant quote forms, gallery-led service pages, and automated follow-up to win more of the ongoing reno work."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Morphett Vale",
+    "slug": "morphett-vale",
+    "postcode": "5162",
+    "heroLine": "Websites, SEO & automation for Morphett Vale's southern commercial hub.",
+    "intro": "Morphett Vale is southern Adelaide's biggest commercial-residential mix — Southgate Plaza anchors retail, automotive and trade services keep the suburb running, and a massive residential base keeps demand constant. We build websites that rank for southern commercial searches, SEO that beats the big-box competitors, and automation that helps Morphett Vale businesses handle sheer volume.",
+    "whyNow": "Morphett Vale's commercial density means fierce competition for every customer. Small businesses with proper websites, fast response and automated enquiry handling close the gap against bigger competitors — those still relying on phone-only lose customers who don't want to wait.",
+    "industries": [
+      "Automotive",
+      "Trades & Home Services",
+      "Healthcare",
+      "Retail & Big-Box",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Independent mechanics lose fleet and family work to dealerships with better Google rankings and online booking",
+      "Tradies miss after-work calls because they're onsite until 6pm and voicemail isn't cutting it anymore",
+      "Healthcare practices lose patients to bulk-billing clinics with online booking because Morphett Vale families won't wait on hold"
+    ],
+    "websiteLine": "A practical website for your Morphett Vale business — service pages, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'mechanic Morphett Vale', 'plumber Morphett Vale', 'doctor Morphett Vale' — beat the chains to local searches.",
+    "automationLine": "Missed call capture, booking reminders and quote follow-up for Morphett Vale small business. Compete at volume.",
+    "heroColor": "from-slate-400/20 via-gray-300/10 to-zinc-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you help Morphett Vale small businesses compete against big-box competitors?",
+        "answer": "Yes. We work with Morphett Vale mechanics, tradies, healthcare and retail businesses competing against bigger operators. Local SEO, fast response and automated enquiry handling that helps independents hold their ground."
+      }
+    ],
+    "region": "South"
+  },
+  {
+    "name": "Campbelltown",
+    "slug": "campbelltown",
+    "postcode": "5074",
+    "heroLine": "Websites, SEO & automation for Campbelltown's eastern linear strip.",
+    "intro": "Campbelltown runs along a busy linear commercial corridor — healthcare, retail, trades, and family services all strung together serving the eastern suburbs. We build websites that rank for eastern suburb searches, SEO that captures Campbelltown's high-volume local traffic, and automation that handles the constant enquiries these businesses get.",
+    "whyNow": "Campbelltown's linear strip means competitors are concentrated and easy to compare online. The businesses that rank highest and respond fastest win the most enquiries — those still relying on phone-only lose customers who compare three options on Google before calling anyone.",
+    "industries": [
+      "Healthcare",
+      "Retail & Services",
+      "Trades & Home Services",
+      "Cafes & Takeaway",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Healthcare practices along the strip lose patients to competitors with online booking because nobody calls during work hours",
+      "Tradies miss morning enquiry calls because they're already driving to their first job",
+      "Retail loses corporate catering and gift orders because phone enquiries take 24+ hours to return"
+    ],
+    "websiteLine": "A practical website for your Campbelltown business — service pages, online booking, click-to-call. From $699.",
+    "seoLine": "Rank for 'doctor Campbelltown', 'plumber Campbelltown', 'Campbelltown shopping' — high-volume eastern suburb searches.",
+    "automationLine": "Online booking, missed call capture and quote automation for Campbelltown businesses. Win the linear strip competition.",
+    "heroColor": "from-purple-400/20 via-fuchsia-300/10 to-pink-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for healthcare practices along Campbelltown's linear strip?",
+        "answer": "Yes. We build healthcare and family services websites for the Campbelltown corridor — online booking, patient reminders, and suburb-targeted service pages. Most practices we work with fill more appointment slots within their first quarter."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Payneham",
+    "slug": "payneham",
+    "postcode": "5070",
+    "heroLine": "Websites, SEO & automation for Payneham's Portrush Road strip.",
+    "intro": "Payneham runs along Portrush Road — one of Adelaide's busiest commercial corridors with trades, healthcare, retail and family services all competing for the same eastern suburbs traffic. We build websites that rank for Portrush Road searches, SEO that captures Payneham's high-volume local traffic, and automation that helps businesses handle enquiries faster than competitors.",
+    "whyNow": "Payneham businesses compete against a dozen similar businesses within a kilometre. The ones with proper websites and instant response win the customers who comparison-shop online — those still relying on phone tag lose to whoever picked up first.",
+    "industries": [
+      "Trades & Home Services",
+      "Healthcare",
+      "Retail & Services",
+      "Cafes & Restaurants",
+      "Family Services"
+    ],
+    "painPoints": [
+      "Tradies along Portrush Road miss 5+ calls a week because they're onsite and phones go to voicemail",
+      "Healthcare practices lose new patients to competitors with online booking because eastern suburbs families default to digital",
+      "Retail and cafes lose catering orders because phone enquiries during service rush go unanswered"
+    ],
+    "websiteLine": "A tradie or family-services website for your Payneham business — quote forms, click-to-call, online booking. From $699.",
+    "seoLine": "Rank for 'plumber Payneham', 'doctor Payneham', 'Portrush Road' — high-volume eastern suburb searches.",
+    "automationLine": "Missed call capture, quote automation and booking for Payneham tradies and clinics. Beat the strip competition.",
+    "heroColor": "from-rose-400/20 via-pink-300/10 to-fuchsia-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for the Portrush Road strip?",
+        "answer": "Yes. We build tradie websites for plumbers, electricians, builders and landscapers along Portrush Road and the broader Payneham corridor. Click-to-call, instant quote forms, and service area pages designed for the high-volume local search traffic."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Hahndorf",
+    "slug": "hahndorf",
+    "postcode": "5245",
+    "heroLine": "Websites, SEO & automation for Hahndorf's tourism and premium food scene.",
+    "intro": "Hahndorf is Australia's oldest surviving German settlement and one of SA's biggest tourism draws — restaurants, cellar doors, boutique accommodation and artisan retail all serving a mix of interstate tourists, Hills locals, and weekend day-trippers. We build tourism-ready websites that capture direct bookings, SEO that ranks for Hahndorf searches, and automation that turns one-time visitors into repeat customers.",
+    "whyNow": "Hahndorf's tourism market is competitive and seasonal. Restaurants and accommodation providers still relying on phone-only or third-party booking platforms pay 15-20% in commission — a proper website with direct booking keeps more of every dollar and captures customer data for repeat marketing.",
+    "industries": [
+      "Tourism & Accommodation",
+      "Restaurants & Wineries",
+      "Boutique Retail",
+      "Cafes",
+      "Artisan Food & Drink"
+    ],
+    "painPoints": [
+      "Hahndorf restaurants lose group bookings worth $1k+ during festival weekends because phones go unanswered during service",
+      "Accommodation providers pay 15-20% commission to Booking.com when they could've captured direct bookings",
+      "Artisan retailers miss interstate tourist spending because their websites don't show product ranges or capture emails for follow-up"
+    ],
+    "websiteLine": "A tourism-ready website for your Hahndorf business — direct booking, gallery, mobile-first. From $699.",
+    "seoLine": "Rank for 'Hahndorf accommodation', 'Hahndorf restaurant', 'things to do Hahndorf' — capture the tourist and weekend crowd.",
+    "automationLine": "Booking confirmations, follow-up sequences and review requests for Hahndorf hospitality. Turn tourists into regulars.",
+    "heroColor": "from-amber-500/20 via-orange-300/10 to-red-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tourism websites for Hahndorf restaurants and accommodation?",
+        "answer": "Yes. We build tourism-ready websites for Hahndorf's restaurants, cellar doors, boutique accommodation and artisan retail — direct booking, gallery-led design, and seasonal promotion features that capture interstate tourists and Hills day-trippers."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Seaford",
+    "slug": "seaford",
+    "postcode": "5169",
+    "heroLine": "Websites, SEO & automation for Seaford's growing southern coast.",
+    "intro": "Seaford is southern Adelaide's coastal growth corridor — new estates, young families, and a railway-linked commuter base that defaults to online for everything. We build tradie and family-services websites that convert, SEO that ranks for southern coast searches, and automation that helps Seaford businesses keep up with rapid population growth.",
+    "whyNow": "Seaford's growth means more competition for the new family market. Businesses with proper websites, fast response and automated enquiry handling capture the new arrivals — competitors still relying on phone-only lose those customers to whoever replies first.",
+    "industries": [
+      "Trades & Construction",
+      "Family Services",
+      "Healthcare",
+      "Cafes & Restaurants",
+      "Real Estate"
+    ],
+    "painPoints": [
+      "Tradies servicing Seaford's new estates miss 5+ calls a week because they can't quote fast enough between active sites",
+      "Healthcare practices lose new families to clinics with online booking because Seaford commuters won't call during work hours",
+      "Real estate agents miss weekend opens because enquiry forms aren't automated and leads sit until Monday"
+    ],
+    "websiteLine": "A tradie or family-services website for your Seaford business — quote forms, service area pages, click-to-call. From $699.",
+    "seoLine": "Rank for 'plumber Seaford', 'builder Seaford', 'cafe Seaford' — new families and established locals are searching.",
+    "automationLine": "Missed call capture, quote automation and booking for Seaford tradies. Handle the southern coast growth.",
+    "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for the growing southern coast around Seaford?",
+        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Seaford's new estates and the broader southern coast. Instant quote forms, automated follow-up and service area pages built for the rapid population growth."
+      }
+    ],
+    "region": "South"
+  },
+  {
+    "name": "West Beach",
+    "slug": "west-beach",
+    "postcode": "5024",
+    "heroLine": "Websites, SEO & automation for West Beach's coastal family strip.",
+    "intro": "West Beach sits between Henley Beach and the airport — family homes, beachside cafes, and small businesses serving both locals and the airport-adjacent tourism trade. We build websites that rank for western coastal searches, SEO that captures West Beach enquiries, and automation that helps small businesses handle seasonal swings.",
+    "whyNow": "West Beach businesses serve a mix of locals, beach crowd, and airport-area visitors. Those with proper websites and automated enquiry handling capture all three audiences — competitors still relying on phone-only lose the customers who default to online booking.",
+    "industries": [
+      "Cafes & Restaurants",
+      "Family Services",
+      "Trades & Home Services",
+      "Tourism & Accommodation",
+      "Real Estate"
+    ],
+    "painPoints": [
+      "West Beach cafes lose sunset dinner bookings because phones go unanswered during evening service rush",
+      "Tradies miss weekend family enquiries because they're trying to have their own weekends off",
+      "Tourism and accommodation providers lose direct bookings to platforms because their websites don't take instant reservations"
+    ],
+    "websiteLine": "A practical website for your West Beach business — online booking, gallery, click-to-call. From $699.",
+    "seoLine": "Rank for 'cafe West Beach', 'West Beach accommodation', 'plumber West Beach' — coastal family suburb searches.",
+    "automationLine": "Booking confirmations, missed call capture and quote automation for West Beach businesses. Handle the seasonal swing.",
+    "heroColor": "from-sky-400/20 via-blue-300/10 to-indigo-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build hospitality websites for the western coastal suburbs?",
+        "answer": "Yes. We build websites for West Beach cafes, restaurants, family services and tourism businesses — online booking, gallery-led design, and suburb-targeted SEO that captures both locals and the airport-adjacent tourist trade."
+      }
+    ],
+    "region": "West & Coast"
+  },
+  {
+    "name": "Findon",
+    "slug": "findon",
+    "postcode": "5023",
+    "heroLine": "Websites, SEO & automation for Findon's western commercial strip.",
+    "intro": "Findon sits on a busy western commercial corridor — automotive, trades, healthcare and retail all competing for the same western suburbs traffic. We build websites that rank for western suburb searches, SEO that captures Findon high-volume local traffic, and automation that helps businesses respond faster than the next competitor.",
+    "whyNow": "Findon businesses compete against a dozen similar businesses within a kilometre. The ones with proper websites and instant response win the customers who compare three options on Google before calling anyone — those still relying on phone tag lose to whoever picked up first.",
+    "industries": [
+      "Automotive",
+      "Trades & Home Services",
+      "Healthcare",
+      "Retail & Services",
+      "Cafes & Takeaway"
+    ],
+    "painPoints": [
+      "Findon mechanics lose fleet and family work to dealerships with better Google rankings and online booking",
+      "Tradies miss morning calls because they're already driving to their first job",
+      "Healthcare practices lose patients to bulk-billing clinics with online booking because western suburbs families won't wait on hold"
+    ],
+    "websiteLine": "A practical website for your Findon business — service pages, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'mechanic Findon', 'plumber Findon', 'Findon shopping' — western commercial strip searches.",
+    "automationLine": "Missed call capture, booking reminders and quote follow-up for Findon businesses. Win the western strip.",
+    "heroColor": "from-gray-400/20 via-slate-300/10 to-zinc-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for the western commercial strip in Findon?",
+        "answer": "Yes. We build websites for Findon mechanics, tradies, healthcare and retail — service pages, click-to-call, and instant quote forms designed for the high-volume western commercial corridor."
+      }
+    ],
+    "region": "West & Coast"
+  },
+  {
+    "name": "Crafers",
+    "slug": "crafers",
+    "postcode": "5152",
+    "heroLine": "Websites, SEO & automation for Crafers' Hills tourism gateway.",
+    "intro": "Crafers is the gateway to the Adelaide Hills — freeway travellers stop here on the way up, tourists use it as a base, and Hills businesses cluster around the intersection. We build tourism-ready websites that capture direct bookings, SEO that ranks for Hills gateway searches, and automation that helps Crafers businesses turn passing trade into booked customers.",
+    "whyNow": "Crafers captures significant passing trade that currently goes to competitors further up the hill or back in the city. With a proper website and automated enquiry handling, that passing trade can be captured at the gateway — without one, it all drives past.",
+    "industries": [
+      "Tourism & Accommodation",
+      "Cafes & Restaurants",
+      "Boutique Retail",
+      "Trades & Home Services",
+      "Professional Services"
+    ],
+    "painPoints": [
+      "Crafers cafes miss tourist lunch bookings because phones go unanswered during the lunch rush",
+      "Accommodation providers pay 15-20% commission to Booking.com when they could capture direct gateway bookings",
+      "Tradies miss Hills enquiries because they can't quote fast enough while driving between sites"
+    ],
+    "websiteLine": "A tourism-ready website for your Crafers business — direct booking, gallery, mobile-first. From $699.",
+    "seoLine": "Rank for 'Crafers accommodation', 'cafe Crafers', 'Adelaide Hills stop' — capture the gateway traffic.",
+    "automationLine": "Direct booking, missed call capture and quote automation for Crafers businesses. Capture the gateway trade.",
+    "heroColor": "from-teal-400/20 via-emerald-300/10 to-green-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tourism websites for the Adelaide Hills gateway?",
+        "answer": "Yes. We build websites for Crafers cafes, accommodation, tourism operators and Hills trades — direct booking, gallery-led design, and SEO that captures the gateway traffic heading up to the Hills."
+      }
+    ],
+    "region": "East & Hills"
+  },
+  {
+    "name": "Stepney",
+    "slug": "stepney",
+    "postcode": "5069",
+    "heroLine": "Websites, SEO & automation for Stepney's inner east commercial strip.",
+    "intro": "Stepney sits on a busy inner east corridor — retail, trades, automotive, and family services all clustered along the main road serving Adelaide's inner eastern suburbs. We build websites that rank for inner east searches, SEO that captures Stepney high-volume local traffic, and automation that helps businesses respond faster than the next competitor.",
+    "whyNow": "Stepney businesses compete against a dozen similar businesses within a kilometre. The ones with proper websites and instant response win the customers who comparison-shop online — those still relying on phone tag lose to whoever picked up first.",
+    "industries": [
+      "Trades & Home Services",
+      "Retail & Services",
+      "Automotive",
+      "Healthcare",
+      "Cafes & Takeaway"
+    ],
+    "painPoints": [
+      "Stepney tradies miss morning enquiry calls because they're already driving to their first job",
+      "Retail loses corporate catering and gift orders because phone enquiries during service rush go unanswered",
+      "Healthcare practices lose patients to competitors with online booking because inner east workers won't call during work hours"
+    ],
+    "websiteLine": "A practical website for your Stepney business — service pages, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'plumber Stepney', 'mechanic Stepney', 'Stepney shopping' — inner east commercial strip searches.",
+    "automationLine": "Missed call capture, booking reminders and quote follow-up for Stepney businesses. Win the inner east strip.",
+    "heroColor": "from-orange-400/20 via-red-300/10 to-rose-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for inner east retail and trade businesses?",
+        "answer": "Yes. We build websites for Stepney's inner east corridor — trades, retail, automotive and healthcare. Service pages, click-to-call, and instant quote forms designed for the high-volume local search traffic."
+      }
+    ],
+    "region": "Inner Adelaide"
+  },
+  {
+    "name": "Kent Town",
+    "slug": "kent-town",
+    "postcode": "5067",
+    "heroLine": "Websites, SEO & automation for Kent Town's tech and creative corridor.",
+    "intro": "Kent Town sits between the CBD and Norwood — co-working spaces, tech startups, creative agencies, and professional services all cluster here for the address and the connectivity. We build modern websites that match the tech-forward audience, SEO that ranks for inner east searches, and automation that handles client communication with the polish Kent Town businesses expect.",
+    "whyNow": "Kent Town's tech and creative crowd defaults to digital-first interactions. Agencies and professional services still relying on phone booking or dated websites lose clients to competitors offering online scheduling, instant confirmations, and modern digital experiences.",
+    "industries": [
+      "Tech & Startups",
+      "Creative & Design",
+      "Professional Services",
+      "Co-working Spaces",
+      "Cafes & Hospitality"
+    ],
+    "painPoints": [
+      "Creative agencies lose new business to competitors with better enquiry forms and faster response times",
+      "Tech startups look amateur to investors and clients because their booking and follow-up processes feel 2010",
+      "Co-working spaces lose tour bookings because enquiry forms go unanswered and prospects book elsewhere"
+    ],
+    "websiteLine": "A modern, fast website for your Kent Town business — clean design, online booking, built for a tech-savvy audience. From $699.",
+    "seoLine": "Rank for 'Kent Town coworking', 'creative agency Kent Town', 'tech startup Adelaide' — capture the inner east tech crowd.",
+    "automationLine": "Online booking, automated client onboarding and follow-up for Kent Town professionals. Match your digital experience to your address.",
+    "heroColor": "from-indigo-400/20 via-violet-300/10 to-purple-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build websites for tech startups and creative agencies in Kent Town?",
+        "answer": "Yes. We build modern, fast-loading websites for Kent Town's tech and creative corridor — startups, co-working spaces, professional services and creative agencies. Built with the digital polish Kent Town's audience expects."
+      }
+    ],
+    "region": "Inner Adelaide"
+  },
+  {
+    "name": "Moana",
+    "slug": "moana",
+    "postcode": "5169",
+    "heroLine": "Websites, SEO & automation for Moana's southern beach community.",
+    "intro": "Moana is a southern beach suburb with a strong community feel — cafes, holiday rentals, surf lifesaving culture, and family services serving both permanent residents and summer holidaymakers. We build beachside-ready websites that capture direct bookings, SEO that ranks for southern coast searches, and automation that handles the seasonal swing without losing year-round customers.",
+    "whyNow": "Moana's mix of permanent residents and holidaymakers means two distinct customer types to serve. A proper website with direct booking captures both — those still relying on third-party platforms or phone-only lose the year-round crowd to competitors with better digital presence.",
+    "industries": [
+      "Cafes & Restaurants",
+      "Tourism & Accommodation",
+      "Trades & Home Services",
+      "Family Services",
+      "Real Estate"
+    ],
+    "painPoints": [
+      "Moana cafes miss summer tourist bookings because phones go unanswered during service rush",
+      "Holiday rental providers double-book because manual calendars don't sync across platforms",
+      "Tradies miss weekend family enquiries because they're trying to have their own weekends off"
+    ],
+    "websiteLine": "A beachside-ready website for your Moana business — online booking, gallery, mobile-first. From $699.",
+    "seoLine": "Rank for 'cafe Moana', 'Moana accommodation', 'Moana beach' — capture the southern beach crowd.",
+    "automationLine": "Direct booking, calendar sync and missed call capture for Moana businesses. Handle the seasonal swing.",
+    "heroColor": "from-sky-400/20 via-cyan-300/10 to-teal-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tourism websites for southern beach suburbs like Moana?",
+        "answer": "Yes. We build websites for Moana cafes, holiday rentals, family services and trades — direct booking, calendar sync, and seasonal promotion features that capture both permanent residents and summer holidaymakers."
+      }
+    ],
+    "region": "West & Coast"
+  },
+  {
+    "name": "Newton",
+    "slug": "newton",
+    "postcode": "5074",
+    "heroLine": "Websites, SEO & automation for Newton's established eastern families.",
+    "intro": "Newton is an established eastern suburb with family homes, schools and a busy tradie scene serving ongoing renovation and maintenance work. We build tradie websites that rank for eastern suburb searches, SEO that captures Newton enquiries, and automation that helps local trades handle the consistent workload without burning out.",
+    "whyNow": "Newton's housing stock is mature, which means ongoing renovation, landscaping and home maintenance work. Tradies with proper websites and automated enquiry handling are winning more of this recurring work — competitors still playing phone tag lose the high-value jobs to whoever responds first.",
+    "industries": [
+      "Trades & Renovation",
+      "Family Services",
+      "Healthcare",
+      "Cafes & Takeaway",
+      "Retail & Services"
+    ],
+    "painPoints": [
+      "Newton builders lose reno quotes worth $15k+ because they take 2-3 days to respond while competitors reply same-day",
+      "Tradies miss evening enquiry calls because they're offline during the after-school dinner zone",
+      "Healthcare practices lose working parents to competitors with after-hours online booking"
+    ],
+    "websiteLine": "A tradie website for your Newton business — service pages, quote forms, click-to-call. From $699.",
+    "seoLine": "Rank for 'plumber Newton', 'builder Newton', 'doctor Newton' — established eastern families are searching.",
+    "automationLine": "Quote automation, missed call capture and booking reminders for Newton tradies. Handle the eastern suburb workload.",
+    "heroColor": "from-emerald-400/20 via-teal-300/10 to-cyan-400/15",
+    "customFaqs": [
+      {
+        "question": "Do you build tradie websites for established eastern suburbs like Newton?",
+        "answer": "Yes. We build tradie websites for plumbers, electricians, builders and landscapers across Newton and the eastern corridor. Click-to-call, instant quote forms, and service area pages designed for the ongoing reno and maintenance work."
+      }
+    ],
+    "region": "East & Hills"
   }
 ]

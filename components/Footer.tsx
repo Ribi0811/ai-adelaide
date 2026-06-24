@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { navLinks, legalLinks, siteConfig } from "@/lib/constants";
+import SuburbNav from "@/components/SuburbNav";
 
 const serviceLinks = [
   { href: "/website-design-adelaide", label: "Website Design" },
@@ -27,13 +28,7 @@ const industryLinks = [
 ];
 
 const suburbLinks = [
-  { href: "/norwood", label: "Norwood" },
-  { href: "/glenelg", label: "Glenelg" },
-  { href: "/burnside", label: "Burnside" },
-  { href: "/mitcham", label: "Mitcham" },
-  { href: "/prospect", label: "Prospect" },
-  { href: "/unley", label: "Unley" },
-  { href: "/locations", label: "View All Locations →" },
+  { href: "/locations", label: "All 34 Adelaide suburbs →" },
 ];
 
 const socialLinks = [
@@ -208,6 +203,8 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* All 34 suburbs grouped by region — boosts internal linking + crawl discovery */}
+          <SuburbNav variant="footer" />
         </div>
       </div>
     </footer>

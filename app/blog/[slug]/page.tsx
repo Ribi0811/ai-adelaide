@@ -52,6 +52,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: post.title }],
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.date, // will reflect post.date until posts gain an updatedAt field
       authors: ["AI Adelaide"],
       tags: ["AI automation", "Adelaide", "small business", post.category],
     },

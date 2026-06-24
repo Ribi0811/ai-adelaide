@@ -191,6 +191,9 @@ export default function TradieWebsiteBundlePage() {
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">What&apos;s NOT included (no surprises)</h2>
+          <p className="mb-6 text-sm text-slate-600">
+            <strong>New to tradie SEO?</strong> Read our free <Link href="/blog/adelaide-seo-for-tradies" className="text-accent underline">SEO for Tradies Adelaide guide</Link> before you buy anything — it covers GBP, reviews, suburb pages and a 15-step checklist. The bundle above is the &quot;done-for-you&quot; path for tradies who don&apos;t want to DIY.
+          </p>
           <ul className="space-y-3">
             {notIncludes.map((item) => (
               <li key={item} className="flex items-start gap-3 text-body-mobile text-slate-700 md:text-body">

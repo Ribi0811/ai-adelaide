@@ -345,6 +345,7 @@ export default function ServicesPage() {
             { href: "/ai-automation-vs-hiring-staff-adelaide", title: "AI Automation vs Hiring Staff", desc: "The real cost comparison for Adelaide small businesses." },
             { href: "/missed-call-answering-service-adelaide", title: "Missed Call Answering Service", desc: "Never lose a lead to voicemail again — how it works." },
             { href: "/seo", title: "Local SEO Services", desc: "How we get Adelaide businesses ranking on Google. Keyword research, content, citations." },
+            { href: "/blog/adelaide-seo-for-tradies", title: "SEO for Tradies Adelaide", desc: "3,500-word tradie-specific playbook. GBP, reviews, suburb pages, schema, KPIs + 15-step checklist." },
           ].map((guide) => (
             <div key={guide.href} className="rounded-2xl border border-slate-100 bg-white shadow-light-card p-6 flex flex-col">
               <p className="font-semibold text-slate-950 mb-2">{guide.title}</p>

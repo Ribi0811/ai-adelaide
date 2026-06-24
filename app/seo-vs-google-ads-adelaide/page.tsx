@@ -315,6 +315,31 @@ export default function SeoVsGoogleAdsPage() {
         </div>
       </section>
 
+      {/* Related deep dive */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent mb-3">
+            Tradie-specific deep dive
+          </p>
+          <h2 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">
+            If you&apos;re a tradie, read the full playbook
+          </h2>
+          <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
+            Once you&apos;ve picked a path, the question is execution. Our 3,500-word
+            <strong> SEO for Tradies Adelaide</strong> guide walks through Google Business Profile,
+            reviews, suburb pages, schema markup, content, links, KPIs, and a printable
+            15-step checklist — everything a plumber, sparkie, builder, HVAC tech, or
+            landscaper needs to actually rank in 2026.
+          </p>
+          <Link
+            href="/blog/adelaide-seo-for-tradies"
+            className="btn-secondary px-6 py-3"
+          >
+            Read the tradie SEO guide <span aria-hidden>→</span>
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

@@ -239,6 +239,35 @@ export default function SeoPage() {
         </div>
       </section>
 
+      {/* Deep dive — link to the tradie-specific guide */}
+      <section className="max-w-container mx-auto px-6 pt-10 md:pt-12">
+        <div className="panel-light p-6 md:p-8">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent mb-3">
+            Tradie playbook
+          </p>
+          <h2 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">
+            Read the full <span className="text-accent">SEO for Tradies Adelaide</span> guide
+          </h2>
+          <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
+            Plumbers, electricians, builders, HVAC, landscapers and painters — this is the
+            3,500-word playbook we use with Adelaide tradies. Covers Google Business Profile,
+            reviews, suburb pages, schema, content, links, KPIs, and a printable 15-step
+            checklist. The same framework we deploy on client sites.
+          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <Link
+              href="/blog/adelaide-seo-for-tradies"
+              className="btn-primary px-6 py-3"
+            >
+              Read the tradie guide <span aria-hidden>→</span>
+            </Link>
+            <span className="text-sm text-slate-500">
+              16 min read · 15-step checklist · written by AI Adelaide editorial team
+            </span>
+          </div>
+        </div>
+      </section>
+
       <Testimonials
         count={3}
         heading="What Adelaide businesses say after the rankings start moving"

@@ -380,6 +380,7 @@ export default function HomeV2() {
             <Link href="/testimonials" className="btn-secondary px-6 py-3">Client Reviews</Link>
             <Link href="/bookkeeping-adelaide" className="btn-secondary px-6 py-3">AI Bookkeeping Adelaide</Link>
             <Link href="/virtual-receptionist-adelaide" className="btn-secondary px-6 py-3">Virtual Receptionist</Link>
+            <Link href="/blog/adelaide-seo-for-tradies" className="btn-secondary px-6 py-3">Tradie SEO Guide (free)</Link>
           </div>
         </div>
       </section>

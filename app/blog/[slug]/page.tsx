@@ -24,6 +24,31 @@ const withHomepageLink = (html: string) => {
   return html.replace("<p>", `${linkedIntro}<p>`);
 };
 
+/**
+ * Extract Q&A pairs from blog post HTML.
+ * Matches posts whose content has an FAQ-style section: <h2>FAQ / Frequently Asked...</h2>
+ * followed by alternating <h3>"question"</h3> + <p>answer</p>.
+ */
+function extractFaqs(html: string): { question: string; answer: string }[] {
+  const faqHeadingMatch = html.match(/<h2[^>]*>(?:FAQ|Frequently Asked)[^<]*<\/h2>/i);
+  if (!faqHeadingMatch) return [];
+  const start = html.indexOf(faqHeadingMatch[0]);
+  const rest = html.slice(start);
+  // Stop at the next <h2> after the FAQ heading, or end of content.
+  const nextH2 = rest.slice(1).search(/<h2[\s>]/i);
+  const faqSection = nextH2 >= 0 ? rest.slice(0, nextH2 + 1) : rest;
+
+  const pairs: { question: string; answer: string }[] = [];
+  const qRegex = /<h3[^>]*>(.*?)<\/h3>\s*<p>(.*?)<\/p>/gi;
+  let m: RegExpExecArray | null;
+  while ((m = qRegex.exec(faqSection)) !== null) {
+    const question = m[1].replace(/<[^>]+>/g, "").trim();
+    const answer = m[2].replace(/<[^>]+>/g, "").trim();
+    if (question && answer) pairs.push({ question, answer });
+  }
+  return pairs;
+}
+
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
@@ -81,6 +106,8 @@ export default function BlogPostPage({ params }: PageProps) {
 
   const wordCount = post.content.replace(/<[^>]+>/g, "").split(/\s+/).length;
 
+  const faqs = extractFaqs(post.content);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -113,12 +140,30 @@ export default function BlogPostPage({ params }: PageProps) {
     },
   };
 
+  const faqJsonLd = faqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : null;
+
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

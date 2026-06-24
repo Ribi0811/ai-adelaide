@@ -590,7 +590,7 @@ export const posts: Post[] = [
     date: "2026-02-13",
     readTime: "9 min read",
     category: "How-To",
-    seoDescription: "Is a $47 Digital Health Check worth it for Adelaide small businesses? Learn what a proper audit covers and when it pays for itself.",
+    seoDescription: "Is a $247 AI audit worth it for Adelaide small businesses? Learn what a proper audit covers and when it pays for itself.",
     content: `<p>If you run a small business in Adelaide, $247 is not nothing. It might be a day of ads, part of payroll, or a supplier invoice. So asking whether an <a href="/ai-automation-adelaide">AI automation</a> audit is worth it is exactly the right question.</p>
 <p>The short answer: it is worth it when the audit is specific, commercial, and implementation-ready. It is not worth it when it is generic advice dressed up with buzzwords.</p>
 <h2>What an AI audit should actually cover</h2>

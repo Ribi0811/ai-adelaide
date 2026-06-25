@@ -33,14 +33,7 @@ export default function TestimonialsPage() {
         "@id": `${siteConfig.url}#localbusiness`,
         name: "AI Adelaide",
         url: siteConfig.url,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5",
-          reviewCount: String(testimonials.length),
-          bestRating: "5",
-          worstRating: "1",
-        },
-        review: testimonials.map((t) => ({
+                review: testimonials.map((t) => ({
           "@type": "Review",
           reviewRating: {
             "@type": "Rating",

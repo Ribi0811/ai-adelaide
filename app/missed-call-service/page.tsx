@@ -150,8 +150,7 @@ function ServiceJsonLd() {
       priceCurrency: "AUD",
       priceSpecification: { "@type": "UnitPriceSpecification", price: "199", priceCurrency: "AUD", unitText: "MONTH" },
     },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "5", reviewCount: "3", bestRating: "5", worstRating: "1" },
-  };
+      };
   return (
     <script
       type="application/ld+json"

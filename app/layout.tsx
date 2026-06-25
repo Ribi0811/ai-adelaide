@@ -203,7 +203,6 @@ export default function RootLayout({
                   },
                 ],
               },
-              aggregateRating: undefined,
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

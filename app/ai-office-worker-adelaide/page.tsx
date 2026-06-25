@@ -140,14 +140,7 @@ function ServiceJsonLd() {
         unitText: "MONTH",
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "3",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  };
+      };
   return (
     <script
       type="application/ld+json"

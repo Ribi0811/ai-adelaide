@@ -50,12 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
-    {
-      url: `${siteConfig.url}/testimonials`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    },
     // Comparison / cost / decision-stage pages
     {
       url: `${siteConfig.url}/website-cost-adelaide`,
@@ -74,50 +68,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteConfig.url}/websites-for-hairdressers-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-cafes-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-plumbers-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-electricians-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-clinics-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-beauty-salons-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/websites-for-retail-shops-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.85,
+      priority: 0.8,
     },
     // Existing automation/service pages (kept for existing SEO)
     {
       url: `${siteConfig.url}/ai-automation-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.95,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/ai-receptionist-adelaide`,
@@ -126,97 +120,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
-      url: `${siteConfig.url}/ai-receptionist-cost-adelaide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteConfig.url}/24-7-answering-service-adelaide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: `${siteConfig.url}/virtual-receptionist-adelaide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.65,
-    },
-    {
-      url: `${siteConfig.url}/bookkeeping-adelaide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.65,
-    },
-    {
-      url: `${siteConfig.url}/best-ai-receptionist-australia`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
       url: `${siteConfig.url}/missed-call-text-back-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.65,
-    },
-    {
-      url: `${siteConfig.url}/google-business-profile-optimisation-adelaide`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.75,
     },
     {
       url: `${siteConfig.url}/after-hours-answering-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.75,
     },
     {
       url: `${siteConfig.url}/missed-call-answering-service-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.75,
     },
     {
-      url: `${siteConfig.url}/answering-service-adelaide`,
+      url: `${siteConfig.url}/ai-receptionist-cost-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.55,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/ai-automation-vs-hiring-staff-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/ai-receptionist-vs-virtual-receptionist`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.55,
+      priority: 0.7,
     },
     {
       url: `${siteConfig.url}/after-hours-answering`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.55,
+      priority: 0.7,
     },
     // Tradie / industry pages (kept)
     {
       url: `${siteConfig.url}/tradie-website-bundle`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/missed-call-service`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.55,
+      priority: 0.7,
     },
-        {
+    {
+      url: `${siteConfig.url}/ai-for-tradies`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${siteConfig.url}/ai-automation-for-tradies-adelaide`,
       lastModified,
       changeFrequency: "monthly",
@@ -228,30 +192,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.75,
     },
-                    // Consulting pages
+    {
+      url: `${siteConfig.url}/ai-for-allied-health`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteConfig.url}/ai-for-builders-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteConfig.url}/ai-for-electricians-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${siteConfig.url}/ai-for-plumbers-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    // Consulting pages
     {
       url: `${siteConfig.url}/ai-consulting-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.55,
+      priority: 0.7,
     },
     {
       url: `${siteConfig.url}/ai-consulting-brisbane`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.3,
+      priority: 0.7,
     },
     {
       url: `${siteConfig.url}/ai-consulting-melbourne`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.3,
+      priority: 0.7,
     },
     {
       url: `${siteConfig.url}/ai-office-worker-adelaide`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.65,
+      priority: 0.7,
     },
     // Locations hub
     {
@@ -259,6 +247,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "weekly",
       priority: 0.8,
+    },
+    // SEO verticals (added Jul 2026 — content gap fills for adelaide seo / local seo queries)
+    {
+      url: `${siteConfig.url}/local-seo-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${siteConfig.url}/seo-services-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteConfig.url}/automotive-seo-services`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${siteConfig.url}/hotel-seo-services`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${siteConfig.url}/ai-app-development-adelaide`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
     {
       url: `${siteConfig.url}/adelaide`,
@@ -348,27 +367,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  // Tools & marketing pages — Tier 4 P2 coverage
-  const toolsAndMarketingRoutes: MetadataRoute.Sitemap = [
-    {
-      url: `${siteConfig.url}/tools/ai-readiness-calculator`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
-    },
-    {
-      url: `${siteConfig.url}/tools/ai-receptionist-adelaide`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.4,
-    },
-                    {
-      url: `${siteConfig.url}/ai-marketing-adelaide`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority: 0.65,
-    },
-      ];
-
-  return [...staticRoutes, ...suburbRoutes, ...blogRoutes, ...toolsAndMarketingRoutes];
+  return [...staticRoutes, ...suburbRoutes, ...blogRoutes];
 }

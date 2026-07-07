@@ -5,7 +5,7 @@ import Reveal from "@/components/home-v3/Reveal";
 
 export default function NewDawn() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#0C1120] via-[#3D3A50] to-[#FDF1E3] px-6 pb-28 pt-24 md:pb-36 md:pt-32">
+    <section data-nav-dark className="relative overflow-hidden bg-gradient-to-b from-[#0C1120] via-[#3D3A50] to-[#FDF1E3] px-6 pb-28 pt-24 md:pb-36 md:pt-32">
       <div
         className="pointer-events-none absolute bottom-[-260px] left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[#F5B96E]/[0.45] blur-[110px]"
         aria-hidden

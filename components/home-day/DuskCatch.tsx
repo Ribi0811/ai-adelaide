@@ -34,7 +34,7 @@ export default function DuskCatch() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F3DDC2] via-[#453A55] to-[#232032] px-6 py-24 text-white md:py-32">
+    <section data-nav-dark className="relative overflow-hidden bg-gradient-to-b from-[#F3DDC2] via-[#453A55] to-[#232032] px-6 py-24 text-white md:py-32">
       <TimeStamp label="7:42" tone="dark" />
       <div ref={ref} className="relative mx-auto grid max-w-container items-center gap-12 md:grid-cols-2">
         <div>

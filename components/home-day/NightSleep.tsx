@@ -37,7 +37,7 @@ export default function NightSleep() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#232032] via-[#0C1120] to-[#0C1120] px-6 py-28 text-white md:py-36">
+    <section data-nav-dark className="relative overflow-hidden bg-gradient-to-b from-[#232032] via-[#0C1120] to-[#0C1120] px-6 py-28 text-white md:py-36">
       {/* starfield + the occasional shooting star */}
       <div className="v3-stars pointer-events-none absolute inset-0" aria-hidden />
       <div className="v3-stars-2 pointer-events-none absolute inset-0" aria-hidden />

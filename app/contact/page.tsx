@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   // this exact string renders with no suffix appended.
   title: { absolute: "Contact AI Adelaide — Free Website, SEO & Automation Quote" },
   description:
-    "Free 15-minute consultation. Adelaide AI specialists — website, SEO, or automation advice. Fixed quote on the spot.",
+    "Free 15-minute consultation with Adelaide website, SEO and AI automation specialists. Fixed quote on the spot, reply within 2 business hours. No pressure.",
   alternates: {
     canonical: "/contact",
   },

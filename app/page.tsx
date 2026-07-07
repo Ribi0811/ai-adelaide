@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   // brand is already in the string (59 chars rendered).
   title: { absolute: "Website Design, SEO & AI Automation Adelaide | AI Adelaide" },
   description:
-    "Websites from $699 live in 48 hours, local SEO from $399/mo, and AI automation from $199/mo — Adelaide small businesses, open 24 hours. No lock-in. Book a free chat.",
+    "Websites from $699 live in 48 hours, local SEO from $399/mo, AI automation from $199/mo. Adelaide small businesses, open 24 hours. No lock-in, free chat.",
   keywords: [
     "website design Adelaide",
     "web design Adelaide",

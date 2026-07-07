@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Google Business Profile Adelaide | From $199/mo",
+  title: "Google Business Profile Adelaide — $199/mo",
   description:
     "Google Business Profile optimisation for Adelaide businesses. Categories, services, photos, posts, reviews. Show up in the local 3-pack. From $199/mo.",
   alternates: { canonical: "/google-business-profile-optimisation-adelaide" },

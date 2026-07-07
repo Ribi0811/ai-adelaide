@@ -1,9 +1,12 @@
 "use client";
 
 // 6:02 AM — dawn. The premise lands in one line, then the day begins.
+// The weekday is the visitor's actual weekday — it's THEIR day.
 import Link from "next/link";
+import useToday from "./useToday";
 
 export default function DawnHero() {
+  const { weekday } = useToday();
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#FDF1E3] via-[#FBF3EA] to-[#F6F7F4] px-6 pb-24 pt-36 md:pb-32 md:pt-48">
       {/* rising sun glow — animates up + brightens on load */}
@@ -13,7 +16,7 @@ export default function DawnHero() {
       />
       <div className="relative mx-auto max-w-4xl text-center">
         <p className="v3-rise font-mono text-[13px] font-semibold tracking-[0.14em] text-[#B4763B]">
-          6:02 AM · TUESDAY · ADELAIDE
+          6:02 AM · {weekday} · ADELAIDE
         </p>
 
         <h1 className="v3-rise mx-auto mt-6 max-w-3xl text-[46px] font-bold leading-[1.02] tracking-[-0.03em] text-[#1D1D1F] [animation-delay:.12s] [text-wrap:balance] md:text-[84px]">

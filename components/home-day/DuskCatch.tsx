@@ -4,8 +4,10 @@
 // beat. Auto-plays on scroll into view.
 import { useEffect, useRef, useState } from "react";
 import TimeStamp from "./TimeStamp";
+import useToday from "./useToday";
 
 export default function DuskCatch() {
+  const { phoneDate } = useToday();
   const [stage, setStage] = useState(0); // 1 ring · 2 missed · 3 sms · 4 booked
   const ref = useRef<HTMLDivElement>(null);
   const played = useRef(false);
@@ -59,7 +61,7 @@ export default function DuskCatch() {
           <div className="rounded-[44px] border border-white/10 bg-black p-3 shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
             <div className="relative min-h-[480px] overflow-hidden rounded-[34px] bg-gradient-to-b from-[#2A2438] to-[#151222] px-4 pb-6 pt-12">
               <div className="absolute left-1/2 top-3 h-5 w-24 -translate-x-1/2 rounded-full bg-black" aria-hidden />
-              <p className="text-center font-mono text-[12px] text-white/45">Tuesday 4 July</p>
+              <p className="text-center font-mono text-[12px] text-white/45">{phoneDate}</p>
               <p className="mt-0.5 text-center text-[52px] font-semibold leading-none tracking-tight text-white/90">
                 7:42
               </p>

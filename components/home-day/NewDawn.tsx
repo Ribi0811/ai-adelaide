@@ -1,9 +1,14 @@
+"use client";
+
 // 6:01 AM, next day — the loop closes on a fuller calendar. Price + close.
+// The weekday is the visitor's actual tomorrow.
 import Link from "next/link";
 import { PRICING } from "@/lib/constants";
 import Reveal from "@/components/home-v3/Reveal";
+import useToday from "./useToday";
 
 export default function NewDawn() {
+  const { nextWeekday } = useToday();
   return (
     <section data-nav-dark className="relative overflow-hidden bg-gradient-to-b from-[#0C1120] via-[#3D3A50] to-[#FDF1E3] px-6 pb-28 pt-24 md:pb-36 md:pt-32">
       <div
@@ -13,7 +18,7 @@ export default function NewDawn() {
       <div className="relative mx-auto max-w-3xl text-center">
         <Reveal>
           <p className="font-mono text-[13px] font-semibold tracking-[0.14em] text-[#E8C9A0]">
-            6:01 AM · WEDNESDAY
+            6:01 AM · {nextWeekday}
           </p>
           <h2 className="mx-auto mt-4 max-w-2xl text-[36px] font-bold leading-[1.05] tracking-[-0.02em] text-white [text-wrap:balance] md:text-[56px]">
             The sun comes up on a fuller calendar.

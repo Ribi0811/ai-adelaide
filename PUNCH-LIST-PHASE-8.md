@@ -1,5 +1,7 @@
 # Phase 8 — Post-Implementation Punch List (Agent Instructions)
 
+> **STATUS: COMPLETE (2026-07-07).** P1-P4 fixed and verified; P5-P10 are Ivan-gated and tracked in docs/AGENT-HANDOFF.md. Historical record only.
+
 **Context:** Phases 1–6 of `IMPLEMENTATION-PLAN.md` were executed (uncommitted working tree on top of `622a09b`) and have been independently verified — the work is solid: sitemap/redirects clean with zero 2-hop chains, schema consolidated, PRICING unified, static hero, StackCTA on 13 pages, new landing pages with correct metadata, `tsc --noEmit` exit 0. This file is the remaining gap list found during expert review. Same rules apply: localhost first, no deploy without Ivan's approval, never invent facts, one commit per numbered item or logical group.
 
 ---

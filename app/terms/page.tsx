@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className="section-shell pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Terms of Service" },
+        ]}
+      />
       <section className="max-w-3xl mx-auto px-6">
         <div className="panel-light p-8 md:p-12">
           <div className="mb-8">
@@ -65,9 +72,10 @@ export default function TermsPage() {
               Our services are priced as follows:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Efficiency Audit:</strong> $247 (one-time fee)</li>
-              <li><strong>Implementation:</strong> Custom quote based on scope</li>
-              <li><strong>Monthly Support:</strong> $500-$1,500/month based on service level</li>
+              <li><strong>AI Readiness Audit:</strong> Free</li>
+              <li><strong>Website Design:</strong> From $699 (one-off, tiers up to $2,499)</li>
+              <li><strong>Local SEO:</strong> From $399/month</li>
+              <li><strong>AI Automation:</strong> From $199/month</li>
             </ul>
             <p>
               All fees are in Australian Dollars (AUD) and are due as specified in our engagement proposals. We accept payment via credit card and bank transfer.

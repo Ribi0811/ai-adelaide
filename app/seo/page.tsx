@@ -4,9 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Local SEO Adelaide | From $399/mo",
+  // Fixed 2026-07 (Phase 2 SEO audit): title previously duplicated
+  // /local-seo-adelaide's "Local SEO Adelaide" title almost verbatim. /seo
+  // owns the broader "SEO Adelaide" head term; /local-seo-adelaide owns the
+  // distinct "local seo" modifier — titles must stay differentiated.
+  title: "SEO Adelaide | Local SEO Services From $399/mo",
   description:
-    "Local SEO for Adelaide small businesses. We get you found on Google — suburb targeting, Google Business Profile, content, citations. No lock-in contracts.",
+    "SEO for Adelaide small businesses — local SEO, on-page, technical SEO, content, and link building. Suburb targeting, GBP, monthly reporting.",
   alternates: {
     canonical: "/seo",
   },
@@ -37,6 +41,16 @@ const includedItems = [
     title: "Monthly reporting",
     body:
       "You see exactly where you're ranking, what's improving, and what we're working on. Plain English, no jargon.",
+  },
+  {
+    title: "Link building",
+    body:
+      "Digital PR, local citations, industry partnerships, and niche-relevant backlinks from real Adelaide and Australian sites — not spammy directories.",
+  },
+  {
+    title: "Conversion tracking",
+    body:
+      "Call tracking, form tracking, Google Analytics 4, Search Console. We measure what turns into jobs, not just traffic.",
   },
 ];
 
@@ -88,6 +102,16 @@ const faqs = [
     question: "What results can I expect?",
     answer:
       "Depends on your trade and competition. Niche trades in outer suburbs can see movement in 4-6 weeks. Competitive trades in inner Adelaide take 3-6 months for solid page 1 rankings. We'll give you an honest assessment before we start.",
+  },
+  {
+    question: "What SEO packages do you offer, and what do they cost?",
+    answer:
+      "Local SEO runs from $399/month — Google Business Profile, suburb pages, monthly content. Growth SEO runs $699/month with more content, more pages, and active link building. All month-to-month, no lock-in contracts.",
+  },
+  {
+    question: "What's the difference between your SEO and a big agency?",
+    answer:
+      "Big agencies charge $2,000-5,000/month, lock you in for 12 months, and you'll never meet the people doing the work. We're Adelaide-based, transparent, and you get a direct line to the person running your account. Same or better results at a fraction of the price.",
   },
 ];
 
@@ -243,19 +267,19 @@ export default function SeoPage() {
           </h2>
           <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
             Plumbers, electricians, builders, HVAC, landscapers and painters — this is the
-            3,500-word playbook we use with Adelaide tradies. Covers Google Business Profile,
-            reviews, suburb pages, schema, content, links, KPIs, and a printable 15-step
-            checklist. The same framework we deploy on client sites.
+            playbook we use with Adelaide tradies. Covers Google Business Profile,
+            reviews, suburb pages, schema, content, and pricing from $399/mo.
+            The same framework we deploy on client sites.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              href="/blog/adelaide-seo-for-tradies"
+              href="/seo-for-tradies-adelaide"
               className="btn-primary px-6 py-3"
             >
               Read the tradie guide <span aria-hidden>→</span>
             </Link>
             <span className="text-sm text-slate-500">
-              16 min read · 15-step checklist · written by AI Adelaide editorial team
+              Local SEO $399/mo · Growth SEO $699/mo · no lock-in
             </span>
           </div>
         </div>

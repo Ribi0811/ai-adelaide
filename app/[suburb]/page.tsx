@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import suburbs from "@/data/suburbs.json";
-import { siteConfig, services, testimonials } from "@/lib/constants";
+import { siteConfig, testimonials } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SuburbHero from "@/components/SuburbHero";
 
@@ -27,7 +27,7 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   const ogImageAlt = `AI Adelaide — ${suburb.name} (${suburb.postcode}) websites, SEO and AI automation services`;
   return {
     title: `${suburb.name} Websites, SEO & AI Automation`,
-    description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in. Call ${siteConfig.phone}.`,
+    description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`,
     keywords: [
       `AI websites ${suburb.name}`,
       `SEO ${suburb.name}`,
@@ -304,6 +304,42 @@ export default function SuburbPage({ params }: SuburbPageProps) {
           </div>
         </section>
 
+        {/* ── Website + SEO + Automation, in that order ───────── */}
+        <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+          <h2 className="mb-8 text-h2-mobile text-slate-950 md:text-h2">
+            Websites, SEO &amp; Automation for {suburb.name} Businesses
+          </h2>
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="panel-light-soft p-5 md:p-6">
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">01 · Website — from $699</p>
+              <p className="text-body-mobile text-slate-700 md:text-body">{suburb.websiteLine}</p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">02 · Local SEO — from $399/mo</p>
+              <p className="text-body-mobile text-slate-700 md:text-body">{suburb.seoLine}</p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">03 · Automation — from $199/mo</p>
+              <p className="text-body-mobile text-slate-700 md:text-body">{suburb.automationLine}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Local context (main strip / business mix) — only where we've
+             written it up; not yet backfilled for every suburb. ─────── */}
+        {"localContext" in suburb && (suburb as { localContext?: string }).localContext && (
+          <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+            <div className="panel-light p-8 md:p-10">
+              <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+                Doing business in {suburb.name}
+              </h2>
+              <p className="max-w-4xl text-body-mobile text-slate-700 md:text-body">
+                {(suburb as { localContext?: string }).localContext}
+              </p>
+            </div>
+          </section>
+        )}
+
         {/* ── Why Now ─────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
           <div className="panel-light p-8 md:p-10">
@@ -415,9 +451,9 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white p-6">
                 <div className="mb-2 text-sm font-semibold text-accent">SETUP</div>
-                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Implementation</h3>
+                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Automation Starter</h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  from $99 <span className="text-sm font-normal text-slate-500">/month</span>
+                  from $199 <span className="text-sm font-normal text-slate-500">/month</span>
                 </p>
                 <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
                   <li>AI receptionist or missed-call capture</li>
@@ -428,9 +464,9 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white p-6">
                 <div className="mb-2 text-sm font-semibold text-accent">GROW</div>
-                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Ongoing Support</h3>
+                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Automation Business</h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  $299–699 <span className="text-sm font-normal text-slate-500">/month</span>
+                  from $399 <span className="text-sm font-normal text-slate-500">/month</span>
                 </p>
                 <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
                   <li>Monthly improvements + new workflows</li>
@@ -441,7 +477,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               </div>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              ROI: Recovering 3 extra jobs at $350 each = $1,050/week against a $99–150/mo system. Most {suburb.name} businesses recover their investment within 30 days.
+              ROI: Recovering 3 extra jobs at $350 each = $1,050/week against a $199/mo system. Most {suburb.name} businesses recover their investment within 30 days.
             </p>
           </div>
         </section>

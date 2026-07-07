@@ -79,14 +79,14 @@ export async function generateAuditPdf(payload: AuditReportPayload): Promise<Buf
 
     drawSectionTitle(doc, 'Next Steps');
     doc.font('Helvetica').fontSize(11).fillColor(BRAND.dark)
-      .text('Your $47 assessment fee is credited toward our $247 Full AI Audit.');
+      .text('Want help acting on this report? Book a free 15-minute chat.');
     doc.moveDown(0.2);
-    doc.text('The full audit includes:');
-    doc.text('• On-site or remote process analysis');
-    doc.text('• Tailored implementation roadmap');
-    doc.text('• Vendor/tool recommendations for your budget');
+    doc.text('The free chat covers:');
+    doc.text('• A walkthrough of your recommendations');
+    doc.text('• A fixed quote for whichever service fits first');
+    doc.text('• Honest advice on what to prioritise and what to skip');
     doc.moveDown(0.4);
-    doc.font('Helvetica-Bold').text('Book your full audit: https://aiadelaide.com.au/contact');
+    doc.font('Helvetica-Bold').text('Book your free chat: https://aiadelaide.com.au/contact');
     doc.moveDown(0.5);
     doc.font('Helvetica').fontSize(10).fillColor(BRAND.muted).text('AI Adelaide · Adelaide, South Australia');
 

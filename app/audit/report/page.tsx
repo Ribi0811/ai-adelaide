@@ -87,7 +87,7 @@ export default function AuditReportPage() {
       y += 8;
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(12);
-      doc.text('Next Step: Book your $247 Efficiency Audit at aiadelaide.com.au/contact', 52, y);
+      doc.text('Next Step: Book a free 15-minute chat at aiadelaide.com.au/contact', 52, y);
 
       doc.save('ai-adelaide-audit-report.pdf');
       setStatus('done');
@@ -103,7 +103,7 @@ export default function AuditReportPage() {
         <section className="panel-light p-6 sm:p-8">
         <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Generate Your Full PDF Report</h1>
         <p className="mt-3 text-sm text-slate-700">
-          Thanks for purchasing the detailed digital health report. Click below to generate and download your personalised PDF covering websites, SEO, and AI automation for your Adelaide business.
+          Click below to generate and download your free personalised PDF covering websites, SEO, and AI automation for your Adelaide business.
         </p>
 
         <div className="mt-5 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">

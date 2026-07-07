@@ -1,15 +1,23 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "AI Consulting Adelaide | Practical, Affordable, No Bullshit",
-  description: "AI consulting for Adelaide businesses. Audit, implement, support. From $247 audit. For tradies, clinics, retailers. Call 08 7100 9788 for a chat.",
+  description: "AI consulting for Adelaide businesses. Free audit, then implementation and support. For tradies, clinics, retailers. Call 08 7100 9788 for a chat.",
   alternates: { canonical: "/ai-consulting-adelaide" },
 }
 
 export default function AiConsultingAdelaidePage() {
   return (
     <main className="pt-28 pb-16 bg-white">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Consulting Adelaide" },
+        ]}
+      />
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-slate-900 leading-tight">
           AI Consulting in Adelaide — Practical, Affordable, No Bullshit
@@ -44,7 +52,7 @@ export default function AiConsultingAdelaidePage() {
 
         <p className="text-slate-700 mb-4 leading-relaxed">We map this out in a simple report: here&apos;s what&apos;s broken, here&apos;s what AI can fix, here&apos;s what it&apos;ll cost.</p>
 
-        <p className="text-slate-700 mb-4 leading-relaxed">This is our $247 audit. You get a clear action plan even if you never work with us again.</p>
+        <p className="text-slate-700 mb-4 leading-relaxed">This is our free audit. You get a clear action plan even if you never work with us again.</p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Solution Design</h3>
 
@@ -80,7 +88,7 @@ export default function AiConsultingAdelaidePage() {
 
         <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Our Process</h2>
 
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Phase 1: Audit ($247)</h3>
+        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Phase 1: Audit (Free)</h3>
 
 
 
@@ -165,7 +173,7 @@ export default function AiConsultingAdelaidePage() {
 
         <p className="text-slate-700 mb-4 leading-relaxed">| Service | Price | What&apos;s Included |</p>
         <p className="text-slate-700 mb-4 leading-relaxed">|---------|-------|-----------------|</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>AI Audit</strong> | $247 one-off | Discovery call, workflow review, written recommendations, implementation quote |</p>
+        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>AI Audit</strong> | Free | Discovery call, workflow review, written recommendations, implementation quote |</p>
         <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Standard Implementation</strong> | $1,500-2,000 | AI receptionist setup, basic scripting, go-live support |</p>
         <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Advanced Implementation</strong> | $2,000-3,000 | AI + integrations (calendar, CRM, practice software), multi-system workflows |</p>
         <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Monthly Support (Solo)</strong> | $500-700 | Platform, basic usage, email support |</p>
@@ -180,7 +188,7 @@ export default function AiConsultingAdelaidePage() {
 
         <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">What if I start and it doesn&apos;t work for my business?</h3>
 
-        <p className="text-slate-700 mb-4 leading-relaxed">Fair question. That&apos;s why we start with the $247 audit. You get a clear plan before committing to the big spend. If the audit shows AI won&apos;t help you, we&apos;ll tell you. We&apos;ve turned down work when it didn&apos;t make sense.</p>
+        <p className="text-slate-700 mb-4 leading-relaxed">Fair question. That&apos;s why we start with a free audit. You get a clear plan before committing to the big spend. If the audit shows AI won&apos;t help you, we&apos;ll tell you. We&apos;ve turned down work when it didn&apos;t make sense.</p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">How long until I see ROI?</h3>
 
@@ -221,7 +229,7 @@ export default function AiConsultingAdelaidePage() {
 
         <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Ready to Start?</h2>
 
-        <p className="text-slate-700 mb-4 leading-relaxed">Book the $247 audit. We&apos;ll spend 30-60 minutes understanding your business and send you a clear report within 3-5 days.</p>
+        <p className="text-slate-700 mb-4 leading-relaxed">Book the free audit. We&apos;ll spend 30-60 minutes understanding your business and send you a clear report within 3-5 days.</p>
 
         <p className="text-slate-700 mb-4 leading-relaxed">If you want to move forward, great. If not, you still have a roadmap of what to do.</p>
 
@@ -229,7 +237,7 @@ export default function AiConsultingAdelaidePage() {
         <p className="text-slate-700 mb-4 leading-relaxed">---</p>
         <div className="mt-12 p-8 bg-slate-50 rounded-2xl text-center">
           <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-500 px-8 py-4 text-base font-semibold text-white hover:bg-teal-600 transition-colors">
-            Call 08 7100 9788 or visit aiadelaide.com.au/book-audit to book your $247 AI audit →
+            Call 08 7100 9788 or visit aiadelaide.com.au/audit to book your free AI audit →
           </Link>
         </div>
       </div>

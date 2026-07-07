@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Local SEO Adelaide — Get Found by Adelaide Customers Searching Google",
+  // Phase 8 punch list P4: rendered title was 83 chars (max 60); description
+  // was 211 chars (want 140-160).
+  title: "Local SEO Adelaide — Get Found on Google",
   description:
-    "Local SEO services for Adelaide businesses. Google Business Profile, suburb pages, review generation, citations, NAP consistency. Get found in Norwood, Glenelg, Modbury, Mount Barker and across SA. From $297/mo.",
+    "Local SEO for Adelaide businesses — Google Business Profile, suburb pages, reviews, citations, NAP consistency. Get found across SA. From $297/mo.",
   alternates: { canonical: "/local-seo-adelaide" },
 };
 
@@ -36,6 +39,13 @@ export default function LocalSeoAdelaidePage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "SEO", href: "/seo" },
+          { label: "Local SEO Adelaide" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">Local SEO Adelaide</span>

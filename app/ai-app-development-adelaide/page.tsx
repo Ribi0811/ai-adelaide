@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "AI App Development Adelaide — Custom AI Apps for Adelaide Businesses",
@@ -35,6 +36,13 @@ export default function AiAppDevelopmentAdelaidePage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI App Development Adelaide" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">AI App Development Adelaide</span>

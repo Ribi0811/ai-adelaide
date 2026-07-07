@@ -4,7 +4,11 @@ import ContactForm from "@/components/ContactForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Contact AI Adelaide | Free Chat",
+  // Phase 8 punch list P4: raw title contained "AI Adelaide" and the root
+  // layout's title.template would have appended " | AI Adelaide" again,
+  // producing a double-brand title. `absolute` bypasses the template so
+  // this exact string renders with no suffix appended.
+  title: { absolute: "Contact AI Adelaide — Free Website, SEO & Automation Quote" },
   description:
     "Free 15-minute consultation. Adelaide AI specialists — website, SEO, or automation advice. Fixed quote on the spot.",
   alternates: {

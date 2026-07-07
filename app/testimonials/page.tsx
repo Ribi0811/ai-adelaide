@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import Portfolio, { type PortfolioItem } from "@/components/Portfolio";
 import { siteConfig, testimonials, caseStudies } from "@/lib/constants";
+
+// HUMAN INPUT NEEDED: real client list, permission to display each site,
+// and real screenshots. Do not fabricate entries — see
+// docs/claims-to-verify.md and components/Portfolio.tsx for the intended
+// shape once these are supplied.
+const portfolioItems: PortfolioItem[] = [];
 
 export const metadata: Metadata = {
   title: "Client Testimonials & Case Studies",
@@ -29,29 +36,21 @@ export default function TestimonialsPage() {
         inLanguage: "en-AU",
       },
       {
+        // Phase 8 punch list P2: this node previously carried a `review`
+        // array built from our own testimonials/caseStudies data. Google's
+        // structured-data guidelines treat self-hosted Review/Rating markup
+        // about your own business as self-serving — ignored at best, a
+        // manual-action risk at worst — regardless of whether the reviews
+        // are genuine. The visible testimonials below are untouched (they
+        // ARE real, per Ivan) and read exactly as before; only the invisible
+        // schema markup was removed. Real star ratings should come from an
+        // embedded Google Business Profile reviews widget once set up
+        // (Phase 7, [HUMAN]) — Google supplies its own Review schema for
+        // those automatically, no markup needed on our side.
         "@type": "LocalBusiness",
         "@id": `${siteConfig.url}#localbusiness`,
         name: "AI Adelaide",
         url: siteConfig.url,
-                review: testimonials.map((t) => ({
-          "@type": "Review",
-          reviewRating: {
-            "@type": "Rating",
-            ratingValue: "5",
-            bestRating: "5",
-          },
-          author: { "@type": "Person", name: t.name },
-          reviewBody: t.quote.replace(/&apos;/g, "'").replace(/&rsquo;/g, "'"),
-          itemReviewed: {
-            "@type": "Service",
-            name:
-              t.industry === "health"
-                ? "AI Clinic Automation Adelaide"
-                : t.industry === "cafe" || t.industry === "retail"
-                ? "AI Marketing Adelaide"
-                : "AI Website & SEO Adelaide",
-          },
-        })),
       },
     ],
   };
@@ -116,6 +115,10 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio — real built sites, human-gated until we have client
+          permission and screenshots (Phase 5.5) */}
+      <Portfolio items={portfolioItems} />
 
       {/* All client reviews */}
       <section className="section-shell bg-bgSecondary py-section-mobile md:py-section">

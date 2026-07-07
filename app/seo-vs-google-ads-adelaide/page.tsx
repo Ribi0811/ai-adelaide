@@ -325,14 +325,14 @@ export default function SeoVsGoogleAdsPage() {
             If you&apos;re a tradie, read the full playbook
           </h2>
           <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
-            Once you&apos;ve picked a path, the question is execution. Our 3,500-word
+            Once you&apos;ve picked a path, the question is execution. Our
             <strong> SEO for Tradies Adelaide</strong> guide walks through Google Business Profile,
-            reviews, suburb pages, schema markup, content, links, KPIs, and a printable
-            15-step checklist — everything a plumber, sparkie, builder, HVAC tech, or
+            reviews, suburb pages, schema markup, content, and pricing —
+            everything a plumber, sparkie, builder, HVAC tech, or
             landscaper needs to actually rank in 2026.
           </p>
           <Link
-            href="/blog/adelaide-seo-for-tradies"
+            href="/seo-for-tradies-adelaide"
             className="btn-secondary px-6 py-3"
           >
             Read the tradie SEO guide <span aria-hidden>→</span>

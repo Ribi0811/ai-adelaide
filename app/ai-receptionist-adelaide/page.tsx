@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
+
 export const metadata: Metadata = {
   title: "AI Receptionist Adelaide | From $199/mo",
   description:
-    "AI receptionist for Adelaide small businesses. Part of our AI automation — answers 24/7, books appointments, sends SMS. From $199/mo.",
+    "AI receptionist for Adelaide small businesses, part of our AI automation stack — answers calls 24/7, books appointments, and sends SMS. From $199/mo.",
   alternates: {
     canonical: "/ai-receptionist-adelaide",
   },
@@ -167,6 +171,14 @@ export default function AIReceptionistAdelaidePage() {
       <LocalBusinessJsonLd />
       <ServiceJsonLd />
       <FaqJsonLd faqs={faqItems} />
+
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Receptionist Adelaide" },
+        ]}
+      />
 
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
@@ -380,6 +392,38 @@ export default function AIReceptionistAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist Cost Adelaide →
+            </Link>
+            <Link href="/ai-receptionist-vs-virtual-receptionist" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI vs Virtual Receptionist Compared →
+            </Link>
+            <Link href="/virtual-receptionist-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Virtual Receptionist Adelaide →
+            </Link>
+            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Plumbers Adelaide →
+            </Link>
+            <Link href="/websites-for-electricians-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Electricians Adelaide →
+            </Link>
+            <Link href="/norwood" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist in Norwood →
+            </Link>
+            <Link href="/glenelg" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist in Glenelg →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

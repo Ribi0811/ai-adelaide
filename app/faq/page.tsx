@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
-  title: "FAQ — AI Adelaide | Common Questions Answered",
+  // Phase 8 punch list P4: raw title contained "AI Adelaide" and the root
+  // layout's title.template would append " | AI Adelaide" again. The punch
+  // list's suggested replacement (without the brand, letting the template
+  // add it) still rendered at 68 chars (max 60), so this uses `absolute`
+  // instead — same pattern as /contact, /about, /blog — to land the exact
+  // 54-char string with no suffix appended.
+  title: { absolute: "FAQ — Websites, SEO & AI Automation Questions Answered" },
   description:
-    "Got questions about AI automation for your Adelaide business? Here are the most common ones we hear — answered straight.",
+    "Got questions about AI websites, SEO, or automation for your Adelaide business? Here are the most common ones we hear, answered straight, no fluff.",
   alternates: {
     canonical: "/faq",
   },
@@ -118,9 +123,34 @@ const faqs = [
   },
 ];
 
+// Added Phase 3 (SEO audit 2026-07) — page had 17 FAQs across 4 categories
+// but zero structured data, while ~50 other pages in the repo carry FAQPage
+// schema. Flatten the categorised list into one mainEntity array.
+function FaqJsonLd({ groups }: { groups: typeof faqs }) {
+  const allItems = groups.flatMap((group) => group.items);
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: allItems.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }),
+      }}
+    />
+  );
+}
+
 export default function FAQPage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <FaqJsonLd groups={faqs} />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">FAQ</span>

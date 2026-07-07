@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
 export default function CookiePolicyPage() {
   return (
     <div className="section-shell pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Cookie Policy" },
+        ]}
+      />
       <section className="max-w-3xl mx-auto px-6">
         <div className="panel-light p-8 md:p-12">
           <div className="mb-8">

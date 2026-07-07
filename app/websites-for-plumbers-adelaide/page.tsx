@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 export const metadata: Metadata = {
   title: "Plumber Website Adelaide | From $699",
   description:
-    "Plumber websites built for Adelaide tradies. Mobile-first, Google-ready, click-to-call, quote forms. AI-built in 48 hours. From $699.",
+    "Plumber websites built for Adelaide tradies — mobile-first, Google-ready, click-to-call button, quote forms, AI-built in 48 hours. From $699.",
   alternates: {
     canonical: "/websites-for-plumbers-adelaide",
   },

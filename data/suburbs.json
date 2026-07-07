@@ -4,8 +4,8 @@
     "slug": "norwood",
     "postcode": "5067",
     "heroLine": "Websites, SEO & AI automation for businesses on The Parade.",
-    "intro": "Norwood's Parade is Adelaide's busiest eastern strip — plumbers, electricians, cafes, clinics and boutiques all competing for the same local crowd. We help Norwood businesses get online fast, rank on Google for their services, and automate the admin that eats their evenings.",
-    "whyNow": "The Parade foot traffic is back to pre-pandemic levels, and competition has never been fiercer. Businesses with proper websites, local SEO and automated booking are capturing 30% more customers while others rely on word-of-mouth and hope.",
+    "intro": "Norwood's Parade is Adelaide's busiest eastern strip — a dense run of cafes, restaurants, boutique retail, clinics and trade businesses all competing for the same local foot traffic and the same Google searches. The Sunday Parade Market and Norwood Oval (home of the Redlegs) keep the area busy year-round, which means more competition, not less. We help Norwood businesses get a proper website live fast, rank on Google for the services people are already searching for, and automate the admin — quote follow-up, missed calls, booking reminders — that eats evenings after a full day of trade.",
+    "whyNow": "The Parade's foot traffic is back to pre-pandemic levels and competition for both walk-ins and online searches has never been higher. A plumber or physio operating out of Norwood is now competing not just with the business next door but with every other eastern-suburbs provider showing up in the same Google search. Businesses with a proper website, local SEO, and automated booking are capturing more of that demand while others still rely on word-of-mouth and a Facebook page that hasn't been updated in months.",
     "industries": [
       "Plumbing & Electrical",
       "Cafes & Restaurants",
@@ -14,29 +14,38 @@
       "Boutique Retail"
     ],
     "painPoints": [
-      "A plumber in Norwood misses 3-4 calls a day on the job — each one a potential $800 booking gone to a competitor on Magill Road",
-      "Busy cafe owners on The Parade lose takeaway orders during peak rush because they can't answer the phone",
-      "Physio practices get no-shows costing $120 per slot because reminder calls aren't happening consistently"
+      "A plumber in Norwood misses 3-4 calls a day while on the tools — each one a potential $800 booking that goes straight to a competitor advertising on Magill Road or The Parade instead.",
+      "Busy cafe owners on The Parade lose takeaway and catering orders during the lunch rush because nobody's free to answer the phone between covers.",
+      "Physio and allied health practices near The Parade lose $120 per slot to no-shows because reminder calls and texts aren't happening consistently."
     ],
-    "websiteLine": "A clean, mobile-first website for your Norwood business — live in 48 hours, from $699. Built to convert Parade foot traffic into booked jobs.",
-    "seoLine": "We get Norwood businesses ranking for 'plumber Norwood', 'cafe The Parade', 'physio Norwood' — the searches locals are already doing.",
-    "automationLine": "Missed call text-back, AI receptionist and quote follow-up for Norwood tradies and clinics. Never lose another Parade enquiry to a competitor.",
+    "websiteLine": "A clean, mobile-first website for your Norwood business — live in 48 hours, from $699. Built to convert Parade foot traffic and Google searches into booked jobs, not just page views.",
+    "seoLine": "We get Norwood businesses ranking for 'plumber Norwood', 'cafe The Parade', 'physio Norwood' — the exact searches locals are already typing before they pick up the phone.",
+    "automationLine": "Missed-call text-back, an AI receptionist, and automated quote follow-up for Norwood tradies and clinics — so a call you can't take on a Tuesday afternoon doesn't become a lead your competitor picks up instead.",
     "heroColor": "from-accent/20 via-electric/10 to-accent/15",
     "customFaqs": [
       {
         "question": "Do you build websites specifically for businesses on The Parade, or for Norwood in general?",
         "answer": "Both — we build Norwood-wide websites but also have specific experience with The Parade's mix of cafes, allied health and boutique retail. The Parade foot traffic is unique, so we design pages that convert both walk-ins and online searchers."
+      },
+      {
+        "question": "Can you help a business on a Norwood side street compete with the shopfronts on The Parade?",
+        "answer": "Yes — that's one of the main reasons local SEO matters here. A trade business or consultancy on Edward Street or George Street won't win on foot traffic, but a well-optimised website and Google Business Profile can rank it right alongside the Parade shopfronts for the searches that actually matter."
+      },
+      {
+        "question": "Do you understand the Norwood market, or is this a generic Adelaide-wide template?",
+        "answer": "We build every Norwood site around the suburb's actual business mix — cafes and hospitality timed around the Sunday Parade Market, allied health clinics near the medical precinct, and trades competing for Magill Road and Payneham catchment jobs. It's not a copy-pasted template with the suburb name swapped in."
       }
     ],
-    "region": "Inner Adelaide"
+    "region": "Inner Adelaide",
+    "localContext": "The Parade is Norwood's commercial spine — a roughly 1km strip running from Fullarton Road to Sydenham Road that mixes long-standing cafes and restaurants with boutique fashion, homewares, allied health clinics, and trade offices. The weekly Sunday Parade Market adds a tourism and foot-traffic layer most eastern suburbs don't get, while Norwood Oval and the surrounding heritage streetscape keep the area a genuine destination rather than a pass-through strip. Side streets off The Parade — Edward Street, George Street — carry a mix of trades, consultancies, and home-based businesses that rarely get the same visibility as the shopfronts on the main strip itself, which is exactly where a well-built website and local SEO make the biggest difference."
   },
   {
     "name": "Glenelg",
     "slug": "glenelg",
     "postcode": "5045",
     "heroLine": "Websites, SEO & automation for Glenelg's tourism and hospitality scene.",
-    "intro": "Glenelg lives and breathes tourism — Jetty Road restaurants, beachfront hotels, and tour operators see wild swings between summer chaos and winter quiet. We build websites that capture direct bookings, SEO that ranks for Glenelg searches, and automation that nurtures past visitors into repeat customers year-round.",
-    "whyNow": "South Australia's tourism rebound is real, but seasonal businesses that don't capture and reuse customer data are leaving money on the table. A proper website plus SEO turns one-time beach visitors into repeat customers who book direct, not through commission-heavy platforms.",
+    "intro": "Glenelg is Adelaide's best-known beachside destination — Jetty Road and Moseley Square draw locals and tourists year-round, connected to the city by the heritage tram line. That constant flow of visitors means restaurants, cafes, retail and tourism-adjacent services compete hard for both walk-in trade and online bookings, especially over summer when demand spikes fast. We help Glenelg businesses get a fast, professional website live, rank on Google for the searches tourists and locals are actually making, and automate booking and follow-up so a seasonal rush doesn't mean missed revenue.",
+    "whyNow": "Glenelg's visitor numbers swing hard with the seasons — Jetty Road and the beachfront are packed over summer and considerably quieter in winter, and a business that can only handle bookings by phone struggles to keep up during the peaks and stays too quiet during the troughs. A proper website with online booking and automated follow-up smooths that curve: it captures tourist searches when demand is high and keeps local customers coming back with reminders and offers when the crowds thin out.",
     "industries": [
       "Restaurants & Bars",
       "Hotels & Accommodation",
@@ -45,29 +54,38 @@
       "Beach Services"
     ],
     "painPoints": [
-      "Jetty Road restaurants lose 40% of phone bookings during summer rush because hosts can't answer while seating diners",
-      "Tour operators watch customers book through competitors just because they responded to an enquiry 2 hours faster",
-      "Accommodation providers pay 15-20% commissions to booking platforms when they could've captured direct repeat bookings"
+      "A Glenelg restaurant misses walk-in and phone bookings during the dinner rush because staff are flat out serving tables, sending would-be diners to the next restaurant along Jetty Road.",
+      "Tourism-adjacent businesses — tour operators, hire services, beauty and wellness studios — lose out-of-town enquiries made outside business hours, when visitors are actually planning their day.",
+      "Retail and hospitality venues on Jetty Road struggle to stand out in Google search results against national chains with much bigger marketing budgets."
     ],
-    "websiteLine": "A website for your Glenelg business that takes direct bookings — no more paying 15-20% to Booking.com or Wotif. From $699.",
-    "seoLine": "Rank for 'Glenelg restaurant', 'Glenelg accommodation', 'things to do Glenelg' — the searches tourists are already doing before they visit.",
-    "automationLine": "Automated booking confirmations, reminder texts and review requests for Glenelg hospitality. Turn summer tourists into winter regulars.",
+    "websiteLine": "A fast, mobile-first website for your Glenelg business — live in 48 hours, from $699. Built to convert both tourist searches and local bookings, with online booking front and centre.",
+    "seoLine": "We get Glenelg businesses ranking for 'restaurant Jetty Road', 'things to do Glenelg', and suburb-specific searches — capturing tourist intent as well as local demand, from $399/month.",
+    "automationLine": "After-hours booking capture and automated follow-up for Glenelg hospitality and tourism businesses — so an enquiry made at 9pm from a visitor planning tomorrow doesn't go unanswered until you're back at the desk.",
     "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15",
     "customFaqs": [
       {
-        "question": "Can you help my Glenelg business capture direct bookings instead of paying commission to Booking.com or Wotif?",
-        "answer": "Yes — that's one of our most-requested projects for Glenelg hospitality. We build direct-booking websites for hotels, B&Bs and tour operators with payment integration, calendar sync, and automated confirmation emails. Most clients save 15-20% in commission within their first quarter."
+        "question": "Can you build a site that handles both tourist bookings and local regulars?",
+        "answer": "Yes — we design Glenelg sites to capture both audiences: fast mobile booking for a tourist searching on the spot, and clear info (hours, specials, loyalty) for locals who visit regularly. The content and SEO targeting reflect both search patterns."
+      },
+      {
+        "question": "Does SEO still matter for a business that gets most of its trade from walk-ins on Jetty Road?",
+        "answer": "Yes — even walk-in-heavy venues lose bookings to competitors who show up first when someone searches 'restaurant Glenelg' before they've even left home. Ranking well converts intent into a booked table before the visitor arrives, not just after."
+      },
+      {
+        "question": "Can automation help with the seasonal swing between summer and winter trade?",
+        "answer": "Yes — automated follow-up and review requests keep your Glenelg business visible and top-of-mind with past customers during the quieter winter months, while after-hours enquiry capture makes sure you don't miss bookings during the busy summer peak."
       }
     ],
-    "region": "West & Coast"
+    "region": "West & Coast",
+    "localContext": "Jetty Road is Glenelg's commercial heart, running from the tram terminus at Moseley Square inland toward Anzac Highway, lined with restaurants, cafes, bars, and retail that serve both locals and the steady stream of tourists arriving by tram or car. Moseley Square itself anchors the beachfront end with the Stamford Grand hotel, function venues, and direct beach access, while the annual Bay to Birdwood finish and summer events calendar bring extra foot traffic on top of the everyday tourist trade. The seasonal swing is real — Glenelg in January looks nothing like Glenelg in July — and businesses here need a web presence that can handle both a tourist searching 'things to do near me' on their phone and a local booking a regular table months in advance."
   },
   {
     "name": "Unley",
     "slug": "unley",
     "postcode": "5061",
     "heroLine": "Websites, SEO & automation for King William Road professionals.",
-    "intro": "King William Road is Unley's professional heart — allied health clinics, lawyers, accountants, and boutique retailers all serve a discerning local crowd. These businesses run on appointments and relationships. We build websites that book appointments, SEO that ranks for Unley services, and automation that handles the scheduling grind.",
-    "whyNow": "Unley's professional services market is crowded, and clients expect instant responses. Practices with proper websites, automated reminders and self-booking have cut no-shows by half and freed up 10+ hours a week for actual billable work.",
+    "intro": "Unley's King William Road and Unley Road corridors mix upmarket boutique retail with a dense cluster of professional services — medical and allied health clinics, accountants, lawyers, and specialty consultants — serving one of Adelaide's more affluent, established inner-southern suburbs. Clients here research providers carefully before committing, comparing websites and reviews rather than just walking in off the street. We help Unley businesses build a website that reflects that standard, rank locally for the services people are researching, and automate the booking and follow-up admin that professional practices tend to let slip.",
+    "whyNow": "Unley's client base is comparison-driven — a resident choosing a physio, a dentist, or a boutique retailer on King William Road will typically check two or three websites before deciding, and an outdated or slow site quietly loses that comparison before a phone call is ever made. As more Unley providers invest in proper websites and local SEO, the businesses still relying on an old site or none at all are increasingly invisible to exactly the clientele who can afford to be selective.",
     "industries": [
       "Allied Health & Physio",
       "Legal & Accounting",
@@ -76,29 +94,38 @@
       "Specialty Food"
     ],
     "painPoints": [
-      "Allied health practitioners lose $4,000+ monthly to no-shows because manual reminder calls aren't consistent",
-      "Professional services waste 2 hours daily playing email tag just to schedule initial consultations",
-      "Boutique retailers miss repeat customer opportunities because there's no system to follow up after purchase"
+      "A specialist clinic on Unley Road loses prospective patients who compare two or three provider websites before booking, and picks whichever one looks more current and trustworthy.",
+      "Boutique retailers on King William Road struggle to convert local searches into store visits because their website doesn't clearly show stock, hours, or what makes them different from CBD competitors.",
+      "Professional services firms — accountants, lawyers, consultants — lose enquiries to competitors with clearer online booking, because a phone-tag back-and-forth loses a client who's already comparing three other firms."
     ],
-    "websiteLine": "A professional website for your Unley practice or boutique — online booking, service pages, King William Road credibility. From $699.",
-    "seoLine": "Rank for 'physio Unley', 'lawyer King William Road', 'accountant Unley' — the searches Unley residents are already doing.",
-    "automationLine": "Automated appointment reminders, no-show reduction and client follow-up for Unley professionals. Cut admin by 70%.",
+    "websiteLine": "A polished, mobile-first website for your Unley business — live in 48 hours, from $699. Built to match the standard King William Road and Unley Road clients expect before they'll pick up the phone.",
+    "seoLine": "We get Unley businesses ranking for 'physio Unley', 'boutique King William Road', and suburb-specific professional-services searches — the exact comparisons your prospective clients are already making, from $399/month.",
+    "automationLine": "Booking confirmations, appointment reminders, and quote follow-up for Unley clinics, retailers and professional practices — from $199/month, cutting no-shows and freeing up front-desk time for the clients actually in front of you.",
     "heroColor": "from-emerald-400/20 via-teal-300/10 to-cyan-400/15",
     "customFaqs": [
       {
-        "question": "Do you build websites with online booking for allied health clinics on King William Road?",
-        "answer": "Yes. We build Practice Management-integrated booking for physio, chiro, psychology and dental clinics along King William Road and the broader Unley area. Online booking typically reduces phone time by 60% and cuts no-shows by half within the first month."
+        "question": "Do you build sites for professional services, or just retail and trades?",
+        "answer": "Both — Unley has a strong mix of allied health, legal, accounting and consulting practices alongside boutique retail on King William Road, and we build for all of them. The content, tone, and booking setup differ by industry, but the underlying approach — a fast, credible, well-ranked site — is the same."
+      },
+      {
+        "question": "How do you help a boutique on King William Road compete with CBD retailers?",
+        "answer": "Local SEO targeting 'King William Road' and Unley-specific searches, combined with a website that clearly shows what makes your store different — curated stock, personal service, local knowledge — rather than competing purely on price or range against much bigger CBD stores."
+      },
+      {
+        "question": "Can automated reminders reduce no-shows for an Unley clinic?",
+        "answer": "Yes — automated appointment reminders sent by SMS a day and a couple of hours before the booking typically cut no-shows significantly, which matters more in a specialist or allied health practice where a missed slot can be worth $100-200 in lost revenue."
       }
     ],
-    "region": "Inner Adelaide"
+    "region": "Inner Adelaide",
+    "localContext": "King William Road is Unley's signature strip — a tree-lined stretch of independent boutiques, cafes, and design studios that trades on a more curated, upmarket feel than a typical suburban shopping strip. Unley Road runs parallel and carries the suburb's heavier commercial and professional-services traffic — medical centres, allied health, accountants, and specialist consultants — serving both Unley itself and the surrounding established southern suburbs. The area's leafy streets and older character homes attract a demographic that researches before it buys, which makes a credible, well-ranked website more valuable here than in areas where price and proximity decide everything."
   },
   {
     "name": "Prospect",
     "slug": "prospect",
     "postcode": "5082",
     "heroLine": "Websites, SEO & automation for Prospect's growing business scene.",
-    "intro": "Prospect's exploding — new families moving in, Prospect Road's food scene booming, and tradies working flat-chat to keep up with renovations and builds. We help Prospect businesses get online, rank locally, and automate the admin so they can stay on the tools where they earn money.",
-    "whyNow": "Prospect's renovation boom means more competition for local trades. Those with proper websites and fast enquiry response are winning jobs over competitors who take hours — automation makes instant response possible even when you're on a roof.",
+    "intro": "Prospect Road is the inner-north's answer to Norwood's Parade — a growing café and small-business strip serving a family-heavy, increasingly gentrified suburb close to the city via the O-Bahn corridor. New cafes, boutique fitness studios, and trade businesses are opening alongside long-standing local institutions, and competition for both foot traffic and Google visibility has picked up sharply in the last few years. We help Prospect businesses build a proper website, rank locally for the services families and young professionals in the area are searching for, and automate the admin that eats into evenings.",
+    "whyNow": "Prospect has changed fast — young families and professionals priced out of Norwood and North Adelaide have moved in, bringing new demand for cafes, fitness, allied health, and trade services, and a wave of new businesses has opened on Prospect Road to meet it. That means more competition for search visibility than the suburb has ever had before; a business relying purely on being 'the local option' is now competing with several newer, web-savvy alternatives on the same strip.",
     "industries": [
       "Building & Construction",
       "Cafes & Takeaway",
@@ -107,29 +134,38 @@
       "Home Renovation"
     ],
     "painPoints": [
-      "Tradie quoting jobs around Prospect loses 2-3 leads daily because they can't respond to enquiries until 6pm",
-      "Prospect Road cafe owners miss catering orders worth $500+ during morning rush when phones go unanswered",
-      "Small builders lose track of follow-ups and let $50k renovation jobs slip to competitors with better systems"
+      "A tradie based in Prospect misses calls while on a job, losing bookings to newer competitors who've set up proper missed-call systems and respond within minutes.",
+      "New cafes and small retailers on Prospect Road struggle to get noticed against longer-established local institutions with years of reviews and word-of-mouth already built up.",
+      "Allied health and fitness studios lose potential clients who search online, find a competitor's newer website first, and never make it to a comparison at all."
     ],
-    "websiteLine": "A website for your Prospect tradie or cafe business — click-to-call, quote forms, service area pages. From $699, live in 48 hours.",
-    "seoLine": "Rank for 'builder Prospect', 'cafe Prospect Road', 'mechanic Prospect' — locals are searching, make sure they find you.",
-    "automationLine": "Missed call text-back, quote follow-up and booking automation for Prospect tradies. Stop losing jobs to the competitor who answered first.",
+    "websiteLine": "A clean, mobile-first website for your Prospect business — live in 48 hours, from $699. Built to help newer businesses compete with established local names on Prospect Road.",
+    "seoLine": "We get Prospect businesses ranking for 'cafe Prospect Road', 'tradie Prospect Adelaide', and suburb-specific searches — capturing the growing search volume from the area's changing demographic, from $399/month.",
+    "automationLine": "Missed-call text-back and automated quote follow-up for Prospect tradies, clinics and studios — from $199/month, so a call missed on the tools or mid-session doesn't become a lost booking to a competitor down the road.",
     "heroColor": "from-violet-400/20 via-purple-300/10 to-fuchsia-400/15",
     "customFaqs": [
       {
-        "question": "Do you help builders and tradies in Prospect win more renovation work?",
-        "answer": "Yes — Prospect's renovation boom means fierce competition for reno work. We build tradie websites with instant quote forms, automated follow-up sequences and suburb-targeted landing pages. Most Prospect tradies we work with book 3-4 extra jobs per month just from showing up better in local search."
+        "question": "Prospect feels like it's changing fast — does that affect what kind of website works here?",
+        "answer": "Yes — Prospect's newer, younger demographic searches online before visiting far more than an older, purely word-of-mouth customer base would. A business without a proper website or Google presence is increasingly invisible to exactly the customers moving into the area."
+      },
+      {
+        "question": "Can you help a new business on Prospect Road compete with established local institutions?",
+        "answer": "Yes — a strong website and local SEO won't replace years of reputation overnight, but it levels the playing field in Google search results, where a newer business can rank just as well as an established one if the site and content are done properly."
+      },
+      {
+        "question": "Do you build suburb pages for the areas around Prospect too?",
+        "answer": "Yes — if your Prospect business also services nearby suburbs like Nailsworth, Broadview, or Kilburn, we build dedicated pages for each so you're not relying on Prospect Road foot traffic alone to fill your booking calendar."
       }
     ],
-    "region": "Trade & Industrial"
+    "region": "Trade & Industrial",
+    "localContext": "Prospect Road runs the length of the suburb and has become one of Adelaide's fastest-changing local strips — a mix of long-running bakeries and delis alongside a steady wave of new cafes, boutique fitness studios, and specialty retail opening to meet demand from younger families moving into the area. The suburb's proximity to the CBD via the O-Bahn busway makes it attractive to professionals who want an inner-city feel without inner-city prices, and that shift has changed the customer base local businesses are trying to reach — increasingly online-first, comparison-driven, and likely to search before they walk in. Side streets around Prospect Road carry a mix of trade businesses and home-based operators who rarely get the visibility the main strip shopfronts do."
   },
   {
     "name": "Burnside",
     "slug": "burnside",
     "postcode": "5066",
     "heroLine": "Premium websites, SEO & automation for Burnside's high-end market.",
-    "intro": "Burnside's affluent residents run successful businesses and expect the same professionalism they deliver. Allied health clinics, financial advisors, and premium service providers here can't afford dropped calls or slow responses — reputation is everything. We build premium websites, SEO that targets Burnside's discerning market, and automation that ensures every enquiry gets immediate, polished attention.",
-    "whyNow": "Burnside clients have options and high expectations. Businesses with professional websites, instant confirmations and polished follow-up stand out in a market where word-of-mouth travels fast among tight-knit professional networks.",
+    "intro": "Burnside is one of Adelaide's most affluent eastern suburbs, anchored by Burnside Village and stretching through leafy streets toward the foothills. Households here spend more on services and expect a polished, professional standard from the businesses they use, whether that's a tradie, a boutique retailer, or a specialist clinic — a dated or clunky website is a bigger credibility problem here than in a more price-driven suburb. We help Burnside businesses build a website that matches that standard, rank locally for the searches this catchment is making, and automate the admin behind the scenes.",
+    "whyNow": "Burnside residents research thoroughly before choosing a provider — reviews, photos, and a professional website all factor into a decision that's less about finding the cheapest option and more about finding the most trustworthy one. As more Burnside-area businesses invest in polished websites and proper local SEO, the ones still running on an outdated site or word-of-mouth alone are becoming harder to find in a catchment that's increasingly used to comparing options online first. Growing Toorak Gardens and Rose Park household spending, an ageing but well-maintained housing stock, and steady renovation activity all add up to a catchment where getting found online for the right search is worth more per lead than in most other Adelaide suburbs.",
     "industries": [
       "Specialist Medical",
       "Financial & Legal Services",
@@ -138,21 +174,30 @@
       "High-End Retail"
     ],
     "painPoints": [
-      "Specialist practices lose affluent patients to competitors simply because booking took three phone calls instead of one click",
-      "Financial advisors miss follow-up opportunities with high-value clients because CRM updates get pushed to tomorrow",
-      "Premium service providers damage reputation with slow email responses in a suburb where everyone expects same-day replies"
+      "A tradie servicing Burnside and the surrounding eastern suburbs loses higher-value jobs to competitors whose websites look more established and trustworthy, even when the actual quality of work is comparable.",
+      "Boutique retailers near Burnside Village struggle to convert local searches into store visits when their online presence doesn't match the polish customers expect from the area.",
+      "Specialist clinics and professional services lose enquiries to competitors with clearer online booking and a more current, credible-looking website."
     ],
-    "websiteLine": "A premium website for your Burnside practice or advisory — online booking, professional copywriting, credibility that matches your fees. From $699.",
-    "seoLine": "Rank for 'financial advisor Burnside', 'specialist doctor Burnside' — the searches Burnside's affluent residents do before choosing a provider.",
-    "automationLine": "Automated booking, client follow-up and review generation for Burnside professionals. Match your digital experience to your service quality.",
+    "websiteLine": "A polished, mobile-first website for your Burnside business — live in 48 hours, from $699. Built to match the standard this catchment expects before they'll pick up the phone.",
+    "seoLine": "We get Burnside businesses ranking for 'tradie Burnside', 'clinic near Burnside Village', and suburb-specific searches — the exact comparisons this catchment is already making, from $399/month.",
+    "automationLine": "Booking confirmations, appointment reminders and quote follow-up for Burnside businesses — from $199/month, freeing up time and reducing no-shows in a market where a missed slot is a genuinely costly loss.",
     "heroColor": "from-amber-400/20 via-orange-300/10 to-rose-400/15",
     "customFaqs": [
       {
-        "question": "Do you build premium websites for specialist medical and financial practices in Burnside?",
-        "answer": "Yes. We work with specialist medical, financial advisors and legal practices across Burnside who need websites that match the address. Online booking, secure client portals, and professional copywriting that reflects your fee structure. Designed for affluent Burnside clients who compare three options before calling."
+        "question": "Does a more affluent suburb like Burnside need a different kind of website?",
+        "answer": "The core build is the same, but the tone and presentation matter more here — Burnside customers are comparing on trust and polish as much as price, so photography, copy, and overall credibility carry more weight in the decision than they might in a budget-conscious suburb."
+      },
+      {
+        "question": "Can you help a Burnside business target the wider eastern suburbs catchment too?",
+        "answer": "Yes — if you also service Toorak Gardens, Kensington Park, Rose Park, or Glenside, we build suburb-specific pages for each so you're capturing search demand across the whole eastern catchment, not just Burnside itself."
+      },
+      {
+        "question": "What's the ROI like for a higher-value suburb like this?",
+        "answer": "Generally strong — because average job and client values tend to run higher in Burnside than in more price-driven suburbs, even a modest increase in booked jobs from a better website and local SEO often pays back the setup cost faster than in lower-value areas."
       }
     ],
-    "region": "Inner Adelaide"
+    "region": "Inner Adelaide",
+    "localContext": "Burnside Village sits at the commercial centre of the suburb, anchoring a catchment that stretches through Toorak Gardens, Kensington Park, Rose Park, and Glenside — some of Adelaide's highest-value residential streets. The area's business mix leans toward higher-end retail, professional services, and specialist trades rather than volume, budget-driven competition, and Glynburn Road carries much of the suburb's commercial and light-industrial activity feeding into the eastern foothills. Because household spending power here is above the Adelaide average, businesses that establish real credibility online tend to capture disproportionately more of the local market than in a suburb where price is the main decision factor."
   },
   {
     "name": "Walkerville",
@@ -345,8 +390,8 @@
     "slug": "mount-barker",
     "postcode": "5251",
     "heroLine": "Websites, SEO & automation for Mount Barker's growth boom.",
-    "intro": "Mount Barker's exploding — new estates, young families, and a retail boom that's transformed the Hills. Tradies can't keep up with demand, retailers compete for foot traffic, and healthcare can't book patients fast enough. We build websites, SEO and automation that help businesses scale without drowning in admin.",
-    "whyNow": "Mount Barker's population growth means more competition for customer attention. Businesses with proper websites, automated booking and local SEO are handling 40% more volume with the same staff while competitors turn work away due to admin overload.",
+    "intro": "Mount Barker is the Adelaide Hills' fastest-growing town — a regional hub with its own commercial centre around Gawler Street and Adelaide Road, serving both the town itself and a rapidly expanding catchment of new housing estates. As Mount Barker's population grows, local trades, clinics, and retail businesses face rising competition from both new arrivals and Adelaide-based competitors chasing the same growth. We help Mount Barker businesses build a proper website, rank for the local searches this expanding population is making, and automate booking and follow-up so growth doesn't outpace admin capacity.",
+    "whyNow": "Mount Barker is one of the fastest-growing areas in South Australia, with new housing developments bringing thousands of new residents who don't yet have an established local tradie, clinic, or retailer — and who default to Google when they need one. That's a genuine growth opportunity for local businesses with a proper web presence, and a genuine risk for those without one, as Adelaide-based competitors increasingly target the Hills catchment with their own local SEO.",
     "industries": [
       "Building & Construction",
       "Retail & Shopping",
@@ -355,29 +400,38 @@
       "Food & Hospitality"
     ],
     "painPoints": [
-      "Builder in Mount Barker turns down $100k+ jobs because quoting and follow-up overhead maxes out current capacity",
-      "Healthcare clinics can't fill new appointment slots fast enough because phone booking creates bottlenecks",
-      "Retail businesses lose new residents to online giants because there's no system to build local customer relationships"
+      "A tradie in Mount Barker misses calls from new residents who don't have an existing local contact and simply search online instead, defaulting to whichever business ranks first.",
+      "Clinics and allied health practices struggle to keep up with demand from a fast-growing population without automated booking and reminder systems in place.",
+      "Local retail and trade businesses lose new-resident customers to Adelaide-metro competitors who've started targeting Mount Barker and the wider Hills catchment with their own local SEO."
     ],
-    "websiteLine": "A website for your Mount Barker business — service pages, online booking, suburb targeting. From $699.",
-    "seoLine": "Rank for 'builder Mount Barker', 'doctor Mount Barker', 'mechanic Mount Barker' — new residents are searching for local services.",
-    "automationLine": "Missed call capture, quote automation and booking for Mount Barker tradies. Handle 40% more volume without hiring admin.",
+    "websiteLine": "A clean, mobile-first website for your Mount Barker business — live in 48 hours, from $699. Built to capture demand from new residents who don't yet have an established local provider.",
+    "seoLine": "We get Mount Barker businesses ranking for 'tradie Mount Barker', 'clinic Adelaide Hills', and suburb-specific searches — capturing new-resident demand before Adelaide-metro competitors do, from $399/month.",
+    "automationLine": "Missed-call text-back and booking automation for Mount Barker tradies and clinics — from $199/month, built to handle rising demand from the town's rapid growth without needing to add admin staff.",
     "heroColor": "from-emerald-500/25 via-green-300/15 to-teal-400/15",
     "customFaqs": [
       {
-        "question": "Do you help Mount Barker tradies and builders keep up with the growth boom?",
-        "answer": "Yes — Mount Barker's growth means more competition for reno and build work. We build tradie websites with instant quote forms, automated follow-up sequences and service area pages targeting the new estates. Most Mount Barker builders we work with book 3-4 extra jobs a month just from showing up better in local search."
+        "question": "Mount Barker is growing fast — does that change what kind of website works best?",
+        "answer": "Yes — a large share of the local market is new residents without an existing provider relationship, which makes local SEO and a strong Google Business Profile more valuable here than in a settled suburb where most business comes from repeat customers and referrals."
+      },
+      {
+        "question": "Can you build pages for the newer housing estates around Mount Barker too?",
+        "answer": "Yes — if your business services specific developments or the wider Hills catchment beyond the town centre, we can structure suburb and service-area content to capture that demand rather than targeting 'Mount Barker' alone."
+      },
+      {
+        "question": "Are we competing with Adelaide-metro businesses for Mount Barker customers?",
+        "answer": "Increasingly, yes — as Mount Barker grows, more CBD and metro-based businesses are targeting the Hills catchment with their own SEO. A genuinely local, well-optimised website is one of the clearest ways a Mount Barker-based business can win that competition on home turf."
       }
     ],
-    "region": "East & Hills"
+    "region": "East & Hills",
+    "localContext": "Gawler Street and Adelaide Road form Mount Barker's commercial centre, carrying a mix of established local retail, cafes, trade businesses, and professional services that serve both the town itself and the wider Adelaide Hills region. The town has grown rapidly over the past decade as new housing estates expand its footprint, and that growth shows no sign of slowing — meaning the local customer base looks meaningfully different today than it did five years ago, with a much higher proportion of newer residents who don't have existing relationships with local tradies or providers. That shift makes online visibility more valuable here than in more settled, established suburbs, because a large and growing share of the market is actively searching for a provider rather than relying on an existing relationship."
   },
   {
     "name": "Mitcham",
     "slug": "mitcham",
     "postcode": "5062",
     "heroLine": "Websites, SEO & automation for Mitcham's family-focused businesses.",
-    "intro": "Mitcham is a family-focused suburb with a mix of established homes, schools, and a busy shopping strip along Belair Road. Tradies serving Mitcham — plumbers, electricians, builders and landscapers — are in constant demand. We build tradie websites, local SEO and automation that captures every enquiry while you're on the tools.",
-    "whyNow": "Mitcham's housing stock is ageing — renovations, extensions, and maintenance work are booming. With multiple primary schools, childcare centres, and medical practices along Belair Road, local businesses that can't handle the call volume are bleeding revenue to competitors who answer first.",
+    "intro": "Mitcham sits where suburban Adelaide meets the Adelaide Hills foothills, with Belair Road as the main commercial spine running toward Blackwood and the Hills beyond. It's a family-oriented, established southern suburb where trades, clinics, and local retail rely heavily on repeat business and word-of-mouth — but increasingly, that word-of-mouth starts with a Google search rather than a conversation over the back fence. We help Mitcham businesses build a proper website, rank for the local searches families in the area are making, and automate booking and follow-up so nothing falls through the cracks.",
+    "whyNow": "Mitcham's population skews toward established families who value reliability and local reputation — but that reputation increasingly needs to show up online before it counts. A tradie or clinic relying purely on referrals is now competing with newer, web-savvy businesses further down Belair Road or in neighbouring Blackwood and Hawthorn, and losing search visibility to them even when the actual service is just as good or better. That gradual shift toward search-first behaviour is happening slowly enough that a Mitcham business still has time to build local SEO before the competitive pressure catches up to what's already happening in busier suburbs closer to the city.",
     "industries": [
       "Plumbing & Electrical",
       "Building & Renovation",
@@ -386,29 +440,38 @@
       "Professional Services"
     ],
     "painPoints": [
-      "A Mitcham plumber misses 15 calls a week — at $400 average job value, that's $6,000 in lost revenue walking out the door every week",
-      "Medical practices along Belair Road lose 20% of appointments to no-shows because reminder calls aren't happening consistently",
-      "Builders working on Mitcham renos spend hours each week playing phone tag with subcontractors instead of managing projects"
+      "A tradie in Mitcham misses calls while on a job and loses bookings to competitors along Belair Road who've set up automated missed-call handling and reply within minutes.",
+      "Family-run local businesses rely on decades of word-of-mouth reputation that doesn't show up anywhere when a newer resident searches online and finds a competitor's website first.",
+      "Clinics and allied health practices near Mitcham Square lose appointment slots to no-shows because reminder calls aren't happening consistently."
     ],
-    "websiteLine": "A tradie website for your Mitcham business — click-to-call, service area pages, quote forms. From $699, live in 48 hours.",
-    "seoLine": "Rank for 'plumber Mitcham', 'builder Mitcham', 'doctor Belair Road' — Mitcham families are searching for reliable local services.",
-    "automationLine": "Missed call text-back, booking reminders and quote follow-up for Mitcham tradies and clinics. Stop losing $6k/week to missed calls.",
+    "websiteLine": "A clean, mobile-first website for your Mitcham business — live in 48 hours, from $699. Built to translate decades of local reputation into something new residents can actually find online.",
+    "seoLine": "We get Mitcham businesses ranking for 'tradie Mitcham', 'clinic Belair Road', and suburb-specific searches — capturing demand from newer residents who don't yet know your reputation, from $399/month.",
+    "automationLine": "Missed-call text-back and appointment reminders for Mitcham tradies and clinics — from $199/month, cutting no-shows and making sure a call missed on the tools doesn't become a lost job.",
     "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15",
     "customFaqs": [
       {
-        "question": "Do you help Mitcham tradies stop losing calls during the school run?",
-        "answer": "Yes — missed calls during the after-school window are the #1 revenue leak for Mitcham tradies. We set up missed-call text-back so every missed call gets an SMS within 20 seconds, plus automated booking reminders. Most Mitcham tradies recover 3-5 jobs a week just from this alone."
+        "question": "Mitcham runs a lot on word-of-mouth — is a website even worth it here?",
+        "answer": "Increasingly, yes. Word-of-mouth still matters, but newer residents who haven't built up local knowledge default to searching online, and a business with no web presence is invisible to exactly that growing segment of the market."
+      },
+      {
+        "question": "Can you build pages for Blackwood and the surrounding Hills-foothills suburbs too?",
+        "answer": "Yes — if your Mitcham business also services Blackwood, Hawthorn, or Belair, we build dedicated suburb pages for each so you're capturing demand across the whole southern foothills catchment."
+      },
+      {
+        "question": "Do you understand the more established, family-suburb feel of Mitcham?",
+        "answer": "Yes — we write copy that reflects Mitcham's actual character rather than a generic suburban template: an established, family-oriented area near Mitcham Square where reliability and local reputation matter more than flashy marketing."
       }
     ],
-    "region": "South"
+    "region": "South",
+    "localContext": "Belair Road is Mitcham's main commercial strip, running from the suburb's shopping precinct around Mitcham Square out toward Blackwood and the Adelaide Hills, and carries a mix of local retail, cafes, trade businesses, and allied health services. The suburb sits right at the edge of the Adelaide Hills foothills, giving it a more established, family-oriented character than suburbs closer to the CBD, with many residents having lived locally for years and relying on word-of-mouth for tradies and services. That reputation-driven market is starting to shift as newer residents move in from further afield and default to a Google search rather than asking a neighbour, which is where local businesses without a proper web presence start losing ground."
   },
   {
     "name": "North Adelaide",
     "slug": "north-adelaide",
     "postcode": "5006",
     "heroLine": "Websites, SEO & automation for North Adelaide's heritage strip.",
-    "intro": "North Adelaide lives between the parklands and the cathedral — heritage terrace businesses, premium restaurants on Melbourne Street, specialist medical, and law firms serving Adelaide's most affluent postcodes. The customers here expect polish. We build websites that match the address, SEO that ranks for the prestige searches, and automation that handles bookings with white-glove care.",
-    "whyNow": "North Adelaide businesses serve a clientele with options and high expectations. Practices that still rely on phone-tag booking lose affluent clients to competitors offering online appointments and instant confirmations. A proper website isn't optional in North Adelaide — it's the price of entry.",
+    "intro": "North Adelaide is one of the city's most distinctive commercial pockets — heritage architecture, tree-lined streets, and two main strips, Melbourne Street and O'Connell Street, that mix boutique retail, high-end hospitality, and professional services just across the park lands from the CBD. Clients here expect a level of polish that matches the streetscape, and a dated or slow website stands out for the wrong reasons in a suburb this design-conscious. We help North Adelaide businesses build a website that fits that standard, rank locally for the searches this catchment makes, and automate the admin behind the scenes.",
+    "whyNow": "North Adelaide's proximity to the CBD means local businesses compete not just with each other but with city-centre alternatives just a short walk or drive away — and a weak website makes that competition harder to win. As more Melbourne Street and O'Connell Street businesses invest in proper local SEO and polished websites, the ones relying on foot traffic and reputation alone are losing ground to competitors who show up first in a Google search from someone deciding between North Adelaide and the CBD.",
     "industries": [
       "Specialist Medical",
       "Restaurants & Bars",
@@ -417,29 +480,38 @@
       "Beauty & Wellness"
     ],
     "painPoints": [
-      "Melbourne Street restaurants lose private dining bookings worth $2k+ because responses take a full day during service",
-      "Specialist practices lose new patients to competitors with online booking because affluent clients refuse phone-only scheduling",
-      "Heritage terrace professional firms look dated online compared to competitors with modern websites and instant enquiry forms"
+      "Boutique retailers and hospitality venues on Melbourne Street lose customers to CBD alternatives when their website doesn't clearly communicate what makes North Adelaide worth the trip.",
+      "Professional services firms — legal, medical, consulting — lose enquiries to competitors with a more current, credible-looking website, in a suburb where first impressions carry real weight.",
+      "Restaurants and cafes on O'Connell Street struggle to convert 'things to do near the CBD' searches into bookings when their online booking process is clunky or non-existent."
     ],
-    "websiteLine": "A polished website for your North Adelaide practice or venue — heritage credibility, online booking, premium copy. From $699.",
-    "seoLine": "Rank for 'Melbourne Street restaurant', 'specialist North Adelaide', 'lawyer North Adelaide' — affluent locals and CBD spillover are already searching.",
-    "automationLine": "Automated booking, reminders and follow-up for North Adelaide professionals. Match your digital experience to your address.",
+    "websiteLine": "A polished, mobile-first website for your North Adelaide business — live in 48 hours, from $699. Built to match the heritage streetscape and hold its own against CBD alternatives.",
+    "seoLine": "We get North Adelaide businesses ranking for 'restaurant Melbourne Street', 'boutique O'Connell Street', and suburb-specific searches — competing directly with CBD alternatives, from $399/month.",
+    "automationLine": "Booking capture and follow-up for North Adelaide hospitality and professional services — from $199/month, so an after-hours enquiry from someone deciding between North Adelaide and the CBD doesn't go to a competitor who answers first.",
     "heroColor": "from-amber-500/20 via-yellow-300/10 to-orange-400/15",
     "customFaqs": [
       {
-        "question": "Do you build premium websites for heritage strip businesses on Melbourne Street?",
-        "answer": "Yes. We build websites for North Adelaide restaurants, specialist medical, legal and boutique retail that match the heritage address. Online booking, premium copy and gallery-led design that converts Melbourne Street foot traffic and CBD spillover."
+        "question": "How is North Adelaide different from building a site for a business in the CBD?",
+        "answer": "The customer intent is similar, but the content needs to make the case for choosing North Adelaide specifically — heritage character, easier parking, a quieter atmosphere — rather than just being a generic city-adjacent business. We write copy that leans into what makes the suburb distinct."
+      },
+      {
+        "question": "Do Melbourne Street and O'Connell Street need different approaches?",
+        "answer": "Often yes — Melbourne Street trades more on established dining and boutique retail, while O'Connell Street has a younger, more everyday mix. We tailor tone and SEO targeting to which strip (or both) your business actually sits on."
+      },
+      {
+        "question": "Is it worth competing on SEO against CBD businesses with bigger budgets?",
+        "answer": "Yes — local SEO targeting 'North Adelaide' specifically lets a smaller business rank ahead of much larger CBD competitors for searches where location genuinely matters, rather than competing head-on for generic city-wide keywords."
       }
     ],
-    "region": "Inner Adelaide"
+    "region": "Inner Adelaide",
+    "localContext": "Melbourne Street and O'Connell Street are North Adelaide's two commercial strips, each with a distinct character — Melbourne Street leans toward established dining and boutique retail, while O'Connell Street carries a denser mix of cafes, bars, and everyday retail closer to the suburb's residential heart. The area's heritage housing stock and proximity to the park lands and CBD make it one of Adelaide's most design-conscious suburbs, and businesses here compete as much with CBD alternatives a short walk away as with each other. That competitive pressure makes a genuinely polished, well-ranked website more important in North Adelaide than in almost any other Adelaide suburb — customers here have more comparable alternatives within easy reach than almost anywhere else in the city."
   },
   {
     "name": "Henley Beach",
     "slug": "henley-beach",
     "postcode": "5022",
     "heroLine": "Websites, SEO & automation for Henley Beach's coastal business strip.",
-    "intro": "Henley Beach is Adelaide's premium beachside suburb — the square hums with cafes, restaurants, beauty salons and boutiques serving both locals and weekend crowds. Hospitality runs on summer chaos and winter steady. We build hospitality websites that take direct bookings, SEO that ranks for Henley Beach searches, and automation that turns first-time beach visitors into year-round regulars.",
-    "whyNow": "Henley Beach's hospitality market is crowded with options, and customers book whoever responds first. Restaurants and salons still playing phone tag during dinner service are losing group bookings worth $500+ to competitors with proper online booking and instant confirmations.",
+    "intro": "Henley Beach is Adelaide's western coastal drawcard, with Henley Square as its beachfront dining and lifestyle hub, drawing both locals and visitors year-round. Restaurants, cafes and lifestyle businesses along Seaview Road and around the Square compete hard for both walk-in trade and online bookings, especially as summer weekends bring a surge in demand that a phone-only booking process can't keep up with. We help Henley Beach businesses build a fast, professional website, rank locally for the searches beachgoers and locals are making, and automate booking so a busy weekend doesn't mean missed revenue.",
+    "whyNow": "Henley Beach's trade swings hard with the weather and the season — Henley Square is packed on a warm Saturday and considerably quieter on a wet Tuesday in July, and a business that can only take bookings by phone loses customers during the busy periods when staff are too stretched to answer. A proper website with online booking captures that weekend surge automatically, while automated follow-up and offers keep the quieter periods from going completely dead. Even outside the peak season, Henley Square's dining strip stays busier than most suburban strips thanks to its status as a genuine Adelaide destination rather than just a local shopping precinct, which keeps baseline search demand higher year-round than the seasonal swings alone would suggest.",
     "industries": [
       "Cafes & Restaurants",
       "Beauty & Wellness",
@@ -448,21 +520,30 @@
       "Family Services"
     ],
     "painPoints": [
-      "Henley Square restaurants lose group dinner bookings worth $500+ because phones go unanswered during weekend service rush",
-      "Beachside salons lose new clients to competitors with online booking because nobody calls salons anymore",
-      "Real estate agents miss weekend opens because enquiry forms aren't automated and leads sit until Monday morning"
+      "Restaurants around Henley Square miss phone bookings during peak weekend service because staff are flat out on the floor, sending diners to the next venue along the beachfront instead.",
+      "Lifestyle and wellness businesses near the beach lose out-of-area enquiries made outside business hours, when people are actually planning their weekend.",
+      "Cafes and retail on Seaview Road struggle to stand out in local search results against the handful of well-known Henley Square institutions that dominate reviews and visibility."
     ],
-    "websiteLine": "A hospitality-ready website for your Henley Beach business — online booking, gallery, mobile-first. From $699.",
-    "seoLine": "Rank for 'cafe Henley Beach', 'restaurant Henley Square', 'salon Henley Beach' — beach crowd and locals are searching daily.",
-    "automationLine": "Booking confirmations, reminders and review requests for Henley Beach hospitality. Stop losing the weekend crowd.",
+    "websiteLine": "A fast, mobile-first website for your Henley Beach business — live in 48 hours, from $699. Built to capture weekend beachfront demand with online booking front and centre.",
+    "seoLine": "We get Henley Beach businesses ranking for 'restaurant Henley Square', 'cafe Seaview Road', and suburb-specific searches — capturing both local and visitor demand, from $399/month.",
+    "automationLine": "After-hours booking capture and automated follow-up for Henley Beach hospitality and lifestyle businesses — from $199/month, so a Friday-night enquiry about Saturday lunch doesn't sit unanswered until Monday.",
     "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15",
     "customFaqs": [
       {
-        "question": "Do you build websites with online booking for Henley Beach cafes and salons?",
-        "answer": "Yes. We build hospitality websites for Henley Beach's square and surrounds — online booking, gallery-led design, and reservation systems. Most Henley Square venues we work with fill more weekend slots within their first month."
+        "question": "Does a beachfront business need a different kind of website to an inland suburb?",
+        "answer": "The fundamentals are the same, but online booking matters more here — Henley Square gets genuine weekend surges where phone-only bookings lose customers to whoever can take an online booking instead. We prioritise fast, simple booking flows for beachfront hospitality and lifestyle businesses."
+      },
+      {
+        "question": "Can automation help smooth out the seasonal swings in trade?",
+        "answer": "Yes — automated review requests and follow-up keep past customers engaged through the quieter winter months, while after-hours enquiry capture makes sure summer weekend demand doesn't overwhelm a small team trying to answer every phone call."
+      },
+      {
+        "question": "How do you help a business stand out against the well-known Henley Square institutions?",
+        "answer": "Strong local SEO and a genuinely fast, well-designed website let a newer or smaller business rank alongside long-established Henley Square names in search results — visibility that's much harder to win through foot traffic and reputation alone."
       }
     ],
-    "region": "West & Coast"
+    "region": "West & Coast",
+    "localContext": "Henley Square sits right on the beachfront and is Henley Beach's commercial and social centre — a cluster of restaurants, cafes, and bars with direct sea views that draws both locals and visitors from across Adelaide, especially over summer. Seaview Road runs inland from the Square and carries a mix of everyday retail and services for the residential streets behind the beachfront strip. The suburb's appeal swings hard with the weather and the season, and businesses here need a web presence built to handle a packed Saturday in February just as well as a quiet Tuesday in the middle of winter."
   },
   {
     "name": "Magill",
@@ -500,8 +581,8 @@
     "slug": "salisbury",
     "postcode": "5108",
     "heroLine": "Websites, SEO & automation for Salisbury's northern commercial hub.",
-    "intro": "Salisbury anchors Adelaide's north — Salisbury Town Centre drives retail, the industrial precinct feeds automotive and logistics, and a growing residential base keeps tradies flat out. We build trade and retail websites that convert, SEO that ranks for northern searches, and automation that handles the volume Salisbury businesses need to keep up with.",
-    "whyNow": "Salisbury's commercial mix means fierce competition across every category. Industrial contractors and retail businesses with proper websites, fast enquiry response and automated quoting are winning more work — those still relying on phone tag are losing to competitors who reply first.",
+    "intro": "Salisbury is one of Adelaide's largest northern suburbs, with a commercial mix centred around Salisbury Highway and the Parabanks shopping precinct, serving a diverse, working population alongside a significant trade and light-industrial base. Businesses here compete on value and reliability as much as polish, and a solid, fast website that ranks locally often matters more than an expensive design. We help Salisbury businesses get online properly, rank for the services this large catchment is searching for, and automate the admin that eats into time better spent on paying jobs.",
+    "whyNow": "Salisbury's population and trade base are large enough that local search competition is real, even if the suburb doesn't have the same glossy retail strip as some inner suburbs — a tradie or retailer here is competing against dozens of others across a wide northern-suburbs catchment, and ranking well in that crowded field increasingly comes down to who has invested in a proper website and local SEO rather than who's been around the longest. That scale cuts both ways — more potential customers searching, but more competitors chasing the same searches — which is exactly why a properly optimised Google Business Profile and website tend to outperform a bigger advertising budget in this market.",
     "industries": [
       "Industrial & Logistics",
       "Automotive",
@@ -510,21 +591,30 @@
       "Healthcare"
     ],
     "painPoints": [
-      "Industrial contractors in Salisbury miss fleet service enquiries worth $5k+ because phones go unanswered on the workshop floor",
-      "Tradies servicing northern suburbs lose 2-3 jobs a week because they can't quote fast enough while driving between sites",
-      "Retail around Salisbury Town Centre loses corporate enquiries to online competitors because response takes 24+ hours"
+      "A tradie based in Salisbury misses calls while on a job across a wide service area, losing bookings to competitors who've set up automated missed-call handling.",
+      "Trade and light-industrial businesses near Salisbury Highway struggle to differentiate themselves online in a market with dozens of similar competitors across the northern suburbs.",
+      "Retail and service businesses near Parabanks lose local searches to competitors with better-optimised Google Business Profiles, even when their actual pricing and service are comparable or better."
     ],
-    "websiteLine": "A no-nonsense website for your Salisbury trade or retail business — quote forms, service lists, click-to-call. From $699.",
-    "seoLine": "Rank for 'mechanic Salisbury', 'plumber Salisbury', 'Salisbury Town Centre' — northern residents and commercial clients search here first.",
-    "automationLine": "Missed call text-back, quote automation and fleet enquiry follow-up for Salisbury industrial and trades. Win more fleet work.",
+    "websiteLine": "A fast, no-nonsense mobile-first website for your Salisbury business — live in 48 hours, from $699. Built to convert a wide northern-suburbs catchment into booked jobs, not just look good.",
+    "seoLine": "We get Salisbury businesses ranking for 'tradie Salisbury', 'services near Parabanks', and suburb-specific searches across the northern suburbs — from $399/month, with no lock-in.",
+    "automationLine": "Missed-call text-back and quote follow-up for Salisbury tradies and service businesses — from $199/month, built for a wide service area where every missed call is a real cost, not just an inconvenience.",
     "heroColor": "from-stone-400/20 via-neutral-300/10 to-zinc-400/15",
     "customFaqs": [
       {
-        "question": "Do you build websites for industrial contractors in the Salisbury precinct?",
-        "answer": "Yes. We build trade websites for Salisbury industrial, automotive and commercial trades — fleet enquiry forms, instant quote calculators, and service area pages targeting the broader northern corridor. Designed for Salisbury businesses competing on response time."
+        "question": "Salisbury doesn't have the same boutique strip as some other suburbs — does that change the approach?",
+        "answer": "The website still needs to look professional and load fast, but the emphasis shifts toward clear pricing, fast contact options, and strong local SEO rather than boutique styling — Salisbury customers are comparing on value and reliability, not aesthetics alone."
+      },
+      {
+        "question": "Can you build pages for the wider northern suburbs catchment, not just Salisbury itself?",
+        "answer": "Yes — if your business also services Elizabeth, Para Hills, or other northern suburbs, we build dedicated pages for each so you're capturing search demand across your full service area, not just the Salisbury postcode."
+      },
+      {
+        "question": "Is SEO worth it in a market with this many competing trade businesses?",
+        "answer": "Yes — with dozens of similar businesses competing across the northern suburbs, ranking well in local search is often the single biggest differentiator between a business that's fully booked and one that isn't, regardless of how good the actual work is."
       }
     ],
-    "region": "North"
+    "region": "North",
+    "localContext": "Salisbury Highway is the suburb's main commercial artery, running past the Parabanks shopping centre and a substantial trade and light-industrial precinct that serves not just Salisbury itself but the wider northern Adelaide catchment stretching toward Elizabeth and Edinburgh. The area has a strong working-trade character — more mechanics, tradies, and service businesses per capita than a typical inner or eastern suburb — and a population that values reliability and value over polish. Because the northern suburbs catchment is large and genuinely competitive, ranking well in local search results matters as much here as anywhere in Adelaide, even though the visible commercial strip looks less curated than somewhere like Norwood or Unley."
   },
   {
     "name": "Elizabeth",

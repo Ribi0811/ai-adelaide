@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "AI Automation vs Hiring Staff Adelaide | Cost",
   description:
-    "Hiring a receptionist in Adelaide costs $55K+ per year. AI automation costs from $99/mo. Here's the honest comparison for Adelaide small businesses.",
+    "Hiring a receptionist in Adelaide costs $55K+ per year. AI automation costs from $199/mo. Here's the honest comparison for Adelaide small businesses.",
   alternates: {
     canonical: "/ai-automation-vs-hiring-staff-adelaide",
   },
@@ -13,6 +14,14 @@ export const metadata: Metadata = {
 export default function AIAutomationVsHiringStaffPage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Automation vs Hiring Staff" },
+        ]}
+      />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
@@ -70,7 +79,7 @@ export default function AIAutomationVsHiringStaffPage() {
             <li><strong>FAQ handling:</strong> Answers common questions so you don't have to</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            <strong>Total cost: $99–$299/month</strong>, plus a one-off setup fee. That's $1,188–$3,588 per year for round-the-clock coverage.
+            <strong>Total cost: $199–$399/month</strong>, plus a one-off setup fee. That's $2,388–$4,788 per year for round-the-clock coverage.
           </p>
         </div>
       </section>

@@ -32,7 +32,7 @@ export default function AuditLandingPage() {
             Find where you&apos;re losing customers online — in 3 minutes
           </h1>
           <p className="mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
-            Take the free digital health check, get your score instantly, then unlock a full personalised PDF action plan for $47.
+            Take the free digital health check, get your score instantly, then get your full personalised PDF action plan — free, no card required.
           </p>
           <Link href="/audit/quiz" className="btn-primary mt-8 inline-block">
             Start Free Health Check →

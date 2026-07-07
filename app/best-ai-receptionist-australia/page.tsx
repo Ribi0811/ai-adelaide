@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
   title: "Best AI Receptionist Australia (2026)",
   description:
-    "Looking for the best AI receptionist in Australia? Compare AI Adelaide vs Ruby vs CallSorted on price, integrations, and 24/7 answering.",
+    "Looking for the best AI receptionist in Australia? Compare AI Adelaide vs Ruby vs CallSorted on price, integrations, and 24/7 call answering.",
   alternates: {
     canonical: "/best-ai-receptionist-australia",
   },
@@ -365,6 +367,35 @@ export default function BestAIReceptionistAustraliaPage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-receptionist-vs-virtual-receptionist" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI vs Virtual Receptionist Compared →
+            </Link>
+            <Link href="/virtual-receptionist-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Virtual Receptionist Adelaide →
+            </Link>
+            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Plumbers Adelaide →
+            </Link>
+            <Link href="/websites-for-clinics-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Clinics Adelaide →
+            </Link>
+            <Link href="/mitcham" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Best AI Receptionist in Mitcham →
+            </Link>
+            <Link href="/prospect" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Best AI Receptionist in Prospect →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

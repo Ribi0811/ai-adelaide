@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import StackCTA from "@/components/StackCTA";
 
 export const metadata: Metadata = {
   title: "AI Bookkeeping Adelaide | From $299/mo",
@@ -295,6 +296,34 @@ export default function BookkeepingAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-automation-vs-hiring-staff-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Automation vs Hiring Staff →
+            </Link>
+            <Link href="/ai-office-worker-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Office Worker Adelaide →
+            </Link>
+            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Plumbers Adelaide →
+            </Link>
+            <Link href="/websites-for-cafes-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Cafes Adelaide →
+            </Link>
+            <Link href="/unley" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Bookkeeping in Unley →
+            </Link>
+            <Link href="/burnside" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Bookkeeping in Burnside →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

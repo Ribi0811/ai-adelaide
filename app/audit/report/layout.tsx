@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     description: "Your personalised AI audit report for your Adelaide business. Website, SEO and automation scored, with concrete next-action recommendations.",
     url: `${siteConfig.url}/audit/report`,
   },
+  // Personalised, session-specific report page — not a landing page.
+  robots: { index: false, follow: true },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

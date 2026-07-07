@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
   title: "Virtual Receptionist Adelaide | AI From $199",
@@ -277,6 +279,35 @@ export default function VirtualReceptionistAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-receptionist-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist Adelaide →
+            </Link>
+            <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist Cost Adelaide →
+            </Link>
+            <Link href="/websites-for-clinics-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Clinics Adelaide →
+            </Link>
+            <Link href="/websites-for-retail-shops-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Retail Shops Adelaide →
+            </Link>
+            <Link href="/unley" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Virtual Receptionist in Unley →
+            </Link>
+            <Link href="/burnside" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Virtual Receptionist in Burnside →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

@@ -55,7 +55,7 @@ const recommendationMap: Record<string, Omit<AuditRecommendation, 'roiEstimate'>
     problem: 'You\u2019re losing leads to slow response times, missed calls, and no systematic follow-up. Customers move on quickly.',
     solution: 'Online booking integration, contact forms with auto-replies, lead-capture forms, quote follow-up sequences, instant SMS confirmations. All built into your website.',
     complexity: 'Easy',
-    monthlyCost: 'Included in website + $99-199/mo for follow-up',
+    monthlyCost: 'Included in website + from $199/mo for follow-up',
   },
   'automation-admin': {
     categoryKey: 'automation-admin',

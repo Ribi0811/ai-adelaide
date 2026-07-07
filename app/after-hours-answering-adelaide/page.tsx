@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import Testimonials from "@/components/Testimonials";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
   title: "After Hours Answering Adelaide | 24/7",
   description:
-    "24/7 after hours answering for Adelaide small businesses. Your AI receptionist handles calls when you're closed, captures leads, and texts you the summary. Part of AI automation from $199/mo.",
+    "24/7 after-hours answering for Adelaide small businesses. Your AI receptionist takes calls when you're closed, captures leads, texts a summary. From $199/mo.",
   alternates: {
     canonical: "/after-hours-answering-adelaide",
   },
@@ -123,6 +127,14 @@ export default function AfterHoursAnsweringAdelaidePage() {
       <ServiceJsonLd />
       <FaqJsonLd faqs={faqItems} />
 
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "After Hours Answering Adelaide" },
+        ]}
+      />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
@@ -204,6 +216,14 @@ export default function AfterHoursAnsweringAdelaidePage() {
         </div>
       </section>
 
+      <Testimonials
+        industry="trades"
+        count={3}
+        heading="What Adelaide businesses say after adding after-hours coverage"
+        eyebrow="Real results"
+        subheadline="The phone that used to ring out at 7pm now books jobs. Here's what that looks like."
+      />
+
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">FAQ: After Hours Answering Adelaide</h2>
@@ -217,6 +237,35 @@ export default function AfterHoursAnsweringAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/answering-service-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Answering Service Adelaide →
+            </Link>
+            <Link href="/missed-call-answering-service-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Answering Service →
+            </Link>
+            <Link href="/websites-for-beauty-salons-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Beauty Salons Adelaide →
+            </Link>
+            <Link href="/websites-for-clinics-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Clinics Adelaide →
+            </Link>
+            <Link href="/mount-barker" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              After Hours Answering in Mount Barker →
+            </Link>
+            <Link href="/henley-beach" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              After Hours Answering in Henley Beach →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

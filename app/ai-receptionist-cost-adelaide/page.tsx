@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
   title: "AI Receptionist Cost Adelaide | 2026",
   description:
-    "How much does an AI receptionist cost in Adelaide? From $199/mo vs $4k+ for a real one.",
+    "How much does an AI receptionist actually cost in Adelaide? From $199/month, compared with $4,000+/month for a full-time human receptionist hire.",
   alternates: {
     canonical: "/ai-receptionist-cost-adelaide",
   },
@@ -122,6 +124,14 @@ export default function AIReceptionistCostAdelaidePage() {
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <ServiceJsonLd />
       <FaqJsonLd faqs={faqItems} />
+
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Receptionist Cost Adelaide" },
+        ]}
+      />
 
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
@@ -290,6 +300,8 @@ export default function AIReceptionistCostAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

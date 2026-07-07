@@ -4,7 +4,11 @@ import { siteConfig } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "About AI Adelaide | Adelaide AI Specialists",
+  // Phase 8 punch list P4 (expanded — found fresh, not in original punch
+  // list text): raw title contained "AI Adelaide" and the root layout's
+  // title.template would append " | AI Adelaide" again. `absolute` bypasses
+  // the template so this exact string renders with no suffix appended.
+  title: { absolute: "About AI Adelaide — Websites, SEO & AI Automation" },
   description:
     "Adelaide-based team building websites, SEO, and AI automation for small businesses. Not a Sydney agency, not a chatbot vendor. Real systems, local support.",
   alternates: {

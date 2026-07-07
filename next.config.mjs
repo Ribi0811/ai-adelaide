@@ -28,6 +28,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Design previews (v2 Apple / v3 cinema / v4 One Day) — v4 promoted to
+      // the homepage on 2026-07-07; preview URLs collapse into /.
+      { source: "/v2", destination: "/", permanent: true },
+      { source: "/v3", destination: "/", permanent: true },
+      { source: "/v4", destination: "/", permanent: true },
       // Old /ai-for-X pages directly conflict with new /websites-for-X pages.
       // Redirect to the new positioning equivalents.
       {
@@ -74,8 +79,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        // Fixed 2026-07: was incorrectly pointing builders at the retail-shops
+        // page, then temporarily at the tradie bundle. Phase 5.3 shipped a
+        // dedicated /websites-for-builders-adelaide page — point there now.
         source: "/ai-for-builders-adelaide",
-        destination: "/websites-for-retail-shops-adelaide",
+        destination: "/websites-for-builders-adelaide",
         permanent: true,
       },
       {
@@ -109,46 +117,112 @@ const nextConfig = {
         destination: "/ai-automation-adelaide",
         permanent: true,
       },
-      // Tier 9 — restore /blog/adelaide-seo-for-tradies (Google had it indexed)
-      // and consolidate URL variants that may also be linked from the web.
+      // Tier 11 — Phase 2 cannibal-cluster consolidation (SEO audit 2026-07).
+      // Answering/receptionist cluster: 11 live pages down to 6 distinct
+      // intents. Unique content ported to survivors before adding these.
+      {
+        source: "/tools/ai-receptionist-adelaide",
+        destination: "/ai-receptionist-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/missed-call-service",
+        destination: "/missed-call-answering-service-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/after-hours-answering",
+        destination: "/after-hours-answering-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/24-7-answering-service-adelaide",
+        destination: "/answering-service-adelaide",
+        permanent: true,
+      },
+      // SEO cluster: 3 pages down to 2 (local-seo-adelaide survives as the
+      // distinct "local seo" modifier; seo-services-adelaide duplicated /seo).
+      {
+        source: "/seo-services-adelaide",
+        destination: "/seo",
+        permanent: true,
+      },
+      // Tier 10 — no route exists for this slug but it has appeared in live
+      // Google SERPs (indexed before this repo's route history). Redirect to
+      // the closest surviving equivalent rather than let it 404.
+      {
+        source: "/ai-receptionist-for-medical-practices-adelaide",
+        destination: "/ai-receptionist-adelaide",
+        permanent: true,
+      },
+      // Tier 9 — Phase 5.2: the tradie SEO guide was consolidated from the
+      // /blog/adelaide-seo-for-tradies post into the dedicated landing page
+      // /seo-for-tradies-adelaide. The blog slug itself now redirects there,
+      // and every URL variant below points straight at the landing page
+      // (not at the blog slug) to keep every hop a single redirect.
+      {
+        source: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
+        permanent: true,
+      },
       {
         source: "/blog/seo-for-tradies-adelaide",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/tradies-seo-adelaide",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/seo-adelaide-tradies",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/adelaide-seo-tradies",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/seo-for-adelaide-tradies",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/adelaide-tradies-seo",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/seo-tradies-adelaide",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
       {
         source: "/blog/tradies-adelaide-seo",
-        destination: "/blog/adelaide-seo-for-tradies",
+        destination: "/seo-for-tradies-adelaide",
+        permanent: true,
+      },
+      // Phase 8 punch list P1 — 32 in-body blog links pointed at /services/*
+      // paths that were never real routes (only /services itself exists as
+      // an index page). Links themselves were fixed directly in
+      // data/posts.ts; these are safety nets in case any of the old paths
+      // were crawled or bookmarked externally.
+      {
+        source: "/services/automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/services/ai-receptionist",
+        destination: "/ai-receptionist-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/services/seo",
+        destination: "/seo",
         permanent: true,
       },
     ];

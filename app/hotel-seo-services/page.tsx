@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Hotel SEO Services Adelaide — Get Direct Bookings from Google",
+  // Phase 8 punch list P4: rendered title was 75 chars (max 60); description
+  // was truncated by the checker's regex on embedded escaped quotes and
+  // rewritten without them.
+  title: "Hotel SEO Services Adelaide",
   description:
-    "Hotel and accommodation SEO for Adelaide and SA. Rank for \"hotel Adelaide\", \"accommodation Glenelg\", \"motel Mount Barker\". Drive direct bookings, reduce OTA commissions. From $497/mo.",
+    "Hotel and accommodation SEO for Adelaide and SA. Rank for local hotel and motel searches, drive direct bookings, cut OTA commissions. From $497/mo.",
   alternates: { canonical: "/hotel-seo-services" },
 };
 
@@ -35,6 +39,13 @@ export default function HotelSeoServicesPage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "SEO", href: "/seo" },
+          { label: "Hotel SEO Services" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">Hotel & Accommodation SEO</span>

@@ -7,7 +7,7 @@ import CaseStudies from "@/components/CaseStudies";
 export const metadata: Metadata = {
   title: "Website Pricing Adelaide | From $699",
   description:
-    "AI-powered website pricing for Adelaide small businesses. Starter from $699, Business $1,299, Growth $2,499. One-off, you own it.",
+    "AI-powered website pricing for Adelaide small businesses — Starter from $699, Business $1,299, Growth $2,499. One-off cost, no lock-in, you own it outright.",
   alternates: {
     canonical: "/website-pricing",
   },

@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Automotive SEO Services — Get Your Auto Business Ranking in Adelaide",
+  // Phase 8 punch list P4: rendered title was 82 chars (max 60); description
+  // was 110 chars (want 140-160, and the checker's regex truncated on the
+  // embedded escaped quotes — rewritten without them).
+  title: "Automotive SEO Services Adelaide",
   description:
-    "SEO services for Adelaide mechanics, dealerships, panel beaters, auto electricians, and tyre shops. Rank for \"mechanic near me\", \"panel beater Adelaide\", service-area searches. From $397/mo.",
+    "SEO for Adelaide mechanics, dealerships, panel beaters, auto electricians, and tyre shops. Rank for local service-area searches. From $399/mo.",
   alternates: { canonical: "/automotive-seo-services" },
 };
 
@@ -19,7 +23,7 @@ const whatsIncluded = [
 
 const faqs = [
   { question: "Do you do SEO for mechanics in Adelaide?", answer: "Yes — we work with mechanics, panel beaters, auto electricians, tyre shops, dealerships, and vehicle inspection stations across Adelaide. Our process is built around local search (Google Business Profile, suburb pages, reviews) which is exactly what auto services need — most car owners Google \"mechanic near me\" or \"panel beater [suburb]\" rather than browsing websites." },
-  { question: "How much does automotive SEO cost?", answer: "Local SEO packages for Adelaide auto businesses start at $397/month (Google Business Profile, 5 suburb pages, monthly content). Mid-tier packages run $697/month with more content, more suburb pages, and review generation. Premium packages with commercial fleet pages and digital PR start at $1,297/month. Month-to-month, no lock-in." },
+  { question: "How much does automotive SEO cost?", answer: "Local SEO packages for Adelaide auto businesses start at $399/month (Google Business Profile, suburb pages, monthly content). Growth SEO runs $699/month with more content, more suburb pages, and review generation. Month-to-month, no lock-in." },
   { question: "How long does automotive SEO take to work?", answer: "Google Business Profile optimisations can show results in 4-6 weeks (you'll start appearing in more local pack searches). Suburb service pages take 2-4 months to rank. For competitive terms like \"mechanic Norwood\" expect 3-6 months. We give you an honest timeline in your free audit." },
   { question: "Will I rank for \"mechanic near me\" searches?", answer: "Yes — that's exactly what local SEO targets. \"Mechanic near me\" and \"panel beater near me\" are local pack searches. Ranking for them requires optimised GBP, reviews, suburb pages, citations, and local schema — all of which are in our standard local SEO package." },
   { question: "What about fleet and commercial work?", answer: "If you service commercial fleets, council vehicles, or mine-site equipment, we build dedicated commercial pages targeting those search terms (\"fleet mechanic Adelaide\", \"truck servicing SA\"). Much less competition than consumer auto, much higher job value per conversion." },
@@ -35,6 +39,13 @@ export default function AutomotiveSeoServicesPage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "SEO", href: "/seo" },
+          { label: "Automotive SEO Services" },
+        ]}
+      />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">Automotive SEO Adelaide</span>

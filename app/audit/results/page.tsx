@@ -6,9 +6,6 @@ import { AUDIT_EMAIL_KEY, AUDIT_STORAGE_KEY } from '@/lib/audit/questions';
 import { calculateAuditScore, type AuditAnswers } from '@/lib/audit/scoring';
 import { getRecommendations } from '@/lib/audit/recommendations';
 
-const PAYMENT_LINK =
-  process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK_URL ?? 'https://buy.stripe.com/test_placeholder_ai_adelaide_47';
-
 export default function AuditResultsPage() {
   const [answers, setAnswers] = useState<AuditAnswers | null>(null);
   const [email, setEmail] = useState('');
@@ -79,7 +76,7 @@ export default function AuditResultsPage() {
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/10 text-accent">✓</span>
-                <span><strong>Free PDF report</strong> ($47 paid option) with detailed action plan and dollar estimates.</span>
+                <span><strong>Free PDF report</strong> with detailed action plan and dollar estimates.</span>
               </li>
             </ul>
           </section>
@@ -93,8 +90,6 @@ export default function AuditResultsPage() {
     localStorage.setItem(AUDIT_EMAIL_KEY, email);
     setSaved(true);
   };
-
-  const paymentUrl = `${PAYMENT_LINK}${PAYMENT_LINK.includes('?') ? '&' : '?'}prefilled_email=${encodeURIComponent(email)}`;
 
   return (
     <main className="flex min-h-[calc(100vh-8rem)] items-center justify-center px-4 py-8 sm:px-6 sm:py-14">
@@ -137,7 +132,7 @@ export default function AuditResultsPage() {
 
         <section className="panel-light mt-6 p-6 sm:p-8">
           <h3 className="text-lg font-semibold text-slate-900">Save your results</h3>
-          <p className="mt-1 text-sm text-slate-600">Enter your email to prefill checkout and your report.</p>
+          <p className="mt-1 text-sm text-slate-600">Enter your email to prefill your full PDF report.</p>
 
           <form onSubmit={handleSaveEmail} className="mt-4 space-y-3">
             <input
@@ -149,24 +144,16 @@ export default function AuditResultsPage() {
               className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none ring-[#00D4AA] focus:ring"
             />
             <button type="submit" className="btn-secondary w-full">Save My Results</button>
-            {saved && <p className="text-xs text-[#00B894]">Saved — you&apos;re ready for checkout.</p>}
+            {saved && <p className="text-xs text-[#00B894]">Saved — your full PDF report is ready.</p>}
           </form>
 
           <div className="mt-6 rounded-2xl border border-[#00D4AA]/30 bg-[#00D4AA]/10 p-4">
             <p className="text-sm text-slate-800">
-              Your score is free. Want the full personalised PDF with detailed ROI estimates and an action plan for websites, SEO, and AI automation? Unlock it for <strong>$47 AUD</strong>.
+              Your score is free. Get the full personalised PDF with detailed ROI estimates and an action plan for websites, SEO, and AI automation — no charge.
             </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              <a
-                href={paymentUrl}
-                className="btn-primary w-full text-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Pay $47 for Full PDF →
-              </a>
-              <Link href="/audit/report" className="btn-secondary w-full text-center">
-                Already paid? Generate Report
+            <div className="mt-4">
+              <Link href="/audit/report" className="btn-primary w-full text-center block">
+                Get My Free Full PDF Report →
               </Link>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
 
 export const metadata: Metadata = {
   title: "Website Cost Adelaide | From $699 (2026 Guide)",
@@ -119,6 +120,66 @@ const costBreakdown = [
   { item: "SEO (optional)", cost: "$399+/mo", note: "Only if you want to rank on Google" },
 ];
 
+const tierBreakdown = [
+  {
+    name: "Starter",
+    price: "$699",
+    tagline: "Get online fast",
+    liveIn: "Live in 48 hours",
+    features: [
+      "3-page custom website (Home, Services, Contact)",
+      "Mobile-first responsive design",
+      "Click-to-call button",
+      "Contact form with email notifications",
+      "Basic SEO setup (title tags, meta descriptions)",
+      "Google Business Profile setup",
+    ],
+    bestFor: "Sole traders, new businesses, anyone with no website at all",
+  },
+  {
+    name: "Business",
+    price: "$1,299",
+    tagline: "Most popular",
+    liveIn: "Live in 5-7 days",
+    features: [
+      "5-7 page custom website",
+      "Blog setup with CMS",
+      "SEO foundation (schema, sitemap, canonical tags)",
+      "One suburb service page included",
+      "Google Business Profile optimisation",
+      "Lead capture form + AI automation-ready",
+      "1 month of SEO setup included",
+    ],
+    bestFor: "Established businesses ready to grow online",
+  },
+  {
+    name: "Growth",
+    price: "$2,499",
+    tagline: "Full growth engine",
+    liveIn: "Live in 10-14 days",
+    features: [
+      "10+ page custom website",
+      "Blog with 3 starter articles",
+      "Full SEO setup (schema, internal links, keyword targeting)",
+      "Three suburb service pages included",
+      "Google Business Profile + Bing Places setup",
+      "AI automation integrations (missed call, booking, reviews)",
+      "1 month SEO retainer included",
+    ],
+    bestFor: "Businesses wanting to dominate their local area",
+  },
+];
+
+const industryLinks = [
+  { href: "/websites-for-plumbers-adelaide", label: "Websites for Plumbers" },
+  { href: "/websites-for-electricians-adelaide", label: "Websites for Electricians" },
+  { href: "/websites-for-clinics-adelaide", label: "Websites for Clinics" },
+  { href: "/websites-for-cafes-adelaide", label: "Websites for Cafes" },
+  { href: "/websites-for-hairdressers-adelaide", label: "Websites for Hairdressers" },
+  { href: "/websites-for-beauty-salons-adelaide", label: "Websites for Beauty Salons" },
+  { href: "/websites-for-retail-shops-adelaide", label: "Websites for Retail Shops" },
+];
+
 const faqs = [
   {
     question: "How much does a basic website cost in Adelaide?",
@@ -149,6 +210,26 @@ const faqs = [
     question: "Can I get a website for free?",
     answer:
       "Technically yes — Google Sites, free Wix plans, Facebook pages. But free sites look free. They have ads, limited features, no custom domain, and Google ranks them poorly. A $699 investment in a real website pays for itself with one or two new customers.",
+  },
+  {
+    question: "How can AI Adelaide charge $699 when agencies charge $5,000+?",
+    answer:
+      "AI handles the time-consuming parts — first-draft copywriting, layout variations, meta tag generation, and SEO setup — that agencies bill hours for. A human still reviews and refines every site before it goes live, but the labour cost per site drops dramatically. That's the whole reason a $699 price point is possible without cutting corners on quality.",
+  },
+  {
+    question: "What's the difference between the $699, $1,299, and $2,499 tiers?",
+    answer:
+      "Starter ($699) is a 3-page site live in 48 hours — enough to look professional and get found. Business ($1,299) adds a blog, one suburb page, and a month of SEO setup — most popular for businesses ready to grow. Growth ($2,499) is 10+ pages with three suburb pages, full SEO setup, and AI automation integrations built in — for businesses serious about dominating local search. See the full breakdown on our pricing page.",
+  },
+  {
+    question: "Can I start with Starter and upgrade later?",
+    answer:
+      "Yes. Most businesses that start on Starter ($699) upgrade to Business once they're ready to invest in SEO and content — you're not locked into the tier you started with, and you only pay the difference, not the full price again.",
+  },
+  {
+    question: "Do prices differ by industry — is a website for a clinic more expensive than for a tradie?",
+    answer:
+      "No — the three tiers and their prices are the same across every industry. What differs is which tier makes sense: a solo tradie often fits Starter or Business, while a multi-practitioner clinic or a business serving many suburbs usually needs Business or Growth for the extra pages and suburb targeting. See our industry-specific guides below for what to prioritise in your build.",
   },
 ];
 
@@ -287,6 +368,152 @@ export default function WebsiteCostAdelaidePage() {
         </div>
       </section>
 
+      {/* What Each Tier Includes */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            What Each AI Adelaide Tier Actually Includes
+          </h2>
+          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
+            "From $699" doesn't tell you what you get. Here's exactly what's in each tier, so you can pick the right one instead of guessing.
+          </p>
+          <div className="grid gap-4 md:grid-cols-3">
+            {tierBreakdown.map((tier) => (
+              <div key={tier.name} className="panel-light-soft p-5 md:p-6">
+                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">{tier.tagline}</p>
+                <h3 className="mt-2 mb-1 text-h3-mobile text-slate-950 md:text-h3">{tier.name}</h3>
+                <p className="mb-1 text-2xl font-bold text-slate-950">{tier.price}</p>
+                <p className="mb-4 text-xs text-slate-500">{tier.liveIn}</p>
+                <ul className="mb-4 space-y-1.5">
+                  {tier.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-slate-700">
+                      <span className="mt-0.5 text-accent">✓</span>
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="border-t border-slate-200/80 pt-3 text-xs text-slate-500">
+                  <strong className="text-slate-700">Best for:</strong> {tier.bestFor}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-slate-500">
+            Full pricing, add-ons, and package comparisons on our{" "}
+            <Link href="/website-pricing" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              website pricing page
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
+      {/* Why AI Makes $699 Possible */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Why AI Makes a $699 Website Possible
+          </h2>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            The honest question every Adelaide business owner asks: if agencies charge $5,000-15,000, how can AI Adelaide charge $699 for something that isn't a cheap template?
+          </p>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            The answer is where the hours go. A traditional agency website involves a strategy session, a copywriter drafting pages from scratch, a designer building layouts by hand, a developer coding it up, an SEO specialist setting up metadata and schema separately, and multiple rounds of internal review — each step billed at an hourly or project rate. That's where the $5,000+ price tag comes from: it's mostly labour, not materials.
+          </p>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            AI Adelaide uses AI to handle the first pass of the time-consuming parts — drafting copy tailored to your business and suburb, generating layout variations, writing meta titles and descriptions, and setting up the technical SEO foundation (schema markup, sitemap entries, canonical tags) that usually needs a specialist. A human still reviews, edits, and approves every page before it goes live — nothing ships without human sign-off — but the hours spent per site drop from days to hours. That difference is passed straight through as a lower price, not a lower-quality product.
+          </p>
+          <p className="text-body-mobile text-slate-700 md:text-body">
+            It's the same reason budget template shops are cheap in a different way: they skip the work entirely and hand you a generic layout. AI Adelaide doesn't skip the work — it just does the work faster, so a custom, SEO-ready website is affordable for a business that could never justify a $10,000 agency invoice.
+          </p>
+        </div>
+      </section>
+
+      {/* What affects price within a tier */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            What Actually Moves the Price Within Each Tier
+          </h2>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            The three tiers above ($699, $1,299, $2,499) are fixed prices — not "starting from" figures that creep up once you're in a conversation. But the right tier for your business depends on a few practical factors worth thinking through before you book.
+          </p>
+          <h3 className="mb-2 mt-6 text-h3-mobile text-slate-950 md:text-h3">How many pages you actually need</h3>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            A sole trader with one service and one location fits comfortably in the 3-page Starter tier: home, services, contact. A business with multiple service lines, multiple locations, or a genuine content library (case studies, guides, a blog) needs the extra pages in Business or Growth. More pages generally means more SEO surface area too — each page is a chance to rank for a different search.
+          </p>
+          <h3 className="mb-2 mt-6 text-h3-mobile text-slate-950 md:text-h3">Whether you need suburb targeting</h3>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            If you only serve one suburb or a tight radius, you don't need suburb pages — Starter is enough. If you service multiple suburbs across Adelaide (most tradies and many clinics do), each suburb page is a separate ranking opportunity for "[service] [suburb]" searches. Business includes one, Growth includes three — additional suburb pages can be added later as a smaller add-on rather than paying for the next tier up just for pages you won't use.
+          </p>
+          <h3 className="mb-2 mt-6 text-h3-mobile text-slate-950 md:text-h3">Whether you're ready for SEO and automation yet</h3>
+          <p className="text-body-mobile text-slate-700 md:text-body">
+            The build price and the ongoing SEO/automation retainers are separate decisions. Some businesses want to launch a website first, see how it performs, and add SEO a few months in once the site itself is proven. Others want to launch and rank at the same time. Neither is wrong — but it's worth deciding upfront so the "total cost" figure you're comparing against other quotes reflects what you're actually planning to spend, not just the one-off build price.
+          </p>
+        </div>
+      </section>
+
+      {/* Pricing traps */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Pricing Traps to Watch for When Comparing Quotes
+          </h2>
+          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
+            Website quotes rarely show the full picture upfront. Here's what to check before you sign anything.
+          </p>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">"From $X" that isn't really $X</h3>
+              <p className="text-body-mobile text-slate-700 md:text-body">
+                Some quotes advertise a low starting price, then add a "design fee," a "content fee," and a "launch fee" once you're already committed. Ask upfront: is this the total cost, or is it the starting point for extras?
+              </p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Ownership and lock-in</h3>
+              <p className="text-body-mobile text-slate-700 md:text-body">
+                Some agencies and platforms host your site on their infrastructure, which means leaving means starting over. Ask who owns the domain, who owns the content, and what happens if you want to switch providers later.
+              </p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Recurring fees that aren't disclosed upfront</h3>
+              <p className="text-body-mobile text-slate-700 md:text-body">
+                Hosting, domain renewal, "maintenance" fees, and per-change charges add up. Ask for the full ongoing monthly or annual cost, not just the build price, before comparing two quotes side by side.
+              </p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">SEO left out entirely</h3>
+              <p className="text-body-mobile text-slate-700 md:text-body">
+                A website with no SEO foundation — no schema, no sitemap, no meta tags, no suburb targeting — won't show up on Google no matter how good it looks. Ask whether basic SEO is included in the build price or sold separately.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry-specific pricing */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Website Costs by Industry
+          </h2>
+          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
+            The $699-2,499 pricing above applies across industries — but the right tier and the specific features that matter most vary by trade. See what a website costs (and what it should include) for your industry:
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+            {industryLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5"
+              >
+                {link.label} →
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Real Example */}
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
@@ -316,12 +543,75 @@ export default function WebsiteCostAdelaidePage() {
               </li>
             </ul>
             <div className="mt-5 border-t border-slate-200/80 pt-4">
-              <p className="text-lg font-bold text-slate-950">Year 1 total: $6,559 (with SEO) or $1,761 (without SEO)</p>
+              <p className="text-lg font-bold text-slate-950">Year 1 total: $6,349 (with SEO) or $1,561 (without SEO)</p>
               <p className="mt-2 text-sm text-slate-600">
                 Compare that to $10,000-15,000+ at a boutique agency — and you get the same or better result for a local tradie site.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Two more worked examples */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
+            Two More Examples: Starter and Growth Tiers
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">A New Cafe (Starter Tier)</h3>
+              <p className="mb-3 text-body-mobile text-slate-700 md:text-body">
+                A newly opened cafe just needs to look legitimate on Google and give customers hours, menu, and location. No blog, no SEO retainer yet.
+              </p>
+              <ul className="space-y-1.5 text-sm text-slate-700">
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Website (Starter tier):</strong> $699 one-off</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Domain (.com.au):</strong> $22/year</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Hosting:</strong> $20/month ($240/year)</span></li>
+              </ul>
+              <p className="mt-4 border-t border-slate-200/80 pt-3 font-bold text-slate-950">Year 1 total: $961</p>
+            </div>
+            <div className="panel-light-soft p-5 md:p-6">
+              <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">An Established Clinic (Growth Tier)</h3>
+              <p className="mb-3 text-body-mobile text-slate-700 md:text-body">
+                A clinic with several practitioners wants to rank across multiple suburbs and integrate booking automation from day one.
+              </p>
+              <ul className="space-y-1.5 text-sm text-slate-700">
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Website (Growth tier):</strong> $2,499 one-off</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Domain (.com.au):</strong> $22/year</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Hosting:</strong> $20/month ($240/year)</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Growth SEO retainer:</strong> $699/month</span></li>
+                <li className="flex items-start gap-2"><span className="mt-0.5 text-accent">✓</span><span><strong>Automation Starter:</strong> $199/month</span></li>
+              </ul>
+              <p className="mt-4 border-t border-slate-200/80 pt-3 font-bold text-slate-950">Year 1 total: $13,537</p>
+              <p className="mt-2 text-sm text-slate-600">Still well under a premium agency's $15,000-50,000+ range — with a comparable full-service build.</p>
+            </div>
+          </div>
+          <p className="mt-6 text-sm text-slate-500">
+            None of these totals include SEO or automation unless the business chose to add them — every add-on above is optional, and every price shown here is the exact figure from our{" "}
+            <Link href="/website-pricing" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              pricing page
+            </Link>
+            , not a rounded estimate.
+          </p>
+        </div>
+      </section>
+
+      {/* Quick decision guide */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            A Quick Way to Pick Your Tier
+          </h2>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            If you're still weighing it up, a rough rule of thumb works better than agonising over the spec sheet. If you have no website at all today and just need something live and professional this week, Starter ($699) solves that problem completely — you can always add SEO or more pages later without rebuilding anything.
+          </p>
+          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
+            If you already have some kind of web presence but it's not bringing in leads, or you know you'll want a blog and at least one suburb page soon, Business ($1,299) is usually the better starting point — it includes a month of SEO setup so you're not starting from zero on search visibility.
+          </p>
+          <p className="text-body-mobile text-slate-700 md:text-body">
+            If you're actively trying to out-rank competitors across several suburbs, or you already know missed calls and slow follow-up are costing you jobs, Growth ($2,499) bundles the suburb pages and automation groundwork you'd otherwise buy piecemeal. None of this is a permanent decision — every tier can be upgraded, and nothing here locks you into a contract you can't get out of.
+          </p>
         </div>
       </section>
 
@@ -341,6 +631,8 @@ export default function WebsiteCostAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <StackCTA variant="website" />
 
       {/* CTA */}
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">

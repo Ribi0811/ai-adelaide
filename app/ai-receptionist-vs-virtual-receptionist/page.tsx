@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist vs Virtual Receptionist Adelaide",
+  // Phase 8 punch list P4: rendered title was 62 chars (max 60).
+  title: "AI Receptionist vs Virtual Receptionist",
   description:
     "Compare AI receptionist vs virtual receptionist for Adelaide businesses on cost, coverage, setup speed, scalability, and after-hours support.",
   alternates: {
@@ -317,6 +319,8 @@ export default function ComparisonPage() {
           </div>
         </div>
       </section>
+
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "What's the cost of an AI missed-call service?",
     answer:
-      "Missed-call text-back alone from $99/month. Full AI receptionist from $199/month. Both flat monthly, no per-call charges. Most Adelaide small businesses see ROI within the first 30 days.",
+      "AI automation — missed-call text-back and full AI receptionist — starts from $199/month. Flat monthly, no per-call charges. Most Adelaide small businesses see ROI within the first 30 days.",
   },
   {
     question: "How long does it take to set up?",
@@ -132,7 +132,7 @@ export default function LostLeadsCalculatorPage() {
               <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Step 1</p>
               <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Add AI text-back</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                SMS in 5-20 seconds. Asks 2-3 qualifying questions. Sends you a clean summary. Recovers 60%+ of missed leads. From $99/month.
+                SMS in 5-20 seconds. Asks 2-3 qualifying questions. Sends you a clean summary. Recovers 60%+ of missed leads. From $199/month.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/80 bg-white p-5 md:p-6">

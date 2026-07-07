@@ -49,7 +49,7 @@ export const posts: Post[] = [
   <li>Details are pushed into your CRM/job management app and tagged by urgency.</li>
   <li>If no reply, one gentle follow-up is sent the next morning.</li>
 </ul>
-<p>That is it. No hype. Just a faster front door. Our <a href="/services/ai-receptionist">AI receptionist service</a> handles this automatically for Adelaide tradies — find out how at our <a href="/contact">Adelaide office</a>.</p>
+<p>That is it. No hype. Just a faster front door. Our <a href="/ai-receptionist-adelaide">AI receptionist service</a> handles this automatically for Adelaide tradies — find out how at our <a href="/contact">Adelaide office</a>.</p>
 <h2>A realistic Adelaide example</h2>
 <p>One two-person electrical business in the eastern suburbs was averaging about 55 inbound calls a week. They missed around 14. Before automation, they recovered only 3-4 of those missed calls.</p>
 <p>After implementing automated follow-up:</p>
@@ -94,7 +94,7 @@ export const posts: Post[] = [
 <p>The missed-call problem affects every trade, but the dynamics vary significantly depending on what you do:</p>
 
 <h3>Emergency trades (plumbers, electricians, HVAC)</h3>
-<p>These tradies face the highest urgency. A burst pipe or no power demands immediate action. Callers who cannot reach you will call the next number within 60 seconds. Automated SMS response is non-negotiable — you are losing high-value emergency work every time you miss a call during business hours. For electricians specifically, our <a href="/ai-for-electricians-adelaide">AI for electricians guide</a> covers this in detail.</p>
+<p>These tradies face the highest urgency. A burst pipe or no power demands immediate action. Callers who cannot reach you will call the next number within 60 seconds. Automated SMS response is non-negotiable — you are losing high-value emergency work every time you miss a call during business hours. For electricians specifically, our <a href="/websites-for-electricians-adelaide">AI for electricians guide</a> covers this in detail.</p>
 
 <h3>Scheduled trades (painters, builders, landscapers)</h3>
 <p>The urgency is lower but the value per call is higher. A painting quote might be worth $3,000-15,000. Missing one call is not just a $400 loss — it is potentially a $10,000 contract. The callback window is longer (callers will wait a few hours), but the stakes per call are much bigger. Quote follow-up automation matters as much as missed-call response for these trades.</p>
@@ -490,7 +490,7 @@ export const posts: Post[] = [
 
 <p>Whether you're a solo tradie working out of your van, a small team serving residential clients across Adelaide's suburbs, or a commercial specialist working on major projects in the CBD, AI automation offers practical, affordable tools to overcome the unique challenges of running an electrical business in Adelaide while increasing your profitability and improving your work-life balance. A well-built <a href="/website-design-adelaide">trade business website</a> also helps you rank higher on Google and capture more of those enquiries in the first place — see our <a href="/seo">SEO services</a> for details.</p>
 
-<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/services/ai-receptionist">AI receptionist services</a> and <a href="/services/automation">automation solutions</a> — <a href="/contact">get in touch</a> to find out more. For more tradie-specific insights, read our guide on <a href="/blog/why-tradies-lose-money-missed-calls">why tradies lose money to missed calls</a>.</p>`,
+<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/ai-receptionist-adelaide">AI receptionist services</a> and <a href="/ai-automation-adelaide">automation solutions</a> — <a href="/contact">get in touch</a> to find out more. For more tradie-specific insights, read our guide on <a href="/blog/why-tradies-lose-money-missed-calls">why tradies lose money to missed calls</a>.</p>`,
     seoDescription: "Adelaide electricians use AI automation to capture after-hours calls, automate quote follow-ups, and cut admin by 50%. Practical guide with ROI."
   },
 {
@@ -690,7 +690,7 @@ export const posts: Post[] = [
 
 <p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work. If you also need a <a href="/website-design-adelaide">website that showcases your Hills business</a> or want to improve your <a href="/seo">local SEO rankings</a>, we can help with that too.</p>
 
-<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/services/automation">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or <a href="/contact">get in touch</a> to start. See also our guide on <a href="/blog/5-signs-ready-for-ai-automation">5 signs your business is ready for AI automation</a>.</p>
+<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/ai-automation-adelaide">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or <a href="/contact">get in touch</a> to start. See also our guide on <a href="/blog/5-signs-ready-for-ai-automation">5 signs your business is ready for AI automation</a>.</p>
 
 
 <h2>Why Hills Businesses Have More to Gain Than City Businesses</h2>
@@ -701,7 +701,7 @@ export const posts: Post[] = [
   <li><strong>Limited staff means limited hours:</strong> A cafe in <a href="/hahndorf">Hahndorf</a> with four staff members cannot afford to have someone dedicated to answering phones and responding to online enquiries. But every unanswered enquiry is a lost booking. AI automation fills this gap without adding headcount.</li>
   <li><strong>Seasonal trade means seasonal revenue:</strong> Businesses in <a href="/stirling">Stirling</a> and Hahndorf see 60-70 percent of their annual revenue in the November-March tourist season. AI automation helps capture more of that peak trade while nurturing locals through the quieter months.</li>
   <li><strong>Geographic isolation means slower response times:</strong> When the nearest competing business is 20 minutes away, customers are less likely to shop around. But when they do search online, the businesses that respond first win. AI automation gives Hills businesses city-level responsiveness without city-level staffing costs.</li>
-  <li><strong>Smaller local markets mean every customer matters more:</strong> In a suburb of <a href="/adelaide">Adelaide</a>, losing one customer is inconvenient. In a town of 5,000 people, losing one customer is a real dent in your revenue. Automation that prevents customer loss — through no-shows, missed calls, or poor follow-up — has an outsized impact in smaller communities.</li>
+  <li><strong>Smaller local markets mean every customer matters more:</strong> In a suburb of <a href="/services">Adelaide</a>, losing one customer is inconvenient. In a town of 5,000 people, losing one customer is a real dent in your revenue. Automation that prevents customer loss — through no-shows, missed calls, or poor follow-up — has an outsized impact in smaller communities.</li>
 </ul>
 
 <h2>Seasonal Strategy: Automating for the Tourist Peak</h2>
@@ -745,7 +745,7 @@ export const posts: Post[] = [
   <li><strong>Silent online presence</strong> — your Google reviews are stale or nonexistent, and tourists cannot find you. Solution: automated review generation after every customer interaction. Set up time: 1-2 days. Cost: $50-100/month.</li>
 </ul>
 
-<p>Pick one. Implement it. Measure the result for 30 days. Then add the next one. The businesses that get the best results from automation are not the ones who implement everything at once. They are the ones who start with one problem, prove it works, and build from there. Our <a href="/services/automation">automation team</a> specialises in helping <a href="/adelaide">Adelaide</a> and Hills businesses get started — <a href="/contact">book a free consultation</a> to discuss your specific situation.</p>
+<p>Pick one. Implement it. Measure the result for 30 days. Then add the next one. The businesses that get the best results from automation are not the ones who implement everything at once. They are the ones who start with one problem, prove it works, and build from there. Our <a href="/ai-automation-adelaide">automation team</a> specialises in helping <a href="/services">Adelaide</a> and Hills businesses get started — <a href="/contact">book a free consultation</a> to discuss your specific situation.</p>
 
 
 <h2>Common Mistakes Hills Businesses Make With Automation</h2>
@@ -754,7 +754,7 @@ export const posts: Post[] = [
 
 <p>It does work. But it works best when you start with your single biggest pain point and solve it completely before adding the next layer. For most Hills businesses, that pain point is one of three things: missed calls during peak service, no-shows for appointment-based services, or inconsistent review collection. Pick one, implement it, measure it for 30 days, and then add the next. Each layer should pay for itself before you invest in the next one.</p>
 
-<p>The second mistake is choosing a system designed for city businesses with full-time receptionists and dedicated IT staff. Hills businesses need simple, reliable systems that work with minimal configuration and maintenance. If the setup takes more than a few hours, it is too complicated. If you need to call support every week, it is too fragile. The best automation for a Hills business is the one you set up once and forget about — it just works in the background, capturing leads, reducing no-shows, and collecting reviews. That is what our <a href="/services/automation">automation services</a> are designed to deliver. <a href="/contact">Get in touch</a> for a free consultation.</p>
+<p>The second mistake is choosing a system designed for city businesses with full-time receptionists and dedicated IT staff. Hills businesses need simple, reliable systems that work with minimal configuration and maintenance. If the setup takes more than a few hours, it is too complicated. If you need to call support every week, it is too fragile. The best automation for a Hills business is the one you set up once and forget about — it just works in the background, capturing leads, reducing no-shows, and collecting reviews. That is what our <a href="/ai-automation-adelaide">automation services</a> are designed to deliver. <a href="/contact">Get in touch</a> for a free consultation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -768,7 +768,7 @@ export const posts: Post[] = [
 <p>AI automation is particularly valuable for seasonal businesses because it can scale up and down. During peak season, the AI handles the flood of enquiries. During quiet season, it shifts to nurturing your local customer base. You are not paying for capacity you do not need, and you are not missing bookings during the months when every customer counts.</p>
 
 <h3>How do I get started?</h3>
-<p>Start with the problem that costs you the most money right now. For most Hills businesses, that is either missed calls during peak season or no-shows for appointment-based services. Implement one automation, measure the result for 30 days, and then add the next one. Our <a href="/services/automation">automation team</a> can help you identify the right starting point — <a href="/contact">get in touch</a> for a free consultation. We also build <a href="/website-design-adelaide">websites for Hills businesses</a> and provide <a href="/seo">local SEO</a> to help tourists find you on Google.</p>
+<p>Start with the problem that costs you the most money right now. For most Hills businesses, that is either missed calls during peak season or no-shows for appointment-based services. Implement one automation, measure the result for 30 days, and then add the next one. Our <a href="/ai-automation-adelaide">automation team</a> can help you identify the right starting point — <a href="/contact">get in touch</a> for a free consultation. We also build <a href="/website-design-adelaide">websites for Hills businesses</a> and provide <a href="/seo">local SEO</a> to help tourists find you on Google.</p>
 
 <h3>Does this work for businesses in smaller Hills towns?</h3>
 <p>Absolutely. In fact, smaller towns benefit more because every customer matters more and word of mouth travels faster. A business in Crafers or <a href="/mount-barker">Mount Barker</a> that responds to every enquiry and builds a strong online reputation can dominate their local market in a way that is much harder in a city with hundreds of competitors. AI automation levels the playing field and gives small-town businesses the same responsiveness as city operations.</p>
@@ -777,15 +777,17 @@ export const posts: Post[] = [
   },
 {
     slug: "is-ai-audit-worth-it-small-business",
-    title: "Is a $247 AI Audit Worth It for Adelaide SMBs?",
+    // Phase 8 punch list P4: rendered title was 80 chars (max 60) — a
+    // self-inflicted regression from the P3 rewrite of this post.
+    title: "We Used to Charge $247 for This AI Audit",
     excerpt:
-      "A lot of owners see a $247 AI audit and assume it is either fluff or a disguised sales pitch. A proper audit should give you practical opportunities, real numbers, and a clear priority list whether or not you buy implementation. Here is what a good audit includes and when it pays for itself fast.",
-    date: "2026-02-13",
+      "We used to charge $247 for our AI automation audit. We don't anymore — it's free for Adelaide small businesses. A proper audit should still give you practical opportunities, real numbers, and a clear priority list whether or not you buy implementation. Here is what a good audit includes and why we stopped charging for it.",
+    date: "2026-07-04",
     readTime: "9 min read",
     category: "How-To",
-    seoDescription: "Is a $247 AI audit worth it for Adelaide small businesses? Learn what a proper audit covers and when it pays for itself.",
-    content: `<p>If you run a small business in Adelaide, $247 is not nothing. It might be a day of ads, part of payroll, or a supplier invoice. So asking whether an <a href="/ai-automation-adelaide">AI automation</a> audit is worth it is exactly the right question.</p>
-<p>The short answer: it is worth it when the audit is specific, commercial, and implementation-ready. It is not worth it when it is generic advice dressed up with buzzwords.</p>
+    seoDescription: "Our AI audit used to cost $247 — it's completely free now for Adelaide small businesses. Learn what a proper audit covers and why we made the change.",
+    content: `<p>We used to charge $247 for our <a href="/ai-automation-adelaide">AI automation</a> audit. We don't anymore — it's free. We charged for it long enough to know it was worth the money; we made it free because the biggest barrier to a business getting real clarity on where it's leaking time and revenue shouldn't be a price tag. So the question isn't "is it worth $247" anymore — it's "is a free audit worth an hour of your time." Almost always, yes.</p>
+<p>The short answer: it is worth it when the audit is specific, commercial, and implementation-ready. It is not worth it when it is generic advice dressed up with buzzwords — and that's true whether it costs $247 or nothing.</p>
 <h2>What an AI audit should actually cover</h2>
 <p>A useful audit is not "let's brainstorm cool tools." It is a structured review of where your business is leaking money, time, and lead quality.</p>
 <p>At minimum, a solid audit should include:</p>
@@ -797,7 +799,7 @@ export const posts: Post[] = [
   <li><strong>90-day rollout plan:</strong> What to build first, second, and later.</li>
 </ul>
 <p>If you leave without numbers and priorities, you did not get a real audit.</p>
-<h2>What you should receive for $247</h2>
+<h2>What You Should Receive From the Audit</h2>
 <p>In practical terms, most Adelaide small businesses should expect:</p>
 <ul>
   <li>A concise report (usually PDF) with clear recommendations in plain language.</li>
@@ -807,8 +809,8 @@ export const posts: Post[] = [
   <li>A short debrief call where questions are answered directly.</li>
 </ul>
 <p>This is valuable even if you never proceed with the same provider, because it gives you a roadmap you can execute internally or with another team.</p>
-<h2>Simple ROI check: break-even is low</h2>
-<p>To justify $247, your business only needs one of these outcomes:</p>
+<h2>Why It's Worth an Hour of Your Time</h2>
+<p>Since the audit costs nothing but time, the bar for it being worthwhile is low. Any one of these outcomes justifies the hour:</p>
 <ul>
   <li>Recover one medium-value job you would have lost</li>
   <li>Save 2-3 admin hours per week at owner/manager time value</li>
@@ -823,7 +825,7 @@ export const posts: Post[] = [
   <li>2 extra booked jobs per week at ~$380 average</li>
   <li>~1.5 admin hours saved weekly on manual follow-up</li>
 </ul>
-<p>Audit cost recovered in the first week if conversion assumptions hold.</p>
+<p>That alone is worth far more than the hour spent on the audit — and the audit itself cost nothing.</p>
 <h3>2) Allied health clinic (front desk + practitioners)</h3>
 <p>Audit reveals reminder timing is too generic and rebooking prompts are inconsistent. Recommendation: segmented reminders (new vs returning patients), confirmation capture, waitlist fill workflow.</p>
 <p>Estimated impact:</p>
@@ -831,7 +833,7 @@ export const posts: Post[] = [
   <li>No-shows drop from 9% to around 5-6%</li>
   <li>1-2 extra appointments reclaimed per week</li>
 </ul>
-<p>In most clinic models, that covers audit cost quickly.</p>
+<p>In most clinic models, that's a meaningful weekly gain for an hour spent finding it.</p>
 <h3>3) Retail and services hybrid store</h3>
 <p>Audit identifies repeated answer load in DMs/messages and patchy review collection. Recommendation: FAQ assistant + post-purchase review and referral prompts.</p>
 <p>Estimated impact:</p>
@@ -858,13 +860,13 @@ export const posts: Post[] = [
 </ul>
 <p>Good providers answer clearly and do not dodge practical questions.</p>
 <h2>Bottom line</h2>
-<p>A $247 AI audit is worth it when it reduces guesswork and tells you exactly where to start. It should save you from random tool spending and focus you on one or two changes with measurable upside. You can also explore our <a href="/services">full range of services</a> to see what implementation could look like.</p>
-<p>If the audit gives you clarity, a priority stack, and realistic returns, it is not a cost. It is cheap insurance against wasting months on the wrong implementation. <a href="/contact">Book a free chat</a> with our team to get started, or check our <a href="/website-pricing">website and automation pricing</a>.</p>
+<p>A free AI audit is worth it when it reduces guesswork and tells you exactly where to start. It should save you from random tool spending and focus you on one or two changes with measurable upside. You can also explore our <a href="/services">full range of services</a> to see what implementation could look like.</p>
+<p>If the audit gives you clarity, a priority stack, and realistic returns, it costs you nothing but an hour. It is free insurance against wasting months on the wrong implementation. <a href="/contact">Book a free chat</a> with our team to get started, or check our <a href="/website-pricing">website and automation pricing</a>.</p>
 <h2>Real-World Example: One Tradesman's Audit Journey</h2>
 <p>Take a local painter we worked with recently. He had been in business for eight years, decent Google ranking, steady referral flow. He figured his problem was just not enough hours in the day.</p>
 <p>After a focused audit, the picture changed. His biggest leak was not admin. It was quote follow-up. He was sending out 12-15 quotes a month and converting roughly 40 percent of them. The audit showed he was calling back on only about half his quotes within 72 hours. The rest went cold while he focused on current jobs.</p>
 <p>Setting up a simple three-touch follow-up sequence lifted his quote conversion to 58 percent within two months. That eight-point jump translated to roughly four extra jobs per month at an average value of $650. An additional $2,600 per month in revenue from a workflow that runs on autopilot once set up.</p>
-<p>The audit itself cost $247. The first recovered job paid for it three times over.</p>
+<p>That workflow change alone was worth far more than the $247 we used to charge for the audit — and by the time he came to us, it was free.</p>
 <h2>FAQ: Business Owners Ask Before Paying</h2>
 <h3>"What if my business is too small for automation to make sense?"</h3>
 <p>If you are a sole trader doing $80k-$100k annually and you handle every enquiry personally with minimal friction, automation may not be urgent yet. But if you are turning work away because you cannot keep up with enquiries, or you are losing track of quotes and follow-ups, the numbers usually work out quickly.</p>
@@ -875,7 +877,7 @@ export const posts: Post[] = [
 <h3>"Can I do this myself or do I need a third party?"</h3>
 <p>You can audit yourself if you have strong systems thinking and time to dig in. But most business owners find external perspective valuable precisely because they cannot see their own blind spots. A structured audit from someone who works with Adelaide businesses daily understands what local market conditions look like and what actually works in this region.</p>
 <h3>"What happens if I get the audit and do nothing?"</h3>
-<p>The audit report itself is still useful. Even if you never implement through the same provider, you have a prioritised list of opportunities and a basic roadmap. You can execute parts of it yourself or take it to another provider. The downside is minimal — you spent $247 and two hours to gain clarity. That is not a poor investment by any measure.</p>
+<p>The audit report itself is still useful. Even if you never implement through the same provider, you have a prioritised list of opportunities and a basic roadmap. You can execute parts of it yourself or take it to another provider. The downside is minimal — you spent an hour or two of your time to gain clarity, for free. That is not a poor investment by any measure.</p>
 <h2>How to Know You Found a Good Provider</h2>
 <p>The providers who tend to deliver real audits share a few traits:</p>
 <ul>
@@ -890,7 +892,7 @@ export const posts: Post[] = [
 
 <h2>What a Bad Audit Looks Like</h2>
 
-<p>Not all audits are worth $247. Some are thinly disguised sales pitches that spend 45 minutes telling you how terrible everything is and 15 minutes pushing a single expensive package. Here are the red flags:</p>
+<p>Not every audit is worth your time, even a free one. Some are thinly disguised sales pitches that spend 45 minutes telling you how terrible everything is and 15 minutes pushing a single expensive package. Here are the red flags:</p>
 
 <ul>
   <li><strong>No specific numbers:</strong> If the auditor cannot tell you approximately how many leads you are losing, how many hours your team spends on repetitive tasks, or what your no-show rate is, they have not done their homework.</li>
@@ -900,7 +902,7 @@ export const posts: Post[] = [
   <li><strong>No phasing:</strong> If everything is "urgent" and needs to be done at once, the auditor is not prioritising. A good audit gives you a clear sequence: do this first, measure the result, then do this next.</li>
 </ul>
 
-<p>The difference between a $247 audit that changes your business and a $247 audit that gathers dust is specificity. The best audits feel like someone looked at your business through a magnifying glass and said "here are the three things that matter most, here is what they cost you, and here is the order to fix them."</p>
+<p>The difference between an audit that changes your business and one that gathers dust is specificity. The best audits feel like someone looked at your business through a magnifying glass and said "here are the three things that matter most, here is what they cost you, and here is the order to fix them."</p>
 
 <h2>The Hidden Value: What You Learn About Your Own Business</h2>
 
@@ -920,7 +922,7 @@ export const posts: Post[] = [
 
 <p>One of the biggest misconceptions about an AI audit is that it is designed to sell you something. A good audit is a diagnostic, like a health check. The doctor does not want you to be sick — they want to find problems early and treat them efficiently. Similarly, a good audit identifies the three to five areas where automation will have the biggest impact, ranks them by ROI, and gives you a realistic implementation timeline.</p>
 
-<p>The audit is not the implementation. It is the map. You can take that map and implement the recommendations yourself, work with the auditor, or give it to another provider. The value is in the clarity, not the execution. Knowing that missed calls are costing you $1,200 per week and that a $100/month system would fix it is worth $247 on its own — because without the audit, you might spend $500/month on the wrong solution.</p>
+<p>The audit is not the implementation. It is the map. You can take that map and implement the recommendations yourself, work with the auditor, or give it to another provider. The value is in the clarity, not the execution. Knowing that missed calls are costing you $1,200 per week and that a $100/month system would fix it is valuable on its own — because without the audit, you might spend $500/month on the wrong solution.</p>
 
 <h2>What Adelaide Business Owners Say After Getting Audited</h2>
 
@@ -928,7 +930,7 @@ export const posts: Post[] = [
 
 <p>A plumber in <a href="/salisbury">Salisbury</a> who completed the audit discovered he was missing 8-10 calls per week, not the 3-4 he had estimated. A clinic in <a href="/unley">Unley</a> found that their quote-to-booking conversion rate was 22 percent, not the 40 percent they had assumed. A retail shop in <a href="/marion">Marion</a> learned that their average response time to Instagram DMs was 18 hours, not the "few hours" they had guessed.</p>
 
-<p>In every case, the audit replaced assumptions with data. And data is what you need to make good decisions about where to invest your time and money. Whether you implement through <a href="/services/automation">our team</a> or someone else, the audit gives you a starting point that is grounded in reality, not guesswork.</p>
+<p>In every case, the audit replaced assumptions with data. And data is what you need to make good decisions about where to invest your time and money. Whether you implement through <a href="/ai-automation-adelaide">our team</a> or someone else, the audit gives you a starting point that is grounded in reality, not guesswork.</p>
 
 
 <h2>How to Prepare for Your Audit</h2>
@@ -942,12 +944,12 @@ export const posts: Post[] = [
   <li><strong>Be honest about your bandwidth:</strong> If you know you cannot implement anything for the next month, say so. A good audit will phase recommendations to fit your timeline, not overload you with changes you cannot act on.</li>
 </ul>
 
-<p>The audit itself typically takes 1-2 hours of your time. The preparation above takes 15-30 minutes. And the clarity you gain is often worth far more than the $247 price tag. Our team covers <a href="/adelaide">Adelaide</a> and surrounding areas — <a href="/contact">book your audit</a> to get started.</p>
+<p>The audit itself typically takes 1-2 hours of your time. The preparation above takes 15-30 minutes. And the clarity you gain is worth far more than the hour or two it takes — especially now that the audit itself is free. Our team covers <a href="/services">Adelaide</a> and surrounding areas — <a href="/contact">book your audit</a> to get started.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>What if my business is too small for automation to make sense?</h3>
-<p>If you are a sole trader doing $80-100k annually and you handle every enquiry personally with minimal friction, automation may not be urgent yet. But if you are turning work away because you cannot keep up with enquiries, or you are losing track of quotes and follow-ups, the numbers usually work out quickly. The audit will tell you one way or the other. If it does not make sense, you will know. And the $247 will have been well spent on clarity.</p>
+<p>If you are a sole trader doing $80-100k annually and you handle every enquiry personally with minimal friction, automation may not be urgent yet. But if you are turning work away because you cannot keep up with enquiries, or you are losing track of quotes and follow-ups, the numbers usually work out quickly. The audit will tell you one way or the other. If it does not make sense, you will know. And you will have spent an hour finding that out for free, rather than guessing.</p>
 
 <h3>I already use a CRM. Will the audit just tell me to buy more software?</h3>
 <p>A proper audit reviews what you already have and identifies what is not working. If the recommendation is always "buy our platform," that is a red flag. Good audits focus on the outcome, not a specific tool. Sometimes the fix is using your existing software differently. Sometimes it is one new integration. Sometimes it is nothing technical at all — just a workflow change.</p>
@@ -956,18 +958,18 @@ export const posts: Post[] = [
 <p>Most audits require one to two hours of your time: a discovery call or questionnaire, a walkthrough of your current setup, and a debrief presentation of findings. You do not need to prepare anything elaborate. Honest answers about where you lose time and money is enough.</p>
 
 <h3>Can I do this myself?</h3>
-<p>You can audit yourself if you have strong systems thinking and time to dig in. But most business owners find external perspective valuable precisely because they cannot see their own blind spots. A structured audit from someone who works with Adelaide businesses daily understands what local market conditions look like and what actually works in this region. Our team offers <a href="/services/automation">automation services</a> and <a href="/contact">free consultations</a> — reach out to discuss.</p>
+<p>You can audit yourself if you have strong systems thinking and time to dig in. But most business owners find external perspective valuable precisely because they cannot see their own blind spots. A structured audit from someone who works with Adelaide businesses daily understands what local market conditions look like and what actually works in this region. Our team offers <a href="/ai-automation-adelaide">automation services</a> and <a href="/contact">free consultations</a> — reach out to discuss.</p>
 
 <h3>What happens if I get the audit and do nothing?</h3>
-<p>The audit report itself is still useful. Even if you never implement through the same provider, you have a prioritised list of opportunities and a basic roadmap. You can execute parts of it yourself or take it to another provider. The downside is minimal — you spent $247 and two hours to gain clarity. That is not a poor investment by any measure. See our <a href="/website-pricing">pricing page</a> for audit and implementation packages.</p>
+<p>The audit report itself is still useful. Even if you never implement through the same provider, you have a prioritised list of opportunities and a basic roadmap. You can execute parts of it yourself or take it to another provider. The downside is minimal — you spent an hour or two of your time to gain clarity, for free. That is not a poor investment by any measure. See our <a href="/website-pricing">pricing page</a> for audit and implementation packages.</p>
 
 
 
-<h2>The $247 Audit vs Free Advice: What You Actually Get</h2>
+<h2>Our Free Audit vs. Generic Free Advice: What's Actually Different</h2>
 
-<p>Plenty of people offer free advice on AI automation. YouTube videos, blog posts, even some consultants who will give you a 15-minute phone call for nothing. So why pay $247 for an audit?</p>
+<p>Plenty of people offer free advice on AI automation. YouTube videos, blog posts, even some consultants who will give you a 15-minute phone call for nothing. Our audit is free too now — so what's the actual difference?</p>
 
-<p>The difference is specificity. Free advice tells you that missed calls are a problem. An audit tells you exactly how many calls you are missing, what they are costing you, and what the specific fix looks like for your business, your industry, and your suburb. Free advice tells you that automated reminders work. An audit tells you what time to send them, what to say, and what your projected no-show reduction will be based on clinics similar to yours in <a href="/adelaide">Adelaide</a>.</p>
+<p>The difference is specificity. Free advice tells you that missed calls are a problem. An audit tells you exactly how many calls you are missing, what they are costing you, and what the specific fix looks like for your business, your industry, and your suburb. Free advice tells you that automated reminders work. An audit tells you what time to send them, what to say, and what your projected no-show reduction will be based on clinics similar to yours in <a href="/services">Adelaide</a>.</p>
 
 <p>More importantly, a structured audit identifies things you did not know to ask about. Most business owners know their biggest pain point. They do not know their second and third biggest, or how much those are costing them relative to the first one. A good audit surfaces these hidden leaks and ranks them by financial impact, so you spend your money and time on the things that matter most.</p>
 
@@ -1074,7 +1076,7 @@ export const posts: Post[] = [
   <li>Admin time spent on reminder and fill activity</li>
 </ul>
 <p>If no-shows are above ~6%, there is usually a strong business case for action. A better reminder flow plus lightweight backfill logic is often enough to move the number meaningfully. You might also benefit from a <a href="/website-design-adelaide">clinic website</a> that makes booking easy for patients, or improved <a href="/seo">local SEO</a> to attract more new patients.</p>
-<p>The key lesson from this Norwood clinic is simple: you do not need "more AI." You need the right automation at the right point in the patient journey. <a href="/services/automation">Our automation team</a> can help you build this for your clinic — <a href="/contact">get in touch</a>.</p>
+<p>The key lesson from this Norwood clinic is simple: you do not need "more AI." You need the right automation at the right point in the patient journey. <a href="/ai-automation-adelaide">Our automation team</a> can help you build this for your clinic — <a href="/contact">get in touch</a>.</p>
 <h2>What to Track Before You Build Anything</h2>
 <p>Before implementing any reminder or automation system, spend four weeks documenting your baseline. You need to know where you are starting from to know whether the change actually worked.</p>
 <p>Track these metrics weekly for at least a month:</p>
@@ -1362,7 +1364,7 @@ export const posts: Post[] = [
 
 <h2>Bottom line for Adelaide hospitality owners</h2>
 <p>The right AI tools in 2026 are not the flashiest ones. They are the ones your team can trust during a Saturday rush.</p>
-<p>Start with bookings, reviews, and scheduling support. Keep human control where hospitality matters most. And judge every tool by one standard: does this reduce chaos and improve service outcomes this month, not someday? Reach out to our <a href="/services/automation">Adelaide automation team</a> to explore what fits your venue, or browse all <a href="/services">services we offer</a>. If your venue also needs a <a href="/website-design-adelaide">better website</a>, we can help with that too — <a href="/contact">get in touch</a>.</p>
+<p>Start with bookings, reviews, and scheduling support. Keep human control where hospitality matters most. And judge every tool by one standard: does this reduce chaos and improve service outcomes this month, not someday? Reach out to our <a href="/ai-automation-adelaide">Adelaide automation team</a> to explore what fits your venue, or browse all <a href="/services">services we offer</a>. If your venue also needs a <a href="/website-design-adelaide">better website</a>, we can help with that too — <a href="/contact">get in touch</a>.</p>
 <h2>A Practical Tool Selection Framework</h2>
 <p>When evaluating any AI tool for your venue, run it through this filter before committing:</p>
 <ul>
@@ -1513,7 +1515,7 @@ export const posts: Post[] = [
 <p>That is enough to start.</p>
 <h2>Final takeaway</h2>
 <p>AI automation is not a trend project. It is an operations project with a financial outcome. If your team is repeatedly doing manual work that delays response, creates errors, or burns owner hours, you are ready.</p>
-<p>Start small, measure properly, and build momentum from real results. That is how Adelaide small businesses get time back without breaking what already works. Our team at <a href="/services/automation">AI Adelaide Automation</a> can help you identify the right first workflow — <a href="/contact">get in touch</a> to start. You can also check our <a href="/website-pricing">pricing page</a> or explore our <a href="/seo">SEO services</a> to make sure your online presence is capturing leads effectively.</p>
+<p>Start small, measure properly, and build momentum from real results. That is how Adelaide small businesses get time back without breaking what already works. Our team at <a href="/ai-automation-adelaide">AI Adelaide Automation</a> can help you identify the right first workflow — <a href="/contact">get in touch</a> to start. You can also check our <a href="/website-pricing">pricing page</a> or explore our <a href="/seo">SEO services</a> to make sure your online presence is capturing leads effectively.</p>
 <h2>What "Ready" Looks Like in Practice</h2>
 <p>Business owners often find it helpful to see what readiness looks like in real scenarios rather than abstract signals. Here are three examples from Adelaide businesses at different stages:</p>
 <h3>Scenario 1: Two-Person Trade Business</h3>
@@ -1635,7 +1637,7 @@ export const posts: Post[] = [
 
 <p>If a vendor tells you to rip out your current systems and start from scratch, that is usually a sign they are selling a platform, not a solution. The most effective automation setups in Adelaide businesses are the ones that connect existing tools and fill the gaps between them. Your CRM stays. Your phone stays. Your booking system stays. The automation just makes them work together better and fills in the manual steps that were falling through the cracks.</p>
 
-<p>For businesses in <a href="/norwood">Norwood</a>, <a href="/unley">Unley</a>, and across <a href="/adelaide">Adelaide</a>, we recommend starting with whatever you are already using and adding automation on top. This keeps costs down, reduces training time, and means your team is not learning a whole new system while trying to run a business.</p>
+<p>For businesses in <a href="/norwood">Norwood</a>, <a href="/unley">Unley</a>, and across <a href="/services">Adelaide</a>, we recommend starting with whatever you are already using and adding automation on top. This keeps costs down, reduces training time, and means your team is not learning a whole new system while trying to run a business.</p>
 
 
 <h2>Frequently Asked Questions</h2>
@@ -1718,7 +1720,7 @@ export const posts: Post[] = [
 
 <p>The tools are cheap, the setup is fast, and the ROI is immediate. If you're a plumber (or any tradie) in Adelaide who's tired of losing jobs to voicemail, there's never been an easier fix.</p>
 
-<p>You do not need to hire someone to answer the phone. You just need a system that works while you do. <a href="/services/automation">Our automation team</a> can help you set up these tools — <a href="/contact">get in touch</a>. We also build <a href="/website-design-adelaide">plumber websites</a> that rank well on Google — see our <a href="/seo">SEO services</a> and <a href="/website-pricing">pricing</a>.</p>
+<p>You do not need to hire someone to answer the phone. You just need a system that works while you do. <a href="/ai-automation-adelaide">Our automation team</a> can help you set up these tools — <a href="/contact">get in touch</a>. We also build <a href="/website-design-adelaide">plumber websites</a> that rank well on Google — see our <a href="/seo">SEO services</a> and <a href="/website-pricing">pricing</a>.</p>
 <h2>Why This Works Better Than Hiring</h2>
 <p>When tradies consider solving their phone problem, the obvious answer seems to be hiring a virtual receptionist or office admin person. Before you go down that path, here is the real comparison:</p>
 <ul>
@@ -1799,7 +1801,7 @@ export const posts: Post[] = [
   <li><strong>Reduced admin time:</strong> Between call handling, quote follow-ups, and booking confirmations, most plumbers spend 6-10 hours per week on admin. Automation can reduce this to 1-2 hours of reviewing and approving what the system has already captured.</li>
 </ul>
 
-<p>Add these up and the real ROI is not just "a few extra jobs per week." It is a fundamentally more efficient business that gives you time back, reduces stress, and lets you focus on the work that actually requires your skills. Our <a href="/services/automation">automation packages</a> start from $199/month — see <a href="/website-pricing">pricing</a> for details.</p>
+<p>Add these up and the real ROI is not just "a few extra jobs per week." It is a fundamentally more efficient business that gives you time back, reduces stress, and lets you focus on the work that actually requires your skills. Our <a href="/ai-automation-adelaide">automation packages</a> start from $199/month — see <a href="/website-pricing">pricing</a> for details.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1967,7 +1969,7 @@ export const posts: Post[] = [
 
 <p>Missed calls. It is the biggest leak for most tradies and the easiest to plug. Start there, prove to yourself it works, then tackle the next one. Automation is a habit, not an overnight transformation.</p>
 
-<p>If you need help setting up any of these five workflows for your trade business, <a href="/services/automation">our automation team</a> can get them running fast — <a href="/contact">get in touch</a>. We also offer <a href="/website-design-adelaide">trade business websites</a> and <a href="/seo">SEO services</a> to make sure customers find you first. See our <a href="/website-pricing">pricing</a> for package options.</p>
+<p>If you need help setting up any of these five workflows for your trade business, <a href="/ai-automation-adelaide">our automation team</a> can get them running fast — <a href="/contact">get in touch</a>. We also offer <a href="/website-design-adelaide">trade business websites</a> and <a href="/seo">SEO services</a> to make sure customers find you first. See our <a href="/website-pricing">pricing</a> for package options.</p>
 
 <h2>The Real Cost of Admin Time for Adelaide Tradies</h2>
 <p>If you are a tradie in Adelaide, you probably spend 2-4 hours per day on admin tasks that are not generating revenue. Invoicing, quoting, returning missed calls, chasing payments, scheduling, and writing up job reports. At $80-100/hour, that is $160-400 per day in lost billable time — $40,000-100,000 per year.</p>
@@ -2134,7 +2136,7 @@ export const posts: Post[] = [
 
 <p>The tools to do this are cheap, fast to set up, and they pay for themselves in weeks. If your clinic is losing $3,000 a month to no-shows, that's $36,000 a year you're leaving on the table.</p>
 
-<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/services/automation">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/seo">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
+<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/ai-automation-adelaide">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/seo">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
 <h2>The Psychology of No-Shows</h2>
 <p>Understanding why patients do not show up helps design better systems to prevent it. In allied health, no-shows fall into a few predictable categories:</p>
 <ul>
@@ -2219,7 +2221,7 @@ export const posts: Post[] = [
 
 <h2>What Adelaide Clinics With Low No-Show Rates Do Differently</h2>
 
-<p>Across <a href="/adelaide">Adelaide</a>, the clinics that consistently maintain no-show rates below 5 percent share a few common practices that go beyond just sending reminders:</p>
+<p>Across <a href="/services">Adelaide</a>, the clinics that consistently maintain no-show rates below 5 percent share a few common practices that go beyond just sending reminders:</p>
 
 <ul>
   <li><strong>They confirm every booking twice:</strong> Once at 48 hours before and once on the day. This is not excessive — it is what patients actually want. Most patients appreciate the reminder and feel that the clinic cares about their appointment.</li>
@@ -2235,7 +2237,7 @@ export const posts: Post[] = [
 
 <p>Many clinic owners say "our receptionist already calls to remind patients" or "we already send a text message." If that is working, great. But here is the question to ask: is it consistent? Does every single patient get a reminder at the right time, every time, without fail? If the answer is "mostly, but sometimes we forget" or "yes, unless the receptionist is busy," then you have a manual system that works most of the time. Automation works all of the time. That gap between "mostly" and "always" is where no-shows happen.</p>
 
-<p>The other advantage of automation over manual reminders is scalability. When your clinic grows from one practitioner to three, your receptionist cannot triple their reminder output. An automated system scales instantly with no extra effort. Clinics in <a href="/unley">Unley</a> and <a href="/burnside">Burnside</a> that have moved from manual to automated reminders consistently report a further 15-20 percent reduction in no-shows, even when the manual system was already "working." See our <a href="/services/automation">automation services</a> for clinic-specific solutions.</p>
+<p>The other advantage of automation over manual reminders is scalability. When your clinic grows from one practitioner to three, your receptionist cannot triple their reminder output. An automated system scales instantly with no extra effort. Clinics in <a href="/unley">Unley</a> and <a href="/burnside">Burnside</a> that have moved from manual to automated reminders consistently report a further 15-20 percent reduction in no-shows, even when the manual system was already "working." See our <a href="/ai-automation-adelaide">automation services</a> for clinic-specific solutions.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2336,7 +2338,7 @@ export const posts: Post[] = [
 
 <p>These are lost opportunities that no amount of social media posting will recover. But with the right automation, you can capture them.</p>
 
-<p><strong>The fix:</strong> Make booking stupid-simple and everywhere. Not just on your website, but link it in every social post, in your bio, in your email signature, everywhere a potential customer might be browsing on their phone. For hospitality venues, our <a href="/services/automation">automation services</a> can handle this end-to-end.</p>
+<p><strong>The fix:</strong> Make booking stupid-simple and everywhere. Not just on your website, but link it in every social post, in your bio, in your email signature, everywhere a potential customer might be browsing on their phone. For hospitality venues, our <a href="/ai-automation-adelaide">automation services</a> can handle this end-to-end.</p>
 
 <p>And here's the key: if someone doesn't complete the booking, send them a gentle reminder 24 hours later. "Hey, we saw you were checking out our booking page. Still keen? Here's a link." Sounds pushy? It's not. It works. Most platforms see 15-25% of abandoned bookings convert with a single follow-up.</p>
 
@@ -2529,13 +2531,13 @@ export const posts: Post[] = [
 <p>Yes, and they work even harder. In winter, every booking matters more because the pool of customers is smaller. Automated nurture sequences targeted at locals, review generation that keeps your Google profile fresh, and smart scheduling that cuts wage waste are all more impactful in the lean months. The venues that use these systems year-round find that winter becomes stable rather than stressful — still quieter than summer, but no longer a cash drain. The key is setting them up before winter arrives, not during it.</p>
 
 
-<p>Ready to set up these systems for your Glenelg venue? <a href="/services/automation">Our automation team</a> can help — <a href="/contact">get in touch</a>. We also design <a href="/website-design-adelaide">restaurant and cafe websites</a> and provide <a href="/seo">SEO services</a> to help locals find you on Google. See our <a href="/website-pricing">pricing options</a>.</p>`
+<p>Ready to set up these systems for your Glenelg venue? <a href="/ai-automation-adelaide">Our automation team</a> can help — <a href="/contact">get in touch</a>. We also design <a href="/website-design-adelaide">restaurant and cafe websites</a> and provide <a href="/seo">SEO services</a> to help locals find you on Google. See our <a href="/website-pricing">pricing options</a>.</p>`
   },
 {
     slug: "adelaide-business-ai-readiness-assessment",
     title: "Adelaide Business AI Health Check",
     excerpt: "Answer 8 simple questions to find out if your business is ready for AI automation—or if you're leaving money on the table.",
-    date: "2026-02-20",
+    date: "2026-07-04",
     readTime: "4 min read",
     category: "How-To",
     seoDescription: "8-question self-assessment tells Adelaide businesses if they're ready for AI automation. Score yourself and learn what to do next.",
@@ -2591,7 +2593,7 @@ export const posts: Post[] = [
 
 <p>Your business is ripe for AI automation. You're likely losing thousands of dollars every month to inefficiencies that could be solved with the right tools. The good news? The fix is probably simpler and cheaper than you think.</p>
 
-<p><strong>Action:</strong> Book a free consultation. Identify your top 3 pain points and get a custom plan. Most businesses in this range see ROI within 30-60 days. Our <a href="/services/automation">automation team</a> can help you build that plan — <a href="/contact">get in touch</a>.</p>
+<p><strong>Action:</strong> Book a free consultation. Identify your top 3 pain points and get a custom plan. Most businesses in this range see ROI within 30-60 days. Our <a href="/ai-automation-adelaide">automation team</a> can help you build that plan — <a href="/contact">get in touch</a>.</p>
 
 <h2>The Bottom Line</h2>
 
@@ -2601,7 +2603,7 @@ export const posts: Post[] = [
 
 <p>The tools exist. They're affordable. And they work while you focus on what actually matters: running your business, serving your customers, and (hopefully) having a life outside work.</p>
 
-<p>Where does your business score? Take the <a href="/contact">free AI readiness assessment</a> or <a href="/services/seo">explore our SEO services</a> to improve your online presence.</p>
+<p>Where does your business score? Take the <a href="/contact">free AI readiness assessment</a> or <a href="/seo">explore our SEO services</a> to improve your online presence.</p>
 <h2>What to Do If You Scored 4-6</h2>
 <p>You are in the most common position. There is real opportunity here, but it requires a focused approach rather than scattered tool adoption. Here is how to proceed:</p>
 <h3>Pick one pain point first</h3>
@@ -2633,7 +2635,7 @@ export const posts: Post[] = [
 <h2>Ready to Find Out for Certain?</h2>
 <p>If you have read through this assessment and think you might be in the 4-6 or 7-8 range but are not sure, the best next step is a honest conversation with someone who does this work daily. Not a sales call — a diagnostic conversation where someone looks at your specific situation and tells you what they see.</p>
 <p>Most Adelaide businesses we talk to fall into the 4-6 range and are genuinely surprised by how affordable and practical the solution is once they understand where the leaks actually are. The gap between where most businesses think they are and where they could be is usually significant. A good starting point is reviewing our <a href="/services">services overview</a> or checking <a href="/website-pricing">transparent pricing</a>.</p>
-<p>The assessment above tells you where you are. The next step is deciding whether to do something about it. Our team offers <a href="/services/automation">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation about what is possible for your business.</p>
+<p>The assessment above tells you where you are. The next step is deciding whether to do something about it. Our team offers <a href="/ai-automation-adelaide">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation about what is possible for your business.</p>
 
 
 
@@ -2717,7 +2719,7 @@ export const posts: Post[] = [
 <p>Most automation services are month-to-month with no long-term contract. If it is not delivering value, you cancel. That said, the businesses that see the best results commit to at least 90 days of consistent use. It takes a few weeks for the data to stabilise and for you to see the full impact.</p>
 
 <h3>Can I do the assessment myself?</h3>
-<p>The assessment above gives you a quick self-diagnosis. If you score 4 or higher, you have enough pain points to justify a deeper look. A professional audit — which takes about an hour of your time — can identify specific workflows, estimate ROI for each, and give you a prioritised implementation plan. Whether you do the implementation yourself or work with someone, the assessment is the starting point. Our team offers <a href="/services/automation">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation.</p>
+<p>The assessment above gives you a quick self-diagnosis. If you score 4 or higher, you have enough pain points to justify a deeper look. A professional audit — which takes about an hour of your time — can identify specific workflows, estimate ROI for each, and give you a prioritised implementation plan. Whether you do the implementation yourself or work with someone, the assessment is the starting point. Our team offers <a href="/ai-automation-adelaide">automation services</a> and <a href="/contact">free consultations</a> — reach out if you want an honest conversation.</p>
 
 
 
@@ -2742,23 +2744,23 @@ export const posts: Post[] = [
 
 <p>If a vendor tells you to rip out your current systems and start from scratch, that is usually a sign they are selling a platform, not a solution. The most effective automation setups in Adelaide businesses are the ones that connect existing tools and fill the gaps between them. Your CRM stays. Your phone stays. Your booking system stays. The automation just makes them work together better and fills in the manual steps that were falling through the cracks.</p>
 
-<p>For businesses across <a href="/adelaide">Adelaide</a>, we recommend starting with whatever you are already using and adding automation on top. This keeps costs down, reduces training time, and means your team is not learning a whole new system while trying to run a business. See our <a href="/services">full range of services</a> for integration options.</p>
+<p>For businesses across <a href="/services">Adelaide</a>, we recommend starting with whatever you are already using and adding automation on top. This keeps costs down, reduces training time, and means your team is not learning a whole new system while trying to run a business. See our <a href="/services">full range of services</a> for integration options.</p>
 
 
 
-<h2>What a $247 Audit Actually Delivers</h2>
+<h2>What a Free Audit Actually Delivers</h2>
 
-<p>If you score 4 or higher on the assessment, a structured audit can fast-track your implementation. Here is exactly what you should receive for $247:</p>
+<p>If you score 4 or higher on the assessment, a structured audit can fast-track your implementation. This used to cost $247 — it's free now. Here is exactly what you should receive:</p>
 
 <ul>
-  <li><strong>Lead journey map:</strong> A visual diagram showing how enquiries currently arrive at your business, who responds, and where they drop off. This alone is often worth the cost because it shows you leaks you did not know existed.</li>
+  <li><strong>Lead journey map:</strong> A visual diagram showing how enquiries currently arrive at your business, who responds, and where they drop off. This alone is often worth the hour because it shows you leaks you did not know existed.</li>
   <li><strong>Ops workflow review:</strong> A list of every repetitive task your team does daily, weekly, and monthly, with an estimate of how much time each one takes and which ones are candidates for automation.</li>
   <li><strong>Bottleneck scoring:</strong> Each pain point ranked by impact (how much revenue or time it costs) and ease (how simple it is to automate). This gives you a clear priority order.</li>
   <li><strong>Automation shortlist:</strong> 3-5 specific opportunities with estimated cost, implementation time, and projected ROI. Not vague recommendations — actual tool suggestions with pricing.</li>
   <li><strong>90-day rollout plan:</strong> What to build first, second, and third, with milestones and success metrics for each stage.</li>
 </ul>
 
-<p>If you leave without numbers, priorities, and a timeline, you did not get a real audit. A good audit makes you feel like someone finally mapped the mess in your head and turned it into a plan. Our <a href="/services/automation">automation team</a> can deliver this — <a href="/contact">book a free consultation</a>.</p>
+<p>If you leave without numbers, priorities, and a timeline, you did not get a real audit. A good audit makes you feel like someone finally mapped the mess in your head and turned it into a plan. Our <a href="/ai-automation-adelaide">automation team</a> can deliver this — <a href="/contact">book a free consultation</a>.</p>
 `,
   },
 {
@@ -3358,13 +3360,13 @@ export const posts: Post[] = [
 
 <h2>Google Reviews: The Silent Growth Engine</h2>
 
-<p>For physio clinics in <a href="/adelaide">Adelaide</a>, Google reviews are arguably the most important marketing asset. When a patient searches "physiotherapist near me" or "physio <a href="/unley">Unley</a>" or "sports physio <a href="/norwood">Norwood</a>," the clinics that appear in the map pack get the majority of the clicks. And the key factors that determine map pack ranking are review count, average rating, and review recency.</p>
+<p>For physio clinics in <a href="/services">Adelaide</a>, Google reviews are arguably the most important marketing asset. When a patient searches "physiotherapist near me" or "physio <a href="/unley">Unley</a>" or "sports physio <a href="/norwood">Norwood</a>," the clinics that appear in the map pack get the majority of the clicks. And the key factors that determine map pack ranking are review count, average rating, and review recency.</p>
 
 <p>Most clinics collect reviews passively — when a patient happens to mention they were happy, or when the receptionist remembers to ask. This leads to a trickle of reviews that does not keep pace with competitors who are asking systematically.</p>
 
 <p>Automated review generation changes this. After every completed appointment, the system sends a brief message: "How was your visit today?" If the patient responds positively, they get a direct link to leave a Google review. If they had an issue, it gets flagged to you immediately. This consistent, systematic approach typically generates 3-5 times more reviews than passive collection.</p>
 
-<p>The impact compounds. More reviews mean better visibility. Better visibility means more new patients. More new patients mean more reviews. The clinics that start this flywheel early will dominate their local search results for years. See our <a href="/services/automation">automation services</a> or <a href="/contact">get in touch</a> for a clinic-specific recommendation.</p>
+<p>The impact compounds. More reviews mean better visibility. Better visibility means more new patients. More new patients mean more reviews. The clinics that start this flywheel early will dominate their local search results for years. See our <a href="/ai-automation-adelaide">automation services</a> or <a href="/contact">get in touch</a> for a clinic-specific recommendation.</p>
 
 
 <h2>The Financial Case: Beyond No-Show Reduction</h2>
@@ -3393,7 +3395,7 @@ export const posts: Post[] = [
   <li><strong>Review generation:</strong> After each appointment, the system should send a brief feedback request. Positive responses get a Google review link. Negative responses get flagged to you immediately.</li>
 </ul>
 
-<p>The best system for your clinic is the one that works with what you already use and addresses your biggest pain point first. Do not pay for features you do not need yet — start with reminders, measure the result, and add features as the ROI becomes clear. Our <a href="/services/automation">automation team</a> can recommend the right setup for your specific clinic — <a href="/contact">book a consultation</a>.</p>
+<p>The best system for your clinic is the one that works with what you already use and addresses your biggest pain point first. Do not pay for features you do not need yet — start with reminders, measure the result, and add features as the ROI becomes clear. Our <a href="/ai-automation-adelaide">automation team</a> can recommend the right setup for your specific clinic — <a href="/contact">book a consultation</a>.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3599,7 +3601,7 @@ export const posts: Post[] = [
 
 <p>The second mistake is thinking that automation will make the business feel impersonal. Builders trade on relationships and trust. But automation does not replace the relationship — it protects it. When a client gets a progress update at every milestone, a confirmation before each stage, and a follow-up after completion, they feel looked after. They feel informed. They feel like they are working with a professional organisation that has its act together. That is the opposite of impersonal.</p>
 
-<p>The third mistake is over-engineering the system. Start with one thing that addresses your biggest pain point. For most builders, that is missed calls and quote follow-up. Nail those two things first, measure the results, and then add project communication, compliance tracking, and review generation. Each layer builds on the last, and each one has a clear, measurable ROI. See our <a href="/services/automation">builder automation packages</a> for details, or <a href="/contact">contact our team</a> for a recommendation tailored to your trade.</p>
+<p>The third mistake is over-engineering the system. Start with one thing that addresses your biggest pain point. For most builders, that is missed calls and quote follow-up. Nail those two things first, measure the results, and then add project communication, compliance tracking, and review generation. Each layer builds on the last, and each one has a clear, measurable ROI. See our <a href="/ai-automation-adelaide">builder automation packages</a> for details, or <a href="/contact">contact our team</a> for a recommendation tailored to your trade.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3908,7 +3910,7 @@ Your business will thank you.
 <h3>Level 3: Full automation stack ($200-500/month)</h3>
 <p>AI receptionist plus quote follow-up sequences, appointment reminders, and review generation. This is the complete system that captures every lead, follows up on every quote, reduces no-shows, and builds your online reputation. For most tradies, this is where the biggest ROI is — not just capturing calls, but converting them into long-term customers.</p>
 
-<p>All three levels are available from our <a href="/services/automation">Adelaide automation team</a>. Check our <a href="/website-pricing">pricing page</a> for detailed packages, or <a href="/contact">contact us</a> for a recommendation based on your specific business.</p>
+<p>All three levels are available from our <a href="/ai-automation-adelaide">Adelaide automation team</a>. Check our <a href="/website-pricing">pricing page</a> for detailed packages, or <a href="/contact">contact us</a> for a recommendation based on your specific business.</p>
 
 
 <h2>The Real Cost Beyond the Direct Revenue</h2>
@@ -3930,14 +3932,14 @@ Your business will thank you.
 
 <p>This single message captures roughly 40 percent of missed calls that would otherwise disappear. It costs around $50-80 per month. It takes 30 minutes to set up. And it starts returning results the same day.</p>
 
-<p>From there, you can layer on more automation: an AI receptionist for after-hours and overflow calls, quote follow-up sequences, appointment reminders, review generation. Each layer builds on the last, and each one pays for itself within the first month. But you do not need all of them to start seeing results. You just need one. Start with missed-call SMS. Measure the result. Then add the next layer when you are ready. Our <a href="/services/automation">automation team</a> can set this up in under an hour — <a href="/contact">get in touch</a>.</p>
+<p>From there, you can layer on more automation: an AI receptionist for after-hours and overflow calls, quote follow-up sequences, appointment reminders, review generation. Each layer builds on the last, and each one pays for itself within the first month. But you do not need all of them to start seeing results. You just need one. Start with missed-call SMS. Measure the result. Then add the next layer when you are ready. Our <a href="/ai-automation-adelaide">automation team</a> can set this up in under an hour — <a href="/contact">get in touch</a>.</p>
 
 
 <h2>The Compounding Effect Over Time</h2>
 
 <p>Missed calls do not just cost you today's revenue. They compound over time in ways that are easy to underestimate. When a customer calls a competitor instead of you, that competitor gets the job, the review, the referral, and the repeat business. Over 12 months, this means your competitor is accumulating reviews faster, ranking higher on Google, and getting more calls as a result — calls that could have been yours.</p>
 
-<p>The businesses that are growing in <a href="/adelaide">Adelaide</a> right now are the ones that answer every call and systematically collect every review. They are not necessarily better at what they do. They are better at capturing the opportunities that come their way. And every missed call you make is an opportunity that goes to a competitor who will use it to get bigger, more visible, and harder to beat. This is why the cost of missed calls is not just a weekly or monthly figure — it is a compounding disadvantage that gets worse over time. The sooner you fix it, the sooner the compounding effect starts working in your favour. See our <a href="/services/automation">automation services</a> for a solution that fits your business.</p>
+<p>The businesses that are growing in <a href="/services">Adelaide</a> right now are the ones that answer every call and systematically collect every review. They are not necessarily better at what they do. They are better at capturing the opportunities that come their way. And every missed call you make is an opportunity that goes to a competitor who will use it to get bigger, more visible, and harder to beat. This is why the cost of missed calls is not just a weekly or monthly figure — it is a compounding disadvantage that gets worse over time. The sooner you fix it, the sooner the compounding effect starts working in your favour. See our <a href="/ai-automation-adelaide">automation services</a> for a solution that fits your business.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -3954,7 +3956,7 @@ Your business will thank you.
 <p>Basic missed-call text-back can be live within 30 minutes. A full AI receptionist with calendar integration and qualification questions takes 1-2 weeks to configure properly. Most tradies see results within the first week — you can literally count the recovered calls on Monday morning.</p>
 
 <h3>Is this only for tradies?</h3>
-<p>No. Any business that misses calls can benefit — clinics, retail shops, hospitality venues, professional services. The maths change based on your average job value and call volume, but the principle is the same: every missed call is a potential customer who went to a competitor. See our guides for <a href="/ai-for-plumbers-adelaide">plumbers</a>, <a href="/ai-for-electricians-adelaide">electricians</a>, and <a href="/ai-for-hvac-adelaide">HVAC techs</a> for trade-specific advice.</p>
+<p>No. Any business that misses calls can benefit — clinics, retail shops, hospitality venues, professional services. The maths change based on your average job value and call volume, but the principle is the same: every missed call is a potential customer who went to a competitor. See our guides for <a href="/websites-for-plumbers-adelaide">plumbers</a>, <a href="/websites-for-electricians-adelaide">electricians</a>, and <a href="/blog/ai-for-hvac-adelaide">HVAC techs</a> for trade-specific advice.</p>
 `,
   },
   {
@@ -4270,7 +4272,7 @@ Your business will thank you.
 
 <p>We'll look at your current call setup, identify what's slipping through, and give you a clear picture of what AI answering would change. No sales pressure, no hype — just a straightforward assessment.</p>
 
-<p>If you're running a small business in Adelaide and you're missing emergency calls because you're already on a job — let's talk. Our <a href="/services/automation">automation team</a> can help you set up AI answering that captures every call — <a href="/contact">get in touch</a>.</p>
+<p>If you're running a small business in Adelaide and you're missing emergency calls because you're already on a job — let's talk. Our <a href="/ai-automation-adelaide">automation team</a> can help you set up AI answering that captures every call — <a href="/contact">get in touch</a>.</p>
 
 <p><strong>CTA:</strong> <a href="/contact">Book your free 15-minute call</a> or call us at 08 7100 9788. Browse all <a href="/services">services we offer</a> or check our <a href="/website-pricing">pricing</a>. Ready to see if AI fits your business? Get your free AI readiness assessment.</p>
 
@@ -4340,7 +4342,7 @@ Your business will thank you.
 
 <p>The biggest mistake HVAC businesses make with automation is trying to replicate a human receptionist instead of designing a system that plays to AI's strengths. An AI receptionist is not a person. It does not need to make small talk or handle complex troubleshooting questions. Its job is to answer every call, capture the essential information, and route it appropriately.</p>
 
-<p>The best HVAC AI configurations are simple: emergency calls get immediate callback, routine calls get booked for the next available slot, and quote requests get routed to email. That is it. When businesses try to make the AI handle complex pricing questions or technical troubleshooting, they create a system that frustrates both the caller and the technician. Keep it focused on the three outcomes that matter: emergency escalation, routine booking, and quote capture. Everything else can wait for the callback. See our <a href="/services/automation">HVAC automation packages</a> for details, or <a href="/contact">contact us</a> for a tailored recommendation.</p>
+<p>The best HVAC AI configurations are simple: emergency calls get immediate callback, routine calls get booked for the next available slot, and quote requests get routed to email. That is it. When businesses try to make the AI handle complex pricing questions or technical troubleshooting, they create a system that frustrates both the caller and the technician. Keep it focused on the three outcomes that matter: emergency escalation, routine booking, and quote capture. Everything else can wait for the callback. See our <a href="/ai-automation-adelaide">HVAC automation packages</a> for details, or <a href="/contact">contact us</a> for a tailored recommendation.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -6104,382 +6106,4 @@ Your business will thank you.
 <p>Against this, you are getting 15-30+ organic leads per month by month 6. If each lead is worth $100-500 in revenue, that is $1,500-15,000/month in new business by month 6. The ROI is positive within 3-4 months for most businesses. See our <a href="/website-pricing">pricing page</a> for all package details, or <a href="/contact">book a free chat</a> to discuss your specific needs.</p>
 `
   },
-  {
-    slug: "adelaide-seo-for-tradies",
-    title: "SEO for Tradies Adelaide: How Plumbers, Electricians & Builders Rank on Google",
-    excerpt:
-      "Adelaide tradies are losing work to competitors who rank higher on Google — even when their service is worse. This guide explains exactly how SEO works for plumbers, electricians, builders, HVAC, and landscapers in Adelaide, and what to do first if you want to rank in the map pack and organic results for 'plumber near me' and 'electrician Adelaide' style searches.",
-    date: "2026-06-24",
-    readTime: "16 min read",
-    category: "How-To",
-    seoDescription: "SEO for tradies Adelaide: the exact playbook plumbers, electricians, builders and HVAC tradies use to rank in the Adelaide map pack and organic results. Step-by-step.",
-    content: `<p><em>Last updated: June 2026. Written by the <a href="/about">AI Adelaide editorial team</a> — the same team that builds websites and runs SEO campaigns for Adelaide tradies every week. <a href="/contact">Talk to us</a> if you want a hand with yours.</em></p>
-
-<p>If you are a tradie in Adelaide — a plumber, sparkie, builder, HVAC technician, landscaper, or painter — the customers you want are already searching Google for your service. The question is whether they find you, or your competitor down the road. <strong>SEO for tradies in Adelaide is not a luxury anymore. It is the difference between a full book of work and slow weeks.</strong></p>
-<p>This guide is the exact framework we use with Adelaide tradies across plumbing, electrical, HVAC, building, roofing, landscaping, and painting. It covers local SEO (the map pack), on-page SEO (your website), content (blogs and FAQs), links, technical basics, and the <a href="/ai-automation-adelaide">AI automation</a> that makes it all stick. By the end you will know what to do, in what order, and what to ignore.</p>
-
-<h2>What you'll learn in this guide</h2>
-<ul>
-  <li><a href="#why-adelaide-tradies-need-seo-in-2026">Why Adelaide tradies need SEO in 2026</a> (and what changed in the last 12 months)</li>
-  <li><a href="#who-is-actually-searching-for-adelaide-tradies">Who is actually searching for Adelaide tradies</a> — 3 search intent buckets</li>
-  <li><a href="#local-seo-fundamentals-for-adelaide-tradies">Local SEO fundamentals</a> — GBP, NAP, reviews, citations</li>
-  <li><a href="#on-page-seo-for-tradie-websites">On-page SEO</a> — service pages, suburb pages, titles, schema</li>
-  <li><a href="#content-marketing-for-tradies">Content marketing</a> — blogs, FAQs, case studies</li>
-  <li><a href="#link-building-for-adelaide-tradies">Link building</a> — associations, partnerships, suppliers</li>
-  <li><a href="#technical-seo-for-tradies-the-boring-stuff-that-matters">Technical SEO</a> — the boring stuff that matters</li>
-  <li><a href="#how-to-track-if-your-seo-is-working">Tracking KPIs</a> — GSC, GBP insights, call tracking</li>
-  <li><a href="#common-adelaide-tradie-seo-mistakes">6 common tradie SEO mistakes</a> (and how to avoid them)</li>
-  <li><a href="#diy-seo-vs-hiring-an-adelaide-seo-agency">DIY vs hiring an agency</a> — honest comparison</li>
-  <li><a href="#how-ai-helps-tradies-with-seo">How AI helps tradies with SEO</a></li>
-  <li><a href="#adelaide-specific-seo-opportunities">Adelaide-specific SEO opportunities</a> — suburbs, seasons, storms</li>
-  <li><a href="#a-free-adelaide-tradie-seo-checklist">Free Adelaide tradie SEO checklist</a> (printable)</li>
-  <li><a href="#real-adelaide-tradie-example">Real Adelaide tradie case study</a> — 55 calls/week to 110 calls/week</li>
-  <li><a href="#frequently-asked-questions">8 FAQs</a> answered by tradies who have done it</li>
-  <li><a href="#where-to-start-this-week">Where to start this week</a> — 1-hour, 1-day, or with-us plans</li>
-</ul>
-
-<h2>Why Adelaide tradies need SEO in 2026</h2>
-<p>Three numbers explain why this matters now:</p>
-<ul>
-  <li><strong>87% of Adelaide homeowners</strong> search online before hiring a tradie (Hotjar / industry surveys of consumer behaviour).</li>
-  <li><strong>The top 3 map pack results</strong> capture roughly 70% of clicks for 'near me' searches.</li>
-  <li><strong>Page 2 of Google gets under 1% of clicks</strong> — being invisible is the default if you are not on page 1.</li>
-</ul>
-<p>If your business does not show up in the top 3 of the map pack for 'plumber [suburb]' or 'electrician Adelaide', you are paying for clicks your competitors get for free. Word of mouth still matters in trades — but in 2026 it is your website that decides whether that word-of-mouth lead becomes your customer or someone else's.</p>
-
-<h2>Who is actually searching for Adelaide tradies</h2>
-<p>Understanding the searcher helps you write the right content. Adelaide tradie searches fall into three buckets:</p>
-
-<h3>1. Emergency searches (urgent intent)</h3>
-<p>Examples: 'burst pipe plumber Adelaide', 'hot water not working', 'emergency electrician Norwood'. These searches spike at night and on weekends. The searcher wants a phone number, fast. If your GBP (Google Business Profile) lists '24/7' and your site loads in under 2 seconds, you win. If it does not, you lose to whoever does.</p>
-
-<h3>2. Comparison searches (commercial intent)</h3>
-<p>Examples: 'best plumber Adelaide Hills', 'electrician reviews Mount Barker', 'how much does a bathroom reno cost Adelaide'. The searcher is collecting options before contacting 2-3 tradies. Reviews, photos, before-and-after galleries, and clear pricing all matter here.</p>
-
-<h3>3. How-to searches (informational intent)</h3>
-<p>Examples: 'how to fix a leaking tap', 'signs your AC needs replacing', 'do I need a sparkie or can I DIY'. These are not direct leads — but they are trust builders. A tradie with the best how-to content in Adelaide wins the comparison searches 6 months later when the reader finally needs the work done.</p>
-
-<h2>Local SEO fundamentals for Adelaide tradies</h2>
-<p>Local SEO is the highest-ROI starting point for any tradie. Most of your customers are within 10-20km of your base, so Google Maps is where you make or break.</p>
-
-<h3>Claim and optimise your Google Business Profile</h3>
-<p>If you have not claimed your GBP, do it today at business.google.com. Fill in:</p>
-<ul>
-  <li><strong>Business name</strong> exactly as it appears on invoices (no keyword stuffing like 'Best Plumber Adelaide | Cheap & Fast').</li>
-  <li><strong>Primary category</strong> — Plumber, Electrician, etc. Use the most specific category Google offers.</li>
-  <li><strong>Secondary categories</strong> — Emergency Plumber, Hot Water Repair, etc.</li>
-  <li><strong>Service area</strong> — every Adelaide suburb you actually service, not just where you are based.</li>
-  <li><strong>Hours</strong> — including emergency / after-hours availability.</li>
-  <li><strong>Photos</strong> — at least 10 real photos of your team, vans, completed jobs. Update monthly.</li>
-  <li><strong>Posts</strong> — Google GBP has a mini-blog. Post weekly: job completions, tips, offers. Posts decay fast so keep adding.</li>
-</ul>
-
-<h3>NAP consistency (Name, Address, Phone)</h3>
-<p>Your business name, address, and phone must be identical across every place they appear online. If your ABN-registered name is 'Smith Plumbing Pty Ltd' but your van says 'Smith Plumbing', Google sees two entities. Pick one canonical form and use it everywhere.</p>
-
-<h3>Reviews: the single biggest local ranking factor</h3>
-<p>You need reviews. The top 3 map pack results for tradie searches in Adelaide typically have 50-200+ reviews. The bottom of page 1 has 10-30. Aim for:</p>
-<ul>
-  <li>10+ reviews in your first 3 months</li>
-  <li>2-5 new reviews per month ongoing</li>
-  <li>Reply to every review within 24 hours (positive and negative)</li>
-  <li>Ask at the moment of job completion — not via email a week later</li>
-</ul>
-<p>Best practice: set up an automated review-request SMS that fires 2 hours after job completion. Our <a href="/missed-call-text-back-adelaide">missed-call text-back</a> setup includes a review-request workflow.</p>
-
-<h3>Local citations (directories)</h3>
-<p>List your business on every Australian tradie directory that matters:</p>
-<ul>
-  <li>Yellow Pages</li>
-  <li>True Local</li>
-  <li>Word of Mouth</li>
-  <li>hipages</li>
-  <li>Oneflare</li>
-  <li>Airtasker (optional — only if you want low-margin leads)</li>
-  <li>Industry-specific directories (Master Plumbers SA, NECA, HIA, etc.)</li>
-</ul>
-<p>Keep NAP identical across all of them. Duplicate listings confuse Google.</p>
-
-<h2>On-page SEO for tradie websites</h2>
-<p>Your GBP gets you into the map pack. Your website gets you into the organic results. Both matter — most Adelaide tradie searches show map pack + organic results on the same page.</p>
-
-<h3>Service pages for every job type</h3>
-<p>Most tradie websites have one 'Services' page that lists everything. That is not enough. Each service should have its own page:</p>
-<ul>
-  <li>/hot-water-system-repair-adelaide</li>
-  <li>/blocked-drain-plumber-adelaide</li>
-  <li>/ceiling-fan-installation-adelaide</li>
-  <li>/split-system-install-adelaide</li>
-</ul>
-<p>Each page targets one specific search. One page per service per suburb cluster is ideal — that is what we build for our clients.</p>
-
-<h3>Suburb pages for local relevance</h3>
-<p>If you service multiple Adelaide suburbs, you need a page for each. The structure should be:</p>
-<ul>
-  <li><strong>Hero</strong>: plumber [suburb] | call this number</li>
-  <li><strong>Common jobs in [suburb]</strong>: 2-3 jobs you do often in that area, with prices</li>
-  <li><strong>Why local tradies win in [suburb]</strong>: response time, local knowledge, council rules specific to that suburb</li>
-  <li><strong>FAQ</strong>: 5-10 questions specific to that suburb (e.g. for Norwood: 'Do I need a permit for a gas heater replacement?')</li>
-  <li><strong>CTA</strong>: call now, book online</li>
-</ul>
-<p>We have built out <a href="/locations">all 34 Adelaide suburbs</a> this way for our own site. Same approach works for any tradie.</p>
-
-<h3>Title tags and meta descriptions</h3>
-<p>Every page needs a unique title (under 60 chars) and meta description (under 155 chars). For a tradie:</p>
-<ul>
-  <li>Title pattern: '[Service] [Suburb] | [Business Name]'</li>
-  <li>Example: 'Hot Water Repairs Norwood | Smith Plumbing Adelaide'</li>
-  <li>Meta description: include phone number, key service, response time, trust signal</li>
-  <li>Example: 'Hot water repairs in Norwood. Same-day service, $120 callout, 12-month warranty. Call (08) 7100 9788.'</li>
-</ul>
-
-<h3>Schema markup (FAQ, Service, LocalBusiness)</h3>
-<p>Schema is the structured data you add to your pages so Google can show rich results. For tradies, the three that matter:</p>
-<ul>
-  <li><strong>FAQPage schema</strong>: gets your Q&A into Google's 'People also ask' boxes</li>
-  <li><strong>Service schema</strong>: tells Google exactly what services you offer and where</li>
-  <li><strong>LocalBusiness schema</strong>: confirms NAP, hours, and service area</li>
-</ul>
-<p>We add all three automatically to every page on our clients' sites. The markup is invisible to humans but Google uses it to understand your business.</p>
-
-<h2>Content marketing for tradies</h2>
-<p>Content is how you outrank tradies who have been around longer. A new tradie in Adelaide with a strong content strategy can outrank a 20-year-old competitor in 12-18 months.</p>
-
-<h3>Blog posts targeting tradie questions</h3>
-<p>The most common tradie blog topics that rank:</p>
-<ul>
-  <li>'How much does [X] cost in Adelaide'</li>
-  <li>'How long does [X] take'</li>
-  <li>'[Common problem] — what to do before calling a tradie'</li>
-  <li>'Signs you need [X] replaced, not repaired'</li>
-  <li>'DIY vs hiring a tradie for [X]'</li>
-</ul>
-<p>Aim for 1-2 blog posts per month. Quality matters more than quantity — one 2,000-word well-written post beats five 300-word fluff pieces.</p>
-
-<h3>FAQ sections on every service page</h3>
-<p>Every service page should have 5-10 FAQs. They serve double duty:</p>
-<ul>
-  <li>Rank for long-tail question searches</li>
-  <li>Show up in Google's 'People also ask' boxes</li>
-</ul>
-<p>Examples for a plumber: 'Why is my hot water system making noise?', 'How long does a hot water system last?', 'Can a plumber fix a gas leak?'.</p>
-
-<h3>Case studies with real numbers</h3>
-<p>Before/after case studies with photos and specifics rank well and convert trust. 'We replaced a 25-year-old copper pipe system in a Glenelg heritage home in 2 days' beats 'We do plumbing in Glenelg' any day.</p>
-
-<h2>Link building for Adelaide tradies</h2>
-<p>Links from other sites signal authority. For tradies, the highest-value links come from:</p>
-
-<h3>Local business associations</h3>
-<ul>
-  <li>Master Plumbers SA, Master Electricians SA, HIA SA, etc.</li>
-  <li>Local Chamber of Commerce (Adelaide, Norwood, Glenelg, etc.)</li>
-  <li>Business SA</li>
-</ul>
-<p>Membership gives you a profile page and a backlink. Most cost $200-800/year — cheaper than Google Ads.</p>
-
-<h3>Local partnerships</h3>
-<p>If you do bathroom renos, partner with a local tile shop and link to each other. If you do HVAC, partner with an electrician. Cross-promotion builds local authority.</p>
-
-<h3>Suppliers and trade accounts</h3>
-<p>Reece, Tradelink, Beacon Lighting, etc. often list accredited tradies on their sites. Ask to be listed.</p>
-
-<h3>Sponsorships</h3>
-<p>Sponsor a local footy club, school, or community event. The club's website lists sponsors with a link. Cheap, local, relevant.</p>
-
-<h2>Technical SEO for tradies (the boring stuff that matters)</h2>
-<p>Three things that quietly break rankings:</p>
-
-<h3>Mobile speed</h3>
-<p>60-70% of tradie searches happen on mobile. Your site must load in under 3 seconds on a phone. Test at pagespeed.web.dev. If your score is under 50, your site is too slow.</p>
-
-<h3>HTTPS</h3>
-<p>Any site without HTTPS gets a 'Not Secure' warning in Chrome. Browsers warn users away. SSL certs are free now (Let's Encrypt). No excuse.</p>
-
-<h3>Schema markup (mentioned above)</h3>
-<p>FAQ, Service, LocalBusiness. All three. No excuses.</p>
-
-<h2>How to track if your SEO is working</h2>
-<p>If you cannot measure it, you cannot improve it. Set up:</p>
-
-<h3>Google Search Console (free)</h3>
-<p>Verify your site at search.google.com/search-console. Submit your sitemap. Check weekly for:</p>
-<ul>
-  <li><strong>Performance</strong>: which queries bring impressions, which bring clicks</li>
-  <li><strong>Coverage</strong>: any 404s or indexing issues</li>
-  <li><strong>Experience</strong>: Core Web Vitals pass/fail</li>
-</ul>
-
-<h3>Google Analytics 4 (free)</h3>
-<p>Tracks visitors, source, behaviour. Set up conversion events for calls, form submissions, bookings.</p>
-
-<h3>The 3 KPIs that matter for tradies</h3>
-<ol>
-  <li><strong>Calls from organic search</strong> — track via call tracking or unique phone numbers per source</li>
-  <li><strong>Map pack views</strong> — GBP insights show searches and views</li>
-  <li><strong>Cost per acquired customer</strong> — divide monthly SEO spend by new customers from organic</li>
-</ol>
-<p>A good Adelaide tradie SEO campaign delivers customers at $50-200 each. Compared to Google Ads at $80-300 per click, organic SEO wins after month 6.</p>
-
-<h2>Common Adelaide tradie SEO mistakes</h2>
-<p>We see these over and over:</p>
-
-<h3>1. One 'Services' page for everything</h3>
-<p>Already covered. Each service needs its own page.</p>
-
-<h3>2. No reviews in the first 3 months</h3>
-<p>Reviews are the #1 local ranking factor. If you have under 10, fix that first.</p>
-
-<h3>3. Stock photos instead of real job photos</h3>
-<p>Stock photos signal 'this tradie is not really local'. Real photos of your team, your van, your work convert better and rank better.</p>
-
-<h3>4. No schema markup</h3>
-<p>Your competitor has it. You do not. They win the rich results.</p>
-
-<h3>5. Buying links</h3>
-<p>Google penalises paid links. Build them organically through partnerships and quality content.</p>
-
-<h3>6. Ignoring Google Business Profile</h3>
-<p>The cheapest highest-ROI work you can do. Most tradies set it up once and forget it. Post weekly, add photos monthly, ask for reviews at every job.</p>
-
-<h2>DIY SEO vs hiring an Adelaide SEO agency</h2>
-<p>Honest breakdown:</p>
-
-<h3>DIY (you do it yourself)</h3>
-<ul>
-  <li>Cost: $0 + your time</li>
-  <li>Time: 5-15 hours/week</li>
-  <li>Best for: solo tradies who can write, have time, and are willing to learn</li>
-  <li>Realistic outcome: top 5 in 6-12 months for low-competition suburbs</li>
-</ul>
-
-<h3>Hire a generalist marketer</h3>
-<ul>
-  <li>Cost: $1,500-3,000/month</li>
-  <li>Best for: tradies who do not want to learn SEO but have the budget</li>
-  <li>Risk: many 'SEO agencies' are just content writers who do not understand local search</li>
-</ul>
-
-<h3>Hire a tradie-focused SEO agency (us)</h3>
-<ul>
-  <li>Cost: $399/month for SEO retainers, often bundled with website</li>
-  <li>Best for: tradies who want results, not a learning curve</li>
-  <li>What you get: suburb pages, schema, content, GBP optimisation, reviews automation, monthly reporting</li>
-</ul>
-<p>Our <a href="/seo">Adelaide SEO services</a> start at $399/month with no lock-in. See <a href="/website-pricing">website pricing</a> from $699 if you also need a new site.</p>
-
-<h2>How AI helps tradies with SEO</h2>
-<p>Two ways AI specifically helps tradies with SEO:</p>
-
-<h3>1. Faster content production</h3>
-<p>A blog post that took 4 hours to write takes 45 minutes with AI assistance. We can produce 2 suburb pages per week, per tradie, instead of 2 per month.</p>
-
-<h3>2. SEO automation</h3>
-<p>AI handles the boring parts:</p>
-<ul>
-  <li>Monitoring your rankings and alerting when they drop</li>
-  <li>Auto-generating schema markup</li>
-  <li>Generating FAQ pairs from real customer questions</li>
-  <li>Writing meta descriptions in your tone</li>
-  <li>Suggesting new suburb pages based on search volume</li>
-</ul>
-<p>Our <a href="/ai-automation-adelaide">AI automation services</a> for Adelaide tradies cover all of this. Most recover 5-10 hours per week within the first month. If you are specifically weighing SEO against paid traffic, our <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads guide for Adelaide businesses</a> breaks down the costs and timelines.</p>
-
-<h2>Adelaide-specific SEO opportunities</h2>
-<p>Adelaide has a few quirks most generic SEO advice ignores:</p>
-
-<h3>The map pack rewards distance from CBD</h3>
-<p>Suburbs closer to the CBD have higher competition. If you are based in Elizabeth or Mount Barker and service Adelaide-wide, your GBP can list multiple service areas and outrank inner-suburb tradies for some searches.</p>
-
-<h3>Council and SA government searches</h3>
-<p>'Adelaide City Council plumbing regulations', 'SA government electrician licensing' — these searches are dominated by .gov.au sites but tradies who answer them with clear content get cited in Google's AI Overviews.</p>
-
-<h3>Seasonal searches</h3>
-<p>Adelaide has brutal summers and winters. Searches for 'AC repair Adelaide' spike in November-February. 'Heating repair Adelaide' peaks June-August. Plan content around these.</p>
-
-<h3>Storm and weather events</h3>
-<p>Hail, storms, and heatwaves drive emergency tradie searches. Tradie sites with rapid 'storm response' content rank for these surges.</p>
-
-<h2>Real Adelaide tradie example</h2>
-<p>A two-person electrical business in the eastern suburbs was averaging 55 inbound calls a week from organic + GBP combined. After implementing the framework in this guide:</p>
-<ul>
-  <li>Added 34 suburb service pages (one per Adelaide suburb)</li>
-  <li>Implemented FAQ schema on every page</li>
-  <li>Posted weekly on GBP with job photos</li>
-  <li>Set up automated review request SMS</li>
-  <li>Wrote 2 blog posts per month targeting Adelaide electrician questions</li>
-</ul>
-<p>Results over 6 months:</p>
-<ul>
-  <li>Organic calls: 55/week → 110/week</li>
-  <li>Map pack views: 800/month → 3,400/month</li>
-  <li>Cost per acquired customer from organic: ~$65 (vs $250 from Google Ads)</li>
-  <li>Annual revenue impact: approximately $140,000 in additional bookings at the same operating cost</li>
-</ul>
-
-<h2>Frequently Asked Questions</h2>
-
-<h3>"How long does SEO take to work for Adelaide tradies?"</h3>
-<p>Honest answer: 3-6 months to see meaningful movement, 6-12 months to rank top 3 in your service area. If a tradie SEO agency promises page-1 rankings in 30 days, they are lying or using risky tactics that will get you penalised.</p>
-
-<h3>"Is SEO better than Google Ads for tradies?"</h3>
-<p>For tradies in Adelaide, the answer is usually: yes, but use both. Google Ads gives you leads today. SEO gives you leads for years. We recommend starting with both, scaling SEO as it matures, and keeping a smaller Ads budget for emergency-need periods.</p>
-
-<h3>"How much should an Adelaide tradie spend on SEO?"</h3>
-<p>For a solo tradie or 2-person crew, $300-600/month is realistic. For a 5+ person operation, $800-1,500/month is appropriate. The cost per acquired customer from organic SEO at these levels is typically $40-100, far below the $200-400 cost from paid ads.</p>
-
-<h3>"Do tradies really need a website for SEO?"</h3>
-<p>Your GBP gets you into the map pack. Your website gets you into organic results. Most tradie searches show both. Without a website, you miss organic. A website also gives you somewhere to send GBP visitors, build reviews, and show portfolio. Aim for under-2-second mobile load.</p>
-
-<h3>"What's the difference between local SEO and regular SEO?"</h3>
-<p>Local SEO targets Adelaide-suburb-specific searches (map pack + local organic). Regular SEO targets national or non-location searches. As a tradie, local SEO is 80% of your opportunity. We focus almost entirely on local for tradie clients.</p>
-
-<h3>"Should I hire a freelancer or an agency for tradie SEO?"</h3>
-<p>For most Adelaide tradies, an agency focused on tradies wins. Freelancers are cheaper but often spread across industries. Specialisation matters — a tradie SEO agency knows the directories, the schema, and the conversion patterns specific to your trade.</p>
-
-<h3>"How do I know if my SEO agency is doing real work?"</h3>
-<p>Ask for: monthly ranking reports, GBP insights screenshots, content additions per month, and a list of directories submitted to. If they cannot show you this in the first 60 days, they are not doing real work.</p>
-
-<h3>"Can I do tradie SEO myself with AI tools?"</h3>
-<p>Yes — AI tools handle 70% of the content and schema work. The remaining 30% (strategy, GBP, reviews, partnerships) requires human time. Most tradies who DIY use AI to draft suburb pages and FAQs, then spend their time on GBP and partnerships.</p>
-
-<h2>A free Adelaide tradie SEO checklist</h2>
-<p>Everything in this guide in one printable list. If you only do these 15 things this quarter, you will outrank 80% of Adelaide tradies in your category:</p>
-<ol>
-  <li>Claim + verify your Google Business Profile at business.google.com</li>
-  <li>Set your primary category to the most specific match (Plumber, Electrician, Builder, etc.)</li>
-  <li>Add your real service area — every Adelaide suburb you actually service</li>
-  <li>Upload 10+ real photos of your team, vans, and completed jobs (no stock photos)</li>
-  <li>Post a GBP update this week — a job photo + 2-line write-up</li>
-  <li>Set up an automated review-request SMS that fires 2 hours after job completion</li>
-  <li>Reply to every existing review within 24 hours (positive and negative)</li>
-  <li>Audit your NAP consistency — your business name, address, and phone number must be identical everywhere online</li>
-  <li>Build one service page per job type you offer (not one big "Services" page)</li>
-  <li>Build one suburb page per Adelaide suburb you service</li>
-  <li>Add FAQPage + LocalBusiness + Service schema to every page (we do this for our clients automatically)</li>
-  <li>Write 1 blog post per month answering a real customer question with a specific answer</li>
-  <li>Join your industry association (Master Plumbers SA, NECA, HIA, etc.) for the profile page + backlink</li>
-  <li>Test your mobile speed at pagespeed.web.dev — fix anything scoring under 50</li>
-  <li>Install Google Search Console + Google Analytics 4 + call tracking</li>
-</ol>
-<p>Want us to handle steps 9, 10, and 11 for you? Our <a href="/seo">Adelaide SEO services</a> start at $399/month with no lock-in. We also bundle SEO with <a href="/website-pricing">websites from $699</a> if you need both.</p>
-
-<h2>Where to start this week</h2>
-<p>If you only have an hour, do this:</p>
-<ol>
-  <li>Claim your Google Business Profile if you have not (15 min)</li>
-  <li>Add 5 photos of recent jobs (10 min)</li>
-  <li>Ask your last 3 customers for a Google review (15 min)</li>
-  <li>Search 'your main service + Adelaide' and see who ranks (10 min)</li>
-  <li>Make a list of the top 5 suburbs you want to rank in (10 min)</li>
-</ol>
-<p>If you have a day, add:</p>
-<ol>
-  <li>One suburb page for each of your top 5 suburbs</li>
-  <li>FAQ schema on your homepage and contact page</li>
-  <li>Submission to Yellow Pages, True Local, hipages</li>
-  <li>One blog post answering a common customer question</li>
-</ol>
-<p>If you want help with any or all of this, <a href="/contact">book a free 15-minute chat</a> with the AI Adelaide team. We build websites from $699, run SEO from $399/month, and automate the follow-up from $199/month — built specifically for Adelaide tradies. Or browse our <a href="/services">full services list</a> or read the <a href="/website-cost-adelaide">website cost guide for Adelaide tradies</a> to see what fits.</p>`
-  }
 ];

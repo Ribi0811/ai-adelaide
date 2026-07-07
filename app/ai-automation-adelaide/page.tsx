@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import StackCTA from "@/components/StackCTA";
 
 export const metadata: Metadata = {
   title: "AI Automation Adelaide | From $199/mo",
   description:
-    "AI automation for Adelaide businesses — missed call text-back, AI receptionist, quote follow-ups. Setup in 2-5 days. From $199/mo.",
+    "AI automation for Adelaide small businesses — missed-call text-back, AI receptionist, and quote follow-ups. Setup in 2-5 days, no lock-in. From $199/mo.",
   alternates: { canonical: "/ai-automation-adelaide" },
 };
 
@@ -22,7 +23,7 @@ const faqItems = [
   {
     question: "How much does AI automation cost for a small Adelaide business?",
     answer:
-      "Most Adelaide businesses start with a one-off setup ($500–$1,500) and a monthly subscription ($99–$497/mo). The first workflow — usually missed-call response or quote follow-up — often pays for itself within 30 days. A tradie recovering 3 extra jobs a week at $350 each sees $1,050/week in new revenue against a $99–$150/mo system cost. That's an ROI of 700–1,000% in the first month.",
+      "Most Adelaide businesses start with a one-off setup and a monthly subscription from $199/mo. The first workflow — usually missed-call response or quote follow-up — often pays for itself within 30 days. A tradie recovering 3 extra jobs a week at $350 each sees $1,050/week in new revenue against a $199/mo system cost. That's an ROI of 400%+ in the first month.",
   },
   {
     question: "How long does it take to set up AI automation?",
@@ -113,7 +114,7 @@ function LocalBusinessJsonLd() {
       "@type": "City",
       name: "Adelaide",
     },
-    priceRange: "$99–$497/month",
+    priceRange: "$199–$399/month",
     sameAs: [
       "https://www.facebook.com/aiadelaide",
       "https://www.linkedin.com/company/ai-adelaide",
@@ -242,7 +243,7 @@ export default function AIAutomationAdelaidePage() {
               Total estimated savings: <strong className="text-slate-950">~$5,000/month</strong> for a typical Adelaide tradie or service business. Your numbers will vary by industry, call volume, and average job value — but the structure is the same. Want to see your own number? <Link href="/contact" className="text-accent underline">Book a free audit</Link>.
             </p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm">
-              <Link href="/24-7-answering-service-adelaide" className="text-accent underline">
+              <Link href="/answering-service-adelaide" className="text-accent underline">
                 See 24/7 answering service cost →
               </Link>
               <Link href="/ai-receptionist-vs-virtual-receptionist" className="text-accent underline">
@@ -551,10 +552,10 @@ export default function AIAutomationAdelaidePage() {
                   SETUP
                 </div>
                 <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">
-                  Implementation
+                  Automation Starter
                 </h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  from $99{" "}
+                  from $199{" "}
                   <span className="text-sm font-normal text-slate-500">
                     /month
                   </span>
@@ -575,10 +576,10 @@ export default function AIAutomationAdelaidePage() {
                   GROW
                 </div>
                 <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">
-                  Ongoing Support
+                  Automation Business
                 </h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  $299-699{" "}
+                  from $399{" "}
                   <span className="text-sm font-normal text-slate-500">
                     /month
                   </span>
@@ -694,6 +695,34 @@ export default function AIAutomationAdelaidePage() {
             </div>
           </div>
         </section>
+
+        <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+          <div className="panel-light p-6 md:p-8">
+            <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                AI Receptionist Cost Adelaide →
+              </Link>
+              <Link href="/ai-automation-vs-hiring-staff-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                AI Automation vs Hiring Staff →
+              </Link>
+              <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                Websites for Plumbers Adelaide →
+              </Link>
+              <Link href="/websites-for-electricians-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                Websites for Electricians Adelaide →
+              </Link>
+              <Link href="/mawson-lakes" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                AI Automation in Mawson Lakes →
+              </Link>
+              <Link href="/port-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+                AI Automation in Port Adelaide →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <StackCTA variant="automation" />
 
         {/* ── CTA ───────────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">

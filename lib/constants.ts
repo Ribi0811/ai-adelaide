@@ -15,79 +15,56 @@ export const legalLinks = [
   { href: "/cookie-policy", label: "Cookie Policy" },
 ];
 
-export const services = [
-  {
-    id: "audit",
-    title: "Missed Call Audit",
+/**
+ * PRICING — single source of truth for every price quoted on the site.
+ * Confirmed against the live site by Ivan, 4 Jul 2026: websites from $699,
+ * local SEO from $399/mo, AI automation from $199/mo, audit always free.
+ *
+ * Note: this constant is provided for new/updated pages to import instead of
+ * hardcoding numbers. It does NOT retroactively rewrite every existing price
+ * literal sitewide (959 matches across app/components/lib/data at last count,
+ * the vast majority already correct) — see CHANGELOG-SEO-WORK.md Phase 4 for
+ * what was actually swept and fixed vs. what was left as pre-existing, correct
+ * copy referencing these same figures directly.
+ */
+export const PRICING = {
+  audit: {
+    label: "Free Audit",
     price: "Free",
-    description:
-      "The starting point. We look at where missed calls and slow follow-up are costing you jobs, then show you the best place to start.",
-    features: [
-      "Review of your missed call handling and call-back process",
-      "Clear recommendation on the fastest win to set up first",
-      "Plain-English summary of what to change",
-      "No obligation to continue",
-    ],
-    bestFor: "Tradies who want to see where leads are slipping through the cracks",
+    href: "/audit",
   },
-  {
-    id: "implementation",
-    title: "Setup",
-    price: "from $99/month",
-    description:
-      "We don&apos;t just give you a plan — we set up the system. AI receptionist, missed call follow-up, reminders, or admin support.",
-    features: [
-      "AI receptionist or automated answering system",
-      "Connection with your existing tools where needed",
-      "Simple handover for you and your team",
-      "Fast setup window",
+  website: {
+    label: "Website Design",
+    from: "$699",
+    fromLabel: "from $699",
+    href: "/website-pricing",
+    tiers: [
+      { name: "Starter", price: "$699" },
+      { name: "Business", price: "$1,299" },
+      { name: "Growth", price: "$2,499" },
     ],
-    timeline: "2-5 business days",
-    bestFor: "Tradies ready to stop losing leads and clean up the admin backlog",
   },
-  {
-    id: "retainer",
-    title: "Ongoing Support",
-    price: "$299-699/month",
-    description:
-      "Your system running, improving, and handling more of the boring stuff month after month.",
-    features: [
-      "Monthly improvements",
-      "Extra follow-up and reminder automations",
-      "Performance monitoring",
-      "Priority support",
+  seo: {
+    label: "Local SEO",
+    from: "$399/mo",
+    fromLabel: "from $399/mo",
+    href: "/seo",
+    tiers: [
+      { name: "Local SEO", price: "$399/mo" },
+      { name: "Growth SEO", price: "$699/mo" },
     ],
-    bestFor: "Businesses that want more than a one-off setup",
   },
-  {
-    id: "seo",
-    title: "Tradie Growth Add-on",
-    price: "$300-500/month",
-    description:
-      "Get found by the right customers before they ring someone else.",
-    features: [
-      "SEO-focused content",
-      "Keyword research tied to your suburb and service pages",
-      "Google Search Console monitoring",
-      "Content built around actual customer searches",
+  automation: {
+    label: "AI Automation",
+    from: "$199/mo",
+    fromLabel: "from $199/mo",
+    href: "/ai-automation-adelaide",
+    tiers: [
+      { name: "Starter", price: "$199/mo" },
+      { name: "Business", price: "$399/mo" },
     ],
-    bestFor: "Tradies who want more inbound leads alongside the phone system",
   },
-  {
-    id: "website-design",
-    title: "Website Design",
-    price: "from $699",
-    description:
-      "Fast, conversion-focused websites for Adelaide tradies, hairdressers, cafes, clinics, and local service businesses.",
-    features: [
-      "Professional mobile-first design",
-      "Google-ready page structure and metadata",
-      "Suburb targeting pages built in",
-      "Lead capture forms and AI automation-ready setup",
-    ],
-    bestFor: "Small businesses that need a proper website live fast without agency bloat",
-  },
-];
+} as const;
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 export const testimonials = [

@@ -5,7 +5,11 @@ import { posts } from "@/data/posts";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Adelaide Blog | AI Tips for Small Business",
+  // Phase 8 punch list P4 (expanded — found fresh, not in original punch
+  // list text): raw title contained "AI Adelaide" and the root layout's
+  // title.template would append " | AI Adelaide" again. `absolute` bypasses
+  // the template so this exact string renders with no suffix appended.
+  title: { absolute: "AI Adelaide Blog — Websites, SEO & AI Automation Tips" },
   description:
     "Practical AI tips, automation guides, and SEO insights for Adelaide small businesses.",
   alternates: {

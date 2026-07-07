@@ -4,7 +4,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Tradie Website Bundle Adelaide | Website + AI + SEO",
+  // Phase 8 punch list P4: rendered title was 65 chars (max 60).
+  title: "Tradie Website Bundle Adelaide",
   description:
     "Website built in 48hrs, 24/7 AI call capture, and local SEO — everything Adelaide tradies need to stop losing jobs online. No lock-in. Book a free chat.",
   alternates: { canonical: "/tradie-website-bundle" },
@@ -191,7 +192,7 @@ export default function TradieWebsiteBundlePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">What&apos;s NOT included (no surprises)</h2>
           <p className="mb-6 text-sm text-slate-600">
-            <strong>New to tradie SEO?</strong> Read our free <Link href="/blog/adelaide-seo-for-tradies" className="text-accent underline">SEO for Tradies Adelaide guide</Link> before you buy anything — it covers GBP, reviews, suburb pages and a 15-step checklist. The bundle above is the &quot;done-for-you&quot; path for tradies who don&apos;t want to DIY.
+            <strong>New to tradie SEO?</strong> Read our free <Link href="/seo-for-tradies-adelaide" className="text-accent underline">SEO for Tradies Adelaide guide</Link> before you buy anything — it covers GBP, reviews, suburb pages and pricing. The bundle above is the &quot;done-for-you&quot; path for tradies who don&apos;t want to DIY.
           </p>
           <ul className="space-y-3">
             {notIncludes.map((item) => (

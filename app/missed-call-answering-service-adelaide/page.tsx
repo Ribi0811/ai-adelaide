@@ -1,18 +1,116 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Missed Call Answering Adelaide | AI From $99",
+  title: "Missed Call Answering Adelaide | AI From $199",
   description:
-    "Never miss a lead again. Our AI answering service responds to missed calls within 60 seconds, 24/7. Adelaide small businesses and tradies — from $99/mo.",
+    "Never miss a lead again. Our AI answering service responds to missed calls within 60 seconds, 24/7. Adelaide small businesses and tradies — from $199/mo.",
   alternates: {
     canonical: "/missed-call-answering-service-adelaide",
   },
 };
 
+// Ported from /missed-call-service during Phase 2 cannibal-cluster
+// consolidation (SEO audit 2026-07). One FAQ item was intentionally NOT
+// ported — "How much does it cost?" (source cited a standalone $99/mo
+// text-back tier). Resolved in Phase 4.2: Ivan confirmed automation floor is
+// $199/mo sitewide, no separate $99/mo tier — the pricing section below now
+// reflects that ($199/mo Starter, $399/mo Business).
+const portedFaqs = [
+  {
+    question: "What is a missed call service?",
+    answer:
+      "A missed call service catches calls you can't pick up and responds on your behalf — usually with an instant SMS, sometimes with a live AI or human answer. The point is to keep the lead warm so they don't ring the next business on Google.",
+  },
+  {
+    question: "What does the SMS say?",
+    answer:
+      "Whatever you want, in your voice. The default is something like: \"Hi, this is [Business]. Sorry we missed your call — we're on the tools. Can you tell us what you need help with? We'll get back to you within the hour.\" Then the AI asks 2-3 qualifying questions based on your services.",
+  },
+  {
+    question: "Will it work with my existing mobile number?",
+    answer:
+      "Yes. We layer the automation on top of your current number — no porting, no new SIM, no app for your customers to learn. The number your customers have is the number that responds.",
+  },
+  {
+    question: "Can I customise the messages for different services?",
+    answer:
+      "Yes. Emergency callouts, quote requests, after-hours, weekend bookings — each can have its own template, qualification questions, and routing rules.",
+  },
+  {
+    question: "Does this include an AI receptionist?",
+    answer:
+      "It's part of the same stack. Missed-call text-back is the entry feature. Add live AI answering, booking automation, and quote follow-up for the full package.",
+  },
+  {
+    question: "How do I know it's working?",
+    answer:
+      "Monthly reporting: how many missed calls, how many SMS sent, how many leads qualified, how many jobs booked. You'll see the recovery rate climb in the first 30 days.",
+  },
+];
+
+function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }),
+      }}
+    />
+  );
+}
+
+function ServiceJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Missed Call Answering Service Adelaide",
+    serviceType: "Missed Call Answering",
+    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    areaServed: { "@type": "City", name: "Adelaide" },
+    description:
+      "AI missed call answering service for Adelaide businesses. Responds within 60 seconds, 24/7, qualifies the lead. Part of AI automation from $199/mo.",
+    offers: {
+      "@type": "Offer",
+      price: "199",
+      priceCurrency: "AUD",
+      priceSpecification: { "@type": "UnitPriceSpecification", price: "199", priceCurrency: "AUD", unitText: "MONTH" },
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
+
 export default function MissedCallAnsweringServicePage() {
   return (
     <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <ServiceJsonLd />
+      <FaqJsonLd faqs={portedFaqs} />
+
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "Missed Call Answering Service Adelaide" },
+        ]}
+      />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
@@ -194,20 +292,71 @@ export default function MissedCallAnsweringServicePage() {
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Pricing: From $99/Month
+            Pricing: From $199/Month
           </h2>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
             Missed call follow-up is included in all our plans. No per-SMS fees, no extra charges for after-hours responses.
           </p>
           <ul className="list-disc pl-6 mb-6 space-y-2 text-body-mobile text-slate-700 md:text-body">
-            <li><strong>Starter — $99/month:</strong> Missed call text-back, basic message capture, SMS alerts to you</li>
-            <li><strong>Professional — $199/month:</strong> Full AI conversation, booking link, follow-up sequences, dashboard</li>
+            <li><strong>Starter — $199/month:</strong> Missed call text-back, AI conversation, message capture, SMS alerts to you</li>
+            <li><strong>Business — $399/month:</strong> Full AI conversation, booking link, follow-up sequences, dashboard</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            One-off setup fee of $299 covers configuration, testing, and your 30-minute onboarding call. Most businesses are live within 2–5 business days.
+            One-off setup fee covers configuration, testing, and your 30-minute onboarding call. Most businesses are live within 2–5 business days.
           </p>
         </div>
       </section>
+
+      <Testimonials
+        industry="trades"
+        count={3}
+        heading="What Adelaide businesses say after switching to AI missed-call service"
+        eyebrow="Real results"
+        subheadline="The fastest SMS reply wins the job. Here's what that looks like in real numbers."
+      />
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Common Questions</h2>
+          <div className="space-y-5">
+            {portedFaqs.map((faq) => (
+              <div key={faq.question} className="panel-light-soft p-5 md:p-6">
+                <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">{faq.question}</h3>
+                <p className="text-body-mobile text-slate-700 md:text-body">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist Cost Adelaide →
+            </Link>
+            <Link href="/missed-call-text-back-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Text-Back Adelaide →
+            </Link>
+            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Plumbers Adelaide →
+            </Link>
+            <Link href="/websites-for-electricians-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Electricians Adelaide →
+            </Link>
+            <Link href="/salisbury" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Answering in Salisbury →
+            </Link>
+            <Link href="/elizabeth" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Answering in Elizabeth →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

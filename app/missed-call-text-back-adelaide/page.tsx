@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
+import DemoLine from "@/components/DemoLine";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "Missed Call Text-Back Adelaide",
   description:
-    "Auto-text-back for Adelaide tradies who miss calls on the job. Recover missed leads in under 60 seconds, $199 setup.",
+    "Auto-text-back for Adelaide tradies who miss calls on the job. Recover missed leads automatically in under 60 seconds, no lock-in. From $199 setup.",
   alternates: { canonical: "/missed-call-text-back-adelaide" },
 };
 
@@ -118,7 +120,7 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Missed-call text-back is included from $199/month as part of our full AI automation stack. Standalone text-back starts at $99/month for simple setups.",
+      "Missed-call text-back is included from $199/month as part of our full AI automation stack — no separate standalone tier.",
   },
   {
     question: "Will it work on weekends and public holidays?",
@@ -279,6 +281,35 @@ export default function MissedCallTextBackAdelaidePage() {
           </div>
         </div>
       </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              AI Receptionist Cost Adelaide →
+            </Link>
+            <Link href="/lost-leads-calculator" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Lost Leads Calculator →
+            </Link>
+            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Plumbers Adelaide →
+            </Link>
+            <Link href="/websites-for-electricians-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Websites for Electricians Adelaide →
+            </Link>
+            <Link href="/modbury" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Text-Back in Modbury →
+            </Link>
+            <Link href="/marion" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
+              Missed Call Text-Back in Marion →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <StackCTA variant="automation" />
+      <DemoLine />
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">

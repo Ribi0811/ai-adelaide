@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     description: "Your free AI audit results for your Adelaide business. Scored PDF report with concrete next steps across website, SEO, and AI automation.",
     url: `${siteConfig.url}/audit/results`,
   },
+  // Personalised, session-specific results page — not a landing page.
+  robots: { index: false, follow: true },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

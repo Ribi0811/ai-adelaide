@@ -11,7 +11,7 @@ export default function SuburbStrip() {
         <Reveal>
           <div className="flex flex-wrap items-baseline justify-between gap-4">
             <h2 className="text-[22px] font-bold tracking-tight text-[#1D1D1F]">
-              Website design &amp; SEO across {suburbs.length} Adelaide suburbs
+              Website design &amp; SEO across Adelaide&apos;s suburbs
             </h2>
             <Link
               href="/locations"

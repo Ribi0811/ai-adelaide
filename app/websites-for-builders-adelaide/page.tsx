@@ -54,7 +54,7 @@ const faqs = [
   {
     question: "Can I add suburb pages for the areas I build in?",
     answer:
-      "Yes. If you take on jobs across several suburbs, each one can get its own page targeting '[builder/renovation] [suburb]' searches — the same approach we use across all 34 Adelaide suburbs on our own site.",
+      "Yes. If you take on jobs across several suburbs, each one can get its own page targeting '[builder/renovation] [suburb]' searches — the same approach we use across dozens of Adelaide suburbs on our own site.",
   },
   {
     question: "How long until the site is live?",

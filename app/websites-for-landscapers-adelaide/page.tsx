@@ -54,7 +54,7 @@ const faqs = [
   {
     question: "Can you build pages for the Adelaide Hills specifically?",
     answer:
-      "Yes. If Stirling, Crafers, or Hahndorf are core to your business, we build dedicated pages for those areas — same approach we use across all 34 Adelaide suburbs on our own site.",
+      "Yes. If Stirling, Crafers, or Hahndorf are core to your business, we build dedicated pages for those areas — same approach we use across dozens of Adelaide suburbs on our own site.",
   },
   {
     question: "How long until the site is live?",

@@ -51,7 +51,7 @@ export default function SuburbNav({
             href="/locations"
             className="text-sm font-medium text-accent transition-colors hover:text-[#E55A2B]"
           >
-            View all 34 →
+            View all suburbs →
           </Link>
         </div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -100,7 +100,7 @@ export default function SuburbNav({
             Adelaide Locations
           </span>
           <h2 className="mt-4 text-3xl font-bold leading-tight text-slate-950 md:text-4xl">
-            Web design & SEO for 34 Adelaide suburbs
+            Web design & SEO across Adelaide
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-base text-slate-600">
             Every suburb gets a custom page with local SEO, suburb-specific FAQs, and a

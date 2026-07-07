@@ -58,7 +58,7 @@ const onPage = [
   },
   {
     title: "One page per suburb",
-    body: "If you service multiple Adelaide suburbs, each needs its own page: common jobs in that suburb, response time, and a suburb-specific FAQ. We've built this out across all 34 Adelaide suburbs on our own site — the same structure works for any tradie.",
+    body: "If you service multiple Adelaide suburbs, each needs its own page: common jobs in that suburb, response time, and a suburb-specific FAQ. We've built this out across dozens of Adelaide suburbs on our own site — the same structure works for any tradie.",
   },
   {
     title: "Schema markup",

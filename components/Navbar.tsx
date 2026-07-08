@@ -21,6 +21,17 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const darkCount = useRef(0);
+  const sheetRef = useRef<HTMLDivElement>(null);
+
+  // `inert` isn't a first-class React 18 prop (added in 19), so set it
+  // imperatively on the mobile sheet so keyboard users can't tab into the
+  // closed menu's links. Also makes GSC accessibility check happy.
+  useEffect(() => {
+    const el = sheetRef.current;
+    if (!el) return;
+    if (!open) el.setAttribute("inert", "");
+    else el.removeAttribute("inert");
+  }, [open]);
 
   useEffect(() => {
     let raf = 0;
@@ -150,6 +161,7 @@ export default function Navbar() {
 
       {/* Mobile sheet */}
       <div
+        ref={sheetRef}
         className={`fixed inset-0 z-40 bg-[#FBFBFD] transition-opacity duration-300 md:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}

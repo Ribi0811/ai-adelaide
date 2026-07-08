@@ -89,6 +89,16 @@ const whoItsFor = [
 
 const faqs = [
   {
+    question: "Are you a web design agency or a freelance web designer?",
+    answer:
+      "Somewhere better: a small Adelaide web design studio. You get a dedicated web designer who knows your business (not a rotating agency team), with AI doing the heavy lifting behind the scenes — which is how web design in Adelaide can cost $699 here instead of $5,000.",
+  },
+  {
+    question: "Do I really need a website if I already have Facebook or Instagram?",
+    answer:
+      "Yes — social profiles rent attention, a small business website owns it. When someone Googles your trade plus their suburb, Facebook pages rarely rank; a proper website with local SEO does. Your socials should feed the website, not replace it.",
+  },
+  {
     question: "Do I need to write my own content?",
     answer: "No. We handle all the copywriting using AI trained on your industry. You tell us about your business in a 15-minute call, we write it. You review and request changes — we don't publish until you're happy.",
   },

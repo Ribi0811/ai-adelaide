@@ -31,7 +31,9 @@ Local commits ahead of `origin/main` (622a09b): SEO phases 1–6 · One Day home
 
 **Q6. Human inputs waiting [Ivan].** (a) `docs/claims-to-verify.md` decisions — testimonials/case studies keep-label-remove; (b) ABN for the footer placeholder; (c) founder line wording + photo (`components/`—search "HUMAN INPUT"); (d) real portfolio screenshots + permissions; (e) confirm demo-line missed-call text-back actually fires → then build the "hang-up challenge" section.
 
-**Q7. Nice-to-haves parked.** OG image restyle to v4 language (`app/opengraph-image.tsx`); 404 page delight; `scripts/check-links.mjs` in CI (exists? verify) ; drop Space Grotesk font once no page uses `font-display` (after Q3).
+**Q7. Content-calendar seeds (from the 2026-07-07 keyword audit).** Money pages all align with their targets; variant gaps to grow into: a "Do I need a website if I have Facebook/Instagram?" blog post (FAQ seed already on /website-design-adelaide), a "web designer Adelaide" angle (currently covered semantically, no dedicated content), "how much does SEO cost in Adelaide" post expanding the /seo FAQ. Keep exact-match anchors natural — semantic coverage beats stuffing.
+
+**Q8. Nice-to-haves parked.** OG image restyle to v4 language (`app/opengraph-image.tsx`); 404 page delight; `scripts/check-links.mjs` in CI (exists? verify) ; drop Space Grotesk font once no page uses `font-display` (after Q3).
 
 ## Landmines (learn from our scars)
 

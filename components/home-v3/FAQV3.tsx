@@ -8,7 +8,7 @@ import Reveal from "./Reveal";
 const faqs = [
   {
     q: "How much does a website cost in Adelaide?",
-    a: "Adelaide agencies typically charge $3,000-$5,000+. Because AI accelerates our copywriting, design and SEO setup, our custom websites start at $699 one-off — you own it outright. See the full breakdown on our website cost guide.",
+    a: "Adelaide web design agencies typically charge $3,000-$5,000+. Because AI accelerates our copywriting, design and SEO setup, our custom websites start at $699 one-off — you own it outright. See the full breakdown on our website cost guide.",
     link: { href: "/website-cost-adelaide", label: "Website cost guide" },
   },
   {

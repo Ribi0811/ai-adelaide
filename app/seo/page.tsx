@@ -84,6 +84,11 @@ const timeline = [
 
 const faqs = [
   {
+    question: "How much does SEO cost in Adelaide?",
+    answer:
+      "Our local SEO starts at $399/mo and Growth SEO is $699/mo — month to month, no lock-in. Adelaide agencies commonly charge $1,000-$2,500/mo for comparable work. Every plan includes content, Google Business Profile optimisation, and monthly rank reporting, so you always know what you're paying for.",
+  },
+  {
     question: "Do I need a new website to do SEO?",
     answer:
       "Not necessarily. If your current site is functional, we can work with it. If it's genuinely holding you back, we'll tell you honestly — and we can build you a new one fast.",

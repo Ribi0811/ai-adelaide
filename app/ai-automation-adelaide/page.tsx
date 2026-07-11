@@ -7,7 +7,7 @@ import StackCTA from "@/components/StackCTA";
 export const metadata: Metadata = {
   title: "AI Automation Adelaide | From $199/mo",
   description:
-    "AI automation for Adelaide small businesses — missed-call text-back, AI receptionist, and quote follow-ups. Setup in 2-5 days, no lock-in. From $199/mo.",
+    "AI and business automation for Adelaide small businesses — missed-call text-back, quote follow-ups, admin workflows. Setup in 2-5 days. From $199/mo.",
   alternates: { canonical: "/ai-automation-adelaide" },
 };
 
@@ -24,6 +24,14 @@ const faqItems = [
     question: "How much does AI automation cost for a small Adelaide business?",
     answer:
       "Most Adelaide businesses start with a one-off setup and a monthly subscription from $199/mo. The first workflow — usually missed-call response or quote follow-up — often pays for itself within 30 days. A tradie recovering 3 extra jobs a week at $350 each sees $1,050/week in new revenue against a $199/mo system cost. That's an ROI of 400%+ in the first month.",
+  },
+  {
+    // Tier 12 (2026-07-11): "business automation adelaide" gets 105 impr/mo
+    // at pos 8.4 — served by /port-adelaide of all pages. This FAQ gives the
+    // query a home on the page actually built for it.
+    question: "Is this the same as business automation in Adelaide?",
+    answer:
+      "Yes — business automation Adelaide companies search for is exactly what we build; the difference is we use AI to do it faster and cheaper. Traditional business automation projects mean months of consultants mapping processes. We pick the workflow leaking the most money (usually missed calls or quote follow-up), automate it in under a week from $199/mo, and expand from there. Same outcome — fewer manual tasks, faster response — without the enterprise price tag.",
   },
   {
     question: "How long does it take to set up AI automation?",

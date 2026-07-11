@@ -26,7 +26,11 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   const ogImageUrl = `${siteConfig.url}/${suburb.slug}/opengraph-image`;
   const ogImageAlt = `AI Adelaide — ${suburb.name} (${suburb.postcode}) websites, SEO and AI automation services`;
   return {
-    title: `${suburb.name} Websites, SEO & AI Automation`,
+    // Tier 12 (2026-07-11): GSC shows suburb pages ranking 9-18 for
+    // "website designer {suburb}" / "web design {suburb}" (Moana, Seaford,
+    // Reynella ~240 impr/mo combined) — "Web Design" replaced "Websites" in
+    // the title to match that intent. Longest suburb name renders exactly 60.
+    title: `${suburb.name} Web Design, SEO & AI Automation`,
     description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`,
     keywords: [
       `AI websites ${suburb.name}`,
@@ -40,7 +44,7 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
     ],
     alternates: { canonical: `${siteConfig.url}/${suburb.slug}` },
     openGraph: {
-      title: `${suburb.name} Websites, SEO & AI Automation`,
+      title: `${suburb.name} Web Design, SEO & AI Automation`,
       description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
       url: `${siteConfig.url}/${suburb.slug}`,
       siteName: siteConfig.name,
@@ -58,7 +62,7 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${suburb.name} Websites, SEO & AI Automation | AI Adelaide`,
+      title: `${suburb.name} Web Design, SEO & AI Automation | AI Adelaide`,
       description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
       images: [
         {
@@ -212,7 +216,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
             "@type": "WebPage",
             "@id": `${siteConfig.url}/${suburb.slug}#webpage`,
             url: `${siteConfig.url}/${suburb.slug}`,
-            name: suburb.heroLine ? `${suburb.heroLine} | AI Adelaide` : `${suburb.name} Websites, SEO & AI Automation`,
+            name: suburb.heroLine ? `${suburb.heroLine} | AI Adelaide` : `${suburb.name} Web Design, SEO & AI Automation`,
             description: suburb.intro,
             inLanguage: "en-AU",
             isPartOf: {

@@ -4,10 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import DemoLine from "@/components/DemoLine";
 
 export const metadata: Metadata = {
-  // Phase 8 punch list P4: rendered title was 62 chars (max 60).
-  title: "AI Receptionist vs Virtual Receptionist",
+  // Tier 12 (2026-07-11): this page ranks pos 14 for "virtual receptionist
+  // adelaide" (427 impr/mo) with 0 clicks — the old comparison-framed title
+  // didn't speak to that searcher. Lead with the query, keep the comparison
+  // hook. Harvest tier: clicks funnel to the website+SEO stack via StackCTA.
+  title: "Virtual Receptionist Adelaide: AI vs Human",
   description:
-    "Compare AI receptionist vs virtual receptionist for Adelaide businesses on cost, coverage, setup speed, scalability, and after-hours support.",
+    "Looking for a virtual receptionist in Adelaide? Compare AI vs human receptionists on cost, coverage and setup — and why AI answers from $199/mo, 24/7.",
   alternates: {
     canonical: "/ai-receptionist-vs-virtual-receptionist",
   },

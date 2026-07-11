@@ -3,9 +3,15 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "AI App Development Adelaide — Custom AI Apps for Adelaide Businesses",
+  // Tier 12 (2026-07-11): the national "ai development company" cluster
+  // (~325 impr/mo at pos 10-12: "ai app development company", "ai software
+  // development company", "ai development company") ranks on the HOMEPAGE
+  // while this page sits at pos 50. Title/copy now carry the "AI development
+  // company" entity so Google hands this page the cluster. Also fixes
+  // check-meta failures (title was 82 rendered chars, description 187).
+  title: "AI Development Company & AI Apps Adelaide",
   description:
-    "Custom AI app development for Adelaide businesses. AI chatbots, workflow automation tools, customer service AI, internal tools. Built for tradies, clinics, and Adelaide SMBs. From $2,497.",
+    "Adelaide AI development company building custom AI apps — chatbots, voice agents, workflow tools, integrations — for tradies, clinics and SMBs. From $2,497.",
   alternates: { canonical: "/ai-app-development-adelaide" },
 };
 
@@ -23,6 +29,7 @@ const faqs = [
   { question: "How much does custom AI app development cost in Adelaide?", answer: "Simple AI chatbots start at $2,497 one-off. AI phone agents (full setup with your phone number, scripts, calendar integration) start at $3,997 + $99-297/mo for the voice AI service. Internal workflow tools and dashboards range from $4,997-$15,000+ depending on complexity. All builds include 30 days post-launch support." },
   { question: "How long does it take to build a custom AI app?", answer: "AI chatbots: 1-2 weeks. AI phone agents: 1-2 weeks. Custom workflow tools and dashboards: 3-6 weeks. Complex integrations with multiple business systems: 6-10 weeks. We give you an exact timeline in your free consultation." },
   { question: "Can AI really replace a receptionist?", answer: "For 70-80% of inbound calls, yes. AI phone agents handle booking, FAQs, message-taking, and routing. They never miss a call, never put someone on hold, and work 24/7. For the 20-30% of complex calls that genuinely need a human, your AI takes a detailed message and texts you instantly. Most of our tradie clients find this combo replaces a $50k/year receptionist while capturing more after-hours work." },
+  { question: "Are you an AI software development company or an agency?", answer: "We're an AI development company in Adelaide, Australia — we design, build, and support the AI software ourselves rather than reselling someone else's platform. That matters for two reasons: your tools are built around how your business actually runs, and when something needs changing you talk to the people who built it, in your timezone, not an offshore ticket queue." },
   { question: "Do you build AI apps for specific Adelaide industries?", answer: "Yes — we specialise in AI for Adelaide tradies (plumbers, electricians, builders, auto), allied health (physio, chiro, dental, psychology), hospitality (cafes, restaurants, hotels), and professional services (lawyers, accountants, financial advisors). Each industry has different AI patterns that work, and we know them." },
 ];
 
@@ -48,7 +55,7 @@ export default function AiAppDevelopmentAdelaidePage() {
           <span className="eyebrow-light">AI App Development Adelaide</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">AI App Development Adelaide — Custom AI for Your Business</h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Chatbots, voice agents, workflow tools, internal dashboards — built for your Adelaide business, integrated with your existing software, supported by a local team. Not "use ChatGPT". Real AI that solves real business problems.
+            Chatbots, voice agents, workflow tools, internal dashboards — built for your Adelaide business, integrated with your existing software, supported by a local team. We&apos;re an AI development company based in Adelaide, not an offshore dev shop. Not "use ChatGPT". Real AI that solves real business problems.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">Book Free AI App Chat <span aria-hidden>→</span></Link>

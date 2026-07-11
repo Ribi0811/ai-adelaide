@@ -11,6 +11,98 @@ export interface Post {
 
 export const posts: Post[] = [
 {
+    slug: "how-much-does-seo-cost-adelaide",
+    title: "How Much Does SEO Cost in Adelaide? (2026)",
+    excerpt:
+      "Ask five Adelaide agencies what SEO costs and you'll get five wildly different numbers — anywhere from $99 to $5,000 a month. None of them are lying, exactly. They're just quoting different things. Here's what each price tier actually buys, why the quotes vary so much, and how to work out what your business actually needs.",
+    date: "2026-07-11",
+    readTime: "8 min read",
+    category: "How-To",
+    seoDescription:
+      "SEO in Adelaide costs anywhere from $399 to $2,500+ per month. Here's what each price tier actually buys, why quotes vary so much, and how to compare.",
+    content: `<p>Ask five Adelaide agencies what SEO costs and you'll get five wildly different numbers. None of them are lying, exactly — they're quoting different things. This guide breaks down what the market actually charges, what you get at each tier, and the warning signs that a quote is rubbish.</p>
+<h2>The short answer</h2>
+<ul>
+  <li><strong>$99–$300/mo</strong> — automated directory submissions and monthly "reports". Rarely moves rankings for a competitive term. Mostly a way to feel like you're doing SEO.</li>
+  <li><strong>$399–$699/mo</strong> — proper local SEO for a small business: Google Business Profile optimisation, suburb pages, reviews, citations, monthly content. This is our tier — <a href="/local-seo-adelaide">Local SEO is $399/mo, Growth SEO is $699/mo</a>, month to month.</li>
+  <li><strong>$1,000–$2,500/mo</strong> — what established Adelaide agencies commonly charge small and mid-size businesses for comparable local SEO work, usually with a 6–12 month contract.</li>
+  <li><strong>$2,500–$5,000+/mo</strong> — enterprise and competitive-niche SEO: big content teams, digital PR, link acquisition at scale. Right for national brands; overkill for a local service business.</li>
+</ul>
+<h2>Why the quotes vary so much</h2>
+<p>SEO pricing is really a function of four things:</p>
+<ul>
+  <li><strong>How many suburbs and services you're targeting.</strong> Ranking a plumber in three suburbs is a different job to ranking across all of metro Adelaide.</li>
+  <li><strong>How much content gets produced.</strong> Suburb pages, service pages, and blog posts are where most of the hours go.</li>
+  <li><strong>How competitive your keywords are.</strong> "Emergency plumber Adelaide" is a knife fight. "Pergola builder Mount Barker" is not.</li>
+  <li><strong>Who does the work.</strong> Senior agency staff bill at agency rates. Offshore teams bill less and it usually shows. AI-accelerated workflows — the way we work — compress the hours without compressing the output, which is why our pricing starts where agency pricing ends.</li>
+</ul>
+<h2>What should be included at $399–$699/mo</h2>
+<p>If you're paying in this range for <a href="/local-seo-adelaide">local SEO in Adelaide</a>, you should expect all of this — not some of it:</p>
+<ul>
+  <li>Google Business Profile optimisation (categories, services, photos, posts)</li>
+  <li>Suburb pages for the areas you actually service</li>
+  <li>A review generation system, not just "ask for reviews" advice</li>
+  <li>Citations and consistent name-address-phone details across directories</li>
+  <li>On-page work: titles, meta descriptions, schema markup, internal links</li>
+  <li>Monthly content targeting real searches, not filler</li>
+  <li>A plain-English monthly report showing where you rank and what changed</li>
+</ul>
+<h2>One-off SEO vs monthly SEO</h2>
+<p>Some businesses just need the foundations fixed once: site structure, page titles, Google Business Profile, schema. That's genuinely valuable — a one-off SEO setup is included in every website we build from $699. But rankings are competitive by nature. If your competitors are publishing content and collecting reviews every month and you're not, you drift backwards. Monthly SEO is what keeps the compounding going.</p>
+<h2>Warning signs a quote is rubbish</h2>
+<ul>
+  <li><strong>"Guaranteed #1 on Google."</strong> Nobody controls Google. Walk away.</li>
+  <li><strong>12-month lock-in contracts.</strong> If the work is good, you'll stay anyway. Lock-ins protect agencies from their own results. Everything we do is month to month.</li>
+  <li><strong>They won't tell you what they'll actually do.</strong> "Proprietary methods" usually means directory spam.</li>
+  <li><strong>$99/mo "SEO packages".</strong> At Adelaide labour rates that buys about 30 minutes of a human's time a month. The maths doesn't work.</li>
+</ul>
+<h2>How long until it pays for itself?</h2>
+<p>Honest timeline: Google Business Profile improvements can move you within 4–6 weeks. Suburb pages and content take 2–4 months. Competitive metro terms take 3–6 months. One extra job a month covers a $399 subscription for most trades — and unlike ads, rankings keep working after you stop paying for clicks. If you're weighing the two, read our <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads comparison</a>.</p>
+<h2>What about AI and SEO?</h2>
+<p>Two things are changing the price equation. First, AI compresses the hours SEO takes — that's why we can charge $399 for work agencies price at $1,500. Second, search itself is changing: Google's AI Overviews and tools like ChatGPT now answer many searches directly, and being the business those answers name is the new frontier. We cover both in our <a href="/ai-seo-adelaide">AI SEO service</a>.</p>
+<h2>The bottom line</h2>
+<p>For a typical Adelaide small business — a tradie, a clinic, a salon, a cafe — proper local SEO should cost $399–$699/mo with no lock-in, and you should see movement inside two months. Pay less and you're usually buying reports, not rankings. Pay agency rates and you're often paying for the agency's office, not extra output.</p>
+<p>Want to know exactly what your business needs before spending a dollar? <a href="/audit">Get a free audit</a> — we'll show you where you rank now, what your competitors are doing, and give you an honest timeline. If you're a tradie, start with the <a href="/seo-for-tradies-adelaide">SEO for tradies guide</a>.</p>`,
+  },
+{
+    slug: "do-i-need-a-website-if-i-have-facebook-instagram",
+    title: "Do You Need a Website If You Have Facebook?",
+    excerpt:
+      "It's one of the most common questions Adelaide small business owners ask us: my Facebook page gets likes, my Instagram gets DMs — why would I pay for a website? Fair question. Here's the honest answer, including the situations where you genuinely don't need one.",
+    date: "2026-07-11",
+    readTime: "7 min read",
+    category: "How-To",
+    seoDescription:
+      "Facebook and Instagram rent you attention — a website owns it. What Adelaide businesses lose running on socials alone, and when a $699 site pays off.",
+    content: `<p>It's one of the questions we hear most from Adelaide small business owners: "My Facebook page gets likes, my Instagram gets DMs — why would I pay for a website?"</p>
+<p>Fair question. Here's the honest answer — including the situations where you genuinely don't need one.</p>
+<h2>Social media rents attention. A website owns it.</h2>
+<p>Your Facebook page sits on Facebook's land. They decide who sees your posts, what your page looks like, and whether your account stays open. Organic reach on business pages has been squeezed for years — most of your followers never see what you post unless you pay to boost it. You're renting, and the rent keeps going up.</p>
+<p>A website is the one piece of your online presence you own outright. Nobody can change the algorithm on it, suspend it, or bury it under competitors' ads.</p>
+<h2>The real problem: how Adelaide customers actually search</h2>
+<p>Think about how you find a tradie, a physio, or a cafe in a suburb you don't know. You don't scroll Facebook — you Google it. "Plumber Norwood." "Physio Glenelg." "Cafe near me."</p>
+<p>Facebook and Instagram pages rarely rank for those searches. Websites with <a href="/local-seo-adelaide">local SEO</a> do. Every day you run your business on socials alone, the customers typing your trade plus their suburb into Google are finding your competitors instead — and those are the highest-intent customers there are, because they're searching with their wallet out.</p>
+<h2>Google Business Profile needs somewhere to send people</h2>
+<p>The map results at the top of local searches — the local pack — are driven by your Google Business Profile. And a GBP that links to a proper website consistently outperforms one that links to a Facebook page: Google reads your website to understand what you do, where you work, and what you charge. No website means Google is guessing, and Google doesn't rank guesses well.</p>
+<h2>The new reason: AI search reads websites, not feeds</h2>
+<p>When someone asks ChatGPT or Google's AI Overview "who's a good electrician in Adelaide?", the answer is assembled from what's written about you on the open web — your website, your reviews, your directory listings. Social content is largely invisible to these tools. As more searches get answered by AI, businesses without a website aren't just hard to find — they're impossible to recommend. That's a big part of why we built our <a href="/ai-seo-adelaide">AI SEO service</a>.</p>
+<h2>What socials are actually good for</h2>
+<p>None of this means delete your accounts. Facebook and Instagram are genuinely good at showing your work, building familiarity, and staying in front of past customers. The play is simple: <strong>socials feed the website, the website converts.</strong> Post the job photos on Instagram; let the "book a quote" happen on a page you own, with your pricing, your reviews, and a form that goes straight to you.</p>
+<h2>"But websites cost thousands"</h2>
+<p>They used to. Adelaide agencies still commonly quote $3,000–$5,000 for a small business site. Because AI accelerates the copywriting, design, and SEO setup, <a href="/website-design-adelaide">our websites start at $699 one-off</a> — you own it outright, no monthly platform fees. The full breakdown is in our <a href="/website-cost-adelaide">website cost guide</a>, and current packages are on the <a href="/website-pricing">pricing page</a>.</p>
+<h2>When you genuinely don't need a website</h2>
+<p>Honesty corner. You can probably skip the website if:</p>
+<ul>
+  <li>You're fully booked from word-of-mouth and want zero growth</li>
+  <li>It's a hobby or side project, not a business you're building</li>
+  <li>All your work comes from one contractor or platform relationship</li>
+</ul>
+<p>But if you want the phone to ring with new customers — people who don't already know you — you need to exist where they're searching. In 2026, that's Google and, increasingly, AI assistants. Both read websites.</p>
+<h2>The bottom line</h2>
+<p>Keep the socials. Add the website. One feeds attention, the other owns it — and only one of them shows up when someone in your suburb Googles what you do.</p>
+<p>Want to see what you're missing right now? <a href="/audit">Get a free audit</a> — we'll show you what happens when someone searches your trade in your suburbs, and what a $699 site plus <a href="/local-seo-adelaide">local SEO</a> would change.</p>`,
+  },
+{
     slug: "why-tradies-lose-money-missed-calls",
     title: "Missed Calls Cost Adelaide Tradies",
     excerpt:

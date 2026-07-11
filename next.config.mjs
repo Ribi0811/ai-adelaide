@@ -225,6 +225,172 @@ const nextConfig = {
         destination: "/seo",
         permanent: true,
       },
+      // Tier 12 — GSC dead-URL sweep (2026-07-11). Every URL below appeared
+      // in GSC page data within the last 6 months and returned a live 404.
+      // Sources: fresh GSC API pull (sc-domain:aiadelaide.com.au, page
+      // dimension, 180d) + curl verification of all 163 known URLs.
+      // Destinations follow the established consolidation patterns:
+      // ai-for-{trade} → websites-for-{trade} (or tradie bundle when no
+      // dedicated page), automation-flavoured slugs → /ai-automation-adelaide,
+      // ai-automation-{suburb} → /{suburb}, deleted blog posts → the money
+      // page or live post that owns the topic now.
+      {
+        source: "/services/ai-automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-automation-burnside",
+        destination: "/burnside",
+        permanent: true,
+      },
+      {
+        source: "/ai-automation-norwood",
+        destination: "/norwood",
+        permanent: true,
+      },
+      {
+        source: "/ai-automation-prospect",
+        destination: "/prospect",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-allied-health-adelaide",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-dentists-adelaide",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-cafes-adelaide",
+        destination: "/websites-for-cafes-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-hvac-adelaide",
+        destination: "/tradie-website-bundle",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-cleaners-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-job-scheduling-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/quote-follow-up-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/service-business-automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      // Deleted blog posts (Tier 12 continued) — each points at the live
+      // page that now owns the topic, never at another redirect.
+      {
+        source: "/blog/ai-for-tradies-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-phone-answering-service-adelaide",
+        destination: "/answering-service-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/local-seo-adelaide-tradies-what-to-pay",
+        destination: "/seo-for-tradies-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-receptionist-24-7-adelaide",
+        destination: "/ai-receptionist-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-adelaide-real-estate-agents",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/real-cost-missed-calls-adelaide-tradie",
+        destination: "/blog/how-much-does-a-missed-call-cost-your-business-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-much-tradie-website-cost-adelaide-2026",
+        destination: "/website-cost-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-allied-health-adelaide",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-dental-practices-adelaide",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/why-tradie-website-needs-to-sell",
+        destination: "/tradie-website-bundle",
+        permanent: true,
+      },
+      {
+        source: "/blog/quote-follow-up-automation-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-cafes-adelaide",
+        destination: "/websites-for-cafes-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-roofers-adelaide",
+        destination: "/tradie-website-bundle",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-powered-website-vs-traditional-website-australian-trades",
+        destination: "/website-design-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/invoice-chasing-adelaide-tradies",
+        destination: "/blog/admin-tasks-killing-adelaide-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-seo-for-cafes-and-restaurants",
+        destination: "/local-seo-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/tradie-website-quote-builder-adelaide",
+        destination: "/tradie-website-bundle",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-accountants-adelaide",
+        destination: "/bookkeeping-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-adelaide-retail-shops",
+        destination: "/blog/ai-automation-for-adelaide-retail-shops",
+        permanent: true,
+      },
     ];
   },
 };

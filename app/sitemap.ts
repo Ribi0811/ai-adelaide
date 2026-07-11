@@ -45,9 +45,13 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-consulting-melbourne": "2026-06-20",
   "/ai-office-worker-adelaide": "2026-06-25",
   "/locations": "2026-06-23",
-  "/local-seo-adelaide": "2026-07-03",
+  "/local-seo-adelaide": "2026-07-11",
   "/automotive-seo-services": "2026-07-03",
-  "/hotel-seo-services": "2026-07-03",
+  "/hotel-seo-services": "2026-07-11",
+  // Added 2026-07-11 (Tier 12 content-gap fill: "ai seo adelaide" and
+  // "aged care seo services" queries had impressions but no page).
+  "/ai-seo-adelaide": "2026-07-11",
+  "/aged-care-seo-services": "2026-07-11",
   "/ai-app-development-adelaide": "2026-07-03",
   "/about": "2026-06-23",
   "/faq": "2026-06-20",
@@ -346,6 +350,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${siteConfig.url}/hotel-seo-services`,
       lastModified: dateFor("/hotel-seo-services"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${siteConfig.url}/ai-seo-adelaide`,
+      lastModified: dateFor("/ai-seo-adelaide"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteConfig.url}/aged-care-seo-services`,
+      lastModified: dateFor("/aged-care-seo-services"),
       changeFrequency: "monthly",
       priority: 0.75,
     },

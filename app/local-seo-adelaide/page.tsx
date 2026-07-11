@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   // was 211 chars (want 140-160).
   title: "Local SEO Adelaide — Get Found on Google",
   description:
-    "Local SEO for Adelaide businesses — Google Business Profile, suburb pages, reviews, citations, NAP consistency. Get found across SA. From $297/mo.",
+    "Local SEO for Adelaide businesses — Google Business Profile, suburb pages, reviews, citations, NAP consistency. Get found across SA. From $399/mo.",
   alternates: { canonical: "/local-seo-adelaide" },
 };
 
@@ -23,7 +23,7 @@ const whatsIncluded = [
 const faqs = [
   { question: "What is local SEO and why does it matter for Adelaide businesses?", answer: "Local SEO is the process of ranking your business for searches with geographic intent — \"plumber Norwood\", \"physio Glenelg\", \"cafe Mount Barker\". 46% of all Google searches have local intent, and 70% of local searchers visit a business within 24 hours. If you're not showing up in Google's local pack (the map results at the top), you're invisible to the highest-intent customers in your service area." },
   { question: "How long does local SEO take to work in Adelaide?", answer: "Honest answer: 1-3 months for visible movement. Google Business Profile optimisation alone can move you 5-10 spots within 4-6 weeks. Suburb pages take 2-4 months to rank. Full local SEO dominance typically takes 3-6 months. We give you an honest timeline in your free audit." },
-  { question: "How much does local SEO cost in Adelaide?", answer: "Local SEO packages for Adelaide small businesses start at $297/month (Google Business Profile optimisation + 3 suburb pages + review generation). Standard packages for tradies and clinics run $497/month. Premium packages with full citation building and link acquisition start at $797/month." },
+  { question: "How much does local SEO cost in Adelaide?", answer: "Our local SEO starts at $399/month (Google Business Profile optimisation, suburb pages, review generation) and Growth SEO is $699/month with more content, more suburbs, and citation building. Month-to-month, no lock-in — Adelaide agencies commonly charge $1,000-$2,500/month for comparable work." },
   { question: "Do I need local SEO if I already do regular SEO?", answer: "Yes — they're different. Regular SEO targets informational and national keywords (\"how to fix a leaking tap\"). Local SEO targets geographic searches (\"plumber Norwood\"). Most Adelaide tradies and small businesses need local SEO far more than regular SEO. If you can only afford one, local SEO is the higher-ROI choice for any Adelaide business that serves a specific geographic area." },
   { question: "Will I show up in Google Maps?", answer: "Yes — that's the whole point of local SEO. The local pack (map results at the top of Google) is the most valuable real estate for Adelaide service businesses. Our process specifically targets local pack rankings through GBP optimisation, reviews, suburb pages, and citations." },
   { question: "Do I need a physical address to rank in Adelaide?", answer: "You need a service area, not necessarily a storefront. Most Adelaide tradies work from home or a depot — that's fine. We configure your GBP with a service area (set of suburbs) rather than a public address, which works perfectly for local pack rankings." },

@@ -91,7 +91,7 @@ These are presented as general facts rather than AI Adelaide client results, but
 - `app/seo/page.tsx:196` — "70% of people searching for a tradie click one of the first three results"
 - `app/audit/page.tsx:50-51` — "70% of customers click the first 3 Google results", "Quote follow-ups improve conversion by 25%"
 - `app/lost-leads-calculator/page.tsx:17,91,102` — "85% of callers who hit voicemail never ring back" (also listed in §2 since it's used as a hard input to a calculator, not just a claim)
-- `app/hotel-seo-services/page.tsx:18,25,51` — "15-22% commissions", "shift 25-40%[of bookings direct]"
+- `app/hotel-seo-services/page.tsx` — "15-22% commissions" (still live). The "most hotels we work with shift 25-40% of bookings to direct" client-result claim was REMOVED 2026-07-11 (rewritten as a hypothetical "even shifting a quarter of your bookings…"); same pass aligned the page's $497/$897/$1,497 pricing to the PRICING constant ($399/$699).
 - `app/ai-app-development-adelaide/page.tsx:25` — "For 70-80% of inbound calls, yes... For the 20-30% of complex calls..."
 - `app/website-design-adelaide/page.tsx:98` — "faster than 90% of Adelaide small business websites"
 - `app/ai-office-worker-adelaide/page.tsx:193` — "take the boring 70% of admin off their plate"

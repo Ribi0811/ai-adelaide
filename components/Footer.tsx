@@ -2,19 +2,20 @@ import Link from "next/link";
 import { legalLinks, siteConfig } from "@/lib/constants";
 import SuburbNav from "@/components/SuburbNav";
 
-// v3/v4 design language: quiet, editorial, hairline-separated. Every link
-// from the previous footer is preserved — this block is an internal-linking
-// asset, so columns get re-skinned, never trimmed.
+// v3/v4 design language: quiet, editorial, hairline-separated. This block is
+// an internal-linking asset, so columns get re-skinned, never trimmed. Every
+// href must point at a live route — never at a redirect source (Tier 12 audit
+// found 6 footer links leaking equity through 308 hops).
 const serviceLinks = [
-  { href: "/website-design-adelaide", label: "Website design" },
+  { href: "/website-design-adelaide", label: "Website design Adelaide" },
   { href: "/website-pricing", label: "Website pricing" },
-  { href: "/seo", label: "Local SEO" },
+  { href: "/seo", label: "SEO services Adelaide" },
+  { href: "/local-seo-adelaide", label: "Local SEO Adelaide" },
   { href: "/ai-automation-adelaide", label: "AI automation" },
   { href: "/ai-receptionist-adelaide", label: "AI receptionist" },
   { href: "/virtual-receptionist-adelaide", label: "Virtual receptionist" },
-  { href: "/24-7-answering-service-adelaide", label: "24/7 answering service" },
+  { href: "/answering-service-adelaide", label: "24/7 answering service" },
   { href: "/bookkeeping-adelaide", label: "AI bookkeeping" },
-  { href: "/ai-receptionist-vs-virtual-receptionist", label: "AI vs virtual reception" },
   { href: "/missed-call-text-back-adelaide", label: "Missed-call text-back" },
   { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile" },
   { href: "/services", label: "All services ›" },
@@ -37,13 +38,15 @@ const resourceLinks = [
   { href: "/website-cost-adelaide", label: "Website cost guide" },
   { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads" },
   { href: "/seo-for-tradies-adelaide", label: "SEO for tradies" },
-  { href: "/best-ai-receptionist-australia", label: "Best AI receptionist 2026" },
-  { href: "/marketing-adelaide", label: "Marketing Adelaide" },
+  { href: "/ai-seo-adelaide", label: "AI SEO Adelaide" },
   { href: "/ai-marketing-adelaide", label: "AI marketing" },
-  { href: "/digital-marketing-adelaide", label: "Digital marketing" },
-  { href: "/marketing-agencies-adelaide", label: "vs marketing agencies" },
-  { href: "/marketing-consulting-adelaide", label: "Marketing consulting" },
-  { href: "/ai-marketing-automation", label: "AI marketing automation" },
+  { href: "/ai-consulting-adelaide", label: "AI consulting Adelaide" },
+  { href: "/ai-app-development-adelaide", label: "AI app development" },
+  { href: "/automotive-seo-services", label: "Automotive SEO" },
+  { href: "/hotel-seo-services", label: "Hotel SEO" },
+  { href: "/aged-care-seo-services", label: "Aged care SEO" },
+  { href: "/ai-receptionist-vs-virtual-receptionist", label: "AI vs virtual reception" },
+  { href: "/best-ai-receptionist-australia", label: "Best AI receptionist 2026" },
   { href: "/blog", label: "Blog" },
 ];
 

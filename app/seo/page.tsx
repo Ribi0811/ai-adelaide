@@ -290,6 +290,44 @@ export default function SeoPage() {
         </div>
       </section>
 
+      {/* Cluster hub — exact-anchor links to every SEO spoke page. GSC
+          (2026-07-11) showed /local-seo-adelaide with one internal link
+          sitewide while /seo soaked up its 498-impr target query; this block
+          is how the hub hands each query to the page built for it. */}
+      <section className="max-w-container mx-auto px-6 pt-10 md:pt-12">
+        <div className="panel-light p-6 md:p-8">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent mb-3">
+            Find your fit
+          </p>
+          <h2 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">
+            SEO services by focus
+          </h2>
+          <p className="mb-6 max-w-3xl text-body-mobile text-slate-700 md:text-body">
+            Same engine, tuned to what you need: suburb-level visibility, AI-era
+            search, or your specific industry.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/local-seo-adelaide", label: "Local SEO Adelaide", note: "Google Business Profile, suburb pages, reviews, citations" },
+              { href: "/ai-seo-adelaide", label: "AI SEO Adelaide", note: "Rank on Google and get recommended by ChatGPT & AI Overviews" },
+              { href: "/seo-for-tradies-adelaide", label: "SEO for tradies Adelaide", note: "The playbook for plumbers, sparkies, builders and HVAC" },
+              { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile optimisation", note: "The single biggest local-pack ranking factor, done properly" },
+              { href: "/automotive-seo-services", label: "Automotive SEO services", note: "Mechanics, panel beaters, dealerships, tyre shops" },
+              { href: "/hotel-seo-services", label: "Hotel SEO services", note: "Direct bookings instead of OTA commissions" },
+              { href: "/aged-care-seo-services", label: "Aged care SEO services", note: "Home care, retirement living, NDIS providers" },
+              { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads", note: "Which one first? An honest comparison for Adelaide budgets" },
+            ].map((s) => (
+              <Link key={s.href} href={s.href} className="panel-light-soft group block p-5">
+                <span className="text-body-mobile font-semibold text-slate-950 group-hover:text-accent md:text-body">
+                  {s.label} <span aria-hidden>→</span>
+                </span>
+                <span className="mt-1 block text-sm text-slate-600">{s.note}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Testimonials
         count={3}
         heading="What Adelaide businesses say after the rankings start moving"

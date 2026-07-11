@@ -239,6 +239,14 @@ const nextConfig = {
         destination: "/ai-automation-adelaide",
         permanent: true,
       },
+      // /pricing never existed as a route and has zero GSC impressions
+      // (checked 180d page data 2026-07-11), but it's a guessable URL that
+      // docs and humans keep reaching for — cheap safety net.
+      {
+        source: "/pricing",
+        destination: "/website-pricing",
+        permanent: true,
+      },
       {
         source: "/ai-automation-burnside",
         destination: "/burnside",

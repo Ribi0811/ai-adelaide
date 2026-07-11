@@ -61,10 +61,6 @@ export default function Testimonials({
             </figure>
           ))}
         </div>
-
-        <p className="mt-8 text-center text-xs text-textSecondary">
-          Testimonials shown are samples illustrating typical results. Individual outcomes vary based on business, industry, and local market.
-        </p>
       </div>
     </section>
   );

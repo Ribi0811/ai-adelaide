@@ -1,21 +1,53 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-07-07** (by the session that shipped the One Day homepage).
+**Last updated: 2026-07-11** (by the GSC-driven SEO session — Tier 12).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders.
 
-## Current state (verified, committed, NOT yet pushed)
+## Current state
 
-Local commits ahead of `origin/main` (622a09b): SEO phases 1–6 · One Day homepage promotion · day-aware navbar · editorial footer · live visitor dates · meta length fixes. Working tree clean, `tsc --noEmit` green, `check-meta` clean on homepage + all money pages.
+The 2026-07-07 batch (SEO phases 1–6, One Day homepage) WAS pushed on
+2026-07-08 and is live in production — an earlier version of this file said
+"not yet pushed"; that was stale.
 
-- Homepage `/` = One Day design (`components/home-day/`), production metadata, one FAQPage/LocalBusiness/WebSite, suburb link strip, sticky quote bar. `/v2 /v3 /v4` → 301 `/`.
-- Nav: glass, inverts over `[data-nav-dark]` sections, scroll-progress hairline. Footer: editorial, all legacy links preserved, ABN placeholder.
-- All redirects single-hop; sitemap has real dates via `PAGE_DATES`; audit funnel noindexed; cannibal clusters consolidated; claims catalogued (not deleted) in `docs/claims-to-verify.md`.
+**Tier 12 (2026-07-11, committed locally, NOT yet pushed).** Driven by a fresh
+GSC API pull (creds in `~/.openclaw/workspace/.credentials/`, 28d + 180d):
+
+- 31 GSC-indexed dead URLs → single-hop 301s in `next.config.mjs` (incl. the
+  `/services/ai-automation` 404 Mujo flagged 5 weeks running, and 18 deleted
+  blog posts nobody redirected). ~1,275 impr/6mo were landing on 404s.
+- Footer had 6 links pointing at 301 sources — repointed to live routes.
+  5 route dirs shadowed by config redirects deleted (dead code).
+- NEW pages: `/ai-seo-adelaide` (query at pos 15 on homepage, no page) and
+  `/aged-care-seo-services` (47 impr, completes automotive/hotel trio).
+- `/seo` hub got a "SEO services by focus" spoke block — `/local-seo-adelaide`
+  previously had ONE internal link sitewide while `/seo` soaked up its
+  498-impr target query at pos 63.
+- Intent alignment: `/ai-app-development-adelaide` retitled to carry the
+  ~325 impr/mo national "ai development company" cluster (was ranking on the
+  homepage); `/ai-automation-adelaide` +"business automation" FAQ (105 impr
+  @ 8.4 was being served by /port-adelaide); receptionist comparison page
+  retitled "Virtual Receptionist Adelaide: AI vs Human" (427 impr @ 14, 0
+  clicks); suburb template titles now say "Web Design" not "Websites"
+  (suburb pages rank 9-18 for "website designer {suburb}").
+- PRICING landmines killed: local-seo ($297/497/797), hotel ($497/897/1497),
+  ai-marketing meta ($497) all now match `lib/constants.ts` ($399/$699).
+  One invented client stat removed (logged in claims-to-verify.md).
+- check-meta: **fully clean** (was 28 failures). check-links: clean.
+  tsc: clean. All new/edited pages verified rendering on localhost:3000.
+
+**Strategy note (Ivan, 2026-07-11): receptionist/answering is harvest-tier
+only — capture cheap clicks, StackCTA upsells them. Money and effort go to
+web design, SEO services, and automation.**
 
 ## Ivan's gate (blocks everything below)
 
-1. `npm install && npm run build` locally (sandbox can't run builds), click through `/`, one service page, one blog post, mobile menu.
+1. `npm run build` locally, click through `/seo`, `/ai-seo-adelaide`,
+   `/aged-care-seo-services`, footer links, one suburb page.
 2. `git push origin main` → Vercel deploys.
-3. Post-deploy: GSC → inspect `/` + new pages → request indexing; Rich Results Test on `/`; PSI mobile (LCP <2.5s, CLS <0.1); watch Coverage for redirected URLs 2–4 weeks.
+3. Post-deploy GSC (biggest lever, 10 min): request indexing on
+   `/ai-seo-adelaide`, `/aged-care-seo-services`, `/local-seo-adelaide`,
+   `/seo`, `/ai-app-development-adelaide`, `/ai-receptionist-vs-virtual-receptionist`;
+   resubmit sitemap. Watch Coverage for the 31 redirected URLs 2–4 weeks.
 
 ## Open work — priority order
 
@@ -25,13 +57,13 @@ Local commits ahead of `origin/main` (622a09b): SEO phases 1–6 · One Day home
 
 **Q3. Phase D — interior pages to v4 language.** Order: `/website-pricing` + `/website-design-adelaide` → `/seo` + `/seo-for-tradies-adelaide` → `/ai-receptionist-adelaide` + `/ai-automation-adelaide` → `websites-for-*` cluster → suburb template → blog template (template only, not per-post). Method: extract primitives from `components/home-day` + `home-v3` into `components/v3/`; re-skin WITHOUT rewriting copy (the words are ranking). Full spec: PROMOTE-V2-PLAN Phase D + DESIGN-SYSTEM-V3.
 
-**Q4. Meta-length backlog (28 cosmetic).** Blog posts + legacy secondary pages + `app/layout.tsx` fallback description — list via `node scripts/check-meta.mjs`. Fix opportunistically during Q3 migrations.
+~~**Q4. Meta-length backlog (28 cosmetic).**~~ DONE 2026-07-11 — checker fully clean; only 2 by-design warnings on noindexed audit-funnel routes remain.
 
 **Q5. Phase 7 off-site [HUMAN — Ivan].** GSC/GA4 verification, GBP optimization + review velocity (target 25+ in 90 days), citations blitz (NAP: "AI Adelaide, 5 Peel St, Adelaide SA 5000, (08) 7100 9788"), rank-grid tracking, PR data study. Spec: IMPLEMENTATION-PLAN Phase 7.
 
 **Q6. Human inputs waiting [Ivan].** (a) `docs/claims-to-verify.md` decisions — testimonials/case studies keep-label-remove; (b) ABN for the footer placeholder; (c) founder line wording + photo (`components/`—search "HUMAN INPUT"); (d) real portfolio screenshots + permissions; (e) confirm demo-line missed-call text-back actually fires → then build the "hang-up challenge" section.
 
-**Q7. Content-calendar seeds (from the 2026-07-07 keyword audit).** Money pages all align with their targets; variant gaps to grow into: a "Do I need a website if I have Facebook/Instagram?" blog post (FAQ seed already on /website-design-adelaide), a "web designer Adelaide" angle (currently covered semantically, no dedicated content), "how much does SEO cost in Adelaide" post expanding the /seo FAQ. Keep exact-match anchors natural — semantic coverage beats stuffing.
+**Q7. Content-calendar seeds (updated 2026-07-11 from fresh GSC data).** Variant gaps to grow into: a "Do I need a website if I have Facebook/Instagram?" blog post (FAQ seed already on /website-design-adelaide), a "web designer Adelaide" angle (suburb titles now carry "Web Design"; still no dedicated content), "how much does SEO cost in Adelaide" post expanding the /seo FAQ. New from GSC: "small business websites adelaide" (75 impr @ 44), "seo for tradies" national (116 impr @ 27), "ecommerce adelaide" (86 impr @ 84 — no offering, decide first), "plumbing websites" national (47 impr @ 68). Keep exact-match anchors natural — semantic coverage beats stuffing.
 
 **Q8. Nice-to-haves parked.** OG image restyle to v4 language (`app/opengraph-image.tsx`); 404 page delight; `scripts/check-links.mjs` in CI (exists? verify) ; drop Space Grotesk font once no page uses `font-display` (after Q3).
 

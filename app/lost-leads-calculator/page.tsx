@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import LostLeadsCalculator from "@/components/LostLeadsCalculator";
 
 export const metadata: Metadata = {
-  title: "Missed Call Calculator | How Much Are You Losing?",
+  title: "Missed Call Calculator — What Are You Losing?",
   description:
     "Find out exactly how much revenue your Adelaide business is losing to missed calls. Enter two numbers, get your annual leakage figure instantly.",
   alternates: { canonical: "/lost-leads-calculator" },

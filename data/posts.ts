@@ -18,7 +18,7 @@ export const posts: Post[] = [
     date: "2026-02-10",
     readTime: "8 min read",
     category: "Automation",
-    seoDescription: "Missed calls cost Adelaide tradies $62,400+ yearly. Calculate your real loss and learn how AI booking automation recovers lost revenue.",
+    seoDescription: "Missed calls cost Adelaide tradies $62,400+ every year. Calculate what they cost your business and see how AI booking automation recovers the lost revenue.",
     content: `<p>Most tradies in Adelaide do not have a lead problem. They have a response-time problem.</p>
 <p>Plumbers, sparkies, concreters, painters, and roofers all tell the same story: the phone rings while they are on a job, they plan to call back later, and by the time they do, the customer has already booked someone else. It feels normal because it happens every day. But normal does not mean cheap.</p>
 <h2>The hidden maths of missed calls</h2>
@@ -1000,7 +1000,7 @@ export const posts: Post[] = [
     date: "2026-02-17",
     readTime: "8 min read",
     category: "Case Study",
-    seoDescription: "One Norwood physio clinic cut no-shows by 60% with a two-step SMS reminder workflow. Real numbers, real results in 6 weeks.",
+    seoDescription: "One Norwood physio clinic cut no-shows by 60% with a two-step SMS reminder workflow. The real numbers, the exact setup, and results within six weeks.",
     content: `<p>Case studies are only useful when the numbers are honest, so here is the full picture of a realistic Norwood physio scenario.</p>
 <p>The clinic had four practitioners and one shared front-desk team member during weekdays. Bookings were solid, demand was healthy, but no-shows and late cancellations were creating weekly holes in the schedule.</p>
 <h2>The problem before automation</h2>
@@ -1866,7 +1866,7 @@ export const posts: Post[] = [
     date: "2026-01-28",
     readTime: "7 min read",
     category: "How-To",
-    seoDescription: "Five admin tasks draining Adelaide tradies' time and revenue: missed calls, slow follow-ups, invoicing, no-shows, reviews. Here's the fix.",
+    seoDescription: "Five admin tasks draining Adelaide tradies' time and revenue: missed calls, slow follow-ups, invoicing, no-shows and reviews — and how to automate each one.",
     content: `<p>You became a tradie to work with your hands, not to become an office manager. Yet here you are, every evening and weekend, chasing invoices, returning missed calls, and begging customers for reviews.</p>
 
 <p>These five admin tasks are silently killing your business. Let's look at each one—and how to fix them without hiring admin staff.</p>
@@ -2071,7 +2071,7 @@ export const posts: Post[] = [
     date: "2026-02-05",
     readTime: "5 min read",
     category: "Case Study",
-    seoDescription: "An Unley physio clinic was losing $3,000/month to no-shows. Two automated reminder workflows cut no-shows by 60%. Here's the exact setup.",
+    seoDescription: "An Unley physio clinic was losing $3,000/month to no-shows. Two automated reminder workflows cut no-shows by 60% — here's the exact setup, step by step.",
     content: `<p>It happens every week. A patient books a 45-minute appointment, doesn't show up, and you eat the cost. No call, no cancellation, just a empty treatment room and lost revenue.</p>
 
 <p>For many physiotherapy clinics in Adelaide—especially solo or small practices—this adds up to a shocking amount. Let's look at the real numbers.</p>
@@ -2540,7 +2540,7 @@ export const posts: Post[] = [
     date: "2026-07-04",
     readTime: "4 min read",
     category: "How-To",
-    seoDescription: "8-question self-assessment tells Adelaide businesses if they're ready for AI automation. Score yourself and learn what to do next.",
+    seoDescription: "This 8-question self-assessment tells Adelaide businesses if they're ready for AI automation. Score yourself and learn exactly what to do next, gap by gap.",
     content: `<p>Everywhere you look, businesses are talking about AI. Some are using it to save hours every week. Others are still asking "what's the point?"</p>
 
 <p>The truth is, AI automation isn't for everyone—at least not yet. But for many Adelaide small businesses, it's already the difference between thriving and surviving.</p>
@@ -3417,9 +3417,9 @@ export const posts: Post[] = [
   },
 {
     slug: "ai-for-builders-adelaide",
-    title: "AI for Builders Adelaide: Stop Losing Contracts",
+    title: "AI for Builders Adelaide: Stop Losing Jobs",
     excerpt: "Adelaide builders are losing contracts every week to missed calls and slow quotes. AI for builders Adelaide fixes both - capture leads and send faster quotes.",
-    seoDescription: "Adelaide builders losing contracts to missed calls and slow quotes. AI captures leads and automates follow-ups. See ROI and setup guide.",
+    seoDescription: "Adelaide builders lose contracts to missed calls and slow quotes every week. See how AI captures leads and automates follow-ups, with ROI and setup guide.",
     date: "2026-03-18",
     readTime: "8 min read",
     category: "Automation",
@@ -3625,7 +3625,7 @@ export const posts: Post[] = [
     slug: "how-much-does-a-missed-call-cost-your-business-adelaide",
     title: "Missed Call Cost Calculator",
     excerpt: "Every missed call is a customer calling your competitor. For Adelaide plumbers, that's $62,400 walking out the door annually. Here's the brutal maths and the fix.",
-    seoDescription: "Missed calls are draining your Adelaide business. Calculate the real cost: $62,400 per year for a plumber. Here's how to fix it.",
+    seoDescription: "Missed calls are quietly draining your Adelaide business — the real cost runs to $62,400 per year for a typical plumber. Here's the maths and how to fix it.",
     date: "2026-03-08",
     readTime: "8 min read",
     category: "Automation",
@@ -5587,7 +5587,7 @@ Your business will thank you.
     title: "AI Automation for Adelaide Retail",
     excerpt:
       "Adelaide retail shops lose sales when staff are busy serving customers. AI automation captures every enquiry, follows up on quotes, and collects reviews automatically.",
-    seoDescription: "AI automation for Adelaide retail shops: capture enquiries, follow up quotes, collect reviews automatically. Stop losing sales when staff are busy. From $199/mo.",
+    seoDescription: "AI automation for Adelaide retail shops: capture enquiries, follow up quotes, collect reviews automatically. Stop losing sales when staff are busy. $199/mo.",
     date: "2026-06-18",
     readTime: "7 min read",
     category: "Automation",

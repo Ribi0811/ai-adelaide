@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "Cookie policy for AI Adelaide - how we use cookies and similar tracking technologies on our website.",
+  description: "Cookie policy for AI Adelaide — how we use cookies and similar tracking technologies on our website, what they do, and how you can manage or disable them.",
   alternates: {
     canonical: "/cookie-policy",
   },

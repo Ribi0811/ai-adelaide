@@ -14,9 +14,9 @@ const PAGE_DATES: Record<string, string> = {
   "/": "2026-07-07",
   "/website-pricing": "2026-06-23",
   "/website-design-adelaide": "2026-06-25",
-  "/seo": "2026-06-25",
+  "/seo": "2026-07-11",
   "/seo-for-tradies-adelaide": "2026-07-04",
-  "/services": "2026-06-25",
+  "/services": "2026-07-11",
   "/contact": "2026-06-23",
   "/audit": "2026-06-23",
   "/website-cost-adelaide": "2026-06-23",
@@ -31,19 +31,19 @@ const PAGE_DATES: Record<string, string> = {
   "/websites-for-builders-adelaide": "2026-07-04",
   "/websites-for-landscapers-adelaide": "2026-07-04",
   "/websites-for-painters-adelaide": "2026-07-04",
-  "/ai-automation-adelaide": "2026-06-25",
+  "/ai-automation-adelaide": "2026-07-11",
   "/ai-receptionist-adelaide": "2026-06-21",
   "/missed-call-text-back-adelaide": "2026-06-25",
   "/after-hours-answering-adelaide": "2026-06-22",
   "/missed-call-answering-service-adelaide": "2026-06-23",
   "/ai-receptionist-cost-adelaide": "2026-06-23",
   "/ai-automation-vs-hiring-staff-adelaide": "2026-06-23",
-  "/ai-receptionist-vs-virtual-receptionist": "2026-06-23",
+  "/ai-receptionist-vs-virtual-receptionist": "2026-07-11",
   "/tradie-website-bundle": "2026-06-25",
-  "/ai-consulting-adelaide": "2026-06-20",
+  "/ai-consulting-adelaide": "2026-07-11",
   "/ai-consulting-brisbane": "2026-06-20",
   "/ai-consulting-melbourne": "2026-06-20",
-  "/ai-office-worker-adelaide": "2026-06-25",
+  "/ai-office-worker-adelaide": "2026-07-11",
   "/locations": "2026-06-23",
   "/local-seo-adelaide": "2026-07-11",
   "/automotive-seo-services": "2026-07-03",
@@ -52,29 +52,29 @@ const PAGE_DATES: Record<string, string> = {
   // "aged care seo services" queries had impressions but no page).
   "/ai-seo-adelaide": "2026-07-11",
   "/aged-care-seo-services": "2026-07-11",
-  "/ai-app-development-adelaide": "2026-07-03",
+  "/ai-app-development-adelaide": "2026-07-11",
   "/about": "2026-06-23",
   "/faq": "2026-06-20",
-  "/lost-leads-calculator": "2026-06-23",
-  "/privacy-policy": "2026-04-04",
-  "/terms": "2026-04-04",
-  "/cookie-policy": "2026-04-04",
-  "/blog": "2026-06-23",
+  "/lost-leads-calculator": "2026-07-11",
+  "/privacy-policy": "2026-07-11",
+  "/terms": "2026-07-11",
+  "/cookie-policy": "2026-07-11",
+  "/blog": "2026-07-11",
   // Added to sitemap 2026-07-03 (previously live but missing from sitemap.ts)
   "/virtual-receptionist-adelaide": "2026-06-25",
   "/answering-service-adelaide": "2026-06-23",
-  "/bookkeeping-adelaide": "2026-06-25",
+  "/bookkeeping-adelaide": "2026-07-11",
   "/google-business-profile-optimisation-adelaide": "2026-06-25",
-  "/ai-marketing-adelaide": "2026-06-23",
+  "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
   "/testimonials": "2026-06-25",
-  "/tools/ai-readiness-calculator": "2026-06-23",
+  "/tools/ai-readiness-calculator": "2026-07-11",
 };
 
 // Suburb content lives in one data file with no per-suburb history yet —
 // use the file's last commit date for all suburb routes until Phase 5
 // (suburb depth pass) gives each one real edit history.
-const SUBURBS_LAST_MODIFIED = "2026-06-24";
+const SUBURBS_LAST_MODIFIED = "2026-07-11";
 
 // Fallback for any route not yet in PAGE_DATES (shouldn't normally hit this —
 // add new pages to the map above when you add them to this sitemap).

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "AI Consulting Adelaide | Practical, Affordable, No Bullshit",
+  title: "AI Consulting Adelaide — No-Bullshit Advice",
   description: "AI consulting for Adelaide businesses. Free audit, then implementation and support. For tradies, clinics, retailers. Call 08 7100 9788 for a chat.",
   alternates: { canonical: "/ai-consulting-adelaide" },
 }

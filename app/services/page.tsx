@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Websites, SEO & AI for Adelaide",
   description:
-    "Websites from $699, local SEO from $399/mo, and AI automation for Adelaide small businesses. Free chat, no lock-in.",
+    "Websites from $699, local SEO from $399/mo, and AI automation from $199/mo for Adelaide small businesses. Free chat, fixed pricing, no lock-in contracts.",
   alternates: {
     canonical: "/services",
   },

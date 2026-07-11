@@ -7,7 +7,7 @@ import StackCTA from "@/components/StackCTA";
 export const metadata: Metadata = {
   title: "AI Office Worker Adelaide | $399/mo",
   description:
-    "AI office worker for Adelaide. Automated admin, scheduling, email, data entry. From $399/mo.",
+    "AI office worker for Adelaide small businesses — automated admin, scheduling, email and data entry that runs 24/7. From $399/mo, no lock-in contracts.",
   alternates: {
     canonical: "/ai-office-worker-adelaide",
   },

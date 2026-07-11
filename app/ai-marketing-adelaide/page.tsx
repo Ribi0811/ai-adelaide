@@ -5,9 +5,9 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "AI Marketing Adelaide | $497/mo",
+  title: "AI Marketing Adelaide | From $399/mo",
   description:
-    "AI marketing for Adelaide. AI-powered SEO, content, lead capture. From $497/mo. Fixed pricing, no lock-in.",
+    "AI marketing for Adelaide small businesses — AI-powered SEO, content and lead capture with fixed pricing from $399/mo. No agency retainers, no lock-in.",
   alternates: {
     canonical: "/ai-marketing-adelaide",
   },

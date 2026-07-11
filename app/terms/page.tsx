@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Terms of service for AI Adelaide - the terms and conditions governing your use of our AI automation services.",
+  description: "Terms of service for AI Adelaide — the conditions governing our website design, SEO and AI automation services, payments, and your responsibilities.",
   alternates: {
     canonical: "/terms",
   },

@@ -4,11 +4,11 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Free AI Readiness Calculator",
-  description: "Free AI readiness score for your Adelaide small business. Get a PDF report in 5 minutes covering website, SEO, automation gaps.",
+  description: "Free AI readiness score for your Adelaide small business — a personalised PDF report in 5 minutes covering website, local SEO and automation gaps.",
   alternates: { canonical: "/tools/ai-readiness-calculator" },
   openGraph: {
     title: "Free AI Readiness Calculator",
-    description: "Free AI readiness score for your Adelaide small business. Get a PDF report in 5 minutes covering website, SEO, automation gaps.",
+    description: "Free AI readiness score for your Adelaide small business — a personalised PDF report in 5 minutes covering website, local SEO and automation gaps.",
     url: `${siteConfig.url}/tools/ai-readiness-calculator`,
   },
 };

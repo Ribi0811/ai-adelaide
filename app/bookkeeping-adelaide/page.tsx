@@ -7,7 +7,7 @@ import StackCTA from "@/components/StackCTA";
 export const metadata: Metadata = {
   title: "AI Bookkeeping Adelaide | From $299/mo",
   description:
-    "AI bookkeeping for Adelaide small businesses. Automated invoice processing, BAS-ready reports, and Xero/MYOB workflows. From $299/mo.",
+    "AI bookkeeping for Adelaide small businesses. Automated invoice processing, BAS-ready reports, and Xero/MYOB workflows. From $299/mo, no lock-in.",
   alternates: {
     canonical: "/bookkeeping-adelaide",
   },

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | AI Adelaide",
   },
   description:
-    "AI Adelaide builds AI-powered websites from $699, AI-driven local SEO from $399/mo, and AI automation from $199/mo for Adelaide small businesses. Faster builds, smarter SEO, 24/7 lead capture.",
+    "AI Adelaide builds websites from $699, local SEO from $399/mo and AI automation from $199/mo for Adelaide small businesses. Faster builds, 24/7 lead capture.",
   keywords: [
     "AI Adelaide",
     "AI websites Adelaide",

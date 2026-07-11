@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   // the template so this exact string renders with no suffix appended.
   title: { absolute: "AI Adelaide Blog — Websites, SEO & AI Automation Tips" },
   description:
-    "Practical AI tips, automation guides, and SEO insights for Adelaide small businesses.",
+    "Practical AI tips, automation guides, web design advice and local SEO insights for Adelaide small businesses — written by the team at AI Adelaide.",
   alternates: {
     canonical: "/blog",
   },

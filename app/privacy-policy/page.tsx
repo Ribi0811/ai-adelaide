@@ -3,7 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for AI Adelaide - how we collect, use, and protect your personal information when you use our AI automation services.",
+  description: "Privacy policy for AI Adelaide — how we collect, use, store and protect your personal information, and your rights under Australian privacy law.",
   alternates: {
     canonical: "/privacy-policy",
   },

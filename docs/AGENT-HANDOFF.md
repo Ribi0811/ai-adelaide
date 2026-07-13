@@ -7,6 +7,7 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 
 - Everything through Tier 12 is pushed and live (HEAD `47a69fd`): SEO phases 1–6, One Day homepage, day-aware nav, editorial footer, 31 dead-URL redirects, intent retitles, meta checker fully clean, 2 new blog posts (SEO cost, website-vs-socials).
 - `LOCAL-SEO-GROWTH-REPORT-JULY-2026.md` (Codex, 2026-07-13) is **analysis, not a roadmap** — its actionable items are reconciled into the queue below; its status banner lists what was stale. Do not execute the report directly.
+- **Active sprint: `docs/OPUS-BRIEF.md`** — step-by-step implementation of Q1–Q5 (assigned to Opus, 2026-07-13). If you are Opus, work from that brief.
 - GSC snapshot (28d to 10 Jul): clicks 17→26, impressions 5,435→9,881, avg position 40.9→47.4. Interpretation: young domain being tested broadly; strategy = consolidation, proof, authority — not more pages.
 
 **Strategy notes (Ivan):** receptionist/answering = harvest-tier only (2026-07-11). Money and effort go to web design, SEO services, automation.

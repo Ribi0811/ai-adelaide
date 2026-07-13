@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StackCTA from "@/components/StackCTA";
+import TradieLeadForm from "@/components/TradieLeadForm";
 
 export const metadata: Metadata = {
   // Phase 8 punch list P4: rendered title was 68 chars (max 60); description
@@ -218,7 +219,20 @@ export default function SeoForTradiesAdelaidePage() {
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
             Plumbers, electricians, builders, HVAC technicians, landscapers, and painters are all competing for the same searches — and the jobs go to whoever shows up first, not whoever does the best work. This is the exact framework we run for Adelaide tradies: Google Business Profile, suburb pages, schema, content, and the ongoing work that keeps you ranking.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href="#tradie-review" className="btn-primary px-6 py-3">
+              Get a free visibility review →
+            </a>
+            <a href="/contact#send-message" className="btn-secondary px-6 py-3">
+              Talk to us
+            </a>
+          </div>
         </div>
+      </section>
+
+      {/* Inline lead capture — kept high for mobile-first conversion (T3) */}
+      <section id="tradie-review" className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <TradieLeadForm />
       </section>
 
       {/* Why it matters */}
@@ -250,6 +264,26 @@ export default function SeoForTradiesAdelaidePage() {
               </div>
             ))}
           </div>
+          {/* HUMAN INPUT NEEDED: one real tradie result (name, suburb, baseline, outcome, timeframe, permission) — replace this note with a verified case study once available. Do not invent client copy. */}
+          <p className="mt-6 text-body-mobile text-slate-700 md:text-body">
+            The same approach applies whether you need a{" "}
+            <Link href="/websites-for-plumbers-adelaide" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              plumber website in Adelaide
+            </Link>{" "}
+            or an{" "}
+            <Link href="/websites-for-electricians-adelaide" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              electrician website
+            </Link>{" "}
+            — and if you work the southern suburbs, we build dedicated pages for areas like{" "}
+            <Link href="/marion" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              Marion
+            </Link>{" "}
+            and{" "}
+            <Link href="/reynella" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
+              Reynella
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

@@ -482,3 +482,23 @@ Source: `PUNCH-LIST-PHASE-8.md`, an independent expert review of Phases 1-6.
 - **P10** (agent + Ivan) — commit hygiene / batching.
 
 Nothing in this repo has been committed, pushed, or deployed — all P1–P4 work above is uncommitted working-tree edits, per standing project rules.
+
+---
+
+## 2026-07-13 — Codex growth report + reconciliation
+**Status: ✅ Complete**
+
+- Codex delivered `LOCAL-SEO-GROWTH-REPORT-JULY-2026.md` (GSC-driven audit:
+  impressions +82%, clicks +53%, position diluting — verdict: consolidation,
+  proof, authority before expansion).
+- Claude review: report 8.5/10; three stale items flagged (seo-services-adelaide
+  already 301'd, answering cluster settled/frozen, GBP exists). Codex was asked
+  to reconcile into the handoff docs but its edits never landed in this repo
+  (only an empty heading appended to AGENTS.md) — reconciliation done by Claude
+  instead.
+- AGENT-HANDOFF rewritten: queue now Q1-Q10 with report's new items (tradie
+  article conversion pathway, six southern suburb pages, /local-seo-adelaide
+  ownership, lead attribution as top priority, proof/founder program); new
+  "Do-not-touch (settled)" section; landmines extended (sample-size caution,
+  never-redirect-a-ranking-page, work-must-exist-in-this-repo rule).
+- Report bannered as reference-not-roadmap; AGENTS.md dangling header filled.

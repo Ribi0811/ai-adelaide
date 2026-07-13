@@ -1,76 +1,55 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-07-11** (by the GSC-driven SEO session — Tier 12).
-Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders.
+**Last updated: 2026-07-13** (Codex growth-report reconciliation).
+Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
 
-The 2026-07-07 batch (SEO phases 1–6, One Day homepage) WAS pushed on
-2026-07-08 and is live in production — an earlier version of this file said
-"not yet pushed"; that was stale.
+- Everything through Tier 12 is pushed and live (HEAD `47a69fd`): SEO phases 1–6, One Day homepage, day-aware nav, editorial footer, 31 dead-URL redirects, intent retitles, meta checker fully clean, 2 new blog posts (SEO cost, website-vs-socials).
+- `LOCAL-SEO-GROWTH-REPORT-JULY-2026.md` (Codex, 2026-07-13) is **analysis, not a roadmap** — its actionable items are reconciled into the queue below; its status banner lists what was stale. Do not execute the report directly.
+- GSC snapshot (28d to 10 Jul): clicks 17→26, impressions 5,435→9,881, avg position 40.9→47.4. Interpretation: young domain being tested broadly; strategy = consolidation, proof, authority — not more pages.
 
-**Tier 12 (2026-07-11, committed locally, NOT yet pushed).** Driven by a fresh
-GSC API pull (creds in `~/.openclaw/workspace/.credentials/`, 28d + 180d):
+**Strategy notes (Ivan):** receptionist/answering = harvest-tier only (2026-07-11). Money and effort go to web design, SEO services, automation.
 
-- 31 GSC-indexed dead URLs → single-hop 301s in `next.config.mjs` (incl. the
-  `/services/ai-automation` 404 Mujo flagged 5 weeks running, and 18 deleted
-  blog posts nobody redirected). ~1,275 impr/6mo were landing on 404s.
-- Footer had 6 links pointing at 301 sources — repointed to live routes.
-  5 route dirs shadowed by config redirects deleted (dead code).
-- NEW pages: `/ai-seo-adelaide` (query at pos 15 on homepage, no page) and
-  `/aged-care-seo-services` (47 impr, completes automotive/hotel trio).
-- `/seo` hub got a "SEO services by focus" spoke block — `/local-seo-adelaide`
-  previously had ONE internal link sitewide while `/seo` soaked up its
-  498-impr target query at pos 63.
-- Intent alignment: `/ai-app-development-adelaide` retitled to carry the
-  ~325 impr/mo national "ai development company" cluster (was ranking on the
-  homepage); `/ai-automation-adelaide` +"business automation" FAQ (105 impr
-  @ 8.4 was being served by /port-adelaide); receptionist comparison page
-  retitled "Virtual Receptionist Adelaide: AI vs Human" (427 impr @ 14, 0
-  clicks); suburb template titles now say "Web Design" not "Websites"
-  (suburb pages rank 9-18 for "website designer {suburb}").
-- PRICING landmines killed: local-seo ($297/497/797), hotel ($497/897/1497),
-  ai-marketing meta ($497) all now match `lib/constants.ts` ($399/$699).
-  One invented client stat removed (logged in claims-to-verify.md).
-- check-meta: **fully clean** (was 28 failures). check-links: clean.
-  tsc: clean. All new/edited pages verified rendering on localhost:3000.
+## Do-not-touch (settled — re-litigating these is a bug)
 
-**Strategy note (Ivan, 2026-07-11): receptionist/answering is harvest-tier
-only — capture cheap clicks, StackCTA upsells them. Money and effort go to
-web design, SEO services, and automation.**
+- **Answering/receptionist cluster:** consolidated 11→6 (Jul), retitled (Tier 12). FREEZE until ~2026-09-15, then re-evaluate with fresh GSC. The Codex report's suggestion to re-merge it is explicitly declined.
+- `/seo-services-adelaide` is a 301 → `/seo` (its GSC impressions are pre-redirect echoes; it is NOT a live competing page).
+- The tradie **blog post** (`/blog/adelaide-seo-for-tradies`, pos 3.2) must NEVER be redirected into the landing page — it's the ranking asset. Differentiate roles instead (see Q3).
+- GBP exists (footer `share.google` link + schema `sameAs`) — the open question is review volume, not existence.
 
-## Ivan's gate (blocks everything below)
+## Ivan's gate
 
-1. `npm run build` locally, click through `/seo`, `/ai-seo-adelaide`,
-   `/aged-care-seo-services`, footer links, one suburb page.
-2. `git push origin main` → Vercel deploys.
-3. Post-deploy GSC (biggest lever, 10 min): request indexing on
-   `/ai-seo-adelaide`, `/aged-care-seo-services`, `/local-seo-adelaide`,
-   `/seo`, `/ai-app-development-adelaide`, `/ai-receptionist-vs-virtual-receptionist`;
-   resubmit sitemap. Watch Coverage for the 31 redirected URLs 2–4 weeks.
+Standing: `npm run build` + localhost click-through before any push; `git push` = deploy = Ivan only. Post-deploy: GSC request-indexing on changed money pages.
 
 ## Open work — priority order
 
-**Q1. Contact form prefill (small, high value).** `components/ContactForm.tsx`: read `?business=` + `?service=` params into fields; then point the hero/BuildYours personal CTA at `/contact?business={biz}#send-message` (currently plain `/contact#send-message`). Spec: PROMOTE-V2-PLAN A4.
+**Q1. Lead & conversion measurement (was GA4 events — expanded per report §7; now top priority because nothing below can be evaluated without it).** (a) GA4 events: build-mine submits (+trade), personal-closer clicks, sticky-bar clicks, tel: clicks (demo vs nav vs footer), FAQ opens, form start/submit, audit start/complete. Pattern in `app/layout.tsx`. (b) Lead records keep source/medium/landing page/suburb/service + qualified/won status — extend the existing lead system (`app/api/leads`), spreadsheet is fine. (c) Monthly KPI = qualified Adelaide leads and won revenue, not clicks.
 
-**Q2. GA4 events (can't optimize what we don't measure).** Fire `gtag` events: build-mine submits (+trade), personal-closer clicks, sticky-bar clicks, tel: clicks (demo line vs nav vs footer), leak-calc interaction (v2 relic — skip), FAQ opens. Pattern in `app/layout.tsx`. Spec: A7.
+**Q2. Contact form prefill (small, high value).** `components/ContactForm.tsx`: read `?business=` + `?service=` params; point BuildYours personal CTA at `/contact?business={biz}#send-message`. Spec: PROMOTE-V2-PLAN A4.
 
-**Q3. Phase D — interior pages to v4 language.** Order: `/website-pricing` + `/website-design-adelaide` → `/seo` + `/seo-for-tradies-adelaide` → `/ai-receptionist-adelaide` + `/ai-automation-adelaide` → `websites-for-*` cluster → suburb template → blog template (template only, not per-post). Method: extract primitives from `components/home-day` + `home-v3` into `components/v3/`; re-skin WITHOUT rewriting copy (the words are ranking). Full spec: PROMOTE-V2-PLAN Phase D + DESIGN-SYSTEM-V3.
+**Q3. Tradie SEO conversion pathway (report §4.3 — best data-backed find).** The blog post ranks 3.2 for "seo for tradies adelaide" (49 impr) and 24.5 national (86 impr); the landing page sits at 36.5. Upgrade the POST: prominent early CTA, inline lead capture before the conclusion, links into `/seo-for-tradies-adelaide` + 2 trade pages + 2 southern suburbs, and a real tradie example `<!-- HUMAN INPUT NEEDED -->`. Differentiate the LANDING PAGE around buying intent (pricing, deliverables, onboarding). Do not merge them.
 
-~~**Q4. Meta-length backlog (28 cosmetic).**~~ DONE 2026-07-11 — checker fully clean; only 2 by-design warnings on noindexed audit-funnel routes remain.
+**Q4. Six southern suburb pages (report §4.7 — near-page-one, zero clicks).** Marion (pos 5.7), Reynella (8.2/11.4), Moana (14.3), Seaford (16-18), Morphett Vale (12.9), Henley Beach. Per page: title/desc tuned to the exact GSC queries ("website designer {suburb}"), unmistakable CTA above the fold, links from `/website-design-adelaide` + locations, kill templated repetition, local proof when Ivan supplies it. These six BEFORE any new suburb pages — expansion is frozen per the consolidation strategy.
 
-**Q5. Phase 7 off-site [HUMAN — Ivan].** GSC/GA4 verification, GBP optimization + review velocity (target 25+ in 90 days), citations blitz (NAP: "AI Adelaide, 5 Peel St, Adelaide SA 5000, (08) 7100 9788"), rank-grid tracking, PR data study. Spec: IMPLEMENTATION-PLAN Phase 7.
+**Q5. `/local-seo-adelaide` ownership call (small).** `/seo` (pos ~64) soaks the "local seo adelaide" impressions; `/local-seo-adelaide` (pos ~42) is the better-positioned page. Make it the exact-intent owner: retitle `/seo` toward broad "SEO services Adelaide", strengthen anchors to `/local-seo-adelaide` for local-intent phrases (footer already does), and cross-link. No merge, no redirect — backlink profile is ~nil so no map needed.
 
-**Q6. Human inputs waiting [Ivan].** (a) `docs/claims-to-verify.md` decisions — testimonials/case studies keep-label-remove; (b) ABN for the footer placeholder; (c) founder line wording + photo (`components/`—search "HUMAN INPUT"); (d) real portfolio screenshots + permissions; (e) confirm demo-line missed-call text-back actually fires → then build the "hang-up challenge" section.
+**Q6. Phase D — interior pages to v4 language.** Order unchanged: `/website-pricing` + `/website-design-adelaide` → `/seo` + `/seo-for-tradies-adelaide` → receptionist/automation pair → `websites-for-*` → suburb template → blog template. Re-skin WITHOUT rewriting ranking copy. Spec: PROMOTE-V2-PLAN Phase D + DESIGN-SYSTEM-V3.
 
-**Q7. Content-calendar seeds (updated 2026-07-11 from fresh GSC data).** Variant gaps to grow into: a "Do I need a website if I have Facebook/Instagram?" blog post (FAQ seed already on /website-design-adelaide), a "web designer Adelaide" angle (suburb titles now carry "Web Design"; still no dedicated content), "how much does SEO cost in Adelaide" post expanding the /seo FAQ. New from GSC: "small business websites adelaide" (75 impr @ 44), "seo for tradies" national (116 impr @ 27), "ecommerce adelaide" (86 impr @ 84 — no offering, decide first), "plumbing websites" national (47 impr @ 68). Keep exact-match anchors natural — semantic coverage beats stuffing.
+**Q7. Proof & founder program [HUMAN-gated, agent-assisted] (report §5 = our claims-to-verify, escalated).** (a) Ivan decides `docs/claims-to-verify.md` items; (b) 3 permission-backed case studies to the report's proof standard (real name, suburb, baseline, timeframe, evidence); (c) About page: full founder name, photo, story, LinkedIn; (d) ABN in footer placeholder; (e) portfolio screenshots; (f) review-request workflow live (target: steady cadence, 25+ in 90 days); (g) confirm demo-line text-back fires → hang-up challenge section.
 
-**Q8. Nice-to-haves parked.** OG image restyle to v4 language (`app/opengraph-image.tsx`); 404 page delight; `scripts/check-links.mjs` in CI (exists? verify) ; drop Space Grotesk font once no page uses `font-display` (after Q3).
+**Q8. Phase 7 off-site [HUMAN — Ivan].** GBP optimization + categories audit + UTM on links; citations (quality over volume: GBP/Apple/Bing/Yellow/TrueLocal + SA associations); Adelaide links via clients/partners/workshops; one research asset (report's list: after-hours call answering study, missed-call cost, SA AI-adoption benchmark). Spec: IMPLEMENTATION-PLAN Phase 7 + report §5.6–5.7, §8 Phase 7.
+
+**Q9. Content-calendar seeds.** ~~SEO-cost post~~ ~~website-vs-socials post~~ DONE (commit `3cc0f55`). Remaining: "web designer Adelaide" dedicated angle; "small business websites adelaide" (75 impr @ 44); "seo for tradies" national expansion (116 impr @ 27); "plumbing websites" national (47 impr @ 68); "ecommerce adelaide" (86 impr — NO offering yet, Ivan decides first). Natural anchors; semantic > stuffing.
+
+**Q10. Nice-to-haves parked.** OG image restyle; 404 delight; `check-links.mjs` in CI; drop Space Grotesk after Q6; repo hygiene: untrack the 144 `node_modules 2/` ghost entries (no SEO impact).
 
 ## Landmines (learn from our scars)
 
-- `lib/constants.ts PRICING` is the only place prices live. Grep before you trust any doc's numbers — including old audits.
+- `lib/constants.ts PRICING` is the only place prices live. Grep before trusting any doc's numbers — including old audits and reports.
 - Adding a suburb: `data/suburbs.json` only — never write the count in copy.
-- One FAQPage per URL and it must match visible Q&As. Layout owns LocalBusiness.
-- `git push` deploys production. Commits are safe; pushes are not yours to make.
-- The sandbox cannot run `next build` (SWC binary + registry blocked) — `tsc --noEmit` + scripts are your ceiling; say so rather than claiming build-verified.
+- One FAQPage per URL, matching visible Q&As. Layout owns LocalBusiness.
+- `git push` deploys production. Commits are safe; pushes are Ivan's.
+- Sandbox can't run `next build` — `tsc --noEmit` + scripts are the ceiling; say so.
+- 26 clicks/month is a tiny sample — don't declare victory or defeat off one GSC window; judge trends over 8+ weeks.
+- Never redirect a page that ranks (see tradie post) without query/page evidence it helps.

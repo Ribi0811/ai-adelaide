@@ -66,15 +66,15 @@ async function notifyTelegram(entry: {
 }): Promise<{ ok: boolean; error?: string }> {
   if (!TELEGRAM_TOKEN) return { ok: false, error: 'Telegram token not configured' };
   const text = [
-    '🧮 *New Audit / AI-Readiness Lead — AI Adelaide*',
+    '🧮 New Audit / AI-Readiness Lead — AI Adelaide',
     '',
-    `*Name:* ${entry.name || '—'}`,
-    `*Email:* ${entry.email || '—'}`,
-    `*Phone:* ${entry.phone || '—'}`,
-    `*Business:* ${entry.businessName || '—'}`,
-    `*Tool:* ${entry.tool}`,
-    `*Score:* ${entry.score ?? '—'}${entry.tier ? ` (${entry.tier})` : ''}`,
-    `*Attribution:* ${attributionLine(entry.attribution)}`,
+    `Name: ${entry.name || '—'}`,
+    `Email: ${entry.email || '—'}`,
+    `Phone: ${entry.phone || '—'}`,
+    `Business: ${entry.businessName || '—'}`,
+    `Tool: ${entry.tool}`,
+    `Score: ${entry.score ?? '—'}${entry.tier ? ` (${entry.tier})` : ''}`,
+    `Attribution: ${attributionLine(entry.attribution)}`,
   ].join('\n');
   try {
     const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
@@ -83,7 +83,6 @@ async function notifyTelegram(entry: {
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
         text,
-        parse_mode: 'Markdown',
         disable_web_page_preview: true,
       }),
     });

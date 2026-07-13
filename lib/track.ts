@@ -1,8 +1,7 @@
 // Consent-gated GA4 event helper (T1 / handoff Q1).
-// GA is loaded via Google Consent Mode with analytics_storage denied by
-// default (see app/layout.tsx). This helper adds a second, stricter gate:
-// no custom event is even queued unless the visitor has explicitly accepted
-// the cookie banner. So Decline => zero analytics calls; Accept => events fire.
+// GA itself is not loaded until the visitor accepts (Basic Consent Mode; see
+// components/GoogleAnalytics.tsx). This helper also prevents custom events
+// from being queued before that explicit choice.
 
 export function analyticsAllowed(): boolean {
   if (typeof window === "undefined") return false;

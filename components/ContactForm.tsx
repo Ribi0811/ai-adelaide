@@ -24,6 +24,16 @@ const initialState: FormState = {
   website: "",
 };
 
+const validServices = new Set([
+  "website",
+  "seo",
+  "automation",
+  "website-seo",
+  "all-three",
+  "audit",
+  "other",
+]);
+
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -42,7 +52,7 @@ export default function ContactForm() {
       setForm((prev) => ({
         ...prev,
         business: business ?? prev.business,
-        service: service ?? prev.service,
+        service: service && validServices.has(service) ? service : prev.service,
       }));
     }
   }, []);

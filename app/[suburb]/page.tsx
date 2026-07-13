@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import suburbs from "@/data/suburbs.json";
-import { siteConfig, testimonials } from "@/lib/constants";
+import { PRICING, siteConfig, testimonials } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SuburbHero from "@/components/SuburbHero";
 
@@ -22,6 +22,13 @@ function getSuburb(slug: string): Suburb | undefined {
   return suburbs.find((suburb) => suburb.slug === slug) as Suburb | undefined;
 }
 
+function renderSeoTemplate(value: string): string {
+  const websiteFromTitle = PRICING.website.fromLabel.replace(/^./, (letter) => letter.toUpperCase());
+  return value
+    .replaceAll("{websiteFrom}", PRICING.website.fromLabel)
+    .replaceAll("{websiteFromTitle}", websiteFromTitle);
+}
+
 export function generateStaticParams() {
   return suburbs.map((suburb) => ({ suburb: suburb.slug }));
 }
@@ -36,11 +43,12 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   // includes "| AI Adelaide", so it must bypass the layout template via
   // title.absolute (the template appends "| AI Adelaide" to plain strings).
   const templateTitle = `${suburb.name} Web Design, SEO & AI Automation`;
-  const templateDesc = `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`;
-  const ogTitle = suburb.seoTitle ?? templateTitle;
-  const description = suburb.seoDescription ?? templateDesc;
+  const templateDesc = `Website design ${PRICING.website.fromLabel}, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`;
+  const customTitle = suburb.seoTitle ? renderSeoTemplate(suburb.seoTitle) : null;
+  const ogTitle = customTitle ?? templateTitle;
+  const description = suburb.seoDescription ? renderSeoTemplate(suburb.seoDescription) : templateDesc;
   return {
-    title: suburb.seoTitle ? { absolute: suburb.seoTitle } : templateTitle,
+    title: customTitle ? { absolute: customTitle } : templateTitle,
     description,
     keywords: [
       `AI websites ${suburb.name}`,

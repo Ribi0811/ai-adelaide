@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import { PRICING, siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   // /seo owns the broad "SEO services Adelaide" intent; /local-seo-adelaide
   // owns the "local SEO Adelaide" modifier. T5 (2026-07-13) shifted this
   // page's title/description/schema/breadcrumb off "Local SEO" so the two
   // pages stop competing for the same query. Visible H1 intent unchanged.
-  title: "SEO Services Adelaide — Plans From $399/mo",
+  title: `SEO Services Adelaide — Plans ${PRICING.seo.fromLabel}`,
   description:
-    "SEO services for Adelaide small businesses: on-page and technical SEO, content, link building, Google Business Profile, reporting. From $399/mo, no lock-in.",
+    `SEO services for Adelaide small businesses: on-page and technical SEO, content, link building, Google Business Profile, reporting. ${PRICING.seo.fromLabel}, no lock-in.`,
   alternates: {
     canonical: "/seo",
   },
@@ -121,15 +122,14 @@ const faqs = [
 ];
 
 function ServiceJsonLd() {
+  const monthlyPrice = PRICING.seo.tiers[0].price.replace(/[^\d]/g, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "SEO Services Adelaide",
     serviceType: "Search Engine Optimization",
     provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
+      "@id": `${siteConfig.url}/#organization`,
     },
     areaServed: {
       "@type": "City",
@@ -139,11 +139,11 @@ function ServiceJsonLd() {
       "Local SEO for Adelaide small businesses. We help you show up on Google with suburb targeting, Google Business Profile optimisation, and content that ranks.",
     offers: {
       "@type": "Offer",
-      price: "399",
+      price: monthlyPrice,
       priceCurrency: "AUD",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "399",
+        price: monthlyPrice,
         priceCurrency: "AUD",
         unitText: "MONTH",
       },

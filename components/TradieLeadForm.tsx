@@ -10,6 +10,8 @@ import { getAttribution } from "@/lib/attribution";
 
 export default function TradieLeadForm() {
   const [name, setName] = useState("");
+  const [business, setBusiness] = useState("");
+  const [tradeArea, setTradeArea] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [website, setWebsite] = useState(""); // honeypot
@@ -35,10 +37,11 @@ export default function TradieLeadForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: name.trim(),
+          business: business.trim(),
           email: email.trim(),
           phone: phone.trim(),
           service: "seo",
-          message: "Free tradie visibility review request (SEO for tradies page)",
+          message: `Free tradie visibility review request. Trade and service area: ${tradeArea.trim()}`,
           source: "/seo-for-tradies-adelaide",
           attribution: getAttribution(),
         }),
@@ -48,6 +51,8 @@ export default function TradieLeadForm() {
       track("tradie_lead_submit", { page: "seo-for-tradies-adelaide" });
       setStatus("success");
       setName("");
+      setBusiness("");
+      setTradeArea("");
       setEmail("");
       setPhone("");
     } catch {
@@ -78,7 +83,7 @@ export default function TradieLeadForm() {
         Tell us your trade and where you work — we&apos;ll show you where you rank now, what your
         competitors are doing, and the fastest wins. No pitch unless you want one.
       </p>
-      <form onSubmit={handleSubmit} className="mt-5 grid gap-3 sm:grid-cols-3">
+      <form onSubmit={handleSubmit} className="mt-5 grid gap-3 sm:grid-cols-2">
         <input
           type="text"
           name="website"
@@ -99,6 +104,24 @@ export default function TradieLeadForm() {
           className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-accent/40 focus:shadow-[0_0_0_4px_rgba(94,242,214,0.12)]"
         />
         <input
+          required
+          type="text"
+          value={business}
+          onChange={(e) => setBusiness(e.target.value)}
+          placeholder="Business name or website"
+          aria-label="Business name or website"
+          className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-accent/40 focus:shadow-[0_0_0_4px_rgba(94,242,214,0.12)]"
+        />
+        <input
+          required
+          type="text"
+          value={tradeArea}
+          onChange={(e) => setTradeArea(e.target.value)}
+          placeholder="Your trade + service area"
+          aria-label="Your trade and service area"
+          className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-accent/40 focus:shadow-[0_0_0_4px_rgba(94,242,214,0.12)] sm:col-span-2"
+        />
+        <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -117,7 +140,7 @@ export default function TradieLeadForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="btn-primary px-6 py-3 disabled:opacity-70 sm:col-span-3 sm:justify-self-start"
+          className="btn-primary px-6 py-3 disabled:opacity-70 sm:col-span-2 sm:justify-self-start"
         >
           {status === "submitting" ? "Sending…" : "Get my free review →"}
         </button>

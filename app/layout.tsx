@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import MotionProvider from "@/components/MotionProvider";
 import CookieConsent from "@/components/CookieConsent";
 import AnalyticsListener from "@/components/AnalyticsListener";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import dynamic from "next/dynamic";
 const ChatWidget = dynamic(() => import("@/components/ChatWidget"), { ssr: false });
 import { siteConfig } from "@/lib/constants";
@@ -116,43 +117,9 @@ export default function RootLayout({
       <body
         className={`${sans.variable} ${display.variable} ${mono.variable} font-sans antialiased`}
       >
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <>
-            {/* Consent Mode: analytics denied by default. Only granted after
-                the visitor accepts the cookie banner (CookieConsent), and
-                re-granted on return visits if a prior "accepted" is stored.
-                This runs before gtag config so GA's own pageview respects it. */}
-            <Script id="ga-consent-default" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('consent', 'default', {
-                  ad_storage: 'denied',
-                  ad_user_data: 'denied',
-                  ad_personalization: 'denied',
-                  analytics_storage: 'denied'
-                });
-                try {
-                  if (window.localStorage.getItem('cookie-consent') === 'accepted') {
-                    gtag('consent', 'update', { analytics_storage: 'granted' });
-                  }
-                } catch (e) {}
-              `}
-            </Script>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
+        {/* Basic consent mode: no Google script or measurement request exists
+            until the visitor explicitly accepts analytics. */}
+        <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
         <Script
           id="site-schema"
           type="application/ld+json"

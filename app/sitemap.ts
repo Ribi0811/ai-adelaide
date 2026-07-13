@@ -13,11 +13,11 @@ import { posts } from "@/data/posts";
 const PAGE_DATES: Record<string, string> = {
   "/": "2026-07-07",
   "/website-pricing": "2026-06-23",
-  "/website-design-adelaide": "2026-06-25",
-  "/seo": "2026-07-11",
-  "/seo-for-tradies-adelaide": "2026-07-04",
+  "/website-design-adelaide": "2026-07-13",
+  "/seo": "2026-07-13",
+  "/seo-for-tradies-adelaide": "2026-07-13",
   "/services": "2026-07-11",
-  "/contact": "2026-06-23",
+  "/contact": "2026-07-13",
   "/audit": "2026-06-23",
   "/website-cost-adelaide": "2026-06-23",
   "/seo-vs-google-ads-adelaide": "2026-06-25",
@@ -68,13 +68,13 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
   "/testimonials": "2026-06-25",
-  "/tools/ai-readiness-calculator": "2026-07-11",
+  "/tools/ai-readiness-calculator": "2026-07-13",
 };
 
 // Suburb content lives in one data file with no per-suburb history yet —
 // use the file's last commit date for all suburb routes until Phase 5
 // (suburb depth pass) gives each one real edit history.
-const SUBURBS_LAST_MODIFIED = "2026-07-11";
+const SUBURBS_LAST_MODIFIED = "2026-07-13";
 
 // Fallback for any route not yet in PAGE_DATES (shouldn't normally hit this —
 // add new pages to the map above when you add them to this sitemap).

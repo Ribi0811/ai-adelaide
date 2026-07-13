@@ -8,10 +8,11 @@
 //    adding an attribute — no "use client" conversion needed.
 import { useEffect } from "react";
 import { track } from "@/lib/track";
-import { captureAttribution } from "@/lib/attribution";
+import { captureAttribution, prepareAttribution } from "@/lib/attribution";
 
 export default function AnalyticsListener() {
   useEffect(() => {
+    prepareAttribution();
     captureAttribution();
 
     function onClick(e: MouseEvent) {
@@ -20,6 +21,10 @@ export default function AnalyticsListener() {
       if (!el) return;
       const event = el.dataset.track;
       if (!event) return;
+      if (event === "faq_open" && el.tagName === "SUMMARY") {
+        const details = el.closest("details");
+        if (details?.open) return;
+      }
       track(event, { href: el.getAttribute("href") ?? "" });
     }
 

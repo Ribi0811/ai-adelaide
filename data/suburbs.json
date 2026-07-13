@@ -353,8 +353,8 @@
       }
     ],
     "region": "South",
-    "seoTitle": "Website Designer Marion — From $699 | AI Adelaide",
-    "seoDescription": "Website designer in Marion, Adelaide. Custom small-business sites from $699, live in 48 hours, with local SEO. Also serving Hallett Cove and Morphett Vale."
+    "seoTitle": "Website Designer Marion — {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Website designer in Marion, Adelaide. Custom small-business sites {websiteFrom}, live in 48 hours, with local SEO. Also serving Hallett Cove and Morphett Vale."
   },
   {
     "name": "Port Adelaide",
@@ -546,8 +546,8 @@
     ],
     "region": "West & Coast",
     "localContext": "Henley Square sits right on the beachfront and is Henley Beach's commercial and social centre — a cluster of restaurants, cafes, and bars with direct sea views that draws both locals and visitors from across Adelaide, especially over summer. Seaview Road runs inland from the Square and carries a mix of everyday retail and services for the residential streets behind the beachfront strip. The suburb's appeal swings hard with the weather and the season, and businesses here need a web presence built to handle a packed Saturday in February just as well as a quiet Tuesday in the middle of winter.",
-    "seoTitle": "Website Designer Henley Beach — $699 | AI Adelaide",
-    "seoDescription": "Website designer in Henley Beach, Adelaide. Custom websites from $699, live in 48 hours, plus local SEO to get found. Also serving Grange and West Beach."
+    "seoTitle": "Website Designer Henley Beach — {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Website designer in Henley Beach, Adelaide. Custom websites {websiteFrom}, live in 48 hours, plus local SEO to get found. Also serving Grange and West Beach."
   },
   {
     "name": "Magill",
@@ -743,8 +743,8 @@
       }
     ],
     "region": "South",
-    "seoTitle": "Web Design Reynella — Websites From $699 | AI Adelaide",
-    "seoDescription": "Web design in Reynella, Adelaide. Custom websites from $699, live in 48 hours, plus local SEO to get found. Also serving Morphett Vale and Seaford."
+    "seoTitle": "Web Design Reynella — Websites {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Web design in Reynella, Adelaide. Custom websites {websiteFrom}, live in 48 hours, plus local SEO to get found. Also serving Morphett Vale and Seaford."
   },
   {
     "name": "Aberfoyle Park",
@@ -807,8 +807,8 @@
       }
     ],
     "region": "South",
-    "seoTitle": "Website Designer Morphett Vale — $699 | AI Adelaide",
-    "seoDescription": "Website designer in Morphett Vale, Adelaide. Small-business websites from $699, live in 48 hours, with local SEO. Also serving Reynella and Hallett Cove."
+    "seoTitle": "Website Designer Morphett Vale — {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Website designer in Morphett Vale, Adelaide. Small-business websites {websiteFrom}, live in 48 hours, with local SEO. Also serving Reynella and Hallett Cove."
   },
   {
     "name": "Campbelltown",
@@ -933,8 +933,8 @@
       }
     ],
     "region": "South",
-    "seoTitle": "Website Designer Seaford — From $699 | AI Adelaide",
-    "seoDescription": "Website designer in Seaford, Adelaide. Custom sites from $699, live in 48 hours, plus local SEO to rank on Google. Also serving Moana and Morphett Vale."
+    "seoTitle": "Website Designer Seaford — {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Website designer in Seaford, Adelaide. Custom sites {websiteFrom}, live in 48 hours, plus local SEO to rank on Google. Also serving Moana and Morphett Vale."
   },
   {
     "name": "West Beach",
@@ -1121,8 +1121,8 @@
       }
     ],
     "region": "West & Coast",
-    "seoTitle": "Website Designer Moana — From $699 | AI Adelaide",
-    "seoDescription": "Website designer in Moana, Adelaide. Small-business websites from $699, live in 48 hours, with local SEO built in. Also serving Seaford and Aldinga."
+    "seoTitle": "Website Designer Moana — {websiteFromTitle} | AI Adelaide",
+    "seoDescription": "Website designer in Moana, Adelaide. Small-business websites {websiteFrom}, live in 48 hours, with local SEO built in. Also serving Seaford and Aldinga."
   },
   {
     "name": "Newton",

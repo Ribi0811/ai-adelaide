@@ -39,6 +39,26 @@ const TITLE_MAX = 60;
 const DESC_MIN = 140;
 const DESC_MAX = 160;
 
+const constantsSource = readFileSync(path.join(ROOT, "lib", "constants.ts"), "utf8");
+function pricingValue(section, field) {
+  const sectionMatch = constantsSource.match(new RegExp(`${section}:\\s*\\{([\\s\\S]*?)\\n  \\},`));
+  const valueMatch = sectionMatch?.[1].match(new RegExp(`${field}:\\s*"([^"]+)"`));
+  if (!valueMatch) throw new Error(`Could not read PRICING.${section}.${field}`);
+  return valueMatch[1];
+}
+
+const WEBSITE_FROM = pricingValue("website", "fromLabel");
+const SEO_FROM = pricingValue("seo", "fromLabel");
+
+function resolveKnownTemplates(value) {
+  if (!value) return value;
+  return value
+    .replaceAll("${PRICING.website.fromLabel}", WEBSITE_FROM)
+    .replaceAll("${PRICING.seo.fromLabel}", SEO_FROM)
+    .replaceAll("{websiteFrom}", WEBSITE_FROM)
+    .replaceAll("{websiteFromTitle}", WEBSITE_FROM.replace(/^./, (letter) => letter.toUpperCase()));
+}
+
 /** Recursively find files matching a predicate, skipping node_modules/.next. */
 function walk(dir, predicate, out = []) {
   for (const entry of readdirSync(dir)) {
@@ -99,8 +119,8 @@ const staticFiles = walk(
 for (const file of staticFiles) {
   const source = readFileSync(file, "utf8");
   if (!/export const metadata/.test(source)) continue; // e.g. bare layouts with no metadata
-  const rawTitle = extractTopLevelField(source, "title");
-  const rawDescription = extractTopLevelField(source, "description");
+  const rawTitle = resolveKnownTemplates(extractTopLevelField(source, "title"));
+  const rawDescription = resolveKnownTemplates(extractTopLevelField(source, "description"));
   if (!rawTitle && !rawDescription) continue;
 
   const rel = path.relative(ROOT, file);
@@ -117,6 +137,7 @@ for (const file of staticFiles) {
     renderedTitle,
     description: rawDescription,
     noindex,
+    titleIsAbsolute: false,
   });
 }
 
@@ -144,20 +165,23 @@ for (let i = 0; i < slugIndices.length; i++) {
     renderedTitle: rawTitle ? `${rawTitle}${TITLE_TEMPLATE_SUFFIX}` : null,
     description,
     noindex: false,
+    titleIsAbsolute: false,
   });
 }
 
 // --- 3. Suburb pages (data/suburbs.json) ------------------------------------
 const suburbs = JSON.parse(readFileSync(path.join(ROOT, "data", "suburbs.json"), "utf8"));
 for (const suburb of suburbs) {
-  const rawTitle = `${suburb.name} Websites, SEO & AI Automation`;
-  const description = `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call (08) 7100 9788.`;
+  const rawTitle = resolveKnownTemplates(suburb.seoTitle) ?? `${suburb.name} Websites, SEO & AI Automation`;
+  const description = resolveKnownTemplates(suburb.seoDescription) ?? `Website design ${WEBSITE_FROM}, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call (08) 7100 9788.`;
+  const usesAbsoluteTitle = Boolean(suburb.seoTitle);
   rows.push({
     route: `app/[suburb] -> /${suburb.slug}`,
     rawTitle,
-    renderedTitle: `${rawTitle}${TITLE_TEMPLATE_SUFFIX}`,
+    renderedTitle: usesAbsoluteTitle ? rawTitle : `${rawTitle}${TITLE_TEMPLATE_SUFFIX}`,
     description,
     noindex: false,
+    titleIsAbsolute: usesAbsoluteTitle,
   });
 }
 
@@ -182,7 +206,7 @@ for (const row of rows) {
     });
   }
 
-  if (row.rawTitle && row.rawTitle.includes("AI Adelaide") && !row.route.endsWith("app/page.tsx") && !row.route.endsWith("app/layout.tsx")) {
+  if (row.rawTitle && row.rawTitle.includes("AI Adelaide") && !row.titleIsAbsolute && !row.route.endsWith("app/page.tsx") && !row.route.endsWith("app/layout.tsx")) {
     issues.push({
       level: "warn",
       type: "title-double-brand",

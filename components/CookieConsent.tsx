@@ -1,22 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { captureAttribution, clearAttribution } from '@/lib/attribution';
 
 interface CookieConsentProps {
   onAccept?: () => void;
   onDecline?: () => void;
-}
-
-// Bridge the banner to Google Consent Mode (set up default-denied in
-// app/layout.tsx). Accept grants analytics storage; Decline keeps it denied.
-function updateAnalyticsConsent(granted: boolean) {
-  if (typeof window === 'undefined') return;
-  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
-  if (typeof gtag === 'function') {
-    gtag('consent', 'update', {
-      analytics_storage: granted ? 'granted' : 'denied',
-    });
-  }
 }
 
 export default function CookieConsent({ onAccept, onDecline }: CookieConsentProps) {
@@ -36,14 +25,15 @@ export default function CookieConsent({ onAccept, onDecline }: CookieConsentProp
 
   const handleAccept = () => {
     localStorage.setItem('cookie-consent', 'accepted');
-    updateAnalyticsConsent(true);
+    captureAttribution();
+    window.dispatchEvent(new Event('aiadelaide:analytics-accepted'));
     setShowConsent(false);
     onAccept?.();
   };
 
   const handleDecline = () => {
     localStorage.setItem('cookie-consent', 'declined');
-    updateAnalyticsConsent(false);
+    clearAttribution();
     setShowConsent(false);
     onDecline?.();
   };

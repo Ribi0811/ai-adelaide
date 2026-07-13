@@ -554,3 +554,44 @@ decision) and the qualified/won/revenue lifecycle. See handoff Q1.
 
 **For Ivan / Codex to verify:** consent Decline truly silences GA; audit form
 delivers in prod; suburb source shows one org + no `$99`; no event double-fire.
+
+---
+
+## 2026-07-13 — Codex verification repairs after Opus sprint
+**Status: ✅ Complete locally, NOT pushed**
+
+- Replaced Advanced Consent Mode with Basic Consent Mode: the Google tag is not
+  injected or configured until explicit Accept. First-touch attribution is held
+  in memory before consent, persisted only after Accept, and cleared/omitted on
+  Decline.
+- Fixed `/api/contact-submit` so it returns `502` instead of a false success when
+  Telegram, email, and local persistence all fail. It now reports `leadId`
+  rather than echoing lead PII. Telegram messages use plain text so ordinary
+  Markdown punctuation in names/businesses cannot break delivery; HTML email
+  fields are escaped.
+- Completed the tradie visibility-review form with required business/website and
+  trade/service-area inputs. Invalid contact-form `?service=` values no longer
+  poison the controlled select.
+- FAQ tracking now emits `faq_open` only when a closed `<details>` is opened.
+- `/seo` Service schema references the one layout-owned LocalBusiness by `@id`;
+  sitemap dates were bumped for every sprint-edited page and suburb data.
+- New suburb metadata and `/seo` metadata now resolve prices from `PRICING`.
+  `check-meta.mjs` was upgraded to resolve those templates and inspect the six
+  actual suburb overrides instead of silently checking only the fallback title.
+
+### Verification
+
+- `npx tsc --noEmit` — pass.
+- `npm run check-meta` — pass with the same two non-blocking audit-funnel length
+  warnings.
+- `npm run check-links` — pass, zero broken links or redirect chains.
+- `npm run build` — pass, 139 static pages generated.
+- Playwright with fake `G-CODEXTEST` and blocked Google endpoint:
+  - before choice and after Decline: no `gtag`, no Google script/request, no
+    stored attribution;
+  - after Accept: fake Google script appears and the original UTM is persisted;
+  - FAQ close emits zero events, opening a closed FAQ emits one `faq_open`;
+  - Marion title/schema, `/seo` provider `@id`, and tradie fields all verified.
+
+**Still production-dependent:** real Telegram and SMTP delivery require Vercel
+environment secrets and must be smoke-tested after Ivan approves deployment.

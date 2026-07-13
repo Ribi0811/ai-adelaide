@@ -45,6 +45,16 @@ async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?
   }
 
   try {
+    const safe = {
+      name: escapeHtml(lead.name),
+      email: escapeHtml(lead.email),
+      phone: escapeHtml(lead.phone),
+      business: escapeHtml(lead.business),
+      service: escapeHtml(lead.service),
+      source: escapeHtml(lead.source),
+      attribution: escapeHtml(attributionLine(lead.attribution)),
+      message: escapeHtml(lead.message),
+    };
     const transporter = nodemailer.createTransport({
       host: smtp.smtp_host,
       port: smtp.smtp_port,
@@ -77,20 +87,20 @@ async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?
           New Contact Form Lead — AI Adelaide
         </h2>
         <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
-          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Name</td><td style="padding: 8px;">${lead.name || "—"}</td></tr>
-          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Email</td><td style="padding: 8px;"><a href="mailto:${lead.email}">${lead.email || "—"}</a></td></tr>
-          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Phone</td><td style="padding: 8px;"><a href="tel:${lead.phone}">${lead.phone || "—"}</a></td></tr>
-          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Business</td><td style="padding: 8px;">${lead.business || "—"}</td></tr>
-          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Service</td><td style="padding: 8px;">${lead.service || "—"}</td></tr>
-          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Source</td><td style="padding: 8px;">${lead.source || "contact form"}</td></tr>
-          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Attribution</td><td style="padding: 8px;">${attributionLine(lead.attribution)}</td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Name</td><td style="padding: 8px;">${safe.name || "—"}</td></tr>
+          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Email</td><td style="padding: 8px;"><a href="mailto:${safe.email}">${safe.email || "—"}</a></td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Phone</td><td style="padding: 8px;"><a href="tel:${safe.phone}">${safe.phone || "—"}</a></td></tr>
+          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Business</td><td style="padding: 8px;">${safe.business || "—"}</td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Service</td><td style="padding: 8px;">${safe.service || "—"}</td></tr>
+          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Source</td><td style="padding: 8px;">${safe.source || "contact form"}</td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Attribution</td><td style="padding: 8px;">${safe.attribution}</td></tr>
         </table>
         <div style="margin-top: 24px; padding: 16px; background: #f1f5f9; border-radius: 8px;">
           <p style="margin: 0 0 8px 0; font-weight: bold; color: #475569;">Message:</p>
-          <p style="margin: 0; white-space: pre-wrap; color: #0f172a;">${lead.message || "(no message)"}</p>
+          <p style="margin: 0; white-space: pre-wrap; color: #0f172a;">${safe.message || "(no message)"}</p>
         </div>
         <p style="margin-top: 24px; font-size: 12px; color: #94a3b8;">
-          Reply directly to this email to respond to ${lead.name || "the lead"}.
+          Reply directly to this email to respond to ${safe.name || "the lead"}.
         </p>
       </div>
     `;
@@ -133,6 +143,15 @@ function clean(v: string | undefined) {
   return v?.trim() || "";
 }
 
+function escapeHtml(value: string) {
+  return value.replace(/[&<>"]/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+  })[character] || character);
+}
+
 // One-line human-readable attribution summary for notifications.
 function attributionLine(a: Attribution | null | undefined): string {
   if (!a) return "—";
@@ -147,18 +166,19 @@ function attributionLine(a: Attribution | null | undefined): string {
 }
 
 async function notifyTelegram(lead: LeadFields): Promise<{ ok: boolean; error?: string }> {
+  if (!TELEGRAM_TOKEN) return { ok: false, error: "Telegram token not configured" };
   const text = [
-    "🔔 *New Contact Form Lead — AI Adelaide*",
+    "🔔 New Contact Form Lead — AI Adelaide",
     "",
-    `*Name:* ${lead.name || "—"}`,
-    `*Email:* ${lead.email || "—"}`,
-    `*Phone:* ${lead.phone || "—"}`,
-    `*Business:* ${lead.business || "—"}`,
-    `*Service:* ${lead.service || "—"}`,
-    `*Source:* ${lead.source || "contact form"}`,
-    `*Attribution:* ${attributionLine(lead.attribution)}`,
+    `Name: ${lead.name || "—"}`,
+    `Email: ${lead.email || "—"}`,
+    `Phone: ${lead.phone || "—"}`,
+    `Business: ${lead.business || "—"}`,
+    `Service: ${lead.service || "—"}`,
+    `Source: ${lead.source || "contact form"}`,
+    `Attribution: ${attributionLine(lead.attribution)}`,
     "",
-    `*Message:*`,
+    "Message:",
     lead.message || "(no message)",
   ].join("\n");
 
@@ -169,7 +189,6 @@ async function notifyTelegram(lead: LeadFields): Promise<{ ok: boolean; error?: 
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
         text,
-        parse_mode: "Markdown",
         disable_web_page_preview: true,
       }),
     });
@@ -229,17 +248,32 @@ export async function POST(req: NextRequest) {
   const telegram = await notifyTelegram(lead);
   const email = await sendContactEmail(lead);
 
+  let persisted = false;
   try {
     await appendLead(entry);
+    persisted = true;
   } catch (e) {
     console.error("contact-submit: failed to persist lead", e);
   }
 
+  if (!telegram.ok && !email.ok && !persisted) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error: "Could not deliver your details. Please email hello@aiadelaide.com.au.",
+        telegram,
+        email,
+      },
+      { status: 502 },
+    );
+  }
+
   return NextResponse.json({
     ok: true,
-    lead: entry,
+    leadId: entry.id,
     telegram,
     email,
+    persisted,
   });
 }
 

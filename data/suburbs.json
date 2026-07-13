@@ -328,8 +328,8 @@
     "slug": "marion",
     "postcode": "5043",
     "heroLine": "Websites, SEO & automation for Marion's southern businesses.",
-    "intro": "Marion's the southern gateway — Westfield Marion anchors the retail scene, but healthcare, trades, and professional services serve a massive residential base. Competition is fierce across every category. We build websites that stand out, SEO that ranks for Marion searches, and automation that ensures every enquiry gets instant attention.",
-    "whyNow": "Marion's healthcare and retail sectors are saturated — standing out requires operational excellence, not just good service. A proper website with SEO and automation gives solo practitioners and small businesses the polish of a corporate operation without the overhead.",
+    "intro": "Marion combines the Westfield retail precinct with healthcare, trades and professional services serving the surrounding southern suburbs. We build professional websites, improve local search visibility and add enquiry automation where the business needs it.",
+    "whyNow": "Marion businesses compete across healthcare, retail, trades and professional services. A clear website helps a smaller operator present services, proof and contact options professionally when customers compare local alternatives.",
     "industries": [
       "Healthcare & Medical",
       "Retail & Shopping",
@@ -338,18 +338,18 @@
       "Professional Services"
     ],
     "painPoints": [
-      "Healthcare providers near Westfield lose patients to clinics with online booking because nobody waits on hold anymore",
-      "Tradies servicing Marion's 50,000+ residents lose morning jobs because they can't take calls while driving between sites",
-      "Retail businesses miss repeat customer opportunities because there's no system to capture and follow up with buyers"
+      "Healthcare providers need a simple mobile booking or enquiry path for patients comparing nearby practices",
+      "Tradies need calls and quote requests captured while they are driving or working on site",
+      "Retail businesses need a clear way to turn website visits into enquiries, visits or repeat contact"
     ],
-    "websiteLine": "A website for your Marion business — online booking, service pages, mobile-first. From $699.",
-    "seoLine": "Rank for 'doctor Marion', 'plumber Marion', 'mechanic Marion' — 50,000+ residents are searching for local services every day.",
+    "websiteLine": "A website for your Marion business with online booking or enquiry, useful service pages and a mobile-first layout.",
+    "seoLine": "Target relevant searches such as 'doctor Marion', 'plumber Marion' or 'mechanic Marion' with accurate business information and useful local service content.",
     "automationLine": "Missed call capture, appointment reminders and review automation for Marion businesses. Out-polish your competitors without hiring admin.",
     "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15",
     "customFaqs": [
       {
         "question": "Do you help healthcare practices near Westfield Marion get more patient bookings?",
-        "answer": "Yes. We build healthcare websites for practices around Marion and the southern corridor — online booking, patient reminder systems, and suburb-targeted service pages. Most Marion practices we work with fill empty appointment slots within their first quarter."
+      "answer": "Yes. We build healthcare websites for practices around Marion and the southern corridor — with online booking, clear service information, patient enquiry pathways and optional reminder systems. We agree how bookings will be measured before launch rather than promise a fixed result."
       }
     ],
     "region": "South",
@@ -512,8 +512,8 @@
     "slug": "henley-beach",
     "postcode": "5022",
     "heroLine": "Websites, SEO & automation for Henley Beach's coastal business strip.",
-    "intro": "Henley Beach is Adelaide's western coastal drawcard, with Henley Square as its beachfront dining and lifestyle hub, drawing both locals and visitors year-round. Restaurants, cafes and lifestyle businesses along Seaview Road and around the Square compete hard for both walk-in trade and online bookings, especially as summer weekends bring a surge in demand that a phone-only booking process can't keep up with. We help Henley Beach businesses build a fast, professional website, rank locally for the searches beachgoers and locals are making, and automate booking so a busy weekend doesn't mean missed revenue.",
-    "whyNow": "Henley Beach's trade swings hard with the weather and the season — Henley Square is packed on a warm Saturday and considerably quieter on a wet Tuesday in July, and a business that can only take bookings by phone loses customers during the busy periods when staff are too stretched to answer. A proper website with online booking captures that weekend surge automatically, while automated follow-up and offers keep the quieter periods from going completely dead. Even outside the peak season, Henley Square's dining strip stays busier than most suburban strips thanks to its status as a genuine Adelaide destination rather than just a local shopping precinct, which keeps baseline search demand higher year-round than the seasonal swings alone would suggest.",
+    "intro": "Henley Beach combines the Henley Square dining and lifestyle precinct with businesses along Seaview Road and the surrounding residential area. We build fast websites with clear booking or enquiry options, improve relevant local search visibility and add follow-up automation where useful.",
+    "whyNow": "Henley Beach businesses can serve locals, day visitors and seasonal demand. A fast website with opening information, menus or services, booking and contact options helps each audience make a decision without relying on a phone call.",
     "industries": [
       "Cafes & Restaurants",
       "Beauty & Wellness",
@@ -522,30 +522,30 @@
       "Family Services"
     ],
     "painPoints": [
-      "Restaurants around Henley Square miss phone bookings during peak weekend service because staff are flat out on the floor, sending diners to the next venue along the beachfront instead.",
-      "Lifestyle and wellness businesses near the beach lose out-of-area enquiries made outside business hours, when people are actually planning their weekend.",
-      "Cafes and retail on Seaview Road struggle to stand out in local search results against the handful of well-known Henley Square institutions that dominate reviews and visibility."
+      "Restaurants around Henley Square need booking options that still work while staff are busy serving customers",
+      "Lifestyle and wellness businesses need after-hours enquiries captured for later follow-up",
+      "Cafes and retailers on Seaview Road need clear local information, genuine reviews and a strong mobile experience"
     ],
-    "websiteLine": "A fast, mobile-first website for your Henley Beach business — live in 48 hours, from $699. Built to capture weekend beachfront demand with online booking front and centre.",
-    "seoLine": "We get Henley Beach businesses ranking for 'restaurant Henley Square', 'cafe Seaview Road', and suburb-specific searches — capturing both local and visitor demand, from $399/month.",
+    "websiteLine": "A fast, mobile-first website for your Henley Beach business with online booking or enquiry placed front and centre.",
+    "seoLine": "Target searches such as 'restaurant Henley Square', 'cafe Seaview Road' and other relevant local queries with useful pages and a complete business profile, with no ranking guarantee.",
     "automationLine": "After-hours booking capture and automated follow-up for Henley Beach hospitality and lifestyle businesses — from $199/month, so a Friday-night enquiry about Saturday lunch doesn't sit unanswered until Monday.",
     "heroColor": "from-sky-400/20 via-cyan-300/10 to-blue-400/15",
     "customFaqs": [
       {
         "question": "Does a beachfront business need a different kind of website to an inland suburb?",
-        "answer": "The fundamentals are the same, but online booking matters more here — Henley Square gets genuine weekend surges where phone-only bookings lose customers to whoever can take an online booking instead. We prioritise fast, simple booking flows for beachfront hospitality and lifestyle businesses."
+        "answer": "The fundamentals are the same, but hospitality and lifestyle businesses often benefit from prominent hours, menus or services, location details and a fast booking flow. We prioritise the mobile journey customers are most likely to use."
       },
       {
         "question": "Can automation help smooth out the seasonal swings in trade?",
-        "answer": "Yes — automated review requests and follow-up keep past customers engaged through the quieter winter months, while after-hours enquiry capture makes sure summer weekend demand doesn't overwhelm a small team trying to answer every phone call."
+        "answer": "Automation can capture after-hours enquiries, send booking confirmations and support a genuine review-request workflow. We scope it around the actual seasonal bottleneck and measure the result rather than assume a fixed lift."
       },
       {
         "question": "How do you help a business stand out against the well-known Henley Square institutions?",
-        "answer": "Strong local SEO and a genuinely fast, well-designed website let a newer or smaller business rank alongside long-established Henley Square names in search results — visibility that's much harder to win through foot traffic and reputation alone."
+        "answer": "A fast, well-designed website gives a smaller business room to explain its offer, location and proof clearly. Local SEO can improve its eligibility and relevance for nearby searches, but rankings remain competitive and are not guaranteed."
       }
     ],
     "region": "West & Coast",
-    "localContext": "Henley Square sits right on the beachfront and is Henley Beach's commercial and social centre — a cluster of restaurants, cafes, and bars with direct sea views that draws both locals and visitors from across Adelaide, especially over summer. Seaview Road runs inland from the Square and carries a mix of everyday retail and services for the residential streets behind the beachfront strip. The suburb's appeal swings hard with the weather and the season, and businesses here need a web presence built to handle a packed Saturday in February just as well as a quiet Tuesday in the middle of winter.",
+    "localContext": "Henley Square sits on the beachfront and contains restaurants, cafes and bars, while Seaview Road carries a broader mix of retail and services for the surrounding residential area. Businesses serving visitors and locals need mobile information, booking and enquiry options that remain clear across busy and quiet periods.",
     "seoTitle": "Website Designer Henley Beach — {websiteFromTitle} | AI Adelaide",
     "seoDescription": "Website designer in Henley Beach, Adelaide. Custom websites {websiteFrom}, live in 48 hours, plus local SEO to get found. Also serving Grange and West Beach."
   },
@@ -718,8 +718,8 @@
     "slug": "reynella",
     "postcode": "5161",
     "heroLine": "Websites, SEO & automation for Reynella's growing southern families.",
-    "intro": "Reynella is southern Adelaide's growing family hub — new estates going in, established homes needing renos, and a commercial strip keeping tradies flat-out. We build tradie and family-services websites that convert, SEO that ranks for southern suburb searches, and automation that handles the volume Reynella businesses need to keep up with.",
-    "whyNow": "Reynella's growth means more homes needing services, more families searching online, and more competition among local businesses. Those with proper websites and automated enquiry handling are capturing the new family market — competitors still relying on phone-only lose those customers to whoever responds first.",
+    "intro": "Reynella combines established homes, newer development and local family services. We build clear websites for trades and service businesses, improve relevant southern-suburb search visibility and add enquiry automation where useful.",
+    "whyNow": "Reynella has a mix of established homes, newer development and local services. A professional website helps customers understand coverage, compare services and make contact without depending on business-hour phone availability.",
     "industries": [
       "Trades & Construction",
       "Family Services",
@@ -728,18 +728,18 @@
       "Automotive"
     ],
     "painPoints": [
-      "Tradies servicing Reynella's growing estates miss 4-6 calls a week because phones go unanswered on the tools",
-      "Healthcare practices lose new patients to clinics with online booking because Reynella families default to digital",
-      "Cafes and takeaway lose catering orders worth $300+ during morning rush when phones are tied up with front-counter service"
+      "Tradies need calls and quote requests captured while they are working on site",
+      "Healthcare practices need an easy mobile booking or patient enquiry path",
+      "Cafes and takeaway businesses need catering and group enquiries captured during busy service periods"
     ],
-    "websiteLine": "A tradie website for your Reynella business — quote forms, service area pages, click-to-call. From $699.",
-    "seoLine": "Rank for 'plumber Reynella', 'builder Reynella', 'cafe Reynella' — new families and established locals are searching.",
+    "websiteLine": "A tradie or local-service website for your Reynella business with quote forms, service-area information and click-to-call.",
+    "seoLine": "Target relevant searches such as 'plumber Reynella', 'builder Reynella' or 'cafe Reynella' with accurate, useful local content.",
     "automationLine": "Missed call capture, quote automation and booking for Reynella tradies and family services. Handle the growth without the chaos.",
     "heroColor": "from-orange-400/20 via-amber-300/10 to-yellow-400/15",
     "customFaqs": [
       {
         "question": "Do you build tradie websites for the growing southern suburbs around Reynella?",
-        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Reynella's growing estates and the surrounding southern corridor. Instant quote forms, automated follow-up and click-to-call — built for the volume southern tradies handle."
+        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Reynella and the surrounding southern corridor, with quote forms, clear service-area information, optional follow-up and click-to-call."
       }
     ],
     "region": "South",
@@ -782,8 +782,8 @@
     "slug": "morphett-vale",
     "postcode": "5162",
     "heroLine": "Websites, SEO & automation for Morphett Vale's southern commercial hub.",
-    "intro": "Morphett Vale is southern Adelaide's biggest commercial-residential mix — Southgate Plaza anchors retail, automotive and trade services keep the suburb running, and a massive residential base keeps demand constant. We build websites that rank for southern commercial searches, SEO that beats the big-box competitors, and automation that helps Morphett Vale businesses handle sheer volume.",
-    "whyNow": "Morphett Vale's commercial density means fierce competition for every customer. Small businesses with proper websites, fast response and automated enquiry handling close the gap against bigger competitors — those still relying on phone-only lose customers who don't want to wait.",
+    "intro": "Morphett Vale combines retail around Southgate Plaza with automotive, trades, healthcare and residential services. We build professional websites, improve relevant local visibility and add enquiry handling where it solves a real operational gap.",
+    "whyNow": "Morphett Vale customers can compare independents, chains and nearby providers in the same search. A professional website gives a smaller business room to explain its service, local knowledge, proof and next step clearly.",
     "industries": [
       "Automotive",
       "Trades & Home Services",
@@ -792,18 +792,18 @@
       "Family Services"
     ],
     "painPoints": [
-      "Independent mechanics lose fleet and family work to dealerships with better Google rankings and online booking",
-      "Tradies miss after-work calls because they're onsite until 6pm and voicemail isn't cutting it anymore",
-      "Healthcare practices lose patients to bulk-billing clinics with online booking because Morphett Vale families won't wait on hold"
+      "Independent mechanics need service, fleet and booking information to be easy to find on mobile",
+      "Tradies need after-hours calls and quote enquiries captured for prompt follow-up",
+      "Healthcare practices need clear services and convenient online booking or patient enquiries"
     ],
-    "websiteLine": "A practical website for your Morphett Vale business — service pages, quote forms, click-to-call. From $699.",
-    "seoLine": "Rank for 'mechanic Morphett Vale', 'plumber Morphett Vale', 'doctor Morphett Vale' — beat the chains to local searches.",
+    "websiteLine": "A practical website for your Morphett Vale business with service pages, quote forms and click-to-call.",
+    "seoLine": "Target relevant searches such as 'mechanic Morphett Vale', 'plumber Morphett Vale' or 'doctor Morphett Vale' with useful service content.",
     "automationLine": "Missed call capture, booking reminders and quote follow-up for Morphett Vale small business. Compete at volume.",
     "heroColor": "from-slate-400/20 via-gray-300/10 to-zinc-400/15",
     "customFaqs": [
       {
         "question": "Do you help Morphett Vale small businesses compete against big-box competitors?",
-        "answer": "Yes. We work with Morphett Vale mechanics, tradies, healthcare and retail businesses competing against bigger operators. Local SEO, fast response and automated enquiry handling that helps independents hold their ground."
+        "answer": "Yes. We build websites and local search foundations for Morphett Vale mechanics, tradies, healthcare and retail businesses. Clear services, genuine proof and fast enquiry handling help an independent present a credible alternative to larger operators."
       }
     ],
     "region": "South",
@@ -908,8 +908,8 @@
     "slug": "seaford",
     "postcode": "5169",
     "heroLine": "Websites, SEO & automation for Seaford's growing southern coast.",
-    "intro": "Seaford is southern Adelaide's coastal growth corridor — new estates, young families, and a railway-linked commuter base that defaults to online for everything. We build tradie and family-services websites that convert, SEO that ranks for southern coast searches, and automation that helps Seaford businesses keep up with rapid population growth.",
-    "whyNow": "Seaford's growth means more competition for the new family market. Businesses with proper websites, fast response and automated enquiry handling capture the new arrivals — competitors still relying on phone-only lose those customers to whoever replies first.",
+    "intro": "Seaford serves established residents, newer housing and the broader southern coast. We build websites for trades and family services, improve relevant local search visibility and add enquiry automation where the workflow needs it.",
+    "whyNow": "Seaford serves established residents, newer development and the broader southern coast. A clear website helps customers check services, coverage and availability before choosing who to contact.",
     "industries": [
       "Trades & Construction",
       "Family Services",
@@ -918,18 +918,18 @@
       "Real Estate"
     ],
     "painPoints": [
-      "Tradies servicing Seaford's new estates miss 5+ calls a week because they can't quote fast enough between active sites",
-      "Healthcare practices lose new families to clinics with online booking because Seaford commuters won't call during work hours",
-      "Real estate agents miss weekend opens because enquiry forms aren't automated and leads sit until Monday"
+      "Tradies need mobile quote enquiries captured while they move between active sites",
+      "Healthcare practices need convenient booking or patient enquiry options beyond phone calls",
+      "Real estate agents need weekend property enquiries routed for timely follow-up"
     ],
-    "websiteLine": "A tradie or family-services website for your Seaford business — quote forms, service area pages, click-to-call. From $699.",
-    "seoLine": "Rank for 'plumber Seaford', 'builder Seaford', 'cafe Seaford' — new families and established locals are searching.",
+    "websiteLine": "A tradie or family-services website for your Seaford business with quote forms, service-area pages and click-to-call.",
+    "seoLine": "Target relevant searches such as 'plumber Seaford', 'builder Seaford' or 'cafe Seaford' with accurate local service information.",
     "automationLine": "Missed call capture, quote automation and booking for Seaford tradies. Handle the southern coast growth.",
     "heroColor": "from-cyan-400/20 via-sky-300/10 to-blue-400/15",
     "customFaqs": [
       {
         "question": "Do you build tradie websites for the growing southern coast around Seaford?",
-        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Seaford's new estates and the broader southern coast. Instant quote forms, automated follow-up and service area pages built for the rapid population growth."
+        "answer": "Yes. We build tradie websites for plumbers, builders, electricians and mechanics serving Seaford and the broader southern coast, with quote forms, optional follow-up and useful service-area pages."
       }
     ],
     "region": "South",
@@ -1096,8 +1096,8 @@
     "slug": "moana",
     "postcode": "5169",
     "heroLine": "Websites, SEO & automation for Moana's southern beach community.",
-    "intro": "Moana is a southern beach suburb with a strong community feel — cafes, holiday rentals, surf lifesaving culture, and family services serving both permanent residents and summer holidaymakers. We build beachside-ready websites that capture direct bookings, SEO that ranks for southern coast searches, and automation that handles the seasonal swing without losing year-round customers.",
-    "whyNow": "Moana's mix of permanent residents and holidaymakers means two distinct customer types to serve. A proper website with direct booking captures both — those still relying on third-party platforms or phone-only lose the year-round crowd to competitors with better digital presence.",
+    "intro": "Moana is a southern beach suburb with cafes, holiday accommodation, trades and family services serving residents and visitors. We build mobile-first websites, improve relevant local search visibility and add booking or enquiry automation where useful.",
+    "whyNow": "Moana businesses may serve permanent residents, visitors or both. A professional website can separate those journeys clearly with services, galleries, booking or enquiry options and practical local information.",
     "industries": [
       "Cafes & Restaurants",
       "Tourism & Accommodation",
@@ -1106,18 +1106,18 @@
       "Real Estate"
     ],
     "painPoints": [
-      "Moana cafes miss summer tourist bookings because phones go unanswered during service rush",
-      "Holiday rental providers double-book because manual calendars don't sync across platforms",
-      "Tradies miss weekend family enquiries because they're trying to have their own weekends off"
+      "Moana cafes need booking and enquiry options that still work during a busy service",
+      "Holiday rental providers need clear direct-booking information and properly scoped calendar integrations",
+      "Tradies need weekend enquiries captured without staying on the phone all day"
     ],
-    "websiteLine": "A beachside-ready website for your Moana business — online booking, gallery, mobile-first. From $699.",
-    "seoLine": "Rank for 'cafe Moana', 'Moana accommodation', 'Moana beach' — capture the southern beach crowd.",
+    "websiteLine": "A beachside-ready website for your Moana business with online booking or enquiry, a gallery and a mobile-first layout.",
+    "seoLine": "Target relevant searches such as 'cafe Moana' or 'Moana accommodation' with useful local content and a complete business profile.",
     "automationLine": "Direct booking, calendar sync and missed call capture for Moana businesses. Handle the seasonal swing.",
     "heroColor": "from-sky-400/20 via-cyan-300/10 to-teal-400/15",
     "customFaqs": [
       {
         "question": "Do you build tourism websites for southern beach suburbs like Moana?",
-        "answer": "Yes. We build websites for Moana cafes, holiday rentals, family services and trades — direct booking, calendar sync, and seasonal promotion features that capture both permanent residents and summer holidaymakers."
+        "answer": "Yes. We build websites for Moana cafes, holiday rentals, family services and trades, with direct booking or enquiry, properly scoped calendar connections and seasonal promotion options where appropriate."
       }
     ],
     "region": "West & Coast",

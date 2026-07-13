@@ -1,12 +1,13 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-07-13** (Opus sprint T1–T5 + Codex verification fixes complete locally).
+**Last updated: 2026-07-13** (Opus sprint + Codex verification and on-page SEO copy pass complete locally).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
 
 - Everything through Tier 12 is pushed and live (origin/main `47a69fd`).
 - **Opus sprint T1–T5 + Codex verification repairs done locally, NOT pushed.** The repair pass replaced Advanced Consent Mode with Basic Consent Mode (no Google script or attribution persistence before Accept), made contact submissions fail honestly if every delivery path fails, completed the tradie form fields, fixed `/seo`'s duplicate LocalBusiness, moved new metadata prices back to `PRICING`, corrected sitemap dates/FAQ-open counting, and taught `check-meta` to inspect suburb overrides. Full `next build`, `tsc`, `check-meta`, and `check-links` pass; localhost browser verification also passed. See `CHANGELOG-SEO-WORK.md` 2026-07-13 entries.
+- **On-page SEO copy pass complete locally, NOT pushed.** `/seo` now visibly owns broad SEO services and has an above-fold audit CTA; `/local-seo-adelaide`, AI SEO, GBP, tradie and vertical/comparison pages no longer promise rankings or unsupported timelines. GBP is correctly priced as part of the `$399/mo` Local SEO plan. The six GSC-priority suburb pages now visibly lead with website design, use website pricing/audit/link paths, and no longer assign location-less testimonials to a suburb. Generic automation percentages remain only as explicitly illustrative targets, not guaranteed or measured averages. Genuine local proof/imagery remains Q7.
 - `LOCAL-SEO-GROWTH-REPORT-JULY-2026.md` (Codex, 2026-07-13) is **analysis, not a roadmap** — reconciled into the queue; do not execute directly.
 - `docs/OPUS-BRIEF.md` (with Codex review override) was the spec for the T1–T5 sprint; historical now.
 
@@ -15,7 +16,8 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 1. **Completed locally:** `npm run build`, `tsc`, `check-meta`, `check-links`.
 2. **Completed with fake GA ID + blocked Google endpoint:** Decline leaves `gtag` undefined, injects no Google script/request, and stores no attribution; Accept injects only the fake tag and persists first-touch UTM. FAQ close emits no `faq_open`; opening a closed item emits one.
 3. **Completed locally:** `/marion` title renders correctly with exactly one LocalBusiness; `/seo` Service references `/#organization`; tradie form renders business and trade/service-area fields.
-4. **Still human/prod-dependent:** real Telegram/email delivery with Vercel secrets. After Ivan approves and pushes, request GSC indexing for `/seo-for-tradies-adelaide`, the six priority suburbs, `/seo`, and `/local-seo-adelaide`.
+4. **Completed locally:** all 10 edited SEO/service pages plus the six priority suburbs return 200; rendered checks confirm one H1, one FAQPage and one layout-owned LocalBusiness on sampled money pages; desktop and 390px mobile hero/CTA checks pass.
+5. **Still human/prod-dependent:** real Telegram/email delivery with Vercel secrets. After Ivan approves and pushes, request GSC indexing for `/seo-for-tradies-adelaide`, the six priority suburbs, `/seo`, and `/local-seo-adelaide`.
 - GSC snapshot (28d to 10 Jul): clicks 17→26, impressions 5,435→9,881, avg position 40.9→47.4. Interpretation: young domain being tested broadly; strategy = consolidation, proof, authority — not more pages.
 
 **Strategy notes (Ivan):** receptionist/answering = harvest-tier only (2026-07-11). Money and effort go to web design, SEO services, automation.
@@ -39,7 +41,7 @@ Standing: `npm run build` + localhost click-through before any push; `git push` 
 
 ~~**Q3. Tradie SEO conversion pathway.**~~ DONE — executed on the surviving `/seo-for-tradies-adelaide` (the blog post is already 301'd; redirect preserved). Inline visibility-review form now actually collects business/website plus trade/service area, alongside contact details; above-fold CTA, relevant links, and HUMAN INPUT NEEDED proof placeholder remain. **Open sub-item:** a real tradie case study to replace the placeholder (Q7 proof program).
 
-~~**Q4. Six southern suburb pages.**~~ DONE (T4, `81c45df`) — GSC-tuned `seoTitle`/`seoDescription` for marion/reynella/moana/seaford/morphett-vale/henley-beach (via `title.absolute`), above-fold CTA confirmed, popular-areas hub block on `/website-design-adelaide`. Also fixed the `[suburb]` schema landmine (removed duplicate LocalBusiness + dead `$99` Service offer). **Open:** genuine local proof/imagery per suburb when Ivan supplies it.
+~~**Q4. Six southern suburb pages.**~~ DONE (T4, `81c45df`, plus Codex on-page pass) — GSC-tuned `seoTitle`/`seoDescription` for marion/reynella/moana/seaford/morphett-vale/henley-beach (via `title.absolute`), above-fold CTA confirmed, popular-areas hub block on `/website-design-adelaide`. Their visible H1, capability detail, pricing, audit copy and internal links now match website-design intent; speculative local counts/outcomes were removed. Also fixed the `[suburb]` schema landmine (removed duplicate LocalBusiness + dead `$99` Service offer). **Open:** genuine local proof/imagery per suburb when Ivan supplies it.
 
 ~~**Q5. `/local-seo-adelaide` ownership call.**~~ DONE (T5, `3b399b1`) — `/seo` retitled to broad "SEO Services Adelaide" (meta + Service schema + breadcrumb); `/local-seo-adelaide` keeps the local modifier; 8 sitewide anchors verified; no merge/redirect.
 

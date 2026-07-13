@@ -137,3 +137,22 @@ illustrative, or soften):
 
 These are generic per-suburb projections applied uniformly, not measured results —
 the same profile as the ROI formulas already listed above.
+
+### Resolution — Codex on-page pass (2026-07-13)
+
+- Removed the uniform claims that most suburb businesses recover 3–5 jobs per
+  week or repay the investment within 30 days.
+- Retained the 35–50% conversion, 65% no-show and 70% admin figures only on
+  automation-led suburb pages as **illustrative targets with an adjacent,
+  explicit no-guarantee qualifier**. They are not represented as AI Adelaide
+  averages or measured client results. Evidence is still required before these
+  can be promoted as typical outcomes.
+- Reframed the worked $350-job ROI formula as illustrative arithmetic using the
+  approved automation price and added the variables that affect the outcome.
+- Removed speculative counts and outcomes from the six priority website-design
+  suburb records. Testimonials are now headed "A Result from a Business Like
+  Yours" rather than falsely assigning a location that the source data omits.
+- Removed the previously logged uncited stats from `/seo`,
+  `/local-seo-adelaide`, `/seo-for-tradies-adelaide` and
+  `/website-design-adelaide`; removed ranking/timeline guarantees from AI SEO,
+  GBP, automotive, hotel, aged-care and SEO-vs-Ads pages.

@@ -3,11 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Website Design Adelaide | From $699",
+  title: "Website Design Adelaide",
   description:
-    "AI-powered website design for Adelaide small businesses. Built in 48 hours, mobile-first, Google-ready. From $699 one-off. No lock-in. Live in 2 days.",
+    `Website design for Adelaide small businesses. Mobile-first, Google-ready, professionally written and built to turn visitors into enquiries. ${PRICING.website.fromLabel} one-off.`,
   alternates: {
     canonical: "/website-design-adelaide",
   },
@@ -22,7 +23,7 @@ const buildItems = [
   {
     title: "Mobile-first",
     body:
-      "80%+ of tradie website visitors are on a phone. We design for mobile first, always. Tap-to-call button, fast load time, thumb-friendly layout.",
+      "Many tradie website visits happen on a phone. We design mobile first, with tap-to-call actions, fast pages and thumb-friendly layouts.",
   },
   {
     title: "Google-ready from day one",
@@ -32,7 +33,7 @@ const buildItems = [
   {
     title: "Suburb targeting built in",
     body:
-      "We include suburb service pages — so when someone in Glenelg searches \"plumber Glenelg\", you have a page Google can rank for that.",
+      "Where the business genuinely serves an area and the content is useful, we can add suburb service pages so Google and customers have a relevant page to consider for searches such as ‘plumber Glenelg’.",
   },
   {
     title: "Contact form + AI call capture ready",
@@ -91,7 +92,7 @@ const faqs = [
   {
     question: "Are you a web design agency or a freelance web designer?",
     answer:
-      "Somewhere better: a small Adelaide web design studio. You get a dedicated web designer who knows your business (not a rotating agency team), with AI doing the heavy lifting behind the scenes — which is how web design in Adelaide can cost $699 here instead of $5,000.",
+      "We're a small Adelaide web design studio. You get a direct point of contact who learns your business, while AI-assisted production helps us deliver efficiently without turning the finished website into generic AI copy.",
   },
   {
     question: "Do I really need a website if I already have Facebook or Instagram?",
@@ -105,7 +106,7 @@ const faqs = [
   {
     question: "What platform is it built on?",
     answer:
-      "We build on Next.js — fast, modern, and optimised for Google. No WordPress bloat, no page builders, no plugin updates to worry about. Your site loads in under 2 seconds on mobile, which is faster than 90% of Adelaide small business websites.",
+      "We build on Next.js — fast, modern, and designed for strong technical performance. There are no WordPress plugin updates or page-builder dependencies. We test the finished site on mobile and address performance issues before launch.",
   },
   {
     question: "Can I update it myself?",
@@ -115,7 +116,7 @@ const faqs = [
   {
     question: "What does website design cost in Adelaide?",
     answer:
-      "Our Starter tier is $699 one-off (3-5 pages), Business is $1,499 (5-10 pages with copywriting and SEO setup), Growth is $2,499+ (10+ pages with full SEO integration). All include mobile-first design, Google-ready setup, suburb targeting pages, and click-to-call integration. One-off, you own it. Compare to typical Adelaide agencies quoting $3,000-$10,000+ for the same scope.",
+      `Our Starter tier is ${PRICING.website.tiers[0].price} one-off, Business is ${PRICING.website.tiers[1].price}, and Growth is ${PRICING.website.tiers[2].price}. The exact page count and inclusions are set out on our pricing page. Every build includes mobile-first design, core search setup and clear enquiry actions. The build fee is one-off and you own the finished website.`,
   },
   {
     question: "How long until my website is live?",
@@ -130,12 +131,12 @@ const faqs = [
   {
     question: "Can I add the AI receptionist later?",
     answer:
-      "Absolutely. The website is built to connect with our AI missed call system whenever you're ready. Most clients add it 1-3 months after launch once they've seen the enquiry volume from the new site. From $199/month as part of the AI automation stack.",
+      `Absolutely. The website can connect with our missed-call and follow-up systems whenever the need is clear. Automation starts from ${PRICING.automation.from}; we recommend adding it when there is a real lead-handling bottleneck to solve.`,
   },
   {
     question: "Will my website work on phones?",
     answer:
-      "Yes — every site we build is mobile-first by default. 80%+ of your visitors will be on a phone, so we design for that screen first, then scale up to tablet and desktop. Tap-to-call buttons, fast load times, thumb-friendly layouts — all standard.",
+      "Yes — every site we build is mobile-first by default. We design the phone experience first, then scale it to tablet and desktop. Tap-to-call buttons, fast load times and thumb-friendly layouts are standard.",
   },
 ];
 
@@ -155,7 +156,7 @@ function ServiceJsonLd() {
       name: "Adelaide",
     },
     description:
-      "AI-powered website design for Adelaide small businesses. Built in 48 hours, mobile-first, Google-ready. From $699 one-off.",
+      `Website design for Adelaide small businesses. Mobile-first, Google-ready and built for enquiries. ${PRICING.website.fromLabel} one-off.`,
     offers: {
       "@type": "Offer",
       price: "699",
@@ -290,7 +291,7 @@ export default function WebsiteDesignAdelaidePage() {
         count={3}
         heading="What Adelaide businesses say"
         eyebrow="Real results"
-        subheadline="These are the kinds of results that happen when the website is finally fast, clear, and built to convert."
+        subheadline="These are outcomes clients have reported from the work shown; individual results depend on the business, offer and traffic."
       />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">

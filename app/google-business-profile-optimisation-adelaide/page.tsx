@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import { PRICING, siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Google Business Profile Adelaide — $199/mo",
+  title: "Google Business Profile Adelaide | Local SEO",
   description:
-    "Google Business Profile optimisation for Adelaide businesses. Categories, services, photos, posts, reviews. Show up in the local 3-pack. From $199/mo.",
+    `Google Business Profile optimisation within our Adelaide Local SEO service: categories, services, photos, reviews and reporting. ${PRICING.seo.fromLabel}.`,
   alternates: { canonical: "/google-business-profile-optimisation-adelaide" },
 };
 
@@ -14,39 +15,39 @@ const whatWeDo = [
   {
     title: "Category & services setup",
     body:
-      "Primary and secondary GBP categories set correctly for your trade. Service list populated with the searches your customers actually make. This is the single biggest factor for showing up in the local 3-pack.",
+      "We review primary and secondary categories, services and business details against what you genuinely offer. This improves relevance, one of several factors Google uses for local results.",
   },
   {
     title: "Photo & visual content",
     body:
-      "Logo, cover photo, and 10-15 job photos uploaded with optimised filenames and geo-tagging. Google rewards active profiles with imagery, and customers decide whether to call based on the photos they see.",
+      "We organise your logo, cover image and genuine work or premises photos so customers can quickly understand the business. We do not claim that file names or geo-tagging create a ranking shortcut.",
   },
   {
     title: "Google Posts & updates",
     body:
-      "Weekly Google Posts about jobs, offers, or seasonal promos. Keeps your profile active in Google's eyes and gives customers a reason to choose you over the next listing.",
+      "Useful updates about services, completed work or seasonal information can keep customers informed. Posting frequency is agreed to match the plan and the real material available.",
   },
   {
-    title: "Q&A seeding",
+    title: "Customer questions and profile accuracy",
     body:
-      "We seed your GBP with the questions your customers ask most — pricing, services, suburbs, hours — and the answers. Builds trust before the call and shows up in search.",
+      "We identify common questions about pricing, services, suburbs and hours, then make sure the answers are clear on your website and profile wherever Google provides an appropriate business-editing feature.",
   },
   {
     title: "Review request automation",
     body:
-      "Auto-sends a Google review link 24 hours after job completion. Builds your 5-star reputation over time without manual chasing. We help you respond to every review (positive or negative).",
+      "A post-job workflow can send a Google review link and a polite reminder. Customers choose whether and how to review; we help you respond professionally and never buy, gate or fabricate reviews.",
   },
   {
     title: "Citation consistency",
     body:
-      "Your business name, address, and phone (NAP) need to match across Yellow Pages, True Local, Apple Maps, Bing Places, and 30+ directories. We audit, fix, and submit where missing.",
+      "We audit your business name, address and phone across relevant platforms such as Apple Maps, Bing Places, Yellow Pages and suitable industry directories, then correct important inconsistencies.",
   },
 ];
 
 const compare = [
-  { tier: "DIY", label: "Set up yourself", cost: "$0", result: "Incomplete profile, no reviews, hidden by competitors" },
-  { tier: "Cheap", label: "Bulk submission service", cost: "$50-200 once-off", result: "Citations built but profile not optimised" },
-  { tier: "Pro", label: "Ongoing GBP optimisation", cost: "From $199/mo", result: "Active profile, weekly posts, review growth, 3-pack visibility" },
+  { tier: "DIY", label: "Set up yourself", cost: "$0", result: "A valid option if you can keep details, photos and reviews current" },
+  { tier: "Audit", label: "One-off review", cost: "Free with us", result: "Find missing details, eligibility issues and priority fixes" },
+  { tier: "Ongoing", label: "Local SEO plan", cost: PRICING.seo.fromLabel, result: "Profile work coordinated with website, reviews, citations and reporting" },
 ];
 
 const faqs = [
@@ -58,7 +59,7 @@ const faqs = [
   {
     question: "How do I show up in the local 3-pack?",
     answer:
-      "Three factors: relevance (how well your profile matches the search), distance (how close you are to the searcher), and prominence (how established your business is online). Optimising your profile improves relevance; reviews and citations improve prominence. Most Adelaide small businesses can reach the 3-pack within 3-6 months.",
+      "Google describes the main local factors as relevance, distance and prominence. We improve the accurate information and trust signals within your control, but distance and Google's systems still affect each search. Nobody can guarantee a 3-pack position or timetable.",
   },
   {
     question: "Can I optimise my GBP myself?",
@@ -68,27 +69,27 @@ const faqs = [
   {
     question: "How much does GBP optimisation cost in Adelaide?",
     answer:
-      "From $199/month for ongoing optimisation. Setup is included in the monthly fee. No lock-in, no per-post charges. We also bundle it with our Local SEO and Website services for tradies who want the full package.",
+      `Google Business Profile work is included in our ${PRICING.seo.tiers[0].price} Local SEO plan rather than sold here as an unapproved standalone product. Growth SEO is ${PRICING.seo.tiers[1].price}. Both are month to month with no lock-in.`,
   },
   {
     question: "How long until I see results?",
     answer:
-      "Most Adelaide businesses see improvement within 30-60 days. Profile views and direction requests go up first, then calls, then walk-ins. Reaching the local 3-pack takes 3-6 months depending on competition in your suburb and trade.",
+      "There is no fixed timetable. We establish a baseline for relevant searches and profile actions, complete the accuracy and relevance work, then monitor what changes as Google processes it. Competition, distance, prominence and your starting position all affect the result.",
   },
   {
     question: "Do I need a website too?",
     answer:
-      "Recommended but not strictly required. A GBP without a website is fine for some trades. A GBP with a website pointing to it converts better — Google sees the link as a trust signal, and customers can learn more before they call. We can build you a website from $699 if you don't have one.",
+      `A website is not required for every eligible profile, but it gives customers somewhere to verify your services, proof and contact details. We can build one ${PRICING.website.fromLabel} if the current website is missing or holding conversions back.`,
   },
   {
     question: "Will GBP optimisation work for service-area businesses?",
     answer:
-      "Yes. If you're a plumber or electrician who works across multiple suburbs, GBP lets you set service areas instead of a single address. We help you optimise for each suburb and the surrounding Adelaide metro.",
+      "Eligible plumbers, electricians and other mobile businesses can hide their address and define genuine service areas. We configure the profile to follow Google's rules. Listing an area does not make the business rank equally across every suburb.",
   },
   {
     question: "What about reviews — can you help with negative ones?",
     answer:
-      "Yes. We help you respond to every review (positive or negative) in your voice, professionally and quickly. We can also flag fake reviews for removal. The goal is a 4.7+ average with regular new reviews.",
+      "We help you respond to positive and negative reviews professionally and can flag reviews that appear to breach Google's policies. We focus on a steady flow of genuine feedback rather than promise a particular rating.",
   },
 ];
 
@@ -117,15 +118,15 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "Google Business Profile Optimisation Adelaide",
     serviceType: "Local SEO",
-    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    provider: { "@id": `${siteConfig.url}/#organization` },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
-      "Google Business Profile optimisation for Adelaide businesses. Categories, services, photos, posts, reviews, citations. Show up in the local 3-pack. From $199/mo.",
+      "Google Business Profile optimisation within Local SEO for Adelaide businesses, covering accurate categories, services, photos, reviews, citations and reporting.",
     offers: {
       "@type": "Offer",
-      price: "199",
+      price: PRICING.seo.tiers[0].price.replace(/[^\d]/g, ""),
       priceCurrency: "AUD",
-      priceSpecification: { "@type": "UnitPriceSpecification", price: "199", priceCurrency: "AUD", unitText: "MONTH" },
+      priceSpecification: { "@type": "UnitPriceSpecification", price: PRICING.seo.tiers[0].price.replace(/[^\d]/g, ""), priceCurrency: "AUD", unitText: "MONTH" },
     },
       };
   return (
@@ -159,7 +160,7 @@ export default function GoogleBusinessProfileAdelaidePage() {
             Google Business Profile Optimisation Adelaide — Show Up in the Local 3-Pack
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            When someone in Norwood searches &quot;plumber near me&quot; or a homeowner in Glenelg types &quot;electrician Adelaide&quot;, the local 3-pack decides who gets the call. We optimise your Google Business Profile — categories, services, photos, posts, reviews, citations — so you show up first. From $199/month, no lock-in.
+            We improve the information and trust signals within your control—categories, services, photos, reviews, citations and website alignment—so your business is a stronger candidate for relevant Adelaide searches. Google also considers distance and prominence, so positions are never guaranteed. Included in Local SEO {PRICING.seo.fromLabel}.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link href="/seo" className="btn-primary px-8 py-4">
@@ -210,7 +211,7 @@ export default function GoogleBusinessProfileAdelaidePage() {
             </table>
           </div>
           <p className="mt-4 text-sm text-slate-500">
-            For most Adelaide small businesses, the &quot;Pro&quot; tier is the only one that actually moves the needle. The first two options get you a profile that&apos;s invisible to Google&apos;s ranking algorithm.
+            DIY can work if the business has time and follows Google&apos;s rules. Ongoing support becomes useful when profile work needs to stay coordinated with website content, reviews, citations and lead measurement.
           </p>
         </div>
       </section>
@@ -219,7 +220,7 @@ export default function GoogleBusinessProfileAdelaidePage() {
         count={3}
         heading="What Adelaide businesses say after we optimise their GBP"
         eyebrow="Real results"
-        subheadline="The 3-pack is where the calls come from. Here's what showing up there actually does."
+        subheadline="A complete profile helps customers compare your services, proof and contact details when they find you."
       />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
@@ -238,9 +239,9 @@ export default function GoogleBusinessProfileAdelaidePage() {
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to show up first in Adelaide?</h2>
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to Improve Your Adelaide Profile?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            15-minute chat, no fluff. We&apos;ll look at your current GBP, show you what&apos;s missing, and tell you exactly what it would take to reach the local 3-pack.
+            15-minute chat, no fluff. We&apos;ll review your current profile, identify missing or inaccurate information, and explain which local-search improvements are worth prioritising. No ranking guarantee.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/seo" className="btn-primary px-8 py-4">

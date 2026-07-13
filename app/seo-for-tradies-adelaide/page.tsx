@@ -3,13 +3,14 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StackCTA from "@/components/StackCTA";
 import TradieLeadForm from "@/components/TradieLeadForm";
+import { PRICING, siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   // Phase 8 punch list P4: rendered title was 68 chars (max 60); description
   // was 167 chars (want 140-160).
-  title: "SEO for Tradies Adelaide | From $399/mo",
+  title: "SEO for Tradies Adelaide",
   description:
-    "SEO for Adelaide tradies — plumbers, electricians, builders, HVAC, landscapers. Local SEO from $399/mo, Growth SEO from $699/mo. No lock-in.",
+    `SEO for Adelaide tradies: Google Business Profile, useful service-area pages, reviews, content, technical foundations and reporting. ${PRICING.seo.fromLabel}.`,
   alternates: {
     canonical: "/seo-for-tradies-adelaide",
   },
@@ -36,7 +37,7 @@ const searchBuckets = [
 const foundations = [
   {
     title: "Google Business Profile",
-    body: "Claim it, pick the most specific category (Plumber, Electrician — not just ‘Contractor’), list every suburb you actually service, add 10+ real job photos, and post weekly. This is the single highest-ROI hour you can spend.",
+    body: "Claim it, choose the most accurate category, list only areas you genuinely service, add real job photos, and keep details current. It is a strong local-search foundation, but it is only one part of the ranking and conversion picture.",
   },
   {
     title: "NAP consistency",
@@ -44,7 +45,7 @@ const foundations = [
   },
   {
     title: "Reviews",
-    body: "The top 3 map pack results for tradie searches typically carry 50-200+ reviews; the bottom of page 1 has 10-30. Ask at the moment the job's done, not by email a week later, and reply to every review within 24 hours.",
+    body: "Review quantity, recency, quality and your responses all help customers compare tradies. Ask soon after a completed job, make the process easy, and reply professionally. Never buy reviews or pressure customers for a particular rating.",
   },
   {
     title: "Local citations",
@@ -63,13 +64,13 @@ const onPage = [
   },
   {
     title: "Schema markup",
-    body: "FAQPage, Service, and LocalBusiness schema tell Google exactly what you do, where, and answer common questions directly in the search results. It's invisible to visitors but it's how Google decides you're the real deal.",
+    body: "Appropriate FAQPage, Service, and LocalBusiness structured data can help search engines understand what you do and where. It must match visible page content and does not guarantee rankings or enhanced search results.",
   },
 ];
 
 const mistakes = [
   "One ‘Services’ page trying to cover everything, instead of one page per job type.",
-  "Fewer than 10 reviews in the first three months — the single biggest local ranking factor, ignored.",
+  "No repeatable process for requesting genuine reviews after completed jobs.",
   "Stock photos instead of real job photos — an easy tell that a business isn't really local.",
   "No schema markup, while the competitor down the road has all three types.",
   "Buying links, which Google penalises — partnerships and quality content work instead.",
@@ -79,12 +80,12 @@ const mistakes = [
 const tiers = [
   {
     name: "Local SEO",
-    price: "$399/mo",
+    price: PRICING.seo.tiers[0].price,
     body: "Google Business Profile optimisation, suburb pages, monthly content, technical foundations. The right starting point for a solo tradie or two-person crew.",
   },
   {
     name: "Growth SEO",
-    price: "$699/mo",
+    price: PRICING.seo.tiers[1].price,
     body: "Everything in Local SEO plus more content, more suburb pages, and active link building — for a crew ready to actively out-rank established competitors across several suburbs.",
   },
 ];
@@ -93,7 +94,7 @@ const faqs = [
   {
     question: "How long does SEO take to work for Adelaide tradies?",
     answer:
-      "Realistically 3-6 months to see meaningful movement, 6-12 months to sit top 3 in your service area. Any agency promising page-1 rankings in 30 days is either lying or using tactics that will get you penalised later.",
+      "There is no fixed timetable. Lower-competition suburb searches may move earlier, while established Adelaide terms can require sustained work over many months. Be cautious of guaranteed page-one dates: a responsible provider should explain the baseline, work completed, movement measured and factors outside their control.",
   },
   {
     question: "Is SEO better than Google Ads for tradies?",
@@ -103,32 +104,32 @@ const faqs = [
   {
     question: "How much should an Adelaide tradie spend on SEO?",
     answer:
-      "For a solo tradie or 2-person crew, our Local SEO tier at $399/month is the realistic starting point. A 5+ person operation usually needs Growth SEO at $699/month for the extra content and link building.",
+      `For a solo tradie or two-person crew, ${PRICING.seo.tiers[0].price} Local SEO is the usual starting scope. A larger operation may need ${PRICING.seo.tiers[1].price} Growth SEO for additional content and authority work, but we recommend the tier from the audit rather than headcount alone.`,
   },
   {
     question: "Do tradies really need a website for SEO to work?",
     answer:
-      "Your Google Business Profile gets you into the map pack. Your website gets you into the organic results underneath it — most tradie searches show both. Without a website you're only getting half the visibility.",
+      "Your Google Business Profile makes you eligible for map visibility, while your website can appear in organic results and gives customers more information before they call. Neither guarantees placement, but together they provide a stronger discovery and trust path.",
   },
   {
     question: "What's the difference between local SEO and regular SEO?",
     answer:
-      "Local SEO targets suburb-specific searches — map pack plus local organic results. For a tradie, that's roughly 80% of the opportunity, which is why we focus almost entirely on local for trade clients rather than broad national SEO.",
+      "Local SEO targets searches tied to a place or nearby provider — including map and local organic results. For most Adelaide tradies, those service-and-location searches deserve priority because the customer usually needs someone who can attend the job. Broader content can still support trust and authority.",
   },
   {
     question: "Should I hire a freelancer or a tradie-focused agency?",
     answer:
-      "For most Adelaide tradies, an agency that specialises in trades wins — they already know the directories, the schema, and the conversion patterns specific to your industry. Generalist freelancers are cheaper but spread thin across unrelated industries.",
+      "Choose the provider who can show a clear process, understands local service businesses, communicates directly, measures enquiries, and avoids guarantees. A capable freelancer or agency can both work; relevant experience and accountable execution matter more than the label.",
   },
   {
     question: "How do I know if my SEO provider is doing real work?",
     answer:
-      "Ask for monthly ranking reports, Google Business Profile insights, a list of content added that month, and directories submitted to. If they can't show you this within the first 60 days, they're not doing real work.",
+      "Ask for the starting baseline, completed work, Google Business Profile insights, content and technical changes, and lead tracking where available. Early months may focus on foundations, but your provider should still be able to show exactly what was done and why.",
   },
   {
     question: "Do you lock me into a contract?",
     answer:
-      "No. Both SEO tiers run month to month with no lock-in. If the results aren't showing up, you can walk away — we'd rather earn the renewal than force it.",
+      "No. Both SEO tiers run month to month with no lock-in. You can leave if the service no longer makes sense; we'd rather earn the renewal through clear work, communication and measurable progress.",
   },
 ];
 
@@ -138,11 +139,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "SEO for Tradies Adelaide",
     serviceType: "Local SEO",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": `${siteConfig.url}/#organization` },
     areaServed: {
       "@type": "City",
       name: "Adelaide",
@@ -153,11 +150,11 @@ function ServiceJsonLd() {
       {
         "@type": "Offer",
         name: "Local SEO",
-        price: "399",
+        price: PRICING.seo.tiers[0].price.replace(/[^\d]/g, ""),
         priceCurrency: "AUD",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "399",
+          price: PRICING.seo.tiers[0].price.replace(/[^\d]/g, ""),
           priceCurrency: "AUD",
           unitText: "MONTH",
         },
@@ -165,11 +162,11 @@ function ServiceJsonLd() {
       {
         "@type": "Offer",
         name: "Growth SEO",
-        price: "699",
+        price: PRICING.seo.tiers[1].price.replace(/[^\d]/g, ""),
         priceCurrency: "AUD",
         priceSpecification: {
           "@type": "UnitPriceSpecification",
-          price: "699",
+          price: PRICING.seo.tiers[1].price.replace(/[^\d]/g, ""),
           priceCurrency: "AUD",
           unitText: "MONTH",
         },
@@ -240,7 +237,7 @@ export default function SeoForTradiesAdelaidePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Why This Matters Now</h2>
           <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Most Adelaide homeowners search online before hiring a tradie. The top three map pack results capture the large majority of clicks for &quot;near me&quot; searches, and page 2 of Google gets under 1% of clicks — being invisible is the default if you're not on page 1.
+            Adelaide homeowners often compare tradies through Google before they call. The map results, organic listings, reviews and website all shape that shortlist, so the job is to make your business easy to find and easy to trust across the whole results page.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
             If your business doesn't show up in the top three for &quot;plumber [suburb]&quot; or &quot;electrician Adelaide&quot;, you're paying for clicks your competitors get for free. Word of mouth still matters — but in 2026 it's your website and your Google Business Profile that decide whether that word-of-mouth lead becomes your customer or someone else's.
@@ -292,7 +289,7 @@ export default function SeoForTradiesAdelaidePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Local SEO Fundamentals</h2>
           <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Local SEO is the highest-ROI starting point for any tradie. Most of your customers are within 10-20km of your base, which makes Google Maps where you win or lose the job.
+            Local SEO is a practical starting point for tradies whose customers come from defined service areas. Google Maps and local organic results both matter, and the right priority depends on your current visibility and where profitable jobs come from.
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             {foundations.map((item) => (
@@ -310,7 +307,7 @@ export default function SeoForTradiesAdelaidePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">On-Page SEO for Tradie Websites</h2>
           <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Your Google Business Profile gets you into the map pack. Your website gets you into the organic results underneath it — both matter, because most tradie searches show both on the same page.
+            Your Google Business Profile supports eligibility for map visibility. Your website can earn organic visibility and gives customers the service detail and proof needed to compare you. Both matter, but neither guarantees a position.
           </p>
           <div className="grid gap-4 md:grid-cols-3">
             {onPage.map((item) => (
@@ -334,7 +331,7 @@ export default function SeoForTradiesAdelaidePage() {
             Links from other sites signal authority. For tradies, the highest-value links come from local business associations (Master Plumbers SA, Master Electricians SA, HIA SA), local partnerships with complementary trades, and supplier accreditation pages — not from buying links, which Google penalises.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            On the technical side: 60-70% of tradie searches happen on mobile, so your site needs to load in under 3 seconds on a phone. Every site needs HTTPS (free with modern hosting) and the FAQPage, Service, and LocalBusiness schema mentioned above. None of this is optional — it's the baseline your competitors are already meeting.
+            On the technical side, the website must work properly on a phone, use HTTPS, load quickly, and make calls and quote requests easy. Structured data should be added only where it is appropriate and matches the visible content. These foundations support discovery and conversion but do not replace useful pages, proof, or authority.
           </p>
         </div>
       </section>
@@ -364,7 +361,7 @@ export default function SeoForTradiesAdelaidePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">SEO Pricing for Adelaide Tradies</h2>
           <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Two tiers, month to month, no lock-in contracts. Compare that to $1,500-3,000/month for a generalist marketer, or $2,000-5,000/month at a big agency that locks you in for 12 months.
+            Two clearly scoped tiers, both month to month with no lock-in contract. Choose based on the amount of content, service-area coverage and authority work your current position actually requires.
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             {tiers.map((tier) => (
@@ -378,7 +375,7 @@ export default function SeoForTradiesAdelaidePage() {
           <p className="mt-6 text-sm text-slate-500">
             Need a new site too? Websites start from{" "}
             <Link href="/website-pricing" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              $699
+              {PRICING.website.tiers[0].price}
             </Link>
             , and we bundle SEO with the build for tradies who want both live at once — see the{" "}
             <Link href="/tradie-website-bundle" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
@@ -429,7 +426,7 @@ export default function SeoForTradiesAdelaidePage() {
             Weighing SEO Against Paid Ads?
           </h2>
           <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
-            SEO and Google Ads solve different problems — one gets you leads today, the other keeps working for years without a per-click cost. Our comparison guide breaks down the real costs and timelines for Adelaide businesses.
+            SEO and Google Ads solve different problems: ads can buy immediate visibility, while SEO builds organic visibility over time without a fee for each click. Our comparison guide explains the trade-offs without promising a fixed result.
           </p>
           <Link href="/seo-vs-google-ads-adelaide" className="btn-secondary px-6 py-3">
             Read SEO vs Google Ads <span aria-hidden>→</span>
@@ -444,7 +441,7 @@ export default function SeoForTradiesAdelaidePage() {
             Ready to Start Ranking?
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free chat and we'll tell you exactly where you stand today and what it would take to get you into the top three for your trade and suburb.
+            Book a free chat and we'll show you where you stand today, which searches are worth targeting, and the work most likely to improve visibility and enquiries. No ranking guarantees.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact#send-message" className="btn-primary px-8 py-4">

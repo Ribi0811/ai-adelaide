@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { PRICING } from "@/lib/constants";
 
 // Tier 12 (2026-07-11): GSC shows "ai seo adelaide" (80 impr @ pos 15.4) and
 // "ai seo services" (pos 9.5) landing on the homepage with no dedicated page,
@@ -8,27 +9,27 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 // tools in adelaide". This page owns the "AI SEO" intent both ways: SEO done
 // with AI, and being visible to AI assistants/AI Overviews.
 export const metadata: Metadata = {
-  title: "AI SEO Adelaide — Rank on Google & ChatGPT",
+  title: "AI SEO Adelaide — AI Search Visibility",
   description:
-    "AI SEO for Adelaide small businesses. Rank higher on Google and get recommended by ChatGPT and AI Overviews. From $399/mo, no lock-in, Adelaide owned.",
+    `AI SEO for Adelaide businesses: people-first content, technical SEO and a consistent entity footprint for Google and AI search. ${PRICING.seo.fromLabel}.`,
   alternates: { canonical: "/ai-seo-adelaide" },
 };
 
 const whatsIncluded = [
-  { title: "AI-accelerated local SEO", body: "Everything in our local SEO service — Google Business Profile, suburb pages, reviews, citations — done faster because AI handles the research and drafting while a human makes every final call. That speed is why it costs $399/mo, not $1,500/mo." },
-  { title: "AI Overview visibility", body: "Google now answers many searches with an AI Overview before any blue link. We structure your pages — clear answers, FAQ schema, entity-consistent business details — so that overview cites you instead of skipping you." },
-  { title: "Get recommended by ChatGPT & co.", body: "When someone asks an AI assistant \"who builds websites in Adelaide?\", the answer comes from what's written about you online. We build the consistent business footprint (site, GBP, directories, reviews) that AI assistants draw on." },
+  { title: "AI-assisted, human-reviewed SEO", body: "AI helps with research, first drafts and repetitive checks while a person decides the strategy, verifies claims, edits the page and approves what goes live. The service follows our standard Local SEO and Growth SEO pricing." },
+  { title: "AI Overview readiness", body: "We make important pages easy to understand with direct answers, clear sourcing, descriptive headings and consistent business details. This can improve eligibility for search features, but no agency can guarantee that an AI Overview will cite a particular site." },
+  { title: "Consistent business footprint", body: "AI assistants may draw on many sources when answering local recommendations. We strengthen the information within your control: your website, Google Business Profile, relevant directories, genuine reviews and clear service details." },
   { title: "Content that answers real questions", body: "AI tools and Google both reward pages that directly answer the questions Adelaide customers actually ask. We mine live search data for those questions and publish clear, local answers — no filler." },
-  { title: "Structured data everywhere", body: "LocalBusiness, Service, and FAQPage schema on every page that matters, so both Google's crawler and AI models can read exactly what you do, where you work, and what it costs." },
-  { title: "Monthly plain-English reporting", body: "Where you rank, what moved, what we're doing next — including how you're showing up in AI-generated answers, not just the classic ten blue links." },
+  { title: "Appropriate structured data", body: "We use LocalBusiness, Service and FAQPage structured data only where it accurately represents the visible page. It helps machines understand the content but does not force inclusion in search or AI answers." },
+  { title: "Monthly plain-English reporting", body: "We report traditional search visibility, leads and completed work. Where reliable tools allow it, we can record spot checks of AI answers while explaining that responses vary by model, prompt, location and time." },
 ];
 
 const faqs = [
   { question: "What is AI SEO?", answer: "AI SEO means two things, and we do both. First: using AI to do the heavy lifting of SEO — keyword research, content drafting, technical audits — so the same work costs a fraction of the usual agency price. Second: optimising your business to be visible in AI-driven search — Google's AI Overviews, ChatGPT recommendations, and voice assistants — not just traditional rankings." },
-  { question: "How do I get my business recommended by AI tools in Adelaide?", answer: "AI assistants recommend businesses that have a clear, consistent online footprint: a fast website that plainly states what you do and where, a complete Google Business Profile, consistent name-address-phone details across directories, genuine reviews, and structured data. We build exactly that footprint — it's the same foundation that wins local Google rankings, which is why the two go together." },
-  { question: "Does AI-written content actually rank on Google?", answer: "Yes — Google's own guidance says it rewards helpful content regardless of how it's produced, and penalises unhelpful content regardless of how it's produced. Our process uses AI for speed but every page is shaped around real Adelaide search data and reviewed by a human before it goes live. Lazy AI filler doesn't rank; well-directed AI content does." },
-  { question: "How much does AI SEO cost in Adelaide?", answer: "Our local SEO starts at $399/month and Growth SEO is $699/month — month-to-month, no lock-in. AI is the reason the price is that low: it compresses the hours, not the quality. Adelaide agencies commonly charge $1,000-$2,500/month for comparable work." },
-  { question: "Will AI Overviews steal my traffic?", answer: "For informational searches, AI Overviews do reduce clicks — which is exactly why local service businesses should care about being the business the overview names. For commercial searches (\"plumber Norwood\", \"web designer Adelaide\"), Google still shows the local pack and organic results, and buyers still click through to compare. Being visible in both is the play." },
+  { question: "How do I get my business recommended by AI tools in Adelaide?", answer: "There is no submission or guaranteed method. The practical work is to make your business easy to verify across authoritative sources: a clear website, complete Google Business Profile, consistent business details, genuine reviews, useful content and appropriate structured data. This improves the information available to search and AI systems without controlling their answer." },
+  { question: "Does AI-written content actually rank on Google?", answer: "Content is judged by whether it is useful, reliable and created for people, not simply by whether AI helped produce it. We use AI for speed, then verify facts, remove generic filler, add Adelaide and business-specific detail, and have a person review every page before publication." },
+  { question: "How much does AI SEO cost in Adelaide?", answer: `Local SEO is ${PRICING.seo.tiers[0].price} and Growth SEO is ${PRICING.seo.tiers[1].price}, month to month with no lock-in. AI assists the workflow; the deliverable remains human-reviewed SEO work.` },
+  { question: "Will AI Overviews affect my traffic?", answer: "They can change how people discover and compare businesses, especially for informational searches. The response is to publish useful first-party information, make services and proof easy to verify, and keep measuring calls and enquiries rather than assume an AI mention will produce traffic." },
   { question: "Is AI SEO different from your normal SEO service?", answer: "It's the same engine — our local SEO service has been AI-accelerated from day one. This page exists because businesses increasingly search for \"AI SEO\" specifically. If you want the full picture of what's included, see our SEO services page or the local SEO breakdown; pricing and process are identical." },
 ];
 
@@ -52,9 +53,9 @@ export default function AiSeoAdelaidePage() {
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">AI SEO Adelaide</span>
-          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">AI SEO Adelaide — Rank on Google and Get Named by ChatGPT</h1>
+          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">AI SEO Adelaide — Build Visibility Across Google and AI Search</h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Search is splitting in two: Google's classic results, and AI answers from ChatGPT, AI Overviews, and voice assistants. AI SEO covers both — we use AI to do local SEO at a price traditional agencies can't match, and we build the online footprint that makes AI tools recommend your Adelaide business by name.
+            Customers can now discover businesses through classic Google results, maps, AI Overviews and assistants. We strengthen the accurate, people-first information those systems can access while improving traditional SEO. No one can guarantee a citation or recommendation.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">Book Free AI SEO Chat <span aria-hidden>→</span></Link>
@@ -94,9 +95,9 @@ export default function AiSeoAdelaidePage() {
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Be the Business the AI Recommends</h2>
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Make Your Business Easier to Find and Verify</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Free 15-minute chat. We&apos;ll show you where you rank today, what AI assistants currently say about your business, and exactly what it would take to fix both. Also see <Link href="/seo" className="underline underline-offset-4">SEO services Adelaide</Link> and <Link href="/seo-for-tradies-adelaide" className="underline underline-offset-4">SEO for tradies</Link>.
+            Free 15-minute chat. We&apos;ll review your current search visibility, business information and content gaps, then explain what is worth improving. AI responses vary, so assistant checks are observations rather than guaranteed rankings. Also see <Link href="/seo" className="underline underline-offset-4">SEO services Adelaide</Link> and <Link href="/seo-for-tradies-adelaide" className="underline underline-offset-4">SEO for tradies</Link>.
           </p>
           <Link href="/contact" className="btn-primary px-8 py-4">Book Free AI SEO Chat <span aria-hidden>→</span></Link>
         </div>

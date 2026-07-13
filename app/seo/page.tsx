@@ -26,7 +26,7 @@ const includedItems = [
   {
     title: "Suburb targeting pages",
     body:
-      "We build clean, Google-friendly pages for every suburb you work in — Glenelg, Norwood, Modbury, Salisbury, you name it. Each page ranks for \"[your trade] [suburb]\" searches.",
+      "Where search demand and your real service coverage justify it, we build useful suburb pages for areas such as Glenelg, Norwood, Modbury, and Salisbury. Each page is written to match local buying intent without duplicating thin copy.",
   },
   {
     title: "On-page SEO",
@@ -74,12 +74,12 @@ const timeline = [
   {
     label: "Days 30–90",
     body:
-      "Content published, local signals building, rankings start moving",
+      "Content published, local signals building, early movement measured where Google has recrawled the work",
   },
   {
     label: "3–6 months",
     body:
-      "Sustainable visibility for your core keywords and service areas",
+      "A common review window for judging meaningful visibility gains; competition and starting position affect the pace",
   },
 ];
 
@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "How much does SEO cost in Adelaide?",
     answer:
-      "Our local SEO starts at $399/mo and Growth SEO is $699/mo — month to month, no lock-in. Adelaide agencies commonly charge $1,000-$2,500/mo for comparable work. Every plan includes content, Google Business Profile optimisation, and monthly rank reporting, so you always know what you're paying for.",
+      `Our Local SEO plan is ${PRICING.seo.tiers[0].price} and Growth SEO is ${PRICING.seo.tiers[1].price} — month to month, with no lock-in. Every plan includes an agreed scope covering content, Google Business Profile work, and reporting, so you can see what was completed and what changed.`,
   },
   {
     question: "Do I need a new website to do SEO?",
@@ -107,17 +107,17 @@ const faqs = [
   {
     question: "What results can I expect?",
     answer:
-      "Depends on your trade and competition. Niche trades in outer suburbs can see movement in 4-6 weeks. Competitive trades in inner Adelaide take 3-6 months for solid page 1 rankings. We'll give you an honest assessment before we start.",
+      "It depends on your starting position, website, competition, service area, and Google's crawl and ranking systems. Some lower-competition searches can move earlier; competitive Adelaide terms usually need sustained work over several months. We set a baseline first, report movement monthly, and never guarantee a position.",
   },
   {
     question: "What SEO packages do you offer, and what do they cost?",
     answer:
-      "Local SEO runs from $399/month — Google Business Profile, suburb pages, monthly content. Growth SEO runs $699/month with more content, more pages, and active link building. All month-to-month, no lock-in contracts.",
+      `Local SEO is ${PRICING.seo.tiers[0].price} and includes Google Business Profile, local pages and monthly content. Growth SEO is ${PRICING.seo.tiers[1].price} with more content, pages and active authority work. Both are month to month with no lock-in.`,
   },
   {
     question: "What's the difference between your SEO and a big agency?",
     answer:
-      "Big agencies charge $2,000-5,000/month, lock you in for 12 months, and you'll never meet the people doing the work. We're Adelaide-based, transparent, and you get a direct line to the person running your account. Same or better results at a fraction of the price.",
+      "We're Adelaide-based, month to month, and transparent about what is being worked on. You get a direct line to the person responsible for your account, a clear monthly scope, and reporting tied to enquiries and search visibility rather than vague activity lists.",
   },
 ];
 
@@ -184,13 +184,17 @@ export default function SeoPage() {
       />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">Local SEO for Adelaide Businesses</span>
+          <span className="eyebrow-light">SEO Services for Adelaide Businesses</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
-            Get Found on Google Before Your Competitors Do
+            SEO Services Adelaide for More Enquiries
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Most Adelaide small businesses have great service and zero Google visibility. When someone in Norwood searches &quot;plumber near me&quot; or a homeowner in Salisbury types &quot;electrician Adelaide&quot;, the jobs go to whoever shows up first. We help you be that business — across trades, clinics, retail, hospitality, and professional services.
+            We improve the parts of your website and online presence that help Adelaide customers discover, understand, and contact your business: technical SEO, service content, local search, authority building, and conversion tracking.
           </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link href="/audit" className="btn-primary px-8 py-4">Get a Free SEO Audit <span aria-hidden>→</span></Link>
+            <Link href="/contact#send-message" className="btn-secondary px-8 py-4">Talk to an Adelaide SEO Specialist <span aria-hidden>→</span></Link>
+          </div>
         </div>
       </section>
 
@@ -198,10 +202,10 @@ export default function SeoPage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Your Next Customer Is Already Searching</h2>
           <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            70% of people searching for a tradie click one of the first three results. If you're not there, you're invisible — and your competitor who is ranked is taking those calls.
+            Your next customer may be comparing several Adelaide businesses right now. Strong visibility earns the click; clear services, genuine proof, and a fast path to contact turn that visit into an enquiry.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            Local SEO isn't about tricks. It's about making sure Google understands exactly what you do, where you work, and who you serve. We do that setup once, and it keeps working for you 24/7.
+            SEO is not about tricks. It is ongoing work that helps search engines and customers understand what you do, where you work and why your business is credible. We monitor the result and improve the pages as competition and demand change.
           </p>
         </div>
       </section>
@@ -256,7 +260,7 @@ export default function SeoPage() {
             ))}
           </div>
           <p className="mt-6 text-body-mobile text-slate-700 md:text-body">
-            SEO isn't instant. But it's the only marketing that keeps working after you stop paying for ads.
+            SEO isn't instant, and rankings are never guaranteed. The advantage is that useful pages and authority can continue attracting searches without a fee for every click, provided the site stays accurate and competitive.
           </p>
         </div>
       </section>
@@ -273,7 +277,7 @@ export default function SeoPage() {
           <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
             Plumbers, electricians, builders, HVAC, landscapers and painters — this is the
             playbook we use with Adelaide tradies. Covers Google Business Profile,
-            reviews, suburb pages, schema, content, and pricing from $399/mo.
+            reviews, suburb pages, schema, content, and pricing {PRICING.seo.fromLabel}.
             The same framework we deploy on client sites.
           </p>
           <div className="flex flex-wrap items-center gap-3">
@@ -284,7 +288,7 @@ export default function SeoPage() {
               Read the tradie guide <span aria-hidden>→</span>
             </Link>
             <span className="text-sm text-slate-500">
-              Local SEO $399/mo · Growth SEO $699/mo · no lock-in
+              Local SEO {PRICING.seo.tiers[0].price} · Growth SEO {PRICING.seo.tiers[1].price} · no lock-in
             </span>
           </div>
         </div>
@@ -309,9 +313,9 @@ export default function SeoPage() {
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { href: "/local-seo-adelaide", label: "Local SEO Adelaide", note: "Google Business Profile, suburb pages, reviews, citations" },
-              { href: "/ai-seo-adelaide", label: "AI SEO Adelaide", note: "Rank on Google and get recommended by ChatGPT & AI Overviews" },
+              { href: "/ai-seo-adelaide", label: "AI SEO Adelaide", note: "Improve your eligibility for Google and AI-assisted discovery" },
               { href: "/seo-for-tradies-adelaide", label: "SEO for tradies Adelaide", note: "The playbook for plumbers, sparkies, builders and HVAC" },
-              { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile optimisation", note: "The single biggest local-pack ranking factor, done properly" },
+              { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile optimisation", note: "Improve relevance, completeness, reviews, and local customer confidence" },
               { href: "/automotive-seo-services", label: "Automotive SEO services", note: "Mechanics, panel beaters, dealerships, tyre shops" },
               { href: "/hotel-seo-services", label: "Hotel SEO services", note: "Direct bookings instead of OTA commissions" },
               { href: "/aged-care-seo-services", label: "Aged care SEO services", note: "Home care, retirement living, NDIS providers" },
@@ -353,7 +357,7 @@ export default function SeoPage() {
         <div className="panel-light p-8 md:p-10">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to Start Showing Up on Google?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free audit — no obligation. We'll look at where you're ranking now and tell you exactly what it would take to get you in front of more Adelaide customers.
+            Book a free audit — no obligation. We&apos;ll review your current visibility, identify the strongest opportunities and explain what we would prioritise to reach more Adelaide customers.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact#send-message" className="btn-primary px-8 py-4">

@@ -96,11 +96,11 @@ function buildFaqs(suburb: Suburb) {
   const standard = [
     {
       question: `How much does a website cost for a ${suburb.name} business?`,
-      answer: `Our Starter website is $699 for a 3-page site — perfect for getting online fast. The Business tier is $1,299 for 5-7 pages with blog and SEO foundation. The Growth tier is $2,499 for 10+ pages with suburb targeting and automation integrations. All prices are one-off, no lock-in. See our ${suburb.name} website pricing page for full details.`,
+      answer: `Our Starter website is ${PRICING.website.tiers[0].price} for a 3-page site. The Business tier is ${PRICING.website.tiers[1].price} for 5-7 pages with blog and SEO foundation. The Growth tier is ${PRICING.website.tiers[2].price} for 10+ pages with suburb targeting and automation integrations. All prices are one-off, no lock-in. See our website pricing page for full details.`,
     },
     {
       question: `Can you help my ${suburb.name} business rank on Google?`,
-      answer: `Yes. We do local SEO for ${suburb.name} businesses — keyword research tied to your services and suburb, service pages that target buying intent, suburb pages, blog content answering real customer questions, and Google Search Console monitoring. SEO retainers start from $399/month. Most ${suburb.name} businesses see results within 2-4 months for local keywords.`,
+      answer: `Yes. We do local SEO for ${suburb.name} businesses — keyword research tied to your services and suburb, service pages that target buying intent, useful local content, and Google Search Console monitoring. SEO retainers start from ${PRICING.seo.from}. Timing depends on your starting position, competition, website and Google's ranking systems, so we establish a baseline and report movement rather than guarantee a position.`,
     },
     {
       question: `How quickly can you build a website for my ${suburb.name} business?`,
@@ -108,11 +108,11 @@ function buildFaqs(suburb: Suburb) {
     },
     {
       question: `Do you offer automation for ${suburb.name} businesses?`,
-      answer: `Yes. We set up missed call text-back systems, AI receptionist, quote follow-up sequences, appointment reminders and review automation for ${suburb.name} businesses. Automation starts from $199/month. Most ${suburb.name} tradies recover 3-5 extra jobs per week.`,
+      answer: `Yes. We set up missed-call text-back systems, AI receptionist, quote follow-up sequences, appointment reminders and review automation for ${suburb.name} businesses. Automation starts from ${PRICING.automation.from}. We define the workflow and success measure first, then track the calls, replies, bookings or admin time it actually changes.`,
     },
     {
       question: `What does it cost for a ${suburb.name} business?`,
-      answer: `Websites from $699 one-off. SEO from $399/month. Automation from $199/month. No lock-in contracts. Most ${suburb.name} businesses recover their investment within 30 days — a $699 website that brings in one extra $800 job has already paid for itself.`,
+      answer: `Websites start ${PRICING.website.fromLabel} one-off, SEO ${PRICING.seo.fromLabel}, and automation ${PRICING.automation.fromLabel}. There are no lock-in contracts. Payback depends on your margins, lead volume and close rate; we can model a conservative break-even point using your own numbers before you proceed.`,
     },
   ];
   // Merge suburb-specific FAQs (1-2 unique Qs per suburb from data/suburbs.json)
@@ -149,7 +149,63 @@ export default function SuburbPage({ params }: SuburbPageProps) {
   if (!suburb) notFound();
 
   const faqs = buildFaqs(suburb);
-  const matchedTestimonial = pickTestimonial(suburb);
+  const websiteIntentPage = Boolean(suburb.seoTitle);
+  const matchedTestimonial = websiteIntentPage
+    ? (testimonials.find((testimonial) => /website|site /i.test(testimonial.quote)) ?? pickTestimonial(suburb))
+    : pickTestimonial(suburb);
+  const capabilityItems = websiteIntentPage
+    ? [
+        {
+          title: "Mobile-first website design",
+          body: `A fast, clear website for ${suburb.name} customers with click-to-call, enquiry forms, readable service pages and a simple path to book or request a quote.`,
+        },
+        {
+          title: "Copywriting and service structure",
+          body: "We turn what you tell us about the business into clear service copy, then you review every claim before the website goes live.",
+        },
+        {
+          title: "Google-ready foundations",
+          body: "One clear page topic, useful headings, metadata, internal links, structured data where appropriate, analytics and Search Console setup.",
+        },
+        {
+          title: "Local enquiry pathways",
+          body: `Calls, forms and booking actions are prominent on mobile, with genuine ${suburb.name} service information rather than generic suburb-name swapping.`,
+        },
+        {
+          title: "Easy future expansion",
+          body: "Add service pages, case studies, local SEO or automation later without rebuilding the original website from scratch.",
+        },
+        {
+          title: "Adelaide-based support",
+          body: "You deal directly with a local studio for launch changes, ongoing improvements and practical advice about what to prioritise next.",
+        },
+      ]
+    : [
+        {
+          title: "Answer Calls Instantly — 24/7",
+          body: "AI handles missed calls and after-hours enquiries so every prospect gets a fast first response. SMS acknowledgement can be configured in seconds, with urgency, callback and CRM details captured.",
+        },
+        {
+          title: "Follow Up Quotes Automatically",
+          body: "Day 1, Day 3 and Day 7 follow-up can run without manual chasing. An illustrative improvement target may be 35–50% in quote-to-job conversion, but the result depends on your baseline, offer and lead quality and is not guaranteed.",
+        },
+        {
+          title: "Book Jobs Into Your Calendar",
+          body: "Qualified leads can move into your schedule with appointment reminders. A 65% reduction in no-shows is an illustrative target for suitable reminder workflows, not a promised result.",
+        },
+        {
+          title: "Automate Admin & Payments",
+          body: "Invoices and payment reminders can run on a set schedule. A 70% reduction in repetitive admin is an illustrative target for well-defined workflows; we measure the actual time saved after launch.",
+        },
+        {
+          title: "Build Reviews While You Work",
+          body: "Send a Google review link after a completed job, with a polite follow-up if appropriate. Customers choose whether to review and every review must be genuine.",
+        },
+        {
+          title: "Integrated with Your Stack",
+          body: "We scope connections to the tools you already use, such as job management, accounting, CRM and calendar platforms, before confirming what can be automated.",
+        },
+      ];
 
   return (
     <>
@@ -253,13 +309,20 @@ export default function SuburbPage({ params }: SuburbPageProps) {
             <div className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${suburb.heroColor || "from-accent/15 via-electric/10 to-accent/15"}`} />
             <div className="relative">
               <div className="mb-6">
-                <span className="eyebrow-light">{suburb.name} websites, SEO & automation</span>
+                <span className="eyebrow-light">
+                  {websiteIntentPage ? `Website designer ${suburb.name}` : `${suburb.name} websites, SEO & automation`}
+                </span>
               </div>
               <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-                {suburb.heroLine ? suburb.heroLine : `Websites, SEO & AI Automation for ${suburb.name} Businesses`}
+                {websiteIntentPage
+                  ? `Website Designer ${suburb.name} for Local Business`
+                  : suburb.heroLine || `Websites, SEO & AI Automation for ${suburb.name} Businesses`}
               </h1>
               <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-                {suburb.intro} <strong>Websites from $699, SEO from $399/month, automation from $199/month — Adelaide-based, no lock-in contracts.</strong>
+                {websiteIntentPage
+                  ? `Need a professional website for a ${suburb.name} business? We build fast, mobile-first sites with clear service pages, enquiry actions and Google-ready foundations. `
+                  : `${suburb.intro} `}
+                <strong>Websites {PRICING.website.fromLabel}, SEO {PRICING.seo.fromLabel}, automation {PRICING.automation.fromLabel} — Adelaide-based, no lock-in contracts.</strong>
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-primary px-8 py-4">
@@ -298,19 +361,21 @@ export default function SuburbPage({ params }: SuburbPageProps) {
         {/* ── Website + SEO + Automation, in that order ───────── */}
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
           <h2 className="mb-8 text-h2-mobile text-slate-950 md:text-h2">
-            Websites, SEO &amp; Automation for {suburb.name} Businesses
+            {websiteIntentPage
+              ? `Website Design for ${suburb.name} Businesses`
+              : `Websites, SEO & Automation for ${suburb.name} Businesses`}
           </h2>
           <div className="grid gap-4 md:grid-cols-3">
             <div className="panel-light-soft p-5 md:p-6">
-              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">01 · Website — from $699</p>
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">01 · Website — {PRICING.website.fromLabel}</p>
               <p className="text-body-mobile text-slate-700 md:text-body">{suburb.websiteLine}</p>
             </div>
             <div className="panel-light-soft p-5 md:p-6">
-              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">02 · Local SEO — from $399/mo</p>
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">02 · Local SEO — {PRICING.seo.fromLabel}</p>
               <p className="text-body-mobile text-slate-700 md:text-body">{suburb.seoLine}</p>
             </div>
             <div className="panel-light-soft p-5 md:p-6">
-              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">03 · Automation — from $199/mo</p>
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">03 · Automation — {PRICING.automation.fromLabel}</p>
               <p className="text-body-mobile text-slate-700 md:text-body">{suburb.automationLine}</p>
             </div>
           </div>
@@ -343,38 +408,15 @@ export default function SuburbPage({ params }: SuburbPageProps) {
           </div>
         </section>
 
-        {/* ── What We Automate ────────────────────────────────── */}
+        {/* ── Primary capability detail ───────────────────────── */}
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
           <h2 className="mb-8 text-h2-mobile text-slate-950 md:text-h2">
-            What we automate for {suburb.name} businesses
+            {websiteIntentPage
+              ? `What Your ${suburb.name} Website Includes`
+              : `What We Automate for ${suburb.name} Businesses`}
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {[
-              {
-                title: "Answer Calls Instantly — 24/7",
-                body: "AI handles missed calls and after-hours enquiries so every prospect gets a fast first response. SMS acknowledgement in 10–20 seconds. Qualifies urgency, books callback slots, pushes details to your CRM.",
-              },
-              {
-                title: "Follow Up Quotes Automatically",
-                body: "Day 1 thank-you, Day 3 check-in, Day 7 final touch — all sent without you touching your phone. Tracks opens and forwards. 35–50% conversion lift.",
-              },
-              {
-                title: "Book Jobs Into Your Calendar",
-                body: "Qualified leads push into your schedule with full details. SMS reminders at 24hr + 2hr before appointments. No-shows drop 65%.",
-              },
-              {
-                title: "Automate Admin & Payments",
-                body: "Invoices generated on job completion. Payment reminders at Day 7/14/21. Collection time drops from 22 to 14 days. Admin hours cut by 70%.",
-              },
-              {
-                title: "Build Reviews While You Work",
-                body: "Auto-sends Google review link 24hr after job completion. Gentle nudge at Day 7. Referral prompt after 5-star review. Runs in the background.",
-              },
-              {
-                title: "Integrated with Your Stack",
-                body: "Connects with ServiceM8, Tradify, Jobber, Xero, Google Calendar, and 50+ platforms. We don't replace your tools — we make them work together.",
-              },
-            ].map((item) => (
+            {capabilityItems.map((item) => (
               <div key={item.title} className="rounded-xl border border-slate-200/80 bg-white p-6">
                 <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">
                   {item.title}
@@ -407,7 +449,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
           <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
             <div className="panel-light p-8 md:p-10">
               <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-                Real result from a {suburb.name} business
+                A Result from a Business Like Yours
               </h2>
               <blockquote className="mb-4 border-l-4 border-accent pl-6 text-body-mobile text-slate-700 italic md:text-body">
                 &ldquo;{matchedTestimonial.quote}&rdquo;
@@ -426,49 +468,84 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               What it costs — {suburb.name} pricing
             </h2>
             <p className="mb-6 text-body-mobile text-slate-600 md:text-body">
-              Transparent pricing. No lock-in contracts. Start with the one workflow leaking the most revenue and scale from there.
+              Transparent pricing with no lock-in contracts. Start with the service that matches the immediate business need and add the rest only when there is a clear reason.
             </p>
             <div className="grid gap-6 md:grid-cols-3">
               <div className="rounded-xl border border-accent/30 bg-accent/5 p-6 ring-1 ring-accent/10">
                 <div className="mb-2 text-sm font-semibold text-accent">START</div>
                 <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Free Audit</h3>
-                <p className="mb-3 text-2xl font-bold text-slate-950">$0</p>
+                <p className="mb-3 text-2xl font-bold text-slate-950">{PRICING.audit.price}</p>
                 <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
-                  <li>Review your current workflow gaps</li>
-                  <li>Identify the fastest automation win</li>
-                  <li>Clear implementation plan</li>
-                  <li>No obligation to continue</li>
+                  {websiteIntentPage ? (
+                    <>
+                      <li>Review your current website</li>
+                      <li>Check mobile enquiry pathways</li>
+                      <li>Identify priority content and SEO gaps</li>
+                      <li>No obligation to continue</li>
+                    </>
+                  ) : (
+                    <>
+                      <li>Review your current workflow gaps</li>
+                      <li>Identify the highest-priority automation opportunity</li>
+                      <li>Clear implementation plan</li>
+                      <li>No obligation to continue</li>
+                    </>
+                  )}
                 </ul>
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white p-6">
-                <div className="mb-2 text-sm font-semibold text-accent">SETUP</div>
-                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Automation Starter</h3>
+                <div className="mb-2 text-sm font-semibold text-accent">{websiteIntentPage ? "WEBSITE" : "SETUP"}</div>
+                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">{websiteIntentPage ? "Starter Website" : "Automation Starter"}</h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  from $199 <span className="text-sm font-normal text-slate-500">/month</span>
+                  {websiteIntentPage ? PRICING.website.tiers[0].price : PRICING.automation.tiers[0].price}
                 </p>
                 <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
-                  <li>AI receptionist or missed-call capture</li>
-                  <li>Quote follow-up or reminder sequences</li>
-                  <li>Calendar &amp; CRM integration</li>
-                  <li>2–5 business day setup</li>
+                  {websiteIntentPage ? (
+                    <>
+                      <li>3-page mobile-first website</li>
+                      <li>Copywriting and enquiry form</li>
+                      <li>Core Google-ready setup</li>
+                      <li>One-off build fee</li>
+                    </>
+                  ) : (
+                    <>
+                      <li>AI receptionist or missed-call capture</li>
+                      <li>Quote follow-up or reminder sequences</li>
+                      <li>Calendar &amp; CRM integration</li>
+                      <li>2–5 business day setup</li>
+                    </>
+                  )}
                 </ul>
               </div>
               <div className="rounded-xl border border-slate-200/80 bg-white p-6">
-                <div className="mb-2 text-sm font-semibold text-accent">GROW</div>
-                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">Automation Business</h3>
+                <div className="mb-2 text-sm font-semibold text-accent">{websiteIntentPage ? "EXPAND" : "GROW"}</div>
+                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">{websiteIntentPage ? "Business Website" : "Automation Business"}</h3>
                 <p className="mb-3 text-2xl font-bold text-slate-950">
-                  from $399 <span className="text-sm font-normal text-slate-500">/month</span>
+                  {websiteIntentPage ? PRICING.website.tiers[1].price : PRICING.automation.tiers[1].price}
                 </p>
                 <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-slate-600">
-                  <li>Monthly improvements + new workflows</li>
-                  <li>Performance monitoring &amp; reporting</li>
-                  <li>Priority support (same-day)</li>
-                  <li>Multi-workflow automation</li>
+                  {websiteIntentPage ? (
+                    <>
+                      <li>5–7 page website</li>
+                      <li>Blog and SEO foundation</li>
+                      <li>Expanded service content</li>
+                      <li>One-off build fee</li>
+                    </>
+                  ) : (
+                    <>
+                      <li>Monthly improvements + new workflows</li>
+                      <li>Performance monitoring &amp; reporting</li>
+                      <li>Priority support (same-day)</li>
+                      <li>Multi-workflow automation</li>
+                    </>
+                  )}
                 </ul>
               </div>
             </div>
             <p className="mt-6 text-sm text-slate-500">
-              ROI: Recovering 3 extra jobs at $350 each = $1,050/week against a $199/mo system. Most {suburb.name} businesses recover their investment within 30 days.
+              {websiteIntentPage
+                ? "We can estimate the number of enquiries or sales needed to cover the build using your average job value and close rate. Payback varies by business and is not guaranteed."
+                : `Illustrative only: three additional $350 jobs would equal $1,050 in revenue against a ${PRICING.automation.tiers[0].price} system. Your result depends on lead volume, margins, response process and close rate and is not guaranteed.`}
             </p>
           </div>
         </section>
@@ -477,7 +554,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
           <div className="panel-light p-6 md:p-8">
             <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
-              FAQ — {suburb.name} AI Automation
+              FAQ — {suburb.name} Websites, SEO &amp; Automation
             </h2>
             <div className="space-y-6">
               {faqs.map((faq) => (
@@ -499,7 +576,7 @@ export default function SuburbPage({ params }: SuburbPageProps) {
               Ready to grow your {suburb.name} business?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-              Book a free 15-minute chat. We'll look at your website, your Google ranking, and your admin bottlenecks — then tell you exactly what we'd recommend. No obligation, no pressure.
+              Book a free 15-minute chat. We&apos;ll review your website, search visibility and enquiry process, then explain what we&apos;d prioritise. No obligation, no pressure.
             </p>
             <Link href="/contact" className="btn-primary inline-flex px-8 py-4">
               Book Free Chat <span aria-hidden>→</span>
@@ -515,8 +592,12 @@ export default function SuburbPage({ params }: SuburbPageProps) {
             <div className="mt-8 border-t border-slate-200 pt-6">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-600">
                 <Link href="/" className="underline hover:text-accent">Home</Link>
-                <Link href="/ai-automation-adelaide" className="underline hover:text-accent">Adelaide AI Automation</Link>
-                <Link href="/ai-receptionist-adelaide" className="underline hover:text-accent">AI Receptionist</Link>
+                <Link href={websiteIntentPage ? "/website-design-adelaide" : "/ai-automation-adelaide"} className="underline hover:text-accent">
+                  {websiteIntentPage ? "Website Design Adelaide" : "Adelaide AI Automation"}
+                </Link>
+                <Link href={websiteIntentPage ? "/website-pricing" : "/ai-receptionist-adelaide"} className="underline hover:text-accent">
+                  {websiteIntentPage ? "Website Pricing" : "AI Receptionist"}
+                </Link>
                 <Link href="/services" className="underline hover:text-accent">All Services</Link>
                 <Link href="/blog" className="underline hover:text-accent">Blog</Link>
                 <Link href="/contact" className="underline hover:text-accent">Contact</Link>

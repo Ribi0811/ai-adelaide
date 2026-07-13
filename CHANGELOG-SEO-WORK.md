@@ -595,3 +595,38 @@ delivers in prod; suburb source shows one org + no `$99`; no event double-fire.
 
 **Still production-dependent:** real Telegram and SMTP delivery require Vercel
 environment secrets and must be smoke-tested after Ivan approves deployment.
+
+---
+
+## 2026-07-13 — Codex on-page SEO copy and intent pass
+**Status: ✅ Complete locally, NOT pushed**
+
+- Reworked `/seo` as the visible broad SEO-services owner and added an
+  above-fold free-audit CTA; kept `/local-seo-adelaide` focused on maps, Google
+  Business Profile, reviews, useful local pages, citations and lead reporting.
+- Removed unsupported rankings, exact timelines, agency comparisons and search
+  statistics from the tradie, AI SEO, GBP, automotive, hotel, aged-care and
+  SEO-vs-Google-Ads pages. AI/Google visibility is now described as eligibility
+  and work within the business's control, never a guaranteed citation or rank.
+- Corrected the Website Business tier from `$1,499` to the `PRICING` value and
+  moved touched page prices back to `PRICING`. GBP is no longer presented as an
+  unapproved `$199/mo` standalone service; it is included in Local SEO.
+- Six GSC-priority suburbs now visibly target website-design intent: exact-intent
+  H1, website capability detail, website tiers, website audit copy and website
+  internal links. Removed unsupported local counts/outcomes and the false
+  "result from a {suburb} business" heading.
+- Shared automation percentages remain only as explicitly illustrative targets
+  with no-guarantee language, per Ivan's direction; they are not described as
+  measured or typical results.
+- Updated sitemap dates and claims/handoff records.
+
+### Verification
+
+- `npx tsc --noEmit` — pass before final build gate.
+- `check-meta` — pass with only the two existing noindex audit-funnel warnings.
+- `check-links` — pass, zero broken links or redirect chains.
+- Local route sweep — 10 edited service/SEO pages and six priority suburbs all
+  returned 200 with the intended H1.
+- Playwright — desktop and 390px mobile checks for `/seo` and `/marion`; no
+  runtime console errors; sampled pages have one H1, one FAQPage and one
+  layout-owned LocalBusiness.

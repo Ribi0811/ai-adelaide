@@ -1,32 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   // Phase 8 punch list P4: rendered title was 83 chars (max 60); description
   // was 211 chars (want 140-160).
   title: "Local SEO Adelaide — Get Found on Google",
   description:
-    "Local SEO for Adelaide businesses — Google Business Profile, suburb pages, reviews, citations, NAP consistency. Get found across SA. From $399/mo.",
+    `Local SEO for Adelaide businesses: improve Google Business Profile, local pages, reviews, citations, tracking and enquiries. ${PRICING.seo.fromLabel}, no lock-in.`,
   alternates: { canonical: "/local-seo-adelaide" },
 };
 
 const whatsIncluded = [
-  { title: "Google Business Profile optimisation", body: "We tune every section — categories, services, photos, posts, hours, attributes. GBP is the single biggest factor in local pack rankings, and most Adelaide businesses have it 60% wrong." },
-  { title: "Suburb service pages", body: "Glenelg, Norwood, Modbury, Burnside — we build a dedicated page for every suburb you serve, each one targeting \"[trade] [suburb]\" searches with Adelaide-specific content." },
-  { title: "Citation building + NAP consistency", body: "Your business Name, Address, Phone must match across 50+ directories (Yellow Pages, True Local, Hotfrog, Yelp, Apple Maps). Inconsistencies kill rankings. We fix and build." },
-  { title: "Review generation system", body: "More Google reviews = higher rankings AND more clicks. We set up automated post-job SMS review requests that bring in 5-15 new reviews per month on autopilot." },
-  { title: "Local schema markup", body: "LocalBusiness, FAQPage, Service, Review schema — the structured data that helps Google understand exactly where you work, what you do, and who you serve." },
-  { title: "Monthly ranking reports", body: "Plain-English reports showing where you rank, what's improving, what we're working on next. No jargon, no fluff." },
+  { title: "Google Business Profile optimisation", body: "We review categories, services, photos, hours, attributes, service areas and business details. The goal is a complete, accurate profile that better matches relevant Adelaide searches and gives customers enough confidence to act." },
+  { title: "Useful local service pages", body: "Where your coverage and search demand support them, we create distinct pages for the Adelaide areas you genuinely serve. Each page explains the service, local context and next step instead of repeating a suburb name through generic copy." },
+  { title: "Core citations and NAP consistency", body: "We audit your business name, address and phone across relevant platforms such as Apple Maps, Bing Places, Yellow Pages and industry directories, then prioritise useful listings rather than chasing an arbitrary directory count." },
+  { title: "Review request workflow", body: "We set up a simple post-job request process and make it easy for happy customers to leave genuine Google reviews. The number earned depends on your job volume and customer response; reviews are never bought or fabricated." },
+  { title: "Local structured data", body: "We add appropriate LocalBusiness, Service and FAQPage structured data where it matches visible page content. It helps search engines understand the business; it does not guarantee a rich result or ranking." },
+  { title: "Local visibility and lead reporting", body: "Plain-English reporting covers priority queries, Google Business Profile activity, calls and forms where tracking is available, completed work, and the next actions worth taking." },
 ];
 
 const faqs = [
-  { question: "What is local SEO and why does it matter for Adelaide businesses?", answer: "Local SEO is the process of ranking your business for searches with geographic intent — \"plumber Norwood\", \"physio Glenelg\", \"cafe Mount Barker\". 46% of all Google searches have local intent, and 70% of local searchers visit a business within 24 hours. If you're not showing up in Google's local pack (the map results at the top), you're invisible to the highest-intent customers in your service area." },
-  { question: "How long does local SEO take to work in Adelaide?", answer: "Honest answer: 1-3 months for visible movement. Google Business Profile optimisation alone can move you 5-10 spots within 4-6 weeks. Suburb pages take 2-4 months to rank. Full local SEO dominance typically takes 3-6 months. We give you an honest timeline in your free audit." },
-  { question: "How much does local SEO cost in Adelaide?", answer: "Our local SEO starts at $399/month (Google Business Profile optimisation, suburb pages, review generation) and Growth SEO is $699/month with more content, more suburbs, and citation building. Month-to-month, no lock-in — Adelaide agencies commonly charge $1,000-$2,500/month for comparable work." },
-  { question: "Do I need local SEO if I already do regular SEO?", answer: "Yes — they're different. Regular SEO targets informational and national keywords (\"how to fix a leaking tap\"). Local SEO targets geographic searches (\"plumber Norwood\"). Most Adelaide tradies and small businesses need local SEO far more than regular SEO. If you can only afford one, local SEO is the higher-ROI choice for any Adelaide business that serves a specific geographic area." },
-  { question: "Will I show up in Google Maps?", answer: "Yes — that's the whole point of local SEO. The local pack (map results at the top of Google) is the most valuable real estate for Adelaide service businesses. Our process specifically targets local pack rankings through GBP optimisation, reviews, suburb pages, and citations." },
-  { question: "Do I need a physical address to rank in Adelaide?", answer: "You need a service area, not necessarily a storefront. Most Adelaide tradies work from home or a depot — that's fine. We configure your GBP with a service area (set of suburbs) rather than a public address, which works perfectly for local pack rankings." },
+  { question: "What is local SEO and why does it matter for Adelaide businesses?", answer: "Local SEO improves how a business appears for searches with geographic intent, such as ‘plumber Norwood’, ‘physio Glenelg’ or ‘cafe Mount Barker’. It connects your website, Google Business Profile, reviews and wider business information so nearby customers can find accurate information and decide whether to contact you." },
+  { question: "How long does local SEO take to work in Adelaide?", answer: "There is no fixed timetable. Your starting visibility, competition, location, website quality and Google's crawl and ranking systems all affect the pace. We establish a baseline, complete the highest-impact work first, and review early signals over the first few months rather than promising a particular position by a particular date." },
+  { question: "How much does local SEO cost in Adelaide?", answer: `Local SEO is ${PRICING.seo.tiers[0].price} and Growth SEO is ${PRICING.seo.tiers[1].price}. Both are month to month with no lock-in. We agree the scope before starting so you know which profile, content, citation, technical and reporting work is included.` },
+  { question: "Do I need local SEO if I already do regular SEO?", answer: "If nearby customers are important to your business, local SEO should be part of the wider SEO plan. Broad SEO can target service and informational searches, while local SEO concentrates on the locations you genuinely serve, your Google Business Profile and local trust signals." },
+  { question: "Will I show up in Google Maps?", answer: "We can improve the relevance, accuracy and prominence signals within your control, but nobody can guarantee a Google Maps or local-pack position. Distance from the searcher and Google's ranking systems also affect what appears. We report the searches and locations where visibility changes." },
+  { question: "Do I need a physical address to rank in Adelaide?", answer: "Eligible service-area businesses can use a Google Business Profile without displaying a storefront address. We configure the profile to match Google's eligibility rules and the areas you genuinely serve. A service area does not make a business rank equally across every listed suburb." },
 ];
 
 const faqJsonLd = {
@@ -51,7 +52,7 @@ export default function LocalSeoAdelaidePage() {
           <span className="eyebrow-light">Local SEO Adelaide</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">Local SEO Adelaide — Get Found by Adelaide Customers</h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            When someone in Norwood, Glenelg, Modbury, or Mount Barker Googles your service, do you show up — or does your competitor? Local SEO makes sure you're the business that gets the call. Adelaide-focused, no lock-in contracts.
+            We improve how your business appears when Adelaide customers search by service, suburb, or &quot;near me&quot;. That means accurate Google Business Profile information, useful local pages, genuine reviews, consistent business details, and measurement tied to enquiries—not ranking guarantees.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
@@ -93,7 +94,7 @@ export default function LocalSeoAdelaidePage() {
         <div className="panel-light p-8 md:p-10">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to Show Up in Adelaide Google Searches?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Free 15-minute chat. We'll show you where you rank now, what's holding you back, and exactly what it would take to get you in front of more Adelaide customers.
+            Free 15-minute chat. We&apos;ll establish your current visibility, identify the clearest gaps and explain which local-search improvements we would prioritise.
           </p>
           <Link href="/contact" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
         </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { PRICING } from "@/lib/constants";
 
 // Tier 12 (2026-07-11): GSC shows "aged care seo services" (47 impr @ pos 81)
 // with no page targeting it — same content-gap pattern that produced the
@@ -8,25 +9,25 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Aged Care SEO Services Adelaide",
   description:
-    "SEO for aged care providers in Adelaide and SA — home care, retirement living, allied health and NDIS. Be found when families search. From $399/mo.",
+    `SEO for aged care providers in Adelaide and SA — home care, retirement living, allied health and NDIS. Improve visibility when families search. ${PRICING.seo.fromLabel}.`,
   alternates: { canonical: "/aged-care-seo-services" },
 };
 
 const whatsIncluded = [
-  { title: "Google Business Profile for care providers", body: "Categories, services, photos, and attributes tuned for aged care — so you show up in the local pack when families search \"home care [suburb]\" or \"aged care near me\". Reviews highlighted, questions answered." },
-  { title: "Suburb + region service pages", body: "Families search where mum or dad lives — \"home care Glenelg\", \"retirement living Mount Barker\". Every suburb and region you serve gets its own page with locally relevant content." },
+  { title: "Google Business Profile for care providers", body: "We review categories, services, photos and attributes for accuracy and relevance when families search for care nearby. Reviews and important questions are made easy to find, without a local-pack guarantee." },
+  { title: "Suburb + region service pages", body: "Families may search where their parent lives, such as ‘home care Glenelg’ or ‘retirement living Mount Barker’. We create pages only for genuine coverage areas where we can add useful, distinct information." },
   { title: "Family-focused content", body: "The person searching is usually an adult child, not the care recipient. We write content that answers their real questions — costs, waitlists, home care packages, what to look for — in plain English, not provider jargon." },
-  { title: "Review generation + reputation", body: "Few decisions are more trust-driven than choosing care for a parent. We set up systems that ask happy families for Google reviews and help you respond to every review — the single strongest local ranking and conversion signal in this sector." },
+  { title: "Review requests + reputation", body: "Few decisions are more trust-driven than choosing care for a parent. We set up a respectful process for requesting genuine reviews and help you respond professionally. Reviews support trust and prominence but are not the only ranking factor." },
   { title: "Local schema markup", body: "LocalBusiness, Service, and FAQPage structured data so Google (and AI assistants) understand exactly what care types you offer, where you operate, and how to contact you." },
   { title: "Monthly plain-English reporting", body: "Where you rank for the searches that matter, what enquiries came from search, and what we're doing next. No jargon, no vanity metrics." },
 ];
 
 const faqs = [
   { question: "Do you do SEO for aged care providers?", answer: "Yes — our local SEO process is built for aged care and community care providers across Adelaide and SA: home care and home care package providers, residential aged care, retirement living, allied health, and NDIS providers. The sector is unusually local and unusually trust-driven, which is exactly what local SEO is good at." },
-  { question: "How much does aged care SEO cost?", answer: "Our local SEO starts at $399/month (Google Business Profile optimisation, suburb pages, review generation) and Growth SEO is $699/month with more content and citation building. Month-to-month, no lock-in." },
-  { question: "How do families actually find aged care providers online?", answer: "Usually an adult child Googles phrases like \"home care packages Adelaide\", \"aged care [suburb]\", or \"respite care near me\", then compares the top few providers by reviews and website. If you're not in the local pack or on page one with credible reviews, you're not in the comparison — no matter how good your care is." },
-  { question: "Does this work for home care and NDIS providers, not just facilities?", answer: "Yes — service-area businesses are our specialty. You don't need a public facility address; we configure your Google Business Profile with the suburbs you actually service, and build suburb pages for each. That's how home care and NDIS providers win local searches across their whole coverage area." },
-  { question: "How long does aged care SEO take to work?", answer: "Google Business Profile improvements can move rankings within 4-6 weeks. Suburb pages and content typically take 2-4 months. Competitive metro terms take longer — we give you an honest timeline for your suburbs and services in the free audit before you spend a dollar." },
+  { question: "How much does aged care SEO cost?", answer: `Local SEO is ${PRICING.seo.tiers[0].price}; Growth SEO is ${PRICING.seo.tiers[1].price} for a broader content and authority scope. Both are month to month with no lock-in.` },
+  { question: "How do families actually find aged care providers online?", answer: "An adult child may search phrases such as ‘home care packages Adelaide’, ‘aged care [suburb]’ or ‘respite care near me’, then compare eligibility, services, reviews, website information and contact options. The goal is to be discoverable and credible wherever that comparison happens." },
+  { question: "Does this work for home care and NDIS providers, not just facilities?", answer: "Eligible service-area businesses can use Google Business Profile without displaying a public facility address. We configure genuine service areas and build local pages where useful. That improves relevance but does not create equal rankings across the whole coverage area." },
+  { question: "How long does aged care SEO take to work?", answer: "There is no fixed timetable. Starting visibility, competition, service coverage, website quality and Google's systems affect the pace. The free audit establishes a baseline, and monthly reporting shows what changed rather than promise a particular ranking date." },
 ];
 
 const faqJsonLd = {
@@ -93,7 +94,7 @@ export default function AgedCareSeoServicesPage() {
         <div className="panel-light p-8 md:p-10">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Families Are Searching Right Now</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Free 15-minute chat. We&apos;ll show you where you rank for the care searches in your suburbs, what competitors are doing, and what it would take to be the provider families find first. Related: <Link href="/local-seo-adelaide" className="underline underline-offset-4">local SEO Adelaide</Link> and <Link href="/websites-for-clinics-adelaide" className="underline underline-offset-4">websites for clinics &amp; health</Link>.
+            Free 15-minute chat. We&apos;ll review relevant care searches, your service information and competitors, then explain which improvements we would prioritise. Related: <Link href="/local-seo-adelaide" className="underline underline-offset-4">local SEO Adelaide</Link> and <Link href="/websites-for-clinics-adelaide" className="underline underline-offset-4">websites for clinics &amp; health</Link>.
           </p>
           <Link href="/contact" className="btn-primary px-8 py-4">Book Free Aged Care SEO Chat <span aria-hidden>→</span></Link>
         </div>

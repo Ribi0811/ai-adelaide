@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "SEO vs Google Ads Adelaide | 2026",
   description:
-    "SEO vs Google Ads for Adelaide small businesses. Real costs, timelines, and ROI comparison. SEO from $399/mo vs Ads from $500/mo. Which fits your business?",
+    `SEO vs Google Ads for Adelaide businesses: compare speed, control, lead economics, long-term value and realistic budget assumptions. SEO ${PRICING.seo.fromLabel}.`,
   alternates: {
     canonical: "/seo-vs-google-ads-adelaide",
   },
@@ -14,25 +15,25 @@ export const metadata: Metadata = {
 const comparison = [
   {
     factor: "Cost per month",
-    seo: "$399-699/mo",
-    ads: "$500-3,000+/mo (including ad spend)",
+    seo: `${PRICING.seo.tiers[0].price}–${PRICING.seo.tiers[1].price}`,
+    ads: "Set from real click costs, conversion rate and lead target",
   winner: "seo",
   },
   {
     factor: "Time to first results",
-    seo: "2-4 months",
-    ads: "1-3 days",
+    seo: "Usually gradual; timing varies",
+    ads: "Can begin after campaign approval and launch",
     winner: "ads",
   },
   {
     factor: "Cost per click",
-    seo: "$0 (you earn the click organically)",
-    ads: "$2-15+ per click (you pay every time)",
+    seo: "No media fee per organic click",
+    ads: "Auction-priced fee per click",
     winner: "seo",
   },
   {
     factor: "Long-term value",
-    seo: "Compounds — content ranks for years",
+    seo: "Can compound while pages stay useful and competitive",
     ads: "Stops the moment you stop paying",
     winner: "seo",
   },
@@ -44,14 +45,14 @@ const comparison = [
   },
   {
     factor: "Trust & credibility",
-    seo: "High — people trust organic results",
-    ads: "Lower — people know it's paid",
-    winner: "seo",
+    seo: "Can build familiarity and authority",
+    ads: "Clearly labelled paid placement",
+    winner: "tie",
   },
   {
     factor: "Predictability",
     seo: "Hard to predict exact timing",
-    ads: "Very predictable — spend X, get Y clicks",
+    ads: "Budget and traffic are controllable; leads still vary",
     winner: "ads",
   },
   {
@@ -67,70 +68,76 @@ const scenarios = [
     title: "New business — no website traffic",
     recommendation: "Start with Google Ads + build SEO foundation",
     reasoning:
-      "You need leads NOW. Run Google Ads to get immediate enquiries while we build your SEO foundation. By month 3-4, organic traffic starts replacing ad spend. By month 6, you can reduce ads and rely more on SEO.",
-    timeline: "Ads: Week 1. SEO results: Month 3+.",
-    cost: "$500/mo ads + $399/mo SEO = $899/mo",
+      "Use Ads to test immediate demand while the SEO foundation is built. Reduce ad spend only after tracked organic enquiries are consistently replacing paid leads—not according to a preset month.",
+    timeline: "Ads can launch first; assess SEO over a longer measurement window.",
+    cost: "Example only: chosen ad budget + Local SEO plan.",
   },
   {
     title: "Established business — steady customers",
     recommendation: "SEO focus, light Ads for competitive terms",
     reasoning:
       "You already have word-of-mouth and repeat customers. Invest in SEO to capture people searching for your services. Use Ads only for high-value emergency keywords (e.g., 'emergency plumber Adelaide') where organic ranking takes longer.",
-    timeline: "SEO results: Month 2-4. Ads for competitive terms only.",
-    cost: "$399/mo SEO + $200/mo ads = $599/mo",
+    timeline: "Review organic movement monthly; use Ads where immediate visibility is valuable.",
+    cost: "Local SEO plan + a campaign budget based on lead economics.",
   },
   {
     title: "Competitive market — lots of competitors",
     recommendation: "Both, with heavy SEO investment",
     reasoning:
-      "In competitive markets (plumbers, electricians, dentists), SEO takes 6-12 months to rank well. Run Ads to stay visible while SEO builds. Once you rank, reduce ad spend. The businesses that win long-term are the ones that invest in SEO early.",
-    timeline: "Ads: Week 1. SEO results: Month 6-12.",
-    cost: "$699/mo SEO + $500/mo ads = $1,199/mo",
+      "Run Ads for controlled visibility while investing consistently in technical work, useful content, proof and authority. Reduce spend only when lead-source data shows organic search can carry more of the target.",
+    timeline: "Expect a longer SEO measurement window in competitive categories.",
+    cost: "Growth SEO plan + an evidence-based ad budget.",
   },
   {
     title: "Niche market — few competitors",
-    recommendation: "SEO only — you'll rank fast",
+    recommendation: "Test SEO first; keep Ads available",
     reasoning:
-      "If you're in a niche with low competition (e.g., 'fencing contractor Modbury'), SEO alone will get you ranking within 2-3 months. No need for Ads — you'll capture the search traffic organically.",
-    timeline: "SEO results: Month 2-3.",
-    cost: "$399/mo SEO only",
+      "A niche such as ‘fencing contractor Modbury’ may have a clearer organic opportunity, but low competition does not guarantee ranking or lead volume. Start with the foundation, measure demand, and add Ads if the business needs faster validation.",
+    timeline: "Set a baseline, then review indexing, impressions, enquiries and competition.",
+    cost: "Local SEO plan; optional test budget for Ads.",
   },
 ];
 
+const seoMonthly = Number(PRICING.seo.tiers[0].price.replace(/[^\d]/g, ""));
 const twoYearCost = [
-  { month: "Month 1", seo: "$399", ads: "$1,000", combined: "$1,399" },
-  { month: "Month 3", seo: "$399", ads: "$1,000", combined: "$1,399" },
-  { month: "Month 6", seo: "$399", ads: "$800", combined: "$1,199" },
-  { month: "Month 12", seo: "$399", ads: "$500", combined: "$899" },
-  { month: "Month 18", seo: "$399", ads: "$300", combined: "$699" },
-  { month: "Month 24", seo: "$399", ads: "$200", combined: "$599" },
-];
+  { month: "Month 1", ads: 1000 },
+  { month: "Month 3", ads: 1000 },
+  { month: "Month 6", ads: 800 },
+  { month: "Month 12", ads: 500 },
+  { month: "Month 18", ads: 300 },
+  { month: "Month 24", ads: 200 },
+].map(({ month, ads }) => ({
+  month,
+  seo: PRICING.seo.tiers[0].price,
+  ads: `$${ads.toLocaleString("en-AU")}`,
+  combined: `$${(seoMonthly + ads).toLocaleString("en-AU")}`,
+}));
 
 const faqs = [
   {
     question: "Should I do SEO or Google Ads first?",
     answer:
-      "If you need leads immediately, start with Google Ads — you can be on page 1 tomorrow. But start SEO at the same time, because Ads stop the moment you stop paying. SEO compounds over time. The best strategy is both: Ads for now, SEO for the future.",
+      "If you need immediate visibility, Google Ads can begin once the campaign is approved and launched. SEO usually needs a longer measurement window. Using both can make sense, but the split should be based on margins, urgency, search demand and tracked lead quality.",
   },
   {
     question: "How much should I spend on Google Ads in Adelaide?",
     answer:
-      "For a small local business, $500-1,000/month is a realistic starting point. This covers ad spend and gives you enough clicks to generate leads. Competitive industries (plumbers, electricians) need $1,000-3,000+ because click costs are higher.",
+      "Work backwards from the value of a qualified lead, your close rate, target job volume and current auction estimates. A useful test budget must buy enough relevant clicks to learn something, but there is no responsible universal Adelaide spend figure.",
   },
   {
     question: "How long does SEO take to work in Adelaide?",
     answer:
-      "For low-competition keywords, 2-3 months. For medium competition, 3-6 months. For highly competitive terms (like 'plumber Adelaide'), 6-12 months. The advantage of local SEO is that 'plumber Norwood' or 'electrician Prospect' are much easier to rank than generic terms.",
+      "There is no fixed timeline. Competition, starting authority, technical condition, content quality, location and Google's systems all matter. Specific service-and-suburb searches can present a more focused opportunity than broad Adelaide terms, but they are not automatically easy.",
   },
   {
     question: "Is SEO cheaper than Google Ads?",
     answer:
-      "Long-term, yes. SEO costs $399-699/month and compounds — your content keeps ranking. Google Ads cost $500-3,000+/month and stop instantly when you stop paying. Over 2 years, SEO is significantly cheaper per lead. But Ads are faster to start.",
+      "It can be, but only your lead and revenue data can answer that. SEO can continue producing organic visits without a per-click media fee, while Ads provide faster control over placement and budget. Compare cost per qualified lead and won revenue over a long enough period.",
   },
   {
     question: "Can I just do Google Ads and skip SEO?",
     answer:
-      "You can, but you're renting your traffic. The moment your budget runs out, you disappear. Businesses that rely only on Ads are one price increase away from losing all their leads. SEO gives you owned traffic that no one can take away.",
+      "You can rely on Ads, but paid placement stops when the campaign or budget stops. Organic visibility is not permanently owned either—rankings can change. A balanced acquisition mix reduces dependence on one channel and gives you better data about what produces qualified work.",
   },
 ];
 
@@ -165,7 +172,7 @@ export default function SeoVsGoogleAdsPage() {
             SEO vs Google Ads: Which Is Better for Your Adelaide Business?
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Both get you on Google. One you rent, one you own. Here's the real breakdown — costs, timelines, and which one actually makes sense for your Adelaide business. No bias, just numbers.
+            Both can put an Adelaide business in front of active searchers. Ads buy controllable placement; SEO builds organic visibility that can compound but can also change. Here is how to compare them using real lead economics instead of guaranteed timelines.
           </p>
         </div>
       </section>
@@ -234,7 +241,7 @@ export default function SeoVsGoogleAdsPage() {
             24-Month Cost Projection
           </h2>
           <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            As SEO starts ranking, you can reduce ad spend. Here's a realistic projection for a combined strategy:
+            The table below is an illustrative budget scenario, not a forecast. Reduce ad spend only if measured organic leads and won revenue support the decision.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm">
@@ -261,7 +268,7 @@ export default function SeoVsGoogleAdsPage() {
           <div className="mt-4 panel-light-soft p-4">
             <p className="text-sm text-slate-700">
               <strong>Key insight:</strong> By month 24, your SEO is generating organic traffic that replaces most of your ad spend.
-              Total 2-year cost with combined strategy: ~$20,000. SEO-only: ~$9,600. Ads-only: ~$24,000+ (and it stops the moment you stop paying).
+              These figures demonstrate how a budget could change; they are not a quote, forecast or recommended spend. Build the real model from your click costs, conversion rate, qualified leads and won revenue.
             </p>
           </div>
         </div>
@@ -282,7 +289,7 @@ export default function SeoVsGoogleAdsPage() {
                 <li className="flex items-start gap-2"><span className="text-accent">✓</span> Suburb pages for local search</li>
                 <li className="flex items-start gap-2"><span className="text-accent">✓</span> Blog content answering real customer questions</li>
                 <li className="flex items-start gap-2"><span className="text-accent">✓</span> Google Search Console monitoring</li>
-                <li className="flex items-start gap-2"><span className="text-accent">✓</span> From $399/month — see our <Link href="/seo" className="text-accent underline">SEO services</Link></li>
+                <li className="flex items-start gap-2"><span className="text-accent">✓</span> {PRICING.seo.fromLabel} — see our <Link href="/seo" className="text-accent underline">SEO services</Link></li>
               </ul>
             </div>
             <div className="panel-light-soft p-5">

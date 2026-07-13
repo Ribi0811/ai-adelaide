@@ -120,3 +120,20 @@ Several pages build a worked "if you recover X calls at $Y each..." calculation 
 - **3 illustrative ROI formulas** flagged for a labelling check rather than removal.
 
 Nothing has been changed. Awaiting human review before any of the above is edited or removed.
+
+---
+
+## Re-flagged during T4 (2026-07-13) — suburb template outcome claims
+
+Surfaced again while cleaning the `app/[suburb]/page.tsx` schema landmine. These
+render on ALL 34 suburb pages, so their reach is large. **Not edited or expanded**
+per the Opus brief — logged here for Ivan's decision (keep if real, label as
+illustrative, or soften):
+
+- `app/[suburb]/page.tsx` FAQ answer: "Most {suburb} tradies recover **3-5 extra jobs per week**."
+- `app/[suburb]/page.tsx` FAQ answer: "Most {suburb} businesses **recover their investment within 30 days** — a $699 website that brings in one extra $800 job has already paid for itself."
+- `app/[suburb]/page.tsx` body: "ROI: Recovering **3 extra jobs at $350 each = $1,050/week** against a $199/mo system."
+- `data/suburbs.json` (Hallett Cove `whyNow`): tradies "winning **3-4 extra jobs per month**."
+
+These are generic per-suburb projections applied uniformly, not measured results —
+the same profile as the ROI formulas already listed above.

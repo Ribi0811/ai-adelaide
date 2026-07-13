@@ -307,6 +307,37 @@ export default function WebsiteDesignAdelaidePage() {
         </div>
       </section>
 
+      {/* Popular areas — hub links to the priority suburb pages (T4) */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Popular areas we design websites for</h2>
+          <p className="mb-4 text-body-mobile text-slate-600 md:text-body">
+            Every Adelaide suburb gets a dedicated page. A few we&apos;re asked about most:
+          </p>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-body-mobile md:text-body">
+            {[
+              { href: "/marion", label: "Marion" },
+              { href: "/reynella", label: "Reynella" },
+              { href: "/moana", label: "Moana" },
+              { href: "/seaford", label: "Seaford" },
+              { href: "/morphett-vale", label: "Morphett Vale" },
+              { href: "/henley-beach", label: "Henley Beach" },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900"
+              >
+                Website designer {s.label}
+              </Link>
+            ))}
+            <Link href="/locations" className="text-slate-600 underline underline-offset-4 hover:text-slate-900">
+              All Adelaide suburbs →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to Get a Website That Actually Works?</h2>

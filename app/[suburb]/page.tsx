@@ -6,14 +6,20 @@ import { siteConfig, testimonials } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SuburbHero from "@/components/SuburbHero";
 
-type Suburb = (typeof suburbs)[number];
+// Optional per-suburb SEO overrides (T4): only the highest-value suburbs set
+// these to target their exact GSC query ("website designer {suburb}"). All
+// others fall back to the shared template below.
+type Suburb = (typeof suburbs)[number] & {
+  seoTitle?: string;
+  seoDescription?: string;
+};
 
 interface SuburbPageProps {
   params: { suburb: string };
 }
 
 function getSuburb(slug: string): Suburb | undefined {
-  return suburbs.find((suburb) => suburb.slug === slug);
+  return suburbs.find((suburb) => suburb.slug === slug) as Suburb | undefined;
 }
 
 export function generateStaticParams() {
@@ -25,13 +31,17 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
   if (!suburb) return {};
   const ogImageUrl = `${siteConfig.url}/${suburb.slug}/opengraph-image`;
   const ogImageAlt = `AI Adelaide — ${suburb.name} (${suburb.postcode}) websites, SEO and AI automation services`;
+  // Tier 12 template; T4 (2026-07-13) adds optional per-suburb overrides that
+  // target the exact "website designer {suburb}" GSC query. seoTitle already
+  // includes "| AI Adelaide", so it must bypass the layout template via
+  // title.absolute (the template appends "| AI Adelaide" to plain strings).
+  const templateTitle = `${suburb.name} Web Design, SEO & AI Automation`;
+  const templateDesc = `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`;
+  const ogTitle = suburb.seoTitle ?? templateTitle;
+  const description = suburb.seoDescription ?? templateDesc;
   return {
-    // Tier 12 (2026-07-11): GSC shows suburb pages ranking 9-18 for
-    // "website designer {suburb}" / "web design {suburb}" (Moana, Seaford,
-    // Reynella ~240 impr/mo combined) — "Web Design" replaced "Websites" in
-    // the title to match that intent. Longest suburb name renders exactly 60.
-    title: `${suburb.name} Web Design, SEO & AI Automation`,
-    description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in contracts. Call ${siteConfig.phone}.`,
+    title: suburb.seoTitle ? { absolute: suburb.seoTitle } : templateTitle,
+    description,
     keywords: [
       `AI websites ${suburb.name}`,
       `SEO ${suburb.name}`,
@@ -44,8 +54,8 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
     ],
     alternates: { canonical: `${siteConfig.url}/${suburb.slug}` },
     openGraph: {
-      title: `${suburb.name} Web Design, SEO & AI Automation`,
-      description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
+      title: ogTitle,
+      description,
       url: `${siteConfig.url}/${suburb.slug}`,
       siteName: siteConfig.name,
       locale: "en_AU",
@@ -62,8 +72,8 @@ export function generateMetadata({ params }: SuburbPageProps): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${suburb.name} Web Design, SEO & AI Automation | AI Adelaide`,
-      description: `Website design from $699, local SEO, and AI automation for ${suburb.name} small businesses. Adelaide-based, no lock-in.`,
+      title: ogTitle,
+      description,
       images: [
         {
           url: ogImageUrl,
@@ -151,58 +161,27 @@ export default function SuburbPage({ params }: SuburbPageProps) {
         }}
       />
 
-      {/* ── LocalBusiness Schema ──────────────────────────── */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: siteConfig.name,
-            url: `${siteConfig.url}/${suburb.slug}`,
-            description: suburb.intro,
-            telephone: siteConfig.phoneHref?.replace("tel:", ""),
-            email: siteConfig.email,
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "5 Peel St",
-              addressLocality: "Adelaide",
-              addressRegion: "SA",
-              postalCode: "5000",
-              addressCountry: "AU",
-            },
-            areaServed: {
-              "@type": "AdministrativeArea",
-              name: `${suburb.name}, SA`,
-            },
-            serviceType: ["AI Automation", "AI Receptionist", "SEO"],
-          }),
-        }}
-      />
-
       {/* ── Service Schema ────────────────────────────────── */}
+      {/* T4 (2026-07-13): removed the page-level LocalBusiness block (the ONE
+          business entity lives in app/layout.tsx as @id .../#organization) and
+          the dead "$99" Service offer (no such tier; prices come from PRICING).
+          The Service now references the root org by @id instead of embedding a
+          second business. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            name: `AI Automation for ${suburb.name} Businesses`,
+            name: `Web Design, SEO & AI Automation for ${suburb.name} Businesses`,
             provider: {
-              "@type": "LocalBusiness",
-              name: siteConfig.name,
-              url: siteConfig.url,
+              "@id": "https://aiadelaide.com.au/#organization",
             },
             areaServed: {
               "@type": "AdministrativeArea",
               name: `${suburb.name}, SA`,
             },
-            description: `Missed-call capture, quote follow-up, 24/7 AI receptionist and admin automation for tradies and small businesses in ${suburb.name}. Adelaide-based, 2-5 day setup.`,
-            offers: {
-              "@type": "Offer",
-              price: "99.00",
-              priceCurrency: "AUD",
-            },
+            description: `Website design, local SEO, missed-call capture and 24/7 AI receptionist for tradies and small businesses in ${suburb.name}. Adelaide-based, no lock-in.`,
           }),
         }}
       />

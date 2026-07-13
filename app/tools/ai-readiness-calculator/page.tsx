@@ -1,8 +1,10 @@
 'use client';
 
-import { FormEvent, useMemo, useState } from 'react';
+import { FormEvent, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { READINESS_QUESTIONS, scoreAnswers } from './questions';
+import { track } from '@/lib/track';
+import { getAttribution } from '@/lib/attribution';
 
 type Answers = Record<string, string>;
 
@@ -56,6 +58,15 @@ export default function AIReadinessCalculatorPage() {
   const [submitError, setSubmitError] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submittedEmail, setSubmittedEmail] = useState('');
+  const startedRef = useRef(false);
+
+  const recordAnswer = (questionId: string, value: string) => {
+    if (!startedRef.current) {
+      startedRef.current = true;
+      track('audit_start');
+    }
+    setAnswers((prev) => ({ ...prev, [questionId]: value }));
+  };
 
   const totalQuestions = READINESS_QUESTIONS.length;
   const currentQuestion = READINESS_QUESTIONS[step];
@@ -90,6 +101,7 @@ export default function AIReadinessCalculatorPage() {
           score: result.score,
           rawScore: result.rawScore,
           tier: result.tier.key,
+          attribution: getAttribution(),
         }),
       });
 
@@ -99,6 +111,7 @@ export default function AIReadinessCalculatorPage() {
         throw new Error(payload.error || 'Could not save your details. Please try again.');
       }
 
+      track('audit_complete', { tier: result.tier.key, score: result.score });
       setSubmitSuccess(true);
       setSubmittedEmail(leadForm.email);
       setLeadForm(initialLeadForm);
@@ -220,7 +233,7 @@ export default function AIReadinessCalculatorPage() {
                           <button
                             key={option.value}
                             type="button"
-                            onClick={() => setAnswers((prev) => ({ ...prev, [currentQuestion.id]: option.value }))}
+                            onClick={() => recordAnswer(currentQuestion.id, option.value)}
                             className={`group w-full rounded-2xl border px-4 py-4 text-left transition duration-200 sm:px-5 ${
                               active
                                 ? 'border-[#8ddfce] bg-[#ecfffb] shadow-[0_0_0_1px_rgba(94,242,214,0.2),0_16px_40px_rgba(94,242,214,0.12)]'

@@ -57,6 +57,7 @@ export default function NewDawn() {
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/contact#send-message"
+              data-track="quote_newdawn"
               className="group inline-flex items-center gap-2 rounded-full bg-[#1D1D1F] px-9 py-4 text-[17px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(20,20,19,0.35)]"
             >
               Start your first day
@@ -64,6 +65,7 @@ export default function NewDawn() {
             </Link>
             <a
               href="tel:+61871009788"
+              data-track="tel_newdawn"
               className="inline-flex items-center gap-2.5 rounded-full border border-[#1D1D1F]/25 bg-white/60 px-9 py-4 text-[17px] font-semibold text-[#1D1D1F] backdrop-blur transition hover:bg-white/90"
             >
               <span className="relative flex h-2.5 w-2.5" aria-hidden>

@@ -19,6 +19,7 @@ export default function DemoLine() {
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href="tel:+61871009788"
+            data-track="tel_demo_line"
             className="inline-flex items-center justify-center rounded-xl bg-slate-950 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-slate-800 active:scale-[0.98]"
           >
             Call Demo Line Now →

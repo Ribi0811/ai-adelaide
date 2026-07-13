@@ -31,6 +31,7 @@ export default function StickyBar() {
         <p className="text-[14px] font-medium text-[#1D1D1F] sm:hidden">From $699</p>
         <Link
           href="/contact#send-message"
+          data-track="quote_sticky"
           className="rounded-full bg-[#0E8C74] px-5 py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#0C7A65]"
         >
           Get a quote

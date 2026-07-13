@@ -49,7 +49,7 @@ export default function DuskCatch() {
           <p className="mt-4 max-w-md text-[16px] leading-relaxed text-white/60">
             Eight seconds after the ring-out, your AI texts them back. By
             dessert, tomorrow&apos;s 9am is booked. Hear it yourself —{" "}
-            <a href="tel:+61871009788" className="font-semibold text-[#5EF2D6] hover:opacity-80">
+            <a href="tel:+61871009788" data-track="tel_demo_dusk" className="font-semibold text-[#5EF2D6] hover:opacity-80">
               call (08) 7100 9788
             </a>
             , our AI answers right now.

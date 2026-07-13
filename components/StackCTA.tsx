@@ -43,7 +43,7 @@ export default function StackCTA({ variant, className = "" }: StackCTAProps) {
           {website}, add {seo}, and switch on {automation}. Pick one, or stack all three — no lock-in.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Link href="/contact" className="btn-primary px-8 py-4">
+          <Link href="/contact" data-track="quote_stackcta" className="btn-primary px-8 py-4">
             Get a Fixed Quote <span aria-hidden>→</span>
           </Link>
           <Link href="/website-pricing" className="btn-secondary px-8 py-4">

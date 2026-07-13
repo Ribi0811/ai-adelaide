@@ -1,9 +1,54 @@
 # Opus Sprint Brief — Q1–Q5 Implementation (2026-07-13)
 
+> ## CODEX REVIEW OVERRIDE — READ BEFORE IMPLEMENTING
+>
+> **Added 2026-07-13 after a repo, live-site, API-route, and deployment review.**
+> This override is part of the brief, not optional commentary. Where an older
+> instruction below conflicts with this block or a `CODEX REVIEW` note, follow
+> the review instruction.
+>
+> 1. **T3 is stale and must not be executed as originally written.** The
+>    `adelaide-seo-for-tradies` post is absent from `data/posts.ts`, was
+>    deliberately consolidated into `/seo-for-tradies-adelaide`, and the live
+>    blog URL returns a 308 to that landing page. The GSC result for the old URL
+>    overlaps the migration window and is not proof that a separate post still
+>    exists. Do not recreate the post, remove the redirect, or reverse the
+>    consolidation. Execute the revised T3 instructions below against the
+>    surviving landing page only.
+> 2. **Local JSON files are not durable production storage on Vercel.** Vercel
+>    Functions have a read-only deployment filesystem apart from temporary
+>    `/tmp` storage. You may include attribution in Telegram/email notifications
+>    and in request payloads, but do not claim `data/leads.json` or
+>    `data/contact-leads.json` is durable production persistence. Durable CRM,
+>    database, or Google Sheets storage remains open until Ivan selects the
+>    destination. Do not silently introduce a new paid external service.
+> 3. **Analytics consent is part of T1.** The current cookie banner's Decline
+>    action only hides the banner; GA still loads unconditionally. Do not add a
+>    larger event layer that continues tracking after decline. Implement
+>    consent-aware GA loading or Google Consent Mode with analytics denied by
+>    default. Verify both Accept and Decline behaviour.
+> 4. **Q1 may not be struck as fully complete.** This sprint can complete event
+>    tracking and attribution delivery, but qualified/won/revenue lifecycle
+>    tracking needs durable storage and an operating workflow. Leave that
+>    sub-item open unless it is genuinely implemented and verified.
+> 5. **T4 touches an existing landmine.** `app/[suburb]/page.tsx` currently has
+>    page-level LocalBusiness markup and a hardcoded `$99` Service offer. Both
+>    conflict with this brief's rules. The revised T4 instructions below make
+>    that cleanup mandatory while the template is already being edited.
+> 6. **T5 is mostly verification, not a fresh rebuild.** Several requested links
+>    already exist. Make only the remaining surgical changes listed in the
+>    revised T5 note; do not churn working content to manufacture a diff.
+>
+> **Current reviewed base:** local `main` at `7dde44b`, three commits ahead of
+> `origin/main`. Record the actual base again before starting because Ivan-only
+> push/deploy rules still apply.
+
 **You are implementing the current queue from `docs/AGENT-HANDOFF.md` (Q1–Q5).**
-Read `CLAUDE.md` first (standing orders). This brief is self-contained: exact
-files, field names, and acceptance checks are below — verified against the
-repo at HEAD `fa697e7` on 2026-07-13.
+Read `CLAUDE.md` first (standing orders). This brief contains exact files,
+field names, and acceptance checks, plus the Codex review corrections above.
+The original draft was verified against `fa697e7`; the reviewed brief itself is
+at `7dde44b`. Run `git status --short --branch` and record the actual base before
+making changes.
 
 ## Rules (non-negotiable)
 
@@ -15,10 +60,11 @@ repo at HEAD `fa697e7` on 2026-07-13.
    needed: `<!-- HUMAN INPUT NEEDED: ... -->` + log in `docs/claims-to-verify.md`.
 4. Prices come ONLY from `PRICING` in `lib/constants.ts`.
 5. **Do-not-touch:** the answering/receptionist URLs and titles (frozen to
-   ~2026-09-15); the tradie BLOG post's slug/URL (it ranks 3.2 — enrich it,
-   never redirect it); one FAQPage per URL matching visible Q&As; LocalBusiness
-   lives in `app/layout.tsx` only; the sandbox rule — if you can't run
-   `next build`, say so, don't claim build-verified.
+   ~2026-09-15); the existing `/blog/adelaide-seo-for-tradies` →
+   `/seo-for-tradies-adelaide` redirect and the surviving landing page's URL,
+   canonical, title, and H1 intent; one FAQPage per URL matching visible Q&As;
+   LocalBusiness lives in `app/layout.tsx` only; the sandbox rule — if you
+   can't run `next build`, say so, don't claim build-verified.
 6. When you finish a task: strike it in `docs/AGENT-HANDOFF.md`, re-date its
    header, and append a dated entry to `CHANGELOG-SEO-WORK.md`. Work without
    artifacts in THIS repo doesn't count.
@@ -29,6 +75,28 @@ repo at HEAD `fa697e7` on 2026-07-13.
 
 **Goal:** every meaningful action fires a GA4 event, and every lead arrives
 with its first-touch source attached.
+
+> **CODEX REVIEW — REQUIRED SCOPE CORRECTION:** Complete the event and
+> attribution-delivery work in this task, but do not represent local JSON writes
+> as durable production lead storage. Add analytics consent handling before the
+> event delegate. The qualified/won/revenue CRM lifecycle remains open unless a
+> durable destination is explicitly selected and implemented.
+
+**1-pre. Make analytics consent real before adding events.**
+- `app/layout.tsx` currently loads GA whenever
+  `NEXT_PUBLIC_GA_MEASUREMENT_ID` exists, before and regardless of the visitor's
+  cookie choice.
+- `components/CookieConsent.tsx` currently stores Accept/Decline but does not
+  enable or disable GA.
+- Implement one coherent approach:
+  1. Google Consent Mode with analytics storage denied by default and updated
+     only after Accept; or
+  2. Load/configure GA only after Accept and keep it unloaded after Decline.
+- Preserve a prior choice on subsequent visits.
+- The tracking helper must safely no-op whenever analytics is unavailable or
+  declined.
+- Do not make a legal-compliance claim in the changelog; report only the
+  behaviour that was implemented and tested.
 
 **1a. Tracking helper + click delegate.**
 - Create `lib/track.ts`:
@@ -90,15 +158,32 @@ with its first-touch source attached.
   business, service, message, source).
 - `app/api/contact-submit/route.ts` (locate it; contact form posts there):
   append the attribution fields to the Telegram message + email body so Ivan
-  sees source with every enquiry. Also extend `app/api/leads/route.ts`
-  `LeadPayload` with optional `attribution` and persist it (same
-  `data/leads.json` write path) and send it from the audit-quiz submitter
-  (find the fetch to `/api/leads` under `app/audit/` or `lib/audit/`).
+  sees source with every enquiry. Extend `ContactPayload` and the typed lead
+  objects rather than accepting an unvalidated arbitrary object.
+- Also extend `app/api/leads/route.ts` `LeadPayload` with optional attribution
+  and send it from the actual submitter at
+  `app/tools/ai-readiness-calculator/page.tsx`.
+- **Production-storage warning:** `app/api/contact-submit/route.ts` writes
+  `data/contact-leads.json`, and `app/api/leads/route.ts` writes
+  `data/leads.json`. These writes are local-development conveniences only and
+  are not durable on Vercel. Do not claim otherwise. For this sprint:
+  - Ensure contact-form attribution reaches Telegram and email even when the
+    local file write fails.
+  - Do not make the audit form depend on a filesystem write to report success
+    in production. Route its notification through an existing durable delivery
+    channel, or document it as blocked pending Ivan's storage decision.
+  - Leave qualified/won/revenue lifecycle tracking open in the handoff unless a
+    durable store and update workflow are genuinely implemented.
+- Add the handoff's missing `audit_start` and `audit_complete` events to the AI
+  readiness calculator. Fire `audit_start` once when the first answer is
+  recorded and `audit_complete` only after a successful submission.
 
-**Accept:** clicking nav tel on localhost logs a `tel_nav` gtag call (verify
-via `window.dataLayer` in console — note in changelog you verified manually);
-a submitted test form shows attribution in the Telegram/email payload code
-path; tsc + both checkers clean.
+**Accept:** after Accept, clicking nav tel on localhost logs a `tel_nav` gtag
+call (verify via `window.dataLayer` in console); after Decline, the same click
+does not send an analytics event; a submitted test form shows attribution in
+the Telegram/email payload code path; audit start/complete are instrumented;
+tsc + both checkers clean. Document that durable qualified/won/revenue tracking
+remains open unless it was actually completed.
 
 ---
 
@@ -127,42 +212,54 @@ fields on localhost.
 
 ## T3 — Tradie SEO conversion pathway (handoff Q3 — highest SEO value)
 
-The blog post `adelaide-seo-for-tradies` in `data/posts.ts` ranks 3.2 for
-"seo for tradies adelaide". Make it convert; differentiate the landing page.
-**Do not change its slug. Do not redirect anything.**
+> **CODEX REVIEW — ORIGINAL T3 BELOW IS SUPERSEDED.** The old blog post does
+> not exist. It was retired during Phase 5, and the live URL redirects to the
+> surviving landing page. Do not recreate it, change that redirect, or add a
+> second page targeting the same intent. The 3.2 GSC position is migration-
+> window evidence, not a current instruction to reverse the consolidation.
 
-**3a. Post enrichment (edit its `content` HTML string in `data/posts.ts`):**
-- After the first `</p>`, insert an early CTA block (pure HTML, styled like
-  existing in-post CTAs — grep `class="not-prose` or similar in posts for the
-  house pattern; if none exists, a simple bordered `<div>` with a link is fine):
-  link text "Want this done for you? SEO for tradies from $399/mo ›" →
-  `/seo-for-tradies-adelaide`.
-- In-body links (natural anchors, one each): `/seo-for-tradies-adelaide`,
-  `/websites-for-plumbers-adelaide`, `/websites-for-electricians-adelaide`,
-  `/marion`, `/reynella`.
-- Before the final heading, insert:
-  `<!-- HUMAN INPUT NEEDED: one real tradie result (name, suburb, baseline → outcome, timeframe) -->`
-- Bump the post's `date` to today.
+**Revised goal:** improve conversion on the surviving
+`/seo-for-tradies-adelaide` page without changing its URL, canonical, title,
+H1 intent, or the retired-blog redirect.
 
-**3b. Inline lead capture on posts.** Extend `interface Post` in
-`data/posts.ts` with optional `cta?: "tradie-seo"`. In
-`app/blog/[slug]/page.tsx`, when `post.cta === "tradie-seo"`, render (between
-the content div and the author box) a new `components/BlogLeadCTA.tsx`
-(`"use client"`): heading "Get a free tradie visibility review", one
-name + phone/email field pair, POSTs to `/api/contact-submit` with
-`service: "seo"`, `message: "Free tradie visibility review request (blog)"`,
-plus `getAttribution()`. Fire `track("blog_lead_submit", { slug })` on
-success. Set `cta: "tradie-seo"` on the tradie post only.
+**3a. Verify the migration before editing.**
+- Confirm `data/posts.ts` has no `adelaide-seo-for-tradies` entry.
+- Confirm `next.config.mjs` maps `/blog/adelaide-seo-for-tradies` directly to
+  `/seo-for-tradies-adelaide` with one hop.
+- Confirm no internal link points at the retired blog URL.
+- Log those checks; do not undo them.
 
-**3c. Landing page differentiation** (`app/seo-for-tradies-adelaide/page.tsx`):
-verify it leads with buying intent — pricing tiers from `PRICING.seo`, "what
-you get each month" deliverables list, onboarding steps, FAQ. Add any of those
-that are missing; do NOT copy paragraphs from the blog post. Cross-link: post ↔
-landing page both directions (post links done in 3a; landing page gets one
-"prefer the free guide?" link to the post).
+**3b. Landing-page conversion path.**
+- Audit `app/seo-for-tradies-adelaide/page.tsx` for an unmistakable CTA in the
+  first viewport on mobile, pricing sourced from `PRICING.seo`, monthly
+  deliverables, onboarding steps, FAQ, and a clear next action.
+- Add only what is missing; do not rewrite ranking copy to create work.
+- Add a focused inline lead component on this landing page, not the blog
+  template. Suggested heading: "Get a free tradie visibility review".
+- Collect name plus at least one contact method, POST to
+  `/api/contact-submit` with `service: "seo"`, a clear source/message, and
+  `getAttribution()`.
+- Fire `track("tradie_lead_submit", { page: "seo-for-tradies-adelaide" })`
+  only after a successful response.
+- The endpoint must enforce its existing email-or-phone requirement and must
+  include attribution in Telegram/email per T1.
 
-**Accept:** post renders with early CTA + inline form on localhost; check-meta
-clean; no changes to any URL.
+**3c. Proof placeholder.**
+- Add one clearly marked source comment near the appropriate proof/case-study
+  area:
+  `<!-- HUMAN INPUT NEEDED: one real tradie result (name, suburb, baseline, outcome, timeframe, permission) -->`
+- Do not add invented client copy or show the placeholder to visitors.
+- Add natural internal links to the plumber and electrician website pages and
+  to Marion and Reynella only where they help the reader. Do not force exact-
+  match anchors.
+- Preserve the original landing-page publication facts. If the page gains
+  modified-date handling, use a distinct updated value; never rewrite an old
+  `datePublished` merely to make content look new.
+
+**Accept:** the retired blog URL still resolves in one redirect to the landing
+page; the landing page renders the focused lead form and existing commercial
+content on localhost; a successful form response fires the event; no URL,
+canonical, title, or H1-intent changes; check-meta and check-links clean.
 
 ---
 
@@ -190,48 +287,77 @@ template):
   design/designer" + $699 + 48 hours + a nearby suburb.
 - Template (`app/[suburb]/page.tsx`): confirm a quote CTA is visible above the
   fold on mobile; if not, add one under the hero line.
+- **Mandatory cleanup while this template is open:**
+  - Remove the page-level `LocalBusiness` JSON-LD block. The root layout owns
+    the one business entity for the site.
+  - In the `Service` JSON-LD, reference the root organisation/business by its
+    existing `@id` rather than embedding a second `LocalBusiness` object.
+  - Remove the hardcoded `price: "99.00"`. Either omit the offer price or add a
+    suitable numeric field to the central `PRICING` model and source it there;
+    do not parse a display string and do not introduce another price literal.
+  - Grep the shared suburb template for outcome claims such as “3–5 extra jobs
+    per week” or “recover investment within 30 days.” Do not expand those
+    claims; log them in `docs/claims-to-verify.md` if not already present.
 - Add a "Popular areas" links block (6 links to these suburbs) on
   `app/website-design-adelaide/page.tsx` — these pages currently get their
-  only inbound links from the footer/locations.
+  strongest hub links from the footer/locations. Verify actual inbound links
+  before describing them as their only links.
 - Do NOT create new suburbs. Do NOT touch the other 28 entries' titles.
 
 **Accept:** check-meta clean (no dupes — six unique titles/descriptions);
-`/marion` renders new title on localhost; links present on
-/website-design-adelaide.
+`/marion` renders the new title on localhost; links present on
+`/website-design-adelaide`; rendered suburb HTML has no page-level duplicate
+LocalBusiness and no `$99` Service offer; tsc and check-links clean.
 
 ---
 
 ## T5 — `/local-seo-adelaide` intent ownership (handoff Q5)
 
 Small and surgical — no merges, no redirects:
-1. `app/seo/page.tsx`: retitle toward the broad term, e.g.
+1. `app/seo/page.tsx`: it is already partially differentiated, but its metadata
+   still contains “Local SEO Services.” Retitle toward the broad term, e.g.
    `SEO Services Adelaide — Plans From $399/mo` (verify ≤60 rendered; keep
    description keyworded to "SEO services Adelaide" not "local seo").
-2. In `/seo`'s "SEO services by focus" spoke block, make the
-   `/local-seo-adelaide` anchor text exactly "Local SEO Adelaide" and add one
-   in-prose contextual link higher on the page ("for suburb-level Google
-   rankings, see our local SEO Adelaide service").
-3. `app/local-seo-adelaide/page.tsx`: confirm title leads with
-   "Local SEO Adelaide"; confirm it links back to `/seo` as the hub.
-4. Blog: in the `how-much-does-seo-cost-adelaide` post, point one existing
-   "local SEO" mention at `/local-seo-adelaide` (currently likely `/seo`).
+2. The `/seo` "SEO services by focus" block already uses exact anchor text
+   “Local SEO Adelaide.” Preserve it. Add one natural in-prose contextual link
+   higher on the page only if an appropriate sentence exists.
+3. `app/local-seo-adelaide/page.tsx` already leads with “Local SEO Adelaide”
+   and already links back to `/seo`. Verify and preserve; do not rewrite it to
+   manufacture a diff.
+4. The `how-much-does-seo-cost-adelaide` post already links multiple “local
+   SEO” mentions to `/local-seo-adelaide`. Verify and preserve; no edit is
+   required unless a contradictory link is found.
+5. Review `/seo`'s Service schema name and breadcrumb labels, which may still
+   say “Local SEO Adelaide.” Align those with the broad SEO-services role if
+   doing so remains accurate and matches visible page intent.
 
 **Accept:** grep shows ≥3 sitewide anchors containing "Local SEO Adelaide" →
-`/local-seo-adelaide`; check-meta clean; both pages' H1s unchanged in intent.
+`/local-seo-adelaide`; `/seo` metadata/schema/breadcrumb language owns broad
+SEO-services intent; check-meta clean; both pages' H1s unchanged in intent; no
+merge or redirect.
 
 ---
 
 ## T6 — Bookkeeping (close the loop)
 
-- Strike Q1/Q2/Q3/Q4/Q5 items you completed in `docs/AGENT-HANDOFF.md`,
-  re-date its header, append a dated `CHANGELOG-SEO-WORK.md` entry
-  (what/where/verification), and list anything you could NOT verify
-  (e.g. real gtag beacons) for Ivan's localhost pass.
+- Strike only Q1/Q2/Q3/Q4/Q5 items or sub-items you actually completed in
+  `docs/AGENT-HANDOFF.md`. In particular, do not strike the qualified/won/
+  revenue lifecycle or durable lead-storage requirement merely because GA4
+  events and notification attribution are working.
+- Re-date the handoff header and append a dated `CHANGELOG-SEO-WORK.md` entry
+  describing what changed, what was deliberately preserved, and what remains
+  open.
+- Record that T3 was executed against the surviving landing page and that the
+  retired-blog redirect was preserved.
+- Record the production storage limitation and Ivan decision needed if no
+  durable CRM/database/Sheet was selected.
+- List anything you could not verify (for example real GA beacons or external
+  notification delivery) for Ivan's localhost or production pass.
 
 ## Ivan's gate after your commits
 `npm run build` + localhost click-through (`/contact?business=Test`, tradie
-post form, `/marion`, `/seo`) → push → GSC request-indexing on: the tradie
-post, `/seo-for-tradies-adelaide`, the six suburbs, `/seo`,
+landing-page form, `/marion`, `/seo`) → push → GSC request-indexing on:
+`/seo-for-tradies-adelaide`, the six suburbs, `/seo`,
 `/local-seo-adelaide`.
 
 ## Explicitly out of scope for this sprint

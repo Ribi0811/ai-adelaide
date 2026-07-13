@@ -1,6 +1,8 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
+import { track } from "@/lib/track";
+import { getAttribution } from "@/lib/attribution";
 
 type FormState = {
   name: string;
@@ -26,6 +28,30 @@ export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const startedRef = useRef(false);
+
+  // T2: prefill business + service from ?business / ?service query params
+  // (used by the homepage "build my website" personal CTA). Read from the URL
+  // directly — useSearchParams would force a Suspense boundary on the server
+  // page that renders this form.
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    const business = p.get("business");
+    const service = p.get("service");
+    if (business || service) {
+      setForm((prev) => ({
+        ...prev,
+        business: business ?? prev.business,
+        service: service ?? prev.service,
+      }));
+    }
+  }, []);
+
+  function markStarted() {
+    if (startedRef.current) return;
+    startedRef.current = true;
+    track("form_start");
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -51,6 +77,7 @@ export default function ContactForm() {
           service: form.service.trim(),
           message: form.message.trim(),
           source: typeof window !== "undefined" ? window.location.pathname : "contact form",
+          attribution: getAttribution(),
         }),
       });
 
@@ -81,6 +108,7 @@ export default function ContactForm() {
         console.warn(`Lead saved, but ${channelErrors.join(" and ")} notification(s) failed.`);
       }
 
+      track("form_submit", { service: form.service || "unspecified" });
       setStatus("success");
       setForm(initialState);
     } catch (error) {
@@ -103,7 +131,7 @@ export default function ContactForm() {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} onFocusCapture={markStarted} className="space-y-4">
         <input
           type="text"
           name="website"

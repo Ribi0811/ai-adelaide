@@ -7,6 +7,18 @@ interface CookieConsentProps {
   onDecline?: () => void;
 }
 
+// Bridge the banner to Google Consent Mode (set up default-denied in
+// app/layout.tsx). Accept grants analytics storage; Decline keeps it denied.
+function updateAnalyticsConsent(granted: boolean) {
+  if (typeof window === 'undefined') return;
+  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', {
+      analytics_storage: granted ? 'granted' : 'denied',
+    });
+  }
+}
+
 export default function CookieConsent({ onAccept, onDecline }: CookieConsentProps) {
   const [showConsent, setShowConsent] = useState(false);
 
@@ -24,12 +36,14 @@ export default function CookieConsent({ onAccept, onDecline }: CookieConsentProp
 
   const handleAccept = () => {
     localStorage.setItem('cookie-consent', 'accepted');
+    updateAnalyticsConsent(true);
     setShowConsent(false);
     onAccept?.();
   };
 
   const handleDecline = () => {
     localStorage.setItem('cookie-consent', 'declined');
+    updateAnalyticsConsent(false);
     setShowConsent(false);
     onDecline?.();
   };

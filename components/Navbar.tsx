@@ -123,12 +123,14 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <a
               href={siteConfig.phoneHref}
+              data-track="tel_nav"
               className={`hidden font-mono text-[13px] font-semibold transition-colors duration-500 lg:block ${sub}`}
             >
               {siteConfig.phone}
             </a>
             <Link
               href="/contact#send-message"
+              data-track="quote_nav"
               className="hidden rounded-full bg-[#0E8C74] px-5 py-2.5 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(14,140,116,0.4)] sm:block"
             >
               Get a quote
@@ -188,6 +190,7 @@ export default function Navbar() {
           <div className="mt-auto space-y-3 pt-8">
             <Link
               href="/contact#send-message"
+              data-track="quote_nav"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center rounded-full bg-[#0E8C74] px-6 py-4 text-[16px] font-semibold text-white"
             >
@@ -195,6 +198,7 @@ export default function Navbar() {
             </Link>
             <a
               href={siteConfig.phoneHref}
+              data-track="tel_nav"
               className="flex items-center justify-center gap-2 rounded-full border border-black/[0.12] px-6 py-4 text-[16px] font-semibold text-[#1D1D1F]"
             >
               <span className="relative flex h-2 w-2" aria-hidden>

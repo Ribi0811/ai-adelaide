@@ -13,6 +13,7 @@ import MockSite, {
   type Trade,
 } from "@/components/home-v3/MockSite";
 import TimeStamp from "./TimeStamp";
+import { track } from "@/lib/track";
 
 export default function BuildYours() {
   const [data, setData] = useState<Trade>({
@@ -88,9 +89,13 @@ export default function BuildYours() {
   function buildMine(e: React.FormEvent) {
     e.preventDefault();
     const name = bizName.trim() || "Your Business";
+    track("preview_website", { trade: kind });
     setIsCustom(true);
     run({ ...BASE[kind], domain: slugify(name), biz: name });
   }
+
+  // T2: carry the visitor's business name + service into the contact form.
+  const closerHref = `/contact?business=${encodeURIComponent(data.biz)}&service=website#send-message`;
 
   return (
     <section className="relative overflow-hidden bg-[#F3DDC2] px-6 py-24 md:py-32">
@@ -170,7 +175,8 @@ export default function BuildYours() {
             aria-hidden={!(isCustom && step >= STEPS.done)}
           >
             <Link
-              href="/contact#send-message"
+              href={closerHref}
+              onClick={() => track("personal_closer_click", { trade: kind })}
               className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white shadow-[0_12px_32px_rgba(14,140,116,0.4)] transition-all hover:-translate-y-0.5"
             >
               Want this live by next week? Get a quote for {data.biz}

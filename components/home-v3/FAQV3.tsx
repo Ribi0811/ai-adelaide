@@ -62,7 +62,7 @@ export default function FAQV3() {
           <div className="overflow-hidden rounded-[28px] border border-black/[0.06] bg-white shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
             {faqs.map((f, i) => (
               <details key={f.q} className="group" open={i === 0}>
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-7 py-5 text-[17px] font-semibold text-[#1D1D1F] transition hover:bg-black/[0.02] [&::-webkit-details-marker]:hidden">
+                <summary data-track="faq_open" className="flex cursor-pointer list-none items-center justify-between gap-4 px-7 py-5 text-[17px] font-semibold text-[#1D1D1F] transition hover:bg-black/[0.02] [&::-webkit-details-marker]:hidden">
                   {f.q}
                   <span
                     className="shrink-0 text-xl font-normal text-[#0E8C74] transition-transform duration-300 group-open:rotate-45"

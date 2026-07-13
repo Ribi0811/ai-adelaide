@@ -25,7 +25,7 @@ async function getSmtpConfig() {
   return JSON.parse(raw);
 }
 
-async function sendContactEmail(lead: {
+type LeadFields = {
   name: string;
   email: string;
   phone: string;
@@ -33,7 +33,10 @@ async function sendContactEmail(lead: {
   service: string;
   message: string;
   source: string;
-}): Promise<{ ok: boolean; error?: string }> {
+  attribution: Attribution | null;
+};
+
+async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?: string }> {
   let smtp;
   try {
     smtp = await getSmtpConfig();
@@ -62,6 +65,7 @@ async function sendContactEmail(lead: {
       `Business: ${lead.business || "—"}`,
       `Service: ${lead.service || "—"}`,
       `Source: ${lead.source || "contact form"}`,
+      `Attribution: ${attributionLine(lead.attribution)}`,
       "",
       "Message:",
       lead.message || "(no message)",
@@ -79,6 +83,7 @@ async function sendContactEmail(lead: {
           <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Business</td><td style="padding: 8px;">${lead.business || "—"}</td></tr>
           <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Service</td><td style="padding: 8px;">${lead.service || "—"}</td></tr>
           <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Source</td><td style="padding: 8px;">${lead.source || "contact form"}</td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Attribution</td><td style="padding: 8px;">${attributionLine(lead.attribution)}</td></tr>
         </table>
         <div style="margin-top: 24px; padding: 16px; background: #f1f5f9; border-radius: 8px;">
           <p style="margin: 0 0 8px 0; font-weight: bold; color: #475569;">Message:</p>
@@ -104,6 +109,15 @@ async function sendContactEmail(lead: {
   }
 }
 
+type Attribution = {
+  landing?: string;
+  referrer?: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  ts?: string;
+};
+
 type ContactPayload = {
   name?: string;
   email?: string;
@@ -112,21 +126,27 @@ type ContactPayload = {
   service?: string;
   message?: string;
   source?: string;
+  attribution?: Attribution | null;
 };
 
 function clean(v: string | undefined) {
   return v?.trim() || "";
 }
 
-async function notifyTelegram(lead: {
-  name: string;
-  email: string;
-  phone: string;
-  business: string;
-  service: string;
-  message: string;
-  source: string;
-}): Promise<{ ok: boolean; error?: string }> {
+// One-line human-readable attribution summary for notifications.
+function attributionLine(a: Attribution | null | undefined): string {
+  if (!a) return "—";
+  const bits = [
+    a.landing ? `landing ${a.landing}` : "",
+    a.referrer && a.referrer !== "direct" ? `ref ${a.referrer}` : a.referrer === "direct" ? "direct" : "",
+    a.utm_source ? `utm_source ${a.utm_source}` : "",
+    a.utm_medium ? `utm_medium ${a.utm_medium}` : "",
+    a.utm_campaign ? `utm_campaign ${a.utm_campaign}` : "",
+  ].filter(Boolean);
+  return bits.length ? bits.join(" · ") : "—";
+}
+
+async function notifyTelegram(lead: LeadFields): Promise<{ ok: boolean; error?: string }> {
   const text = [
     "🔔 *New Contact Form Lead — AI Adelaide*",
     "",
@@ -136,6 +156,7 @@ async function notifyTelegram(lead: {
     `*Business:* ${lead.business || "—"}`,
     `*Service:* ${lead.service || "—"}`,
     `*Source:* ${lead.source || "contact form"}`,
+    `*Attribution:* ${attributionLine(lead.attribution)}`,
     "",
     `*Message:*`,
     lead.message || "(no message)",
@@ -184,7 +205,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const lead = {
+  const lead: LeadFields = {
     name: clean(body.name),
     email: clean(body.email),
     phone: clean(body.phone),
@@ -192,6 +213,7 @@ export async function POST(req: NextRequest) {
     service: clean(body.service),
     message: clean(body.message),
     source: clean(body.source) || "contact form",
+    attribution: body.attribution ?? null,
   };
 
   if (!lead.email && !lead.phone) {

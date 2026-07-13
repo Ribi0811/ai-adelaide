@@ -101,6 +101,7 @@ export default function Footer() {
               </a>
               <a
                 href={siteConfig.phoneHref}
+                data-track="tel_footer"
                 className="block font-mono text-[13px] font-semibold text-[#1D1D1F] transition-colors hover:text-[#0E8C74]"
               >
                 {siteConfig.phone} — AI answers 24/7
@@ -110,6 +111,7 @@ export default function Footer() {
             <div className="mt-6 flex flex-wrap gap-2">
               <Link
                 href="/contact#send-message"
+                data-track="quote_footer"
                 className="rounded-full bg-[#0E8C74] px-5 py-2.5 text-[13px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(14,140,116,0.35)]"
               >
                 Get a quote

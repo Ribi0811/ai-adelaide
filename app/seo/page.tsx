@@ -4,13 +4,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  // Fixed 2026-07 (Phase 2 SEO audit): title previously duplicated
-  // /local-seo-adelaide's "Local SEO Adelaide" title almost verbatim. /seo
-  // owns the broader "SEO Adelaide" head term; /local-seo-adelaide owns the
-  // distinct "local seo" modifier — titles must stay differentiated.
-  title: "SEO Adelaide | Local SEO Services From $399/mo",
+  // /seo owns the broad "SEO services Adelaide" intent; /local-seo-adelaide
+  // owns the "local SEO Adelaide" modifier. T5 (2026-07-13) shifted this
+  // page's title/description/schema/breadcrumb off "Local SEO" so the two
+  // pages stop competing for the same query. Visible H1 intent unchanged.
+  title: "SEO Services Adelaide — Plans From $399/mo",
   description:
-    "SEO for Adelaide small businesses — local SEO, on-page, technical SEO, content, and link building. Suburb targeting, GBP, monthly reporting.",
+    "SEO services for Adelaide small businesses: on-page and technical SEO, content, link building, Google Business Profile, reporting. From $399/mo, no lock-in.",
   alternates: {
     canonical: "/seo",
   },
@@ -124,8 +124,8 @@ function ServiceJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Local SEO Adelaide",
-    serviceType: "Local SEO",
+    name: "SEO Services Adelaide",
+    serviceType: "Search Engine Optimization",
     provider: {
       "@type": "LocalBusiness",
       name: "AI Adelaide",
@@ -179,7 +179,7 @@ export default function SeoPage() {
         items={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
-          { label: "Local SEO Adelaide" },
+          { label: "SEO Services Adelaide" },
         ]}
       />
       <section className="max-w-container mx-auto px-6">

@@ -502,3 +502,55 @@ Nothing in this repo has been committed, pushed, or deployed — all P1–P4 wor
   "Do-not-touch (settled)" section; landmines extended (sample-size caution,
   never-redirect-a-ranking-page, work-must-exist-in-this-repo rule).
 - Report bannered as reference-not-roadmap; AGENTS.md dangling header filled.
+
+---
+
+## 2026-07-13 — Opus sprint T1–T5 (OPUS-BRIEF, Codex-reviewed)
+**Status: ✅ Complete (committed locally, NOT pushed) · commits 2a7b3f4 → 3b399b1**
+
+Base HEAD 7dde44b. Each commit: `tsc --noEmit`, `check-meta`, `check-links` all
+clean. `next build` NOT run (sandbox lacks arm64 SWC + registry) → Ivan's
+localhost gate. GA beacons + Telegram/email delivery NOT verifiable here (need
+env secrets + a browser) — flagged for Ivan.
+
+- **T1+T2 (`2a7b3f4`) — analytics, attribution, consent, prefill.**
+  - Consent Mode: `analytics_storage` denied by default in `app/layout.tsx`;
+    granted only after cookie Accept (`CookieConsent.tsx`); `lib/track.ts`
+    additionally no-ops unless the `accepted` flag is set → Decline = zero
+    analytics calls. New `lib/attribution.ts` (first-touch), `AnalyticsListener`
+    (click delegate for `data-track` on server components).
+  - Events: 14 `data-track` CTAs (nav/footer/demo/stackcta/sticky/dusk/newdawn +
+    FAQ opens) + direct `preview_website`, `personal_closer_click`,
+    `form_start`/`form_submit`, `audit_start`/`audit_complete`.
+  - Attribution flows into `contact-submit` (Telegram + email) and `leads`.
+  - **Bug fixed:** `/api/leads` (audit form) was write-only to `data/leads.json`
+    → 500 on Vercel's read-only FS, losing every audit lead. Now delivers via
+    Telegram first; JSON write is best-effort. Durable storage still OPEN.
+  - T2: `ContactForm` prefills `?business`/`?service`; BuildYours closer passes
+    them (`/contact?business=..&service=website#send-message`).
+- **T3 (`9663608`) — tradie landing conversion.** Verified the blog post is gone
+  and 301'd single-hop (redirect preserved). New `TradieLeadForm` on
+  `/seo-for-tradies-adelaide` → `contact-submit` service:seo + attribution +
+  `tradie_lead_submit`; above-fold CTA; links to plumber/electrician + Marion/
+  Reynella; HUMAN INPUT NEEDED proof placeholder. No URL/canonical/title/H1/
+  redirect change.
+- **T4 (`81c45df`) — six southern suburbs + schema landmine.** Optional
+  `seoTitle`/`seoDescription` (titles ≤60 via `title.absolute`, descriptions
+  140–160, unique) for marion/reynella/moana/seaford/morphett-vale/henley-beach.
+  Removed the page-level duplicate `LocalBusiness` and the dead `$99` `Service`
+  offer from `app/[suburb]/page.tsx`; Service now references the layout org by
+  `@id`. Popular-areas hub block on `/website-design-adelaide`. Suburb outcome
+  claims (3–5 jobs/wk, ROI in 30 days) re-logged in `claims-to-verify.md`,
+  unchanged.
+- **T5 (`3b399b1`) — /seo broad-term ownership.** `/seo` meta + Service schema
+  name + breadcrumb → "SEO Services Adelaide"; `/local-seo-adelaide` keeps the
+  local modifier. Visible H1 unchanged; no merge/redirect.
+
+**Deliberately preserved:** the answering/receptionist cluster (frozen), the
+tradie blog→landing redirect, all ranking copy.
+
+**Left OPEN (not struck in handoff):** durable lead storage (Ivan's CRM/DB/Sheet
+decision) and the qualified/won/revenue lifecycle. See handoff Q1.
+
+**For Ivan / Codex to verify:** consent Decline truly silences GA; audit form
+delivers in prod; suburb source shows one org + no `$99`; no event double-fire.

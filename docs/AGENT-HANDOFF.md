@@ -13,7 +13,7 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 
 ## Do-not-touch (settled — re-litigating these is a bug)
 
-- **Answering/receptionist cluster:** consolidated 11→6 (Jul), retitled (Tier 12). FREEZE until ~2026-09-15, then re-evaluate with fresh GSC. The Codex report's suggestion to re-merge it is explicitly declined.
+- **Answering/receptionist cluster:** consolidated 11→6 (Jul), retitled (Tier 12). FREEZE until ~2026-09-15, then re-evaluate with fresh GSC. The Codex report's suggestion to re-merge it is explicitly declined (and Codex concurred, 2026-07-13). During the freeze, MONITOR only: which URL Google selects per query, canonical/indexing status, per-page impressions, cross-ranking between intents, conversions. Content/CTA improvements on the surviving pages are allowed; URL and title churn is not.
 - `/seo-services-adelaide` is a 301 → `/seo` (its GSC impressions are pre-redirect echoes; it is NOT a live competing page).
 - The tradie **blog post** (`/blog/adelaide-seo-for-tradies`, pos 3.2) must NEVER be redirected into the landing page — it's the ranking asset. Differentiate roles instead (see Q3).
 - GBP exists (footer `share.google` link + schema `sameAs`) — the open question is review volume, not existence.

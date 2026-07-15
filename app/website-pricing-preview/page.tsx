@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 import Reveal from "@/components/home-v3/Reveal";
+import PricingLab from "./parts";
 
 // DESIGN PREVIEW — Phase D re-skin of /website-pricing in the v4 language.
 // RULE: every visible string below is copied VERBATIM from
@@ -242,110 +243,27 @@ export default function WebsitePricingPreview() {
         </div>
       </section>
 
-      {/* Tiers — white cards, single dark Business card */}
+      {/* The Pricing Lab — selectable tiers, add-on toggles, live receipt */}
       <section className="px-6 pb-20 md:pb-28">
-        <div className="mx-auto grid max-w-container gap-6 md:grid-cols-3">
-          {tiers.map((tier, i) => (
-            <Reveal key={tier.name} delay={i * 0.12}>
-              <div
-                className={`relative flex h-full flex-col rounded-[28px] p-8 ${
-                  tier.popular
-                    ? "bg-[#1D1D1F] text-white shadow-[0_30px_80px_rgba(29,29,31,0.35)]"
-                    : "border border-black/[0.06] bg-white text-[#1D1D1F] shadow-[0_2px_12px_rgba(29,29,31,0.05)]"
-                }`}
-              >
-                {tier.popular && (
-                  <span className="absolute -top-3.5 left-8 rounded-full bg-[#0E8C74] px-4 py-1 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
-                    Most Popular
-                  </span>
-                )}
-                <h2 className="text-[22px] font-semibold tracking-tight">{tier.name}</h2>
-                <p className={`mt-1 text-[13px] font-semibold ${tier.popular ? "text-white/50" : "text-[#98989D]"}`}>
-                  {tier.tagline}
-                </p>
-                <p className="mt-6 text-[44px] font-semibold leading-none tracking-[-0.02em] tabular-nums">
-                  {tier.price}
-                </p>
-                <p className={`mt-4 text-[15px] leading-relaxed ${tier.popular ? "text-white/70" : "text-[#6E6E73]"}`}>
-                  {tier.description}
-                </p>
-                <ul className="mt-7 flex-1 space-y-2.5">
-                  {tier.features.map((feature) => (
-                    <li key={feature} className={`flex items-start gap-2.5 text-[14px] ${tier.popular ? "text-white/80" : "text-[#424245]"}`}>
-                      <span className="mt-[3px] font-semibold text-[#0E8C74]">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                  {tier.notIncluded.map((item) => (
-                    <li key={item} className={`flex items-start gap-2.5 text-[14px] ${tier.popular ? "text-white/35" : "text-[#B4B4B9]"}`}>
-                      <span className="mt-[3px]">—</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className={`mt-7 border-t pt-5 ${tier.popular ? "border-white/10" : "border-black/[0.06]"}`}>
-                  <p className={`font-mono text-[10px] font-semibold uppercase tracking-[0.16em] ${tier.popular ? "text-white/40" : "text-[#98989D]"}`}>
-                    Best for
-                  </p>
-                  <p className={`mt-1.5 text-[13px] ${tier.popular ? "text-white/70" : "text-[#6E6E73]"}`}>
-                    {tier.bestFor}
-                  </p>
-                </div>
-                <Link
-                  href="/contact"
-                  data-track={`pricing_tier_${tier.name.toLowerCase()}`}
-                  className={`mt-7 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-[15px] font-semibold transition-all hover:-translate-y-0.5 ${
-                    tier.popular
-                      ? "bg-[#0E8C74] text-white hover:shadow-[0_12px_32px_rgba(14,140,116,0.45)]"
-                      : "border border-black/[0.12] text-[#1D1D1F] hover:border-black/30 hover:bg-black/[0.03]"
-                  }`}
-                >
-                  {tier.cta} <span aria-hidden>→</span>
-                </Link>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* Add-ons — gray strip */}
-      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
         <div className="mx-auto max-w-container">
           <Reveal>
-            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">01</p>
-            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
-              Add-Ons: SEO &amp; Automation
-            </h2>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
-              Your website is the foundation. Add SEO to get found on Google,
-              or automation to capture every lead. Mix and match — no lock-in.
-            </p>
-          </Reveal>
-          <div className="mt-10 grid gap-5 md:grid-cols-2">
-            {addons.map((addon, i) => (
-              <Reveal key={addon.name} delay={(i % 2) * 0.1}>
-                <div className="flex h-full flex-col rounded-[24px] bg-white p-7 shadow-[0_2px_12px_rgba(29,29,31,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(29,29,31,0.1)]">
-                  <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="text-[18px] font-semibold tracking-tight" style={{ color: INK }}>
-                      {addon.name}
-                    </h3>
-                    <p className="shrink-0 text-[22px] font-semibold tracking-tight" style={{ color: TEAL }}>
-                      {addon.price}
-                    </p>
-                  </div>
-                  <p className="mt-3 text-[14px] leading-relaxed text-[#6E6E73]">{addon.description}</p>
-                  <ul className="mt-5 space-y-2">
-                    {addon.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2.5 text-[14px] text-[#424245]">
-                        <span className="mt-[3px] font-semibold text-[#0E8C74]">✓</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <PricingLab
+              tiers={tiers}
+              addons={addons}
+              addonsHeading={
+                <div className="mt-14">
+                  <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">01</p>
+                  <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] text-[#1D1D1F] md:text-[40px]">
+                    Add-Ons: SEO &amp; Automation
+                  </h2>
+                  <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
+                    Your website is the foundation. Add SEO to get found on Google,
+                    or automation to capture every lead. Mix and match — no lock-in.
+                  </p>
                 </div>
-              </Reveal>
-            ))}
-          </div>
+              }
+            />
+          </Reveal>
         </div>
       </section>
 

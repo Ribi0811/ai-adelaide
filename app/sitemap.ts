@@ -19,7 +19,7 @@ const PAGE_DATES: Record<string, string> = {
   "/services": "2026-07-16",
   "/contact": "2026-07-16",
   "/audit": "2026-07-16",
-  "/website-cost-adelaide": "2026-06-23",
+  "/website-cost-adelaide": "2026-07-16",
   "/seo-vs-google-ads-adelaide": "2026-07-13",
   "/websites-for-hairdressers-adelaide": "2026-06-23",
   "/websites-for-cafes-adelaide": "2026-06-23",
@@ -57,7 +57,7 @@ const PAGE_DATES: Record<string, string> = {
   "/faq": "2026-06-20",
   "/lost-leads-calculator": "2026-07-11",
   "/privacy-policy": "2026-07-11",
-  "/terms": "2026-07-11",
+  "/terms": "2026-07-16",
   "/cookie-policy": "2026-07-11",
   "/blog": "2026-07-11",
   // Added to sitemap 2026-07-03 (previously live but missing from sitemap.ts)

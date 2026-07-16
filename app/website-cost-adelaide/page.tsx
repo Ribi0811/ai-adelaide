@@ -399,7 +399,10 @@ export default function WebsiteCostAdelaidePage() {
             ))}
           </div>
           <p className="mt-6 text-sm text-slate-500">
-            Full pricing, add-ons, and package comparisons on our{" "}
+            Prefer to spread the cost? There&apos;s also a monthly plan — $199
+            setup then $99/month with hosting, content edits and ongoing care
+            included, month-to-month with no lock-in. Full pricing, add-ons,
+            and package comparisons on our{" "}
             <Link href="/website-pricing" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
               website pricing page
             </Link>

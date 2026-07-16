@@ -77,8 +77,9 @@ export default function MiddayQuote() {
               You knock off. Your website doesn&apos;t.
             </h2>
             <p className="mt-4 max-w-xl text-[16px] leading-relaxed text-[#7A6A55]">
-              Live in 48 hours, owned outright from $699 — and built to keep
-              working long after you&apos;ve cracked the first cold one.{" "}
+              Live in 48 hours, owned outright from $699 — or from $99/mo
+              with hosting and care included — and built to keep working long
+              after you&apos;ve cracked the first cold one.{" "}
               <Link href="/website-design-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
                 Website design ›
               </Link>

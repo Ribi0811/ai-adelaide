@@ -27,7 +27,7 @@ export default async function Image({ params }: { params: { suburb: string } }) 
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            background: "#0A0F1C",
+            background: "#1D1D1F",
             color: "white",
             fontSize: 48,
           }}
@@ -49,8 +49,10 @@ export default async function Image({ params }: { params: { suburb: string } }) 
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          background:
-            "linear-gradient(135deg, #0A0F1C 0%, #1E3A5F 60%, #FF6B35 130%)",
+          // v4 language: ink canvas, teal dawn glow (was navy→orange).
+          backgroundColor: "#1D1D1F",
+          backgroundImage:
+            "radial-gradient(circle at 85% 0%, rgba(94,242,214,0.25) 0%, rgba(29,29,31,0) 55%)",
           color: "white",
           fontFamily: "system-ui, sans-serif",
         }}
@@ -59,10 +61,10 @@ export default async function Image({ params }: { params: { suburb: string } }) 
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div
             style={{
-              width: 56,
-              height: 56,
-              borderRadius: 12,
-              background: "linear-gradient(135deg, #5EF2D6 0%, #3B82F6 100%)",
+              width: 28,
+              height: 28,
+              borderRadius: 999,
+              background: "#5EF2D6",
               display: "flex",
             }}
           />
@@ -90,7 +92,7 @@ export default async function Image({ params }: { params: { suburb: string } }) 
               fontSize: 18,
               textTransform: "uppercase",
               letterSpacing: 3,
-              color: "#FF6B35",
+              color: "#5EF2D6",
               fontWeight: 600,
               display: "flex",
             }}
@@ -100,7 +102,7 @@ export default async function Image({ params }: { params: { suburb: string } }) 
           <div
             style={{
               fontSize: 58,
-              fontWeight: 800,
+              fontWeight: 600,
               lineHeight: 1.05,
               letterSpacing: -1.5,
               maxWidth: 980,

@@ -17,9 +17,10 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background:
-            "linear-gradient(135deg, #f0f7ff 0%, #f6fffd 45%, #eef4ff 100%)",
-          color: "#0f172a",
+          backgroundColor: "#FBFBFD",
+          backgroundImage:
+            "radial-gradient(circle at 88% 0%, rgba(94,242,214,0.35) 0%, rgba(251,251,253,0) 52%)",
+          color: "#1D1D1F",
           padding: "56px 64px",
           fontFamily: "Inter, Arial, sans-serif",
         }}
@@ -42,17 +43,17 @@ export default function OpenGraphImage() {
               width: 12,
               height: 12,
               borderRadius: 999,
-              background: "#14b8a6",
+              background: "#0E8C74",
             }}
           />
           AI Adelaide
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <p style={{ margin: 0, fontSize: 68, lineHeight: 1.04, fontWeight: 700 }}>
+          <p style={{ margin: 0, fontSize: 68, lineHeight: 1.04, fontWeight: 600, letterSpacing: -1.5 }}>
             Stop Losing Leads
           </p>
-          <p style={{ margin: 0, fontSize: 38, lineHeight: 1.15, color: "#334155" }}>
+          <p style={{ margin: 0, fontSize: 38, lineHeight: 1.15, color: "#6E6E73" }}>
             Websites, SEO & AI Automation for Adelaide Small Business
           </p>
         </div>

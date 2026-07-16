@@ -3,7 +3,9 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StackCTA from "@/components/StackCTA";
 import TradieLeadForm from "@/components/TradieLeadForm";
+import Reveal from "@/components/home-v3/Reveal";
 import { PRICING, siteConfig } from "@/lib/constants";
+import RankLadder from "./parts";
 
 export const metadata: Metadata = {
   // Phase 8 punch list P4: rendered title was 68 chars (max 60); description
@@ -133,6 +135,11 @@ const faqs = [
   },
 ];
 
+const INK = "#1D1D1F";
+
+const linkCls =
+  "font-semibold text-[#0E8C74] underline decoration-[#0E8C74]/30 underline-offset-4 transition hover:text-[#1D1D1F]";
+
 function ServiceJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -192,265 +199,466 @@ export default function SeoForTradiesAdelaidePage() {
       acceptedAnswer: { "@type": "Answer", text: f.answer },
     })),
   };
-
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="bg-[#FBFBFD]">
       <ServiceJsonLd />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Breadcrumbs
-        items={[
-          { label: "Home", href: "/" },
-          { label: "SEO", href: "/seo" },
-          { label: "SEO for Tradies Adelaide" },
-        ]}
-      />
-      <section className="max-w-container mx-auto px-6">
-        <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">The Tradie SEO Playbook</span>
-          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
-            SEO for Tradies Adelaide: How Plumbers, Electricians &amp; Builders Rank on Google
-          </h1>
-          <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Plumbers, electricians, builders, HVAC technicians, landscapers, and painters are all competing for the same searches — and the jobs go to whoever shows up first, not whoever does the best work. This is the exact framework we run for Adelaide tradies: Google Business Profile, suburb pages, schema, content, and the ongoing work that keeps you ranking.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#tradie-review" className="btn-primary px-6 py-3">
-              Get a free visibility review →
-            </a>
-            <a href="/contact#send-message" className="btn-secondary px-6 py-3">
-              Talk to us
-            </a>
+
+      {/* Hero + rank ladder */}
+      <section className="relative overflow-hidden px-6 pb-10 pt-32 md:pb-12 md:pt-44">
+        <div
+          className="pointer-events-none absolute left-1/2 top-[-260px] h-[520px] w-[860px] -translate-x-1/2 rounded-full bg-[#5EF2D6]/[0.15] blur-[120px]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-container">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "SEO", href: "/seo" },
+              { label: "SEO for Tradies Adelaide" },
+            ]}
+          />
+          <div className="mt-8 grid items-start gap-12 lg:grid-cols-[1.2fr_1fr]">
+            <div>
+              <p className="v3-rise font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">
+                The Tradie SEO Playbook
+              </p>
+              <h1
+                className="v3-rise mt-4 max-w-2xl text-[34px] font-semibold leading-[1.08] tracking-[-0.02em] [animation-delay:.12s] [text-wrap:balance] md:text-[48px]"
+                style={{ color: INK }}
+              >
+                SEO for Tradies Adelaide: How Plumbers, Electricians &amp; Builders Rank on Google
+              </h1>
+              <p className="v3-rise mt-6 max-w-xl text-[15px] leading-relaxed text-[#6E6E73] [animation-delay:.24s] md:text-[16px]">
+                Plumbers, electricians, builders, HVAC technicians,
+                landscapers, and painters are all competing for the same
+                searches — and the jobs go to whoever shows up first, not
+                whoever does the best work. This is the exact framework we run
+                for Adelaide tradies: Google Business Profile, suburb pages,
+                schema, content, and the ongoing work that keeps you ranking.
+              </p>
+              <div className="v3-rise mt-8 flex flex-wrap gap-3 [animation-delay:.36s]">
+                <a
+                  href="#tradie-review"
+                  data-track="quote_tradie_hero"
+                  className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
+                >
+                  Get a free visibility review
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                </a>
+                <a
+                  href="/contact#send-message"
+                  className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+                >
+                  Talk to us
+                </a>
+              </div>
+            </div>
+            <div className="v3-rise [animation-delay:.3s]">
+              <RankLadder />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Inline lead capture — kept high for mobile-first conversion (T3) */}
-      <section id="tradie-review" className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+      <section id="tradie-review" className="mx-auto max-w-container px-6 pb-16 md:pb-20">
         <TradieLeadForm />
       </section>
 
-      {/* Why it matters */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Why This Matters Now</h2>
-          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Adelaide homeowners often compare tradies through Google before they call. The map results, organic listings, reviews and website all shape that shortlist, so the job is to make your business easy to find and easy to trust across the whole results page.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            If your business doesn't show up in the top three for &quot;plumber [suburb]&quot; or &quot;electrician Adelaide&quot;, you're paying for clicks your competitors get for free. Word of mouth still matters — but in 2026 it's your website and your Google Business Profile that decide whether that word-of-mouth lead becomes your customer or someone else's.
-          </p>
+      {/* Why it matters — editorial */}
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <h2 className="text-[28px] font-semibold leading-tight tracking-[-0.02em] md:text-[36px]" style={{ color: INK }}>
+              Why This Matters Now
+            </h2>
+            <div className="mt-6 space-y-4 border-l-2 border-[#0E8C74]/30 pl-6">
+              <p className="text-[16px] leading-relaxed text-[#424245]">
+                Adelaide homeowners often compare tradies through Google before
+                they call. The map results, organic listings, reviews and
+                website all shape that shortlist, so the job is to make your
+                business easy to find and easy to trust across the whole
+                results page.
+              </p>
+              <p className="text-[16px] leading-relaxed text-[#424245]">
+                If your business doesn&apos;t show up in the top three for
+                &quot;plumber [suburb]&quot; or &quot;electrician
+                Adelaide&quot;, you&apos;re paying for clicks your competitors
+                get for free. Word of mouth still matters — but in 2026
+                it&apos;s your website and your Google Business Profile that
+                decide whether that word-of-mouth lead becomes your customer or
+                someone else&apos;s.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Search intent buckets */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Who Is Actually Searching for Adelaide Tradies</h2>
-          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Understanding the searcher helps you write the right content. Adelaide tradie searches fall into three buckets:
-          </p>
-          <div className="grid gap-4 md:grid-cols-3">
-            {searchBuckets.map((bucket) => (
-              <div key={bucket.label} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">{bucket.label}</h3>
-                <p className="mb-3 text-xs italic text-slate-500">{bucket.example}</p>
-                <p className="text-body-mobile text-slate-700 md:text-body">{bucket.body}</p>
-              </div>
+      {/* Search buckets — examples styled as search bars */}
+      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">01</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              Who Is Actually Searching for Adelaide Tradies
+            </h2>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73]">
+              Understanding the searcher helps you write the right content.
+              Adelaide tradie searches fall into three buckets:
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {searchBuckets.map((bucket, i) => (
+              <Reveal key={bucket.label} delay={i * 0.1}>
+                <div className="flex h-full flex-col rounded-[24px] bg-white p-7 shadow-[0_2px_12px_rgba(29,29,31,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(29,29,31,0.1)]">
+                  <h3 className="text-[17px] font-semibold tracking-tight" style={{ color: INK }}>
+                    {bucket.label}
+                  </h3>
+                  <div className="mt-3 flex items-center gap-2 rounded-full border border-black/[0.08] bg-[#FAFAFC] px-3.5 py-2">
+                    <span className="shrink-0 text-[13px] text-[#4285F4]" aria-hidden>⌕</span>
+                    <span className="text-[11.5px] italic leading-snug text-[#6E6E73]">{bucket.example}</span>
+                  </div>
+                  <p className="mt-4 text-[14px] leading-relaxed text-[#6E6E73]">{bucket.body}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
           {/* HUMAN INPUT NEEDED: one real tradie result (name, suburb, baseline, outcome, timeframe, permission) — replace this note with a verified case study once available. Do not invent client copy. */}
-          <p className="mt-6 text-body-mobile text-slate-700 md:text-body">
-            The same approach applies whether you need a{" "}
-            <Link href="/websites-for-plumbers-adelaide" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              plumber website in Adelaide
-            </Link>{" "}
-            or an{" "}
-            <Link href="/websites-for-electricians-adelaide" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              electrician website
-            </Link>{" "}
-            — and if you work the southern suburbs, we build dedicated pages for areas like{" "}
-            <Link href="/marion" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              Marion
-            </Link>{" "}
-            and{" "}
-            <Link href="/reynella" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              Reynella
-            </Link>
-            .
-          </p>
+          <Reveal delay={0.15}>
+            <p className="mt-8 max-w-3xl text-[15px] leading-relaxed text-[#424245]">
+              The same approach applies whether you need a{" "}
+              <Link href="/websites-for-plumbers-adelaide" className={linkCls}>
+                plumber website in Adelaide
+              </Link>{" "}
+              or an{" "}
+              <Link href="/websites-for-electricians-adelaide" className={linkCls}>
+                electrician website
+              </Link>{" "}
+              — and if you work the southern suburbs, we build dedicated pages
+              for areas like{" "}
+              <Link href="/marion" className={linkCls}>
+                Marion
+              </Link>{" "}
+              and{" "}
+              <Link href="/reynella" className={linkCls}>
+                Reynella
+              </Link>
+              .
+            </p>
+          </Reveal>
         </div>
       </section>
 
-      {/* Local SEO fundamentals */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Local SEO Fundamentals</h2>
-          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Local SEO is a practical starting point for tradies whose customers come from defined service areas. Google Maps and local organic results both matter, and the right priority depends on your current visibility and where profitable jobs come from.
-          </p>
-          <div className="grid gap-4 md:grid-cols-2">
-            {foundations.map((item) => (
-              <div key={item.title} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">{item.title}</h3>
-                <p className="text-body-mobile text-slate-700 md:text-body">{item.body}</p>
-              </div>
+      {/* Fundamentals */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">02</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              Local SEO Fundamentals
+            </h2>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73]">
+              Local SEO is a practical starting point for tradies whose
+              customers come from defined service areas. Google Maps and local
+              organic results both matter, and the right priority depends on
+              your current visibility and where profitable jobs come from.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {foundations.map((item, i) => (
+              <Reveal key={item.title} delay={(i % 2) * 0.1}>
+                <div className="h-full rounded-[24px] border border-black/[0.06] bg-white p-7 shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
+                  <h3 className="text-[17px] font-semibold tracking-tight" style={{ color: INK }}>
+                    {item.title}
+                  </h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-[#6E6E73]">{item.body}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* On-page SEO */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">On-Page SEO for Tradie Websites</h2>
-          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Your Google Business Profile supports eligibility for map visibility. Your website can earn organic visibility and gives customers the service detail and proof needed to compare you. Both matter, but neither guarantees a position.
-          </p>
-          <div className="grid gap-4 md:grid-cols-3">
-            {onPage.map((item) => (
-              <div key={item.title} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">{item.title}</h3>
-                <p className="text-body-mobile text-slate-700 md:text-body">{item.body}</p>
-              </div>
+      {/* On-page */}
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">03</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              On-Page SEO for Tradie Websites
+            </h2>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73]">
+              Your Google Business Profile supports eligibility for map
+              visibility. Your website can earn organic visibility and gives
+              customers the service detail and proof needed to compare you.
+              Both matter, but neither guarantees a position.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {onPage.map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.1}>
+                <div className="h-full rounded-[24px] border border-black/[0.06] bg-white p-7 shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
+                  <h3 className="text-[17px] font-semibold tracking-tight" style={{ color: INK }}>
+                    {item.title}
+                  </h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-[#6E6E73]">{item.body}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Content + links + technical, condensed */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Content, Links, and the Technical Basics</h2>
-          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Content is how a newer tradie outranks a competitor who's been around for twenty years. Blog posts answering real customer questions — &quot;how much does [X] cost in Adelaide&quot;, &quot;how long does [X] take&quot; — build trust and rank for long-tail searches. One well-written 2,000-word post beats five 300-word fillers. Pair every service page with 5-10 FAQs; they double as Google &quot;People also ask&quot; candidates and long-tail ranking content.
-          </p>
-          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Links from other sites signal authority. For tradies, the highest-value links come from local business associations (Master Plumbers SA, Master Electricians SA, HIA SA), local partnerships with complementary trades, and supplier accreditation pages — not from buying links, which Google penalises.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            On the technical side, the website must work properly on a phone, use HTTPS, load quickly, and make calls and quote requests easy. Structured data should be added only where it is appropriate and matches the visible content. These foundations support discovery and conversion but do not replace useful pages, proof, or authority.
-          </p>
+      {/* Content + links + technical — editorial */}
+      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">04</p>
+            <h2 className="mt-3 text-[28px] font-semibold leading-tight tracking-[-0.02em] md:text-[36px]" style={{ color: INK }}>
+              Content, Links, and the Technical Basics
+            </h2>
+            <div className="mt-7 space-y-5 text-[15px] leading-relaxed text-[#424245] md:text-[16px]">
+              <p>
+                Content is how a newer tradie outranks a competitor who&apos;s
+                been around for twenty years. Blog posts answering real
+                customer questions — &quot;how much does [X] cost in
+                Adelaide&quot;, &quot;how long does [X] take&quot; — build
+                trust and rank for long-tail searches. One well-written
+                2,000-word post beats five 300-word fillers. Pair every service
+                page with 5-10 FAQs; they double as Google &quot;People also
+                ask&quot; candidates and long-tail ranking content.
+              </p>
+              <p>
+                Links from other sites signal authority. For tradies, the
+                highest-value links come from local business associations
+                (Master Plumbers SA, Master Electricians SA, HIA SA), local
+                partnerships with complementary trades, and supplier
+                accreditation pages — not from buying links, which Google
+                penalises.
+              </p>
+              <p>
+                On the technical side, the website must work properly on a
+                phone, use HTTPS, load quickly, and make calls and quote
+                requests easy. Structured data should be added only where it is
+                appropriate and matches the visible content. These foundations
+                support discovery and conversion but do not replace useful
+                pages, proof, or authority.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      {/* Common mistakes */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Common Adelaide Tradie SEO Mistakes</h2>
-          <ul className="grid gap-3 md:grid-cols-2">
-            {mistakes.map((item) => (
-              <li
-                key={item}
-                className="panel-light-soft flex items-start gap-3 p-5 text-body-mobile text-slate-700 md:p-6 md:text-body"
-              >
-                <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-rose-300/40 bg-rose-50 text-xs text-rose-500">
-                  ✕
-                </span>
-                <span>{item}</span>
-              </li>
+      {/* Mistakes */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#E8590C]">05</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              Common Adelaide Tradie SEO Mistakes
+            </h2>
+          </Reveal>
+          <ul className="mt-10 grid gap-4 md:grid-cols-2">
+            {mistakes.map((item, i) => (
+              <Reveal key={item} delay={(i % 2) * 0.08}>
+                <li className="flex h-full items-start gap-3 rounded-[20px] border border-[#E8590C]/[0.15] bg-[#FFF9F6] p-6 text-[15px] leading-relaxed text-[#424245]">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#E8590C]/[0.12] text-[12px] font-bold text-[#E8590C]">
+                    ✕
+                  </span>
+                  <span>{item}</span>
+                </li>
+              </Reveal>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* Pricing tiers */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">SEO Pricing for Adelaide Tradies</h2>
-          <p className="mb-6 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Two clearly scoped tiers, both month to month with no lock-in contract. Choose based on the amount of content, service-area coverage and authority work your current position actually requires.
-          </p>
-          <div className="grid gap-4 md:grid-cols-2">
-            {tiers.map((tier) => (
-              <div key={tier.name} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-1 text-h3-mobile text-slate-950 md:text-h3">{tier.name}</h3>
-                <p className="mb-3 text-2xl font-bold text-slate-950">{tier.price}</p>
-                <p className="text-body-mobile text-slate-700 md:text-body">{tier.body}</p>
-              </div>
-            ))}
+      {/* Pricing tiers — Growth is the dark card */}
+      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">06</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              SEO Pricing for Adelaide Tradies
+            </h2>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73]">
+              Two clearly scoped tiers, both month to month with no lock-in
+              contract. Choose based on the amount of content, service-area
+              coverage and authority work your current position actually
+              requires.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {tiers.map((tier, i) => {
+              const dark = i === 1;
+              return (
+                <Reveal key={tier.name} delay={i * 0.1}>
+                  <div
+                    className={`flex h-full flex-col rounded-[28px] p-8 ${
+                      dark
+                        ? "v3-shimmer-border bg-[#1D1D1F] text-white shadow-[0_30px_80px_rgba(29,29,31,0.35)]"
+                        : "border border-black/[0.06] bg-white shadow-[0_2px_12px_rgba(29,29,31,0.05)]"
+                    }`}
+                  >
+                    <h3 className={`text-[19px] font-semibold tracking-tight ${dark ? "text-white" : "text-[#1D1D1F]"}`}>
+                      {tier.name}
+                    </h3>
+                    <p className={`mt-4 text-[38px] font-semibold leading-none tracking-[-0.02em] tabular-nums ${dark ? "text-white" : "text-[#1D1D1F]"}`}>
+                      {tier.price}
+                    </p>
+                    <p className={`mt-4 text-[14.5px] leading-relaxed ${dark ? "text-white/70" : "text-[#6E6E73]"}`}>
+                      {tier.body}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
-          <p className="mt-6 text-sm text-slate-500">
-            Need a new site too? Websites start from{" "}
-            <Link href="/website-pricing" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              {PRICING.website.tiers[0].price}
-            </Link>
-            , and we bundle SEO with the build for tradies who want both live at once — see the{" "}
-            <Link href="/tradie-website-bundle" className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 hover:text-slate-900">
-              tradie website bundle
-            </Link>
-            .
-          </p>
+          <Reveal delay={0.15}>
+            <p className="mt-8 text-[14px] leading-relaxed text-[#6E6E73]">
+              Need a new site too? Websites start from{" "}
+              <Link href="/website-pricing" className={linkCls}>
+                {PRICING.website.tiers[0].price}
+              </Link>
+              , and we bundle SEO with the build for tradies who want both live
+              at once — see the{" "}
+              <Link href="/tradie-website-bundle" className={linkCls}>
+                tradie website bundle
+              </Link>
+              .
+            </p>
+          </Reveal>
         </div>
       </section>
 
-      {/* How AI helps */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">How AI Helps Tradies With SEO</h2>
-          <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            AI speeds up the content side of SEO without replacing the judgment behind it. A blog post or suburb page that used to take hours to draft from scratch takes a fraction of the time with AI doing the first pass — which is how we can build out suburb pages and FAQ content at a pace a solo tradie or small agency team couldn't match manually.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            AI also handles the repetitive technical work: generating schema markup consistently across every page, drafting meta descriptions in your business's tone, and flagging when a new suburb page is worth building based on search demand. A person still reviews and approves everything before it goes live — AI removes the grunt work, not the oversight.
-          </p>
+      {/* How AI helps — editorial */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">07</p>
+            <h2 className="mt-3 text-[28px] font-semibold leading-tight tracking-[-0.02em] md:text-[36px]" style={{ color: INK }}>
+              How AI Helps Tradies With SEO
+            </h2>
+            <div className="mt-7 space-y-5 text-[15px] leading-relaxed text-[#424245] md:text-[16px]">
+              <p>
+                AI speeds up the content side of SEO without replacing the
+                judgment behind it. A blog post or suburb page that used to
+                take hours to draft from scratch takes a fraction of the time
+                with AI doing the first pass — which is how we can build out
+                suburb pages and FAQ content at a pace a solo tradie or small
+                agency team couldn&apos;t match manually.
+              </p>
+              <p>
+                AI also handles the repetitive technical work: generating
+                schema markup consistently across every page, drafting meta
+                descriptions in your business&apos;s tone, and flagging when a
+                new suburb page is worth building based on search demand. A
+                person still reviews and approves everything before it goes
+                live — AI removes the grunt work, not the oversight.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       <StackCTA variant="seo" />
 
-      {/* FAQs */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">SEO for Tradies FAQs</h2>
-          <div className="space-y-5">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">{faq.question}</h3>
-                <p className="text-body-mobile text-slate-700 md:text-body">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
+      {/* FAQs — accordion */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">08</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              SEO for Tradies FAQs
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="mt-10 overflow-hidden rounded-[28px] border border-black/[0.06] bg-white shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
+              {faqs.map((faq, i) => (
+                <details key={faq.question} className="group" open={i === 0}>
+                  <summary
+                    data-track="faq_open"
+                    className="flex cursor-pointer list-none items-center justify-between gap-4 px-7 py-5 text-[16px] font-semibold text-[#1D1D1F] transition hover:bg-black/[0.02] [&::-webkit-details-marker]:hidden"
+                  >
+                    {faq.question}
+                    <span className="shrink-0 text-xl font-normal text-[#0E8C74] transition-transform duration-300 group-open:rotate-45" aria-hidden>
+                      +
+                    </span>
+                  </summary>
+                  <p className="px-7 pb-6 text-[15px] leading-relaxed text-[#6E6E73]">{faq.answer}</p>
+                  {i < faqs.length - 1 && <div className="mx-7 border-t border-black/[0.06]" />}
+                </details>
+              ))}
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Related reading */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
-            Related
-          </p>
-          <h2 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">
-            Weighing SEO Against Paid Ads?
-          </h2>
-          <p className="mb-5 max-w-3xl text-body-mobile text-slate-700 md:text-body">
-            SEO and Google Ads solve different problems: ads can buy immediate visibility, while SEO builds organic visibility over time without a fee for each click. Our comparison guide explains the trade-offs without promising a fixed result.
-          </p>
-          <Link href="/seo-vs-google-ads-adelaide" className="btn-secondary px-6 py-3">
-            Read SEO vs Google Ads <span aria-hidden>→</span>
-          </Link>
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <div className="rounded-[28px] border border-black/[0.06] bg-white p-8 shadow-[0_2px_12px_rgba(29,29,31,0.05)] md:p-10">
+              <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">
+                Related
+              </p>
+              <h2 className="mt-3 text-[24px] font-semibold leading-tight tracking-[-0.02em] md:text-[30px]" style={{ color: INK }}>
+                Weighing SEO Against Paid Ads?
+              </h2>
+              <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[#6E6E73]">
+                SEO and Google Ads solve different problems: ads can buy
+                immediate visibility, while SEO builds organic visibility over
+                time without a fee for each click. Our comparison guide
+                explains the trade-offs without promising a fixed result.
+              </p>
+              <Link
+                href="/seo-vs-google-ads-adelaide"
+                className="mt-6 inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-6 py-3 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+              >
+                Read SEO vs Google Ads <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
-        <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Ready to Start Ranking?
-          </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free chat and we'll show you where you stand today, which searches are worth targeting, and the work most likely to improve visibility and enquiries. No ranking guarantees.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact#send-message" className="btn-primary px-8 py-4">
-              Send a Message <span aria-hidden>→</span>
-            </Link>
-            <Link href="/audit" className="btn-secondary px-8 py-4">
-              Book Free Chat <span aria-hidden>→</span>
-            </Link>
-          </div>
+      <section className="relative overflow-hidden px-6 pb-24 pt-4 md:pb-32">
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[380px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#5EF2D6]/[0.16] blur-[110px]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-3xl text-center">
+          <Reveal>
+            <h2 className="text-[32px] font-semibold leading-[1.08] tracking-[-0.02em] [text-wrap:balance] md:text-[48px]" style={{ color: INK }}>
+              Ready to Start Ranking?
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
+              Book a free chat and we&apos;ll show you where you stand today,
+              which searches are worth targeting, and the work most likely to
+              improve visibility and enquiries. No ranking guarantees.
+            </p>
+            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/contact#send-message"
+                data-track="quote_tradie_cta"
+                className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
+              >
+                Send a Message
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                href="/audit"
+                className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+              >
+                Book Free Chat <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </div>

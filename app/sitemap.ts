@@ -12,10 +12,10 @@ import { posts } from "@/data/posts";
 // Path (relative, no leading site URL) -> ISO date string.
 const PAGE_DATES: Record<string, string> = {
   "/": "2026-07-07",
-  "/website-pricing": "2026-06-23",
-  "/website-design-adelaide": "2026-07-13",
-  "/seo": "2026-07-13",
-  "/seo-for-tradies-adelaide": "2026-07-13",
+  "/website-pricing": "2026-07-16",
+  "/website-design-adelaide": "2026-07-16",
+  "/seo": "2026-07-16",
+  "/seo-for-tradies-adelaide": "2026-07-16",
   "/services": "2026-07-11",
   "/contact": "2026-07-13",
   "/audit": "2026-06-23",

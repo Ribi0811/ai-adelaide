@@ -3,6 +3,8 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
+import Reveal from "@/components/home-v3/Reveal";
+import PricingLab from "./parts";
 
 export const metadata: Metadata = {
   title: "Website Pricing Adelaide | From $699",
@@ -54,10 +56,7 @@ const tiers = [
       "1 month of SEO setup included",
       "Live in 5-7 days",
     ],
-    notIncluded: [
-      "Multiple suburb pages",
-      "Full SEO retainer",
-    ],
+    notIncluded: ["Multiple suburb pages", "Full SEO retainer"],
     bestFor: "Established businesses ready to grow online",
     cta: "Book Business Site",
     popular: true,
@@ -140,6 +139,33 @@ const addons = [
   },
 ];
 
+const included = [
+  {
+    title: "Mobile-first design",
+    body: "80%+ of your visitors are on phones. Every site we build works perfectly on mobile.",
+  },
+  {
+    title: "Fast loading",
+    body: "Our sites load in under 2 seconds. Google rewards fast sites with better rankings.",
+  },
+  {
+    title: "Google-ready",
+    body: "Title tags, meta descriptions, sitemap, schema — all set up correctly from day one.",
+  },
+  {
+    title: "No lock-in",
+    body: "You own your site. You own your domain. You can leave anytime — no contracts.",
+  },
+  {
+    title: "Local Adelaide support",
+    body: "We're in Adelaide. Call us, text us, or book a meeting. Real local support.",
+  },
+  {
+    title: "AI automation-ready",
+    body: "Every site can connect to our AI receptionist and automation systems when you're ready.",
+  },
+];
+
 const faqs = [
   {
     question: "What's not included in the website price?",
@@ -172,6 +198,9 @@ const faqs = [
       "We're Adelaide-based and our SEO targets Adelaide specifically. We can build for businesses anywhere, but our SEO expertise is strongest in the Adelaide market.",
   },
 ];
+
+const INK = "#1D1D1F";
+const TEAL = "#0E8C74";
 
 export default function WebsitePricingPage() {
   const faqSchema = {
@@ -231,9 +260,8 @@ export default function WebsitePricingPage() {
       },
     ],
   };
-
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="bg-[#FBFBFD]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
@@ -242,206 +270,157 @@ export default function WebsitePricingPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Breadcrumbs
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Services", href: "/services" },
-          { label: "Website Pricing" },
-        ]}
-      />
-      <section className="max-w-container mx-auto px-6">
-        <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">Website Design Pricing</span>
-          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
+
+      {/* Hero — same words, v4 clothes */}
+      <section className="relative overflow-hidden px-6 pb-14 pt-32 md:pb-20 md:pt-44">
+        <div
+          className="pointer-events-none absolute left-1/2 top-[-260px] h-[520px] w-[860px] -translate-x-1/2 rounded-full bg-[#5EF2D6]/[0.15] blur-[120px]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-container">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Services", href: "/services" },
+              { label: "Website Pricing" },
+            ]}
+          />
+          <p className="v3-rise mt-8 font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">
+            Website Design Pricing
+          </p>
+          <h1
+            className="v3-rise mt-4 max-w-3xl text-[40px] font-semibold leading-[1.05] tracking-[-0.03em] [animation-delay:.12s] [text-wrap:balance] md:text-[64px]"
+            style={{ color: INK }}
+          >
             Affordable Websites for Adelaide Small Businesses
           </h1>
-          <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Transparent pricing. No hidden fees. No lock-in contracts. Pick the tier that fits your business today — upgrade whenever you're ready. Websites from $699, live in days, not months.
+          <p className="v3-rise mt-6 max-w-2xl text-[17px] leading-relaxed text-[#6E6E73] [animation-delay:.24s] md:text-lg">
+            Transparent pricing. No hidden fees. No lock-in contracts. Pick the
+            tier that fits your business today — upgrade whenever you&apos;re
+            ready. Websites from $699, live in days, not months.
           </p>
         </div>
       </section>
 
-      {/* Pricing Tiers */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="grid gap-6 md:grid-cols-3">
-          {tiers.map((tier) => (
-            <div
-              key={tier.name}
-              className={`panel-light p-6 md:p-8 ${
-                tier.popular ? "ring-2 ring-accent shadow-glow" : ""
-              }`}
-            >
-              {tier.popular && (
-                <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-3 py-1">
-                  <span className="h-2 w-2 rounded-full bg-accent" />
-                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
-                    Most Popular
-                  </span>
+      {/* The Pricing Lab — selectable tiers, add-on toggles, live receipt */}
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <PricingLab
+              tiers={tiers}
+              addons={addons}
+              addonsHeading={
+                <div className="mt-14">
+                  <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">01</p>
+                  <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] text-[#1D1D1F] md:text-[40px]">
+                    Add-Ons: SEO &amp; Automation
+                  </h2>
+                  <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
+                    Your website is the foundation. Add SEO to get found on Google,
+                    or automation to capture every lead. Mix and match — no lock-in.
+                  </p>
                 </div>
-              )}
-              <h2 className="text-h2-mobile text-slate-950 md:text-h2">{tier.name}</h2>
-              <p className="mt-1 text-sm font-semibold text-slate-500">{tier.tagline}</p>
-              <p className="mt-4 text-4xl font-bold text-slate-950">{tier.price}</p>
-              <p className="mt-3 text-body-mobile text-slate-600 md:text-body">
-                {tier.description}
-              </p>
-              <ul className="mt-6 space-y-3">
-                {tier.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-slate-700">
-                    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-accent/20 bg-accent/10 text-xs text-accent">
-                      ✓
+              }
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* What's Always Included */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">02</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              What&apos;s Always Included
+            </h2>
+          </Reveal>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {included.map((item, i) => (
+              <Reveal key={item.title} delay={(i % 3) * 0.1}>
+                <div className="h-full rounded-[24px] border border-black/[0.06] bg-white p-7 shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
+                  <h3 className="text-[16px] font-semibold tracking-tight" style={{ color: INK }}>
+                    {item.title}
+                  </h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-[#6E6E73]">{item.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs — accordion, same words */}
+      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-3xl">
+          <Reveal>
+            <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">03</p>
+            <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+              Website Pricing FAQs
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="mt-10 overflow-hidden rounded-[28px] border border-black/[0.06] bg-white shadow-[0_2px_12px_rgba(29,29,31,0.04)]">
+              {faqs.map((faq, i) => (
+                <details key={faq.question} className="group" open={i === 0}>
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-7 py-5 text-[16px] font-semibold text-[#1D1D1F] transition hover:bg-black/[0.02] [&::-webkit-details-marker]:hidden">
+                    {faq.question}
+                    <span className="shrink-0 text-xl font-normal text-[#0E8C74] transition-transform duration-300 group-open:rotate-45" aria-hidden>
+                      +
                     </span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-                {tier.notIncluded.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-slate-400">
-                    <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-xs text-slate-400">
-                      —
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
-                  Best for
-                </p>
-                <p className="text-sm text-slate-600">{tier.bestFor}</p>
-              </div>
-              <Link
-                href="/contact"
-                className={`mt-6 block rounded-xl px-6 py-3 text-center text-sm font-semibold transition ${
-                  tier.popular
-                    ? "btn-primary"
-                    : "border border-slate-200 bg-white text-slate-700 hover:border-accent/40 hover:bg-accent/5"
-                }`}
-              >
-                {tier.cta} <span aria-hidden>→</span>
-              </Link>
+                  </summary>
+                  <p className="px-7 pb-6 text-[15px] leading-relaxed text-[#6E6E73]">{faq.answer}</p>
+                  {i < faqs.length - 1 && <div className="mx-7 border-t border-black/[0.06]" />}
+                </details>
+              ))}
             </div>
-          ))}
+          </Reveal>
         </div>
       </section>
 
-      {/* Add-ons */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-2 text-h2-mobile text-slate-950 md:text-h2">
-            Add-Ons: SEO & Automation
-          </h2>
-          <p className="mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Your website is the foundation. Add SEO to get found on Google, or automation to capture every lead. Mix and match — no lock-in.
-          </p>
-          <div className="grid gap-4 md:grid-cols-2">
-            {addons.map((addon) => (
-              <div key={addon.name} className="panel-light-soft p-5 md:p-6">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-h3-mobile text-slate-950 md:text-h3">{addon.name}</h3>
-                  <p className="text-2xl font-bold text-accent">{addon.price}</p>
-                </div>
-                <p className="mt-3 text-sm text-slate-600">{addon.description}</p>
-                <ul className="mt-4 space-y-2">
-                  {addon.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2 text-sm text-slate-700">
-                      <span className="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-accent/20 bg-accent/10 text-[10px] text-accent">
-                        ✓
-                      </span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What's Included */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
-            What's Always Included
-          </h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {[
-              {
-                title: "Mobile-first design",
-                body: "80%+ of your visitors are on phones. Every site we build works perfectly on mobile.",
-              },
-              {
-                title: "Fast loading",
-                body: "Our sites load in under 2 seconds. Google rewards fast sites with better rankings.",
-              },
-              {
-                title: "Google-ready",
-                body: "Title tags, meta descriptions, sitemap, schema — all set up correctly from day one.",
-              },
-              {
-                title: "No lock-in",
-                body: "You own your site. You own your domain. You can leave anytime — no contracts.",
-              },
-              {
-                title: "Local Adelaide support",
-                body: "We're in Adelaide. Call us, text us, or book a meeting. Real local support.",
-              },
-              {
-                title: "AI automation-ready",
-                body: "Every site can connect to our AI receptionist and automation systems when you're ready.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="panel-light-soft p-5">
-                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">{item.title}</h3>
-                <p className="text-sm text-slate-600">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
-            Website Pricing FAQs
-          </h2>
-          <div className="space-y-5">
-            {faqs.map((faq) => (
-              <div key={faq.question} className="panel-light-soft p-5 md:p-6">
-                <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">{faq.question}</h3>
-                <p className="text-body-mobile text-slate-700 md:text-body">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Case studies */}
+      {/* Case studies + Testimonials — same components, same headings */}
       <CaseStudies count={3} heading="What changed for these Adelaide businesses" />
-
-      {/* Testimonials */}
       <Testimonials count={3} heading="More from our Adelaide clients" />
 
-      {/* CTA */}
-      <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
-        <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Not Sure Which Tier You Need?
-          </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free 15-minute chat. We'll look at what you do, what you need, and tell you exactly which tier fits — or if you need something custom.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact#send-message" className="btn-primary px-8 py-4">
-              Send a Message <span aria-hidden>→</span>
-            </Link>
-            <Link href="/website-design-adelaide" className="btn-secondary px-8 py-4">
-              Learn More About Our Websites <span aria-hidden>→</span>
-            </Link>
-            <Link href="/seo" className="btn-secondary px-8 py-4">
-              See Our SEO Services <span aria-hidden>→</span>
-            </Link>
-          </div>
+      {/* CTA — same words */}
+      <section className="relative overflow-hidden px-6 py-24 md:py-32">
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[380px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#5EF2D6]/[0.16] blur-[110px]"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-3xl text-center">
+          <Reveal>
+            <h2 className="text-[32px] font-semibold leading-[1.08] tracking-[-0.02em] [text-wrap:balance] md:text-[48px]" style={{ color: INK }}>
+              Not Sure Which Tier You Need?
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
+              Book a free 15-minute chat. We&apos;ll look at what you do, what
+              you need, and tell you exactly which tier fits — or if you need
+              something custom.
+            </p>
+            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/contact#send-message"
+                data-track="quote_pricing_cta"
+                className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
+              >
+                Send a Message
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                href="/website-design-adelaide"
+                className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+              >
+                Learn More About Our Websites <span aria-hidden>→</span>
+              </Link>
+              <Link
+                href="/seo"
+                className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+              >
+                See Our SEO Services <span aria-hidden>→</span>
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </div>

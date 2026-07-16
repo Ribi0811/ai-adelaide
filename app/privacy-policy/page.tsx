@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Enquiry forms:</strong> your name, business name, email, phone number, the service or plan you're interested in, and your message.</li>
               <li><strong>Chat assistant:</strong> the messages you type into the chat widget on our Site.</li>
-              <li><strong>Phone calls:</strong> if you call us, your call may be answered by our AI voice assistant. The conversation may be recorded and/or transcribed so we can take your message accurately and follow up.</li>
+              <li><strong>Phone calls:</strong> if you call us, your call may be answered by our AI voice assistant. Calls answered by the assistant are recorded and transcribed — this is how the assistant understands and responds to you, and how we take your message accurately and follow up.</li>
               <li><strong>Email and other correspondence</strong> you send us.</li>
               <li><strong>Payment details</strong> if you become a client (processed by our payment providers — we do not store card numbers).</li>
             </ul>

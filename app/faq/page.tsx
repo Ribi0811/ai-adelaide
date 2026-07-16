@@ -148,7 +148,7 @@ function FaqJsonLd({ groups }: { groups: typeof faqs }) {
 
 export default function FAQPage() {
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <FaqJsonLd groups={faqs} />
 
       <section className="max-w-container mx-auto px-6">

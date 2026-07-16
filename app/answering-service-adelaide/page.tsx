@@ -154,7 +154,7 @@ export default function AnsweringServiceAdelaidePage() {
   };
 
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <ServiceJsonLd />
       <script
         type="application/ld+json"

@@ -28,12 +28,20 @@
 
   /* ─── Buttons ────────────────────────────────────────────────── */
 
+  /* v4 pills (2026-07-16): every legacy page inherits the design-system
+     buttons — teal fill, full radius, lift on hover. */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-[#0B1929] transition-all duration-200 hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent/50 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0E8C74] hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)] focus:outline-none focus:ring-2 focus:ring-[#0E8C74]/40 active:scale-[0.98];
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-transparent px-6 py-3 text-sm font-semibold text-textPrimary transition-all duration-200 hover:border-accent/50 hover:bg-bgSecondary focus:outline-none focus:ring-2 focus:ring-accent/30 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] bg-transparent px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition-all duration-200 hover:border-black/30 hover:bg-black/[0.03] focus:outline-none focus:ring-2 focus:ring-[#0E8C74]/30 active:scale-[0.98];
+  }
+
+  /* Referenced by [suburb] + ai-automation tel CTAs; was previously
+     undefined (rendered as bare text). Same hairline pill as btn-secondary. */
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] bg-transparent text-[15px] font-semibold text-[#1D1D1F] transition-all duration-200 hover:border-black/30 hover:bg-black/[0.03];
   }
 
   /* ─── Dark panels (hero / dark bg sections) ──────────────────── */
@@ -43,17 +51,17 @@
   }
 
   .panel-soft {
-    @apply rounded-xl border border-slate-200 bg-white/90;
+    @apply rounded-[20px] border border-black/[0.06] bg-white/90;
   }
 
   /* ─── Light panels (light bg sections) ──────────────────────── */
 
   .panel-light {
-    @apply rounded-2xl border border-slate-100 bg-white shadow-light-card;
+    @apply rounded-[28px] border border-black/[0.06] bg-white shadow-light-card;
   }
 
   .panel-light-soft {
-    @apply rounded-xl border border-slate-100/80 bg-white/70;
+    @apply rounded-[20px] border border-black/[0.04] bg-[#F7F7F9];
   }
 
   /* ─── Brand / neutral cards ──────────────────────────────────── */
@@ -63,7 +71,7 @@
   }
 
   .metric-card {
-    @apply flex flex-col items-start justify-center rounded-xl border border-slate-200 bg-white/80 p-5;
+    @apply flex flex-col items-start justify-center rounded-[20px] border border-black/[0.06] bg-white/80 p-5;
   }
 
   /* ─── "Sky" cards (light blue tint — suburb/location pages) ─── */
@@ -93,31 +101,22 @@
   }
 
   .grid-overlay-light {
-    background-image: linear-gradient(
-        to right,
-        rgba(130, 166, 255, 0.06) 1px,
-        transparent 1px
-      ),
-      linear-gradient(
-        to bottom,
-        rgba(130, 166, 255, 0.06) 1px,
-        transparent 1px
-      );
-    background-size: 32px 32px;
+    /* v4: clean porcelain — the blueprint grid is retired. */
+    background-image: none;
   }
 
   /* ─── Eyebrow labels ──────────────────────────────────────────── */
 
   .eyebrow {
-    @apply inline-block text-xs font-semibold uppercase tracking-widest text-accent;
+    @apply inline-block font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0E8C74];
   }
 
   .eyebrow-light {
-    @apply inline-block text-xs font-semibold uppercase tracking-widest text-[#00b899];
+    @apply inline-block font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0E8C74];
   }
 
   .eyebrow-dark {
-    @apply inline-block text-xs font-semibold uppercase tracking-widest text-accent;
+    @apply inline-block font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-[#5EF2D6];
   }
 
   /* ─── Section typography (suburb/location pages) ─────────────── */

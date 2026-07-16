@@ -27,7 +27,7 @@ function TickerRow() {
 
 export default function ServicesTicker() {
   return (
-    <section className="section-shell bg-[#edf4f8] py-4 md:py-5">
+    <section className="section-shell bg-[#FBFBFD] py-4 md:py-5">
       <div className="max-w-container mx-auto px-6">
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white/80 px-4 py-4 backdrop-blur-sm md:px-5">
           <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">

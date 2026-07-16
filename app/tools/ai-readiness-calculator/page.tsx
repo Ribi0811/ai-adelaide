@@ -130,7 +130,7 @@ export default function AIReadinessCalculatorPage() {
 
         <div className="relative mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-start">
           <div className="space-y-6 pt-3 lg:pr-4">
-            <span className="inline-flex rounded-full border border-[#bfeee6] bg-white/85 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-[#00b899] shadow-sm backdrop-blur-sm">
+            <span className="inline-flex rounded-full border border-[#bfeee6] bg-white/85 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-[#0E8C74] shadow-sm backdrop-blur-sm">
               Free AI Adelaide Tool
             </span>
             <div className="space-y-4">
@@ -143,7 +143,7 @@ export default function AIReadinessCalculatorPage() {
             </div>
 
             <div className="rounded-[28px] border border-[#cfe9f7] bg-white/90 p-6 shadow-[0_18px_50px_rgba(15,29,43,0.08)] backdrop-blur-sm sm:p-7">
-              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#00b899]">
+              <div className="flex flex-wrap items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">
                 <span>🤖 How AI-Ready Is Your Business?</span>
                 <span className="rounded-full bg-[#ecfffb] px-3 py-1 text-[11px] tracking-[0.2em] text-[#0B7F6B]">
                   5-minute quiz
@@ -184,7 +184,7 @@ export default function AIReadinessCalculatorPage() {
             <div className="rounded-[28px] border border-slate-200/80 bg-white/92 p-5 shadow-[0_24px_90px_rgba(15,29,43,0.12)] backdrop-blur-xl sm:p-7">
               <div className="mb-6 flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00b899]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E8C74]">
                     {isResultsStep ? 'Your result' : `Question ${step + 1} of ${totalQuestions}`}
                   </p>
                   <p className="mt-2 text-sm text-slate-600">
@@ -218,7 +218,7 @@ export default function AIReadinessCalculatorPage() {
                     transition={{ duration: 0.24, ease: 'easeOut' }}
                   >
                     <div className="mb-6">
-                      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#2a7abf]">
+                      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">
                         {currentQuestion.category}
                       </p>
                       <h2 className="text-[28px] font-semibold leading-tight tracking-[-0.03em] text-slate-950 sm:text-[2rem]">
@@ -291,7 +291,7 @@ export default function AIReadinessCalculatorPage() {
                     className="space-y-6"
                   >
                     <div className="rounded-[28px] border border-[#cfe9f7] bg-[linear-gradient(180deg,#f7fdff_0%,#eef8ff_100%)] p-6 text-center shadow-[0_18px_50px_rgba(130,166,255,0.10)]">
-                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#00b899]">AI readiness score</p>
+                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0E8C74]">AI readiness score</p>
                       <motion.div
                         initial={{ scale: 0.75, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
@@ -314,11 +314,11 @@ export default function AIReadinessCalculatorPage() {
 
                     <div className="grid gap-4 sm:grid-cols-2">
                       <div className="rounded-2xl border border-slate-200 bg-[#fafdff] p-5">
-                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#00b899]">What this means</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">What this means</p>
                         <p className="mt-3 text-sm leading-7 text-slate-700">{result.tier.nextStep}</p>
                       </div>
                       <div className="rounded-2xl border border-slate-200 bg-[#fafdff] p-5">
-                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#00b899]">Your next move</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">Your next move</p>
                         <p className="mt-3 text-sm leading-7 text-slate-700">
                           Get the detailed report and AI Adelaide can follow up with tailored recommendations for your business.
                         </p>
@@ -327,7 +327,7 @@ export default function AIReadinessCalculatorPage() {
 
                     <div className="rounded-[28px] border border-slate-200 bg-[#fbfeff] p-5 shadow-[0_18px_50px_rgba(15,29,43,0.05)] sm:p-6">
                       <div className="mb-5">
-                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00b899]">Readiness tiers explained</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E8C74]">Readiness tiers explained</p>
                         <h3 className="mt-2 text-2xl font-semibold text-slate-950">See where your score sits</h3>
                       </div>
 
@@ -365,7 +365,7 @@ export default function AIReadinessCalculatorPage() {
 
                     <div className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_18px_50px_rgba(15,29,43,0.08)] sm:p-6">
                       <div className="mb-5">
-                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#00b899]">Get Your Detailed Report</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E8C74]">Get Your Detailed Report</p>
                         <h3 className="mt-2 text-2xl font-semibold text-slate-950">Send my breakdown</h3>
                         <p className="mt-2 text-sm leading-7 text-slate-600">
                           Leave your details and we’ll store your result for follow-up with a deeper AI readiness breakdown.
@@ -374,7 +374,7 @@ export default function AIReadinessCalculatorPage() {
 
                       {submitSuccess ? (
                         <div className="rounded-2xl border border-[#bfeee6] bg-[#ecfffb] p-5 text-sm leading-7 text-slate-800">
-                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#00b899]">📧 Check Your Inbox</p>
+                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">📧 Check Your Inbox</p>
                           <p className="mt-3">
                             We&apos;ve sent your detailed AI Readiness Report to <strong>{submittedEmail}</strong>. It includes:
                           </p>

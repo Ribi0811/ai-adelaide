@@ -33,7 +33,7 @@ export const dynamic = "force-static";
 
 export default function BlogIndexPage() {
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

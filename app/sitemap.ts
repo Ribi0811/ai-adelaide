@@ -56,9 +56,9 @@ const PAGE_DATES: Record<string, string> = {
   "/about": "2026-06-23",
   "/faq": "2026-06-20",
   "/lost-leads-calculator": "2026-07-11",
-  "/privacy-policy": "2026-07-11",
+  "/privacy-policy": "2026-07-16",
   "/terms": "2026-07-16",
-  "/cookie-policy": "2026-07-11",
+  "/cookie-policy": "2026-07-16",
   "/blog": "2026-07-11",
   // Added to sitemap 2026-07-03 (previously live but missing from sitemap.ts)
   "/virtual-receptionist-adelaide": "2026-06-25",

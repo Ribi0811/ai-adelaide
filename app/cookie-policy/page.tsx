@@ -38,65 +38,61 @@ export default function CookiePolicyPage() {
             Cookie Policy
           </h1>
           <p className="text-sm text-slate-600 mb-8">
-            Last updated: March 2026
+            Last updated: 16 July 2026
           </p>
 
           <div className="space-y-6 text-body-mobile text-slate-700 md:text-body">
             <p>
-              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses cookies and similar tracking technologies to enhance your experience on our website <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This Cookie Policy explains what cookies are, how we use them, and your choices regarding their use.
+              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses a small number of cookies and browser-storage technologies on <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This policy explains exactly what we store, why, and how you can control it. The short version: nothing optional runs unless you click Accept on our cookie banner, and we use no advertising or cross-site tracking cookies at all.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. What Are Cookies?</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. What Are Cookies and Browser Storage?</h2>
             <p>
-              Cookies are small text files that are placed on your device (computer, smartphone, tablet) when you visit a website. They are widely used to make websites work more efficiently and provide information to the site owners.
+              Cookies are small text files placed on your device when you visit a website. Browser storage (localStorage) works similarly but stays in your browser and is never sent automatically to servers. We use both, sparingly.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">2. Types of Cookies We Use</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">2. What We Actually Use</h2>
 
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Essential Cookies</h3>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Essential — your cookie choice</h3>
             <p>
-              Essential cookies are necessary for the operation of our Site. They enable basic functions such as page navigation and access to secure areas. You cannot opt-out of essential cookies as they are required for the Site to function properly.
+              When you click Accept or Decline on our banner, we save that choice in your browser (localStorage key <code className="text-sm">cookie-consent</code>) so we don't ask you again on every visit. This is the only thing stored if you decline.
             </p>
 
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics Cookies</h3>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics — Google Analytics 4 (only if you accept)</h3>
             <p>
-              Analytics cookies help us understand how visitors interact with our Site by collecting and reporting information anonymously. We use Google Analytics to track:
+              If — and only if — you click Accept, we load Google Analytics 4, which sets its own cookies and collects:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Pages visited and time spent on the Site</li>
               <li>Referring websites and marketing campaigns</li>
               <li>Device and browser information</li>
-              <li>Geographic location (country/city level)</li>
+              <li>Approximate location (city level) — Google Analytics 4 does not log or store individual IP addresses</li>
             </ul>
-
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Functionality Cookies</h3>
             <p>
-              Functionality cookies allow our Site to remember choices you make (such as your language preference or region) and provide enhanced, more personal features.
+              If you decline, Google Analytics never loads — no analytics cookies are set at all. You can also opt out of Google Analytics in any browser via <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a>.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">3. How We Use Analytics Cookies</h2>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Marketing attribution (only if you accept)</h3>
             <p>
-              We use Google Analytics with the following configuration:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>We anonymize IP addresses before processing</li>
-              <li>We do not share data with third parties except Google</li>
-              <li>We use data to improve user experience and site performance</li>
-              <li>You can opt-out of Google Analytics by visiting <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">https://tools.google.com/dlpage/gaoptout</a></li>
-            </ul>
-
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">4. Your Choices</h2>
-            <p>
-              Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies or notify you when cookies are sent. Please note that if you disable cookies, some features of our Site may not function properly.
+              With your consent, we note the first page you landed on, the site that referred you, and any campaign tags in the link you clicked. This stays in your own browser (localStorage) and is only sent to us if you submit an enquiry — it tells us how you found us so we know which marketing actually works.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Third-Party Cookies</h2>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Chat assistant history</h3>
             <p>
-              We may also allow third-party service providers to place cookies on your device to help us analyze our traffic and deliver targeted advertising. These third parties have their own privacy policies regarding the use of cookies.
+              If you use the chat widget, your conversation and a random session ID are kept in your own browser's localStorage so the chat remembers where you were if you reload the page. Messages you send are processed as described in our <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. How to Manage Cookie Preferences</h2>
-            <p>To manage your cookie preferences:</p>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">What we don't use</h3>
+            <p>
+              No advertising cookies, no remarketing pixels, no cross-site tracking, no social media trackers. If that ever changes, this policy and the consent banner will change first.
+            </p>
+
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">3. Your Choices</h2>
+            <p>
+              The cookie banner is the main control: Decline and nothing optional ever runs. If you've previously accepted and change your mind, clear this site's data in your browser (see below) — the banner will reappear on your next visit and you can decline.
+            </p>
+
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">4. Managing Cookies in Your Browser</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-slate-950">Chrome:</strong> Settings &gt; Privacy and security &gt; Cookies and other site data</li>
               <li><strong className="text-slate-950">Safari:</strong> Preferences &gt; Privacy &gt; Manage Website Data</li>
@@ -104,12 +100,12 @@ export default function CookiePolicyPage() {
               <li><strong className="text-slate-950">Edge:</strong> Settings &gt; Cookies and site permissions</li>
             </ul>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">7. Changes to This Cookie Policy</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Changes to This Cookie Policy</h2>
             <p>
               We may update this Cookie Policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated effective date.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">8. Contact Us</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. Contact Us</h2>
             <p>
               If you have any questions about this Cookie Policy, please contact us at:
             </p>

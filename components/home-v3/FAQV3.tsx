@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Do I own the website, or is it rented?",
-    a: "You own everything — domain, design, content, code. No platform rental, no hostage fees, and no lock-in on any monthly plan. Leave anytime and take it all with you.",
+    a: "Buy a one-off build and you own everything from day one — domain, design, content, code. On the $99/mo plan we host and look after the site, and you can buy it out anytime to own it outright. Either way your domain and content are always yours, and there's no lock-in on any plan.",
     link: { href: "/website-pricing", label: "Pricing details" },
   },
 ];

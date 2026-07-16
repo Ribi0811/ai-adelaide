@@ -8,9 +8,12 @@ import { PRICING } from "@/lib/constants";
 import PricingLab from "./parts";
 
 export const metadata: Metadata = {
+  // Description updated 2026-07-16 with the Monthly Website Plan (Ivan-approved
+  // product change). "One-off cost" was no longer fully accurate. Title, URL
+  // and canonical untouched — descriptions affect CTR, not rankings.
   title: "Website Pricing Adelaide | From $699",
   description:
-    "AI-powered website pricing for Adelaide small businesses — Starter from $699, Business $1,299, Growth $2,499. One-off cost, no lock-in, you own it outright.",
+    "AI-powered website pricing for Adelaide small businesses — Starter from $699, Business $1,299, Growth $2,499 one-off, or from $99/mo. No lock-in.",
   alternates: {
     canonical: "/website-pricing",
   },

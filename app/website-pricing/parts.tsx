@@ -289,7 +289,11 @@ export default function PricingLab({ tiers, addons, addonsHeading }: { tiers: Ti
             No lock-in contracts. You own your site. Upgrade whenever you&apos;re ready.
           </p>
           <Link
-            href="/contact?service=website#send-message"
+            href={`/contact?service=website&plan=${tier.name.toLowerCase()}${
+              picked.size > 0
+                ? `&addons=${encodeURIComponent(Array.from(picked).join("|"))}`
+                : ""
+            }#send-message`}
             data-track="pricing_builder_quote"
             className="group mt-6 flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-6 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.5)]"
           >

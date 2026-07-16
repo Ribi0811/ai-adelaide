@@ -31,6 +31,7 @@ type LeadFields = {
   phone: string;
   business: string;
   service: string;
+  plan: string;
   message: string;
   source: string;
   attribution: Attribution | null;
@@ -51,6 +52,7 @@ async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?
       phone: escapeHtml(lead.phone),
       business: escapeHtml(lead.business),
       service: escapeHtml(lead.service),
+      plan: escapeHtml(lead.plan),
       source: escapeHtml(lead.source),
       attribution: escapeHtml(attributionLine(lead.attribution)),
       message: escapeHtml(lead.message),
@@ -74,6 +76,7 @@ async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?
       `Phone: ${lead.phone || "—"}`,
       `Business: ${lead.business || "—"}`,
       `Service: ${lead.service || "—"}`,
+      `Plan: ${lead.plan || "—"}`,
       `Source: ${lead.source || "contact form"}`,
       `Attribution: ${attributionLine(lead.attribution)}`,
       "",
@@ -92,7 +95,8 @@ async function sendContactEmail(lead: LeadFields): Promise<{ ok: boolean; error?
           <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Phone</td><td style="padding: 8px;"><a href="tel:${safe.phone}">${safe.phone || "—"}</a></td></tr>
           <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Business</td><td style="padding: 8px;">${safe.business || "—"}</td></tr>
           <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Service</td><td style="padding: 8px;">${safe.service || "—"}</td></tr>
-          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Source</td><td style="padding: 8px;">${safe.source || "contact form"}</td></tr>
+          <tr style="background: #f8fafc;"><td style="padding: 8px; font-weight: bold; color: #475569;">Plan</td><td style="padding: 8px;">${safe.plan || "—"}</td></tr>
+          <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Source</td><td style="padding: 8px;">${safe.source || "contact form"}</td></tr>
           <tr><td style="padding: 8px; font-weight: bold; color: #475569;">Attribution</td><td style="padding: 8px;">${safe.attribution}</td></tr>
         </table>
         <div style="margin-top: 24px; padding: 16px; background: #f1f5f9; border-radius: 8px;">
@@ -134,6 +138,7 @@ type ContactPayload = {
   phone?: string;
   business?: string;
   service?: string;
+  plan?: string;
   message?: string;
   source?: string;
   attribution?: Attribution | null;
@@ -175,6 +180,7 @@ async function notifyTelegram(lead: LeadFields): Promise<{ ok: boolean; error?: 
     `Phone: ${lead.phone || "—"}`,
     `Business: ${lead.business || "—"}`,
     `Service: ${lead.service || "—"}`,
+    `Plan: ${lead.plan || "—"}`,
     `Source: ${lead.source || "contact form"}`,
     `Attribution: ${attributionLine(lead.attribution)}`,
     "",
@@ -230,6 +236,7 @@ export async function POST(req: NextRequest) {
     phone: clean(body.phone),
     business: clean(body.business),
     service: clean(body.service),
+    plan: clean(body.plan),
     message: clean(body.message),
     source: clean(body.source) || "contact form",
     attribution: body.attribution ?? null,

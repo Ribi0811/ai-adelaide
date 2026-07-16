@@ -47,7 +47,7 @@ const leadService = {
   pricing: "from $699",
   cta: {
     primary: { label: "See Pricing →", href: "/website-pricing" },
-    secondary: { label: "Send a Message →", href: "/contact#send-message" },
+    secondary: { label: "Send a Message →", href: "/contact?service=website#send-message" },
   },
   note: "Start with: a free 15-minute chat. We'll tell you which tier fits.",
 };
@@ -73,7 +73,7 @@ const supportingServices = [
     pricing: "from $399/mo",
     cta: {
       primary: { label: "Learn More →", href: "/seo" },
-      secondary: { label: "Send a Message →", href: "/contact#send-message" },
+      secondary: { label: "Send a Message →", href: "/contact?service=seo#send-message" },
     },
     note: "Results start in 2-4 months for low-competition keywords. Most clients see clear improvement within 90 days.",
   },
@@ -97,7 +97,7 @@ const supportingServices = [
     pricing: "from $199/mo",
     cta: {
       primary: { label: "Learn More →", href: "/ai-automation-adelaide" },
-      secondary: { label: "Send a Message →", href: "/contact#send-message" },
+      secondary: { label: "Send a Message →", href: "/contact?service=automation#send-message" },
     },
     note: "Most businesses recover 3-5 extra jobs per week. Setup takes 2-5 business days.",
   },

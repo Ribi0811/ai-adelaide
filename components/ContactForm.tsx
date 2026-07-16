@@ -3,6 +3,7 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { track } from "@/lib/track";
 import { getAttribution } from "@/lib/attribution";
+import { PRICING } from "@/lib/constants";
 
 type FormState = {
   name: string;
@@ -34,20 +35,62 @@ const validServices = new Set([
   "other",
 ]);
 
+// ?plan= slugs → human labels. Whitelisted so arbitrary URL params can never
+// inject text into the form. Prices come from PRICING (single source of truth).
+const planLabels: Record<string, string> = {
+  monthly: `${PRICING.website.monthly.name} — ${PRICING.website.monthly.label}, month-to-month`,
+  starter: `Starter website — ${PRICING.website.tiers[0].price} one-off`,
+  business: `Business website — ${PRICING.website.tiers[1].price} one-off`,
+  growth: `Growth website — ${PRICING.website.tiers[2].price} one-off`,
+  "local-seo": `Local SEO — ${PRICING.seo.tiers[0].price}`,
+  "growth-seo": `Growth SEO — ${PRICING.seo.tiers[1].price}`,
+  "automation-starter": `Automation Starter — ${PRICING.automation.tiers[0].price}`,
+  "automation-business": `Automation Business — ${PRICING.automation.tiers[1].price}`,
+};
+
+// ?addons= values (| separated) — must match the pricing page add-on names.
+const validAddons = new Set([
+  "Local SEO Retainer",
+  "Growth SEO Retainer",
+  "Automation Starter",
+  "Automation Business",
+]);
+
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [planLabel, setPlanLabel] = useState<string>("");
   const startedRef = useRef(false);
 
   // T2: prefill business + service from ?business / ?service query params
   // (used by the homepage "build my website" personal CTA). Read from the URL
   // directly — useSearchParams would force a Suspense boundary on the server
   // page that renders this form.
+  //
+  // 2026-07-16: also honours ?plan= and ?addons= (from the pricing builder,
+  // tier CTAs and the Monthly Website Plan) so the enquiry arrives knowing
+  // exactly what the visitor picked — no re-explaining.
   useEffect(() => {
     const p = new URLSearchParams(window.location.search);
     const business = p.get("business");
     const service = p.get("service");
+    const plan = p.get("plan");
+    const addons = (p.get("addons") ?? "")
+      .split("|")
+      .map((a) => a.trim())
+      .filter((a) => validAddons.has(a));
+
+    const label = plan ? planLabels[plan] : undefined;
+    if (label) {
+      const addonText = addons.length ? ` Plus add-ons: ${addons.join(", ")}.` : "";
+      setPlanLabel(label + (addons.length ? ` + ${addons.join(" + ")}` : ""));
+      setForm((prev) => ({
+        ...prev,
+        message: prev.message || `Hi — I'd like to go ahead with the ${label}.${addonText}`,
+      }));
+    }
+
     if (business || service) {
       setForm((prev) => ({
         ...prev,
@@ -85,6 +128,7 @@ export default function ContactForm() {
           phone: form.phone.trim(),
           business: form.business.trim(),
           service: form.service.trim(),
+          plan: planLabel,
           message: form.message.trim(),
           source: typeof window !== "undefined" ? window.location.pathname : "contact form",
           attribution: getAttribution(),
@@ -118,7 +162,10 @@ export default function ContactForm() {
         console.warn(`Lead saved, but ${channelErrors.join(" and ")} notification(s) failed.`);
       }
 
-      track("form_submit", { service: form.service || "unspecified" });
+      track("form_submit", {
+        service: form.service || "unspecified",
+        plan: planLabel || "none",
+      });
       setStatus("success");
       setForm(initialState);
     } catch (error) {
@@ -139,6 +186,15 @@ export default function ContactForm() {
         <p className="mt-2 text-body-mobile md:text-body text-slate-600">
           Tell us what is slowing the business down. We&apos;ll reply within 2 business hours.
         </p>
+        {planLabel && (
+          <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#0E8C74]/25 bg-[#0E8C74]/[0.06] px-4 py-2 text-[13px] font-semibold text-[#0E8C74]">
+            <span
+              className="h-2 w-2 shrink-0 rounded-full bg-[#0E8C74]"
+              aria-hidden
+            />
+            You picked: {planLabel}
+          </p>
+        )}
       </div>
 
       <form onSubmit={handleSubmit} onFocusCapture={markStarted} className="space-y-4">

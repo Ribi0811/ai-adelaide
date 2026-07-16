@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 import Reveal from "@/components/home-v3/Reveal";
+import { PRICING } from "@/lib/constants";
 import PricingLab from "./parts";
 
 export const metadata: Metadata = {
@@ -197,6 +198,20 @@ const faqs = [
     answer:
       "We're Adelaide-based and our SEO targets Adelaide specifically. We can build for businesses anywhere, but our SEO expertise is strongest in the Adelaide market.",
   },
+  {
+    question: "Can I pay monthly instead of upfront?",
+    answer:
+      `Yes. The Monthly Website Plan is ${PRICING.website.monthly.setup} setup and then ${PRICING.website.monthly.price} — a Business-level website with hosting, unlimited small content edits, and ongoing updates all included. It's month-to-month with no lock-in: cancel anytime, or buy your site out whenever you want to own it outright.`,
+  },
+];
+
+const monthlyFeatures = [
+  "Everything in the Business tier — 5-7 page custom website",
+  "Hosting included — no separate hosting bill",
+  "Unlimited small content edits, handled for you",
+  "Ongoing updates, security and monitoring",
+  "Priority support from a real Adelaide human",
+  "Buy your site out anytime — own it outright whenever you like",
 ];
 
 const INK = "#1D1D1F";
@@ -257,6 +272,20 @@ export default function WebsitePricingPage() {
         price: "2499",
         priceCurrency: "AUD",
         description: "10+ pages, full SEO stack, booking system, integrations",
+      },
+      {
+        "@type": "Offer",
+        name: "Monthly Website Plan",
+        price: "99",
+        priceCurrency: "AUD",
+        description:
+          "$199 setup then $99/month: Business-level website with hosting, content edits and ongoing care included. Month-to-month, buy-out anytime.",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: "99",
+          priceCurrency: "AUD",
+          unitText: "MONTH",
+        },
       },
     ],
   };
@@ -322,6 +351,74 @@ export default function WebsitePricingPage() {
                 </div>
               }
             />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Monthly Website Plan — approved by Ivan 2026-07-16 */}
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <div className="v3-shimmer-border relative overflow-hidden rounded-[32px] bg-[#1D1D1F] p-8 text-white shadow-[0_30px_80px_rgba(29,29,31,0.35)] md:p-12">
+              <div
+                className="pointer-events-none absolute right-[-120px] top-[-120px] h-[380px] w-[380px] rounded-full bg-[#5EF2D6]/[0.12] blur-[100px]"
+                aria-hidden
+              />
+              <div className="relative grid items-center gap-10 lg:grid-cols-[1.5fr_1fr]">
+                <div>
+                  <span className="inline-block rounded-full bg-[#0E8C74] px-4 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                    New — pay monthly
+                  </span>
+                  <h2 className="mt-5 text-[28px] font-semibold leading-tight tracking-[-0.02em] md:text-[38px]">
+                    Prefer to Pay Monthly?
+                  </h2>
+                  <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-white/65 md:text-[16px]">
+                    Get a Business-level website without the upfront cost. We
+                    build it, host it, and look after it — you pay{" "}
+                    {PRICING.website.monthly.setup} setup today, then{" "}
+                    {PRICING.website.monthly.price}. Month-to-month, no lock-in
+                    contract, cancel anytime.
+                  </p>
+                  <ul className="mt-7 grid gap-2.5 sm:grid-cols-2">
+                    {monthlyFeatures.map((feat) => (
+                      <li key={feat} className="flex items-start gap-2 text-[13.5px] leading-relaxed text-white/80">
+                        <span className="mt-[2px] font-semibold text-[#5EF2D6]">✓</span>
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <div className="rounded-[22px] bg-white/[0.05] p-7 text-center">
+                    <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[#5EF2D6]">
+                      Setup today
+                    </p>
+                    <p className="mt-1.5 text-[34px] font-semibold leading-none tracking-[-0.02em] tabular-nums">
+                      {PRICING.website.monthly.setup}
+                    </p>
+                    <div className="mx-auto my-5 h-px w-16 bg-white/15" aria-hidden />
+                    <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-[#5EF2D6]">
+                      Then
+                    </p>
+                    <p className="mt-1.5 text-[34px] font-semibold leading-none tracking-[-0.02em] tabular-nums">
+                      {PRICING.website.monthly.price}
+                    </p>
+                  </div>
+                  <Link
+                    href="/contact?service=website#send-message"
+                    data-track="quote_monthly_plan"
+                    className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-6 py-4 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.5)]"
+                  >
+                    Start the Monthly Plan
+                    <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                  <p className="text-center text-[12.5px] leading-relaxed text-white/45">
+                    Cancel anytime. Want to own it outright later? Buy your
+                    site out whenever you like — just ask.
+                  </p>
+                </div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

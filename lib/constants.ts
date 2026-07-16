@@ -43,6 +43,15 @@ export const PRICING = {
       { name: "Business", price: "$1,299" },
       { name: "Growth", price: "$2,499" },
     ],
+    // Monthly plan — approved by Ivan 2026-07-16: $199 setup then $99/month,
+    // month-to-month (no lock-in), Business-level build with hosting, edits
+    // and ongoing care included, buy-out available anytime.
+    monthly: {
+      name: "Monthly Website Plan",
+      setup: "$199",
+      price: "$99/mo",
+      label: "$199 setup + $99/mo",
+    },
   },
   seo: {
     label: "Local SEO",

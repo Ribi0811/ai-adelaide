@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/home-v3/Reveal";
-import { siteConfig } from "@/lib/constants";
+import { PRICING, siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Websites, SEO & AI for Adelaide",
@@ -258,6 +258,9 @@ export default function ServicesPage() {
                     </p>
                     <p className="mt-2 text-[30px] font-semibold tracking-[-0.02em] text-white">
                       {leadService.pricing}
+                    </p>
+                    <p className="mt-2 text-[13px] leading-relaxed text-white/50">
+                      or {PRICING.website.monthly.label}, month-to-month
                     </p>
                   </div>
                   <Link

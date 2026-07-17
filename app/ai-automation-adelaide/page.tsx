@@ -154,7 +154,7 @@ function ServiceJsonLd() {
       "Custom AI automation for Adelaide businesses — missed-call capture, quote follow-up, booking management, and admin workflows.",
     offers: {
       "@type": "Offer",
-      price: "99.00",
+      price: "199.00",
       priceCurrency: "AUD",
       priceValidUntil: "2026-12-31",
     },
@@ -608,7 +608,7 @@ export default function AIAutomationAdelaidePage() {
             <p className="mt-6 text-sm text-slate-500">
               ROI: Most businesses recover their setup cost within 30
               days. A tradie recovering 3 extra jobs at $350 each =
-              $1,050/week against a $150/mo system. That&apos;s a
+              $1,050/week against a $199/mo system. That&apos;s a
               700-1,000% ROI in Month 1.
             </p>
           </div>

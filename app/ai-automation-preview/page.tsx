@@ -431,6 +431,36 @@ export default function AiAutomationPreview() {
         </div>
       </section>
 
+      {/* Explore More — internal link hub (verbatim) */}
+      <section className="px-6 pb-4 md:pb-8">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <h2 className="text-[22px] font-semibold tracking-tight" style={{ color: INK }}>
+              Explore More
+            </h2>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { href: "/ai-receptionist-cost-adelaide", label: "AI Receptionist Cost Adelaide" },
+                { href: "/ai-automation-vs-hiring-staff-adelaide", label: "AI Automation vs Hiring Staff" },
+                { href: "/websites-for-plumbers-adelaide", label: "Websites for Plumbers Adelaide" },
+                { href: "/websites-for-electricians-adelaide", label: "Websites for Electricians Adelaide" },
+                { href: "/mawson-lakes", label: "AI Automation in Mawson Lakes" },
+                { href: "/port-adelaide", label: "AI Automation in Port Adelaide" },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="group flex items-center justify-between gap-3 rounded-[16px] border border-black/[0.08] bg-white px-5 py-4 text-[14px] font-semibold text-[#1D1D1F] shadow-[0_2px_12px_rgba(29,29,31,0.04)] transition-all hover:-translate-y-0.5 hover:border-[#0E8C74]/50 hover:text-[#0E8C74]"
+                >
+                  {l.label}
+                  <span aria-hidden className="text-[#0E8C74] transition-transform group-hover:translate-x-1">→</span>
+                </Link>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <StackCTA variant="automation" />
 
       {/* CTA */}

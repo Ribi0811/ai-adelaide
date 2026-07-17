@@ -58,8 +58,8 @@ export default function PrivacyPolicyPage() {
 
             <p className="font-semibold mt-4">Information collected automatically</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Analytics (only if you accept cookies):</strong> pages visited, time on site, device and browser type, and approximate location (city level) via Google Analytics 4.</li>
-              <li><strong>Marketing attribution (only if you accept cookies):</strong> the page you landed on, the site that referred you, and any campaign tags in the link you clicked. This is stored in your own browser and attached to your enquiry if you submit one, so we know how you found us.</li>
+              <li><strong>Analytics:</strong> pages visited, time on site, device and browser type, and approximate location (city level) via Google Analytics 4. You can opt out — see our Cookie Policy.</li>
+              <li><strong>Marketing attribution:</strong> the page you landed on, the site that referred you, and any campaign tags in the link you clicked. This is stored in your own browser and attached to your enquiry if you submit one, so we know how you found us.</li>
               <li><strong>Server logs:</strong> our hosting provider records standard technical logs (such as IP address and requests) to keep the Site secure and running.</li>
             </ul>
 
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Hosting:</strong> our Site runs on Vercel's infrastructure.</li>
-              <li><strong>Analytics:</strong> Google Analytics (only if you accept cookies).</li>
+              <li><strong>Analytics:</strong> Google Analytics (you can opt out — see our Cookie Policy).</li>
               <li><strong>Lead notifications:</strong> when you submit an enquiry or use the chat, the details are sent to our team by email and via Telegram so we can reply quickly.</li>
               <li><strong>AI processing:</strong> chat messages and phone conversations are processed by the AI model and voice providers that power our assistants, solely to generate responses and transcripts.</li>
               <li><strong>Payments:</strong> card and bank payments are handled by our payment providers.</li>
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. Cookies</h2>
             <p>
-              Analytics and attribution only run if you accept them via our cookie banner — declining means they never load. For full details, including exactly what is stored in your browser, see our <a href="/cookie-policy" className="text-accent hover:underline">Cookie Policy</a>.
+              We use Google Analytics and simple first-touch attribution to understand how the Site is used and how visitors find us. Australia doesn't require a cookie consent banner, so we don't use one, but you can opt out anytime. For full details, including exactly what is stored in your browser and how to opt out, see our <a href="/cookie-policy" className="text-accent hover:underline">Cookie Policy</a>.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">7. Changes to This Privacy Policy</h2>

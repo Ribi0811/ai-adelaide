@@ -1,9 +1,10 @@
 // First-touch attribution (T1 / handoff Q1).
-// Prepared in memory on first page load, then persisted only after analytics
-// consent. Declined visitors never store or submit attribution metadata.
-// This is delivery metadata attached to Telegram/email notifications — it is
-// NOT durable CRM storage (Vercel's filesystem is read-only; see the API
-// routes). Picking a durable store remains Ivan's decision.
+// Captured in localStorage on first page load and attached to Telegram/email
+// notifications so we know how a lead found us. 2026-07-17: the cookie-consent
+// gate was removed alongside the banner (Australia has no consent-banner
+// mandate). Use is disclosed in the privacy + cookie policies. This is delivery
+// metadata only — NOT durable CRM storage (Vercel's filesystem is read-only;
+// see the API routes). Picking a durable store remains Ivan's decision.
 
 export type Attribution = {
   landing: string;
@@ -37,7 +38,6 @@ export function prepareAttribution(): void {
 export function captureAttribution(): void {
   if (typeof window === "undefined") return;
   try {
-    if (window.localStorage.getItem("cookie-consent") !== "accepted") return;
     if (window.localStorage.getItem(KEY)) return;
     const data = pendingAttribution ?? currentAttribution();
     window.localStorage.setItem(KEY, JSON.stringify(data));
@@ -59,7 +59,6 @@ export function clearAttribution(): void {
 export function getAttribution(): Attribution | null {
   if (typeof window === "undefined") return null;
   try {
-    if (window.localStorage.getItem("cookie-consent") !== "accepted") return null;
     const raw = window.localStorage.getItem(KEY);
     return raw ? (JSON.parse(raw) as Attribution) : null;
   } catch {

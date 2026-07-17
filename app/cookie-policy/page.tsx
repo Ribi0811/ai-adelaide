@@ -43,7 +43,7 @@ export default function CookiePolicyPage() {
 
           <div className="space-y-6 text-body-mobile text-slate-700 md:text-body">
             <p>
-              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses a small number of cookies and browser-storage technologies on <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This policy explains exactly what we store, why, and how you can control it. The short version: nothing optional runs unless you click Accept on our cookie banner, and we use no advertising or cross-site tracking cookies at all.
+              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses a small number of cookies and browser-storage technologies on <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This policy explains exactly what we store, why, and how you can control it. The short version: we use Google Analytics to understand how the Site is used, we use no advertising or cross-site tracking cookies at all, and you can opt out at any time using the methods below.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. What Are Cookies and Browser Storage?</h2>
@@ -53,14 +53,9 @@ export default function CookiePolicyPage() {
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">2. What We Actually Use</h2>
 
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Essential — your cookie choice</h3>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics — Google Analytics 4</h3>
             <p>
-              When you click Accept or Decline on our banner, we save that choice in your browser (localStorage key <code className="text-sm">cookie-consent</code>) so we don't ask you again on every visit. This is the only thing stored if you decline.
-            </p>
-
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics — Google Analytics 4 (only if you accept)</h3>
-            <p>
-              If — and only if — you click Accept, we load Google Analytics 4, which sets its own cookies and collects:
+              We use Google Analytics 4, which sets its own cookies and collects:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Pages visited and time spent on the Site</li>
@@ -69,12 +64,12 @@ export default function CookiePolicyPage() {
               <li>Approximate location (city level) — Google Analytics 4 does not log or store individual IP addresses</li>
             </ul>
             <p>
-              If you decline, Google Analytics never loads — no analytics cookies are set at all. You can also opt out of Google Analytics in any browser via <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a>.
+              You can opt out of Google Analytics in any browser via <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a>, or block cookies using your browser settings (see below).
             </p>
 
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Marketing attribution (only if you accept)</h3>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Marketing attribution</h3>
             <p>
-              With your consent, we note the first page you landed on, the site that referred you, and any campaign tags in the link you clicked. This stays in your own browser (localStorage) and is only sent to us if you submit an enquiry — it tells us how you found us so we know which marketing actually works.
+              We note the first page you landed on, the site that referred you, and any campaign tags in the link you clicked. This stays in your own browser (localStorage) and is only sent to us if you submit an enquiry — it tells us how you found us so we know which marketing actually works.
             </p>
 
             <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Chat assistant history</h3>
@@ -84,12 +79,12 @@ export default function CookiePolicyPage() {
 
             <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">What we don't use</h3>
             <p>
-              No advertising cookies, no remarketing pixels, no cross-site tracking, no social media trackers. If that ever changes, this policy and the consent banner will change first.
+              No advertising cookies, no remarketing pixels, no cross-site tracking, no social media trackers. If that ever changes, this policy will be updated first.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">3. Your Choices</h2>
             <p>
-              The cookie banner is the main control: Decline and nothing optional ever runs. If you've previously accepted and change your mind, clear this site's data in your browser (see below) — the banner will reappear on your next visit and you can decline.
+              Australia does not require a cookie consent banner, so we don't interrupt your visit with one. If you'd rather not be included in analytics, you can opt out with <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a> or block cookies in your browser settings (see below) — the Site works fine either way.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">4. Managing Cookies in Your Browser</h2>

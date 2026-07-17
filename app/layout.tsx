@@ -5,7 +5,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MotionProvider from "@/components/MotionProvider";
-import CookieConsent from "@/components/CookieConsent";
 import AnalyticsListener from "@/components/AnalyticsListener";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import dynamic from "next/dynamic";
@@ -207,7 +206,6 @@ export default function RootLayout({
           <main className="relative overflow-x-clip">{children}</main>
           <Footer />
           <ChatWidget />
-          <CookieConsent />
         </MotionProvider>
       </body>
     </html>

@@ -28,22 +28,13 @@ function loadGoogleAnalytics(measurementId: string) {
 }
 
 export default function GoogleAnalytics({ measurementId }: { measurementId?: string }) {
+  // 2026-07-17: cookie-consent banner removed (Australia has no consent-banner
+  // mandate — that's an EU/UK requirement). GA now loads whenever a measurement
+  // ID is configured. Disclosure remains in the privacy + cookie policies, which
+  // is what Australian law and Google's own terms actually require.
   useEffect(() => {
     if (!measurementId) return;
-
-    const enableIfAccepted = () => {
-      try {
-        if (window.localStorage.getItem("cookie-consent") === "accepted") {
-          loadGoogleAnalytics(measurementId);
-        }
-      } catch {
-        // Storage unavailable: keep analytics disabled.
-      }
-    };
-
-    enableIfAccepted();
-    window.addEventListener("aiadelaide:analytics-accepted", enableIfAccepted);
-    return () => window.removeEventListener("aiadelaide:analytics-accepted", enableIfAccepted);
+    loadGoogleAnalytics(measurementId);
   }, [measurementId]);
 
   return null;

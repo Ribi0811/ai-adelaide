@@ -356,11 +356,17 @@ export default function AiAutomationPreview() {
           </p>
         </div>
         <div className="relative mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
-          <div className="v3-marquee flex w-max items-center gap-4 pr-4">
-            {[...integrations, ...integrations].map((name, i) => (
-              <span key={i} className="shrink-0 rounded-full border border-black/[0.08] bg-[#FBFBFD] px-6 py-3 text-[15px] font-semibold text-[#424245]">
-                {name}
-              </span>
+          {/* Two identical halves, each repeated enough to overflow any
+              viewport, so the -50% translate loops seamlessly with no gap. */}
+          <div className="v3-marquee flex w-max items-center">
+            {[0, 1].map((half) => (
+              <div key={half} className="flex shrink-0 items-center gap-4 pr-4" aria-hidden={half === 1}>
+                {[...integrations, ...integrations, ...integrations].map((name, i) => (
+                  <span key={i} className="shrink-0 whitespace-nowrap rounded-full border border-black/[0.08] bg-[#FBFBFD] px-6 py-3 text-[15px] font-semibold text-[#424245]">
+                    {name}
+                  </span>
+                ))}
+              </div>
             ))}
           </div>
         </div>

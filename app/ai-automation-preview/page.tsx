@@ -9,7 +9,13 @@ import {
   SavingsCounters,
   QuoteChaseMini,
   NoShowRing,
+  ReceptionistDemo,
 } from "./parts";
+
+// cal.com 15-min booking (Ivan's account, 2026-07-17).
+const CAL_URL = "https://cal.com/aiadelaide";
+// Integration names — all stated verbatim in the page's FAQ copy.
+const integrations = ["ServiceM8", "Tradify", "Jobber", "Xero", "MYOB", "Google Calendar", "Calendly", "Microsoft 365", "HubSpot"];
 
 // DESIGN PREVIEW — v4 WOW re-skin of /ai-automation-adelaide. This page is in
 // the answering/automation cluster under a copy freeze (~2026-09-15), so every
@@ -294,10 +300,10 @@ export default function AiAutomationPreview() {
             </Reveal>
           </div>
 
-          {/* Remaining four as clean cards */}
-          <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {[automations[0], automations[2], automations[4], automations[5]].map((a, i) => (
-              <Reveal key={a.title} delay={(i % 4) * 0.06}>
+          {/* Remaining three as clean cards (receptionist has its own demo band below) */}
+          <div className="mt-5 grid gap-5 sm:grid-cols-3">
+            {[automations[0], automations[4], automations[5]].map((a, i) => (
+              <Reveal key={a.title} delay={(i % 3) * 0.06}>
                 <div className="flex h-full flex-col rounded-[24px] border border-black/[0.06] bg-white p-6 shadow-[0_2px_12px_rgba(29,29,31,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(29,29,31,0.1)]">
                   <h3 className="text-[16px] font-semibold tracking-tight" style={{ color: INK }}>{a.title}</h3>
                   <p className="mt-2.5 text-[13.5px] leading-relaxed text-[#6E6E73]">{a.body}</p>
@@ -305,6 +311,63 @@ export default function AiAutomationPreview() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* AI Receptionist — dark voice-demo showcase band */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="mx-auto max-w-container">
+          <div className="grid items-center gap-12 lg:grid-cols-[1fr_.9fr]">
+            <Reveal>
+              <div>
+                <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">Live · hear it yourself</p>
+                <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+                  24/7 AI Receptionist
+                </h2>
+                <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-[#6E6E73] md:text-[16px]">
+                  Answers every call — during jobs, after hours, weekends. Books appointments, answers FAQs, routes emergencies. Sounds human. Australian accent. No hold music.
+                </p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <a href="tel:+61871009788" data-track="tel_receptionist_demo" className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]">
+                    Call it now — (08) 7100 9788
+                    <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                  </a>
+                  <a href={CAL_URL} target="_blank" rel="noopener noreferrer" data-track="book_call_receptionist" className="inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]">
+                    Book a 15-min call
+                  </a>
+                </div>
+                <p className="mt-4 font-mono text-[12px] text-[#98989D]">
+                  Our own AI answers this number right now — that&apos;s the same system we install.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.12}>
+              <ReceptionistDemo />
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Integrations marquee */}
+      <section className="border-y border-black/[0.06] bg-white py-12 md:py-16">
+        <div className="mx-auto max-w-container px-6">
+          <p className="text-center font-mono text-[12px] font-semibold uppercase tracking-[0.18em] text-[#98989D]">
+            Works with the tools you already use
+          </p>
+        </div>
+        <div className="relative mt-8 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+          <div className="v3-marquee flex w-max items-center gap-4 pr-4">
+            {[...integrations, ...integrations].map((name, i) => (
+              <span key={i} className="shrink-0 rounded-full border border-black/[0.08] bg-[#FBFBFD] px-6 py-3 text-[15px] font-semibold text-[#424245]">
+                {name}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="mx-auto mt-8 max-w-container px-6">
+          <p className="text-center text-[13px] text-[#98989D]">
+            If your tool has an API or webhook, we can usually connect it within 1–2 days.
+          </p>
         </div>
       </section>
 
@@ -479,10 +542,11 @@ export default function AiAutomationPreview() {
                 Book your free automation audit
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
-              <a href="tel:+61871009788" className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]">
-                (08) 7100 9788
+              <a href={CAL_URL} target="_blank" rel="noopener noreferrer" data-track="book_call_automation_cta" className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]">
+                Book a 15-min call
               </a>
             </div>
+            <p className="mt-4 font-mono text-[12px] text-[#98989D]">Or call (08) 7100 9788 — our AI answers right now.</p>
           </Reveal>
         </div>
       </section>

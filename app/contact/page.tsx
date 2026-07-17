@@ -161,6 +161,37 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Prefer to book a time? — cal.com */}
+      <section className="px-6 pb-16 md:pb-20">
+        <div className="mx-auto max-w-container">
+          <Reveal>
+            <div className="flex flex-col items-center gap-5 rounded-[28px] border border-black/[0.06] bg-white p-8 text-center shadow-[0_2px_12px_rgba(29,29,31,0.05)] sm:flex-row sm:items-center sm:justify-between sm:text-left md:p-10">
+              <div>
+                <p className="font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-[#0E8C74]">
+                  Prefer to pick a time?
+                </p>
+                <h2 className="mt-2 text-[22px] font-semibold tracking-tight text-[#1D1D1F] md:text-[26px]">
+                  Book a free 15-minute call
+                </h2>
+                <p className="mt-2 text-[14.5px] leading-relaxed text-[#6E6E73]">
+                  Grab a slot that suits you — no forms, no phone tag.
+                </p>
+              </div>
+              <a
+                href="https://cal.com/aiadelaide"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-track="book_call_contact"
+                className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
+              >
+                Pick a time
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Prefer email — the dark moment */}
       <section className="px-6 pb-16 md:pb-20">
         <div className="mx-auto max-w-container">

@@ -357,9 +357,17 @@
   to { background-size: 100% 100%; }
 }
 
+/* Voice-equalizer bars (AI receptionist demo). */
+@keyframes v4-eq-kf {
+  0%, 100% { transform: scaleY(0.28); }
+  50% { transform: scaleY(1); }
+}
+.v4-eq-bar { transform-origin: bottom; animation: v4-eq-kf 0.9s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   .v3-marquee { animation: none; }
   .v3-highlight { animation: none; background-size: 100% 100%; }
+  .v4-eq-bar { animation: none; transform: scaleY(0.6); }
 }
 
 /* ── v4 One Day: starfield ──────────────────────────────────────────── */

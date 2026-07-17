@@ -17,6 +17,7 @@ const serviceLinks = [
   { href: "/answering-service-adelaide", label: "24/7 answering service" },
   { href: "/bookkeeping-adelaide", label: "AI bookkeeping" },
   { href: "/missed-call-text-back-adelaide", label: "Missed-call text-back" },
+  { href: "/quote-chaser-adelaide", label: "Quote Chaser" },
   { href: "/google-business-profile-optimisation-adelaide", label: "Google Business Profile" },
   { href: "/services", label: "All services ›" },
 ];

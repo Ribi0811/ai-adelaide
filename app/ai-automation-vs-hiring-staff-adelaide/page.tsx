@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import CostRace from "./parts";
 
 export const metadata: Metadata = {
   title: "AI Automation vs Hiring Staff Adelaide | Cost",
@@ -34,6 +35,11 @@ export default function AIAutomationVsHiringStaffPage() {
             You've thought about hiring someone to handle your calls and admin. You've also heard about AI. Here's the honest side-by-side comparison — including when AI makes sense, and when it doesn't.
           </p>
         </div>
+      </section>
+
+      {/* Animated headline comparison — figures from this page's own content */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <CostRace />
       </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">

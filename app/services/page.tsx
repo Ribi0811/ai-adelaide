@@ -133,6 +133,7 @@ const guides = [
   { href: "/seo-vs-google-ads-adelaide", title: "SEO vs Google Ads", desc: "Which is better for Adelaide small businesses? Costs, timelines, and ROI compared." },
   { href: "/ai-automation-vs-hiring-staff-adelaide", title: "AI Automation vs Hiring Staff", desc: "The real cost comparison for Adelaide small businesses." },
   { href: "/missed-call-answering-service-adelaide", title: "Missed Call Answering Service", desc: "Never lose a lead to voicemail again — how it works." },
+  { href: "/quote-chaser-adelaide", title: "Quote Chaser", desc: "Automated quote follow-up — three polite touchpoints, perfectly timed. Part of automation from $199/mo." },
   { href: "/seo", title: "Local SEO Services", desc: "How we get Adelaide businesses ranking on Google. Keyword research, content, citations." },
   { href: "/seo-for-tradies-adelaide", title: "SEO for Tradies Adelaide", desc: "Tradie-specific SEO playbook. GBP, reviews, suburb pages, schema, and pricing from $399/mo." },
 ];

@@ -57,6 +57,9 @@ export default function MiddayQuote() {
               Three polite touchpoints, perfectly timed. Most tradies never
               follow up — that&apos;s why 30% more quotes turn into jobs when
               something does it for you.{" "}
+              <Link href="/quote-chaser-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
+                Meet the Quote Chaser ›
+              </Link>{" "}
               <Link href="/ai-automation-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
                 Automation from $199/mo ›
               </Link>

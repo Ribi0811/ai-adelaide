@@ -1,23 +1,35 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { type FormEvent, useEffect, useMemo, useState } from 'react';
 import { AUDIT_EMAIL_KEY, AUDIT_STORAGE_KEY } from '@/lib/audit/questions';
 import { calculateAuditScore, type AuditAnswers } from '@/lib/audit/scoring';
 import { getRecommendations } from '@/lib/audit/recommendations';
 
 export default function AuditResultsPage() {
+  const router = useRouter();
   const [answers, setAnswers] = useState<AuditAnswers | null>(null);
   const [email, setEmail] = useState('');
   const [saved, setSaved] = useState(false);
   const [displayScore, setDisplayScore] = useState(0);
+  // Distinguishes "still reading storage" from "confirmed no results" so we
+  // only redirect once we know there's genuinely no audit to show.
+  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem(AUDIT_STORAGE_KEY);
     const storedEmail = localStorage.getItem(AUDIT_EMAIL_KEY);
     if (stored) setAnswers(JSON.parse(stored));
     if (storedEmail) setEmail(storedEmail);
+    setChecked(true);
   }, []);
+
+  // No audit data (direct visit / bot) → send to the audit start instead of
+  // rendering a thin fallback. Fixes the Google "soft 404" on this URL.
+  useEffect(() => {
+    if (checked && !answers) router.replace('/audit');
+  }, [checked, answers, router]);
 
   const score = useMemo(() => (answers ? calculateAuditScore(answers) : null), [answers]);
   const recommendations = useMemo(() => (score && answers ? getRecommendations(score, answers) : []), [score, answers]);

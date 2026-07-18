@@ -160,6 +160,17 @@ const nextConfig = {
       // /seo-for-tradies-adelaide. The blog slug itself now redirects there,
       // and every URL variant below points straight at the landing page
       // (not at the blog slug) to keep every hop a single redirect.
+      // GSC 404 fixes (2026-07-17): old indexed URLs with no redirect yet.
+      {
+        source: "/blog/ai-automation-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/ai-for-tradies-adelaide",
+        destination: "/seo-for-tradies-adelaide",
+        permanent: true,
+      },
       {
         source: "/blog/adelaide-seo-for-tradies",
         destination: "/seo-for-tradies-adelaide",

@@ -31,7 +31,7 @@ const PAGE_DATES: Record<string, string> = {
   "/websites-for-builders-adelaide": "2026-07-04",
   "/websites-for-landscapers-adelaide": "2026-07-04",
   "/websites-for-painters-adelaide": "2026-07-04",
-  "/ai-automation-adelaide": "2026-07-11",
+  "/ai-automation-adelaide": "2026-07-17",
   "/ai-receptionist-adelaide": "2026-06-21",
   "/missed-call-text-back-adelaide": "2026-06-25",
   "/quote-chaser-adelaide": "2026-07-17",

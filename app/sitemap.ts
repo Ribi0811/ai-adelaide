@@ -53,6 +53,7 @@ const PAGE_DATES: Record<string, string> = {
   // "aged care seo services" queries had impressions but no page).
   "/ai-seo-adelaide": "2026-07-13",
   "/aged-care-seo-services": "2026-07-13",
+  "/ndis-provider-marketing-adelaide": "2026-07-17",
   "/ai-app-development-adelaide": "2026-07-11",
   "/about": "2026-06-23",
   "/faq": "2026-06-20",
@@ -371,6 +372,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: dateFor("/aged-care-seo-services"),
       changeFrequency: "monthly",
       priority: 0.75,
+    },
+    {
+      url: `${siteConfig.url}/ndis-provider-marketing-adelaide`,
+      lastModified: dateFor("/ndis-provider-marketing-adelaide"),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
     {
       url: `${siteConfig.url}/ai-app-development-adelaide`,

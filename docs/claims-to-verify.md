@@ -156,3 +156,22 @@ the same profile as the ROI formulas already listed above.
   `/local-seo-adelaide`, `/seo-for-tradies-adelaide` and
   `/website-design-adelaide`; removed ranking/timeline guarantees from AI SEO,
   GBP, automotive, hotel, aged-care and SEO-vs-Ads pages.
+
+---
+
+## NDIS provider page (`/ndis-provider-marketing-adelaide`) — added 2026-07-17
+
+New vertical page. Written with **no** invented client claims, participant
+testimonials, or outcome stats — deliberately, given NDIS participant-privacy
+sensitivity and our never-invent rule. One placeholder to fill when real proof
+exists:
+
+- **HUMAN INPUT NEEDED:** a real, permission-backed NDIS provider result
+  (service type, service area, what changed, timeframe). Provider outcome only —
+  **never** a participant's personal details, and only with the provider's
+  written consent. Until supplied, the page carries no case study (comment
+  placeholder in the page source).
+
+Note: the page describes how participants research providers online
+qualitatively (no hard percentages) so nothing needs sourcing. If specific
+stats are added later (e.g. "% who research online"), cite a real source.

@@ -46,6 +46,7 @@ const resourceLinks = [
   { href: "/automotive-seo-services", label: "Automotive SEO" },
   { href: "/hotel-seo-services", label: "Hotel SEO" },
   { href: "/aged-care-seo-services", label: "Aged care SEO" },
+  { href: "/ndis-provider-marketing-adelaide", label: "NDIS provider websites" },
   { href: "/ai-receptionist-vs-virtual-receptionist", label: "AI vs virtual reception" },
   { href: "/best-ai-receptionist-australia", label: "Best AI receptionist 2026" },
   { href: "/blog", label: "Blog" },

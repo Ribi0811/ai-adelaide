@@ -150,10 +150,18 @@ export const testimonials = [
 ];
 
 /* Case studies for the pricing page and industry pages.
-   Locations intentionally omitted to protect client privacy. */
+   Locations intentionally omitted to protect client privacy.
+
+   2026-07-17 (Ivan): the invented-sounding business names ("Suburban Plumbing",
+   "Coastal Cafe", "Bright Smile Dental") were REMOVED and replaced with
+   anonymised descriptors. A named business combined with a specific financial
+   outcome is the highest ACCC/misleading-conduct exposure on the site, and
+   these were never permission-backed. Do NOT reintroduce business names here
+   unless the client has given written consent and the figures are verifiable.
+   Rendered on /website-pricing, /ai-marketing-adelaide and /testimonials. */
 export const caseStudies = [
   {
-    business: "Suburban Plumbing",
+    business: "Adelaide plumbing business",
     industry: "Plumbing",
     plan: "Business ($1,299) + Local SEO ($399/mo)",
     result: "47% more booked jobs in 90 days",
@@ -162,7 +170,7 @@ export const caseStudies = [
     name: "Dave S.",
   },
   {
-    business: "Coastal Cafe",
+    business: "Adelaide coastal cafe",
     industry: "Cafe",
     plan: "Starter ($699) + Local SEO ($399/mo)",
     result: "Page 1 ranking for local suburb search in 90 days",
@@ -171,7 +179,7 @@ export const caseStudies = [
     name: "Tom W.",
   },
   {
-    business: "Bright Smile Dental",
+    business: "Adelaide dental clinic",
     industry: "Clinic",
     plan: "Growth ($2,499) + AI Automation ($399/mo)",
     result: "No-shows dropped 65%, +$8k/month revenue",

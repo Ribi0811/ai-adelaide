@@ -87,7 +87,7 @@ export default function TestimonialsPage() {
               Real case studies, real numbers
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-body-mobile text-textSecondary md:text-body">
-              Three Adelaide businesses. Three measurable wins — more bookings, better rankings, fewer no-shows.
+              Three Adelaide business types. Three kinds of win — more bookings, better rankings, fewer no-shows.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -113,6 +113,12 @@ export default function TestimonialsPage() {
               </article>
             ))}
           </div>
+          {/* Honesty disclaimer (Ivan-approved 2026-07-17) — mirrors the one in
+              components/CaseStudies.tsx. Keep both in sync. */}
+          <p className="mx-auto mt-8 max-w-2xl text-center text-xs text-textSecondary">
+            Illustrative examples based on typical results. Individual outcomes
+            vary by business, service area, competition and offer.
+          </p>
         </div>
       </section>
 

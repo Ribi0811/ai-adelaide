@@ -35,7 +35,8 @@ export default function CaseStudies({
         </h2>
 
         <p className="mx-auto mb-12 max-w-2xl text-center text-body-mobile text-textSecondary md:text-body">
-          Real businesses. Real numbers. Here&apos;s what changed after they got a proper website and SEO.
+          Here&apos;s the kind of change a proper website and SEO makes for an
+          Adelaide small business.
         </p>
 
         <div className={`grid gap-6 ${count === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}`}>
@@ -81,6 +82,14 @@ export default function CaseStudies({
             </article>
           ))}
         </div>
+
+        {/* Honesty disclaimer (Ivan-approved 2026-07-17). Keep this whenever
+            the caseStudies array is displayed — the figures are indicative,
+            not audited client results. */}
+        <p className="mx-auto mt-8 max-w-2xl text-center text-xs text-textSecondary">
+          Illustrative examples based on typical results. Individual outcomes
+          vary by business, service area, competition and offer.
+        </p>
       </div>
     </section>
   );

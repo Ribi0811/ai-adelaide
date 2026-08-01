@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "check-meta": "node scripts/check-meta.mjs",
-    "check-links": "node scripts/check-links.mjs"
+    "check-links": "node scripts/check-links.mjs",
+    "check-openai-ads": "node scripts/check-openai-ads.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.34.3",

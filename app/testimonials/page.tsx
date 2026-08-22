@@ -84,10 +84,10 @@ export default function TestimonialsPage() {
           <div className="mb-8 text-center">
             <span className="eyebrow">Outcomes</span>
             <h2 className="mt-3 text-h2-mobile text-textPrimary md:text-h2">
-              Real case studies, real numbers
+              Illustrative outcome examples
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-body-mobile text-textSecondary md:text-body">
-              Three Adelaide business types. Three kinds of win — more bookings, better rankings, fewer no-shows.
+              Three Adelaide business types. Three kinds of outcome — shown as examples, not promises or audited averages.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">

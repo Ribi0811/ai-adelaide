@@ -19,7 +19,7 @@ const faqs = [
   {
     q: "Do you do SEO for small businesses in Adelaide?",
     a: "That's our core retainer. Local SEO from $399/mo: suburb pages, content, Google Business Profile optimisation, and monthly reporting — no lock-in contracts.",
-    link: { href: "/seo", label: "Local SEO Adelaide" },
+    link: { href: "/local-seo-adelaide", label: "Local SEO Adelaide" },
   },
   {
     q: "What is missed-call text-back and an AI receptionist?",

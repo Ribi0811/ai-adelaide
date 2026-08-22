@@ -58,7 +58,7 @@ export default function MorningSearch() {
           <p className="mt-4 max-w-md text-[16px] leading-relaxed text-[#6E6E73]">
             Suburb pages, reviews, Google Business Profile — our local SEO
             puts you where the panic-Googling happens.{" "}
-            <Link href="/seo" className="font-semibold text-[#0E8C74] hover:opacity-70">
+            <Link href="/local-seo-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
               Local SEO from $399/mo ›
             </Link>
           </p>

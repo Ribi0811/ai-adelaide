@@ -33,7 +33,7 @@ export default function NewDawn() {
           <div className="mx-auto mt-12 grid max-w-2xl gap-3 sm:grid-cols-3">
             {[
               { name: "Website design", price: `from ${PRICING.website.from}`, sub: "one-off, you own it", href: "/website-design-adelaide" },
-              { name: "Local SEO", price: `from ${PRICING.seo.from}`, sub: "no lock-in", href: "/seo" },
+              { name: "Local SEO", price: `from ${PRICING.seo.from}`, sub: "no lock-in", href: "/local-seo-adelaide" },
               { name: "AI automation", price: `from ${PRICING.automation.from}`, sub: "on in 2–5 days", href: "/ai-automation-adelaide" },
             ].map((t) => (
               <Link

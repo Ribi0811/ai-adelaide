@@ -35,7 +35,7 @@ const leadService = {
   body: "A proper website built for Adelaide small businesses — not a generic template that looks like 50 others. Fast, mobile-first, Google-ready from day one. Click-to-call buttons, service pages, suburb targeting, and online booking. Live in 48 hours for Starter, or fully built out in 10-14 days for Growth. You own it. No lock-in.",
   features: [
     "3-10+ page custom website",
-    "Mobile-first, loads in under 2 seconds",
+    "Mobile-first, performance-tested before launch",
     "Google-ready: schema, sitemap, meta tags",
     "Suburb targeting pages built in",
     "Click-to-call, quote forms, booking integration",
@@ -44,12 +44,12 @@ const leadService = {
   ],
   perfectFor:
     "Tradies, cafes, clinics, beauty salons, retail shops — any Adelaide small business that needs to be found on Google.",
-  pricing: "from $699",
+  pricing: `from ${PRICING.website.from}`,
   cta: {
     primary: { label: "See Pricing →", href: "/website-pricing" },
     secondary: { label: "Send a Message →", href: "/contact?service=website#send-message" },
   },
-  note: "Start with: a free 15-minute chat. We'll tell you which tier fits.",
+  note: "Start with a free 15-minute chat. We’ll tell you which tier fits.",
 };
 
 const supportingServices = [
@@ -58,48 +58,48 @@ const supportingServices = [
     icon: "📍",
     heading: "Local SEO",
     tagline: "Get Found on Google",
-    body: "Keyword research, service pages, suburb pages, blog content, Google Business Profile optimisation, citation building, and rank tracking. We do the technical work so you rank for searches like 'plumber Norwood' or 'cafe Glenelg' — the searches that actually bring customers.",
+    body: "Keyword research, service pages, suburb pages, blog content, Google Business Profile optimisation, relevant local citations and rank tracking. We do the technical work to help you compete for searches like 'plumber Norwood' or 'cafe Glenelg' — the searches that can bring customers.",
     features: [
       "Keyword research tied to your services and suburbs",
       "Service pages that target buying intent",
       "Suburb page creation",
       "Blog content (2-4 posts/month)",
       "Google Business Profile optimisation",
-      "Citation building (10+ directories)",
+      "Relevant local citations and business listings",
       "Monthly rank tracking and reporting",
     ],
     perfectFor:
-      "Businesses that want to dominate local search and get consistent enquiries from Google.",
-    pricing: "from $399/mo",
+      "Businesses that want a stronger local search presence and a clearer path from Google to enquiry.",
+    pricing: `from ${PRICING.seo.from}`,
     cta: {
-      primary: { label: "Learn More →", href: "/seo" },
+      primary: { label: "Learn More →", href: "/local-seo-adelaide" },
       secondary: { label: "Send a Message →", href: "/contact?service=seo#send-message" },
     },
-    note: "Results start in 2-4 months for low-competition keywords. Most clients see clear improvement within 90 days.",
+    note: "We establish a baseline first, then report the work completed and the movement we can verify. Timing varies by starting point, service area and competition.",
   },
   {
     id: "ai-automation",
     icon: "🤖",
     heading: "AI Automation",
     tagline: "Capture Every Lead",
-    body: "Missed call text-back, AI receptionist, quote follow-up sequences, appointment reminders, review requests, and Google review automation. Systems that work while you sleep. Integrates with ServiceM8, Tradify, Xero, Google Calendar, Calendly, and most CRMs.",
+    body: "Missed call text-back, AI receptionist, quote follow-up sequences, appointment reminders, review requests, and Google review automation. Systems that keep working after hours, with integrations chosen around the tools your business already uses.",
     features: [
       "Missed call text-back (within 30 seconds)",
       "AI receptionist (24/7, Australian accent)",
       "Quote follow-up sequences (3 touchpoints)",
       "Appointment reminders (SMS + email)",
       "Google review request automation",
-      "Integrates with 50+ tools",
+      "Connects with your existing tools where an integration is available",
       "No lock-in contracts",
     ],
     perfectFor:
       "Tradies, clinics, and busy businesses that miss calls and lose leads while on the job.",
-    pricing: "from $199/mo",
+    pricing: `from ${PRICING.automation.from}`,
     cta: {
       primary: { label: "Learn More →", href: "/ai-automation-adelaide" },
       secondary: { label: "Send a Message →", href: "/contact?service=automation#send-message" },
     },
-    note: "Most businesses recover 3-5 extra jobs per week. Setup takes 2-5 business days.",
+    note: "Setup usually takes 2–5 business days once access, copy and approvals are ready.",
   },
 ];
 
@@ -134,7 +134,7 @@ const guides = [
   { href: "/ai-automation-vs-hiring-staff-adelaide", title: "AI Automation vs Hiring Staff", desc: "The real cost comparison for Adelaide small businesses." },
   { href: "/missed-call-answering-service-adelaide", title: "Missed Call Answering Service", desc: "Never lose a lead to voicemail again — how it works." },
   { href: "/quote-chaser-adelaide", title: "Quote Chaser", desc: "Automated quote follow-up — three polite touchpoints, perfectly timed. Part of automation from $199/mo." },
-  { href: "/seo", title: "Local SEO Services", desc: "How we get Adelaide businesses ranking on Google. Keyword research, content, citations." },
+  { href: "/local-seo-adelaide", title: "Local SEO Adelaide", desc: "Google Business Profile, local pages, reviews and citations for Adelaide search." },
   { href: "/seo-for-tradies-adelaide", title: "SEO for Tradies Adelaide", desc: "Tradie-specific SEO playbook. GBP, reviews, suburb pages, schema, and pricing from $399/mo." },
 ];
 

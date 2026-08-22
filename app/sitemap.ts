@@ -11,12 +11,12 @@ import { posts } from "@/data/posts";
 //
 // Path (relative, no leading site URL) -> ISO date string.
 const PAGE_DATES: Record<string, string> = {
-  "/": "2026-07-07",
+  "/": "2026-08-22",
   "/website-pricing": "2026-07-16",
-  "/website-design-adelaide": "2026-07-16",
-  "/seo": "2026-07-16",
+  "/website-design-adelaide": "2026-08-22",
+  "/seo": "2026-08-22",
   "/seo-for-tradies-adelaide": "2026-07-16",
-  "/services": "2026-07-16",
+  "/services": "2026-08-22",
   "/contact": "2026-07-16",
   "/audit": "2026-07-16",
   "/website-cost-adelaide": "2026-07-16",
@@ -46,7 +46,7 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-consulting-melbourne": "2026-06-20",
   "/ai-office-worker-adelaide": "2026-07-11",
   "/locations": "2026-06-23",
-  "/local-seo-adelaide": "2026-07-13",
+  "/local-seo-adelaide": "2026-08-22",
   "/automotive-seo-services": "2026-07-13",
   "/hotel-seo-services": "2026-07-13",
   // Added 2026-07-11 (Tier 12 content-gap fill: "ai seo adelaide" and
@@ -69,7 +69,7 @@ const PAGE_DATES: Record<string, string> = {
   "/google-business-profile-optimisation-adelaide": "2026-07-13",
   "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
-  "/testimonials": "2026-06-25",
+  "/testimonials": "2026-08-22",
   "/tools/ai-readiness-calculator": "2026-07-13",
 };
 

@@ -47,15 +47,16 @@ const buildItems = [
 const portfolio = [
   {
     name: "Plumbing",
-    label: "Adelaide Plumbing Co. — sample website design",
+    label: "Your Plumbing Business — sample website design",
     caption:
       "Sample design (concept layout, not a live client site). Click-to-call, Google-ready, mobile-first, suburb targeting.",
     img: "/portfolio/plumbing-website.jpg",
   },
   {
     name: "Electrician",
-    label: "Electrician Business Website",
-    caption: "Bold, trustworthy layout built for trades. Fast load, suburb targeting, ready for AI call capture.",
+    label: "Your Electrician Business — sample website design",
+    caption:
+      "Sample design (concept layout, not a live client site). Bold, trustworthy layout built for trades, with suburb targeting and clear enquiry paths.",
     img: "/portfolio/electrician-website.jpg",
   },
 ];
@@ -154,6 +155,7 @@ const suburbLinks = [
 const INK = "#1D1D1F";
 
 function ServiceJsonLd() {
+  const startingPrice = PRICING.website.tiers[0].price.replace(/[^\d.]/g, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -172,11 +174,11 @@ function ServiceJsonLd() {
       `Website design for Adelaide small businesses. Mobile-first, Google-ready and built for enquiries. ${PRICING.website.fromLabel} one-off.`,
     offers: {
       "@type": "Offer",
-      price: "699",
+      price: startingPrice,
       priceCurrency: "AUD",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: "699",
+        price: startingPrice,
         priceCurrency: "AUD",
         unitText: "ONE_OFF",
       },
@@ -230,7 +232,7 @@ export default function WebsiteDesignAdelaidePage() {
             className="v3-rise mt-4 max-w-3xl text-[40px] font-semibold leading-[1.05] tracking-[-0.03em] [animation-delay:.12s] [text-wrap:balance] md:text-[64px]"
             style={{ color: INK }}
           >
-            A Professional Website, Live in 48 Hours
+            Website Design Adelaide for Small Businesses
           </h1>
           <p className="v3-rise mt-6 max-w-2xl text-[17px] leading-relaxed text-[#6E6E73] [animation-delay:.24s] md:text-lg">
             Not a template you have to figure out yourself. Not a big agency
@@ -238,6 +240,29 @@ export default function WebsiteDesignAdelaidePage() {
             businesses — designed to turn visitors into enquiries, bookings,
             and sales. Done for you, live in two days.
           </p>
+          <div className="v3-rise mt-7 flex flex-wrap gap-x-5 gap-y-2 text-[13px] font-semibold text-[#424245] [animation-delay:.3s]">
+            <span>{PRICING.website.fromLabel} one-off</span>
+            <span aria-hidden>•</span>
+            <span>You own the finished site</span>
+            <span aria-hidden>•</span>
+            <span>Free 15-minute brief</span>
+          </div>
+          <div className="v3-rise mt-8 flex flex-col gap-3 sm:flex-row [animation-delay:.36s]">
+            <Link
+              href="/contact?service=website#send-message"
+              data-track="quote_design_hero"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
+            >
+              Start with a free brief
+              <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+            <Link
+              href="/website-pricing"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+            >
+              See website pricing <span aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -314,6 +339,36 @@ export default function WebsiteDesignAdelaidePage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Proof boundary — transparent until permission-backed client work can be published. */}
+      <section className="px-6 pb-20 md:pb-28">
+        <div className="mx-auto max-w-4xl rounded-[28px] border border-[#0E8C74]/20 bg-[#0E8C74]/[0.05] p-8 md:p-12">
+          <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">
+            Proof before promises
+          </p>
+          <h2 className="mt-3 max-w-2xl text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
+            See the quality before you commit
+          </h2>
+          <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[#424245] md:text-[17px]">
+            The designs above are clearly marked sample concepts, not made-up client logos or live customer sites. We only publish a client name, URL, screenshot or measured outcome when we have permission to do so. For a closer look, book a free brief and we&apos;ll show you the right examples for your business.
+          </p>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/contact?service=website#send-message"
+              data-track="quote_design_proof"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1D1D1F] px-7 py-3.5 text-[15px] font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(29,29,31,0.2)]"
+            >
+              Ask to see examples <span aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/audit"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] bg-white px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
+            >
+              Get a free visibility review <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </section>

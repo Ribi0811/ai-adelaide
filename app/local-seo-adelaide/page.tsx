@@ -21,6 +21,21 @@ const whatsIncluded = [
   { title: "Local visibility and lead reporting", body: "Plain-English reporting covers priority queries, Google Business Profile activity, calls and forms where tracking is available, completed work, and the next actions worth taking." },
 ];
 
+const howWeWork = [
+  {
+    title: "Baseline first",
+    body: "We record the pages, searches, profile information and enquiry paths that matter before recommending changes. That gives you a clear starting point instead of a vague promise.",
+  },
+  {
+    title: "Fix the highest-value gaps",
+    body: "We prioritise the service pages, Google Business Profile details, local signals and conversion paths most likely to help the areas you genuinely serve.",
+  },
+  {
+    title: "Report what changed",
+    body: "Each month you see the work completed, the visibility movement we can verify and the next actions worth taking. If the data is inconclusive, we say so.",
+  },
+];
+
 const faqs = [
   { question: "What is local SEO and why does it matter for Adelaide businesses?", answer: "Local SEO improves how a business appears for searches with geographic intent, such as ‘plumber Norwood’, ‘physio Glenelg’ or ‘cafe Mount Barker’. It connects your website, Google Business Profile, reviews and wider business information so nearby customers can find accurate information and decide whether to contact you." },
   { question: "How long does local SEO take to work in Adelaide?", answer: "There is no fixed timetable. Your starting visibility, competition, location, website quality and Google's crawl and ranking systems all affect the pace. We establish a baseline, complete the highest-impact work first, and review early signals over the first few months rather than promising a particular position by a particular date." },
@@ -54,8 +69,11 @@ export default function LocalSeoAdelaidePage() {
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
             We improve how your business appears when Adelaide customers search by service, suburb, or &quot;near me&quot;. That means accurate Google Business Profile information, useful local pages, genuine reviews, consistent business details, and measurement tied to enquiries—not ranking guarantees.
           </p>
+          <p className="mt-5 text-sm font-semibold text-slate-700">
+            Local SEO from {PRICING.seo.from} · month to month · no lock-in
+          </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
+            <Link href="/contact?service=seo#send-message" data-track="quote_local_seo_hero" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
             <Link href="/seo" className="btn-secondary px-8 py-4">See Full SEO Service <span aria-hidden>→</span></Link>
           </div>
         </div>
@@ -72,6 +90,31 @@ export default function LocalSeoAdelaidePage() {
                 <p className="text-body-mobile text-slate-700 md:text-body">{item.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <div className="max-w-3xl">
+            <p className="eyebrow-light">A clearer way to buy SEO</p>
+            <h2 className="mt-3 text-h2-mobile text-slate-950 md:text-h2">How we work with your local search</h2>
+            <p className="mt-4 text-body-mobile text-slate-600 md:text-body">
+              Local SEO is easier to judge when the work and the evidence are visible. We start with what can be checked, then improve the pages and local signals that match your real service area.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {howWeWork.map((item, i) => (
+              <div key={item.title} className="panel-light-soft p-5 md:p-6">
+                <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">0{i + 1}</p>
+                <h3 className="mt-3 text-h3-mobile text-slate-950 md:text-h3">{item.title}</h3>
+                <p className="mt-3 text-body-mobile text-slate-700 md:text-body">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link href="/website-design-adelaide" className="btn-secondary px-7 py-3.5">Need a stronger website first? <span aria-hidden>→</span></Link>
+            <Link href="/website-cost-adelaide" className="btn-secondary px-7 py-3.5">See website cost guidance <span aria-hidden>→</span></Link>
           </div>
         </div>
       </section>

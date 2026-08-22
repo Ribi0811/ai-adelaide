@@ -151,7 +151,7 @@ function ServiceJsonLd() {
       name: "Adelaide",
     },
     description:
-      "Local SEO for Adelaide small businesses. We help you show up on Google with suburb targeting, Google Business Profile optimisation, and content that ranks.",
+      "SEO services for Adelaide small businesses: technical foundations, useful service content, local search, authority building and enquiry tracking.",
     offers: {
       "@type": "Offer",
       price: monthlyPrice,
@@ -221,6 +221,17 @@ export default function SeoPage() {
                 help Adelaide customers discover, understand, and contact your
                 business: technical SEO, service content, local search,
                 authority building, and conversion tracking.
+              </p>
+              <p className="v3-rise mt-4 max-w-xl text-[14px] leading-relaxed text-[#6E6E73] [animation-delay:.3s]">
+                Need Google Maps and suburb visibility first? Start with{" "}
+                <Link href="/local-seo-adelaide" className="font-semibold text-[#0E8C74] underline underline-offset-4 hover:opacity-70">
+                  Local SEO Adelaide
+                </Link>
+                . If your current website is the constraint, see our{" "}
+                <Link href="/website-design-adelaide" className="font-semibold text-[#0E8C74] underline underline-offset-4 hover:opacity-70">
+                  website design service
+                </Link>
+                .
               </p>
               <div className="v3-rise mt-8 flex flex-col gap-3 sm:flex-row [animation-delay:.36s]">
                 <Link

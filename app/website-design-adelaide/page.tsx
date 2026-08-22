@@ -247,7 +247,7 @@ export default function WebsiteDesignAdelaidePage() {
             <span aria-hidden>•</span>
             <span>Free 15-minute brief</span>
           </div>
-          <div className="v3-rise mt-8 flex flex-col gap-3 sm:flex-row [animation-delay:.36s]">
+          <div className="v3-rise mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center [animation-delay:.36s]">
             <Link
               href="/contact?service=website#send-message"
               data-track="quote_design_hero"
@@ -355,7 +355,7 @@ export default function WebsiteDesignAdelaidePage() {
           <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[#424245] md:text-[17px]">
             The designs above are clearly marked sample concepts, not made-up client logos or live customer sites. We only publish a client name, URL, screenshot or measured outcome when we have permission to do so. For a closer look, book a free brief and we&apos;ll show you the right examples for your business.
           </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Link
               href="/contact?service=website#send-message"
               data-track="quote_design_proof"

@@ -29,7 +29,7 @@ const pillars = [
     n: "02",
     title: "Get found when participants search",
     body: "Local SEO tuned to the terms people actually type — “support coordinator near me”, “NDIS [support] [suburb]”, “disability support provider Adelaide” — plus the directories participants browse when they compare providers.",
-    href: "/seo",
+    href: "/local-seo-adelaide",
     link: "Local SEO",
   },
   {
@@ -351,7 +351,7 @@ export default function NdisProviderMarketingPage() {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {[
               { label: "Website", price: PRICING.website.tiers[0].price, unit: "one-off", body: "A clear, accessible, mobile-first site — live in 48 hours. Or from " + PRICING.website.monthly.price + " with hosting and care included.", href: "/website-pricing" },
-              { label: "Local SEO", price: PRICING.seo.tiers[0].price, unit: "", body: "Get found when participants and families search for your supports in your area. Month to month.", href: "/seo", dark: true },
+              { label: "Local SEO", price: PRICING.seo.tiers[0].price, unit: "", body: "Get found when participants and families search for your supports in your area. Month to month.", href: "/local-seo-adelaide", dark: true },
               { label: "Enquiry automation", price: PRICING.automation.tiers[0].price, unit: "", body: "Missed-call text-back, enquiry capture and reminders so no enquiry slips away.", href: "/ai-automation-adelaide" },
             ].map((t, i) => (
               <Reveal key={t.label} delay={i * 0.08}>

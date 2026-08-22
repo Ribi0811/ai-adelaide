@@ -129,7 +129,7 @@ const faqs = [
   {
     question: "Do you write the SEO content too?",
     answer:
-      "Yes. Every page is built with SEO best practices baked in: keyword research tied to your services and Adelaide suburbs, proper title tags, meta descriptions, header structure, internal linking, and local business schema. Most Adelaide websites we audit are missing half of this — we include it as standard.",
+      "Yes. Every page is built with the core search foundations included: keyword research tied to your services and genuine service areas, proper title tags, meta descriptions, heading structure, internal linking, and appropriate structured data. Ongoing rankings still depend on competition, useful content and authority after launch.",
   },
   {
     question: "Can I add the AI receptionist later?",
@@ -152,6 +152,15 @@ const suburbLinks = [
   { href: "/henley-beach", label: "Henley Beach" },
 ];
 
+const industryWebsiteLinks = [
+  { href: "/websites-for-plumbers-adelaide", label: "Plumbers" },
+  { href: "/websites-for-electricians-adelaide", label: "Electricians" },
+  { href: "/websites-for-builders-adelaide", label: "Builders" },
+  { href: "/websites-for-clinics-adelaide", label: "Clinics" },
+  { href: "/websites-for-cafes-adelaide", label: "Cafes" },
+  { href: "/websites-for-hairdressers-adelaide", label: "Hairdressers" },
+];
+
 const INK = "#1D1D1F";
 
 function ServiceJsonLd() {
@@ -162,9 +171,7 @@ function ServiceJsonLd() {
     name: "Website Design Adelaide",
     serviceType: "Website Design",
     provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
+      "@id": "https://aiadelaide.com.au/#organization",
     },
     areaServed: {
       "@type": "City",
@@ -472,11 +479,29 @@ export default function WebsiteDesignAdelaidePage() {
         </div>
       </section>
 
-      {/* Popular areas — hub links to the priority suburb pages (T4) */}
+      {/* Website hub links: connect the main service to industry, suburb and guide spokes. */}
       <section className="px-6 py-16 md:py-20">
         <div className="mx-auto max-w-container">
           <Reveal>
             <h2 className="text-[20px] font-semibold tracking-tight" style={{ color: INK }}>
+              Website design for Adelaide business types
+            </h2>
+            <p className="mt-2 max-w-2xl text-[15px] text-[#6E6E73]">
+              See the pages, enquiry paths and local-search foundations we recommend for your type of business.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2.5">
+              {industryWebsiteLinks.map((industry) => (
+                <Link
+                  key={industry.href}
+                  href={industry.href}
+                  className="rounded-full border border-black/[0.1] bg-white px-4 py-2 text-[14px] font-medium text-[#424245] transition-all hover:-translate-y-0.5 hover:border-[#0E8C74] hover:text-[#0E8C74]"
+                >
+                  Websites for {industry.label}
+                </Link>
+              ))}
+            </div>
+
+            <h2 className="mt-10 text-[20px] font-semibold tracking-tight" style={{ color: INK }}>
               Popular areas we design websites for
             </h2>
             <p className="mt-2 text-[15px] text-[#6E6E73]">
@@ -497,6 +522,15 @@ export default function WebsiteDesignAdelaidePage() {
                 className="rounded-full px-4 py-2 text-[14px] font-semibold text-[#0E8C74] transition hover:opacity-70"
               >
                 All Adelaide suburbs →
+              </Link>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-black/[0.06] pt-6 text-[14px]">
+              <Link href="/website-cost-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
+                Adelaide website cost guide →
+              </Link>
+              <Link href="/blog/cheap-website-design-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
+                What a $699 website includes →
               </Link>
             </div>
           </Reveal>

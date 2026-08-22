@@ -107,22 +107,22 @@ const stacks = [
   {
     name: "Starter Stack",
     desc: "Just need a website fast",
-    total: "$719 first year",
-    breakdown: "Starter website $699 + domain $20",
+    total: `${PRICING.website.tiers[0].price} build`,
+    breakdown: `Starter website ${PRICING.website.tiers[0].price}; domain and hosting quoted separately`,
     includes: "3-page site, mobile-ready, basic SEO, contact form",
   },
   {
     name: "Business Stack",
     desc: "Most popular for small businesses",
-    total: "$2,740 first year",
-    breakdown: "Business site $1,299 + domain/hosting $260 + SEO $399/mo × 3 months",
+    total: `${PRICING.website.tiers[1].price} build + SEO`,
+    breakdown: `Business site ${PRICING.website.tiers[1].price} + Local SEO ${PRICING.seo.tiers[0].price} month to month`,
     includes: "7-page site, blog, SEO foundation, suburb page, automation-ready",
   },
   {
     name: "Growth Stack",
     desc: "For businesses that want to dominate",
-    total: "$7,140 first year",
-    breakdown: "Growth site $2,499 + domain/hosting $260 + SEO $699/mo × 12 months",
+    total: `${PRICING.website.tiers[2].price} build + SEO`,
+    breakdown: `Growth site ${PRICING.website.tiers[2].price} + Growth SEO ${PRICING.seo.tiers[1].price} month to month`,
     includes: "10+ pages, 3 suburb pages, 12 SEO blog posts, automation integrations",
   },
 ];

@@ -4,6 +4,7 @@ export interface Post {
   excerpt: string;
   seoDescription?: string; // Max 155 chars for meta description. Falls back to excerpt.slice(0, 155) if not set.
   date: string;
+  updatedAt?: string;
   readTime: string;
   category: "Automation" | "AI Tools" | "Case Study" | "How-To";
   content: string;
@@ -16,6 +17,7 @@ export const posts: Post[] = [
     excerpt:
       "Ask five Adelaide agencies what SEO costs and you'll get five wildly different numbers — anywhere from $99 to $5,000 a month. None of them are lying, exactly. They're just quoting different things. Here's what each price tier actually buys, why the quotes vary so much, and how to work out what your business actually needs.",
     date: "2026-07-11",
+    updatedAt: "2026-08-22",
     readTime: "8 min read",
     category: "How-To",
     seoDescription:
@@ -57,11 +59,11 @@ export const posts: Post[] = [
   <li><strong>$99/mo "SEO packages".</strong> At Adelaide labour rates that buys about 30 minutes of a human's time a month. The maths doesn't work.</li>
 </ul>
 <h2>How long until it pays for itself?</h2>
-<p>Honest timeline: Google Business Profile improvements can move you within 4–6 weeks. Suburb pages and content take 2–4 months. Competitive metro terms take 3–6 months. One extra job a month covers a $399 subscription for most trades — and unlike ads, rankings keep working after you stop paying for clicks. If you're weighing the two, read our <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads comparison</a>.</p>
+<p>There is no fixed SEO timeline. Your starting visibility, competition, website quality, service area and Google's crawl and ranking systems all affect the pace. Lower-competition searches may move earlier than competitive Adelaide-wide terms, but the useful test is whether qualified enquiries improve over a sustained review period. If you're weighing organic search against faster paid visibility, read our <a href="/seo-vs-google-ads-adelaide">SEO vs Google Ads comparison</a>.</p>
 <h2>What about AI and SEO?</h2>
 <p>Two things are changing the price equation. First, AI compresses the hours SEO takes — that's why we can charge $399 for work agencies price at $1,500. Second, search itself is changing: Google's AI Overviews and tools like ChatGPT now answer many searches directly, and being the business those answers name is the new frontier. We cover both in our <a href="/ai-seo-adelaide">AI SEO service</a>.</p>
 <h2>The bottom line</h2>
-<p>For a typical Adelaide small business — a tradie, a clinic, a salon, a cafe — proper local SEO should cost $399–$699/mo with no lock-in, and you should see movement inside two months. Pay less and you're usually buying reports, not rankings. Pay agency rates and you're often paying for the agency's office, not extra output.</p>
+<p>For an Adelaide small business — a tradie, clinic, salon or cafe — our two ongoing options are $399 and $699 per month with no lock-in. The right level depends on the number of services and areas being targeted, the work already completed and the competition. We establish the baseline first and report completed work, search visibility and enquiries where tracking is available.</p>
 <p>Want to know exactly what your business needs before spending a dollar? <a href="/audit">Get a free audit</a> — we'll show you where you rank now, what your competitors are doing, and give you an honest timeline. If you're a tradie, start with the <a href="/seo-for-tradies-adelaide">SEO for tradies guide</a>.</p>`,
   },
 {
@@ -160,7 +162,7 @@ export const posts: Post[] = [
 <ul>
   <li><strong>Lost referrals:</strong> Every happy customer tells 2-3 people. Every missed call means a customer who never became happy. If you miss 5 calls a week and each of those customers would have referred one other person over the next year, that is 250 referral opportunities lost annually. Referrals are the highest-converting lead source for tradies, and they are the ones you lose first.</li>
   <li><strong>Lost reviews:</strong> Customers who never get through never leave a Google review. Over 12 months, that is 200-300 fewer reviews than your competitors are accumulating. In local search, review volume and recency are two of the strongest ranking factors. Missed calls do not just cost you the job — they cost you future visibility on Google.</li>
-  <li><strong>Brand erosion:</strong> A tradie who never answers looks unreliable. Even if you are the best sparkie in Adelaide, if the customer cannot reach you, they assume you are not professional. That perception sticks, even if they eventually get through on a callback. Your <a href="/seo">local SEO</a> suffers when Google sees calls go unanswered too.</li>
+  <li><strong>Brand erosion:</strong> A tradie who never answers can look unreliable. Even if you are the best sparkie in Adelaide, a caller who cannot reach you may simply try the next business. Clear contact options and an accurate <a href="/local-seo-adelaide">local search presence</a> help customers choose how to reach you.</li>
   <li><strong>Team stress:</strong> When the phone keeps ringing and nobody can answer, it adds pressure to the whole crew. The boss is distracted checking messages between jobs. The apprentice is fielding calls they cannot handle. Everyone is slightly on edge. Over months, this compounds into burnout, mistakes, and higher staff turnover.</li>
 </ul>
 
@@ -780,7 +782,7 @@ export const posts: Post[] = [
 
 <p>The businesses that thrive in the Adelaide Hills of tomorrow won't necessarily be the ones with the biggest budgets or the most staff—they'll be the ones that work smartest. AI automation provides an accessible pathway to greater efficiency, improved customer service, and sustainable growth for businesses of all sizes across Mount Barker, Stirling, Hahndorf, and the wider Adelaide Hills region.</p>
 
-<p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work. If you also need a <a href="/website-design-adelaide">website that showcases your Hills business</a> or want to improve your <a href="/seo">local SEO rankings</a>, we can help with that too.</p>
+<p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work. If you also need a <a href="/website-design-adelaide">website that showcases your Hills business</a> or want to improve your <a href="/local-seo-adelaide">local SEO rankings</a>, we can help with that too.</p>
 
 <p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/ai-automation-adelaide">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or <a href="/contact">get in touch</a> to start. See also our guide on <a href="/blog/5-signs-ready-for-ai-automation">5 signs your business is ready for AI automation</a>.</p>
 
@@ -860,7 +862,7 @@ export const posts: Post[] = [
 <p>AI automation is particularly valuable for seasonal businesses because it can scale up and down. During peak season, the AI handles the flood of enquiries. During quiet season, it shifts to nurturing your local customer base. You are not paying for capacity you do not need, and you are not missing bookings during the months when every customer counts.</p>
 
 <h3>How do I get started?</h3>
-<p>Start with the problem that costs you the most money right now. For most Hills businesses, that is either missed calls during peak season or no-shows for appointment-based services. Implement one automation, measure the result for 30 days, and then add the next one. Our <a href="/ai-automation-adelaide">automation team</a> can help you identify the right starting point — <a href="/contact">get in touch</a> for a free consultation. We also build <a href="/website-design-adelaide">websites for Hills businesses</a> and provide <a href="/seo">local SEO</a> to help tourists find you on Google.</p>
+<p>Start with the problem that costs you the most money right now. For most Hills businesses, that is either missed calls during peak season or no-shows for appointment-based services. Implement one automation, measure the result for 30 days, and then add the next one. Our <a href="/ai-automation-adelaide">automation team</a> can help you identify the right starting point — <a href="/contact">get in touch</a> for a free consultation. We also build <a href="/website-design-adelaide">websites for Hills businesses</a> and provide <a href="/local-seo-adelaide">local SEO</a> to help tourists find you on Google.</p>
 
 <h3>Does this work for businesses in smaller Hills towns?</h3>
 <p>Absolutely. In fact, smaller towns benefit more because every customer matters more and word of mouth travels faster. A business in Crafers or <a href="/mount-barker">Mount Barker</a> that responds to every enquiry and builds a strong online reputation can dominate their local market in a way that is much harder in a city with hundreds of competitors. AI automation levels the playing field and gives small-town businesses the same responsiveness as city operations.</p>
@@ -1167,7 +1169,7 @@ export const posts: Post[] = [
   <li>How many slots were recovered from waitlist</li>
   <li>Admin time spent on reminder and fill activity</li>
 </ul>
-<p>If no-shows are above ~6%, there is usually a strong business case for action. A better reminder flow plus lightweight backfill logic is often enough to move the number meaningfully. You might also benefit from a <a href="/website-design-adelaide">clinic website</a> that makes booking easy for patients, or improved <a href="/seo">local SEO</a> to attract more new patients.</p>
+<p>If no-shows are above ~6%, there is usually a strong business case for action. A better reminder flow plus lightweight backfill logic is often enough to move the number meaningfully. You might also benefit from a <a href="/website-design-adelaide">clinic website</a> that makes booking easy for patients, or improved <a href="/local-seo-adelaide">local SEO</a> to attract more new patients.</p>
 <p>The key lesson from this Norwood clinic is simple: you do not need "more AI." You need the right automation at the right point in the patient journey. <a href="/ai-automation-adelaide">Our automation team</a> can help you build this for your clinic — <a href="/contact">get in touch</a>.</p>
 <h2>What to Track Before You Build Anything</h2>
 <p>Before implementing any reminder or automation system, spend four weeks documenting your baseline. You need to know where you are starting from to know whether the change actually worked.</p>
@@ -2228,7 +2230,7 @@ export const posts: Post[] = [
 
 <p>The tools to do this are cheap, fast to set up, and they pay for themselves in weeks. If your clinic is losing $3,000 a month to no-shows, that's $36,000 a year you're leaving on the table.</p>
 
-<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/ai-automation-adelaide">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/seo">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
+<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/ai-automation-adelaide">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/local-seo-adelaide">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
 <h2>The Psychology of No-Shows</h2>
 <p>Understanding why patients do not show up helps design better systems to prevent it. In allied health, no-shows fall into a few predictable categories:</p>
 <ul>
@@ -2308,7 +2310,7 @@ export const posts: Post[] = [
 <p>When a patient completes their third session without booking the next one, an automated message checks in: "How are you feeling? Ready to book your next appointment?" This prevents patients from falling off their treatment plan and improves both outcomes and per-patient revenue.</p>
 
 <h3>Review and referral generation</h3>
-<p>After a patient completes their treatment plan or expresses satisfaction, an automated review request goes out. After a positive review, a referral prompt follows. This builds your Google profile and your referral pipeline simultaneously — both essential for long-term clinic growth. A good <a href="/website-design-adelaide">clinic website</a> paired with strong <a href="/seo">local SEO</a> multiplies the effect of positive reviews.</p>
+<p>After a patient completes their treatment plan or expresses satisfaction, an automated review request goes out. After a positive review, a referral prompt follows. This builds your Google profile and your referral pipeline simultaneously — both essential for long-term clinic growth. A good <a href="/website-design-adelaide">clinic website</a> paired with strong <a href="/local-seo-adelaide">local SEO</a> multiplies the effect of positive reviews.</p>
 
 
 <h2>What Adelaide Clinics With Low No-Show Rates Do Differently</h2>
@@ -3001,7 +3003,7 @@ export const posts: Post[] = [
 
 <p>AI automation can help here too. After every completed job, an automated message asks the customer how it went. If they had a good experience, they get a direct link to leave a Google review. If they had an issue, it gets flagged to you immediately. This systematic approach to review generation means you accumulate reviews consistently rather than sporadically, and you catch negative experiences before they become negative reviews.</p>
 
-<p>The plumbers who dominate the map pack in Adelaide are not necessarily the best plumbers. They are the ones who systematically ask for reviews and respond to every piece of feedback. Automation makes this consistent and effortless. Combined with a professional <a href="/website-design-adelaide">plumbing website</a> and solid <a href="/seo">local SEO</a>, you create a flywheel: more reviews mean more visibility, more visibility means more calls, more calls mean more jobs, more jobs mean more reviews.</p>
+<p>The plumbers who dominate the map pack in Adelaide are not necessarily the best plumbers. They are the ones who systematically ask for reviews and respond to every piece of feedback. Automation makes this consistent and effortless. Combined with a professional <a href="/website-design-adelaide">plumbing website</a> and solid <a href="/local-seo-adelaide">local SEO</a>, you create a flywheel: more reviews mean more visibility, more visibility means more calls, more calls mean more jobs, more jobs mean more reviews.</p>
 
 <h2>Getting Started: The First 30 Days</h2>
 
@@ -3246,7 +3248,7 @@ export const posts: Post[] = [
 
 <p>Most electricians collect reviews sporadically — when a customer happens to mention they were happy, or when they remember to ask. The electricians who consistently rank in the map pack are the ones who systematically ask for reviews after every positive experience. Automation makes this consistent: after every completed job, an automated message asks for feedback and provides a direct link to leave a Google review.</p>
 
-<p>The combination of answering every call and systematically collecting reviews creates a flywheel that compounds over time. More reviews mean more visibility, more visibility means more calls, more calls mean more reviews. An electrician who starts this flywheel today will be significantly ahead of competitors in 6-12 months. A professional <a href="/website-design-adelaide">electrical website</a> combined with good <a href="/seo">local SEO</a> amplifies the effect.</p>
+<p>The combination of answering every call and systematically collecting reviews creates a flywheel that compounds over time. More reviews mean more visibility, more visibility means more calls, more calls mean more reviews. An electrician who starts this flywheel today will be significantly ahead of competitors in 6-12 months. A professional <a href="/website-design-adelaide">electrical website</a> combined with good <a href="/local-seo-adelaide">local SEO</a> amplifies the effect.</p>
 
 
 <h2>What Electricians Get Wrong About Automation</h2>
@@ -3791,7 +3793,7 @@ Google tracks how many people call you from your Google Business Profile. When p
 
 Their algorithm thinks: "Hmm, this business isn't very responsive. Maybe we shouldn't show them as much."
 
-Your competitors who answer every call? They get shown more. They get more calls. They get more reviews. Meanwhile, you're working just as hard, doing great work, and getting buried. Improving your <a href="/seo">local SEO</a> and having a <a href="/website-design-adelaide">fast, mobile-friendly website</a> also helps you stay visible.
+Your competitors who answer every call? They get shown more. They get more calls. They get more reviews. Meanwhile, you're working just as hard, doing great work, and getting buried. Improving your <a href="/local-seo-adelaide">local SEO</a> and having a <a href="/website-design-adelaide">fast, mobile-friendly website</a> also helps you stay visible.
 
 **The phone isn't just a phone anymore. It's your pipeline. And it's leaking.**
 
@@ -3987,7 +3989,7 @@ Your business will thank you.
 
 <p>The suburbs compound this. A plumber who misses a call from a homeowner in <a href="/prospect">Prospect</a> does not just lose that job. They lose the chance to be recommended to the homeowner's neighbour, colleague, and family member — all of whom live in the same area and search for the same services. In a market this connected, responsiveness is reputation.</p>
 
-<p>This is also why Google reviews are so important for Adelaide tradies. When someone searches "plumber Prospect" or "electrician <a href="/norwood">Norwood</a>," the businesses with the most recent, most numerous reviews win. Every missed call is a customer who never got the chance to leave you a review, and a review you never got is visibility you lost to a competitor who answered their phone. A strong <a href="/website-design-adelaide">trade website</a> combined with good <a href="/seo">local SEO</a> multiplies the effect of every review.</p>
+<p>This is also why Google reviews are so important for Adelaide tradies. When someone searches "plumber Prospect" or "electrician <a href="/norwood">Norwood</a>," the businesses with the most recent, most numerous reviews win. Every missed call is a customer who never got the chance to leave you a review, and a review you never got is visibility you lost to a competitor who answered their phone. A strong <a href="/website-design-adelaide">trade website</a> combined with good <a href="/local-seo-adelaide">local SEO</a> multiplies the effect of every review.</p>
 
 <h2>The Fix: Different Options for Different Budgets</h2>
 
@@ -4414,7 +4416,7 @@ Your business will thank you.
 
 <p>AI automation helps here in two ways. First, it captures every call that comes from your Google listing, so you never lose a lead that your SEO and reviews worked hard to generate. Second, it systematically generates reviews after every completed job. An automated message goes out 24-48 hours after the job, asking how it went and providing a direct link to leave a Google review.</p>
 
-<p>The HVAC businesses that dominate the map pack in Adelaide are not necessarily the best technicians. They are the ones who systematically collect reviews, respond to feedback, and answer every call. Automation makes all three consistent without adding any manual effort. A strong <a href="/website-design-adelaide">HVAC website</a> and solid <a href="/seo">local SEO strategy</a> amplify these efforts further.</p>
+<p>The HVAC businesses that dominate the map pack in Adelaide are not necessarily the best technicians. They are the ones who systematically collect reviews, respond to feedback, and answer every call. Automation makes all three consistent without adding any manual effort. A strong <a href="/website-design-adelaide">HVAC website</a> and solid <a href="/local-seo-adelaide">local SEO strategy</a> amplify these efforts further.</p>
 
 <h2>Getting Started: The First 30 Days</h2>
 
@@ -4722,153 +4724,59 @@ Your business will thank you.
   },
 {
     slug: "cheap-website-design-adelaide",
-    title: "Cheap Adelaide Website Design",
+    title: "Cheap Website Design Adelaide: What $699 Buys",
     excerpt:
-      "Cheap website design in Adelaide does not have to mean bad. Here is exactly what you get for $699, $1,299, $2,499, and $5,000+ — and where the sweet spot is for small businesses.",
-    seoDescription: "Cheap website design Adelaide: what $699 vs $1,299 vs $2,499 vs $5,000 gets you. Real comparison, no fluff. Find the sweet spot for your small business.",
+      "Affordable website design can still be professional. Compare DIY, low-cost templates and AI Adelaide's $699 Starter website without made-up ranking or lead promises.",
+    seoDescription: "Cheap website design Adelaide: compare DIY, templates and professional options, plus what AI Adelaide’s $699 Starter website includes and costs.",
     date: "2026-06-18",
-    readTime: "6 min read",
-    category: "AI Tools",
-    content: `<p>When Adelaide small business owners search for "cheap website design Adelaide," they usually want one thing: a professional website that does not cost $10,000. The good news is that cheap does not have to mean bad. The bad news is that some cheap options are genuinely terrible.</p>
+    updatedAt: "2026-08-22",
+    readTime: "5 min read",
+    category: "How-To",
+    content: `<p>Searching for cheap website design in Adelaide usually means you want a professional result without paying for a large agency process. That is reasonable. The useful question is not simply “what is the lowest price?” It is “what will be delivered, who owns it, and what will it cost to keep running?”</p>
 
-<h2>What Does "Cheap" Actually Mean?</h2>
-<p>There are three types of cheap websites in Adelaide:</p>
+<h2>Three ways to get a low-cost website</h2>
 <ul>
-  <li><strong>DIY cheap ($200-600/year):</strong> Wix, Squarespace. You do all the work. Cheap in dollars, expensive in your time.</li>
-  <li><strong>Template cheap ($395-600):</strong> Budget web shops. Someone else builds it, but it is a generic template with stock text. Looks like 50 other websites.</li>
-  <li><strong>Value cheap ($699-2,499):</strong> That is us. Custom design, professional copywriting, SEO-ready — just without the agency price tag. See our <a href="/website-pricing">pricing</a>.</li>
+  <li><strong>Build it yourself:</strong> a website builder can reduce the cash cost, but you write the copy, choose the layout, set up forms and handle the search basics yourself.</li>
+  <li><strong>Buy a fixed template:</strong> this can be quick, but check how much is genuinely adapted to your business and whether changes, hosting or ownership carry extra conditions.</li>
+  <li><strong>Use a streamlined professional build:</strong> a defined page count and review process keeps the price controlled while someone else handles the design, copy and launch.</li>
+</ul>
+<p>Any of these can be the right choice. The best fit depends on your time, how much trust the website needs to create and whether new enquiries matter to the business.</p>
+
+<h2>What AI Adelaide’s $699 Starter website includes</h2>
+<p>Our Starter package is <strong>$699 one-off</strong>. It is intended for Adelaide small businesses that need a clear, credible website rather than a complex web application.</p>
+<ul>
+  <li>Three professionally designed pages</li>
+  <li>Mobile-first layout and tap-to-call actions</li>
+  <li>Copywriting based on a short business brief</li>
+  <li>Contact form and clear enquiry paths</li>
+  <li>Core search setup: page titles, descriptions, headings and sitemap</li>
+  <li>One review round and 30 days of post-launch changes</li>
+  <li>A Next.js build without WordPress plugin maintenance</li>
+</ul>
+<p>The full inclusions and the $1,299 Business and $2,499 Growth options are listed on our <a href="/website-pricing">website pricing page</a>.</p>
+
+<h2>What to check before choosing the cheapest quote</h2>
+<p>Ask every provider the same practical questions:</p>
+<ul>
+  <li><strong>What pages are included?</strong> “Website” can mean one landing page or a complete small-business site.</li>
+  <li><strong>Who writes the content?</strong> A design cannot explain your services if the copy is left as placeholder text.</li>
+  <li><strong>Does it work properly on a phone?</strong> Check the navigation, forms and tap-to-call action, not just the desktop mock-up.</li>
+  <li><strong>What search setup is included?</strong> A new site needs crawlable pages, unique titles, sensible headings and a sitemap, but no provider can guarantee a ranking.</li>
+  <li><strong>Who owns the finished site and domain?</strong> Get this in writing before paying a deposit.</li>
+  <li><strong>What costs continue after launch?</strong> Confirm domain, hosting, maintenance and change fees separately from the build price.</li>
 </ul>
 
-<h2>What You Get for $699 (Our Starter Tier)</h2>
-<p>A real, custom-designed 3-page website. Not a template. Mobile-first, click-to-call, contact form, basic SEO, Google Business Profile setup. Live in 48 hours. This is not "cheap" — it is affordable because we are a small team with no agency overhead.</p>
+<h2>When a $699 website is not enough</h2>
+<p>A Starter site is not the right scope for every business. Expect a larger quote if you need e-commerce, customer logins, complex integrations, extensive service content, multilingual pages or a custom booking workflow. Those requirements add real design, development and testing work.</p>
+<p>It can also make sense to start small and expand after the core offer has been proven. That is usually safer than paying for pages or features your customers may not use.</p>
 
-<h2>What You Get for $1,299 (Business Tier)</h2>
-<p>5-7 pages, blog setup, SEO foundation with schema and sitemap, one suburb service page, Google Business Profile optimisation, lead capture forms, AI automation-ready. This is the tier most Adelaide small businesses pick — it hits the sweet spot between cost and capability.</p>
+<h2>Cheap should not mean unsupported promises</h2>
+<p>A website can create a stronger first impression and make it easier to enquire, but the build alone does not guarantee page-one rankings, a fixed conversion rate or a particular number of leads. Search visibility depends on the market, competition, content, business reputation and ongoing authority signals. Conversion also depends on the offer, proof and speed of follow-up.</p>
+<p>We include the technical foundations in the build and offer ongoing <a href="/seo">SEO services for Adelaide businesses</a> where there is enough demand and competition to justify them.</p>
 
-<h2>What You Get for $2,499 (Growth Tier)</h2>
-<p>10+ pages, 3 suburb pages, 3 starter blog articles, full SEO setup with internal linking, AI automation integrations included. This is for businesses that want to dominate their local area on Google.</p>
-
-<h2>What You Get for $5,000-15,000 (Agency)</h2>
-<p>Custom design process, strategy workshops, multiple revision rounds, a team of specialists. Good quality, but for a 5-page tradie site, you are paying for process, not the website.</p>
-
-<h2>The Problem with $395 Template Sites</h2>
-<p>Budget web shops in Adelaide offer sites from $395. Here is what you actually get:</p>
-<ul>
-  <li>A pre-made template — your site looks identical to dozens of others</li>
-  <li>Generic or AI-generated copy that says nothing about your actual business</li>
-  <li>No SEO strategy — Google will not rank a template with stock text</li>
-  <li>Often built offshore — no local Adelaide context</li>
-  <li>No ongoing support — you are on your own after handover</li>
-</ul>
-<p>You save $300 upfront and lose thousands in missed leads because your site does not rank and does not convert.</p>
-
-<h2>Why Our $699 Site Is Better Than a $5,000 Agency Site (For Most Businesses)</h2>
-<p>For a local tradie, cafe, or clinic, the difference between a $699 site and a $5,000 site is usually strategy workshops and revision rounds — not the actual website. A plumber in Modbury does not need a brand workshop. They need a fast, mobile-first site that ranks for "plumber Modbury" and has a click-to-call button. That is what we build.</p>
-
-<h2>When Should You Pay More?</h2>
-<p>If you need e-commerce, custom integrations, a client portal, or complex multi-language support, you need more than a $699 site. For most Adelaide small businesses — tradies, cafes, clinics, retail, beauty — our Starter or Business tier is exactly right.</p>
-
-<h2>How to Get Started</h2>
-<p>Book a free chat. We will look at what you do and tell you which tier fits — no upsell. Check our <a href="/website-pricing">full pricing</a>, learn about our <a href="/website-design-adelaide">website design process</a>, or read our full <a href="/website-cost-adelaide">website cost guide</a>. <a href="/contact">Get in touch</a> or browse all <a href="/services">services</a>.</p>
-
-<h2>The Real Price of a Cheap Website</h2>
-<p>When you search for "cheap website design Adelaide," you get a mix of results: $395 template sites, DIY builder recommendations, offshore freelancers, and agencies offering "budget" packages. The question is not whether you can get a cheap website — you absolutely can. The question is whether a cheap website is actually cheap in the long run.</p>
-<p>Here is what "cheap" really costs:</p>
-<ul>
-<li><strong>A $395 template site:</strong> Looks like every other $395 site. No local SEO. No Adelaide-specific content. Generic text that says "we provide quality services" without mentioning your suburb, your services, or anything that makes your business unique. Ranks on page 5 of Google. Generates zero organic leads.</li>
-<li><strong>A DIY Wix site:</strong> Costs $35/month plus 20-40 hours of your time to build. Looks amateur unless you have design skills. Limited SEO. Limited mobile performance. You are locked into Wix's platform and cannot migrate your site if you outgrow it. Over 2 years, you spend $840 on subscription + $1,600-4,000 on your time.</li>
-<li><strong>An offshore freelancer:</strong> $200-500 for a WordPress site built by someone who has never been to Adelaide, does not understand local search, and writes copy in generic English. Communication is slow across time zones. Support is non-existent after delivery. When something breaks, you are on your own.</li>
-</ul>
-<p>The real price of a cheap website is not the upfront cost — it is the lost revenue from customers who never find you, the time you spend maintaining a site you did not build, and the eventual cost of replacing it with something that actually works.</p>
-
-<h2>Why Professional Websites Outperform Cheap Ones</h2>
-<p>A professional website from $699 is not expensive — it is an investment that pays for itself. Here is the difference:</p>
-<p><strong>Search ranking:</strong> A professionally built, SEO-optimised website ranks on page 1 of Google for local searches within 2-4 months. A cheap template site ranks on page 3-5. Page 1 gets 90%+ of clicks. Page 3 gets less than 2%. The difference is not marginal — it is the difference between getting found and being invisible.</p>
-<p><strong>Conversion rate:</strong> A professional website converts 2-5% of visitors into leads or customers. A cheap template converts 0.5-1%. If both sites get 500 visitors per month, the professional site generates 10-25 leads and the cheap site generates 2-5. At $100 per lead, that is $1,000-2,500/month vs $200-500/month.</p>
-<p><strong>Trust and credibility:</strong> 75% of consumers judge a business's credibility based on their website. A professional site says "this is a real, established business." A cheap template says "this business did not invest in their online presence." For Adelaide small businesses competing for local customers, credibility is everything.</p>
-<p><strong>Mobile experience:</strong> A professional website is designed mobile-first. It loads fast, it is easy to navigate, and it works perfectly on phones. A cheap template might be "mobile-responsive" but it is not mobile-optimised. The difference is between a site that works on mobile and a site that works beautifully on mobile.</p>
-
-<h2>What You Get for $699: The AI Adelaide Starter</h2>
-<p>Our Starter website at $699 is designed for Adelaide small businesses that need a professional online presence without the agency price tag. Here is what is included:</p>
-<ul>
-<li><strong>Custom design:</strong> Not a template. We design your site based on your brand, your services, and your customers. Every site we build looks different because every business is different.</li>
-<li><strong>3 pages:</strong> Home, About, and Contact/Services. Enough to establish a professional presence and start ranking for local searches.</li>
-<li><strong>Mobile-first, fast-loading:</strong> Your site will load in under 2 seconds on mobile and look great on every screen size. Page speed is a ranking factor, and we optimise for it from the start.</li>
-<li><strong>SEO foundation:</strong> Meta tags, heading structure, image optimisation, XML sitemap, and Google Search Console setup. Your site is ready to rank from day one.</li>
-<li><strong>Adelaide-local copywriting:</strong> Written by people who know Adelaide, not generic text from a content mill or offshore writer. Your site will mention your suburb, reference local landmarks, and speak to local customers in a way that generic copy never can.</li>
-<li><strong>Fast hosting:</strong> $20/month on our managed WordPress hosting. Includes SSL certificate, automatic updates, and basic maintenance.</li>
-</ul>
-<p>$699 is not cheap — it is fairly priced. There is a difference. Cheap means cutting corners to hit a price point. Fairly priced means delivering professional quality at a price that reflects our efficient process, not our willingness to cut corners. See our <a href="/website-pricing">pricing</a> for all tiers.</p>
-
-<h2>Common Problems with Cheap Websites (And How We Avoid Them)</h2>
-<p>We have rebuilt websites for dozens of Adelaide businesses that started with a cheap option. Here are the problems they came to us with:</p>
-<p><strong>Problem 1: "My site does not show up on Google."</strong> This is the most common complaint. Cheap websites are built without SEO consideration — no meta tags, no heading structure, no local keywords, no Google Business Profile integration. The site exists but nobody can find it. We build SEO into every website from the start, so your site is discoverable from day one.</p>
-<p><strong>Problem 2: "It looks the same as every other site."</strong> Template sites use the same layouts, fonts, and colours as hundreds of other businesses. When a customer sees your site and it looks exactly like the last 5 sites they visited, it does not inspire confidence. Custom design means your site reflects your brand, your personality, and your business — not a template that 500 other businesses are also using.</p>
-<p><strong>Problem 3: "I cannot update anything."</strong> Many cheap websites are built with proprietary builders or custom code that only the developer can update. Want to change your hours? That will be $50. Want to add a service? $100. Want to update a photo? $75. We build on WordPress, which means you can update your own content using a simple editor. And basic text changes are included free with our hosting.</p>
-<p><strong>Problem 4: "It is really slow."</strong> Cheap hosting, unoptimised images, and bloated code make websites slow. Google penalises slow sites in search rankings, and customers abandon slow sites. We host on fast servers and optimise every image and every page for speed.</p>
-
-<h2>When Cheap Makes Sense (And When It Does Not)</h2>
-<p>There are situations where a cheap website makes sense:</p>
-<ul>
-<li>You are a brand new business testing an idea and do not know if it will work yet. A basic website is fine for validation.</li>
-<li>You are a hobby business that does not rely on website traffic for customers. If all your business comes from word of mouth and you just need a basic online presence, a cheap site is fine.</li>
-<li>You are in an industry with zero online competition. If you are the only plumber in a small town, you will rank first no matter what your website looks like.</li>
-</ul>
-<p>But for most Adelaide small businesses — tradies, cafes, salons, clinics, retail shops — a cheap website is a false economy. You save $300-500 upfront and lose thousands in missed customers over the following years. The businesses that succeed online in Adelaide are the ones that invest in a professional website, consistent SEO, and ongoing content. It is not the cheapest option, but it is the one that generates a return.</p>
-
-<h2>The True Cost of NOT Having a Good Website</h2>
-<p>The cheapest website is not the one with the lowest upfront price — it is the one that generates the most revenue relative to its cost. Consider two Adelaide businesses:</p>
-<p><strong>Business A:</strong> Spends $395 on a cheap template website. It ranks on page 4 of Google, gets 20 visitors per month, and generates 0-1 leads per month. Total cost over 2 years: $395 + $360 hosting = $755. Total revenue generated: minimal.</p>
-<p><strong>Business B:</strong> Spends $699 on our Starter website. It ranks on page 1 of Google for local searches within 3 months, gets 200-500 visitors per month, and generates 5-15 leads per month. Total cost over 2 years: $699 + $480 hosting = $1,179. Total revenue generated: $5,000-15,000+ in new business.</p>
-<p>Business A spent $755. Business B spent $1,179. But Business B generated 50-150x more revenue. The "expensive" website is actually the cheapest one when you factor in what it produces.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>Is $699 really enough for a professional website?</h3>
-<p>Yes. Our $699 Starter tier gives you a custom-designed, mobile-first, SEO-ready website with 3 pages. We keep the price low by streamlining the process — we have built hundreds of websites for Adelaide businesses and know what works. We skip the expensive agency overhead (project managers, strategy workshops, multiple revision rounds) and go straight to building. See our <a href="/website-pricing">pricing</a> for all tiers.</p>
-<h3>What is the difference between your $699 Starter and a $395 cheap site?</h3>
-<p>The main differences are custom design vs template, SEO foundation vs no SEO, local copywriting vs generic text, mobile-first optimisation vs basic mobile responsiveness, and ongoing support vs no support. A $395 site exists — our $699 site works. It ranks on Google, converts visitors into customers, and represents your business professionally.</p>
-<h3>Do I need SEO with my new website?</h3>
-<p>Your Starter website includes a basic SEO foundation (meta tags, heading structure, sitemap). This is enough to start ranking for low-competition local searches. If you want to rank for competitive keywords like "plumber Adelaide" or "cafe Norwood," you need ongoing SEO. Our <a href="/seo">SEO retainer</a> starts at $399/month and includes content creation, local optimisation, and monthly reporting.</p>
-<h3>Can I upgrade my website later?</h3>
-<p>Yes. Most businesses start with Starter ($699) and upgrade to Business ($1,299) when they are ready to invest in SEO and content marketing. The upgrade cost is the difference between the tiers, not the full price. We build all our sites on WordPress, so adding pages, a blog, and suburb pages is straightforward.</p>
-
-<h2>What to Look for in a Website Provider (Red Flags and Green Flags)</h2>
-<p>Not all website providers are equal. Here are the red flags and green flags to watch for:</p>
-<p><strong>Red flags:</strong></p>
-<ul>
-<li><strong>No portfolio or case studies:</strong> If a provider cannot show you examples of websites they have built for Adelaide businesses, they probably have not built many. Ask for examples before signing anything.</li>
-<li><strong>Lock-in contracts:</strong> If you are locked into a 12 or 24-month contract, the provider does not need to earn your loyalty — they have it by force. We do not use lock-in contracts. You stay because the service is good, not because you are contractually obligated.</li>
-<li><strong>No mention of SEO:</strong> If a website provider does not talk about SEO, they do not understand local search. A website without SEO is a digital business card that nobody can find. SEO is not an add-on — it is fundamental to whether your website generates leads.</li>
-<li><strong>Offshore development with no local knowledge:</strong> A developer in another country does not know Adelaide. They do not know your suburbs, your customers, or how local search works in your area. The result is generic content that does not rank for local keywords.</li>
-<li><strong>Unlimited revisions:</strong> This sounds good but usually means the provider is not confident in their design. Experienced providers show you 1-2 concepts, you pick one, and they refine it. Unlimited revisions lead to endless back-and-forth and a design that looks like a compromise.</li>
-</ul>
-<p><strong>Green flags:</strong></p>
-<ul>
-<li><strong>Transparent pricing:</strong> You know exactly what you are paying and what you are getting. No hidden fees, no surprise charges. Our pricing is on our <a href="/website-pricing">pricing page</a> for everyone to see.</li>
-<li><strong>Local knowledge:</strong> The provider understands Adelaide, knows your suburbs, and writes content that speaks to local customers. This is the difference between "we provide quality plumbing services" and "Norwood plumber available 7 days for hot water, blocked drains, and gas fitting."</li>
-<li><strong>SEO included:</strong> The provider builds SEO into every website, not as an optional extra. This includes meta tags, heading structure, local keywords, and Google Search Console setup.</li>
-<li><strong>Free basic changes:</strong> The provider includes basic text changes at no extra charge. If they charge for every minor update, you will end up paying more in the long run.</li>
-<li><strong>WordPress:</strong> The provider builds on WordPress, which gives you full ownership and control. You are not locked into a proprietary platform.</li>
-</ul>
-
-<h2>Building vs Buying: The Real Decision</h2>
-<p>The decision between building your own website and hiring someone to build it for you comes down to three factors: time, expertise, and opportunity cost.</p>
-<p><strong>Time:</strong> Building a professional website takes 20-40 hours if you have never done it before. This includes learning the platform, choosing a template, writing content, designing pages, setting up hosting, and configuring SEO. Most Adelaide small business owners do not have 20-40 spare hours.</p>
-<p><strong>Expertise:</strong> A professionally built website will rank higher, convert better, and look better than a DIY site in almost every case. This is not a reflection on your abilities — it is a reflection of the fact that website design and SEO are specialised skills that take years to develop. You would not attempt your own plumbing or electrical work; the same principle applies to your website.</p>
-<p><strong>Opportunity cost:</strong> The 20-40 hours you spend building a website is 20-40 hours you are not spending on your business, your customers, or your life. If your time is worth $80-100/hour, the opportunity cost of building your own website is $1,600-4,000 — more than twice the cost of our Starter website at $699.</p>
-<p>When you add it all up, building your own website costs more in time and lost revenue than hiring a professional. And the result is usually worse. The smart move is to hire a professional, invest the time you save into your business, and let your website start generating leads while you focus on what you do best. <a href="/contact">Book a free chat</a> to discuss your website needs.</p>
-
-<h2>After Your Website Launches: What Happens Next</h2>
-<p>A professional website is just the beginning. Here is what happens after your site goes live:</p>
-<ul>
-<li><strong>Week 1:</strong> Your site is indexed by Google. We submit it to Google Search Console and ensure it is being crawled properly. You may start appearing for low-competition searches within the first week.</li>
-<li><strong>Month 1-2:</strong> Your site starts ranking for your business name and basic local keywords. If you have claimed and optimised your Google Business Profile, you may start appearing in the Map Pack for searches in your area.</li>
-<li><strong>Month 2-4:</strong> With ongoing SEO, your site moves up the rankings for competitive local keywords like "plumber Norwood" or "cafe Glenelg." This is when you start seeing a steady stream of organic leads.</li>
-<li><strong>Month 4-6:</strong> Your site is established in local search. You are ranking on page 1 for your target keywords, receiving consistent organic traffic, and generating leads every week. The website has paid for itself many times over.</li>
-</ul>
-<p>The businesses that see the best results are the ones that treat their website as an ongoing investment, not a one-time expense. A website without ongoing SEO and content is like a shop in a dark alley — it exists, but nobody can find it. A website with consistent SEO and content is like a shop on a busy street — it is visible, accessible, and generating foot traffic every day.</p>
-<p>Our <a href="/seo">SEO services</a> start from $399/month and include keyword research, on-page optimisation, content creation, and monthly reporting. Combined with a professional website, this is the most effective and affordable local marketing strategy available to Adelaide small businesses. <a href="/contact">Book a free chat</a> to discuss your website and SEO needs.</p>
-`
+<h2>Which option is right for you?</h2>
+<p>Choose DIY if cash is the main constraint and you have time to learn the tools. Choose a fixed template if you only need a basic presence and are comfortable with its limits. Choose a streamlined professional build if the website needs to represent the business well and give customers a clear path to contact you.</p>
+<p>If you want to compare the wider market before deciding, read our <a href="/website-cost-adelaide">Adelaide website cost guide</a>. If the Starter package looks suitable, see the <a href="/website-design-adelaide">website design process</a> or <a href="/contact?service=website#send-message">send us your business details for a fixed quote</a>.</p>`
   },
 {
     slug: "best-website-builder-adelaide-small-business",

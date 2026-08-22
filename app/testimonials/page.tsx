@@ -35,23 +35,6 @@ export default function TestimonialsPage() {
         name: "AI Adelaide Client Testimonials & Case Studies",
         inLanguage: "en-AU",
       },
-      {
-        // Phase 8 punch list P2: this node previously carried a `review`
-        // array built from our own testimonials/caseStudies data. Google's
-        // structured-data guidelines treat self-hosted Review/Rating markup
-        // about your own business as self-serving — ignored at best, a
-        // manual-action risk at worst — regardless of whether the reviews
-        // are genuine. The visible testimonials below are untouched (they
-        // ARE real, per Ivan) and read exactly as before; only the invisible
-        // schema markup was removed. Real star ratings should come from an
-        // embedded Google Business Profile reviews widget once set up
-        // (Phase 7, [HUMAN]) — Google supplies its own Review schema for
-        // those automatically, no markup needed on our side.
-        "@type": "LocalBusiness",
-        "@id": `${siteConfig.url}#localbusiness`,
-        name: "AI Adelaide",
-        url: siteConfig.url,
-      },
     ],
   };
 

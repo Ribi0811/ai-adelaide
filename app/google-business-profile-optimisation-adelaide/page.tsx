@@ -163,7 +163,7 @@ export default function GoogleBusinessProfileAdelaidePage() {
             We improve the information and trust signals within your control—categories, services, photos, reviews, citations and website alignment—so your business is a stronger candidate for relevant Adelaide searches. Google also considers distance and prominence, so positions are never guaranteed. Included in Local SEO {PRICING.seo.fromLabel}.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link href="/seo" className="btn-primary px-8 py-4">
+            <Link href="/local-seo-adelaide" className="btn-primary px-8 py-4">
               See Full Local SEO <span aria-hidden>→</span>
             </Link>
             <Link href="/contact" className="btn-secondary px-8 py-4">
@@ -244,7 +244,7 @@ export default function GoogleBusinessProfileAdelaidePage() {
             15-minute chat, no fluff. We&apos;ll review your current profile, identify missing or inaccurate information, and explain which local-search improvements are worth prioritising. No ranking guarantee.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/seo" className="btn-primary px-8 py-4">
+            <Link href="/local-seo-adelaide" className="btn-primary px-8 py-4">
               See Full Local SEO <span aria-hidden>→</span>
             </Link>
             <Link href="/contact" className="btn-secondary px-8 py-4">

@@ -94,6 +94,7 @@ const clusterLinks = [
   { href: "/hotel-seo-services", label: "Hotel SEO services", note: "Direct bookings instead of OTA commissions" },
   { href: "/aged-care-seo-services", label: "Aged care SEO services", note: "Home care, retirement living, NDIS providers" },
   { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads", note: "Which one first? An honest comparison for Adelaide budgets" },
+  { href: "/blog/how-much-does-seo-cost-adelaide", label: "How much does SEO cost in Adelaide?", note: "Understand common scopes, price tiers and quote warning signs" },
 ];
 
 const faqs = [

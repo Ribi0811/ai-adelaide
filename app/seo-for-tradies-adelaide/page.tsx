@@ -22,7 +22,7 @@ const searchBuckets = [
   {
     label: "Emergency searches",
     example: "‘burst pipe plumber Adelaide’, ‘emergency electrician Norwood’",
-    body: "These spike at night and on weekends. The searcher wants a phone number, fast. If your Google Business Profile lists 24/7 availability and your site loads in under 2 seconds, you win the call. If it doesn't, the next tradie on the map does.",
+    body: "These can spike at night and on weekends. The searcher wants a phone number and a clear next step. Accurate availability, a fast mobile page and an easy tap-to-call action reduce friction, but they do not guarantee which business the customer chooses.",
   },
   {
     label: "Comparison searches",

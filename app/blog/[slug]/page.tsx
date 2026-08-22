@@ -13,39 +13,55 @@ type PageProps = {
 
 export const dynamic = "force-static";
 
-// Rotating end-of-post author box. Replaces the old withHomepageLink() helper,
-// which injected the exact same intro paragraph at the top of all 30 posts
-// (a boilerplate/duplicate-content smell). Instead, every post gets one of
-// 3 anchor-text variants at the end, keyed on a hash of the slug so the same
-// post always renders the same variant but different posts vary naturally.
-const AUTHOR_BOX_VARIANTS = [
-  {
-    body: "AI Adelaide builds websites, SEO, and automation for Adelaide small businesses — starting with a site that actually converts.",
-    linkText: "See how we design Adelaide business websites",
-    href: "/website-design-adelaide",
-  },
-  {
-    body: "Most of the businesses we work with start with a slow, dated website that loses them jobs before the phone even rings.",
-    linkText: "Here's what a modern Adelaide business website looks like",
-    href: "/website-design-adelaide",
-  },
-  {
-    body: "A missed-call system or SEO push only pays off if the website behind it actually converts visitors into enquiries.",
-    linkText: "Compare Adelaide website design pricing and packages",
-    href: "/website-design-adelaide",
-  },
-];
-
-const hashSlug = (slug: string) => {
-  let hash = 0;
-  for (let i = 0; i < slug.length; i += 1) {
-    hash = (hash * 31 + slug.charCodeAt(i)) % 1000;
-  }
-  return hash;
+type ArticlePath = {
+  body: string;
+  href: string;
+  linkText: string;
+  ctaTitle: string;
+  ctaBody: string;
 };
 
-const authorBoxForSlug = (slug: string) =>
-  AUTHOR_BOX_VARIANTS[hashSlug(slug) % AUTHOR_BOX_VARIANTS.length];
+// Keep the post-to-service path topical. A website article should support the
+// website hub; an SEO article should not be forced through website design.
+const articlePathFor = (slug: string, category: string): ArticlePath => {
+  if (/seo|google-business|google-ads/.test(slug)) {
+    return {
+      body: "AI Adelaide helps local businesses improve the pages, local signals and measurement behind sustainable search visibility.",
+      href: slug.includes("local-seo") || slug.includes("google-business") ? "/local-seo-adelaide" : "/seo",
+      linkText: "See our Adelaide SEO services",
+      ctaTitle: "Want a clear SEO starting point?",
+      ctaBody: "We will review the searches, pages and conversion paths that matter, then explain the highest-value next step without promising a ranking.",
+    };
+  }
+
+  if (/website|web-design|websites/.test(slug)) {
+    return {
+      body: "AI Adelaide designs clear, mobile-first websites for Adelaide small businesses, with search foundations and enquiry paths included.",
+      href: "/website-design-adelaide",
+      linkText: "See our Adelaide website design service",
+      ctaTitle: "Need a website scope and fixed quote?",
+      ctaBody: "Tell us what the business does and what the website needs to achieve. We will recommend the smallest suitable package and explain what is included.",
+    };
+  }
+
+  if (category === "Automation" || /receptionist|missed-call|phone|automation/.test(slug)) {
+    return {
+      body: "AI Adelaide builds practical automation for local businesses, focused on missed enquiries, follow-up and repetitive admin.",
+      href: "/ai-automation-adelaide",
+      linkText: "Explore Adelaide business automation",
+      ctaTitle: "Where is your business losing time or leads?",
+      ctaBody: "We will map the current process and tell you whether automation is worthwhile before recommending a system.",
+    };
+  }
+
+  return {
+    body: "AI Adelaide builds websites, SEO and practical automation for Adelaide small businesses.",
+    href: "/services",
+    linkText: "Explore our Adelaide business services",
+    ctaTitle: "Want an honest starting point?",
+    ctaBody: "We will review the business, website and lead flow, then explain which improvement is worth prioritising first.",
+  };
+};
 
 /**
  * Extract Q&A pairs from blog post HTML.
@@ -100,7 +116,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: post.title }],
       type: "article",
       publishedTime: post.date,
-      modifiedTime: post.date, // will reflect post.date until posts gain an updatedAt field
+      modifiedTime: post.updatedAt ?? post.date,
       authors: ["AI Adelaide"],
       tags: ["AI automation", "Adelaide", "small business", post.category],
     },
@@ -130,6 +146,7 @@ export default function BlogPostPage({ params }: PageProps) {
   const wordCount = post.content.replace(/<[^>]+>/g, "").split(/\s+/).length;
 
   const faqs = extractFaqs(post.content);
+  const articlePath = articlePathFor(post.slug, post.category);
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -137,22 +154,15 @@ export default function BlogPostPage({ params }: PageProps) {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updatedAt ?? post.date,
     wordCount,
     inLanguage: "en-AU",
     url: `${siteConfig.url}/blog/${post.slug}`,
     author: {
-      "@type": "Person",
-      name: "AI Adelaide Editorial Team",
+      "@type": "Organization",
+      "@id": `${siteConfig.url}/#organization`,
+      name: "AI Adelaide",
       url: siteConfig.url,
-      sameAs: [
-        "https://www.linkedin.com/company/ai-adelaide",
-      ],
-      worksFor: {
-        "@type": "Organization",
-        name: "AI Adelaide",
-        url: siteConfig.url,
-      },
     },
     publisher: {
       "@type": "Organization",
@@ -250,7 +260,11 @@ export default function BlogPostPage({ params }: PageProps) {
           </h1>
 
           <p className="mb-10 text-sm text-slate-500">
-            {formatDate(post.date)} <span className="mx-2">•</span> {post.readTime}
+            {formatDate(post.date)}
+            {post.updatedAt && (
+              <> <span className="mx-2">•</span> Updated {formatDate(post.updatedAt)}</>
+            )}
+            {" "}<span className="mx-2">•</span> {post.readTime}
           </p>
 
           <article
@@ -260,12 +274,12 @@ export default function BlogPostPage({ params }: PageProps) {
 
           <div className="mt-10 border-t border-slate-200 pt-6">
             <p className="text-sm text-slate-600">
-              <strong className="text-slate-900">AI Adelaide</strong> — {authorBoxForSlug(post.slug).body}{" "}
+              <strong className="text-slate-900">AI Adelaide</strong> — {articlePath.body}{" "}
               <Link
-                href={authorBoxForSlug(post.slug).href}
+                href={articlePath.href}
                 className="font-semibold text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-slate-900"
               >
-                {authorBoxForSlug(post.slug).linkText}
+                {articlePath.linkText}
               </Link>
               .
             </p>
@@ -274,14 +288,14 @@ export default function BlogPostPage({ params }: PageProps) {
           <div className="mt-12 border-t border-slate-200 pt-8">
             <div className="panel-light grid-overlay-light p-6 md:p-8">
               <h2 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">
-                Ready to see where your business stands?
+                {articlePath.ctaTitle}
               </h2>
               <p className="mb-6 text-body-mobile text-slate-600 md:text-body">
-                Free 15-minute AI readiness audit for your Adelaide business. We&apos;ll score your website, SEO, and automation — and tell you what&apos;d actually move the needle first.
+                {articlePath.ctaBody}
               </p>
               <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-                <Link href="/audit" className="btn-primary px-6 py-3 text-base">
-                  Run Free AI Audit <span aria-hidden>→</span>
+                <Link href={articlePath.href} className="btn-primary px-6 py-3 text-base">
+                  View the Service <span aria-hidden>→</span>
                 </Link>
                 <Link
                   href="/contact"

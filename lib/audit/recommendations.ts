@@ -12,12 +12,12 @@ export type AuditRecommendation = {
 };
 
 const ROI_TEXT_BY_BUSINESS: Record<string, string> = {
-  trade: 'Plumbers and electricians typically recover 3-5 extra jobs a week with proper website, local SEO, and missed-call capture \u2014 that\u2019s $1,000-2,000/week in new revenue against a $399-699/month stack.',
-  'allied-health': 'Allied health clinics typically cut no-shows by 30-65% and add 2-3 new patients/week with better online booking and SEO \u2014 worth $2,000-5,000/month in recovered revenue.',
-  hospitality: 'Cafes and restaurants typically see 20-40% more direct bookings within 90 days of a proper website plus local SEO \u2014 vs paying 15-20% commissions to delivery platforms.',
-  retail: 'Retail shops typically see a 25-50% lift in walk-in traffic from local search within 3 months of getting a proper website and Google Business Profile optimised.',
-  beauty: 'Beauty salons and hairdressers typically see 30-50% more online bookings within 60 days of a website with online booking plus local SEO.',
-  default: 'Most Adelaide small businesses see measurable improvements in enquiries and bookings within 30-90 days of a focused website + SEO + lead capture stack.',
+  trade: 'Measure missed calls, qualified website enquiries and quote follow-up from your current baseline. Value depends on lead volume, average job, close rate and response process.',
+  'allied-health': 'Measure completed bookings, no-shows, waitlist fills and qualified patient enquiries from the clinic\u2019s current baseline.',
+  hospitality: 'Measure direct bookings, menu views, calls and direction requests. Compare the owned journey with platform fees using real transaction data.',
+  retail: 'Measure calls, direction requests, product enquiries and tracked in-store actions rather than applying an invented walk-in uplift.',
+  beauty: 'Measure completed online bookings, booking abandonment and relevant local-search enquiries before and after the work.',
+  default: 'Establish the current enquiry, booking and search baseline first, then judge the work against measurable business outcomes.',
 };
 
 function roiTextFromAnswers(answers: AuditAnswers): string {
@@ -35,7 +35,7 @@ const recommendationMap: Record<string, Omit<AuditRecommendation, 'roiEstimate'>
     title: 'Build a website that actually converts',
     summary: 'Get a fast, mobile-first, Google-ready website \u2014 built for your industry and your service area. Live in 48 hours from $699.',
     problem: 'Your website (or lack of one) is costing you customers before they even contact you. Slow load times, no mobile optimisation, no clear call-to-action.',
-    solution: 'We build you a custom website: mobile-first, loads in under 2 seconds, click-to-call, contact forms, Google-ready SEO, suburb pages. Live in 48 hours. You own it.',
+    solution: 'We build a focused website with a clear mobile enquiry path, click-to-call, forms, crawlable content and appropriate search foundations. The finished pages are tested before launch and you own the site.',
     complexity: 'Easy',
     monthlyCost: '$699 setup + $29-99/mo hosting',
   },

@@ -5,6 +5,28 @@ Running log of everything actually done in this repo against `IMPLEMENTATION-PLA
 **Repo:** `ai-adelaide-CANONICAL` (github.com/Ribi0811/ai-adelaide) · **Base commit:** `622a09b`
 **Git state as of last update:** all changes below are **uncommitted working-tree edits** — nothing has been committed, pushed, or deployed. Standing order in effect: show on localhost, get Ivan's approval, before anything goes further.
 
+## Permission-backed portfolio preview — 22 Aug 2026
+**Status: ✅ Built locally · awaiting Ivan's localhost approval · not pushed**
+
+- Replaced the two concept-only website mockups on `/website-design-adelaide`
+  with real screenshots of **CarHire.global** and **365CarHire**, supplied with
+  the site owner's permission.
+- Added the same two examples to `/testimonials` under **Selected website work**.
+- Added factual platform labels: **Next.js / React** for CarHire.global and
+  **WordPress** for 365CarHire; these describe the live platforms, not a claim
+  that AI Adelaide owns either property or built every part of it.
+- Reworked the surrounding copy to sell the useful difference between the two
+  stacks without claiming rankings, traffic, revenue or other measured
+  outcomes.
+- Updated the platform FAQ so the site recommends Next.js for new builds while
+  clearly acknowledging WordPress improvement work when it is the right fit.
+- Added the source screenshots under `public/portfolio/` and centralised the
+  display data in `lib/portfolio.ts`. Both screenshots were recaptured after
+  the live booking/search engine populated and normalised to **1440 × 900**;
+  the cards use the same fixed 16:10 frame.
+- Verified with `tsc`, `check-meta`, `check-links`, `next build`, and localhost
+  desktop/mobile rendering. No commit or deployment has been made.
+
 ---
 
 ## Phase 1 — Sitemap & redirect hygiene
@@ -630,3 +652,49 @@ environment secrets and must be smoke-tested after Ivan approves deployment.
 - Playwright — desktop and 390px mobile checks for `/seo` and `/marion`; no
   runtime console errors; sampled pages have one H1, one FAQPage and one
   layout-owned LocalBusiness.
+
+---
+
+## 2026-08-24 — Full-site SEO quality, proof and commercial-content audit
+**Status: local only, awaiting Ivan's localhost review; NOT pushed**
+
+- Added the full evidence-led audit and action plan at
+  `docs/AI-ADELAIDE-FULL-SEO-QUALITY-AUDIT-2026-08-24.md`.
+- Refreshed direct Search Console final data through 21 August. The latest 28
+  days are 26 clicks / 21,719 impressions / position 30.6 versus 38 / 15,154 /
+  position 36.9 prior. Malformed and prompt-style query rows confirm that the
+  all-query impression total is not a clean proxy for Adelaide buyer demand.
+- Added the permission-backed CarHire.global and 365CarHire portfolio examples
+  to website-design and proof surfaces, with equal 16:10 booking-journey
+  screenshots and accurate Next.js / React versus WordPress labels.
+- Kept Ivan-confirmed genuine customer comments with names shortened for
+  privacy. Removed the separate illustrative numerical case-study array from
+  visitor-facing proof, plus the unsupported verified-review count and star
+  treatment.
+- Retired three blog posts that presented invented people and figures as real
+  case studies. They are excluded from blog, sitemap, feed and LLM outputs and
+  permanently redirect in one hop to the closest honest service page.
+- Removed fixed page-one, fixed SEO-timeline, universal load-time, extra-job and
+  automatic-payback promises from priority website, pricing, SEO, automation
+  and audit-recommendation surfaces.
+- Cleaned the structured-data entity graph: `app/layout.tsx` owns the only
+  LocalBusiness; Service pages reference its `@id`; `/locations` uses
+  CollectionPage + ItemList. No URL/title churn in the frozen answering group.
+- Sitemap article `lastModified` now uses `updatedAt` when present. Metadata and
+  link checks now exclude intentionally retired posts.
+
+### Local verification
+
+- `npm run check-meta` — pass.
+- `npm run check-links` — pass; no broken links or redirect chains.
+- `npx tsc --noEmit` — pass.
+- Production build and final sitemap/browser sweep must be rerun after this
+  complete change set, then Ivan reviews localhost before any push.
+
+### Still open
+
+- GBP owner-side category, service, photo, UTM and Insights audit.
+- Consistent core citations after the one public NAP record is confirmed.
+- Genuine local links, founder proof and permission-backed measured case study.
+- Remaining legacy automation-article claims, reviewed in GSC traffic order.
+- Durable lead lifecycle: qualified, won and revenue storage.

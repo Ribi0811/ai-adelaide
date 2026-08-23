@@ -1,6 +1,6 @@
 import { PRICING, siteConfig } from "@/lib/constants";
 import suburbs from "@/data/suburbs.json";
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 
 // /llms-full.txt — the extended version of /llms.txt for AI crawlers that want
 // more context. GENERATED from PRICING + real page/suburb/post data so it can
@@ -16,7 +16,7 @@ export function GET() {
     .map((s) => `- [${s.name}${s.postcode ? ` ${s.postcode}` : ""}](${U}/${s.slug})`)
     .join("\n");
 
-  const blogList = posts
+  const blogList = publishedPosts
     .map(
       (p) =>
         `- **[${p.title}](${U}/blog/${p.slug})** — ${p.seoDescription ?? p.excerpt.slice(0, 180)} (${p.category}, ${p.date})`

@@ -80,7 +80,7 @@ const faqs = [
   {
     question: "Will it work on phones?",
     answer:
-      "Yes — every site is mobile-first. 80%+ of your visitors will be on a phone, so we design for that screen first, then scale up. Tap-to-call buttons, fast load times, thumb-friendly layouts — all standard.",
+      "Yes. We design the enquiry journey for phones first, then check relevant desktop sizes. Tap-to-call buttons, readable layouts and fast-loading assets are standard.",
   },
   {
     question: "What about Google Business Profile?",
@@ -119,7 +119,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "Tradie Website Bundle Adelaide",
     serviceType: "Tradie Marketing Bundle",
-    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "Tradie website bundle for Adelaide: conversion website built in 48hrs, 24/7 AI call capture, and local SEO. From $699 + $199/mo. No lock-in.",

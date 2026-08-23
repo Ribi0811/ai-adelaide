@@ -4,6 +4,22 @@
 **Property:** `sc-domain:aiadelaide.com.au`  
 **Scope:** Google Search Console, live indexability, local/service-page intent, OpenClaw reporting, conversion surfaces and competitor trust signals.
 
+### 23 August final-data refresh
+
+The same read-only aggregate method was refreshed on 23 August using final
+Search Console data through **20 August** (three-day lag). The latest numbers
+are **26 clicks / 22,385 impressions / 0.116% CTR / position 30.6** for
+24 July–20 August, versus **38 / 14,770 / 0.257% / position 37.7** for the
+preceding 28 days. The latest seven-day window (14–20 August) is **6 clicks /
+3,001 impressions / 0.200% CTR / position 26.8**, versus **12 / 6,688 /
+0.179% / position 29.2** in the prior week.
+
+This reinforces the original diagnosis: visibility is volatile and the
+commercial pages are under-clicked, but average position is not showing a
+sitewide collapse. No production code or Search Console setting was changed
+by this refresh. The current portfolio/platform work remains local-only until
+Ivan approves it.
+
 ## Executive answer
 
 The latest impression fall is real, but it is not evidence that AI Adelaide has been removed from Google or that the whole site has collapsed.

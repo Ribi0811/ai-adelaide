@@ -1,8 +1,41 @@
 # Claims to Verify
 
-Generated as part of Phase 5.6 of `IMPLEMENTATION-PLAN.md` (SEO/content project). This is a **catalog only** — nothing has been edited or deleted. Every item below reads as a specific, attributable outcome (a named testimonial, an anonymised-but-specific "case study" business, or a hard percentage/dollar figure) rather than confirmed pricing or a generic industry statistic.
+## Permission-backed portfolio work (2026-08-22)
+
+Ivan confirmed that the owner of **CarHire.global** and **365CarHire** has
+given permission for the sites to be featured in AI Adelaide's public
+portfolio. These must be described as permission-backed website/SEO work — not
+as AI Adelaide-owned properties, external client testimonials, or measured
+ranking/traffic/revenue case studies. Do not add performance figures or imply
+that AI Adelaide built every part of either site unless the owner supplies the
+specific scope and evidence.
+
+Generated as part of Phase 5.6 of `IMPLEMENTATION-PLAN.md` (SEO/content project). This began as a catalog; later resolution notes record what was retained, rewritten or retired. Older line numbers and “open” labels below are historical unless a newer dated resolution overrides them.
 
 **[HUMAN]: for each item, either (a) confirm it's a real, verifiable result and keep it, (b) confirm it's intended as an illustrative example and add a label like "illustrative example" / "based on typical results" so it doesn't read as a specific client claim, or (c) approve removal.** Do not assume anything below is false — this list exists because these claims currently have no visible sourcing, not because they've been found inaccurate.
+
+## Resolution — full-site quality audit (2026-08-24)
+
+- Genuine abbreviated customer comments remain available to shared testimonial
+  sections; Ivan's 4 July confirmation remains the source of truth, and names
+  are described as shortened for privacy.
+- The separate illustrative `caseStudies` array was removed from visitor-facing
+  use. Pricing and marketing pages now show the measurement model instead of
+  unverified numerical outcomes.
+- `/testimonials` is now a portfolio/proof-standard page featuring the two
+  permission-backed live sites. It no longer shows an unsupported verified
+  review count or decorative five-star ratings.
+- Three legacy posts that presented invented people and numerical scenarios as
+  client case studies were removed from published blog, feed, sitemap and LLM
+  outputs, with permanent one-hop redirects:
+  - `norwood-physio-cut-no-shows-automation` → clinic website page;
+  - `physio-clinic-no-shows-automation` → clinic website page;
+  - `adelaide-plumbers-booking-more-jobs` → automation page.
+- Fixed page-one, fixed-speed, fixed-payback and typical-lead claims were removed
+  from priority website, SEO, pricing and audit-recommendation surfaces.
+- The remaining legacy automation articles still require a source-by-source
+  claims review in traffic priority order; do not treat this audit as a blanket
+  verification of every number still inside `data/posts.ts`.
 
 Excluded from this list: confirmed pricing ($699/$1,299/$2,499 website tiers, $399/mo·$699/mo SEO tiers, $199/mo·$399/mo automation tiers, $20-50/yr domain, $15-30/mo hosting) and pure arithmetic built from those confirmed prices (e.g. "$6,349 with SEO" on `/website-cost-adelaide`).
 

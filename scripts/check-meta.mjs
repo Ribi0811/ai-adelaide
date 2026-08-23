@@ -143,6 +143,8 @@ for (const file of staticFiles) {
 
 // --- 2. Blog posts (data/posts.ts) -----------------------------------------
 const postsSource = readFileSync(path.join(ROOT, "data", "posts.ts"), "utf8");
+const retiredBlock = postsSource.match(/export const retiredPostSlugs = new Set\(\[([\s\S]*?)\]\);/)?.[1] ?? "";
+const retiredPostSlugs = new Set([...retiredBlock.matchAll(/"([^"]+)"/g)].map((m) => m[1]));
 // Split into per-post blocks on the `slug:` boundary.
 const slugIndices = [...postsSource.matchAll(/\n\{\s*\n\s*slug:\s*"([^"]+)"/g)];
 for (let i = 0; i < slugIndices.length; i++) {
@@ -150,6 +152,7 @@ for (let i = 0; i < slugIndices.length; i++) {
   const end = i + 1 < slugIndices.length ? slugIndices[i + 1].index : postsSource.length;
   const block = postsSource.slice(start, end);
   const slug = slugIndices[i][1];
+  if (retiredPostSlugs.has(slug)) continue;
   const titleMatch = block.match(/title:\s*"([^"]+)"/);
   const seoDescMatch = block.match(/seoDescription:\s*"([^"]+)"/);
   const excerptMatch = block.match(/excerpt:\s*\n?\s*"([^"]+)"/);
@@ -256,7 +259,7 @@ for (const [desc, routes] of descCounts) {
 const fails = issues.filter((i) => i.level === "fail");
 const warns = issues.filter((i) => i.level === "warn");
 
-console.log(`Checked ${rows.length} routes (${staticFiles.length} static files + ${slugIndices.length} posts + ${suburbs.length} suburbs).\n`);
+console.log(`Checked ${rows.length} routes (${staticFiles.length} static files + ${slugIndices.length - retiredPostSlugs.size} published posts + ${suburbs.length} suburbs).\n`);
 
 if (fails.length) {
   console.log(`FAILURES (${fails.length}):`);

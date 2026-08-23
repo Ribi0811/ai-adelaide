@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Website: live in 48 hours. SEO: first movement in 2-4 weeks for niche suburbs, 2-3 months for competitive areas. Lead capture: working from day one. AI follow-up sequences: first conversions in 1-2 weeks. We&apos;ll give you an honest timeline on the free chat.",
+      "A website can be live in 48 hours once the required content and approvals are ready. Lead tracking can start at launch. Search and follow-up outcomes depend on the baseline, demand, offer and execution, so we measure the response rather than promise a timetable.",
   },
   {
     question: "What if I already have a website?",

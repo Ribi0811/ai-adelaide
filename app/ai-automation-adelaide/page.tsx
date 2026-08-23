@@ -33,7 +33,7 @@ const savings = [
   {
     label: "Recovered leads",
     value: 2800,
-    body: "3-5 extra jobs/month at $350-$700 average value from missed-call text-back and faster quote follow-up.",
+    body: "Track missed calls, replies, qualified opportunities and booked work so the value is based on your real lead volume and average job.",
   },
   {
     label: "Admin hours saved",
@@ -89,7 +89,7 @@ const faqItems = [
   {
     question: "How much does AI automation cost for a small Adelaide business?",
     answer:
-      "Most Adelaide businesses start with a one-off setup and a monthly subscription from $199/mo. The first workflow — usually missed-call response or quote follow-up — often pays for itself within 30 days. A tradie recovering 3 extra jobs a week at $350 each sees $1,050/week in new revenue against a $199/mo system cost. That's an ROI of 400%+ in the first month.",
+      "Most Adelaide businesses start with a one-off setup and a monthly subscription from $199/mo. Whether the first workflow pays back depends on missed-call or quote volume, average job value, margin and close rate. We model the break-even point with your numbers, then track the real result.",
   },
   {
     question: "Is this the same as business automation in Adelaide?",
@@ -139,49 +139,12 @@ const problemRows = [
 const INK = "#1D1D1F";
 
 
-function LocalBusinessJsonLd() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "AI Adelaide",
-    description:
-      "AI Automation Adelaide helps local businesses automate lead capture, quote follow-up, scheduling, and admin. 24/7 coverage.",
-    url: "https://aiadelaide.com.au",
-    telephone: "+61871009788",
-    email: "hello@aiadelaide.com.au",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "5 Peel St",
-      addressLocality: "Adelaide",
-      addressRegion: "SA",
-      postalCode: "5000",
-      addressCountry: "AU",
-    },
-    geo: { "@type": "GeoCoordinates", latitude: -34.9235, longitude: 138.5995 },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-    areaServed: { "@type": "City", name: "Adelaide" },
-    priceRange: "$199–$399/month",
-    sameAs: [
-      "https://www.facebook.com/aiadelaide",
-      "https://www.linkedin.com/company/ai-adelaide",
-    ],
-  };
-  return (
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-  );
-}
-
 function ServiceJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "AI Automation Adelaide",
-    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "Custom AI automation for Adelaide businesses — missed-call capture, quote follow-up, booking management, and admin workflows.",
@@ -210,7 +173,6 @@ export default function AIAutomationAdelaidePage() {
 
   return (
     <div className="bg-[#FBFBFD]">
-      <LocalBusinessJsonLd />
       <ServiceJsonLd />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 

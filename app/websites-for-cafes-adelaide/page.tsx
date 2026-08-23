@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Niche suburbs (like &lsquo;cafe Mitcham&rsquo;) can show movement in 2-4 weeks. Competitive areas (&lsquo;cafe Glenelg&rsquo;, &lsquo;cafe Norwood&rsquo;) take 2-3 months for page 1. We&apos;ll give you an honest timeline on the free chat.",
+      "There is no reliable fixed timetable. The starting website, Google Business Profile, reviews, competition and local demand all matter. We establish the baseline first and report relevant search and enquiry movement over time.",
   },
   {
     question: "Can I add AI automation later?",

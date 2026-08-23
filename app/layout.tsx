@@ -129,7 +129,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "@id": "https://aiadelaide.com.au/#organization",
               name: "AI Adelaide",
-              description: "AI Adelaide — AI-powered websites, AI-driven local SEO, and AI automation for Adelaide small businesses",
+              description: "AI Adelaide provides website design, local SEO and practical automation for Adelaide small businesses.",
               url: "https://aiadelaide.com.au",
               telephone: process.env.NEXT_PUBLIC_PHONE || "+618****9788",
               email: "hello@aiadelaide.com.au",

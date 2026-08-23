@@ -123,7 +123,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "Answering Service Adelaide",
     serviceType: "Answering Service",
-    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "AI answering service for Adelaide small businesses. 24/7 call handling, lead capture, appointment booking, instant SMS summaries. Part of AI automation stack from $199/month.",

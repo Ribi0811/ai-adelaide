@@ -78,7 +78,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "Missed Call Answering Service Adelaide",
     serviceType: "Missed Call Answering",
-    provider: { "@type": "LocalBusiness", name: "AI Adelaide", url: "https://aiadelaide.com.au" },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "AI missed call answering service for Adelaide businesses. Responds within 60 seconds, 24/7, qualifies the lead. Part of AI automation from $199/mo.",

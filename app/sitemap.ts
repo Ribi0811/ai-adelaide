@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/constants";
 import suburbs from "@/data/suburbs.json";
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 
 // Real per-route lastModified dates, seeded 2026-07-03 from git history
 // (`git log -1 --format=%cs -- <file>`) as part of the SEO audit sitemap
@@ -462,9 +462,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
-    ...posts.map((post) => ({
+    ...publishedPosts.map((post) => ({
       url: `${siteConfig.url}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: new Date(post.updatedAt ?? post.date),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

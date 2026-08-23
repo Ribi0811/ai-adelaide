@@ -122,11 +122,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "AI Office Worker Adelaide",
     serviceType: "AI Office Automation",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "AI office worker for Adelaide small businesses. Automated admin, inbox triage, scheduling, document handling, CRM updates. From $399/month.",

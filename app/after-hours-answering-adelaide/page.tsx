@@ -90,11 +90,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "After Hours Answering Adelaide",
     serviceType: "After Hours Answering Service",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: {
       "@type": "City",
       name: "Adelaide",

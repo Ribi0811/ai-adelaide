@@ -209,7 +209,7 @@ const faqs = [
   {
     question: "Can I get a website for free?",
     answer:
-      "Technically yes — Google Sites, free Wix plans, Facebook pages. But free sites look free. They have ads, limited features, no custom domain, and Google ranks them poorly. A $699 investment in a real website pays for itself with one or two new customers.",
+      "Technically yes — Google Sites, free builder plans, or a social profile may cover a basic presence. Check the custom-domain, ownership, design, tracking and search limitations. A paid build is worthwhile only when its clearer customer journey and qualified enquiries justify the cost.",
   },
   {
     question: "How can AI Adelaide charge $699 when agencies charge $5,000+?",

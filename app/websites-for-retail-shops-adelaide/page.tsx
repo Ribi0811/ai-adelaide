@@ -114,7 +114,7 @@ const faqs = [
   {
     question: "Will it rank on Google for shops in my area?",
     answer:
-      "Yes — the site is set up with local SEO from day one. For competitive suburbs (&lsquo;vintage shop Norwood&rsquo;), add the SEO retainer for sustained page-1 rankings. Retail searches have strong local intent — high conversion potential.",
+      "The site includes clear product and location information, crawlable pages and local-search foundations. Rankings depend on competition, reputation and ongoing work, so we establish a baseline rather than promise a position.",
   },
   {
     question: "Can I show in-store events?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche suburbs in 2-4 weeks, competitive suburbs in 2-3 months. The SEO retainer accelerates this significantly.",
+      "The website build can be live in 48 hours once the required content and approvals are ready. Search movement has no fixed timetable; we measure relevant queries and enquiries against the starting baseline.",
   },
 ];
 

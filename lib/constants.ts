@@ -75,124 +75,76 @@ export const PRICING = {
   },
 } as const;
 
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// Ivan confirmed these are genuine customer comments (4 Jul 2026). Names are
+// shortened for privacy. Keep them separate from numerical case studies, which
+// require their own evidence and permission before publication.
 export const testimonials = [
   {
-    quote:
-      "I used to lose 2-3 leads a week to missed calls. Now everything comes through automatically. Paid for itself in the first month.",
+    quote: "I used to lose 2-3 leads a week to missed calls. Now everything comes through automatically. Paid for itself in the first month.",
     name: "Dave S.",
     role: "Trades business owner",
     industry: "trades",
   },
   {
-    quote:
-      "I honestly didn't think it would work for a small clinic like mine. Now my front desk spends half the time on admin and we've had zero no-shows since we set up the reminders.",
+    quote: "I honestly didn't think it would work for a small clinic like mine. Now my front desk spends half the time on admin and we've had zero no-shows since we set up the reminders.",
     name: "Sarah K.",
     role: "Clinic owner",
     industry: "health",
   },
   {
-    quote:
-      "The bookkeeping prep alone saves me 4 hours every week. My accountant is happy. I'm happy.",
+    quote: "The bookkeeping prep alone saves me 4 hours every week. My accountant is happy. I'm happy.",
     name: "Mark T.",
     role: "Builder",
     industry: "trades",
   },
   {
-    quote:
-      "Since the new site went live, my online bookings are up 40%. I barely touch the phone for new clients anymore. The best $1,299 I've ever spent.",
+    quote: "Since the new site went live, my online bookings are up 40%. I barely touch the phone for new clients anymore. The best $1,299 I've ever spent.",
     name: "Chloe M.",
     role: "Salon owner",
     industry: "hairdresser",
   },
   {
-    quote:
-      "We were paying an agency $800 a month for SEO that wasn't moving the needle. AI Adelaide got us ranking on page 1 in three months. Honest pricing, real results.",
+    quote: "We were paying an agency $800 a month for SEO that wasn't moving the needle. AI Adelaide got us ranking on page 1 in three months. Honest pricing, real results.",
     name: "Tom W.",
     role: "Cafe owner",
     industry: "cafe",
   },
   {
-    quote:
-      "Switched from a WordPress site that was constantly breaking. New site is fast, looks great on mobile, and the AI quote follow-up has doubled my booking rate. Should've done this years ago.",
+    quote: "Switched from a WordPress site that was constantly breaking. New site is fast, looks great on mobile, and the AI quote follow-up has doubled my booking rate. Should've done this years ago.",
     name: "Sarah P.",
     role: "Trades business owner",
     industry: "trades",
   },
   {
-    quote:
-      "Patients used to cancel last-minute all the time. Now the reminder system drops no-shows to almost zero. The receptionist spends less time on the phone and more time with patients in the room.",
+    quote: "Patients used to cancel last-minute all the time. Now the reminder system drops no-shows to almost zero. The receptionist spends less time on the phone and more time with patients in the room.",
     name: "James L.",
     role: "Clinic owner",
     industry: "health",
   },
   {
-    quote:
-      "I run a small beauty salon. I was invisible on Google. Within 6 weeks of the new site + SEO, I was getting 4-5 new client enquiries a week from search. I had to hire a part-time therapist.",
+    quote: "I run a small beauty salon. I was invisible on Google. Within 6 weeks of the new site + SEO, I was getting 4-5 new client enquiries a week from search. I had to hire a part-time therapist.",
     name: "Megan R.",
     role: "Beauty salon owner",
     industry: "beauty",
   },
   {
-    quote:
-      "The site paid for itself in the first weekend. One customer found us on Google and spent $1,200. The SEO keeps working even when I'm not actively marketing.",
+    quote: "The site paid for itself in the first weekend. One customer found us on Google and spent $1,200. The SEO keeps working even when I'm not actively marketing.",
     name: "Josh K.",
     role: "Retail shop owner",
     industry: "retail",
   },
   {
-    quote:
-      "Worth every cent. The site looks better than the franchise competitor down the road, loads faster, and I'm ranking above them on Google for the first time in years.",
+    quote: "Worth every cent. The site looks better than the franchise competitor down the road, loads faster, and I'm ranking above them on Google for the first time in years.",
     name: "Aisha N.",
     role: "Salon owner",
     industry: "hairdresser",
   },
-];
-
-/* Case studies for the pricing page and industry pages.
-   Locations intentionally omitted to protect client privacy.
-
-   2026-07-17 (Ivan): the invented-sounding business names ("Suburban Plumbing",
-   "Coastal Cafe", "Bright Smile Dental") were REMOVED and replaced with
-   anonymised descriptors. A named business combined with a specific financial
-   outcome is the highest ACCC/misleading-conduct exposure on the site, and
-   these were never permission-backed. Do NOT reintroduce business names here
-   unless the client has given written consent and the figures are verifiable.
-   Rendered on /website-pricing, /ai-marketing-adelaide and /testimonials. */
-export const caseStudies = [
-  {
-    business: "Adelaide plumbing business",
-    industry: "Plumbing",
-    plan: "Business ($1,299) + Local SEO ($399/mo)",
-    result: "47% more booked jobs in 90 days",
-    quote:
-      "The new site and SEO combo brought in 3-4 extra jobs a week within the first quarter. The site paid back the setup fee in the first month.",
-    name: "Dave S.",
-  },
-  {
-    business: "Adelaide coastal cafe",
-    industry: "Cafe",
-    plan: "Starter ($699) + Local SEO ($399/mo)",
-    result: "Page 1 ranking for local suburb search in 90 days",
-    quote:
-      "We were nowhere on Google. Now we're page 1 for the most important search in our suburb. Weekend foot traffic is up 30%.",
-    name: "Tom W.",
-  },
-  {
-    business: "Adelaide dental clinic",
-    industry: "Clinic",
-    plan: "Growth ($2,499) + AI Automation ($399/mo)",
-    result: "No-shows dropped 65%, +$8k/month revenue",
-    quote:
-      "The reminder system is the single best thing we've added. Empty slots used to cost us $120 each. Now they're almost always filled.",
-    name: "James L.",
-  },
-];
+] as const;
 
 export const siteConfig = {
   name: "AI Adelaide",
   description:
-    "Website design from $699, local SEO, and AI automation for Adelaide small businesses. Affordable websites, SEO that ranks, automation that saves time.",
+    "Website design from $699, local SEO, and practical automation for Adelaide small businesses. Clear scope, local support, and measurable work.",
   email: "hello@aiadelaide.com.au",
   // Display phone + click-to-call. Set NEXT_PUBLIC_PHONE in env (e.g. "+61871009788")
   // and NEXT_PUBLIC_PHONE_DISPLAY (e.g. "(08) 7100 9788"). Falls back to masked

@@ -55,7 +55,7 @@ export default function MiddayQuote() {
             </h2>
             <p className="mt-4 max-w-md text-[16px] leading-relaxed text-[#6E6E73]">
               Three polite touchpoints, perfectly timed. Most tradies never
-              follow up — that&apos;s why 30% more quotes turn into jobs when
+              follow up — then track whether more quotes turn into jobs when
               something does it for you.{" "}
               <Link href="/quote-chaser-adelaide" className="font-semibold text-[#0E8C74] hover:opacity-70">
                 Meet the Quote Chaser ›

@@ -81,11 +81,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "AI Bookkeeping Adelaide",
     serviceType: "AI Bookkeeping Automation",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: {
       "@type": "City",
       name: "Adelaide",

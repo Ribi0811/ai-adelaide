@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import suburbs from "@/data/suburbs.json";
-import { PRICING, siteConfig, testimonials } from "@/lib/constants";
+import { PRICING, siteConfig } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SuburbHero from "@/components/SuburbHero";
 
@@ -120,39 +120,12 @@ function buildFaqs(suburb: Suburb) {
   return [...standard, ...custom];
 }
 
-/**
- * Pick a suburb-appropriate testimonial based on the suburb's primary industries.
- * Each suburb has an industries array (e.g. "Plumbing & Electrical", "Cafes").
- * We map keywords → testimonial industry tags defined in lib/constants.ts.
- */
-function pickTestimonial(suburb: Suburb) {
-  const industryMap: { keywords: RegExp; tag: string }[] = [
-    { keywords: /(cafe|restaurant|hospitality|tourism|winery|cafe|brewery|cafe)/i, tag: "cafe" },
-    { keywords: /(beauty|salon|hairdresser|wellness|spa)/i, tag: "hairdresser" },
-    { keywords: /(health|clinic|medical|physio|dental|allied|pharmacy)/i, tag: "health" },
-    { keywords: /(retail|shop|boutique)/i, tag: "retail" },
-    { keywords: /(trades|trade|plumb|electric|build|construct|landscap|renovat|auto|mechanic)/i, tag: "trades" },
-  ];
-  for (const ind of suburb.industries ?? []) {
-    for (const m of industryMap) {
-      if (m.keywords.test(ind)) {
-        const match = testimonials.find((t) => t.industry === m.tag);
-        if (match) return match;
-      }
-    }
-  }
-  return testimonials[0];
-}
-
 export default function SuburbPage({ params }: SuburbPageProps) {
   const suburb = getSuburb(params.suburb);
   if (!suburb) notFound();
 
   const faqs = buildFaqs(suburb);
   const websiteIntentPage = Boolean(suburb.seoTitle);
-  const matchedTestimonial = websiteIntentPage
-    ? (testimonials.find((testimonial) => /website|site /i.test(testimonial.quote)) ?? pickTestimonial(suburb))
-    : pickTestimonial(suburb);
   const capabilityItems = websiteIntentPage
     ? [
         {
@@ -444,22 +417,20 @@ export default function SuburbPage({ params }: SuburbPageProps) {
           </div>
         </section>
 
-        {/* ── Case Study / Testimonial ────────────────────────── */}
-        {matchedTestimonial && (
-          <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-            <div className="panel-light p-8 md:p-10">
-              <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-                A Result from a Business Like Yours
-              </h2>
-              <blockquote className="mb-4 border-l-4 border-accent pl-6 text-body-mobile text-slate-700 italic md:text-body">
-                &ldquo;{matchedTestimonial.quote}&rdquo;
-              </blockquote>
-              <p className="text-sm text-slate-500">
-                — {matchedTestimonial.name}, {matchedTestimonial.role}
-              </p>
-            </div>
-          </section>
-        )}
+        {/* ── Evidence standard ───────────────────────────────── */}
+        <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+          <div className="panel-light p-8 md:p-10">
+            <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+              A clear baseline for your {suburb.name} business
+            </h2>
+            <p className="text-body-mobile text-slate-700 md:text-body">
+              Before recommending a build or SEO plan, we record the current
+              website, relevant local searches and enquiry path. After launch,
+              we report qualified calls and forms alongside search movement—no
+              anonymous success stories or guaranteed ranking claims.
+            </p>
+          </div>
+        </section>
 
         {/* ── Pricing ─────────────────────────────────────────── */}
         <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">

@@ -1,22 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Portfolio — grid of real built sites (screenshot + live link each).
-// Per IMPLEMENTATION-PLAN.md 5.5: build the component and layout now,
-// populate behind a human-gated flag since we don't yet have a client
-// list, screenshot permissions, or hosted screenshots to show.
-//
-// HUMAN INPUT NEEDED: client list, permissions to display their site,
-// and real screenshots. Once supplied, add entries to `portfolioItems`
-// below (or wherever this component is used) — do not fabricate entries.
-// Logged in docs/claims-to-verify.md.
-
 export type PortfolioItem = {
   name: string;
   industry: string;
+  scope: string;
+  platform: string;
   url: string;
   screenshotSrc: string;
   screenshotAlt: string;
+  description: string;
 };
 
 type PortfolioProps = {
@@ -28,9 +21,9 @@ type PortfolioProps = {
 
 export default function Portfolio({
   items,
-  heading = "Recent Work",
-  eyebrow = "Portfolio",
-  subheadline = "A look at real websites we've built for Adelaide small businesses.",
+  heading = "Selected work",
+  eyebrow = "Proof",
+  subheadline = "A closer look at live platforms and the work behind them.",
 }: PortfolioProps) {
   return (
     <section className="section-shell bg-bgPrimary py-section-mobile md:py-section">
@@ -46,7 +39,9 @@ export default function Portfolio({
         {items.length === 0 ? (
           <div className="brand-card mx-auto flex max-w-2xl flex-col items-center gap-4 p-8 text-center md:p-10">
             <p className="text-body-mobile text-textSecondary md:text-body">
-              We're building out a public portfolio of client sites — screenshots and live links are going up here as we confirm permission with each client. In the meantime, book a free chat and we'll walk you through recent examples directly.
+              We&apos;re adding permission-backed examples as site owners approve
+              the screenshots and live links. In the meantime, book a free chat
+              and we&apos;ll walk you through the right examples directly.
             </p>
             <Link href="/contact" className="btn-secondary px-6 py-3">
               Ask to See Examples <span aria-hidden>→</span>
@@ -72,12 +67,23 @@ export default function Portfolio({
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5 md:p-6">
-                  <span className="mb-2 w-fit rounded-full border border-accent/25 bg-accent/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.16em] text-accent">
-                    {item.industry}
-                  </span>
+                  <div className="mb-3 flex flex-wrap items-center gap-2">
+                    <span className="w-fit rounded-full border border-accent/25 bg-accent/10 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.16em] text-accent">
+                      {item.industry}
+                    </span>
+                    <span className="w-fit rounded-full border border-textSecondary/20 bg-bgSecondary px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.16em] text-textSecondary">
+                      {item.platform}
+                    </span>
+                    <span className="text-xs font-medium text-textSecondary">
+                      {item.scope}
+                    </span>
+                  </div>
                   <p className="font-semibold text-textPrimary">{item.name}</p>
-                  <span className="mt-3 text-sm font-semibold text-accent">
-                    Visit site <span aria-hidden>→</span>
+                  <p className="mt-2 text-sm leading-relaxed text-textSecondary">
+                    {item.description}
+                  </p>
+                  <span className="mt-4 text-sm font-semibold text-accent">
+                    Visit live site <span aria-hidden>→</span>
                   </span>
                 </div>
               </a>

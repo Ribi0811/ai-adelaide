@@ -23,7 +23,7 @@ const whatsIncluded = [
 ];
 
 const faqs = [
-  { question: "Do you do SEO for hotels in Adelaide?", answer: "Yes — we work with boutique hotels, motels, B&Bs, serviced apartments, holiday parks, and short-term rental managers (Airbnb, Stayz, etc.) across Adelaide and regional SA. Our process targets both Google organic search AND Google's hotel-specific features (hotel pack, map results, free booking links)." },
+  { question: "Do you do SEO for hotels in Adelaide?", answer: "Yes. The process can support boutique hotels, motels, B&Bs, serviced apartments, holiday parks and short-term rental managers. Scope can include organic search, map visibility and eligible hotel features after the property, booking system and distribution setup are reviewed." },
   { question: "How much does hotel SEO cost in Adelaide?", answer: `Local SEO is ${PRICING.seo.tiers[0].price}; Growth SEO is ${PRICING.seo.tiers[1].price} for a broader content and authority scope. Both are month to month with no lock-in.` },
   { question: "How long does hotel SEO take to work?", answer: "There is no fixed timetable. Your property, location, existing authority, booking setup and competition all affect movement. We establish a baseline and review search visibility, direct enquiries and bookings over the following months rather than promise a ranking date." },
   { question: "Can SEO help me get off Booking.com and Expedia?", answer: "SEO can help grow direct discovery and bookings, but OTAs may remain an important channel. We use your actual commission rate, booking value and direct-booking conversion data to model the value of shifting a portion of bookings rather than promise a fixed saving." },

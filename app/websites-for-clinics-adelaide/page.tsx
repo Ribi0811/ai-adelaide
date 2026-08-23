@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche practices (&lsquo;physio Mitcham&rsquo;) in 2-4 weeks, competitive areas (&lsquo;physio Norwood&rsquo;) in 2-3 months. We&apos;ll give you an honest timeline.",
+      "The website build can be live in 48 hours once the practice details and approvals are ready. Search movement depends on the starting site, competition, reputation and Google&apos;s systems, so we report against a baseline instead of promising a date.",
   },
   {
     question: "Are you AHPRA-compliant?",
@@ -266,17 +266,17 @@ export default function WebsitesForClinicsPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/norwood-physio-cut-no-shows-automation"
+              href="/local-seo-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">How Norwood Physio Cut No-Shows by 60%</span>
+              <span className="font-semibold text-slate-900">Local SEO for Adelaide Clinics</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/physio-clinic-no-shows-automation"
+              href="/ai-automation-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Why Your Physio Clinic Is Losing $3k/Month</span>
+              <span className="font-semibold text-slate-900">Automation for Adelaide Clinics</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

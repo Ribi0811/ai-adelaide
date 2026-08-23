@@ -195,7 +195,7 @@ export default function AiConsultingAdelaidePage() {
         <p className="text-slate-700 mb-4 leading-relaxed">Most clients see ROI within 30-60 days. Usually from:</p>
 
         <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Recovered missed calls (1-2 extra jobs/month for tradies)</li>
+          <li>Recovered missed calls and booked jobs measured from your baseline</li>
           <li>Reduced admin time (5-10 hours/week for clinic owners)</li>
           <li>Lower no-show rates (from automated reminders)</li>
         </ul>

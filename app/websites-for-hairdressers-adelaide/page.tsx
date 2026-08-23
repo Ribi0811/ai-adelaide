@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "Will it rank on Google for hairdressers in my suburb?",
     answer:
-      "We build every site with local SEO in mind — suburb targeting pages, Google Business Profile integration, and proper schema markup. Your site is set up to rank for &lsquo;hairdresser [your suburb]&rsquo; from day one. For competitive suburbs like Norwood, we recommend adding the SEO retainer.",
+      "We build clear local-search foundations, including relevant pages, Google Business Profile alignment and appropriate structured data. Rankings depend on competition, reputation and ongoing work, so we establish a baseline rather than promise a position.",
   },
   {
     question: "Do I need to provide photos?",
@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Your site is live in 48 hours. Google ranking depends on competition — niche suburbs can show movement in 2-4 weeks, competitive areas take 2-3 months. We'll give you an honest assessment before we start.",
+      "The website build can be live in 48 hours once content and approvals are ready. Search movement has no fixed timetable; we report relevant queries and enquiries against the starting baseline.",
   },
   {
     question: "Can I add AI automation later?",

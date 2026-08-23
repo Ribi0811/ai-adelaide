@@ -74,7 +74,7 @@ export default function BeforeAfterCase() {
               Live, ranking, and capturing every lead
             </h3>
             <ul className="space-y-3 text-body-mobile md:text-body text-textSecondary">
-              <li className="panel-soft px-4 py-3">Customer Googles. Your site loads in under 2 seconds.</li>
+              <li className="panel-soft px-4 py-3">Customer searches. Your mobile page gives them a clear next step.</li>
               <li className="panel-soft px-4 py-3">Clear services, click-to-call, suburb targeting — they call you.</li>
               <li className="panel-soft px-4 py-3">Missed call? AI text-back replies within 30 seconds.</li>
               <li className="panel-soft px-4 py-3">End result: more calls, more bookings, lower cost per lead.</li>

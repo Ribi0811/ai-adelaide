@@ -146,11 +146,11 @@ const addons = [
 const included = [
   {
     title: "Mobile-first design",
-    body: "80%+ of your visitors are on phones. Every site we build works perfectly on mobile.",
+    body: "Every site is designed and tested around the mobile enquiry journey, then checked across relevant desktop sizes.",
   },
   {
     title: "Fast loading",
-    body: "Our sites load in under 2 seconds. Google rewards fast sites with better rankings.",
+    body: "We optimise images, code and delivery, then test the finished pages and address material performance issues before launch.",
   },
   {
     title: "Google-ready",
@@ -236,21 +236,7 @@ export default function WebsitePricingPage() {
     "@type": "Service",
     name: "Website Design & Build",
     serviceType: "Web Design",
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": "https://aiadelaide.com.au/#organization",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-      telephone: process.env.NEXT_PUBLIC_PHONE || "+618****9788",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "5 Peel St",
-        addressLocality: "Adelaide",
-        addressRegion: "SA",
-        postalCode: "5000",
-        addressCountry: "AU",
-      },
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "Website design and build for Adelaide small businesses. Three tiers: Starter $699, Business $1,299, Growth $2,499. Live in 48 hours, mobile-first, Google-ready.",

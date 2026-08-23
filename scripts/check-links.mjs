@@ -74,7 +74,11 @@ const suburbs = JSON.parse(readFileSync(path.join(ROOT, "data", "suburbs.json"),
 for (const s of suburbs) staticRoutes.add(`/${s.slug}`);
 
 const postsSource = readFileSync(path.join(ROOT, "data", "posts.ts"), "utf8");
-const postSlugs = [...postsSource.matchAll(/^\s*slug:\s*"([^"]+)"/gm)].map((m) => m[1]);
+const retiredBlock = postsSource.match(/export const retiredPostSlugs = new Set\(\[([\s\S]*?)\]\);/)?.[1] ?? "";
+const retiredPostSlugs = new Set([...retiredBlock.matchAll(/"([^"]+)"/g)].map((m) => m[1]));
+const postSlugs = [...postsSource.matchAll(/^\s*slug:\s*"([^"]+)"/gm)]
+  .map((m) => m[1])
+  .filter((slug) => !retiredPostSlugs.has(slug));
 for (const slug of postSlugs) staticRoutes.add(`/blog/${slug}`);
 
 // --- 2. Redirect sources (live import of next.config.mjs) --------------

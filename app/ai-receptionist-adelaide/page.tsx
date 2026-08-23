@@ -84,61 +84,13 @@ function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
   );
 }
 
-function LocalBusinessJsonLd() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://aiadelaide.com.au/#organization",
-    name: "AI Adelaide",
-    description:
-      "AI Adelaide provides AI receptionist services for Adelaide small businesses as part of its AI automation stack. 24/7 call answering, booking, and lead capture from $199/mo.",
-    url: "https://aiadelaide.com.au",
-    telephone: "+61871009788",
-    email: "hello@aiadelaide.com.au",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "5 Peel St",
-      addressLocality: "Adelaide",
-      addressRegion: "SA",
-      postalCode: "5000",
-      addressCountry: "AU",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: -34.9285,
-      longitude: 138.6007,
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Adelaide",
-    },
-    priceRange: "$$",
-    serviceType: [
-      "AI Receptionist",
-      "AI Automation",
-      "AI-Powered Website Design",
-      "AI-Driven Local SEO",
-    ],
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
-
 function ServiceJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "AI Receptionist Adelaide",
     serviceType: "AI Receptionist",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: {
       "@type": "City",
       name: "Adelaide",
@@ -168,7 +120,6 @@ function ServiceJsonLd() {
 export default function AIReceptionistAdelaidePage() {
   return (
     <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
-      <LocalBusinessJsonLd />
       <ServiceJsonLd />
       <FaqJsonLd faqs={faqItems} />
 

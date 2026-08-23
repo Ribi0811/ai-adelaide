@@ -1,6 +1,6 @@
 import { PRICING, siteConfig } from "@/lib/constants";
 import suburbs from "@/data/suburbs.json";
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 
 // /llms.txt — the curated map we hand to AI crawlers (ChatGPT, Claude,
 // Perplexity, Google AI, Bing Copilot).
@@ -73,7 +73,7 @@ const guides: Entry[] = [
   { path: "/ai-receptionist-cost-adelaide", label: "AI Receptionist Cost Adelaide", note: "What an AI receptionist costs and what drives the price." },
   { path: "/ai-receptionist-vs-virtual-receptionist", label: "AI Receptionist vs Virtual Receptionist", note: "Differences, trade-offs and which suits which business." },
   { path: "/best-ai-receptionist-australia", label: "Best AI Receptionist Australia", note: "How to evaluate AI receptionist options in Australia." },
-  { path: "/testimonials", label: "Client Reviews" },
+  { path: "/testimonials", label: "Website Portfolio & Verified Work", note: "Permission-backed live examples and AI Adelaide's proof standard." },
   { path: "/tools/ai-readiness-calculator", label: "AI Readiness Calculator", note: "Free tool scoring how ready a business is to automate." },
   { path: "/lost-leads-calculator", label: "Lost Leads Calculator", note: "Free tool estimating revenue lost to missed calls." },
   { path: "/blog", label: "Blog", note: "Practical guides for Adelaide small businesses." },
@@ -92,7 +92,7 @@ export function GET() {
     .map((s) => `[${s.name}](${U}/${s.slug})`)
     .join(", ");
 
-  const blogList = posts
+  const blogList = publishedPosts
     .map((p) => `- [${p.title}](${U}/blog/${p.slug})`)
     .join("\n");
 

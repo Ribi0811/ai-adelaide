@@ -154,11 +154,7 @@ function ServiceJsonLd() {
     "@type": "Service",
     name: "Missed Call Text Back Adelaide",
     serviceType: "Missed Call SMS Automation",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "AI Adelaide",
-      url: "https://aiadelaide.com.au",
-    },
+    provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
       "Missed call text back service for Adelaide businesses. Instant SMS auto-response within 20 seconds, with job qualification. Part of AI automation from $199/mo.",

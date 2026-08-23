@@ -2230,7 +2230,7 @@ export const posts: Post[] = [
 
 <p>The tools to do this are cheap, fast to set up, and they pay for themselves in weeks. If your clinic is losing $3,000 a month to no-shows, that's $36,000 a year you're leaving on the table.</p>
 
-<p>How would you spend $36,000? If your physio or allied health clinic is ready to fix its no-show problem, <a href="/ai-automation-adelaide">our automation team</a> can help you set it up — <a href="/contact">talk to us</a>. We also build <a href="/website-design-adelaide">health clinic websites</a> and offer <a href="/local-seo-adelaide">local SEO</a> to help new patients find you. For more, read our <a href="/blog/norwood-physio-cut-no-shows-automation">Norwood physio case study</a>.</p>
+<p>If your physio or allied health clinic needs a clearer booking and reminder process, <a href="/ai-automation-adelaide">our automation service</a> can help map it — <a href="/contact">talk to us</a>. We also build <a href="/websites-for-clinics-adelaide">health clinic websites</a> and offer <a href="/local-seo-adelaide">local SEO</a> to help suitable patients find accurate practice information.</p>
 <h2>The Psychology of No-Shows</h2>
 <p>Understanding why patients do not show up helps design better systems to prevent it. In allied health, no-shows fall into a few predictable categories:</p>
 <ul>
@@ -4549,7 +4549,7 @@ Your business will thank you.
 <p>With us, basic text changes are included — no monthly fee. You only pay if you add <a href="/ai-automation-adelaide">automation</a> or <a href="/seo">SEO services</a>. With agencies, ongoing maintenance is typically $50-300/month. With DIY builders, you pay $20-50/month forever.</p>
 
 <h2>Which Tier Should You Pick?</h2>
-<p>If you are a sole trader with no website, start with Starter ($699). If you have an established business and want to rank on Google, go Business ($1,299). If you serve multiple suburbs and want to dominate local search, Growth ($2,499) is the play. See our full <a href="/website-pricing">pricing page</a> for details.</p>
+<p>If you are a sole trader needing a focused online presence, Starter may be enough. Business adds room for more services and content. Growth suits a genuinely broader scope across services or locations; extra pages should exist because customers need them, not to manufacture search coverage. See our full <a href="/website-pricing">pricing page</a> for details.</p>
 
 <p><strong>Ready to get started?</strong> <a href="/contact">Book a free 15-minute chat</a> or call (08) 7100 9788. Check our <a href="/services">full range of services</a> or read more about <a href="/website-cost-adelaide">website costs</a>.</p>
 
@@ -4587,7 +4587,7 @@ Your business will thank you.
 <li>Hosting: $100/month = $2,400 over 2 years</li>
 <li>SEO: $800/month = $19,200 over 2 years</li>
 <li><strong>Total 2-year cost: $29,644</strong></li>
-<li>Expected organic leads by month 12: 15-30 per month (same result)</li>
+<li>Organic lead volume: unknown until the market, offer, authority and search baseline are measured</li>
 </ul>
 <p><strong>DIY (Wix):</strong></p>
 <ul>
@@ -4597,7 +4597,7 @@ Your business will thank you.
 <li>SEO: $0 (doing it yourself, poorly)</li>
 <li><strong>Total 2-year cost: $2,484 + ongoing poor rankings</strong></li>
 </ul>
-<p>The cheapest option (DIY) delivers the least value. The most expensive (agency) delivers the same results as the mid-range option. The sweet spot is in the middle.</p>
+<p>Price alone does not determine value. Compare scope, ownership, ongoing costs, proof, support and how qualified enquiries will be measured after launch.</p>
 
 <h2>The DIY Trap: When "Free" Costs More Than $699</h2>
 <p>The most expensive website is the one that does not bring you customers. A DIY Wix site costs 20-40 hours of your time plus $35/month in subscription fees. If you are a tradie billing $80/hour, 20 hours is $1,600 in lost revenue. If you are a cafe owner, 20 hours is 20 hours you are not running your cafe. And the result is a website that does not rank on Google, does not convert visitors into customers, and does not represent your business professionally.</p>
@@ -4607,7 +4607,7 @@ Your business will thank you.
 <ul>
 <li><strong>Starter ($699):</strong> 3 pages, custom design, mobile-first, SEO foundation. For sole traders and very small businesses that need a professional online presence.</li>
 <li><strong>Business ($1,299):</strong> 5-7 pages, blog, SEO foundation, one suburb page. For established businesses that want to rank on Google.</li>
-<li><strong>Growth ($2,499):</strong> 10+ pages, 3 suburb pages, 3 blog articles, full SEO. For businesses that serve multiple suburbs and want to dominate local search.</li>
+<li><strong>Growth ($2,499):</strong> 10+ pages, 3 relevant location pages, 3 useful articles and broader SEO foundations for businesses with a genuine multi-service or multi-location scope.</li>
 </ul>
 <p>See our full <a href="/website-pricing">pricing page</a> for details, or <a href="/contact">book a free chat</a> to discuss which tier is right for your business.</p>
 
@@ -4616,7 +4616,7 @@ Your business will thank you.
 <p>Our Business tier website costs $1,299 plus $20/month hosting ($240/year). Over 2 years, that is $1,779. If the website generates just 5 leads per month at $100 per lead, that is $500/month or $12,000 over 2 years. The return on investment is 6.7x — for every dollar you spend, you get $6.70 back.</p>
 <p>Add SEO at $399/month and the total cost over 2 years is $11,355. But the leads increase from 5/month to 15-30/month as SEO kicks in. At 20 leads/month and $100/lead, that is $2,000/month or $48,000 over 2 years. The ROI is 4.2x. These are conservative estimates — many businesses see even higher returns, especially in service industries where a single customer can be worth $500-1,000 or more.</p>
 
-<p>The bottom line is straightforward: a professional website from $699 is one of the best investments an Adelaide small business can make. It pays for itself within weeks through new leads and customers, and it generates value for years to come. Whether you choose Starter, Business, or Growth, you are getting a website that ranks on Google, converts visitors into customers, and represents your business professionally. The question is not whether you can afford a professional website — it is whether you can afford not to have one. <a href="/contact">Book a free chat</a> to discuss your options, or see our <a href="/website-pricing">pricing page</a> for full details.</p>
+<p>The bottom line is straightforward: a professional website is worthwhile when it represents the business clearly and produces qualified enquiries at an acceptable cost. The build creates that foundation; rankings and conversions still depend on the market, offer, reputation and follow-up. <a href="/contact">Book a free chat</a> to discuss your scope, or see our <a href="/website-pricing">pricing page</a> for full details.</p>
 
 <h2>Frequently Asked Questions</h2>
 <h3>Is $699 really enough for a professional website?</h3>
@@ -4678,7 +4678,7 @@ Your business will thank you.
 <ul>
 <li><strong>Choose Starter ($699) if:</strong> You are a sole trader or very small business with no website. You just need a professional online presence with your hours, location, and contact details.</li>
 <li><strong>Choose Business ($1,299) if:</strong> You have an established business and want to attract new customers through Google. You need a blog for content marketing, a suburb page for local SEO, and a lead capture form.</li>
-<li><strong>Choose Growth ($2,499) if:</strong> You serve multiple suburbs and want to dominate local search across your entire service area. You need multiple suburb pages, multiple blog articles, and full SEO setup.</li>
+<li><strong>Choose Growth ($2,499) if:</strong> You have enough distinct services, locations or customer questions to justify a larger content structure and ongoing measurement.</li>
 </ul>
 <p>The most common mistake is choosing a tier that is too small for your needs. A Starter site for a business that serves 5 suburbs is under-equipped. A Growth site for a sole trader who only serves one suburb is overkill. Choose the tier that matches your business size and ambitions. <a href="/contact">Book a free chat</a> and we will recommend the right tier for your specific situation.</p>
 
@@ -4692,12 +4692,12 @@ Your business will thank you.
 <li><strong>Transparent pricing:</strong> Our prices are on our website for everyone to see. No hidden fees, no surprise charges, no "we will send you a quote" ambiguity.</li>
 <li><strong>Fast turnaround:</strong> Starter sites take 3-5 business days. Business sites take 7-10 days. No 4-6 week agency timelines.</li>
 </ul>
-<p>We have built hundreds of websites for Adelaide businesses, and we know what works. Our process is streamlined because we have done it many times — we start with proven structures and customise them for each client. This saves time and money without sacrificing quality. See our <a href="/website-design-adelaide">website design page</a> for examples, or check our <a href="/services">full range of services</a>.</p>
+<p>Our process is streamlined around a clear brief, a focused build and direct review rather than layers of account management. You can inspect permission-backed live work on our <a href="/website-design-adelaide#selected-work">website design page</a>, or check our <a href="/services">full range of services</a>.</p>
 
 <h2>The True Cost of NOT Having a Good Website</h2>
 <p>The cheapest website is not the one with the lowest upfront price — it is the one that generates the most revenue relative to its cost. Consider two Adelaide businesses:</p>
 <p><strong>Business A:</strong> Spends $395 on a cheap template website. It ranks on page 4 of Google, gets 20 visitors per month, and generates 0-1 leads per month. Over 2 years: $395 website + $360 hosting = $755 total cost. Revenue generated: minimal.</p>
-<p><strong>Business B:</strong> Spends $699 on our Starter website. It ranks on page 1 of Google within 3 months, gets 200-500 visitors per month, and generates 5-15 leads per month. Over 2 years: $699 website + $480 hosting = $1,179 total cost. Revenue generated: $5,000-15,000+ in new business.</p>
+<p><strong>Business B:</strong> Spends $699 on a focused Starter website, then measures calls and forms from launch. Whether it produces a return depends on search demand, the offer, business reputation and follow-up. The useful comparison is the real cost per qualified enquiry, not an invented traffic or revenue forecast.</p>
 <p>Business A spent $755. Business B spent $1,179. But Business B generated 50-150x more revenue. The "expensive" website is actually the cheapest one when you factor in what it produces.</p>
 
 <h2>Free Websites: Why They Are Not Free</h2>
@@ -4792,7 +4792,7 @@ Your business will thank you.
 <h2>The 4 Main Options for Adelaide Small Businesses</h2>
 
 <h3>1. Wix ($17-159/month)</h3>
-<p>Wix is the most popular DIY builder. Drag-and-drop, hundreds of templates, decent mobile editor. But Wix sites are slow — Google penalises them in search rankings. You also do all the design, copywriting, and SEO yourself. For a tradie who bills $80/hour, 20 hours on Wix costs $1,600 in lost time.</p>
+<p>Wix is a popular DIY builder with drag-and-drop editing and a large template library. Performance and search quality depend on the chosen template, assets, content and setup—not the platform name alone. You also need to budget the time required for design, copywriting, accessibility, analytics and SEO.</p>
 <p><strong>Best for:</strong> Someone who enjoys tinkering and has more time than money.</p>
 
 <h3>2. Squarespace ($25-139/month)</h3>
@@ -4804,15 +4804,14 @@ Your business will thank you.
 <p><strong>Best for:</strong> Businesses with a tech-savvy owner or an in-house person to manage it.</p>
 
 <h3>4. AI Adelaide ($699-2,499 one-off + $15-30/mo hosting)</h3>
-<p>That is us. We build your site on Next.js — the same framework used by major companies. It is fast (loads in under 2 seconds), Google loves it, and we handle all the design, copywriting, and <a href="/seo">SEO setup</a>. You do not touch a builder. See our <a href="/website-pricing">pricing</a> and <a href="/website-design-adelaide">process</a>.</p>
+<p>That is us. For new builds we typically recommend Next.js, while an existing WordPress site can remain the sensible choice when its content or booking workflow is already established. We handle the design, copywriting and technical <a href="/seo">SEO foundations</a>, then test the finished pages rather than promising a fixed speed. See our <a href="/website-pricing">pricing</a> and <a href="/website-design-adelaide">process and live examples</a>.</p>
 <p><strong>Best for:</strong> Adelaide small businesses that want a professional website without spending 20 hours learning a builder.</p>
 
 <h2>Speed Comparison</h2>
 <ul>
-  <li><strong>Wix:</strong> 3-5 second load times (slow, Google penalises)</li>
-  <li><strong>Squarespace:</strong> 2-4 seconds (acceptable)</li>
-  <li><strong>WordPress:</strong> 2-6 seconds (depends on plugins and hosting)</li>
-  <li><strong>AI Adelaide (Next.js):</strong> Under 2 seconds (fast, Google rewards)</li>
+  <li><strong>Wix and Squarespace:</strong> performance varies by template, apps, media and setup.</li>
+  <li><strong>WordPress:</strong> performance varies widely with hosting, theme and plugins.</li>
+  <li><strong>Next.js:</strong> gives developers strong delivery controls, but the finished site still needs real testing.</li>
 </ul>
 
 <h2>SEO Comparison</h2>
@@ -4829,20 +4828,20 @@ Your business will thank you.
 <h2>The Real Cost of "Free" Website Builders</h2>
 <p>Wix, Squarespace, and WordPress.com all offer "free" plans or low-cost options that look attractive until you start adding up the hidden costs. Here is what "free" actually costs an Adelaide small business:</p>
 <p>First, there is your time. Building a website on Wix or Squarespace takes 20-40 hours if you have never done it before. If you are a tradie billing $80-100/hour, that is $1,600-4,000 in lost billable time. If you are a cafe owner, salon manager, or clinic operator, that is 20-40 hours you are not spending on your business, your customers, or your family.</p>
-<p>Second, there is the opportunity cost of a website that does not rank. A DIY Wix site typically ranks on page 3-5 of Google for local searches. Page 3 gets roughly 2% of clicks. Page 1 gets 90%+. So your "free" website is invisible to the vast majority of potential customers who are searching for your services. A professionally built, SEO-optimised website from $699 pays for itself with 2-3 new customers — and then generates leads for years.</p>
+<p>Second, there is the opportunity cost of a website with weak content or no clear enquiry path. A DIY site can rank when it is useful and well promoted; a professionally built site can still fail when the offer, proof or authority is weak. Judge either option by qualified enquiries and total ownership cost rather than a blanket platform claim.</p>
 <p>Third, there are the ongoing subscription costs. Wix Business plans start at $35/month ($420/year). Squarespace Business is $36/month ($432/year). WordPress hosting is $15-30/month. Over 2 years, that is $840-864 for Wix/Squarespace or $360-720 for WordPress hosting — and you still have to maintain the site yourself.</p>
 
 <h2>Wix vs Squarespace vs WordPress: Adelaide Business Guide</h2>
 <p>Let us compare the three most popular website builders for Adelaide small businesses:</p>
 <p><strong>Wix:</strong> Drag-and-drop builder, easy to use, decent templates. Good for absolute beginners who want a basic website fast. The downsides: slow page load times (which hurts your Google ranking), limited SEO control, and you cannot migrate your site to another platform if you outgrow Wix. You are locked in. Monthly costs add up to $420+/year for a business site with a custom domain.</p>
 <p><strong>Squarespace:</strong> Beautiful templates, good for visual businesses like cafes, salons, and galleries. Better design quality than Wix but similar limitations — you are locked into their platform, SEO is limited, and you cannot add custom functionality. Monthly cost is $36/month for business features.</p>
-<p><strong>WordPress (self-hosted):</strong> The most flexible and SEO-friendly option. Powers 40%+ of all websites globally. Full control over design, functionality, and SEO. The downside: it requires more technical knowledge to set up and maintain. Hosting costs $15-30/month, but you own the site and can customise it however you want. This is what we build on because it gives our clients the best long-term results.</p>
+<p><strong>WordPress (self-hosted):</strong> A flexible option with broad control over content and functionality. The downside is maintenance across hosting, themes and plugins. It can be an excellent choice when an established content or booking workflow already depends on it; our public portfolio includes both WordPress and Next.js work.</p>
 
-<h2>Why We Build on WordPress (And Why It Matters for Your Adelaide Business)</h2>
-<p>We build all our websites on WordPress because it is the best platform for local SEO and long-term growth. Here is why:</p>
+<h2>Choosing Between WordPress and Next.js</h2>
+<p>No platform receives an automatic ranking advantage. The right choice depends on the editing workflow, integrations, maintenance requirements and development scope. We usually recommend Next.js for a new streamlined build and may keep or improve WordPress where it already suits the business.</p>
 <ul>
-<li><strong>SEO performance:</strong> WordPress sites consistently rank higher on Google than Wix or Squarespace sites. This is not opinion — it is because WordPress gives you full control over meta tags, headings, image alt text, URL structure, page speed, and every other factor that affects search ranking. Our <a href="/seo">SEO services</a> leverage this control to get Adelaide businesses ranking on page 1.</li>
-<li><strong>Page speed:</strong> With proper hosting and optimisation, WordPress sites load in under 2 seconds. Wix sites typically load in 4-6 seconds. Google uses page speed as a ranking factor, and customers abandon sites that take longer than 3 seconds to load. Faster site equals better ranking equals more customers.</li>
+<li><strong>SEO control:</strong> WordPress and Next.js can both support crawlable pages, metadata, structured data and clean internal linking when implemented properly. Our <a href="/seo">SEO services</a> focus on the finished site and business signals, not a platform slogan.</li>
+<li><strong>Performance:</strong> Hosting, media, third-party scripts and implementation determine the result. We test representative pages and fix material issues instead of publishing a universal load-time claim.</li>
 <li><strong>Ownership:</strong> With WordPress, you own your site. If you ever want to move to a different developer, you can. With Wix or Squarespace, your site lives on their platform and cannot be moved. You are renting, not owning.</li>
 <li><strong>Flexibility:</strong> Need to add a booking system? An online store? A blog? A suburb page for <a href="/norwood">Norwood</a>, <a href="/glenelg">Glenelg</a>, or <a href="/prospect">Prospect</a>? WordPress handles all of this. Wix and Squarespace are limited to what their platform supports.</li>
 <li><strong>Content management:</strong> WordPress is designed for content. Adding blog posts, service pages, and suburb pages is straightforward. This matters because content is how you rank for more keywords and bring in more organic traffic.</li>
@@ -4858,12 +4857,12 @@ Your business will thank you.
 <li><strong>Adelaide-local copywriting:</strong> Written by humans who know Adelaide, not generic text from a content mill or AI. Your site will read like it was written by someone who understands your customers and your market.</li>
 <li><strong>Fast hosting:</strong> On our managed WordPress hosting, optimised for speed and security. $20/month, includes SSL certificate and basic maintenance.</li>
 </ul>
-<p>The $699 price point works because we have built hundreds of websites for Adelaide businesses. We know what works, we start with proven structures, and we customise them for each client. We skip the expensive agency process — no project managers, no strategy workshops, no multiple revision rounds — and pass the savings directly to you. See our full <a href="/website-pricing">pricing</a> for details.</p>
+<p>The $699 price point works because the Starter scope is deliberately narrow: a clear brief, three core pages and one review round without agency account-management overhead. See our full <a href="/website-pricing">pricing</a> for the exact inclusions and limits.</p>
 
 <h2>When to Upgrade: Business and Growth Tiers</h2>
 <p>The Starter tier is perfect for getting online, but most Adelaide businesses eventually need more. Here is when to upgrade:</p>
 <p><strong>Upgrade to Business ($1,299) when:</strong> You want to rank on Google for competitive local searches. The Business tier adds a blog (essential for content marketing and SEO), SEO foundation (keyword research, on-page optimisation, and a content strategy), and one suburb page (to rank for searches like "plumber Norwood" or "cafe Glenelg"). If your competitors have blogs and suburb pages and you do not, they will outrank you.</p>
-<p><strong>Upgrade to Growth ($2,499) when:</strong> You serve multiple suburbs and want to dominate local search across your entire service area. The Growth tier adds 3 suburb pages, 3 blog articles, and full SEO setup. This is for businesses that want to be the top result for every relevant local search in their area.</p>
+<p><strong>Upgrade to Growth ($2,499) when:</strong> the business has enough distinct services, locations and useful source material to justify 3 local pages, 3 articles and broader SEO setup. More pages are not automatically better; each one needs a clear customer purpose.</p>
 <p>The key difference between tiers is not just the number of pages — it is the SEO investment. A Starter site will rank for your business name and a few basic keywords. A Business site will rank for competitive local searches like "plumber Norwood" or "hairdresser Prospect." A Growth site will rank across your entire service area. The more competitive your market, the more SEO investment you need.</p>
 
 <h2>Building Your Website: What to Expect</h2>
@@ -4996,7 +4995,7 @@ Your business will thank you.
 <p>We do local SEO for Adelaide businesses from $399/month. <a href="/contact">Book a free chat</a>, check our <a href="/services">services</a>, or read about our <a href="/website-design-adelaide">website design</a> that comes SEO-ready from day one.</p>
 
 <h2>Why Local SEO Matters More for Adelaide Businesses</h2>
-<p>Adelaide is a smaller market than Sydney or Melbourne, which means local SEO works faster and costs less here. With 1.4 million people across greater Adelaide, the competition for local search terms is lower than in the eastern capitals. A plumber in <a href="/norwood">Norwood</a> can rank for "plumber Norwood" within 2-3 months. The same plumber in a Sydney suburb might wait 6-12 months for the same result.</p>
+<p>Adelaide-wide and suburb-specific searches can have very different competition. A narrower term is not automatically easy: the local pack, existing businesses, reviews, links, proximity and page quality all matter. Inspect the actual results and starting baseline rather than borrowing a timetable from another city.</p>
 <p>This is a significant advantage for Adelaide businesses. Every dollar you spend on local SEO works harder because there is less competition. The businesses that invest in local SEO now will be the ones dominating search results for years to come — because SEO is compounding. The longer you do it, the stronger your position becomes.</p>
 
 <h2>The Three Pillars of Local SEO</h2>
@@ -5028,7 +5027,7 @@ Your business will thank you.
 <p>We include all of these elements in every website we build. Our Business and Growth tiers also include suburb pages and blog content that target specific local keywords. See our <a href="/website-pricing">pricing</a> for details.</p>
 
 <h2>Content Strategy: How to Rank for More Keywords</h2>
-<p>Content is how you rank for more keywords and bring in more organic traffic. A single service page can rank for 5-10 related keywords. A blog post can rank for 10-20 long-tail keywords. Over time, a consistent content strategy allows you to rank for hundreds of keywords and dominate local search in your area.</p>
+<p>Useful content can make a site eligible for more relevant searches, but volume is not the goal. Prioritise pages that answer real service, location and decision-stage questions, then measure whether they attract qualified visitors and support the commercial pages.</p>
 <p>Here is a simple content strategy for Adelaide businesses:</p>
 <ul>
 <li><strong>Month 1:</strong> Create 2-4 service pages targeting your main keywords. "Plumber Norwood," "hot water system repair," "blocked drains Adelaide." Each page should be 800-1,200 words and include local references.</li>
@@ -5055,7 +5054,7 @@ Your business will thank you.
 <ul>
 <li><strong>Month 1-3:</strong> You publish your first blog posts and suburb pages. You start appearing for low-competition keywords. Your Google Business Profile starts generating more views and actions.</li>
 <li><strong>Month 3-6:</strong> Your rankings improve for target keywords. Your review count grows. You start receiving organic leads from Google. Each new piece of content adds to your authority.</li>
-<li><strong>Month 6-12:</strong> You are ranking on page 1 for multiple keywords. Your organic traffic is growing steadily. You are generating 15-30+ leads per month from Google alone. Your reviews are compounding — more reviews lead to better rankings, which lead to more visibility, which leads to more reviews.</li>
+<li><strong>Month 6-12:</strong> Review whether relevant queries, qualified enquiries and customer reviews are moving in the right direction. Continue only where the work is producing useful commercial signals; there is no universal page-one or lead-volume outcome.</li>
 <li><strong>Year 2+:</strong> Your SEO is an asset that generates leads consistently, month after month, without additional per-click cost. Even if you stop actively creating content, your existing content continues to rank and generate traffic for years.</li>
 </ul>
 <p>This compounding effect is why we recommend starting SEO as early as possible. Every month you wait is a month your competitors are building their authority while you are not. The businesses that invest in local SEO today will be the ones dominating search results for years to come. See our <a href="/seo">SEO services</a> from $399/month, or <a href="/contact">book a free chat</a> to discuss your specific needs.</p>
@@ -5252,7 +5251,7 @@ Your business will thank you.
 
 <h2>The Adelaide SEO Advantage: Less Competition, Faster Results</h2>
 <p>One of the biggest advantages of doing SEO in Adelaide is that the competition is lower than in Sydney, Melbourne, or Brisbane. With a population of 1.4 million, Adelaide has fewer businesses competing for local search terms. This means you can rank faster and with less investment than you would in a larger city.</p>
-<p>For example, a plumber in <a href="/norwood">Norwood</a> can realistically rank on page 1 of Google for "plumber Norwood" within 2-3 months. The same plumber in a Sydney suburb might wait 6-12 months for the same result. A cafe in <a href="/glenelg">Glenelg</a> can rank for "cafe Glenelg" within 1-2 months. In Melbourne, the same search would take 4-6 months.</p>
+<p>A narrower suburb-and-service search may have fewer competing pages than a city-wide term, but that does not create a reliable ranking timetable. Assess the actual search results, business prominence, website quality and local competition before deciding where to invest.</p>
 <p>This means your SEO investment works harder in Adelaide. Every dollar you spend on SEO goes further because there is less competition pushing back against you. It also means that starting SEO now gives you a head start — the businesses that invest in SEO today will be the ones dominating local search in 12 months.</p>
 
 <h2>When to Start SEO (And When to Wait)</h2>
@@ -5289,7 +5288,7 @@ Your business will thank you.
     seoDescription: "Website design for hairdressers Adelaide: what your salon website needs — online booking, gallery, service menu. From $699. Complete guide for Adelaide salons.",
     date: "2026-06-18",
     readTime: "6 min read",
-    category: "Case Study",
+    category: "How-To",
     content: `<p>If you run a hair salon or barbershop in Adelaide, your website is your digital shopfront. It needs to look as good as your best work, take bookings while you are cutting hair, and show potential clients why they should choose you over the salon down the street.</p>
 
 <h2>What a Hair Salon Website Needs</h2>
@@ -5325,7 +5324,7 @@ Your business will thank you.
 <p>Once your website is live, add <a href="/ai-automation-adelaide">automation</a> — automated booking confirmations, SMS reminders 24 hours before appointments, and review requests after the appointment. No-shows drop by 65% with automated reminders. Automation starts from $199/month.</p>
 
 <h2>Real Example</h2>
-<p>A hair salon on The Parade in Norwood had no website — just an Instagram page. We built them a 5-page site with online booking, gallery, and service menu for $1,299. Within 3 months, they were ranking on page 1 for "hairdresser Norwood" and getting 8-10 new online bookings per week — all while cutting hair.</p>
+<p>Consider a hair salon using Instagram as its only online presence. A focused five-page site could add a searchable service menu, booking path, gallery and location information. The business should then measure online bookings and relevant search visibility from the launch baseline rather than assume a fixed result.</p>
 
 <p>Ready to get your salon online? <a href="/contact">Book a free chat</a>, check our <a href="/website-pricing">pricing</a>, or see all <a href="/services">services</a>. Read more about <a href="/website-cost-adelaide">website costs</a> for Adelaide small businesses.</p>
 
@@ -5406,7 +5405,7 @@ Your business will thank you.
 <ul>
 <li><strong>Week 1:</strong> Your site goes live. We submit it to Google and set up your Google Business Profile (if you have not already). You may start appearing for your business name within days.</li>
 <li><strong>Month 1-2:</strong> Your site starts ranking for low-competition local keywords. "Hairdresser [your suburb]" and "[service] Adelaide" searches begin showing your site on page 2-3 of Google.</li>
-<li><strong>Month 2-4:</strong> With ongoing SEO, your site moves to page 1 for target keywords. Your Google Business Profile starts appearing in the Map Pack. New client enquiries increase by 30-50%.</li>
+<li><strong>Month 2-4:</strong> Review indexing, relevant-query impressions, Google Business Profile visibility and qualified enquiries. Movement varies and neither page-one rankings nor a fixed enquiry increase can be promised.</li>
 <li><strong>Month 4-6:</strong> Your site is established in local search. You are receiving consistent organic leads every week. The website has paid for itself multiple times over in new client revenue.</li>
 </ul>
 <p>The key is consistency. A website without ongoing SEO is like a shop in a dark alley — it exists, but nobody can find it. A website with consistent SEO and content is like a shop on a busy street — visible, accessible, and generating foot traffic every day.</p>
@@ -5522,7 +5521,7 @@ Your business will thank you.
 <p><strong>Mistake 1: Auto-playing music or videos.</strong> Nothing makes a potential customer close your website faster than unexpected audio. If someone is browsing at work or in a quiet space, auto-playing music is a guaranteed bounce. Use photos instead of video, and let visitors choose whether to play any media.</p>
 <p><strong>Mistake 2: A PDF menu.</strong> Already covered above, but it is worth repeating: PDFs do not rank on Google, they are hard to read on phones, and they cannot be updated without a designer. Use a text-based menu page instead.</p>
 <p><strong>Mistake 3: No clear call to action.</strong> Every page of your website should guide the visitor toward a next step — view the menu, book a table, find us on the map, call us. If your website does not tell people what to do next, they will do nothing.</p>
-<p><strong>Mistake 4: Slow loading.</strong> A website that takes more than 3 seconds to load loses 50% of visitors. Optimise your images, use fast hosting, and minimise code. Your website should load in under 2 seconds on a mobile connection.</p>
+<p><strong>Mistake 4: Slow loading.</strong> Heavy images, third-party scripts and unstable layouts can frustrate customers. Test the real mobile booking journey and fix material delays rather than treating one universal load-time threshold as a promise.</p>
 <p><strong>Mistake 5: Inconsistent information.</strong> If your website says you open at 7am, your Google Business Profile says 8am, and your Facebook page says 6:30am, customers will not trust any of them. Make sure your hours, location, and contact details are consistent across every platform.</p>
 
 <h2>Photography: The Most Underrated Part of Your Cafe Website</h2>
@@ -5563,7 +5562,7 @@ Your business will thank you.
 
 <h2>Cafe Website Case Studies: What Works in Adelaide</h2>
 <p>We have built websites for cafes across Adelaide, and the pattern is consistent: cafes that invest in a professional website, local SEO, and consistent content see a significant increase in foot traffic and online orders within 3-6 months.</p>
-<p>A cafe on The Parade in <a href="/norwood">Norwood</a> came to us with a DIY Wix site that ranked on page 4 for "cafe Norwood" and was not generating any organic traffic. After we built a new website with proper SEO, a text-based menu, and local content, they ranked on page 1 for "cafe Norwood" within 3 months. Their website traffic increased by 400% and their weekend bookings doubled.</p>
+<p>For a cafe with a hard-to-read menu and weak local information, a useful improvement plan could include a crawlable text menu, accurate hours, booking details, original photos and stronger Google Business Profile alignment. Measure search visibility and bookings before and after the work; do not assume a fixed ranking or traffic increase.</p>
 <p>A brunch spot in <a href="/glenelg">Glenelg</a> was relying on word of mouth and Instagram for new customers. After adding a professional website with a mobile-friendly menu, booking integration, and Google Business Profile optimisation, they started appearing in the Map Pack for "brunch Glenelg" and "coffee Jetty Road." Within 4 months, 30% of new customers said they found the cafe through Google.</p>
 
 <h2>Seasonal Content: Keeping Your Cafe Website Fresh</h2>
@@ -5579,7 +5578,7 @@ Your business will thank you.
 <h2>Review Generation for Cafes</h2>
 <p>Google reviews are particularly important for cafes because they appear in the Map Pack — the top 3 local results that appear when someone searches for "cafe near me" or "brunch [suburb]." A cafe with 50 reviews and 4.7 stars will rank above a cafe with 5 reviews and 5 stars. The quantity and quality of reviews directly affects your visibility in local search.</p>
 <p>Getting reviews does not have to be awkward. The most effective approach is to ask at a natural moment — right after a customer has had a great meal or a perfect coffee. A simple "If you enjoyed your visit, a Google review really helps our small business" is enough. Most happy customers are willing to leave a review if asked; they just need a reminder and a direct link.</p>
-<p>We set up automated review requests for cafes as part of our <a href="/ai-automation-adelaide">automation services</a> from $199/month. After a visit, customers receive a polite SMS with a direct link to leave a Google review. This simple automation generates 3-5 new reviews per week for most cafes, which adds up to 150-260 reviews per year. Combined with a well-optimised website and Google Business Profile, this is enough to dominate local search for your suburb. See our <a href="/website-pricing">pricing</a> for package details or <a href="/contact">book a free chat</a>.</p>
+<p>We can set up a compliant review-request workflow as part of our <a href="/ai-automation-adelaide">automation services</a> from $199/month. After a genuine visit, customers can receive a polite link and choose whether to review. Review volume depends entirely on completed transactions and customer choice; it should never be forecast or manipulated. See our <a href="/website-pricing">pricing</a> or <a href="/contact">book a free chat</a>.</p>
 `
   },
 {
@@ -5984,7 +5983,7 @@ Your business will thank you.
 <p>After a quote or enquiry, an automated sequence: Day 1 thank you, Day 3 check-in, Day 7 final touch. 35-50% conversion lift on cold enquiries. Part of our <a href="/ai-automation-adelaide">automation package</a>.</p>
 
 <h2>14. Check Your Website Speed</h2>
-<p>Google penalises slow sites. Test yours at pagespeed.web.dev — if it scores under 50 on mobile, you need a faster site. Our Next.js sites load in under 2 seconds.</p>
+<p>Slow or unstable pages can frustrate customers. Test representative pages with PageSpeed Insights and a real phone, then prioritise issues affecting the booking or enquiry journey. A lab score or framework name alone does not prove the experience.</p>
 
 <h2>15. Track Everything</h2>
 <p>Install Google Analytics (free), set up conversion tracking for calls and form submissions, and review monthly. You cannot improve what you do not measure.</p>
@@ -5994,20 +5993,20 @@ Your business will thank you.
 
 <h2>Why Most Adelaide Small Businesses Are Behind Digitally</h2>
 <p>Running a small business in Adelaide is demanding enough without worrying about digital marketing. But here is the reality: your customers are online, and if your business is not showing up when they search, they are going to your competitors who are. The businesses that succeed in 2026 are the ones that have a solid digital foundation — a professional website, local SEO, a Google Business Profile, and automated customer follow-ups.</p>
-<p>The good news is that most Adelaide small businesses are behind digitally. This means there is a huge opportunity for businesses that get their digital house in order. A plumber in <a href="/norwood">Norwood</a> with a professional website and a well-optimised Google Business Profile will rank above 80% of their competitors who are still relying on word of mouth alone. A cafe in <a href="/glenelg">Glenelg</a> with consistent content and automated review requests will dominate local search within 3-6 months.</p>
+<p>The practical opportunity is to make the business easier to verify and contact than weaker competitors: a complete Google Business Profile, useful service pages, genuine reviews and a clear mobile enquiry path. These foundations improve eligibility and trust, but they do not guarantee a percentage advantage or a fixed timetable.</p>
 <p>This checklist covers every element of a solid digital foundation. Work through it in order, and by the end, your business will be ahead of most of your local competitors.</p>
 
 <h2>The Digital Checklist: Item by Item</h2>
 
 <h3>1. Professional Website ($699-2,499)</h3>
 <p>Your website is your digital shopfront. It is the first impression many customers have of your business. If it looks dated, loads slowly, or does not have your key information front and centre, potential customers will move on to the next result.</p>
-<p>A professional website needs to be mobile-first (70%+ of local searches happen on phones), fast-loading (under 2 seconds), SEO-ready (so Google can find and rank it), and locally written (so it speaks to Adelaide customers). Our Starter website at $699 covers the basics; Business at $1,299 adds a blog and local SEO; Growth at $2,499 adds multiple suburb pages and full SEO setup. See our <a href="/website-pricing">pricing page</a> for details.</p>
+<p>A professional website needs a clear mobile enquiry path, tested performance, crawlable content and accurate local information. Our Starter website at $699 covers the core presence; Business at $1,299 adds more service and content depth; Growth at $2,499 supports a broader justified scope. See our <a href="/website-pricing">pricing page</a> for details.</p>
 
 <h3>2. Google Business Profile (Free)</h3>
 <p>Claim your Google Business Profile, fill out every section, add photos, list your services, and start getting reviews. This is the single most important free marketing tool for any local business. A well-optimised profile with 30+ reviews will get you into the Map Pack — the top 3 local results that appear when someone searches for your services. See our <a href="/seo">SEO services</a> for GBP optimisation as part of our monthly retainer.</p>
 
 <h3>3. Local SEO ($399/month)</h3>
-<p>SEO is what gets your website found on Google. For local businesses, this means optimising for suburb-specific keywords like "plumber Norwood" or "cafe Glenelg." Local SEO includes keyword research, on-page optimisation, content creation (blog posts and suburb pages), and ongoing reporting. Our <a href="/seo">SEO retainer</a> starts at $399/month and includes everything you need to rank on page 1 of Google.</p>
+<p>SEO helps search engines understand and surface useful website content. For local businesses, the work may include service and location research, on-page improvements, Google Business Profile alignment, genuine review workflows and reporting. Our <a href="/seo">SEO retainer</a> starts at $399/month; no package can guarantee page-one placement.</p>
 
 <h3>4. Customer Follow-Up Automation ($199/month)</h3>
 <p>Every missed call is a lost customer. Every enquiry that goes unanswered is a lost lead. Every appointment no-show is lost revenue. Automation fixes all of these problems for a fraction of the cost of hiring a receptionist. Our <a href="/ai-automation-adelaide">automation package</a> from $199/month includes missed-call SMS, enquiry auto-reply, review requests, and appointment reminders.</p>
@@ -6078,13 +6077,13 @@ Your business will thank you.
 <h2>Digital Checklist Timeline: What to Expect</h2>
 <p>Implementing the full digital checklist is a 90-day process. Here is what to expect at each stage:</p>
 <ul>
-<li><strong>Week 1-2:</strong> Google Business Profile is claimed and optimised. Missed-call SMS is live. You start appearing in Map Pack searches and recovering missed calls immediately. Impact: immediate visibility improvement, 3-5 recovered calls per week.</li>
-<li><strong>Month 1:</strong> Professional website is live. Google Search Console is set up. Your website starts being indexed by Google. You appear for your business name and basic local keywords. Impact: professional online presence, 10-20 website visitors per day.</li>
-<li><strong>Month 2-3:</strong> SEO is underway. Keyword research is complete. On-page optimisation is done. First blog post and suburb page are published. Impact: rankings start improving for target keywords, 30-50 website visitors per day.</li>
-<li><strong>Month 3-6:</strong> Rankings improve steadily. You appear on page 1 for low-competition local keywords. Review count grows to 20-30. Organic leads start coming in consistently. Impact: 5-15 organic leads per month, growing steadily.</li>
-<li><strong>Month 6-12:</strong> SEO compounds. You rank on page 1 for competitive keywords. Review count reaches 50+. You are the top result for your suburb-specific searches. Impact: 15-30+ organic leads per month, consistent new business from Google.</li>
+<li><strong>Week 1-2:</strong> Complete and verify the Google Business Profile, establish call and form tracking, and record the current search and enquiry baseline.</li>
+<li><strong>Month 1:</strong> Launch the agreed website foundations, verify indexing and test the complete mobile enquiry journey.</li>
+<li><strong>Month 2-3:</strong> Use real query and customer evidence to improve priority service content, local signals and follow-up. Avoid publishing pages solely to hit a content quota.</li>
+<li><strong>Month 3-6:</strong> Compare relevant queries, calls, forms and review activity with the starting baseline. Some businesses move earlier; others need more authority or a stronger offer.</li>
+<li><strong>Month 6-12:</strong> Keep investing only where qualified enquiries and commercially relevant visibility justify it. Rankings, review counts and lead volume remain business-specific.</li>
 </ul>
-<p>The businesses that see the best results are the ones that implement the full checklist and maintain it consistently. SEO is not a one-time thing — it is an ongoing investment that compounds over time. The first 3 months require patience, but from month 4 onwards, the results speak for themselves.</p>
+<p>The checklist is not a guarantee or a requirement to buy every service. Implement the highest-value foundations first, measure qualified enquiries, and continue only where the work is producing useful commercial signals.</p>
 
 <h2>Budget Breakdown: What to Spend and When</h2>
 <p>Here is a realistic budget for implementing the full digital checklist over 12 months:</p>
@@ -6103,7 +6102,18 @@ Your business will thank you.
 <li><strong>Total: $618/month = $6,798 over 11 months</strong></li>
 </ul>
 <p><strong>12-month total: $8,296</strong></p>
-<p>Against this, you are getting 15-30+ organic leads per month by month 6. If each lead is worth $100-500 in revenue, that is $1,500-15,000/month in new business by month 6. The ROI is positive within 3-4 months for most businesses. See our <a href="/website-pricing">pricing page</a> for all package details, or <a href="/contact">book a free chat</a> to discuss your specific needs.</p>
+<p>This combined example is a cost illustration, not a recommended stack or revenue forecast. The right scope depends on the starting site, search demand, lead value and operational bottleneck. See our <a href="/website-pricing">pricing page</a> for current package details, or <a href="/contact">book a free chat</a> to discuss the smallest useful starting point.</p>
 `
   },
 ];
+
+// These legacy articles presented invented people and numerical scenarios as
+// real client case studies. Preserve their URLs via redirects, but do not list,
+// publish or syndicate them as evidence.
+export const retiredPostSlugs = new Set([
+  "norwood-physio-cut-no-shows-automation",
+  "adelaide-plumbers-booking-more-jobs",
+  "physio-clinic-no-shows-automation",
+]);
+
+export const publishedPosts = posts.filter((post) => !retiredPostSlugs.has(post.slug));

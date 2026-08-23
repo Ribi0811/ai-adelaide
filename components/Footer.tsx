@@ -55,7 +55,7 @@ const resourceLinks = [
 const companyLinks = [
   { href: "/audit", label: "Free audit" },
   { href: "/tools/ai-readiness-calculator", label: "AI readiness score" },
-  { href: "/testimonials", label: "Client reviews" },
+  { href: "/testimonials", label: "Selected work" },
   { href: "/locations", label: "All Adelaide suburbs ›" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },

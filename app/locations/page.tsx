@@ -22,23 +22,28 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsPage() {
-  const localBusinessJsonLd = {
+  const locationsJsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: siteConfig.name,
+    "@type": "CollectionPage",
+    name: "AI Adelaide service locations",
     url: `${siteConfig.url}/locations`,
-    areaServed: suburbs.map((suburb) => ({
-      "@type": "City",
-      name: `${suburb.name} ${suburb.postcode}`,
-    })),
-    serviceType: ["Website Design", "Local SEO", "AI Automation"],
+    about: { "@id": `${siteConfig.url}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: suburbs.map((suburb, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: `${suburb.name} ${suburb.postcode}`,
+        url: `${siteConfig.url}/${suburb.slug}`,
+      })),
+    },
   };
 
   return (
     <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationsJsonLd) }}
       />
       <Breadcrumbs
         items={[

@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Reveal from "@/components/home-v3/Reveal";
 import BuildYours from "@/components/home-day/BuildYours";
 import { PRICING } from "@/lib/constants";
+import { selectedWork } from "@/lib/portfolio";
 
 export const metadata: Metadata = {
   title: "Website Design Adelaide",
@@ -41,23 +42,6 @@ const buildItems = [
     title: "Contact form + AI call capture ready",
     body:
       "Enquiry form wired up, and ready to connect with our AI missed call system if you want 24/7 lead capture.",
-  },
-];
-
-const portfolio = [
-  {
-    name: "Plumbing",
-    label: "Your Plumbing Business — sample website design",
-    caption:
-      "Sample design (concept layout, not a live client site). Click-to-call, Google-ready, mobile-first, suburb targeting.",
-    img: "/portfolio/plumbing-website.jpg",
-  },
-  {
-    name: "Electrician",
-    label: "Your Electrician Business — sample website design",
-    caption:
-      "Sample design (concept layout, not a live client site). Bold, trustworthy layout built for trades, with suburb targeting and clear enquiry paths.",
-    img: "/portfolio/electrician-website.jpg",
   },
 ];
 
@@ -109,7 +93,7 @@ const faqs = [
   {
     question: "What platform is it built on?",
     answer:
-      "We build on Next.js — fast, modern, and designed for strong technical performance. There are no WordPress plugin updates or page-builder dependencies. We test the finished site on mobile and address performance issues before launch.",
+      "For new builds, we typically recommend Next.js — fast, modern, and designed for strong technical performance. We can also improve an existing WordPress site when its content, booking setup or editing workflow makes that the sensible choice. Either way, we test the finished site on mobile and address performance issues before launch.",
   },
   {
     question: "Can I update it myself?",
@@ -312,45 +296,64 @@ export default function WebsiteDesignAdelaidePage() {
         </div>
       </section>
 
-      {/* Portfolio — screenshots as devices */}
-      <section className="bg-[#F5F5F7] px-6 py-20 md:py-28">
+      {/* Portfolio — permission-backed real work */}
+      <section id="selected-work" className="scroll-mt-24 bg-[#F5F5F7] px-6 py-20 md:py-28">
         <div className="mx-auto max-w-container">
           <Reveal>
             <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">02</p>
             <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
-              What We Build Looks Like This
+              Work we can show you
             </h2>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-[17px]">
+              Two live examples across two different stacks—Next.js / React and WordPress. See how the booking journey, content and details come together before you decide what your own site needs.
+            </p>
           </Reveal>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-            {portfolio.map((item, i) => (
+            {selectedWork.map((item, i) => (
               <Reveal key={item.name} delay={i * 0.12}>
-                <div className="group">
-                  <div className="mx-auto max-w-[320px] rounded-[44px] bg-[#1D1D1F] p-3 shadow-[0_30px_80px_rgba(29,29,31,0.25)] transition-transform duration-500 group-hover:-translate-y-2 group-hover:rotate-[0.5deg]">
-                    <div className="relative aspect-[2/3] overflow-hidden rounded-[34px] bg-white">
-                      <span className="absolute left-1/2 top-2 z-10 h-4 w-20 -translate-x-1/2 rounded-full bg-[#1D1D1F]" aria-hidden />
-                      <Image
-                        src={item.img}
-                        alt={`${item.label} — example website design (concept layout)`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 320px"
-                        className="object-cover object-top transition-transform duration-[3s] ease-out group-hover:translate-y-[-12%]"
-                      />
-                    </div>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block overflow-hidden rounded-[28px] border border-black/[0.08] bg-white shadow-[0_20px_60px_rgba(29,29,31,0.10)] transition hover:-translate-y-1 hover:shadow-[0_28px_72px_rgba(29,29,31,0.16)]"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden bg-[#E7E7E7]">
+                    <Image
+                      src={item.screenshotSrc}
+                      alt={item.screenshotAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                    />
                   </div>
-                  <h3 className="mt-6 text-center text-[17px] font-semibold tracking-tight" style={{ color: INK }}>
-                    {item.label}
-                  </h3>
-                  <p className="mx-auto mt-2 max-w-md text-center text-[14px] leading-relaxed text-[#6E6E73]">
-                    {item.caption}
-                  </p>
-                </div>
+                  <div className="p-6 md:p-7">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="rounded-full border border-[#0E8C74]/20 bg-[#0E8C74]/[0.07] px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-[#0E8C74]">
+                        {item.industry}
+                      </span>
+                      <span className="rounded-full border border-black/[0.08] bg-black/[0.03] px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-[#6E6E73]">
+                        {item.platform}
+                      </span>
+                      <span className="text-xs font-medium text-[#6E6E73]">{item.scope}</span>
+                    </div>
+                    <h3 className="mt-4 text-[20px] font-semibold tracking-tight" style={{ color: INK }}>
+                      {item.name}
+                    </h3>
+                    <p className="mt-2 text-[14px] leading-relaxed text-[#6E6E73] md:text-[15px]">
+                      {item.description}
+                    </p>
+                    <span className="mt-5 inline-flex items-center gap-2 text-[14px] font-semibold text-[#0E8C74]">
+                      Visit live site <span aria-hidden>→</span>
+                    </span>
+                  </div>
+                </a>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Proof boundary — transparent until permission-backed client work can be published. */}
+      {/* Proof boundary — transparent about the scope of the examples. */}
       <section className="px-6 pb-20 md:pb-28">
         <div className="mx-auto max-w-4xl rounded-[28px] border border-[#0E8C74]/20 bg-[#0E8C74]/[0.05] p-8 md:p-12">
           <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">
@@ -360,7 +363,7 @@ export default function WebsiteDesignAdelaidePage() {
             See the quality before you commit
           </h2>
           <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[#424245] md:text-[17px]">
-            The designs above are clearly marked sample concepts, not made-up client logos or live customer sites. We only publish a client name, URL, screenshot or measured outcome when we have permission to do so. For a closer look, book a free brief and we&apos;ll show you the right examples for your business.
+            Different businesses need different platforms. These examples show a modern React stack and a proven WordPress setup, both organised around a clear customer journey. Want to see what that could look like for your business?
           </p>
           <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
             <Link

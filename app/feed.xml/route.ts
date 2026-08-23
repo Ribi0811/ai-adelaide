@@ -1,4 +1,4 @@
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 import { siteConfig } from "@/lib/constants";
 
 export const dynamic = "force-static";
@@ -13,7 +13,7 @@ function escapeXml(s: string) {
 }
 
 export async function GET() {
-  const items = posts
+  const items = publishedPosts
     .slice()
     .sort((a, b) => (a.date < b.date ? 1 : -1))
     .slice(0, 20)

@@ -21,7 +21,7 @@ const buildItems = [
   {
     title: "Service area pages for every suburb",
     body:
-      "We build a page for every Adelaide suburb you service. &lsquo;Electrician Norwood&rsquo;, &lsquo;Sparky Glenelg&rsquo;, &lsquo;Emergency electrician Burnside&rsquo; — your own landing page for each, built to rank.",
+      "Where there is enough genuine local information, we can add useful service-area pages for priority suburbs. We avoid near-identical pages created only to target a keyword.",
   },
   {
     title: "Safety & compliance credentials",
@@ -36,12 +36,12 @@ const buildItems = [
   {
     title: "Mobile-first design",
     body:
-      "Electrician searches are almost always on a phone — fault, blackout, or quote on the go. Your site loads in under 2 seconds, makes calling one tap, and looks professional on any screen.",
+      "For urgent and on-the-go searches, the mobile page keeps tap-to-call, service details and the quote path clear. We test the finished site across relevant screen sizes.",
   },
   {
     title: "Google-ready local SEO",
     body:
-      "Title tags, local schema, suburb pages, Google Business Profile integration. Your site is set up to rank for &lsquo;electrician [suburb]&rsquo; from day one. Add the SEO retainer ($399/mo) for sustained page-1 rankings.",
+      "Relevant title tags, appropriate structured data, useful service-area content and Google Business Profile alignment give search engines clear foundations. Ongoing SEO starts from $399/month; rankings are not guaranteed.",
   },
 ];
 
@@ -109,12 +109,12 @@ const faqs = [
   {
     question: "Can you build suburb-specific pages?",
     answer:
-      "Yes. If you service 15 suburbs, we build 15 suburb pages — each with local content, common electrical issues in that area, and your service details. Google ranks suburb pages for &lsquo;electrician [suburb]&rsquo; searches.",
+      "Yes, where there is enough genuine local information and customer value to justify each page. We avoid mass-producing near-identical suburb pages because useful, specific pages are more credible to customers and search engines.",
   },
   {
     question: "Will it rank on Google for electricians in my area?",
     answer:
-      "Yes — the site is set up with local SEO from day one. For competitive suburbs (&lsquo;electrician Norwood&rsquo;, &lsquo;electrician Glenelg&rsquo;), add the SEO retainer for sustained page-1 rankings. We&apos;ll give you an honest assessment on the free chat.",
+      "The site includes sound search foundations, but no provider controls the result. We assess the target services and suburbs, establish the current baseline and explain what ongoing work is likely to be required.",
   },
   {
     question: "Can customers upload photos of the job?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche suburbs in 2-4 weeks, competitive suburbs in 2-3 months. The SEO retainer accelerates this significantly.",
+      "The website build can be live in 48 hours once the required details and approvals are ready. SEO timing depends on the starting site, competition, business reputation and Google&apos;s systems, so we do not promise a fixed date.",
   },
 ];
 

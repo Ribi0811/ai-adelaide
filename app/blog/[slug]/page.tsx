@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 import { siteConfig } from "@/lib/constants";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
@@ -89,11 +89,11 @@ function extractFaqs(html: string): { question: string; answer: string }[] {
 }
 
 export function generateStaticParams() {
-  return posts.map((post) => ({ slug: post.slug }));
+  return publishedPosts.map((post) => ({ slug: post.slug }));
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const post = posts.find((item) => item.slug === params.slug);
+  const post = publishedPosts.find((item) => item.slug === params.slug);
 
   if (!post) {
     return {
@@ -137,7 +137,7 @@ const formatDate = (date: string) =>
   });
 
 export default function BlogPostPage({ params }: PageProps) {
-  const post = posts.find((item) => item.slug === params.slug);
+  const post = publishedPosts.find((item) => item.slug === params.slug);
 
   if (!post) {
     notFound();

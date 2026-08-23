@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogIndexClient from "@/components/BlogIndexClient";
-import { posts } from "@/data/posts";
+import { publishedPosts } from "@/data/posts";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -47,12 +47,12 @@ export default function BlogIndexPage() {
             Practical insights for Adelaide small businesses
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Real numbers, real examples, and real advice on websites, local SEO, and AI automation for Adelaide small businesses — across trades, allied health, retail, hospitality, beauty, and professional services.
+            Practical guidance on websites, local SEO and automation for Adelaide small businesses — with assumptions labelled and outcomes measured from a real baseline.
           </p>
         </div>
       </section>
 
-      <BlogIndexClient posts={posts} />
+      <BlogIndexClient posts={publishedPosts} />
     </div>
   );
 }

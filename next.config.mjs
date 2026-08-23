@@ -206,6 +206,25 @@ const nextConfig = {
         destination: "/seo-for-tradies-adelaide",
         permanent: true,
       },
+      // 2026-08-24 quality audit: these legacy posts described invented
+      // people and numerical scenarios as real client case studies. Retire
+      // them into the closest honest service page instead of continuing to
+      // publish unsupported proof or returning a 404.
+      {
+        source: "/blog/norwood-physio-cut-no-shows-automation",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/physio-clinic-no-shows-automation",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-plumbers-booking-more-jobs",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
       {
         source: "/blog/seo-tradies-adelaide",
         destination: "/seo-for-tradies-adelaide",

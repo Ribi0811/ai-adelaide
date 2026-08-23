@@ -36,7 +36,7 @@ const buildItems = [
   {
     title: "Mobile-first design",
     body:
-      "80%+ of beauty searches happen on a phone. Your site loads in under 2 seconds, looks beautiful on every screen, and makes booking effortless.",
+      "The booking journey is designed for phones first, then checked across desktop sizes. Clear services, readable pricing and a prominent booking action reduce friction.",
   },
   {
     title: "Google reviews + local SEO",
@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What does it cost?",
     answer:
-      "Websites start from $699 for a complete, custom-built beauty site. One setup fee, then a small monthly for hosting and maintenance. SEO add-on from $399/month for sustained page-1 rankings.",
+      "Websites start from $699 for a custom-built beauty site. One setup fee, then a small monthly charge for hosting and maintenance. Ongoing SEO starts from $399/month and is measured against an agreed search and enquiry baseline.",
   },
   {
     question: "Can I sell retail products on the site?",
@@ -114,7 +114,7 @@ const faqs = [
   {
     question: "Will it rank on Google for beauty salons in my area?",
     answer:
-      "Yes — the site is set up with local SEO from day one. For competitive suburbs (&lsquo;beauty salon Norwood&rsquo;), we recommend the SEO retainer for sustained page-1 rankings. Most beauty searches have strong buying intent — high commercial value keywords.",
+      "The site includes crawlable pages, relevant titles, useful service copy and local-search foundations. Rankings depend on the market, competition, reputation and ongoing authority, so we establish a baseline and never promise a position.",
   },
   {
     question: "Can I offer gift vouchers online?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche suburbs in 2-4 weeks, competitive suburbs in 2-3 months. The SEO retainer accelerates this significantly.",
+      "The website build can be live in 48 hours once we have the required business details and approvals. Search movement has no fixed timetable; we report it against the starting position and the work completed.",
   },
 ];
 

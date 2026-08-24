@@ -298,13 +298,13 @@ export default function ComparisonPage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">The cost of delay is the bit most people ignore</h2>
           <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Here's the blunt version: every missed call is a tiny leak. One leak doesn't matter. Twenty a week absolutely does. If your average job value is $350 and you recover even 20% more calls, the numbers move fast.
+            Missed calls may represent commercial opportunities, but not every caller is qualified and not every qualified caller becomes a job. Use real call logs, win rate and gross margin when comparing options.
           </p>
           <p className="mb-4 text-body-mobile text-slate-700 md:text-body">
-            Example: 15 missed calls a week at a conservative $350 average job value is $5,250 in weekly opportunity. If the AI receptionist helps you win just a fraction of those back, the service pays for itself very quickly. That's why so many Adelaide tradies and service businesses start with the AI option even if they were originally shopping for a virtual receptionist.
+            Establish the current missed-call and callback baseline first. Then compare each option on qualified handoffs, booked work, failure handling, privacy and complete cost. No fixed payback period should be assumed.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            The question is not "Can I afford AI?" The real question is "Can I afford to keep losing leads to voicemail or slow callbacks?" That's the part that hurts.
+            The right question is which approach handles the real call mix safely and produces a measurable commercial improvement.
           </p>
         </div>
       </section>

@@ -93,11 +93,11 @@ export default function AuditLandingPage() {
                 <ul className="mt-2.5 space-y-2">
                   <li className="flex items-start gap-2.5 text-[14.5px] leading-relaxed text-[#6E6E73]">
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0E8C74]" aria-hidden />
-                    70% of customers click the first 3 Google results
+                    See which commercially relevant queries already show your business
                   </li>
                   <li className="flex items-start gap-2.5 text-[14.5px] leading-relaxed text-[#6E6E73]">
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0E8C74]" aria-hidden />
-                    Quote follow-ups improve conversion by 25%
+                    Find where enquiries stall and what should be measured next
                   </li>
                 </ul>
               </div>

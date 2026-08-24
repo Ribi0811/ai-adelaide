@@ -113,6 +113,8 @@ for (const f of tsxFiles) {
 // Blog post bodies are raw HTML strings inside data/posts.ts, not JSX — same
 // href="..." shape, so the same regex works directly on the file source.
 scanSource(postsSource, "data/posts.ts");
+const postOverridePath = path.join(ROOT, "data", "post-quality-overrides.ts");
+scanSource(readFileSync(postOverridePath, "utf8"), "data/post-quality-overrides.ts");
 
 // --- 4. Cross-check ------------------------------------------------------
 const broken = [];

@@ -1,3 +1,5 @@
+import { postQualityOverrides } from "./post-quality-overrides";
+
 export interface Post {
   slug: string;
   title: string;
@@ -584,7 +586,7 @@ export const posts: Post[] = [
 
 <p>Whether you're a solo tradie working out of your van, a small team serving residential clients across Adelaide's suburbs, or a commercial specialist working on major projects in the CBD, AI automation offers practical, affordable tools to overcome the unique challenges of running an electrical business in Adelaide while increasing your profitability and improving your work-life balance. A well-built <a href="/website-design-adelaide">trade business website</a> also helps you rank higher on Google and capture more of those enquiries in the first place — see our <a href="/seo">SEO services</a> for details.</p>
 
-<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/ai-receptionist-adelaide">AI receptionist services</a> and <a href="/ai-automation-adelaide">automation solutions</a> — <a href="/contact">get in touch</a> to find out more. For more tradie-specific insights, read our guide on <a href="/blog/why-tradies-lose-money-missed-calls">why tradies lose money to missed calls</a>.</p>`,
+<p>The future of Adelaide's electrical trade isn't about working longer hours or hiring more people—it's about working smarter with the help of accessible AI automation tools. And for Adelaide electricians ready to stop losing jobs to voicemail and start capturing more of the opportunities they've earned, that future is available today. Our team offers <a href="/ai-receptionist-adelaide">AI receptionist services</a> and <a href="/ai-automation-adelaide">automation solutions</a> — <a href="/contact">get in touch</a> to find out more. You can also estimate the cost of missed enquiries with our <a href="/lost-leads-calculator">lost leads calculator</a>.</p>`,
     seoDescription: "Adelaide electricians use AI automation to capture after-hours calls, automate quote follow-ups, and cut admin by 50%. Practical guide with ROI."
   },
 {
@@ -784,7 +786,7 @@ export const posts: Post[] = [
 
 <p>Whether you're running a cafe in Hahndorf, a physiotherapy practice in Stirling, a retail store in Aldgate, or an electrical contractor in Mount Barker, AI automation offers practical tools to overcome the unique challenges of Hills business operations while preserving the lifestyle benefits that make this region such a special place to live and work. If you also need a <a href="/website-design-adelaide">website that showcases your Hills business</a> or want to improve your <a href="/local-seo-adelaide">local SEO rankings</a>, we can help with that too.</p>
 
-<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/ai-automation-adelaide">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or <a href="/contact">get in touch</a> to start. See also our guide on <a href="/blog/5-signs-ready-for-ai-automation">5 signs your business is ready for AI automation</a>.</p>
+<p>The future of Adelaide Hills business isn't about working harder—it's about working smarter. And with today's accessible AI automation tools, that future is available to businesses of all sizes right now. <a href="/ai-automation-adelaide">Explore our automation services</a>, browse all <a href="/services">services we offer</a>, or check your starting point with the <a href="/tools/ai-readiness-calculator">AI readiness calculator</a>.</p>
 
 
 <h2>Why Hills Businesses Have More to Gain Than City Businesses</h2>
@@ -2994,7 +2996,7 @@ export const posts: Post[] = [
   <li><strong>Commercial vs residential:</strong> If you do both, the AI can route these differently — commercial enquiries to your business email for follow-up during business hours, residential calls to your booking calendar.</li>
 </ul>
 
-<p>Understanding these nuances means your automation works the way your business works, not the way a generic software package thinks it should work. See our guide on <a href="/blog/why-tradies-lose-money-missed-calls">why tradies lose money to missed calls</a> for more on the phone problem specifically.</p>
+<p>Understanding these nuances means your automation works the way your business works, not the way a generic software package thinks it should work. Use the <a href="/lost-leads-calculator">lost leads calculator</a> to model the phone problem with your own inputs.</p>
 
 
 <h2>What About Google Business Profile and Reviews?</h2>
@@ -4050,7 +4052,7 @@ Your business will thank you.
 <p>Basic missed-call text-back can be live within 30 minutes. A full AI receptionist with calendar integration and qualification questions takes 1-2 weeks to configure properly. Most tradies see results within the first week — you can literally count the recovered calls on Monday morning.</p>
 
 <h3>Is this only for tradies?</h3>
-<p>No. Any business that misses calls can benefit — clinics, retail shops, hospitality venues, professional services. The maths change based on your average job value and call volume, but the principle is the same: every missed call is a potential customer who went to a competitor. See our guides for <a href="/websites-for-plumbers-adelaide">plumbers</a>, <a href="/websites-for-electricians-adelaide">electricians</a>, and <a href="/blog/ai-for-hvac-adelaide">HVAC techs</a> for trade-specific advice.</p>
+<p>No. Any business that misses calls can benefit — clinics, retail shops, hospitality venues, professional services. The maths change based on your average job value and call volume, but the principle is the same: every missed call is a potential customer who may try a competitor. See our website guides for <a href="/websites-for-plumbers-adelaide">plumbers</a> and <a href="/websites-for-electricians-adelaide">electricians</a>, or review <a href="/ai-automation-adelaide">AI automation for Adelaide businesses</a>.</p>
 `,
   },
   {
@@ -6107,13 +6109,35 @@ Your business will thank you.
   },
 ];
 
-// These legacy articles presented invented people and numerical scenarios as
-// real client case studies. Preserve their URLs via redirects, but do not list,
-// publish or syndicate them as evidence.
+// These legacy articles presented invented people, unsupported numerical
+// outcomes, or generic scenario arithmetic as evidence about Adelaide
+// businesses. Preserve their URLs via one-hop redirects, but do not list,
+// publish or syndicate them as proof. Stronger articles with genuine query
+// traction remain live and are reviewed separately.
 export const retiredPostSlugs = new Set([
   "norwood-physio-cut-no-shows-automation",
   "adelaide-plumbers-booking-more-jobs",
   "physio-clinic-no-shows-automation",
+  "why-tradies-lose-money-missed-calls",
+  "ai-automation-adelaide-electrical",
+  "adelaide-hills-ai-automation",
+  "is-ai-audit-worth-it-small-business",
+  "ai-tools-adelaide-hospitality-2026",
+  "admin-tasks-killing-adelaide-tradies",
+  "glenelg-hospitality-ai-automation",
+  "adelaide-business-ai-readiness-assessment",
+  "ai-for-electricians-adelaide",
+  "ai-for-physiotherapists-adelaide",
+  "ai-for-builders-adelaide",
+  "how-much-does-a-missed-call-cost-your-business-adelaide",
+  "ai-for-retail-shops-adelaide",
+  "ai-for-hvac-adelaide",
+  "ai-automation-for-adelaide-retail-shops",
+  "adelaide-small-business-digital-checklist",
+  "5-signs-ready-for-ai-automation",
+  "ai-for-plumbers-adelaide",
 ]);
 
-export const publishedPosts = posts.filter((post) => !retiredPostSlugs.has(post.slug));
+export const publishedPosts = posts
+  .filter((post) => !retiredPostSlugs.has(post.slug))
+  .map((post) => ({ ...post, ...postQualityOverrides[post.slug] }));

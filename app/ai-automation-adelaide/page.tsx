@@ -36,25 +36,25 @@ const savings = [
     body: "Track missed calls, replies, qualified opportunities and booked work so the value is based on your real lead volume and average job.",
   },
   {
-    label: "Admin hours saved",
+    label: "Example admin value",
     value: 1400,
-    body: "8-12 hours/week reclaimed from chasing voicemails, typing up quotes, and booking reminders — at $35/hr equivalent.",
+    body: "Illustrative arithmetic only: 10 hours/week at a $35 internal hourly value. Measure the real baseline before relying on it.",
   },
   {
     label: "Faster cash collection",
     value: 800,
-    body: "Invoice follow-up and payment reminders compress 22-day average collection to ~14 days — recovered working capital.",
+    body: "Illustrative working-capital value. Measure actual collection time before and after any reminder workflow.",
   },
 ];
 
 const automations = [
   {
     title: "Missed-Call Capture & SMS",
-    body: "Caller gets an SMS in 10-20 seconds acknowledging the call. AI asks one qualifying question, books a callback slot, and pushes details into your CRM. Recovery rate goes from ~28% to ~67%.",
+    body: "Caller gets an SMS acknowledging the call. AI asks approved qualifying questions, offers a callback or booking path, and pushes details into your CRM. Track the real response and booking rate.",
   },
   {
     title: "Quote Follow-Up Sequences",
-    body: "Day 1 thank-you, Day 3 check-in, Day 7 final touch — all sent automatically. Tracks opens and forwards. Flags hot leads for personal follow-up. 35-50% conversion lift on average.",
+    body: "An approved follow-up sequence sends automatically, records responses and flags leads for personal follow-up. Compare quote acceptance with your pre-launch baseline.",
   },
   {
     title: "24/7 AI Receptionist",
@@ -62,11 +62,11 @@ const automations = [
   },
   {
     title: "Smart Scheduling & Reminders",
-    body: "Calendar syncs in real-time. Auto-blocks travel time. SMS reminders at 24hr + 2hr before. Customer can reschedule by text. No-shows drop from 20% to 7%.",
+    body: "Calendar syncs in real time, reminders send on an approved schedule, and customers can confirm or reschedule. Measure no-shows against the pre-launch baseline.",
   },
   {
     title: "Invoice & Payment Automation",
-    body: "Invoice generated and sent on job completion. Payment reminders at Day 7/14/21. Multiple payment options. Average collection time drops from 22 to 14 days.",
+    body: "Invoices and approved reminders can run on a set schedule with relevant payment options. Track actual collection time and exceptions after launch.",
   },
   {
     title: "Review & Referral Requests",
@@ -129,11 +129,11 @@ const faqItems = [
 ];
 
 const problemRows = [
-  ["Missed-call response", "2-3 hrs chasing voicemails — 70% never convert", "SMS in 20 seconds — 67% recovery rate"],
-  ["Quote follow-up", "3-4 hrs — 62% of quotes go silent after Day 3", "Auto-sequence (Day 1/3/7) — 35-50% conversion lift"],
-  ["Appointment reminders", "1-2 hrs manual calls — 20% no-show rate", "Auto-SMS 24hr + 2hr before — 7% no-show rate"],
-  ["Booking & scheduling", "3-5 hrs back-and-forth calls/emails", "Customer books online — calendar syncs instantly"],
-  ["Invoice & payment chase", "2-3 hrs — avg 22 days to collect", "Auto-generate + reminders — avg 14 days to collect"],
+  ["Missed-call response", "Unanswered calls and inconsistent callbacks", "Fast acknowledgement, qualification and measured handoff"],
+  ["Quote follow-up", "Manual reminders can be delayed or forgotten", "Approved sequence with responses recorded"],
+  ["Appointment reminders", "Manual confirmation and rescheduling", "Scheduled reminders with baseline comparison"],
+  ["Booking & scheduling", "Back-and-forth calls and emails", "Customer booking path with calendar sync"],
+  ["Invoice & payment chase", "Manual follow-up and limited visibility", "Scheduled reminders with exception handling"],
 ];
 
 const INK = "#1D1D1F";
@@ -227,10 +227,10 @@ export default function AIAutomationAdelaidePage() {
               Why Adelaide businesses automate
             </p>
             <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
-              Most Adelaide businesses save $5K+ in the first 90 days
+              Model the value before you automate
             </h2>
             <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
-              The math isn&apos;t magic — it&apos;s recovery. Here&apos;s how typical Adelaide service businesses add up the wins once the first workflow goes live.
+              These counters show an illustrative value model, not AI Adelaide client results. Replace every assumption with your own call, admin and payment baseline.
             </p>
           </Reveal>
           <div className="mt-10">
@@ -238,7 +238,7 @@ export default function AIAutomationAdelaidePage() {
           </div>
           <Reveal delay={0.15}>
             <p className="mt-8 max-w-3xl text-[14px] leading-relaxed text-[#6E6E73]">
-              Total estimated savings: <strong className="text-[#1D1D1F]">~$5,000/month</strong> for a typical Adelaide tradie or service business. Your numbers will vary by industry, call volume, and average job value — but the structure is the same. Want to see your own number?{" "}
+              Do not treat the counter total as a forecast. The commercial result depends on qualified lead volume, margin, close rate, time actually removed and whether the workflow is adopted. Want to model your own baseline?{" "}
               <Link href="/contact#send-message" className="font-semibold text-[#0E8C74] underline decoration-[#0E8C74]/30 underline-offset-4 hover:text-[#1D1D1F]">Book a free audit</Link>.
             </p>
           </Reveal>

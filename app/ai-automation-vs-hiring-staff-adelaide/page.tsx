@@ -200,7 +200,7 @@ export default function AIAutomationVsHiringStaffPage() {
             <li><strong>Staff handle complex conversations</strong> — and have full context from the AI handoff</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            A tradie in Mitcham we work with runs a 3-person team. They used to have a part-time admin at $28/hr. Now the AI handles 80% of their call volume, and one of their existing team members does the rest — saving about $22,000/year in wages.
+            A useful comparison starts with the work, not a generic wage-saving claim. Record weekly call volume, tasks requiring human judgement, escalation rates, admin hours and the fully loaded cost of each option. Automation should support staff where the workflow is repetitive and safely bounded; it should not be presented as a guaranteed replacement.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
             The AI doesn't replace the human relationship. It protects it by making sure every enquiry gets a response fast enough that the customer doesn't go elsewhere first.

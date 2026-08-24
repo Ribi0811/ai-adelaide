@@ -128,16 +128,16 @@ export default function MissedCallAnsweringServicePage() {
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            The Problem: Most Missed Calls Are Lost Forever
+            The Problem: Missed Calls Are Hard to Value Without Tracking
           </h2>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Here's what the data shows: 80% of callers who reach voicemail don't leave a message. They hang up. And most of them won't try again.
+            Some callers leave a message, some call back, some try another business and some were never qualified enquiries. Your own call log is the reliable starting point.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            The average business takes 27 hours to respond to a missed call or enquiry. By then, the customer has already booked with someone else.
+            Record response time and whether the caller became a qualified lead, booking or won job. This shows where faster acknowledgement may help.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            For a tradie in Adelaide taking 30–40 calls a week, missing even 20% of them could mean 6–8 lost leads. At $500 average job value, that's $3,000–$4,000 walking out the door every week.
+            Do not multiply every missed call by average job value and call it lost revenue. Exclude spam, suppliers and repeat calls, then apply the business&apos;s real qualified-lead and win rates.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
             The problem isn't that you're not good at your job. It's that customers expect an instant response — and if they don't get one, they move on.

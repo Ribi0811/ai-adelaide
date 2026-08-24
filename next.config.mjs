@@ -226,6 +226,96 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/blog/why-tradies-lose-money-missed-calls",
+        destination: "/lost-leads-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-automation-adelaide-electrical",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-hills-ai-automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/is-ai-audit-worth-it-small-business",
+        destination: "/audit",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-tools-adelaide-hospitality-2026",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/admin-tasks-killing-adelaide-tradies",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/glenelg-hospitality-ai-automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-business-ai-readiness-assessment",
+        destination: "/tools/ai-readiness-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-electricians-adelaide",
+        destination: "/websites-for-electricians-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-physiotherapists-adelaide",
+        destination: "/websites-for-clinics-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-builders-adelaide",
+        destination: "/websites-for-builders-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/how-much-does-a-missed-call-cost-your-business-adelaide",
+        destination: "/lost-leads-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-retail-shops-adelaide",
+        destination: "/websites-for-retail-shops-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-hvac-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-automation-for-adelaide-retail-shops",
+        destination: "/websites-for-retail-shops-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-small-business-digital-checklist",
+        destination: "/services",
+        permanent: true,
+      },
+      {
+        source: "/blog/5-signs-ready-for-ai-automation",
+        destination: "/tools/ai-readiness-calculator",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-plumbers-adelaide",
+        destination: "/websites-for-plumbers-adelaide",
+        permanent: true,
+      },
+      {
         source: "/blog/seo-tradies-adelaide",
         destination: "/seo-for-tradies-adelaide",
         permanent: true,
@@ -361,7 +451,7 @@ const nextConfig = {
       },
       {
         source: "/blog/real-cost-missed-calls-adelaide-tradie",
-        destination: "/blog/how-much-does-a-missed-call-cost-your-business-adelaide",
+        destination: "/lost-leads-calculator",
         permanent: true,
       },
       {
@@ -406,7 +496,7 @@ const nextConfig = {
       },
       {
         source: "/blog/invoice-chasing-adelaide-tradies",
-        destination: "/blog/admin-tasks-killing-adelaide-tradies",
+        destination: "/ai-automation-adelaide",
         permanent: true,
       },
       {
@@ -426,7 +516,7 @@ const nextConfig = {
       },
       {
         source: "/blog/ai-for-adelaide-retail-shops",
-        destination: "/blog/ai-automation-for-adelaide-retail-shops",
+        destination: "/websites-for-retail-shops-adelaide",
         permanent: true,
       },
     ];

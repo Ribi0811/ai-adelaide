@@ -688,13 +688,26 @@ environment secrets and must be smoke-tested after Ivan approves deployment.
 - `npm run check-meta` — pass.
 - `npm run check-links` — pass; no broken links or redirect chains.
 - `npx tsc --noEmit` — pass.
-- Production build and final sitemap/browser sweep must be rerun after this
-  complete change set, then Ivan reviews localhost before any push.
+- Production build passed with 122 generated pages. A localhost sitemap crawl
+  checked all 101 listed URLs: every route returned 200 with one H1 and one
+  canonical. Browser checks passed on rewritten guides plus `/website-design-adelaide`
+  and `/seo`; no runtime error or horizontal overflow was found.
+
+### Content-quality continuation
+
+- Reduced the public blog from 28 to 10 focused articles. Eighteen weak legacy
+  articles now redirect in one hop to the closest relevant commercial or tool
+  page and are absent from sitemap, feed and LLM outputs.
+- Replaced nine useful high-intent articles with concise reviewed content while
+  preserving their URLs and titles. Pricing is read from `PRICING`.
+- Removed unsupported missed-call, no-show, conversion, payback and fabricated
+  Adelaide examples found by the follow-up application-page scan.
+- Changed the lost-leads calculator from an unsourced 85% benchmark to a
+  visitor-controlled estimated win rate with explicit scenario-only language.
 
 ### Still open
 
 - GBP owner-side category, service, photo, UTM and Insights audit.
 - Consistent core citations after the one public NAP record is confirmed.
 - Genuine local links, founder proof and permission-backed measured case study.
-- Remaining legacy automation-article claims, reviewed in GSC traffic order.
 - Durable lead lifecycle: qualified, won and revenue storage.

@@ -257,17 +257,17 @@ export default function WebsitesForCafesPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/glenelg-hospitality-ai-automation"
+              href="/blog/google-business-profile-adelaide-guide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">How Glenelg Hospitality Wins Year-Round</span>
+              <span className="font-semibold text-slate-900">Google Business Profile Guide</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/ai-tools-adelaide-hospitality-2026"
+              href="/local-seo-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI Tools for Adelaide Hospitality 2026</span>
+              <span className="font-semibold text-slate-900">Local SEO Adelaide</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

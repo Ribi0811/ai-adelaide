@@ -163,19 +163,20 @@ export default function AfterHoursAnsweringAdelaidePage() {
             You wake up to a clean summary in your inbox: who called, what they wanted, whether anything was urgent, and what actions the AI took. No more checking voicemails at midnight or returning calls from blocked numbers the next morning.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            For tradies, the AI can also flag genuine emergencies (gas leaks, burst pipes, electrical faults, no hot water) and forward them to your mobile immediately — so you sleep knowing you won&apos;t miss a $5,000 emergency call-out while still enjoying the evening off.
+            For tradies, an approved workflow can flag possible emergencies and escalate them to a person. Safety-critical advice and dispatch rules need explicit human review rather than an assumed job value.
           </p>
         </div>
       </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Adelaide Scenarios Where This Pays for Itself</h2>
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Illustrative Adelaide Call-Handling Scenarios</h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">These examples show possible workflow steps, not AI Adelaide client results, guaranteed bookings or revenue forecasts.</p>
           <div className="space-y-6">
             <div>
               <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Tradies and Tradie Businesses</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                A plumber in Prospect gets a 9pm call: &ldquo;Burst pipe under the kitchen sink, water everywhere.&rdquo; The AI answers, captures the address, takes photos via SMS, escalates as urgent, and forwards to the plumber&apos;s mobile. He&apos;s on site in 30 minutes with a $1,800 job. Without the AI, the caller would have rung the next plumber on Google and got someone else.
+                A plumber in Prospect gets a 9pm call about a burst pipe. The approved workflow captures the address, requests useful details, flags urgency and escalates to the plumber. The plumber decides whether and how to respond.
               </p>
             </div>
             <div>

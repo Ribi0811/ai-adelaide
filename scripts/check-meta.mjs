@@ -143,6 +143,17 @@ for (const file of staticFiles) {
 
 // --- 2. Blog posts (data/posts.ts) -----------------------------------------
 const postsSource = readFileSync(path.join(ROOT, "data", "posts.ts"), "utf8");
+const postOverridesSource = readFileSync(path.join(ROOT, "data", "post-quality-overrides.ts"), "utf8");
+const postSeoDescriptionOverrides = new Map();
+const overrideIndices = [...postOverridesSource.matchAll(/^  "([^"]+)": \{/gm)];
+for (let i = 0; i < overrideIndices.length; i++) {
+  const slug = overrideIndices[i][1];
+  const start = overrideIndices[i].index;
+  const end = i + 1 < overrideIndices.length ? overrideIndices[i + 1].index : postOverridesSource.length;
+  const block = postOverridesSource.slice(start, end);
+  const seoDescription = block.match(/seoDescription:\s*\n\s*"([^"]+)"/)?.[1];
+  if (seoDescription) postSeoDescriptionOverrides.set(slug, seoDescription);
+}
 const retiredBlock = postsSource.match(/export const retiredPostSlugs = new Set\(\[([\s\S]*?)\]\);/)?.[1] ?? "";
 const retiredPostSlugs = new Set([...retiredBlock.matchAll(/"([^"]+)"/g)].map((m) => m[1]));
 // Split into per-post blocks on the `slug:` boundary.
@@ -157,11 +168,13 @@ for (let i = 0; i < slugIndices.length; i++) {
   const seoDescMatch = block.match(/seoDescription:\s*"([^"]+)"/);
   const excerptMatch = block.match(/excerpt:\s*\n?\s*"([^"]+)"/);
   const rawTitle = titleMatch ? titleMatch[1] : null;
-  const description = seoDescMatch
-    ? seoDescMatch[1]
-    : excerptMatch
-    ? `${excerptMatch[1].slice(0, 155)}...`
-    : null;
+  const description =
+    postSeoDescriptionOverrides.get(slug) ||
+    (seoDescMatch
+      ? seoDescMatch[1]
+      : excerptMatch
+      ? `${excerptMatch[1].slice(0, 155)}...`
+      : null);
   rows.push({
     route: `app/blog/[slug] -> /blog/${slug}`,
     rawTitle,
@@ -259,7 +272,8 @@ for (const [desc, routes] of descCounts) {
 const fails = issues.filter((i) => i.level === "fail");
 const warns = issues.filter((i) => i.level === "warn");
 
-console.log(`Checked ${rows.length} routes (${staticFiles.length} static files + ${slugIndices.length - retiredPostSlugs.size} published posts + ${suburbs.length} suburbs).\n`);
+const publishedPostCount = slugIndices.filter((match) => !retiredPostSlugs.has(match[1])).length;
+console.log(`Checked ${rows.length} routes (${staticFiles.length} static files + ${publishedPostCount} published posts + ${suburbs.length} suburbs).\n`);
 
 if (fails.length) {
   console.log(`FAILURES (${fails.length}):`);

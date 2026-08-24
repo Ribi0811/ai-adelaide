@@ -158,7 +158,7 @@ export default function WebsitesForHairdressersPage() {
             A Salon Website That Books Clients While You Work
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Your clients are on their phones, scrolling, deciding where to book their next appointment. If your salon doesn&apos;t have a fast, beautiful, mobile-first website with online booking, you&apos;re losing them to the salon down the road that does. We build websites for Adelaide hairdressers — designed to showcase your work and fill your chair. From $699, live in 48 hours.
+            Give clients a clear mobile path to view services, pricing guidance, genuine work and your booking system. We build websites for Adelaide hairdressers from $699, with scope and timing confirmed from your content, integrations and approval needs.
           </p>
         </div>
       </section>

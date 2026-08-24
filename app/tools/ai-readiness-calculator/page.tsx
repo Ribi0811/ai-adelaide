@@ -26,7 +26,7 @@ const readinessBreakdown = [
   {
     title: 'AI Novice',
     range: '0-20',
-    description: 'You rely heavily on manual processes. AI can save you 10+ hours a week.',
+    description: 'You rely heavily on manual processes. Measure repetitive tasks before choosing an automation target.',
   },
   {
     title: 'AI Explorer',

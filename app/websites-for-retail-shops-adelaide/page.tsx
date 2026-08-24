@@ -259,17 +259,17 @@ export default function WebsitesForRetailShopsPage() {
           </p>
           <div className="grid gap-3 md:grid-cols-2">
             <Link
-              href="/blog/ai-for-retail-shops-adelaide"
+              href="/website-design-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI for Adelaide Retail Shops</span>
+              <span className="font-semibold text-slate-900">Website Design Adelaide</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/ai-automation-for-adelaide-retail-shops"
+              href="/ai-automation-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI Automation for Adelaide Retail</span>
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

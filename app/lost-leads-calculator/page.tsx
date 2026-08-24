@@ -6,7 +6,7 @@ import LostLeadsCalculator from "@/components/LostLeadsCalculator";
 export const metadata: Metadata = {
   title: "Missed Call Calculator — What Are You Losing?",
   description:
-    "Find out exactly how much revenue your Adelaide business is losing to missed calls. Enter two numbers, get your annual leakage figure instantly.",
+    "Model the potential value of missed calls using your Adelaide business call volume, job value and estimated win rate. Scenario only, not a revenue forecast.",
   alternates: { canonical: "/lost-leads-calculator" },
 };
 
@@ -14,17 +14,17 @@ const faqs = [
   {
     question: "How accurate is this calculator?",
     answer:
-      "We use industry-standard benchmarks: 85% of callers who hit voicemail never ring back, and most Adelaide small businesses miss 3-5 calls per week. Your actual leakage will depend on your specific industry, call volume, and how quickly you call back. The calculator gives you a realistic estimate, not a precise number — the real figure is usually within 20-30% of the estimate.",
+      "It is a scenario model, not an estimate based on an industry benchmark. Enter your own missed-call volume, average job value and estimated win rate. Compare the result with call logs and won jobs before making a business decision.",
   },
   {
     question: "What's a realistic missed call rate?",
     answer:
-      "Most Adelaide small businesses miss 3-5 calls per week per staff member who's on the tools or in appointments. A solo tradie might miss 8-12/week. A clinic with two practitioners might miss 15-25/week. The defaults in the calculator (8 calls/week) are a reasonable starting point — adjust to match your actual situation.",
+      "Check your phone or provider call log for at least four representative weeks. Count unanswered new-enquiry calls separately from spam, repeat customers and calls that were successfully returned.",
   },
   {
     question: "What if I get most of my leads online instead of by phone?",
     answer:
-      "If you get most of your leads via website forms, social media, or referrals, the missed-call figure is less critical. But phone enquiries convert 3-5x higher than form submissions, so even a small missed-call rate is hurting your revenue. Worth measuring both.",
+      "If most leads arrive through forms, bookings, social media or referrals, measure those channels separately. The useful comparison is each channel's qualified enquiries, win rate and revenue—not a universal phone-versus-form conversion claim.",
   },
   {
     question: "How do I actually reduce missed calls?",
@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "What's the cost of an AI missed-call service?",
     answer:
-      "AI automation — missed-call text-back and full AI receptionist — starts from $199/month. Flat monthly, no per-call charges. Most Adelaide small businesses see ROI within the first 30 days.",
+      "AI automation starts from $199/month. The break-even point depends on your real call volume, job value, margin and close rate; no payback period is guaranteed.",
   },
   {
     question: "How long does it take to set up?",
@@ -88,7 +88,7 @@ export default function LostLeadsCalculatorPage() {
       <section className="max-w-container mx-auto px-6 pt-2">
         <div className="panel-light p-6 md:p-8">
           <p className="text-body-mobile text-slate-700 md:text-body">
-            Most Adelaide small businesses lose thousands of dollars a year to missed calls — and never know it. The math is simple: every missed call is a potential job that went to voicemail, and 85% of those callers ring the next business on Google instead. This calculator uses industry-standard benchmarks to show you what your specific revenue leakage looks like. Two sliders, instant answer.
+            Missed calls can represent commercial opportunities, but not every caller is a qualified lead and not every lead becomes a job. Use your own call volume, job value and estimated win rate to model a scenario, then compare it with real call logs and won work.
           </p>
         </div>
       </section>
@@ -99,25 +99,25 @@ export default function LostLeadsCalculatorPage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">What this calculator measures</h2>
           <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
-            The two sliders capture the only numbers that matter: how many calls you miss per week, and what each missed call is worth. The math is conservative — we use 85% as the &quot;never call back&quot; rate, which is the industry average. If your business has a higher repeat-customer rate, the actual leakage might be even worse (because lost leads don&apos;t come back).
+            The three sliders capture your missed calls, average job value and estimated share that would become jobs. The result is illustrative arithmetic. It is not measured lost revenue and it does not predict how much automation will recover.
           </p>
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-xl border border-slate-200/80 bg-white p-5 md:p-6">
-              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Tradie baseline</h3>
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Use call logs</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                8-10 missed calls/week × $400-700 average job value = <strong className="text-slate-950">$140K-$360K/year</strong> in potential revenue walking out the door.
+                Count genuine unanswered new enquiries over a representative period. Exclude spam, suppliers and repeat calls about existing jobs.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/80 bg-white p-5 md:p-6">
-              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Allied health baseline</h3>
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Use won-job data</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                12-20 missed calls/week × $80-150 average appointment = <strong className="text-slate-950">$50K-$150K/year</strong> in lost bookings.
+                Calculate the real average value and close rate of new phone enquiries. Use margin as well as revenue when assessing payback.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/80 bg-white p-5 md:p-6">
-              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Professional services baseline</h3>
+              <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Measure after launch</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                5-10 missed calls/week × $1,500-5,000 average engagement = <strong className="text-slate-950">$400K-$2.6M/year</strong> in lost client work.
+                Record acknowledgements, qualified leads, booked work and revenue so the real result replaces the scenario assumptions.
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function LostLeadsCalculatorPage() {
               <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Step 1</p>
               <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Add AI text-back</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                SMS in 5-20 seconds. Asks 2-3 qualifying questions. Sends you a clean summary. Recovers 60%+ of missed leads. From $199/month.
+                Acknowledges the call, asks approved qualifying questions and sends a summary. Measure the real reply and booking rate. From $199/month.
               </p>
             </div>
             <div className="rounded-xl border border-slate-200/80 bg-white p-5 md:p-6">
@@ -146,7 +146,7 @@ export default function LostLeadsCalculatorPage() {
               <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">Step 3</p>
               <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">Add quote follow-up</h3>
               <p className="text-body-mobile text-slate-700 md:text-body">
-                Day 1 thank-you, Day 3 check-in, Day 7 final touch — all automatic. Lifts quote-to-job conversion by 35-50%. Included in the AI stack.
+                Send an approved follow-up sequence automatically, then compare quote acceptance with the pre-launch baseline. Included in the AI stack.
               </p>
             </div>
           </div>

@@ -517,11 +517,11 @@ export default function WebsiteCostAdelaidePage() {
         </div>
       </section>
 
-      {/* Real Example */}
+      {/* Worked price example */}
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
-            Real Example: A Plumber in Norwood
+            Worked Price Example: A Plumber in Norwood
           </h2>
           <div className="panel-light-soft p-5 md:p-6">
             <p className="text-body-mobile text-slate-700 md:text-body">

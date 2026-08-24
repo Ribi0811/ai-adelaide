@@ -56,7 +56,7 @@ export default function HotelSeoServicesPage() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">Book Free Hotel SEO Chat <span aria-hidden>→</span></Link>
-            <Link href="/blog/ai-tools-adelaide-hospitality-2026" className="btn-secondary px-8 py-4">Hospitality AI Tools Guide <span aria-hidden>→</span></Link>
+            <Link href="/ai-automation-adelaide" className="btn-secondary px-8 py-4">Hospitality Automation <span aria-hidden>→</span></Link>
           </div>
         </div>
       </section>

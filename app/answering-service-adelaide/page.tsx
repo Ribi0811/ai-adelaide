@@ -78,7 +78,7 @@ const faqs = [
   {
     question: "Do I need an AI or live answering service?",
     answer:
-      "If your priority is lowest cost, fastest answer, and 24/7 coverage for high-volume calls, AI is the practical choice. If you need a human voice for sensitive calls and are happy to pay premium rates for a small number of calls, live can still work. Most Adelaide small businesses we work with choose AI once they see the cost and coverage difference.",
+      "AI may suit repeatable, high-volume call handling with clear escalation rules. A human service may suit sensitive or complex calls that need judgement. Compare call types, privacy, failure handling, integrations and complete cost before choosing.",
   },
   {
     question: "Does the AI sound human?",
@@ -201,7 +201,7 @@ export default function AnsweringServiceAdelaidePage() {
             You get an SMS or email with the full summary within 60 seconds of the call ending. You decide which calls you want to be alerted about (urgent ones) and which can wait until morning.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            Most Adelaide businesses recover 3-5 extra jobs per week just from calls they used to miss.
+            The outcome depends on how many missed calls are genuine new enquiries, how quickly they are handled, and how many become suitable booked jobs. We establish that baseline and report the measured result.
           </p>
         </div>
       </section>

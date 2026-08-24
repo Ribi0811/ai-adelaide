@@ -31,7 +31,7 @@ const buildItems = [
   {
     title: "No-show reduction system",
     body:
-      "Connect with our AI automation to send SMS + email reminders 24hr and 2hr before appointments. Most clinics cut no-shows by 30-65% — that&apos;s thousands in recovered revenue each month.",
+      "Connect approved SMS and email reminders to the clinic booking workflow. Establish the current no-show and late-cancellation baseline, then measure the actual change after launch.",
   },
   {
     title: "Treatment & service pages",
@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What about the no-show problem?",
     answer:
-      "The site is built to connect with our AI automation system. SMS + email reminders at 24hr and 2hr before appointments cut no-shows by 30-65%. Most clinics recover $2-8k/month in previously lost revenue.",
+      "The site can connect with an approved reminder workflow. Timing, consent, privacy and rescheduling rules are configured for the clinic, then no-shows and filled cancellation slots are compared with the pre-launch baseline. No fixed reduction or revenue result is promised.",
   },
   {
     question: "What does it cost?",
@@ -259,10 +259,10 @@ export default function WebsitesForClinicsPage() {
           </p>
           <div className="grid gap-3 md:grid-cols-2">
             <Link
-              href="/blog/ai-for-physiotherapists-adelaide"
+              href="/ai-automation-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI for Adelaide Physiotherapists</span>
+              <span className="font-semibold text-slate-900">Appointment and Admin Automation</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

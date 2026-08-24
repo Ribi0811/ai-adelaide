@@ -158,7 +158,7 @@ export default function WebsitesForBeautySalonsPage() {
             A Beauty Salon Website That Books Treatments Around the Clock
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Your clients are on Instagram and TikTok — but they book treatments through Google. If your salon doesn&apos;t have a beautiful, fast, mobile-first website with online booking, they&apos;re booking the salon down the road. We build beauty salon websites for Adelaide — with online booking, transformation galleries, and retail integration. From $699, live in 48 hours.
+            Give clients a clear mobile path from search or social media to services, genuine work and online booking. We build beauty salon websites for Adelaide from $699, with scope and timing confirmed from your content, booking platform and approval needs.
           </p>
         </div>
       </section>

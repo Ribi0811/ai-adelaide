@@ -54,7 +54,7 @@ const faqItems = [
   {
     question: "What's the ROI on a $199/month AI receptionist?",
     answer:
-      "Most Adelaide businesses recover the cost within the first week. Real example: a Glenelg plumber was missing 15 calls a week on jobs. At an average job value of $350, that's $5,250/week in lost revenue. At a 20% close rate on recovered calls, the AI receptionist earns $1,050/week in new jobs — against a $199/month cost. That's a 525% ROI in Week 1. Different businesses have different numbers, but the pattern is consistent.",
+      "There is no universal ROI or payback period. Use your real missed new-enquiry calls, qualified-lead rate, win rate, average gross margin and current callback performance. Measure booked work after launch rather than treating every missed call as lost revenue.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function AIReceptionistCostAdelaidePage() {
             <li><strong>Full AI automation stack (what we do):</strong> from $199/month flat. Unlimited calls, appointment booking, calendar integration, missed call text-back, quote follow-ups.</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            The AI option wins on cost, coverage, and consistency for almost every Adelaide small business we work with.
+            The right option depends on call sensitivity, volume, required judgement, integration needs and the value of human handling. Compare the complete workflow rather than price alone.
           </p>
         </div>
       </section>
@@ -266,13 +266,13 @@ export default function AIReceptionistCostAdelaidePage() {
             The question isn&apos;t really &ldquo;can I afford an AI receptionist?&rdquo; — it&apos;s &ldquo;can I afford to keep missing calls?&rdquo;
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Most Adelaide small businesses miss 30–40% of their phone calls. For a tradie doing $2,000/day in average job value, that&apos;s $600/day in lost revenue. Over a year, that&apos;s $150,000+ in work that went to competitors who picked up the phone.
+            Start with your phone logs: count genuine unanswered new enquiries, successful callbacks, qualified leads and won jobs over a representative period. Do not count spam, suppliers or repeat calls about existing work as lost revenue.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            An AI receptionist at $199/month recovers even a fraction of that. A plumber in Glenelg told us he was missing 15 calls a week on jobs. At his average job value of $350, that was 60 jobs/month going elsewhere. His AI recovered enough of those to pay for itself 5x over in the first month.
+            An AI receptionist starts from $199/month. Whether it produces a return depends on the calls it can handle safely, the number of qualified opportunities, the existing callback process and the business&apos;s close rate and margin.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            The maths always works out. The only question is whether you&apos;re ready to stop leaving money on the table.
+            Set a baseline first, then track acknowledgements, qualified handoffs, bookings and won revenue. Continue only if the measured result justifies the cost and operational risk.
           </p>
         </div>
       </section>

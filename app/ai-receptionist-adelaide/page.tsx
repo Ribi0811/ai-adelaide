@@ -176,16 +176,16 @@ export default function AIReceptionistAdelaidePage() {
             Why Adelaide Businesses Are Switching to AI
           </h2>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Here&apos;s the reality: most Adelaide small businesses are missing 30-40% of their phone calls. Maybe more if you&apos;re a tradie working onsite or a clinic with limited front desk hours.
+            Businesses that cannot answer while staff are on jobs, with customers or after hours may have a missed-call gap. The size of that gap must come from the business&apos;s phone logs.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
             Every missed call is a potential customer calling your competitor instead.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            A local plumber in Glenelg told us he used to miss about 15 calls a week while on jobs. That&apos;s 60 potential jobs a month, gone. Now his AI receptionist answers everything, books the urgent ones straight into his calendar, and takes details for quote callbacks.
+            Start by separating genuine new enquiries from spam, suppliers and existing-job calls. Decide which calls can be handled automatically, which need a message, and which must escalate to a person.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            His callback rate went from &ldquo;whenever I remember&rdquo; to &ldquo;within 2 hours, every time.&rdquo;
+            After launch, track acknowledgement time, qualified handoffs, bookings and won work against the original baseline.
           </p>
         </div>
       </section>
@@ -285,7 +285,7 @@ export default function AIReceptionistAdelaidePage() {
             </li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            A chiropractic clinic in Unley reduced their missed calls by 90% in the first month. Their front desk was drowning during peak hours. Now the AI handles the overflow.
+            For a clinic, overflow handling should be tested with approved scripts, privacy controls and clear human escalation. Measure genuine unanswered enquiries and successful handoffs before and after launch; do not infer a result from an illustrative local scenario.
           </p>
         </div>
       </section>

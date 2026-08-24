@@ -37,9 +37,9 @@ const howItWorks = [
 
 const benefits = [
   {
-    title: "Recover 60%+ of missed calls",
+    title: "Measure replies and recovered opportunities",
     body:
-      "Industry research shows that responding within 5 minutes makes you 21x more likely to qualify the lead. SMS within 20 seconds beats that handily.",
+      "A fast acknowledgement can give the caller a clear next step. Track replies, qualified handoffs and booked work against your current callback process.",
   },
   {
     title: "Look professional, even off the tools",

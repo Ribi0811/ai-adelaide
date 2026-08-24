@@ -91,7 +91,7 @@ const faqItems = [
   {
     question: "How much does an AI receptionist cost in Australia?",
     answer:
-      "Most AI receptionists in Australia start from $99-$300/month for the software alone. Setup, integration, and ongoing tuning usually adds $300-$2,000 one-off. Our AI Adelaide service bundles both — software + setup + ongoing tuning — from $199/month, which is why most of our clients pay less than the national average while getting more support.",
+      "Published prices vary by provider, call usage, setup, integrations and support. AI Adelaide bundles the agreed software, setup and ongoing tuning from $199/month. Compare current written quotes and inclusions rather than relying on an unsourced market average.",
   },
   {
     question: "Which AI receptionist is best for tradies in Adelaide?",
@@ -126,7 +126,7 @@ const faqItems = [
   {
     question: "Is this worth it for a small business?",
     answer:
-      "For most Adelaide small businesses, yes. If you miss even 5 calls a week at a $300 average job value, that's $1,500/week in opportunity. Recovering just 20% of those calls more than pays for an AI receptionist.",
+      "It can be worthwhile when enough missed calls are genuine qualified opportunities and the workflow handles them safely. Establish call volume, close rate, margin and callback performance first, then compare measured booked work with the service cost.",
   },
   {
     question: "Can I switch providers later?",

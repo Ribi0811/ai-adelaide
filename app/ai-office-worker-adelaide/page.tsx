@@ -186,7 +186,7 @@ export default function AIOfficeWorkerAdelaidePage() {
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">What an AI office worker handles</h2>
           <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
-            The point isn&apos;t to replace your team. The point is to take the boring 70% of admin off their plate so they can do the 30% that actually needs a human. Here&apos;s what we typically automate first:
+            The point isn&apos;t to replace your team. It is to identify repetitive, safely bounded admin and leave judgement, exceptions and customer care with people. Here are common workflows to assess first:
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             {tasks.map((t) => (

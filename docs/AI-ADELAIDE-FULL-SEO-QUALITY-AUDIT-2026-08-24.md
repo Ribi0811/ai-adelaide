@@ -147,7 +147,7 @@ Changes made:
 - added the permission-backed CarHire.global and 365CarHire examples;
 - labelled the platforms accurately as Next.js / React and WordPress;
 - removed the unsupported “verified reviews” count, decorative star ratings and unverifiable case-study outcomes;
-- retired three legacy posts that presented invented people and figures as real case studies, with permanent redirects to the closest honest service pages.
+- retired 18 weak legacy posts that presented invented people, unsupported figures or repetitive scenarios, with permanent redirects to the closest relevant service or tool pages.
 
 ### Commercial copy cleaned
 
@@ -164,14 +164,11 @@ The copy now explains what is built, what is tested, what depends on the client'
 
 ### Remaining content debt
 
-The legacy automation blog still contains multiple estimated percentages, revenue scenarios and locally framed examples that need a separate source-by-source rewrite. Three of the clearest fake case-study articles were retired now. The remaining articles should not be bulk-deleted or rewritten in one pass; review them in order of GSC traffic and commercial relevance.
+The traffic-priority content review is now complete locally. The published blog was reduced from 28 to 10 focused articles. Eighteen weak articles that relied on invented local examples, unsupported averages or repetitive automation arithmetic are excluded from blog, sitemap, feed and LLM outputs and permanently redirect in one hop to the closest relevant service or diagnostic page.
 
-Recommended order:
+Nine useful high-intent URLs keep their existing slug and title but now render reviewed replacement content: SEO cost, website versus social media, website cost, website builders, local SEO, SEO versus Ads, hairdresser websites, cafe websites and Google Business Profile. The page-two cheap-website guide remains published in its already reviewed form. New internal links point directly to these surviving assets or to the relevant commercial page.
 
-1. articles receiving clicks or meaningful impressions;
-2. articles internally linked from money pages;
-3. any article that says “we worked with”, names an unverified local scenario, or presents a percentage as typical;
-4. consolidate overlapping missed-call and automation articles after the answering-cluster freeze is reviewed.
+The same claim-pattern scan was extended to application pages. Fabricated Adelaide scenarios, universal missed-call percentages, fixed lead recovery, fixed no-show reductions and automatic payback claims were removed or changed to clearly labelled user-input arithmetic. The lost-leads calculator now asks the visitor for an estimated win rate instead of applying an unsourced 85% “never call back” benchmark.
 
 ## 5. Internal linking and page ownership
 
@@ -252,7 +249,9 @@ The fastest credible path to a customer is a combination of targeted outreach, p
 - [x] Make both screenshots the same aspect ratio and show loaded booking journeys.
 - [x] Distinguish Next.js / React and WordPress accurately.
 - [x] Remove fixed-ranking, fixed-speed and fixed-outcome promises from priority website/SEO pages.
-- [x] Retire the three clearest fabricated case-study posts with one-hop permanent redirects.
+- [x] Retire 18 weak or unsupported legacy posts with one-hop permanent redirects.
+- [x] Rewrite nine useful high-intent guides without changing their established URLs or titles.
+- [x] Remove unsupported result and benchmark claims from the remaining application-page scan.
 - [x] Repair duplicate LocalBusiness schema.
 - [x] Run metadata, link, TypeScript, build and browser checks.
 
@@ -271,7 +270,7 @@ The fastest credible path to a customer is a combination of targeted outreach, p
 ### Next 30–60 days
 
 - [ ] Earn at least a few genuine Adelaide or industry-relevant links/references.
-- [ ] Rewrite remaining legacy blog claims in order of GSC traffic.
+- [x] Rewrite or consolidate remaining legacy blog claims in GSC traffic order.
 - [ ] Add one verifiable website case study when scope, permission and evidence are available.
 - [ ] Review `/local-seo-adelaide`, `/website-cost-adelaide`, the electrician page and six southern suburb pages by commercial query group.
 - [ ] Record qualified leads, won jobs and revenue—not just impressions and clicks.

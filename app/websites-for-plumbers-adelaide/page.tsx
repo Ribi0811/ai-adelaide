@@ -280,10 +280,10 @@ export default function WebsitesForPlumbersPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/why-tradies-lose-money-missed-calls"
+              href="/lost-leads-calculator"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Why Tradies Lose Money to Missed Calls</span>
+              <span className="font-semibold text-slate-900">Lost Leads Calculator</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

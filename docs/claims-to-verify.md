@@ -25,17 +25,20 @@ Generated as part of Phase 5.6 of `IMPLEMENTATION-PLAN.md` (SEO/content project)
 - `/testimonials` is now a portfolio/proof-standard page featuring the two
   permission-backed live sites. It no longer shows an unsupported verified
   review count or decorative five-star ratings.
-- Three legacy posts that presented invented people and numerical scenarios as
-  client case studies were removed from published blog, feed, sitemap and LLM
-  outputs, with permanent one-hop redirects:
-  - `norwood-physio-cut-no-shows-automation` → clinic website page;
-  - `physio-clinic-no-shows-automation` → clinic website page;
-  - `adelaide-plumbers-booking-more-jobs` → automation page.
+- Eighteen weak legacy posts that presented invented people, unsupported local
+  scenarios or generic outcome arithmetic were removed from published blog,
+  feed, sitemap and LLM outputs with relevant permanent one-hop redirects.
+- Nine useful high-intent URLs now render reviewed replacement content while
+  retaining their established slugs and titles. The page-two cheap-website
+  article remains in its previously reviewed form.
 - Fixed page-one, fixed-speed, fixed-payback and typical-lead claims were removed
   from priority website, SEO, pricing and audit-recommendation surfaces.
-- The remaining legacy automation articles still require a source-by-source
-  claims review in traffic priority order; do not treat this audit as a blanket
-  verification of every number still inside `data/posts.ts`.
+- A follow-up application-page scan removed fabricated local examples, fixed
+  recovery/payback claims and unsourced industry averages. The lost-leads
+  calculator now uses the visitor's estimated win rate and labels its result as
+  scenario arithmetic, not measured revenue.
+- Retired source copy remains inside `data/posts.ts` only to preserve historical
+  content records; `publishedPosts` excludes it from every public output.
 
 Excluded from this list: confirmed pricing ($699/$1,299/$2,499 website tiers, $399/mo·$699/mo SEO tiers, $199/mo·$399/mo automation tiers, $20-50/yr domain, $15-30/mo hosting) and pure arithmetic built from those confirmed prices (e.g. "$6,349 with SEO" on `/website-cost-adelaide`).
 

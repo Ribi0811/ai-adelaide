@@ -147,7 +147,7 @@ Changes made:
 - added the permission-backed CarHire.global and 365CarHire examples;
 - labelled the platforms accurately as Next.js / React and WordPress;
 - removed the unsupported “verified reviews” count, decorative star ratings and unverifiable case-study outcomes;
-- retired 18 weak legacy posts that presented invented people, unsupported figures or repetitive scenarios, with permanent redirects to the closest relevant service or tool pages.
+- after a URL-by-URL 90-day GSC review, retired nine zero-signal legacy posts and retained/rebuilt nine others that had impressions or a click; redirects point to the closest relevant service or tool page.
 
 ### Commercial copy cleaned
 
@@ -164,9 +164,9 @@ The copy now explains what is built, what is tested, what depends on the client'
 
 ### Remaining content debt
 
-The traffic-priority content review is now complete locally. The published blog was reduced from 28 to 10 focused articles. Eighteen weak articles that relied on invented local examples, unsupported averages or repetitive automation arithmetic are excluded from blog, sitemap, feed and LLM outputs and permanently redirect in one hop to the closest relevant service or diagnostic page.
+The traffic-priority content review is now complete locally. The published blog was reduced from 28 to 19 focused articles. Nine zero-click, zero-impression articles that relied on invented local examples, unsupported averages or repetitive automation arithmetic are excluded from blog, sitemap, feed and LLM outputs and permanently redirect in one hop to the closest relevant service or diagnostic page.
 
-Nine useful high-intent URLs keep their existing slug and title but now render reviewed replacement content: SEO cost, website versus social media, website cost, website builders, local SEO, SEO versus Ads, hairdresser websites, cafe websites and Google Business Profile. The page-two cheap-website guide remains published in its already reviewed form. New internal links point directly to these surviving assets or to the relevant commercial page.
+Eighteen useful URLs keep their existing slug and title but now render reviewed replacement content. The original nine cover SEO cost, website versus social media, website cost, website builders, local SEO, SEO versus Ads, hairdresser websites, cafe websites and Google Business Profile. A stricter GSC review restored and rebuilt Adelaide Hills automation, tradie admin, plumbers, electricians, physio clinics, builders, HVAC, retail automation and the five-signs readiness guide. The page-two cheap-website guide remains published in its already reviewed form.
 
 The same claim-pattern scan was extended to application pages. Fabricated Adelaide scenarios, universal missed-call percentages, fixed lead recovery, fixed no-show reductions and automatic payback claims were removed or changed to clearly labelled user-input arithmetic. The lost-leads calculator now asks the visitor for an estimated win rate instead of applying an unsourced 85% “never call back” benchmark.
 
@@ -249,8 +249,8 @@ The fastest credible path to a customer is a combination of targeted outreach, p
 - [x] Make both screenshots the same aspect ratio and show loaded booking journeys.
 - [x] Distinguish Next.js / React and WordPress accurately.
 - [x] Remove fixed-ranking, fixed-speed and fixed-outcome promises from priority website/SEO pages.
-- [x] Retire 18 weak or unsupported legacy posts with one-hop permanent redirects.
-- [x] Rewrite nine useful high-intent guides without changing their established URLs or titles.
+- [x] Retire nine zero-signal weak posts with one-hop permanent redirects after URL-level GSC review.
+- [x] Rewrite 18 useful or search-visible guides without changing their established URLs or titles.
 - [x] Remove unsupported result and benchmark claims from the remaining application-page scan.
 - [x] Repair duplicate LocalBusiness schema.
 - [x] Run metadata, link, TypeScript, build and browser checks.

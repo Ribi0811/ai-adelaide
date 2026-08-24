@@ -266,10 +266,10 @@ export default function WebsitesForRetailShopsPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/ai-automation-adelaide"
+              href="/blog/ai-automation-for-adelaide-retail-shops"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="font-semibold text-slate-900">AI Automation for Adelaide Retail</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

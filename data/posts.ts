@@ -6120,22 +6120,13 @@ export const retiredPostSlugs = new Set([
   "physio-clinic-no-shows-automation",
   "why-tradies-lose-money-missed-calls",
   "ai-automation-adelaide-electrical",
-  "adelaide-hills-ai-automation",
   "is-ai-audit-worth-it-small-business",
   "ai-tools-adelaide-hospitality-2026",
-  "admin-tasks-killing-adelaide-tradies",
   "glenelg-hospitality-ai-automation",
   "adelaide-business-ai-readiness-assessment",
-  "ai-for-electricians-adelaide",
-  "ai-for-physiotherapists-adelaide",
-  "ai-for-builders-adelaide",
   "how-much-does-a-missed-call-cost-your-business-adelaide",
   "ai-for-retail-shops-adelaide",
-  "ai-for-hvac-adelaide",
-  "ai-automation-for-adelaide-retail-shops",
   "adelaide-small-business-digital-checklist",
-  "5-signs-ready-for-ai-automation",
-  "ai-for-plumbers-adelaide",
 ]);
 
 export const publishedPosts = posts

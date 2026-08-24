@@ -25,11 +25,12 @@ Generated as part of Phase 5.6 of `IMPLEMENTATION-PLAN.md` (SEO/content project)
 - `/testimonials` is now a portfolio/proof-standard page featuring the two
   permission-backed live sites. It no longer shows an unsupported verified
   review count or decorative five-star ratings.
-- Eighteen weak legacy posts that presented invented people, unsupported local
-  scenarios or generic outcome arithmetic were removed from published blog,
-  feed, sitemap and LLM outputs with relevant permanent one-hop redirects.
-- Nine useful high-intent URLs now render reviewed replacement content while
-  retaining their established slugs and titles. The page-two cheap-website
+- A URL-level 90-day GSC review retained and rebuilt every initially retired
+  article with impressions or a click. Nine zero-click, zero-impression legacy
+  posts remain excluded from blog, feed, sitemap and LLM outputs with relevant
+  permanent one-hop redirects.
+- Eighteen useful or search-visible URLs now render reviewed replacement content
+  while retaining their established slugs and titles. The page-two cheap-website
   article remains in its previously reviewed form.
 - Fixed page-one, fixed-speed, fixed-payback and typical-lead claims were removed
   from priority website, SEO, pricing and audit-recommendation surfaces.

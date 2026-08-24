@@ -259,10 +259,10 @@ export default function WebsitesForClinicsPage() {
           </p>
           <div className="grid gap-3 md:grid-cols-2">
             <Link
-              href="/ai-automation-adelaide"
+              href="/blog/ai-for-physiotherapists-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Appointment and Admin Automation</span>
+              <span className="font-semibold text-slate-900">AI for Adelaide Physio Clinics</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

@@ -13,6 +13,270 @@ type PostQualityOverride = {
 // timelines and generic conversion statistics. These replacements keep the
 // search intent and practical value without presenting forecasts as evidence.
 export const postQualityOverrides: Record<string, PostQualityOverride> = {
+  "adelaide-hills-ai-automation": {
+    excerpt:
+      "A practical guide to assessing automation for Adelaide Hills businesses, including seasonal demand, enquiries, bookings, admin and human escalation.",
+    seoDescription:
+      "Assess AI automation for an Adelaide Hills business using real workflow, seasonal demand, enquiry, booking and admin data—not generic savings claims.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Businesses in Mount Barker, Stirling, Hahndorf and surrounding Adelaide Hills towns often manage seasonal demand, small teams and customers spread across a wide service area. Automation can help when a workflow is repetitive and clearly bounded, but location alone is not a reason to automate.</p>
+
+<h2>Start with the actual bottleneck</h2>
+<p>Review four representative weeks of calls, enquiries, bookings, quotes and admin. Identify where work is delayed, duplicated or dependent on one person. Separate a genuine operational problem from a temporary busy period.</p>
+
+<h2>Useful workflows to assess</h2>
+<ul>
+  <li><strong>Enquiry acknowledgement:</strong> confirm receipt and set a realistic response expectation.</li>
+  <li><strong>Booking reminders:</strong> send approved reminders and provide a clear rescheduling path.</li>
+  <li><strong>Quote follow-up:</strong> run a polite sequence and stop it when the customer responds.</li>
+  <li><strong>Seasonal information:</strong> answer approved questions about hours, availability or events.</li>
+  <li><strong>Admin handoff:</strong> move structured details into the existing calendar or CRM.</li>
+</ul>
+
+<h2>Where human judgement stays essential</h2>
+<p>Safety-critical enquiries, complaints, unusual quotes, health information and sensitive customer circumstances need clear escalation. A useful workflow makes the boundary visible instead of pretending AI can handle every case.</p>
+
+<h2>Measure before and after</h2>
+<p>Record response time, qualified enquiries, bookings, staff time and exceptions before launch. Compare the same measures after a controlled trial. Seasonal Hills businesses should compare similar trading periods rather than attributing a holiday spike to automation.</p>
+
+<p>AI Adelaide automation starts <strong>${PRICING.automation.fromLabel}</strong>. Review <a href="/ai-automation-adelaide">AI automation services</a>, check your starting point with the <a href="/tools/ai-readiness-calculator">readiness calculator</a>, or <a href="/contact?service=AI%20Automation">discuss one workflow</a>.</p>`,
+  },
+
+  "admin-tasks-killing-adelaide-tradies": {
+    excerpt:
+      "Five trade-business admin workflows worth measuring before automation: missed calls, quote follow-up, scheduling, invoicing and review requests.",
+    seoDescription:
+      "Assess five Adelaide tradie admin workflows before automating: missed calls, quote follow-up, scheduling, invoicing and genuine review requests.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Admin becomes expensive when it interrupts paid work, delays customers or depends on memory. The answer is not to automate everything. It is to find one repeated workflow, document it and measure whether a safer process improves it.</p>
+
+<h2>1. Missed new-enquiry calls</h2>
+<p>Check phone logs and separate genuine new enquiries from spam, suppliers and existing-job calls. A text acknowledgement or answering workflow may help, but booked work—not messages sent—is the commercial measure.</p>
+
+<h2>2. Quotes that receive no follow-up</h2>
+<p>Record when quotes are sent, when customers respond and why work is won or lost. An approved reminder sequence can create consistency without pretending every silent quote was recoverable.</p>
+
+<h2>3. Scheduling and job reminders</h2>
+<p>Use the existing calendar or job-management system as the source of truth. Automate confirmations only when cancellation, rescheduling and urgent exceptions have a clear human path.</p>
+
+<h2>4. Invoice reminders</h2>
+<p>Define when an invoice is overdue, which customers require personal handling and when reminders must stop. Compare actual collection time before and after rather than applying a generic percentage.</p>
+
+<h2>5. Review requests</h2>
+<p>Ask genuine customers for an honest review after completed work. Do not buy reviews, offer prohibited incentives or filter unhappy customers away from public platforms.</p>
+
+<h2>A sensible first test</h2>
+<p>Choose the workflow with enough volume and a clear baseline. Run it for a defined period, review exceptions weekly and keep it only if response, time or qualified-job measures improve.</p>
+
+<p>Explore <a href="/ai-automation-adelaide">automation for Adelaide businesses</a>, model missed-call assumptions with the <a href="/lost-leads-calculator">lost leads calculator</a>, or review <a href="/seo-for-tradies-adelaide">SEO for Adelaide tradies</a>.</p>`,
+  },
+
+  "ai-for-plumbers-adelaide": {
+    excerpt:
+      "How Adelaide plumbing businesses can assess AI for missed calls, emergency triage, booking, quote follow-up and job-management handoff safely.",
+    seoDescription:
+      "Assess AI for an Adelaide plumbing business: missed calls, emergency escalation, booking, quote follow-up and reliable job-management integration.",
+    updatedAt: "2026-08-24",
+    readTime: "6 min read",
+    content: `<p>Plumbers often cannot answer while driving, working in confined spaces or dealing with an urgent job. AI may help acknowledge enquiries and collect structured details, but it must not improvise safety advice or promise availability the business cannot deliver.</p>
+
+<h2>Missed-call acknowledgement</h2>
+<p>A workflow can identify the business, explain that the team is unavailable and offer a callback or enquiry path. Measure genuine replies, qualified jobs and successful callbacks rather than claiming every missed call was lost revenue.</p>
+
+<h2>Emergency escalation</h2>
+<p>Define the exact phrases and situations that trigger immediate human escalation. Gas, flooding and other safety concerns need approved instructions and a person who is genuinely available. The system should never diagnose the problem.</p>
+
+<h2>Booking and service-area checks</h2>
+<p>Connect only to accurate availability and service-area rules. Complex work, uncertain scope and high-value quotes should move to a human rather than being booked from an incomplete conversation.</p>
+
+<h2>Quote follow-up</h2>
+<p>A short, approved sequence can ask whether the customer has questions and stop when they reply. Track quote acceptance against the existing baseline; do not assume a universal conversion lift.</p>
+
+<h2>Job-management integration</h2>
+<p>ServiceM8, Tradify, Jobber or another system should remain the source of truth. Test duplicate records, failed handoffs, cancellations and after-hours exceptions before relying on the integration.</p>
+
+<h2>What to measure</h2>
+<ul>
+  <li>unanswered genuine new enquiries;</li>
+  <li>qualified handoffs and booked jobs;</li>
+  <li>response and callback time;</li>
+  <li>automation errors and human escalations;</li>
+  <li>won work and gross margin where attribution is reliable.</li>
+</ul>
+
+<p>See <a href="/ai-automation-adelaide">AI automation Adelaide</a>, <a href="/websites-for-plumbers-adelaide">websites for Adelaide plumbers</a>, or request a <a href="/audit">free visibility and workflow audit</a>.</p>`,
+  },
+
+  "ai-for-electricians-adelaide": {
+    excerpt:
+      "A practical guide to AI for Adelaide electrical businesses: after-hours enquiries, emergency escalation, quoting, scheduling and compliance boundaries.",
+    seoDescription:
+      "Assess AI for an Adelaide electrical business: after-hours enquiries, emergency escalation, quote follow-up, scheduling and human safety controls.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Electrical contractors can use AI to structure enquiries and routine admin while they are on site. Safety, diagnosis, compliance and final quoting remain human responsibilities.</p>
+
+<h2>After-hours enquiries</h2>
+<p>An answering workflow can identify the caller, location, broad job type and preferred contact time. It should clearly state its limits and escalate only according to rules approved by the electrician.</p>
+
+<h2>Safety-critical calls</h2>
+<p>Do not allow a general AI script to diagnose faults or give improvised electrical advice. Define urgent keywords, approved safety wording and the human contact responsible for escalation.</p>
+
+<h2>Quote and booking follow-up</h2>
+<p>Routine reminders can run automatically, but the system should stop when the customer responds. New installations, commercial work and uncertain scopes need a human review before price or timing is committed.</p>
+
+<h2>Scheduling and handoff</h2>
+<p>Integrate with the actual calendar or job-management system and test duplicate bookings, travel areas, cancellations and unavailable staff. A fast response is not useful if the booking data is wrong.</p>
+
+<h2>Judge the result properly</h2>
+<p>Compare qualified enquiries, booked work, response time, staff admin and exceptions with the pre-launch baseline. Do not present calls answered or messages sent as revenue.</p>
+
+<p>Review <a href="/ai-automation-adelaide">AI automation services</a>, <a href="/websites-for-electricians-adelaide">websites for Adelaide electricians</a>, or use the <a href="/lost-leads-calculator">scenario calculator</a> with your own inputs.</p>`,
+  },
+
+  "ai-for-physiotherapists-adelaide": {
+    excerpt:
+      "How Adelaide physiotherapy clinics can assess AI for enquiries, bookings, reminders and waitlists while protecting patient privacy and human care.",
+    seoDescription:
+      "Assess AI for an Adelaide physiotherapy clinic: enquiries, bookings, reminders, waitlists, patient privacy and clear human escalation controls.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>A physiotherapy clinic may benefit from routine booking and reminder automation, but patient privacy, clinical judgement and sensitive conversations require careful boundaries.</p>
+
+<h2>Appropriate workflow candidates</h2>
+<ul>
+  <li>acknowledging a general enquiry;</li>
+  <li>showing approved appointment availability;</li>
+  <li>sending consented reminders;</li>
+  <li>offering a rescheduling path;</li>
+  <li>notifying a waitlist according to clinic rules.</li>
+</ul>
+
+<h2>What should not be automated casually</h2>
+<p>Symptoms, diagnosis, treatment advice, urgent clinical decisions and complex billing questions need an appropriately trained person. Collect only the information required for the task and avoid storing health details in general marketing tools.</p>
+
+<h2>Integrate with the real practice system</h2>
+<p>Cliniko, Nookal, Halaxy or another approved platform should remain the appointment source of truth. Test cancellations, duplicate bookings, practitioner availability and failed messages before launch.</p>
+
+<h2>Measure without inventing a result</h2>
+<p>Record the existing no-show rate, late cancellations, filled waitlist places, response time and reception workload. Compare like-for-like periods after launch. A reminder workflow does not guarantee a fixed no-show reduction or recovered revenue.</p>
+
+<p>See <a href="/ai-automation-adelaide">AI automation Adelaide</a>, <a href="/websites-for-clinics-adelaide">websites for Adelaide clinics</a>, or <a href="/contact?business=Physiotherapy%20Clinic&service=AI%20Automation">discuss a privacy-aware workflow</a>.</p>`,
+  },
+
+  "ai-for-builders-adelaide": {
+    excerpt:
+      "How Adelaide builders can assess AI for enquiry capture, site-visit booking, quote follow-up and project admin without automating judgement.",
+    seoDescription:
+      "Assess AI for an Adelaide building business: enquiry capture, site visits, quote follow-up, project admin and clear human decision boundaries.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Builders manage long sales cycles, site work, subcontractors and detailed scopes. AI can help structure routine enquiries and reminders, but it cannot replace site assessment, estimating, contractual judgement or customer trust.</p>
+
+<h2>Qualify enquiries consistently</h2>
+<p>Collect the project location, broad work type, expected timing, planning status and preferred contact method. Be clear that an enquiry is not an accepted job or price estimate.</p>
+
+<h2>Book site visits carefully</h2>
+<p>Offer only real availability and account for travel, project type and staff responsibility. Complex projects should be reviewed before a site visit is confirmed automatically.</p>
+
+<h2>Follow up without pressure</h2>
+<p>An approved sequence can confirm that a quote was received and invite questions. It should stop on reply and should not manufacture urgency, discounts or acceptance deadlines.</p>
+
+<h2>Keep project systems authoritative</h2>
+<p>Use the CRM or project-management platform as the source of truth. Test duplicate records, revised scopes, handoffs and customer consent before automating communication.</p>
+
+<h2>Measure the commercial effect</h2>
+<p>Track qualified enquiries, site visits, quote acceptance, admin hours and won gross margin. Building values are high, so scenario arithmetic can look impressive while saying little about real conversion.</p>
+
+<p>Explore <a href="/ai-automation-adelaide">AI automation</a>, <a href="/websites-for-builders-adelaide">websites for Adelaide builders</a>, or request a <a href="/audit">free workflow and visibility audit</a>.</p>`,
+  },
+
+  "ai-for-hvac-adelaide": {
+    excerpt:
+      "A practical guide to AI for Adelaide HVAC businesses covering seasonal calls, emergency escalation, qualification, scheduling and human safety controls.",
+    seoDescription:
+      "Assess AI for an Adelaide HVAC business: seasonal calls, emergency escalation, enquiry qualification, scheduling and clear safety boundaries.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Heating and cooling businesses can experience sharp seasonal changes in call volume. AI may help acknowledge and structure enquiries, but technical diagnosis, safety advice and dispatch decisions need approved boundaries.</p>
+
+<h2>Prepare before the seasonal peak</h2>
+<p>Review prior call logs to identify genuine new enquiries, repeat calls, urgent faults and common questions. Configure capacity and escalation rules before demand rises rather than changing them during a busy day.</p>
+
+<h2>Collect useful details</h2>
+<p>A workflow can ask for location, system type, broad symptom, preferred time and whether the caller is an existing customer. It should avoid diagnosing the fault or promising a repair price.</p>
+
+<h2>Escalate safely</h2>
+<p>Define which circumstances require immediate human review and use wording approved by the business. Gas, electrical and other safety concerns should never depend on improvised AI advice.</p>
+
+<h2>Connect scheduling carefully</h2>
+<p>Respect real technician availability, travel areas, service types and after-hours coverage. Test cancellations, duplicate bookings and failed handoffs.</p>
+
+<h2>Measure the outcome</h2>
+<p>Compare qualified handoffs, booked jobs, response time and exceptions with the pre-launch baseline. Seasonal demand should be compared with a similar weather and trading period where possible.</p>
+
+<p>See <a href="/ai-automation-adelaide">AI automation Adelaide</a>, use the <a href="/lost-leads-calculator">missed-call scenario calculator</a>, or <a href="/contact?business=HVAC&service=AI%20Automation">discuss an HVAC call workflow</a>.</p>`,
+  },
+
+  "ai-automation-for-adelaide-retail-shops": {
+    excerpt:
+      "How Adelaide retailers can assess automation for product enquiries, appointments, follow-up and reviews without weakening in-store service.",
+    seoDescription:
+      "Assess AI automation for an Adelaide retail shop: product enquiries, appointments, follow-up, genuine reviews and reliable human staff handoff.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Retail staff should be able to serve the customer in front of them without ignoring phone, website or social enquiries. Automation can acknowledge routine requests and organise follow-up, provided stock, pricing and customer expectations remain accurate.</p>
+
+<h2>Product and availability enquiries</h2>
+<p>Use approved catalogue or stock information and state when availability must be confirmed by staff. Do not allow a general assistant to invent product specifications, delivery dates or warranties.</p>
+
+<h2>Appointments and reservations</h2>
+<p>For fittings, consultations or click-and-collect, connect to the real schedule and define cancellation and late-arrival rules. Test the full customer journey before promotion.</p>
+
+<h2>Enquiry follow-up</h2>
+<p>A short acknowledgement can set expectations while staff are busy. Route complex questions to the right person and stop automated messages when a customer replies.</p>
+
+<h2>Review requests</h2>
+<p>Ask genuine customers for honest feedback after a completed purchase or service. Avoid incentives, purchased reviews and review gating.</p>
+
+<h2>Measure what changed</h2>
+<p>Track qualified enquiries, response time, appointments, completed sales and staff time. Do not label messages sent or profile views as revenue.</p>
+
+<p>Review <a href="/ai-automation-adelaide">AI automation Adelaide</a>, <a href="/websites-for-retail-shops-adelaide">websites for retail shops</a>, or <a href="/contact?business=Retail&service=AI%20Automation">discuss one customer workflow</a>.</p>`,
+  },
+
+  "5-signs-ready-for-ai-automation": {
+    excerpt:
+      "Five evidence-based signs an Adelaide business may be ready for automation—and the checks to complete before buying another tool.",
+    seoDescription:
+      "Five signs an Adelaide business may be ready for AI automation: repeated work, measurable volume, clear rules, reliable data and human ownership.",
+    updatedAt: "2026-08-24",
+    readTime: "5 min read",
+    content: `<p>Automation is useful when a repeated workflow has enough volume, clear rules and a measurable outcome. It is not a cure for an unclear offer, broken process or unreliable data.</p>
+
+<h2>1. The same task repeats frequently</h2>
+<p>The workflow happens often enough to document and follows a recognisable sequence. If every case requires different judgement, automation may add complexity rather than remove it.</p>
+
+<h2>2. The problem is measurable</h2>
+<p>You can record the current response time, admin hours, missed calls, no-shows, quote acceptance or another relevant baseline. Without a baseline, a vendor can claim success from activity alone.</p>
+
+<h2>3. The rules and exceptions are clear</h2>
+<p>The business knows what the system may say or do, when it must stop and who owns escalation. Safety, health, legal, financial and sensitive customer matters need stronger human control.</p>
+
+<h2>4. The source data is reliable</h2>
+<p>Calendars, customer records, stock, services and prices are accurate enough to use. Automation amplifies bad data just as quickly as good data.</p>
+
+<h2>5. A person owns the workflow</h2>
+<p>Someone will review errors, messages, exceptions and the commercial result. “Set and forget” is not a responsible operating model.</p>
+
+<h2>Run a narrow trial</h2>
+<p>Choose one workflow, define the success and stop conditions, test with realistic edge cases and compare the same measures after launch. Expand only when the evidence supports it.</p>
+
+<p>Use the <a href="/tools/ai-readiness-calculator">AI readiness calculator</a>, review <a href="/ai-automation-adelaide">AI automation Adelaide</a>, or <a href="/contact?service=AI%20Automation">discuss the smallest useful test</a>.</p>`,
+  },
+
   "how-much-does-seo-cost-adelaide": {
     excerpt:
       "Compare Adelaide SEO pricing, scope, contracts and reporting. Learn what AI Adelaide's $399 and $699 monthly plans include and what SEO cannot promise.",

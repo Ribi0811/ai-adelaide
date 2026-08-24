@@ -695,11 +695,12 @@ environment secrets and must be smoke-tested after Ivan approves deployment.
 
 ### Content-quality continuation
 
-- Reduced the public blog from 28 to 10 focused articles. Eighteen weak legacy
-  articles now redirect in one hop to the closest relevant commercial or tool
-  page and are absent from sitemap, feed and LLM outputs.
-- Replaced nine useful high-intent articles with concise reviewed content while
-  preserving their URLs and titles. Pricing is read from `PRICING`.
+- Reduced the public blog from 28 to 19 focused articles. After Ivan challenged
+  the initial consolidation, a URL-level 90-day GSC review restored and rebuilt
+  every article with impressions or a click. Only nine zero-signal articles now
+  redirect and remain absent from sitemap, feed and LLM outputs.
+- Replaced 18 useful or search-visible articles with concise reviewed content
+  while preserving their URLs and titles. Pricing is read from `PRICING`.
 - Removed unsupported missed-call, no-show, conversion, payback and fabricated
   Adelaide examples found by the follow-up application-page scan.
 - Changed the lost-leads calculator from an unsourced 85% benchmark to a

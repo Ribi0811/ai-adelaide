@@ -287,10 +287,10 @@ export default function WebsitesForPlumbersPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/missed-call-text-back-adelaide"
+              href="/blog/ai-for-plumbers-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Missed Call Text-Back Adelaide</span>
+              <span className="font-semibold text-slate-900">AI for Adelaide Plumbers</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
           </div>

@@ -1,128 +1,88 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
 import Breadcrumbs from "@/components/Breadcrumbs";
 import StackCTA from "@/components/StackCTA";
-import DemoLine from "@/components/DemoLine";
+import Reveal from "@/components/home-v3/Reveal";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Receptionist Adelaide | From $199/mo",
+  title: "AI Receptionist Adelaide | 24/7 Call Answering & Booking",
   description:
-    "AI receptionist for Adelaide small businesses, part of our AI automation stack — answers calls 24/7, books appointments, and sends SMS. From $199/mo.",
-  alternates: {
-    canonical: "/ai-receptionist-adelaide",
-  },
+    "AI receptionist for Adelaide businesses: 24/7 call answering, job booking, message taking. Never miss a lead. Part of AI automation stack. Free demo line.",
+  alternates: { canonical: "/ai-receptionist-adelaide" },
 };
 
-/* ------------------------------------------------------------------ */
-/*  FAQ data — extracted by the Next.js schema pattern as FAQPage      */
-/* ------------------------------------------------------------------ */
-const faqItems = [
+const useCases = [
   {
-    question: "Will an AI receptionist sound robotic?",
-    answer:
-      "No. Modern AI voices are genuinely good. You can choose an Australian accent (Adelaide-specific if you want), adjust the speaking speed, and set the tone to match your brand. Most callers don't realise they're talking to AI.",
+    industry: "Tradies",
+    examples: [
+      "Emergency call screening — is this urgent or can it wait?",
+      "After-hours booking — customer calls at 8pm, gets booked for tomorrow 9am",
+      "Job intake — captures address, problem description, photos",
+    ],
   },
   {
-    question: "What if the AI doesn't understand something?",
-    answer:
-      "It's trained to know when it's stuck. If a caller asks something outside its knowledge, it can take a detailed message, transfer to a human, or politely explain its limits and offer alternatives. You're always in control — you set the escalation rules.",
+    industry: "Health Clinics",
+    examples: [
+      "Appointment booking and rescheduling",
+      "New patient intake forms",
+      "After-hours enquiries about parking, directions, services",
+    ],
   },
   {
-    question: "Can an AI receptionist handle multiple calls at once?",
-    answer:
-      "Yes — unlimited simultaneous calls. A tradie missing 15 calls a week on jobs sees all 15 answered instead of going to voicemail. No busy signals, no queueing, no frustrated customers.",
+    industry: "Home Services",
+    examples: [
+      "Weekend quote requests",
+      "Booking confirmations and reminders",
+      "Following up no-shows automatically",
+    ],
   },
   {
-    question: "Do I need to keep my existing phone number?",
-    answer:
-      "Yes. You keep your current number. We redirect calls to the AI system, or integrate it with your existing phone setup. Your customers won't notice any difference.",
-  },
-  {
-    question: "What happens after hours?",
-    answer:
-      "The AI answers 24/7 — weekends, public holidays, 2am emergencies. For tradies, it can flag urgent calls (gas leaks, burst pipes, no-hot-water) and SMS you immediately while still taking the caller's details.",
-  },
-  {
-    question: "Can the AI speak languages other than English?",
-    answer:
-      "Yes. We can set up multi-language support. Common requests in Adelaide include Mandarin, Vietnamese, Greek, and Italian. The AI can detect the caller's language or ask them to choose at the start.",
-  },
-  {
-    question: "How long does setup take?",
-    answer:
-      "2-5 business days from kickoff. We map your call flow, configure the AI with your services and FAQs, test with sample calls, and hand it over with a 15-minute walkthrough.",
-  },
-  {
-    question: "What if I want to change how it works later?",
-    answer:
-      "Easy. Message us or jump on a quick call. We update scripts, add new FAQs, change routing rules, or add new workflows within 24-48 hours. The AI grows with your business.",
+    industry: "Professional Services",
+    examples: [
+      "Initial consultation booking",
+      "Fee and service FAQ answering",
+      "Routing urgent matters to your mobile",
+    ],
   },
 ];
 
-/* ------------------------------------------------------------------ */
-/*  JSON‑LD Schemas                                                    */
-/* ------------------------------------------------------------------ */
+const faqItems = [
+  {
+    question: "Will callers know it's AI?",
+    answer:
+      "Most callers don't realise. The voice sounds natural, uses an Australian accent, and follows your scripts. It introduces itself as your receptionist. You can tell customers it's AI if you want, but they usually just comment on how good your new receptionist is.",
+  },
+  {
+    question: "What happens if the AI can't answer a question?",
+    answer:
+      "It's trained to know its limits. If a caller asks something outside its knowledge, it takes a detailed message, sends you an SMS, and lets the caller know you'll call back. You set the escalation rules — technical questions, complaints, or quote requests can all route to you immediately.",
+  },
+  {
+    question: "Can it handle multiple calls at once?",
+    answer:
+      "Yes — unlimited simultaneous calls. No busy signals, no hold music, no 'all our operators are busy.' If 5 people call at 6pm on a Friday, all 5 get answered instantly.",
+  },
+  {
+    question: "Does it integrate with my calendar?",
+    answer:
+      "Yes — Google Calendar, Calendly, Microsoft 365, ServiceM8, Tradify, Jobber, and most other scheduling tools. It checks your availability in real-time and books appointments directly.",
+  },
+  {
+    question: "What about after-hours emergencies?",
+    answer:
+      "You define what counts as urgent. Burst pipes, no power, gas leaks — whatever matters in your industry. The AI qualifies the call and can escalate straight to your mobile if it's genuinely urgent, or book it for tomorrow if it can wait.",
+  },
+  {
+    question: "How much does it cost?",
+    answer:
+      "The AI receptionist is part of our AI automation stack. Final pricing depends on your call volume and integrations — we'll quote your exact setup after a free audit. No lock-in contracts.",
+  },
+];
 
-function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
-  if (faqs.length === 0) return null;
+export default function AiReceptionistAdelaidePage() {
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((faq) => ({
-            "@type": "Question",
-            name: faq.question,
-            acceptedAnswer: { "@type": "Answer", text: faq.answer },
-          })),
-        }),
-      }}
-    />
-  );
-}
-
-function ServiceJsonLd() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "AI Receptionist Adelaide",
-    serviceType: "AI Receptionist",
-    provider: { "@id": "https://aiadelaide.com.au/#organization" },
-    areaServed: {
-      "@type": "City",
-      name: "Adelaide",
-    },
-    description:
-      "AI receptionist service for Adelaide small businesses. 24/7 call answering, appointment booking, lead capture, after-hours coverage. Part of AI automation stack from $199/mo.",
-    offers: {
-      "@type": "Offer",
-      price: "199",
-      priceCurrency: "AUD",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        price: "199",
-        priceCurrency: "AUD",
-        unitText: "MONTH",
-      },
-    },
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
-
-export default function AIReceptionistAdelaidePage() {
-  return (
-    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
-      <ServiceJsonLd />
-      <FaqJsonLd faqs={faqItems} />
-
+    <main className="pt-28 pb-16 bg-white">
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
@@ -131,272 +91,288 @@ export default function AIReceptionistAdelaidePage() {
         ]}
       />
 
-      <section className="max-w-container mx-auto px-6">
-        <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <div className="mb-6">
-            <span className="eyebrow-light">AI Automation Feature</span>
+      {/* Hero */}
+      <section className="max-w-4xl mx-auto px-6">
+        <Reveal>
+          <div className="mb-12">
+            <span className="inline-block px-3 py-1 text-xs font-semibold text-accent bg-accent/10 rounded-full mb-4">
+              Part of AI Automation
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 leading-tight">
+              An AI Receptionist That Answers Every Call — So You Never Miss a Job
+            </h1>
+            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+              You're on the tools, with a customer, or closed for the weekend. Your phone rings. You can't answer. The AI receptionist picks up, has a real conversation, books the job, and texts you the details. You stay focused on the work.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="tel:+61871009788"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all"
+              >
+                Hear It Live — Call Now
+              </a>
+              <Link
+                href="/audit"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-300 text-slate-900 font-semibold rounded-xl hover:border-accent hover:text-accent transition-all"
+              >
+                Book Free Audit
+              </Link>
+            </div>
           </div>
-          <h1 className="mb-6 text-h1-mobile text-slate-950 md:text-h1">
-            AI Receptionist for Adelaide Small Businesses
-          </h1>
-          <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            An AI receptionist is one feature of our AI Automation service. It answers your phone 24/7, books appointments, captures every lead, and sends you the full summary — so you never miss a job. From $199/month as part of the full automation stack. Adelaide-based setup, no lock-in.
-          </p>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link href="/ai-automation-adelaide" className="btn-primary px-6 py-3">
-              See Full AI Automation Service →
-            </Link>
-            <Link href="/website-pricing" className="btn-secondary px-6 py-3">
-              See Website Pricing
-            </Link>
-          </div>
+        </Reveal>
+      </section>
+
+      {/* What It Does */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">What an AI Receptionist Actually Does</h2>
+        </Reveal>
+
+        <div className="space-y-6">
+          <Reveal>
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <h3 className="text-xl font-bold mb-3 text-slate-900">Answers Every Call Instantly</h3>
+              <p className="text-slate-700 leading-relaxed">
+                No hold music. No "your call is important to us." No voicemail. Every call answered on the first or second ring, 24/7 — weekends, public holidays, 2am emergencies.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <h3 className="text-xl font-bold mb-3 text-slate-900">Has Real Conversations</h3>
+              <p className="text-slate-700 leading-relaxed">
+                It's not a phone menu. Callers can explain their problem naturally. The AI understands context, asks follow-up questions, and captures the details you actually need — address, urgency, what the job involves.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <h3 className="text-xl font-bold mb-3 text-slate-900">Books Jobs Directly Into Your Calendar</h3>
+              <p className="text-slate-700 leading-relaxed">
+                Customer calls at 7pm about a leaking tap. AI checks your availability, offers tomorrow at 9am, books it, sends a confirmation SMS to the customer, and texts you the job details. You wake up to a fuller calendar.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <h3 className="text-xl font-bold mb-3 text-slate-900">Answers Your FAQs</h3>
+              <p className="text-slate-700 leading-relaxed">
+                "Do you charge a call-out fee?" "What suburbs do you service?" "Do you do free quotes?" The AI knows your standard answers because we program them in. Consistent, accurate, every single time.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+              <h3 className="text-xl font-bold mb-3 text-slate-900">Knows When to Escalate</h3>
+              <p className="text-slate-700 leading-relaxed">
+                Some calls need you. The AI can transfer urgent calls, take detailed messages for complex enquiries, or SMS you immediately for emergencies. You set the rules.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            What Is an AI Receptionist?
-          </h2>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            An AI receptionist is a phone answering system that picks up every call, 24 hours a day, 7 days a week. It sounds human. It understands questions. It books appointments, takes messages, and answers common enquiries.
+      {/* How Adelaide Businesses Use It */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-8 text-slate-900">How Adelaide Businesses Use It</h2>
+          <p className="text-lg text-slate-600 mb-12">
+            Real examples from businesses already using AI receptionists:
           </p>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Think of it as having a receptionist who never goes home, never takes a sick day, and never puts a customer on hold.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            You know those calls you miss while you&apos;re under a sink, in a meeting, or closed for the weekend? An AI receptionist catches all of them.
-          </p>
+        </Reveal>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {useCases.map((useCase, i) => (
+            <Reveal key={i}>
+              <div className="bg-white border border-slate-200 rounded-xl p-6">
+                <h3 className="text-lg font-bold mb-4 text-slate-900">{useCase.industry}</h3>
+                <ul className="space-y-2 text-slate-700 text-sm">
+                  {useCase.examples.map((example, j) => (
+                    <li key={j} className="flex gap-2">
+                      <span className="text-accent flex-shrink-0 mt-1">•</span>
+                      <span>{example}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Why Adelaide Businesses Are Switching to AI
-          </h2>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Businesses that cannot answer while staff are on jobs, with customers or after hours may have a missed-call gap. The size of that gap must come from the business&apos;s phone logs.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Every missed call is a potential customer calling your competitor instead.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Start by separating genuine new enquiries from spam, suppliers and existing-job calls. Decide which calls can be handled automatically, which need a message, and which must escalate to a person.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            After launch, track acknowledgement time, qualified handoffs, bookings and won work against the original baseline.
-          </p>
-        </div>
-      </section>
+      {/* How Setup Works */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-12 text-slate-900">Setup in 3 Steps</h2>
+        </Reveal>
 
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            What Your AI Receptionist Can Do
-          </h2>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Answer Calls Instantly</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            No hold music. No &ldquo;please wait for the next available operator.&rdquo; Your customer calls, your AI picks up on the first or second ring.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Book Appointments Directly</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Your AI receptionist connects to your calendar — whether that&apos;s Google Calendar, Calendly, or your booking software. It finds available slots and books them in real-time.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            For tradies, it can ask the right questions: &ldquo;Is this an emergency?&rdquo; &ldquo;What&apos;s the job address?&rdquo; &ldquo;Do you have photos you can send?&rdquo;
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Handle After-Hours Enquiries</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Your business closes at 5pm. But your customers might call at 7pm, or on Sunday morning. Your AI receptionist is always on.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            A physio in North Adelaide uses hers to handle all after-hours calls. Patients can still book appointments, ask about parking, or get directions. The AI takes detailed messages for anything clinical that needs human input.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Take Messages and Route Calls</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Some calls need a human. Your AI knows the difference. It can:
-          </p>
-          <ul className="list-disc pl-6 mb-4 space-y-2 text-body-mobile text-slate-700 md:text-body">
-            <li>Take a detailed message with all the context you need</li>
-            <li>Send you an SMS notification for urgent calls</li>
-            <li>Forward emergency calls straight to your mobile</li>
-            <li>Email enquiry forms directly to the right inbox</li>
-          </ul>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Answer FAQs</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            &ldquo;How much do you charge?&rdquo; &ldquo;What suburbs do you service?&rdquo; &ldquo;Do you offer free quotes?&rdquo;
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            Your AI receptionist knows all your standard answers. It sounds consistent every time, because it is consistent.
-          </p>
-        </div>
-      </section>
-
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Real Use Cases from Adelaide Businesses
-          </h2>
-
-          <h3 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">Tradies and Tradie Businesses</h3>
-          <ul className="list-disc pl-6 mb-4 space-y-2 text-body-mobile text-slate-700 md:text-body">
-            <li>
-              <strong>Plumbers:</strong> Emergency call screening, job booking, quote scheduling
-            </li>
-            <li>
-              <strong>Electricians:</strong> After-hours fault triage, appointment booking, parts delivery queries
-            </li>
-            <li>
-              <strong>Builders:</strong> Project enquiry intake, site meeting scheduling, supplier call routing
-            </li>
-            <li>
-              <strong>Painters:</strong> Quote bookings, colour consultation scheduling, availability checks
-            </li>
-            <li>
-              <strong>Sparkies:</strong> Emergency vs non-emergency call sorting, contract work enquiries
-            </li>
-          </ul>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            One electrician in Morphett Vale said his AI receptionist caught a $12,000 switchboard upgrade job from a 6pm call. He would have missed it completely before.
-          </p>
-
-          <h3 className="mb-3 text-h2-mobile text-slate-950 md:text-h2">Health Clinics</h3>
-          <ul className="list-disc pl-6 mb-4 space-y-2 text-body-mobile text-slate-700 md:text-body">
-            <li>
-              <strong>Physiotherapists:</strong> Appointment bookings, cancellation handling, new patient intake
-            </li>
-            <li>
-              <strong>Chiropractors:</strong> Same-day appointment scheduling, insurance questions, parking info
-            </li>
-            <li>
-              <strong>Dentists:</strong> Emergency toothache screening, routine checkup bookings, payment plan queries
-            </li>
-            <li>
-              <strong>Optometrists:</strong> Eye test bookings, frame collection reminders, prescription queries
-            </li>
-            <li>
-              <strong>Podiatrists:</strong> Appointment rescheduling, Medicare rebate questions, referral intake
-            </li>
-          </ul>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            For a clinic, overflow handling should be tested with approved scripts, privacy controls and clear human escalation. Measure genuine unanswered enquiries and successful handoffs before and after launch; do not infer a result from an illustrative local scenario.
-          </p>
-        </div>
-      </section>
-
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            How It Works (in Simple Terms)
-          </h2>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 1: We Map Your Call Flow</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            We sit down (or jump on a call) and work out exactly how you want calls handled. What questions should the AI ask? What counts as urgent? Where should appointments get booked?
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            This usually takes 30-60 minutes.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 2: We Set Up Your AI</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            We configure your AI receptionist with your business info, your FAQs, your calendar connections, and your call routing rules. We test it thoroughly before it goes live.
-          </p>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            Most setups are done within 2-3 business days.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 3: You Start Answering Every Call</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            Your phone number stays the same. Your customers won&apos;t know it&apos;s AI unless you tell them. You just start getting fewer missed calls and more booked jobs.
-          </p>
-
-          <h3 className="mb-3 text-h3-mobile text-slate-950 md:text-h3">Step 4: We Tweak as Needed</h3>
-          <p className="text-body-mobile text-slate-700 md:text-body">
-            After a week or two, we check in. Are there questions the AI isn&apos;t handling well? Do you need to add a new service? We adjust it as your business changes.
-          </p>
-        </div>
-      </section>
-
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
-            FAQ: AI Receptionist Adelaide
-          </h2>
-          <div className="space-y-6">
-            {faqItems.map((faq) => (
-              <div key={faq.question}>
-                <h3 className="mb-2 text-h3-mobile text-slate-950 md:text-h3">
-                  {faq.question}
-                </h3>
-                <p className="text-body-mobile text-slate-700 md:text-body">
-                  {faq.answer}
+        <div className="space-y-8">
+          <Reveal>
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg">
+                  1
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-slate-900">We Map Your Call Flow</h3>
+                <p className="text-slate-700 leading-relaxed">
+                  30-60 minute call. We work out how you want calls handled — what questions should the AI ask? What counts as urgent? When should it escalate? Where do bookings go?
                 </p>
               </div>
-            ))}
-          </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg">
+                  2
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-slate-900">We Configure & Test</h3>
+                <p className="text-slate-700 leading-relaxed">
+                  We program the AI with your business details, your services, your FAQs, your voice and tone. We connect it to your calendar and test it thoroughly before it goes live.
+                </p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="flex gap-6">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 rounded-full bg-accent text-white font-bold flex items-center justify-center text-lg">
+                  3
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2 text-slate-900">You Start Answering Calls</h3>
+                <p className="text-slate-700 leading-relaxed">
+                  Your phone number stays the same. Your customers won't notice a difference — they just notice you answer faster. Most setups are live in 2-5 business days.
+                </p>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Explore More</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Link href="/ai-receptionist-cost-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              AI Receptionist Cost Adelaide →
-            </Link>
-            <Link href="/ai-receptionist-vs-virtual-receptionist" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              AI vs Virtual Receptionist Compared →
-            </Link>
-            <Link href="/virtual-receptionist-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              Virtual Receptionist Adelaide →
-            </Link>
-            <Link href="/websites-for-plumbers-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              Websites for Plumbers Adelaide →
-            </Link>
-            <Link href="/websites-for-electricians-adelaide" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              Websites for Electricians Adelaide →
-            </Link>
-            <Link href="/norwood" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              AI Receptionist in Norwood →
-            </Link>
-            <Link href="/glenelg" className="rounded-xl border border-slate-200 bg-white p-4 text-sm font-semibold text-slate-900 hover:border-accent/40 hover:bg-accent/5">
-              AI Receptionist in Glenelg →
-            </Link>
+      {/* Try It Now */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <div className="bg-gradient-to-br from-accent/5 to-transparent border border-accent/20 rounded-2xl p-8 md:p-12 text-center">
+            <h2 className="text-2xl font-bold mb-4 text-slate-900">Hear It in Action</h2>
+            <p className="text-lg text-slate-700 mb-6 max-w-2xl mx-auto">
+              Call <strong className="text-accent">(08) 7100 9788</strong> right now — the AI receptionist answers 24/7. Ask about pricing, booking a service, parking, or anything else. See how it handles real conversations.
+            </p>
+            <a
+              href="tel:+61871009788"
+              className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all"
+            >
+              Call the Demo Line
+            </a>
           </div>
+        </Reveal>
+      </section>
+
+      {/* Related Services */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-2xl font-bold mb-8 text-slate-900">Related Services</h2>
+        </Reveal>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          <Link
+            href="/ai-automation-adelaide"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-accent hover:bg-accent/5 transition-all group"
+          >
+            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-accent">AI Automation →</h3>
+            <p className="text-sm text-slate-600">
+              The full stack: missed-call text-back, quote follow-up, invoice chasing, review collection, and the AI receptionist. {PRICING.automation.fromLabel}.
+            </p>
+          </Link>
+
+          <Link
+            href="/ai-automation-setup-tradies"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-accent hover:bg-accent/5 transition-all group"
+          >
+            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-accent">Setup for Tradies →</h3>
+            <p className="text-sm text-slate-600">
+              How we set up AI automation specifically for plumbers, electricians, builders, and other Adelaide tradies.
+            </p>
+          </Link>
+
+          <Link
+            href="/ai-for-sole-traders-adelaide"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-accent hover:bg-accent/5 transition-all group"
+          >
+            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-accent">For Sole Traders →</h3>
+            <p className="text-sm text-slate-600">
+              Running a one-person business? AI handles the admin so you can focus on the work that pays.
+            </p>
+          </Link>
+
+          <Link
+            href="/ai-consulting-adelaide"
+            className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:border-accent hover:bg-accent/5 transition-all group"
+          >
+            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-accent">AI Consulting →</h3>
+            <p className="text-sm text-slate-600">
+              Not sure what AI could help with? Book a free audit and we'll map it out with you.
+            </p>
+          </Link>
         </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-12 text-slate-900">Common Questions</h2>
+        </Reveal>
+
+        <div className="space-y-6">
+          {faqItems.map((item, i) => (
+            <Reveal key={i}>
+              <div className="border-b border-slate-200 pb-6">
+                <h3 className="text-lg font-bold mb-3 text-slate-900">{item.question}</h3>
+                <p className="text-slate-700 leading-relaxed">{item.answer}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Stop Missing Calls. Start Booking More Jobs.</h2>
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+              Book a free audit. We'll look at how many calls you're missing, show you exactly how the AI receptionist would handle them, and quote your specific setup.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/audit"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all"
+              >
+                Book Free Audit
+              </Link>
+              <a
+                href="tel:+61871009788"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-slate-900 transition-all"
+              >
+                Call 08 7100 9788
+              </a>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       <StackCTA variant="automation" />
-      <DemoLine />
-
-      <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
-        <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Ready to Stop Missing Calls?
-          </h2>
-          <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            The AI receptionist is one part of our full AI automation stack. Book a free chat and we&apos;ll show you the full setup — websites, SEO, and automation — with a fixed quote for your business.
-          </p>
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/ai-automation-adelaide" className="btn-primary px-8 py-4">
-              See AI Automation Service <span aria-hidden>→</span>
-            </Link>
-            <Link href="/contact" className="btn-secondary px-8 py-4">
-              Book Free Chat
-            </Link>
-          </div>
-          <p className="mt-4 text-body-mobile text-slate-600 md:text-body">
-            Or call 08 7100 9788 to hear it live.
-          </p>
-        </div>
-      </section>
-    </div>
+    </main>
   );
 }

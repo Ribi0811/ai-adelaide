@@ -1,12 +1,106 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
+import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import StackCTA from "@/components/StackCTA";
+import Reveal from "@/components/home-v3/Reveal";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Consulting Adelaide — No-Bullshit Advice",
-  description: "AI consulting for Adelaide businesses. Free audit, then implementation and support. For tradies, clinics, retailers. Call 08 7100 9788 for a chat.",
+  title: "AI Consulting Adelaide | No-Bullshit Implementation for SMBs",
+  description:
+    "AI consulting for Adelaide businesses: free audit, fixed pricing, implementation in days not months. For tradies, clinics, retailers, sole traders. Call 08 7100 9788.",
   alternates: { canonical: "/ai-consulting-adelaide" },
-}
+};
+
+const problems = [
+  {
+    title: "You're Losing Leads to Missed Calls",
+    stat: "5-15 calls/week missed",
+    cost: "$2,000-5,000/month in lost revenue",
+    fix: "AI answers every call, books jobs, sends you the details",
+  },
+  {
+    title: "Quotes Get Sent But Never Followed Up",
+    stat: "30-40% of quotes never get a second touch",
+    cost: "$3,000-8,000/month in lost work",
+    fix: "AI follows up every quote automatically, in your voice",
+  },
+  {
+    title: "Admin Eats Your Evenings and Weekends",
+    stat: "10-20 hours/week on paperwork",
+    cost: "$2,000-4,000/month of your time",
+    fix: "AI handles invoices, payments, bookings, reviews",
+  },
+];
+
+const services = [
+  {
+    title: "AI Audit & Strategy",
+    price: "Free",
+    timeline: "1 week",
+    deliverable:
+      "We map your workflows, identify time/money drains, and give you an action plan with priorities, costs, and expected ROI. You get the full picture even if you don't work with us.",
+    link: "/audit",
+  },
+  {
+    title: "AI Implementation",
+    price: "Quoted after audit",
+    timeline: "Days not months",
+    deliverable:
+      "We build and deploy your AI systems — call answering, quote follow-up, invoice chasing, review collection. Connected to your existing tools (ServiceM8, Xero, Google Calendar).",
+    link: "/ai-automation-setup-tradies",
+  },
+  {
+    title: "Ongoing Support",
+    price: "Quoted after audit",
+    timeline: "Monthly",
+    deliverable:
+      "AI isn't set-and-forget. We monitor performance, tweak scripts, add new automations, and keep everything running. No lock-in, cancel anytime.",
+    link: "/ai-automation-adelaide",
+  },
+];
+
+const industries = [
+  { name: "Tradies", examples: "Plumbers, electricians, builders, painters" },
+  { name: "Health Clinics", examples: "Physios, chiros, dentists, psychologists" },
+  { name: "Retail & Hospitality", examples: "Cafes, restaurants, salons, retail shops" },
+  { name: "Professional Services", examples: "Accountants, lawyers, consultants, agencies" },
+  { name: "Home Services", examples: "Cleaners, gardeners, pest control, mobile mechanics" },
+  { name: "Sole Traders", examples: "One-person businesses wearing every hat", link: "/ai-for-sole-traders-adelaide" },
+];
+
+const faqItems = [
+  {
+    question: "How is AI consulting different from hiring a developer?",
+    answer:
+      "Developers build what you tell them to build. Consultants figure out what you should build in the first place. We do both — we identify the problem, recommend the solution, then build it for you. You don't need to know what API to use or which platform to choose.",
+  },
+  {
+    question: "What's included in the free audit?",
+    answer:
+      "We spend 30-60 minutes on a call mapping your workflows. Where are you losing time? Where are you losing money? What could AI actually fix? You get a written action plan with priorities, estimated costs, and expected ROI. No sales pitch — if AI doesn't make sense for your business, we'll tell you.",
+  },
+  {
+    question: "How much does AI consulting cost?",
+    answer:
+      "Audit is free — we'll map your workflows and identify what's costing you time and money. If you want us to build the fix, we'll quote the full project after the audit. No hourly billing, no surprise invoices. Final price depends on how many automations you need.",
+  },
+  {
+    question: "How long does it take to see results?",
+    answer:
+      "Most clients see measurable impact in the first week. Missed calls get answered immediately. Quotes get followed up on schedule. The ROI is usually obvious by week 2-3 when you see jobs you would have missed show up in your calendar.",
+  },
+  {
+    question: "Do you work with businesses outside Adelaide?",
+    answer:
+      "We're Adelaide-based and prefer working locally, but we've done remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you're a good fit, we'll consider it.",
+  },
+  {
+    question: "What if I've already tried AI tools and they didn't work?",
+    answer:
+      "Most DIY AI fails because people try to automate everything at once or pick the wrong tool. We start small (usually just missed-call text-back), prove ROI in week one, then expand. We also know which tools actually work for Australian SMBs vs. which ones are just hype.",
+  },
+];
 
 export default function AiConsultingAdelaidePage() {
   return (
@@ -18,229 +112,235 @@ export default function AiConsultingAdelaidePage() {
           { label: "AI Consulting Adelaide" },
         ]}
       />
-      <div className="max-w-4xl mx-auto px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-slate-900 leading-tight">
-          AI Consulting in Adelaide — Practical, Affordable, No Bullshit
-        </h1>
 
-
-
-
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">What Is AI Consulting Actually?</h2>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Good question. &quot;Consulting&quot; can mean anything from a 200-page PDF you never read to someone actually rolling up their sleeves and building stuff.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We do the second one.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">AI consulting with us means:</p>
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>We figure out where AI can actually help your business (not where it theoretically could)</li>
-          <li>We build and implement the solutions</li>
-          <li>We support you as you use them</li>
-          <li>We charge prices that make sense for small businesses</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">No &quot;digital transformation strategy decks.&quot; No six-figure projects that take a year to deliver. Just practical AI that solves real problems.</p>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">What&apos;s Included in Our Consulting</h2>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Process Audit</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We look at how your business actually runs. Where do you spend time on repeatable tasks? Where do customers get frustrated? Where are you losing opportunities?</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We map this out in a simple report: here&apos;s what&apos;s broken, here&apos;s what AI can fix, here&apos;s what it&apos;ll cost.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">This is our free audit. You get a clear action plan even if you never work with us again.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Solution Design</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Once you know what to fix, we design the solution. This isn&apos;t generic advice. It&apos;s specific to your business:</p>
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Which AI tools to use</li>
-          <li>How they integrate with your existing systems</li>
-          <li>What your new workflows look like</li>
-          <li>What to expect in time and cost savings</li>
-        </ul>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Implementation</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We build it. You don&apos;t have to figure out the tech stack, hire developers, or mess around with APIs.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We set up your AI receptionist. We connect it to your calendar. We write the scripts. We test it. We train your team.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">You just start using it.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Ongoing Support</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">AI isn&apos;t &quot;set and forget.&quot; You&apos;ll have questions. You&apos;ll want to tweak things. Your business will change.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Our monthly support includes:</p>
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Script updates and optimisation</li>
-          <li>New feature rollouts</li>
-          <li>Troubleshooting when stuff breaks</li>
-          <li>Quarterly reviews to find new opportunities</li>
-        </ul>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Our Process</h2>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Phase 1: Audit (Free)</h3>
-
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>30-60 minute discovery call</li>
-          <li>Review of your current workflows</li>
-          <li>Identification of AI opportunities</li>
-          <li>Written report with prioritised recommendations</li>
-          <li>Clear pricing for implementation</li>
-        </ul>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>&quot;Should I even be using AI?&quot;</li>
-          <li>&quot;Where would it have the biggest impact?&quot;</li>
-          <li>&quot;What will this actually cost?&quot;</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Many clients find the audit alone is worth it. You get clarity on what to do, even if you do it yourself or with someone else.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Phase 2: Implementation ($1,500-3,000)</h3>
-
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>AI system setup and configuration</li>
-          <li>Integration with your existing tools (calendar, CRM, practice management software)</li>
-          <li>Script writing and testing</li>
-          <li>Staff training</li>
-          <li>Go-live support</li>
-        </ul>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>AI receptionist for phone answering: $1,500-2,000</li>
-          <li>AI receptionist + calendar integration + SMS reminders: $2,000-2,500</li>
-          <li>Multi-system integration (AI + CRM + practice software): $2,500-3,000</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We give you a fixed quote after the audit. No surprises.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Phase 3: Support ($500-1,500/month)</h3>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Platform hosting and usage (phone minutes, AI processing)</li>
-          <li>Ongoing script updates and optimisation</li>
-          <li>Support tickets and troubleshooting</li>
-          <li>Monthly performance reports</li>
-          <li>Quarterly strategy reviews</li>
-        </ul>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li><strong>Solo/Small:</strong> $500-700/month — single user, basic AI receptionist</li>
-          <li><strong>Growing:</strong> $700-1,000/month — multiple staff, calendar integrations, SMS automation</li>
-          <li><strong>Clinic/Trade Business:</strong> $1,000-1,500/month — high call volume, multiple integrations, priority support</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">You can cancel anytime. No lock-in contracts.</p>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Who This Is For</h2>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Tradies losing jobs to missed calls</li>
-          <li>Health clinics drowning in admin</li>
-          <li>Retail owners spending too much time on customer enquiries</li>
-          <li>Professional services wanting to automate routine tasks</li>
-          <li>Any business doing $200k+ revenue where owner time is the bottleneck</li>
-        </ul>
-
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Businesses too small to handle more customers (AI won&apos;t help if you&apos;re already maxed out)</li>
-          <li>Companies wanting to &quot;explore AI&quot; without specific problems to solve</li>
-          <li>Anyone expecting magic (AI is a tool, not a miracle)</li>
-          <li>Businesses unwilling to change existing workflows (some adjustment is required)</li>
-        </ul>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Pricing Summary</h2>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">| Service | Price | What&apos;s Included |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">|---------|-------|-----------------|</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>AI Audit</strong> | Free | Discovery call, workflow review, written recommendations, implementation quote |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Standard Implementation</strong> | $1,500-2,000 | AI receptionist setup, basic scripting, go-live support |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Advanced Implementation</strong> | $2,000-3,000 | AI + integrations (calendar, CRM, practice software), multi-system workflows |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Monthly Support (Solo)</strong> | $500-700 | Platform, basic usage, email support |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Monthly Support (Growing)</strong> | $700-1,000 | Platform, higher usage, priority support, monthly reports |</p>
-        <p className="text-slate-700 mb-4 leading-relaxed">| <strong>Monthly Support (Clinic/Trade)</strong> | $1,000-1,500 | Platform, high usage, phone support, quarterly reviews |</p>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">FAQ: AI Consulting Questions</h2>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Why pay for consulting when I can just use ChatGPT?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">ChatGPT is great for writing emails and generating ideas. It can&apos;t answer your phone calls, book appointments in your calendar, or integrate with your business systems. We build the actual systems that run your business.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">What if I start and it doesn&apos;t work for my business?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Fair question. That&apos;s why we start with a free audit. You get a clear plan before committing to the big spend. If the audit shows AI won&apos;t help you, we&apos;ll tell you. We&apos;ve turned down work when it didn&apos;t make sense.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">How long until I see ROI?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Most clients see ROI within 30-60 days. Usually from:</p>
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Recovered missed calls and booked jobs measured from your baseline</li>
-          <li>Reduced admin time (5-10 hours/week for clinic owners)</li>
-          <li>Lower no-show rates (from automated reminders)</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">If you&apos;re not seeing ROI in 60 days, we&apos;ll work with you to fix it or wind it down.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Can I just buy the audit and implement myself?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Absolutely. Some clients do exactly that. They want our expertise on what to build, but they have the tech skills to implement themselves. The audit is yours to use however you want.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Do you work with businesses outside Adelaide?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">We&apos;re Adelaide-based and prefer working locally. But we&apos;ve done remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you&apos;re a good fit, we&apos;ll consider it.</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">What happens if I want to cancel?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">No lock-in. You can cancel monthly support anytime. You&apos;ll own any custom scripts or configurations we built. The only thing that stops working is the AI platform itself (since that&apos;s hosted).</p>
-
-        <h3 className="text-xl font-semibold mt-8 mb-3 text-slate-900">Is this just AI receptionist stuff, or broader consulting?</h3>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">AI receptionist is our core offering because it has the fastest ROI for most small businesses. But we also consult on:</p>
-
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-slate-700">
-          <li>Customer service chatbots</li>
-          <li>Internal workflow automation</li>
-          <li>Document processing and data entry reduction</li>
-          <li>Basic AI strategy and tool selection</li>
-        </ul>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">If it&apos;s AI and it&apos;s practical for a small business, we&apos;ll look at it.</p>
-
-        <h2 className="text-2xl font-bold mt-10 mb-4 text-slate-900">Ready to Start?</h2>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">Book the free audit. We&apos;ll spend 30-60 minutes understanding your business and send you a clear report within 3-5 days.</p>
-
-        <p className="text-slate-700 mb-4 leading-relaxed">If you want to move forward, great. If not, you still have a roadmap of what to do.</p>
-
-
-        <p className="text-slate-700 mb-4 leading-relaxed">---</p>
-        <div className="mt-12 p-8 bg-slate-50 rounded-2xl text-center">
-          <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-xl bg-teal-500 px-8 py-4 text-base font-semibold text-white hover:bg-teal-600 transition-colors">
-            Call 08 7100 9788 or visit aiadelaide.com.au/audit to book your free AI audit →
-          </Link>
+      {/* Hero */}
+      <section className="max-w-4xl mx-auto px-6">
+        <Reveal>
+          <div className="mb-12">
+            <span className="inline-block px-3 py-1 text-xs font-semibold text-accent bg-accent/10 rounded-full mb-4">
+              AI Consulting Adelaide
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 leading-tight">
+              AI Consulting That Actually Ships — No Strategy Decks, Just Working Systems
+            </h1>
+            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+              Most AI consultants sell you a 200-page PDF and a $50K roadmap. We identify what's costing you money, build the fix in days, and support you as you use it. Fixed pricing, Adelaide-based, no lock-in.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/audit"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all"
+              >
+                Book Free AI Audit
+              </Link>
+              <a
+                href="tel:+61871009788"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-300 text-slate-900 font-semibold rounded-xl hover:border-accent hover:text-accent transition-all"
+              >
+                Call 08 7100 9788
+              </a>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* The 3 Core Problems */}
+      <section className="max-w-6xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-4 text-slate-900">The 3 Problems AI Solves for Adelaide SMBs</h2>
+          <p className="text-lg text-slate-600 mb-12 max-w-3xl">
+            These aren't theoretical problems. These are what's actually costing you money right now.
+          </p>
+        </Reveal>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {problems.map((problem, i) => (
+            <Reveal key={i}>
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                <h3 className="text-xl font-bold text-slate-900 mb-4">{problem.title}</h3>
+                <div className="space-y-3 mb-4">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-2xl font-bold text-red-600">{problem.stat}</span>
+                  </div>
+                  <p className="text-sm text-slate-600">{problem.cost}</p>
+                </div>
+                <div className="pt-4 border-t border-slate-300">
+                  <p className="text-sm text-slate-700">
+                    <strong className="text-accent">Fix:</strong> {problem.fix}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
-      </div>
+      </section>
+
+      {/* How We Work */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-4 text-slate-900">How We Work</h2>
+          <p className="text-lg text-slate-600 mb-12">
+            Three stages. Fixed pricing. No hourly billing.
+          </p>
+        </Reveal>
+
+        <div className="space-y-8">
+          {services.map((service, i) => (
+            <Reveal key={i}>
+              <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-2 text-slate-900">{service.title}</h3>
+                    <p className="text-slate-700 leading-relaxed mb-4">{service.deliverable}</p>
+                  </div>
+                  <div className="md:ml-8 md:text-right flex-shrink-0">
+                    <div className="text-2xl font-bold text-accent mb-1">{service.price}</div>
+                    <div className="text-sm text-slate-500">{service.timeline}</div>
+                  </div>
+                </div>
+                {service.link && (
+                  <div className="pt-4 border-t border-slate-200">
+                    <Link
+                      href={service.link}
+                      className="text-accent hover:underline font-semibold"
+                    >
+                      Learn more →
+                    </Link>
+                  </div>
+                )}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Industries We Work With */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-4 text-slate-900">Who We Work With</h2>
+          <p className="text-lg text-slate-600 mb-8">
+            Adelaide small to medium businesses across every industry. If you're losing time to admin or missing calls, we can help.
+          </p>
+        </Reveal>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {industries.map((industry, i) => (
+            <Reveal key={i}>
+              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                <h3 className="font-bold text-slate-900 mb-2">
+                  {industry.link ? (
+                    <Link href={industry.link} className="text-accent hover:underline">
+                      {industry.name}
+                    </Link>
+                  ) : (
+                    industry.name
+                  )}
+                </h3>
+                <p className="text-sm text-slate-600">{industry.examples}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <div className="bg-gradient-to-br from-accent/5 to-transparent border border-accent/20 rounded-2xl p-8 md:p-12">
+            <h2 className="text-2xl font-bold mb-6 text-slate-900">Why Adelaide SMBs Choose Us</h2>
+            <div className="grid md:grid-cols-2 gap-6 text-slate-700">
+              <div>
+                <h3 className="font-bold mb-3 text-slate-900">What We Do</h3>
+                <ul className="space-y-2">
+                  <li className="flex gap-2">
+                    <span className="text-green-600 flex-shrink-0">✓</span>
+                    <span>Fixed pricing — no hourly billing surprises</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-green-600 flex-shrink-0">✓</span>
+                    <span>Implementation in days, not months</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-green-600 flex-shrink-0">✓</span>
+                    <span>Adelaide-based, in your timezone</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-green-600 flex-shrink-0">✓</span>
+                    <span>We build it, not just advise on it</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold mb-3 text-slate-900">What We Don't Do</h3>
+                <ul className="space-y-2">
+                  <li className="flex gap-2">
+                    <span className="text-red-600 flex-shrink-0">✗</span>
+                    <span>200-page strategy decks that sit in drawers</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-red-600 flex-shrink-0">✗</span>
+                    <span>$50K enterprise projects</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-red-600 flex-shrink-0">✗</span>
+                    <span>Lock-in contracts</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-red-600 flex-shrink-0">✗</span>
+                    <span>Offshore support teams</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* FAQ */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <h2 className="text-3xl font-bold mb-12 text-slate-900">Common Questions About AI Consulting</h2>
+        </Reveal>
+
+        <div className="space-y-6">
+          {faqItems.map((item, i) => (
+            <Reveal key={i}>
+              <div className="border-b border-slate-200 pb-6">
+                <h3 className="text-lg font-bold mb-3 text-slate-900">{item.question}</h3>
+                <p className="text-slate-700 leading-relaxed">{item.answer}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="max-w-4xl mx-auto px-6 mt-20">
+        <Reveal>
+          <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-12 text-center">
+            <h2 className="text-3xl font-bold mb-4">Stop Paying for Strategy. Start Getting Systems.</h2>
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+              Book a free AI audit. We'll map your workflows, identify what's costing you time and money, and show you exactly what AI can fix — with real costs and expected ROI.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/audit"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-white font-semibold rounded-xl hover:bg-accent/90 transition-all"
+              >
+                Book Free AI Audit
+              </Link>
+              <a
+                href="tel:+61871009788"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-slate-900 transition-all"
+              >
+                Call 08 7100 9788
+              </a>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+      <StackCTA variant="automation" />
     </main>
-  )
+  );
 }

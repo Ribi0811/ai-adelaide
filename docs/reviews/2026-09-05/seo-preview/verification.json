@@ -1,0 +1,89 @@
+{
+  "checked": "2026-09-05",
+  "homeAssets": [
+    {
+      "path": "/_next/static/css/e53ad98d922573e0.css",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/css/e3305f39725cecf1.css",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/css/efd6cad29047c263.css",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/2200cc46-d47ab06f24e52302.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/2945-3aeea252b63c7134.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/main-app-7b5e3a8607043c65.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/9498-f21349966a5b1af7.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/4663-e5118502402f9e7a.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/page-b35ef50250847aa6.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-8020bf6979448c8c.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/static/chunks/webpack-349ed3a41e53ef67.js",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/image?url=%2Fportfolio%2Fcarhire-global.png&w=3840&q=75",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/image?url=%2Fportfolio%2Fcarhire-global.png&w=3840&q=75",
+      "status": 200,
+      "googlebotAllowed": true
+    },
+    {
+      "path": "/_next/image?url=%2Fportfolio%2F365carhire.png&w=3840&q=75",
+      "status": 200,
+      "googlebotAllowed": true
+    }
+  ],
+  "apiRobotsAllowed": false,
+  "serverLocalBusinessCount": 1,
+  "serverBusinessTelephone": "+61871009788",
+  "serverSchemaTypes": [
+    "LocalBusiness",
+    "WebSite",
+    "FAQPage"
+  ],
+  "allPagesLocalBusinessCountOne": true
+}

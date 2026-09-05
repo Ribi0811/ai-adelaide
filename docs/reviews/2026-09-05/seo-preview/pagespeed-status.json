@@ -1,0 +1,5 @@
+{
+  "unavailable": true,
+  "httpStatus": 429,
+  "note": "Unauthenticated PageSpeed endpoint unavailable. No Core Web Vitals claim can be made from this request."
+}

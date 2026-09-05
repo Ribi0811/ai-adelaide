@@ -12,7 +12,7 @@ Supporting corrections:
 
 - About introduces AI Adelaide as a small Adelaide business. At Ivan's request, his personal name is absent from the public copy, metadata and schema. No invented portrait, staff count or personal LinkedIn URL.
 - Website pricing explains one-off versus monthly ownership, cancellation, hosting and the existing buy-out basis. The legal terms and actual prices are unchanged.
-- The 48-hour claim is conditional on a ready-to-start Starter build. Website pages use relevant existing website testimonials, separate from portfolio examples.
+- The homepage and main website-page 48-hour claim is conditional on a ready-to-start Starter build; the later SEO audit flags remaining older industry/suburb wording for a focused follow-up. Website pages use relevant existing website testimonials, separate from portfolio examples.
 - The website concept demo clearly labels placeholder content and removes fabricated named reviews, star ratings and review counts.
 - Four August consulting/automation pages have unsupported outcome percentages, customer-volume claims and the alleged Morphett Vale case study removed or replaced with process descriptions. Their long metadata titles are corrected.
 - Three existing August pages are added to the sitemap; dates are updated for substantively edited pages. No service URLs or redirects change.
@@ -24,7 +24,7 @@ Supporting corrections:
 - Targeted lint passes for the new homepage, About, navigation, contact form, chat, footer and testimonials. The production build is configured to skip lint, so lint is checked separately.
 - `check-links`: 96 unique internal hrefs resolve directly; no redirect chains.
 - `check-meta`: reduced from six existing failures to one existing receptionist-title length failure. `/ai-receptionist-adelaide` remains unchanged under the documented title/URL freeze until approximately 15 September. This is an explicit exception, not a clean full-check result.
-- Rendered HTTP checks cover nine changed routes: all 200, one H1, one canonical, at most one FAQPage. The homepage's hydrated DOM contains one layout-owned LocalBusiness, one WebSite and one FAQPage.
+- Rendered HTTP checks cover nine changed routes: all 200, one H1, one canonical, at most one FAQPage. The homepage's initial server HTML now contains one layout-owned LocalBusiness, one WebSite and one FAQPage following the SEO audit.
 - Browser checks cover desktop, 768px tablet, 390px and 320px phones, service selection, SEO contact preselection, hidden chat on contact, mobile menu open/Escape/focus return and no horizontal document overflow at sampled widths.
 - Real email/Telegram delivery and production durable lead storage are not verified by this design work. No customer message or synthetic notification was sent.
 
@@ -45,3 +45,7 @@ Review the homepage, switch all three service options, follow a quote action, an
 The page is a clearer sales surface; it is not proof of demand or conversion uplift. Use the existing business review's acquisition plan: reconcile current leads and paying customers, choose an existing durable enquiry record, then run a small founder-led website/SEO sales effort with an agreed next action for every opportunity. Sell one useful automation only where the workflow and economics justify it. The receptionist remains a secondary legacy service.
 
 Before declaring lead capture production-ready, connect and verify durable storage plus real notification delivery. A local success message or writable JSON file does not prove persistence on Vercel. Further attributable proof and current financial/customer figures still require supplied evidence. Keep the public site brand-led; Ivan has chosen not to display his personal name yet.
+
+## SEO audit follow-up
+
+[`SEO-PREVIEW-AUDIT-2026-09-05.md`](./SEO-PREVIEW-AUDIT-2026-09-05.md) records the full 113-page local crawl and current Search Console opportunities. Local fixes allow Next.js assets in robots.txt, server-render business schema and all service-selector descriptions, and add relevant commercial internal links. The visual design and personal-name privacy preference are preserved. For phone review on the same Wi-Fi, the current server binds `0.0.0.0` and is available at <http://192.168.68.106:3000>; the address can change with the network.

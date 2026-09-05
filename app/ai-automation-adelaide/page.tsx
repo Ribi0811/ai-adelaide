@@ -528,6 +528,7 @@ export default function AIAutomationAdelaidePage() {
             </h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {[
+                { href: "/ai-consulting-small-business-adelaide", label: "AI Consulting for Small Business" },
                 { href: "/ai-receptionist-cost-adelaide", label: "AI Receptionist Cost Adelaide" },
                 { href: "/ai-automation-vs-hiring-staff-adelaide", label: "AI Automation vs Hiring Staff" },
                 { href: "/websites-for-plumbers-adelaide", label: "Websites for Plumbers Adelaide" },

@@ -22,7 +22,7 @@ export default function HomeStudio() {
         <div className={styles.heroCopy}>
           <p className={styles.eyebrow}>Adelaide websites, SEO &amp; AI automation</p>
           <h1 id="home-title">Websites that<br /><span>mean business.</span></h1>
-          <p className={styles.heroDescription}>Look the part. Get found locally. Make the everyday work easier. Practical digital help for your small business.</p>
+          <p className={styles.heroDescription}>Website design, local SEO and practical automation for Adelaide small businesses. Look the part, get found locally and spend less time on admin.</p>
           <div className={styles.heroActions}>
             <Link href="/contact#send-message" className={styles.primaryButton} data-track="quote_hero">Get a fixed quote <span aria-hidden>↗</span></Link>
             <a href="#selected-work" className={styles.textLink} data-track="home_view_work">See our work <span aria-hidden>↓</span></a>
@@ -50,7 +50,12 @@ export default function HomeStudio() {
       <section id="services" className={`${styles.container} ${styles.services}`} aria-labelledby="services-title">
         <div className={styles.sectionHeading}><p className={styles.eyebrow}>A useful place to start</p><h2 id="services-title">What would make<br />business easier?</h2><p>Pick the thing you need most. We&apos;ll help you take it from there.</p></div>
         <ServicePicker />
-        <div className={styles.serviceFallbackLinks}><span>Explore:</span><Link href="/website-design-adelaide">Website design</Link><Link href="/seo">SEO services</Link><Link href="/local-seo-adelaide">Local SEO</Link><Link href="/ai-automation-adelaide">AI automation</Link></div>
+        <div className={styles.serviceFallbackLinks}><span>Explore:</span><Link href="/website-design-adelaide">Website design Adelaide</Link><Link href="/seo">SEO services Adelaide</Link><Link href="/local-seo-adelaide">Local SEO</Link><Link href="/ai-automation-adelaide">AI automation</Link></div>
+        <div className={styles.businessPaths}>
+          <h3>Built around your kind of business.</h3>
+          <p>Explore website and search support for local trades, cafés and owner-operated businesses, or compare what a website build includes.</p>
+          <div><Link href="/websites-for-electricians-adelaide">Websites for electricians ↗</Link><Link href="/websites-for-cafes-adelaide">Websites for cafés ↗</Link><Link href="/seo-for-tradies-adelaide">SEO for Adelaide tradies ↗</Link><Link href="/blog/cheap-website-design-adelaide">What a Starter website includes ↗</Link></div>
+        </div>
       </section>
 
       <section id="selected-work" className={styles.workSection} aria-labelledby="work-title">
@@ -101,7 +106,7 @@ export default function HomeStudio() {
         <div className={styles.container}><p className={styles.eyebrow}>Your next step</p><h2 id="closing-title">Let&apos;s make<br /><span>something useful.</span></h2><p>A better website. More local visibility. Less admin.<br />Tell us what would make a difference to your business.</p><Link href="/contact#send-message" className={styles.primaryButton} data-track="personal_closer_click">Get a fixed quote <span aria-hidden>↗</span></Link><span className={styles.closingNote}>Free first conversation. Clear scope. Your decision.</span></div>
       </section>
 
-      <div className={`${styles.container} ${styles.localLinks}`}><span>Adelaide, and your part of it.</span><Link href="/marion">Marion</Link><Link href="/henley-beach">Henley Beach</Link><Link href="/morphett-vale">Morphett Vale</Link><Link href="/reynella">Reynella</Link><Link href="/seaford">Seaford</Link><Link href="/locations">All service areas ↗</Link></div>
+      <div className={`${styles.container} ${styles.localLinks}`}><span>Adelaide, and your part of it.</span><Link href="/marion">Web design in Marion</Link><Link href="/henley-beach">Henley Beach</Link><Link href="/morphett-vale">Morphett Vale</Link><Link href="/reynella">Reynella</Link><Link href="/seaford">Seaford</Link><Link href="/locations">All service areas ↗</Link></div>
     </div>
   );
 }

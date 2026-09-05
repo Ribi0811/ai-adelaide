@@ -40,7 +40,6 @@ const options = [
 
 export default function ServicePicker() {
   const [active, setActive] = useState(0);
-  const selected = options[active];
   return (
     <div className={styles.servicePicker}>
       <div className={styles.serviceChoices} aria-label="Choose what your business needs">
@@ -55,7 +54,7 @@ export default function ServicePicker() {
         ))}
       </div>
       <div id="service-detail" className={styles.serviceDetail} aria-live="polite" aria-atomic="true">
-        <div key={selected.id} className={styles.detailEntrance}>
+        {options.map((selected, index) => <div key={selected.id} hidden={active !== index} className={styles.detailEntrance}>
           <div className={styles.servicePrice}><span>From <strong>{selected.price}</strong></span><small>{selected.frequency}</small></div>
           <h3>{selected.heading}</h3>
           <p>{selected.description}</p>
@@ -68,7 +67,7 @@ export default function ServicePicker() {
             <Link href={`/contact?service=${selected.id}#send-message`} className={styles.primaryButton} data-track={`home_quote_${selected.id}`}>{selected.cta}<span aria-hidden>↗</span></Link>
             <Link href={selected.href} className={styles.textLink}>See what&apos;s included <span aria-hidden>→</span></Link>
           </div>
-        </div>
+        </div>)}
       </div>
     </div>
   );

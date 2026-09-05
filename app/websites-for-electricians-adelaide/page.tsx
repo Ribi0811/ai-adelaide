@@ -2,130 +2,58 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Websites for Electricians Adelaide | From $699",
+  title: `Websites for Electricians Adelaide | From ${PRICING.website.from}`,
   description:
-    "Electrical websites for Adelaide sparkies. Emergency call buttons, safety compliance info, service area pages, quote forms. Mobile-first, from $699.",
+    `Websites for Adelaide electricians ${PRICING.website.fromLabel}. Mobile design, clear services, licence details and quote forms. Compare scope and get a fixed quote.`,
   alternates: {
     canonical: "/websites-for-electricians-adelaide",
   },
 };
 
 const buildItems = [
-  {
-    title: "Tap-to-call emergency button",
-    body:
-      "Power out, spark spotted, switchboard failing? One tap connects the customer to your phone. Sticky on every page, including suburb landing pages.",
-  },
-  {
-    title: "Service area pages for every suburb",
-    body:
-      "Where there is enough genuine local information, we can add useful service-area pages for priority suburbs. We avoid near-identical pages created only to target a keyword.",
-  },
-  {
-    title: "Safety & compliance credentials",
-    body:
-      "Display your electrical licence number, insurance details, and CEC accreditation (if solar) prominently. Customers trust tradies who show their credentials upfront.",
-  },
-  {
-    title: "Quote forms with job details",
-    body:
-      "Customers describe the job (rewire, switchboard upgrade, fault finding), upload photos, and submit. You get the details in your email before you call back.",
-  },
-  {
-    title: "Mobile-first design",
-    body:
-      "For urgent and on-the-go searches, the mobile page keeps tap-to-call, service details and the quote path clear. We test the finished site across relevant screen sizes.",
-  },
-  {
-    title: "Google-ready local SEO",
-    body:
-      "Relevant title tags, appropriate structured data, useful service-area content and Google Business Profile alignment give search engines clear foundations. Ongoing SEO starts from $399/month; rankings are not guaranteed.",
-  },
+  { title: "A clear call and quote path", body: "Help customers contact you from their phone. Show your actual hours and emergency availability, with tap-to-call and a straightforward enquiry form." },
+  { title: "Services customers can understand", body: "Explain the electrical work you take on, such as switchboards, lighting or fault finding. A Starter site groups services on one page; dedicated service pages are scoped in larger builds." },
+  { title: "Your verified credentials", body: "Display the licence, insurance and current accreditations you supply and approve. Use real team and job photos where available, with permission." },
+  { title: "A useful project brief", body: "Collect contact details, the job type and suburb so you can follow up. Photo uploads, booking tools and connections to job-management software are optional work, quoted before setup." },
+  { title: "Mobile design and a proper handover", body: "We check the call and enquiry steps across phone and desktop layouts. You review the site before launch and receive the agreed access and handover." },
+  { title: "Search foundations with a clear scope", body: `The Starter build includes page titles and descriptions. More service-area content and ongoing local SEO are separate scopes; SEO starts ${PRICING.seo.fromLabel}.` },
 ];
 
 const steps = [
-  {
-    title: "Step 1 — 15-min call",
-    body:
-      "Tell us about your electrical business — domestic, commercial, solar, emergency callouts, your licence details, and your service area.",
-  },
-  {
-    title: "Step 2 — We build",
-    body:
-      "We write the copy, build your service pages, wire up the forms, and add your credentials. You don&apos;t write a word or touch a builder.",
-  },
-  {
-    title: "Step 3 — You review",
-    body:
-      "One review round. Tweak the services, add suburbs, change the phone number. We update it same day.",
-  },
-  {
-    title: "Step 4 — Live",
-    body:
-      "We push it live, set up Google, and hand you the keys. Total time: 48 hours from first call to live site.",
-  },
+  { title: "Step 1 — Agree the brief", body: "Tell us your services, service area, preferred jobs and how customers should contact you. We agree the pages, inclusions, price and delivery plan." },
+  { title: "Step 2 — Build and write", body: "We prepare the design and copy from your brief. You provide or approve your licence details, photos, claims and any account access needed for launch." },
+  { title: "Step 3 — Review together", body: "Check the services, phone number, forms and mobile layout. Revision scope and approval timing are agreed with your quote." },
+  { title: "Step 4 — Launch and hand over", body: "A ready-to-start Starter build can be ready in 48 hours after the brief, content and access are confirmed. Larger builds and integrations follow an agreed schedule; final launch depends on approval and domain setup." },
 ];
 
 const whoItsFor = [
-  "Solo sparkies with no website, relying on word-of-mouth and Hipages",
-  "Electrical businesses with multiple trucks wanting a professional online presence",
-  "Solar installers needing CEC accreditation and product info front and centre",
-  "Emergency electricians wanting 24/7 call capture with the AI receptionist",
-  "Established electricians losing jobs to competitors who rank on Google",
-  "Commercial electricians needing a portfolio and capability statement",
+  "Solo electricians who need a first website and a clear contact path",
+  "Electrical businesses replacing an outdated or hard-to-use site",
+  "Solar and battery installers who need to explain their actual services and credentials",
+  "Emergency electricians who want their real availability easy to find",
+  "Growing crews adding service detail, project photos or quote handling",
+  "Commercial electricians presenting capabilities and completed work",
 ];
 
 const localAdelaide = [
-  "Norwood, Payneham & Campbelltown — established eastern suburbs, reno work common",
-  "Glenelg & Brighton — coastal homes, switchboard upgrades frequent",
-  "Mitcham & Belair — Hills properties, solar + battery enquiries strong",
-  "Modbury & Tea Tree Gully — northern suburbs, family homes, EV charger installs",
-  "Salisbury & Elizabeth — northern growth corridor, new builds + solar",
+  "List the suburbs you actually attend and any travel or callout conditions.",
+  "Separate emergency availability from routine installation and maintenance work.",
+  "Explain whether you take residential, commercial, solar or specialist jobs.",
+  "Use approved job photos and relevant project detail when adding local pages.",
 ];
 
 const faqs = [
-  {
-    question: "Can I have an emergency call button?",
-    answer:
-      "Yes. A sticky tap-to-call button is on every page. When someone&apos;s got a power emergency at 9pm, one tap connects them to your phone (or your AI receptionist if you have one).",
-  },
-  {
-    question: "Can you display my electrical licence?",
-    answer:
-      "Absolutely. We add your licence number, insurance details, and any CEC accreditation (for solar) prominently — usually in the footer and on an &lsquo;About&rsquo; or &lsquo;Credentials&rsquo; section. Customers trust tradies who show their paperwork.",
-  },
-  {
-    question: "What does it cost?",
-    answer:
-      "Websites start from $699 for a complete, custom-built electrical site. One setup fee, then a small monthly for hosting and maintenance. SEO add-on from $399/month. Book a call for a specific quote.",
-  },
-  {
-    question: "Can I show my solar/CEC accreditation?",
-    answer:
-      "Yes. If you do solar work, we add a dedicated solar section with your CEC accreditation, product brands you install (Fronius, Enphase, etc.), and battery options. Helps you rank for &lsquo;solar installer [suburb]&rsquo;.",
-  },
-  {
-    question: "Can you build suburb-specific pages?",
-    answer:
-      "Yes, where there is enough genuine local information and customer value to justify each page. We avoid mass-producing near-identical suburb pages because useful, specific pages are more credible to customers and search engines.",
-  },
-  {
-    question: "Will it rank on Google for electricians in my area?",
-    answer:
-      "The site includes sound search foundations, but no provider controls the result. We assess the target services and suburbs, establish the current baseline and explain what ongoing work is likely to be required.",
-  },
-  {
-    question: "Can customers upload photos of the job?",
-    answer:
-      "Yes. The quote form supports photo uploads — great for fault diagnosis (&lsquo;here&apos;s the switchboard&rsquo;) or for customers to show what they want done. Saves 10-15 minutes per enquiry.",
-  },
-  {
-    question: "How long until I see SEO results?",
-    answer:
-      "The website build can be live in 48 hours once the required details and approvals are ready. SEO timing depends on the starting site, competition, business reputation and Google&apos;s systems, so we do not promise a fixed date.",
-  },
+  { question: "What does the starting price include?", answer: `The ${PRICING.website.tiers[0].price} Starter is a three-page website: Home, Services and Contact, with mobile design, click-to-call, a contact form, basic page titles/descriptions and Google Business Profile setup. Dedicated suburb pages, photo uploads and integrations are not standard Starter inclusions. We confirm the scope before work begins.` },
+  { question: "Can I have an emergency call button?", answer: "Yes. We can make tap-to-call prominent and show your actual emergency availability. It connects to your chosen number; the website does not answer calls or promise a response time on your behalf." },
+  { question: "Can you display my licence and accreditations?", answer: "Yes. We use the current licence, insurance and accreditation details you supply and approve. We can also show your real project photos and the services or equipment you are qualified to work with." },
+  { question: "Do I own the website, and is hosting included?", answer: "A one-off build is yours once paid in full. Domain registration, hosting and optional maintenance are separate and confirmed before work starts. The monthly website plan includes hosting and has different ownership and buy-out terms; the pricing page explains both options." },
+  { question: "Can customers upload photos of a job?", answer: "Photo uploads can be scoped as an additional feature. We agree the file limits, destination and handling of the photos before building it, rather than assuming it is included in the Starter contact form." },
+  { question: "Can you build suburb-specific pages?", answer: "Yes, when there is enough useful, genuine service information for each page. We agree which areas deserve their own page and quote that work separately from the Starter site." },
+  { question: "Will the site rank on Google?", answer: "We build clear service information and sound search foundations, but no provider controls rankings. Ongoing SEO depends on your existing site, competition, business reputation and the services and suburbs you target." },
+  { question: "How long does the build take?", answer: "A Starter build can be ready in 48 hours once the brief, content and access are confirmed. Larger builds, photo uploads and integrations need an agreed schedule. Your review, approvals and domain setup affect the final launch date." },
 ];
 
 export default function WebsitesForElectriciansPage() {
@@ -155,17 +83,22 @@ export default function WebsitesForElectriciansPage() {
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <span className="eyebrow-light">Website Design for Adelaide Electricians</span>
           <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">
-            An Electrical Website That Books Jobs While You&apos;re on the Tools
+            Websites for Adelaide Electricians
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Adelaide customers search &lsquo;electrician near me&rsquo; from their phone — usually during an emergency. If your site is slow, doesn&apos;t have a call button, or doesn&apos;t show your licence and credentials, they call the next sparky. We build electrical websites for Adelaide — fast, mobile-first, with tap-to-call, suburb pages, and quote forms that work 24/7. From $699, live in 48 hours.
+            Show customers what you do, where you work and how to reach you. We build mobile-first electrical websites with clear services, your verified credentials and a straightforward call or quote path. Starter websites from {PRICING.website.from} one-off, with scope agreed before we build.
           </p>
+          <div className="mt-7 flex flex-wrap gap-3">
+            <Link href="/contact?service=website#send-message" className="btn-primary px-7 py-3.5" data-track="quote_electrician_hero">Get an electrical website quote <span aria-hidden>→</span></Link>
+            <Link href="/website-pricing" className="btn-secondary px-7 py-3.5">Compare website packages</Link>
+          </div>
+          <p className="mt-5 max-w-3xl text-sm leading-relaxed text-slate-600">Starter: Home, Services and Contact. Domain and hosting are separate. Ready-to-start Starter builds can be ready in 48 hours; we confirm timing with your brief.</p>
         </div>
       </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">What You Get</h2>
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Build Around the Jobs You Want</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {buildItems.map((item, index) => (
               <div key={item.title} className="panel-light-soft p-5 md:p-6">
@@ -188,7 +121,7 @@ export default function WebsitesForElectriciansPage() {
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">From Brief to Live in 48 Hours</h2>
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">From Brief to a Working Website</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {steps.map((step) => (
               <div key={step.title} className="panel-light-soft p-5 md:p-6">
@@ -228,10 +161,10 @@ export default function WebsitesForElectriciansPage() {
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            Suburbs we build electrical websites for
+            Make Your Service Area Clear
           </h2>
           <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
-            We build electrician and solar websites right across Adelaide. Here are the suburbs we work in most:
+            Whether you cover a few nearby suburbs or a wider Adelaide service area, the site should help customers decide whether their job fits your business:
           </p>
           <ul className="grid gap-3 md:grid-cols-2">
             {localAdelaide.map((item) => (
@@ -273,17 +206,17 @@ export default function WebsitesForElectriciansPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/lost-leads-calculator"
+              href="/website-pricing"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Lost Leads Calculator</span>
+              <span className="font-semibold text-slate-900">Website Packages and Ownership</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/missed-call-text-back-adelaide"
+              href="/seo-for-tradies-adelaide"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">Missed Call Text-Back Adelaide</span>
+              <span className="font-semibold text-slate-900">SEO for Adelaide Tradies</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
           </div>
@@ -319,13 +252,13 @@ export default function WebsitesForElectriciansPage() {
 
       <section className="max-w-container mx-auto px-6 pb-2 pt-12 text-center md:pt-16">
         <div className="panel-light p-8 md:p-10">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready for a Website That Books More Jobs?</h2>
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Ready to Improve Your Electrical Website?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
-            Book a free chat — no obligation. We&apos;ll scope your electrical site, show you examples, and give you a quote on the spot.
+            Tell us about your existing website, electrical services and the jobs you want more of. We&apos;ll recommend a scope and provide a fixed quote before work begins.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact#send-message" className="btn-primary px-8 py-4">
-              Send a Message <span aria-hidden>→</span>
+            <Link href="/contact?service=website#send-message" className="btn-primary px-8 py-4">
+              Get an electrical website quote <span aria-hidden>→</span>
             </Link>
             <Link href="/website-pricing" className="btn-secondary px-8 py-4">
               See Website Pricing

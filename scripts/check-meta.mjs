@@ -53,6 +53,7 @@ const SEO_FROM = pricingValue("seo", "fromLabel");
 function resolveKnownTemplates(value) {
   if (!value) return value;
   return value
+    .replaceAll("${PRICING.website.from}", pricingValue("website", "from"))
     .replaceAll("${PRICING.website.fromLabel}", WEBSITE_FROM)
     .replaceAll("${PRICING.seo.fromLabel}", SEO_FROM)
     .replaceAll("{websiteFrom}", WEBSITE_FROM)

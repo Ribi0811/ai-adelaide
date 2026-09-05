@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   // was 167 chars (want 140-160).
   title: "SEO for Tradies Adelaide",
   description:
-    `SEO for Adelaide tradies: Google Business Profile, useful service-area pages, reviews, content, technical foundations and reporting. ${PRICING.seo.fromLabel}.`,
+    `SEO for Adelaide tradies ${PRICING.seo.fromLabel}. Get a free visibility review, prioritised local search plan and clear monthly progress reporting. No lock-in.`,
   alternates: {
     canonical: "/seo-for-tradies-adelaide",
   },
@@ -27,12 +27,12 @@ const searchBuckets = [
   {
     label: "Comparison searches",
     example: "‘best plumber Adelaide Hills’, ‘electrician reviews Mount Barker’",
-    body: "The searcher is collecting 2-3 options before contacting anyone. Reviews, photos of real jobs, and clear pricing all matter here — this is where a weak Google Business Profile costs you the job before you even get the call.",
+    body: "The customer is comparing providers before contacting anyone. Real job photos, clear services, genuine reviews and accurate availability help them decide whether your business fits.",
   },
   {
     label: "How-to searches",
     example: "‘how to fix a leaking tap’, ‘do I need a sparkie or can I DIY’",
-    body: "Not direct leads, but trust builders. A tradie with the best how-to content in Adelaide wins the comparison searches months later, when the reader finally needs the job done properly.",
+    body: "Useful answers can help customers understand a job and compare their options. We prioritise service and location searches first, then write guides where a real customer question justifies them.",
   },
 ];
 
@@ -43,7 +43,7 @@ const foundations = [
   },
   {
     title: "NAP consistency",
-    body: "Your business name, address, and phone number need to be identical everywhere online — your website, GBP, directories, invoices. Two versions of your name tells Google you're two different businesses.",
+    body: "Keep your business name, contact details and service information accurate across the website, Business Profile and relevant listings. Correct conflicting details so customers can identify and contact the right business.",
   },
   {
     title: "Reviews",
@@ -51,18 +51,18 @@ const foundations = [
   },
   {
     title: "Local citations",
-    body: "List your business — with identical NAP — on Yellow Pages, True Local, hipages, and your industry association (Master Plumbers SA, NECA, HIA). Duplicate or inconsistent listings confuse Google and quietly hurt rankings.",
+    body: "Check relevant local directories, genuine industry memberships and supplier listings. Prioritise accurate, useful listings and real relationships over bulk submissions or paid ranking promises.",
   },
 ];
 
 const onPage = [
   {
     title: "One page per service",
-    body: "A single ‘Services’ page listing everything is not enough. Hot water repairs, blocked drains, and ceiling fan installs each deserve their own page targeting their own search.",
+    body: "Use dedicated pages when services have different customer needs and enough detail to justify them. A smaller business may start with one useful services page and expand from actual search and enquiry evidence.",
   },
   {
-    title: "One page per suburb",
-    body: "If you service multiple Adelaide suburbs, each needs its own page: common jobs in that suburb, response time, and a suburb-specific FAQ. We've built this out across dozens of Adelaide suburbs on our own site — the same structure works for any tradie.",
+    title: "Useful service-area coverage",
+    body: "List the areas you genuinely attend. Create a separate suburb page only when you can add meaningful service information, approved local work or distinct customer needs; changing a suburb name is not enough.",
   },
   {
     title: "Schema markup",
@@ -71,11 +71,11 @@ const onPage = [
 ];
 
 const mistakes = [
-  "One ‘Services’ page trying to cover everything, instead of one page per job type.",
+  "Service pages that do not explain what jobs you accept or how to request a quote.",
   "No repeatable process for requesting genuine reviews after completed jobs.",
-  "Stock photos instead of real job photos — an easy tell that a business isn't really local.",
-  "No schema markup, while the competitor down the road has all three types.",
-  "Buying links, which Google penalises — partnerships and quality content work instead.",
+  "Presenting stock or illustrative images as completed client work.",
+  "Broken contact steps or important service information that search engines cannot access.",
+  "Buying links for ranking manipulation instead of building genuine local relationships.",
   "Setting up Google Business Profile once and never touching it again.",
 ];
 
@@ -83,12 +83,12 @@ const tiers = [
   {
     name: "Local SEO",
     price: PRICING.seo.tiers[0].price,
-    body: "Google Business Profile optimisation, suburb pages, monthly content, technical foundations. The right starting point for a solo tradie or two-person crew.",
+    body: "An agreed monthly scope covering the highest-priority Business Profile, website, content or technical work, with a record of changes and search performance. We recommend priorities from your baseline.",
   },
   {
     name: "Growth SEO",
     price: PRICING.seo.tiers[1].price,
-    body: "Everything in Local SEO plus more content, more suburb pages, and active link building — for a crew ready to actively out-rank established competitors across several suburbs.",
+    body: "A broader agreed scope for additional services, locations, useful content and authority work. Choose it when the opportunities and your capacity to take on work justify the extra effort.",
   },
 ];
 
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: "Is SEO better than Google Ads for tradies?",
     answer:
-      "For most Adelaide tradies the honest answer is: use both. Ads bring leads today; SEO builds leads that keep arriving for years without a per-click cost. We usually recommend starting with both and scaling SEO as it matures.",
+      "It depends on your budget, margins, capacity and current visibility. Ads can buy exposure sooner, but neither channel guarantees enquiries. SEO needs sustained work. We assess the starting point before recommending one channel or a combination.",
   },
   {
     question: "How much should an Adelaide tradie spend on SEO?",
@@ -152,7 +152,7 @@ function ServiceJsonLd() {
       name: "Adelaide",
     },
     description:
-      "Local SEO built specifically for Adelaide tradies — plumbers, electricians, builders, HVAC technicians, landscapers, and painters. Suburb pages, Google Business Profile, schema, and content that ranks.",
+      "Local SEO for Adelaide trade businesses, with Google Business Profile, useful service information, technical improvements and reporting scoped to the current baseline.",
     offers: [
       {
         "@type": "Offer",
@@ -224,7 +224,7 @@ export default function SeoForTradiesAdelaidePage() {
           <div className="mt-8 grid items-start gap-12 lg:grid-cols-[1.2fr_1fr]">
             <div>
               <p className="v3-rise font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">
-                The Tradie SEO Playbook
+                Local SEO for Adelaide trade businesses
               </p>
               <h1
                 className="v3-rise mt-4 max-w-2xl text-[34px] font-semibold leading-[1.08] tracking-[-0.02em] [animation-delay:.12s] [text-wrap:balance] md:text-[48px]"
@@ -233,12 +233,10 @@ export default function SeoForTradiesAdelaidePage() {
                 SEO for Tradies Adelaide: How Plumbers, Electricians &amp; Builders Rank on Google
               </h1>
               <p className="v3-rise mt-6 max-w-xl text-[15px] leading-relaxed text-[#6E6E73] [animation-delay:.24s] md:text-[16px]">
-                Plumbers, electricians, builders, HVAC technicians,
-                landscapers, and painters are all competing for the same
-                searches — and the jobs go to whoever shows up first, not
-                whoever does the best work. This is the exact framework we run
-                for Adelaide tradies: Google Business Profile, suburb pages,
-                schema, content, and the ongoing work that keeps you ranking.
+                Make it easier for customers to find the services you offer in
+                the areas you actually work. Start with a free visibility review;
+                we identify the most useful next steps before recommending a
+                monthly SEO scope. From {PRICING.seo.from}, with no lock-in.
               </p>
               <div className="v3-rise mt-8 flex flex-wrap gap-3 [animation-delay:.36s]">
                 <a
@@ -250,7 +248,7 @@ export default function SeoForTradiesAdelaidePage() {
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
-                  href="/contact#send-message"
+                  href="/contact?service=seo#send-message"
                   className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
                 >
                   Talk to us
@@ -259,8 +257,17 @@ export default function SeoForTradiesAdelaidePage() {
             </div>
             <div className="v3-rise [animation-delay:.3s]">
               <RankLadder />
+              <p className="mt-4 text-xs leading-relaxed text-slate-500">Illustrative search journey. Rankings and enquiry volumes are not guaranteed.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-container px-6 pb-10">
+        <div className="grid gap-6 border-y border-black/10 py-8 md:grid-cols-3">
+          <div><h2 className="text-lg font-semibold">Your starting point</h2><p className="mt-3 text-sm leading-relaxed text-slate-600">Review the website, public Business Profile and priority services. With access, use Search Console to check actual searches and landing pages.</p></div>
+          <div><h2 className="text-lg font-semibold">A practical work plan</h2><p className="mt-3 text-sm leading-relaxed text-slate-600">Agree the services, locations, changes and monthly scope. You approve business claims, photos and public updates before they go live.</p></div>
+          <div><h2 className="text-lg font-semibold">Progress you can check</h2><p className="mt-3 text-sm leading-relaxed text-slate-600">See what changed, how relevant search traffic moved and what enquiries followed. Track qualified, quoted and won work alongside rankings.</p></div>
         </div>
       </section>
 
@@ -285,13 +292,10 @@ export default function SeoForTradiesAdelaidePage() {
                 results page.
               </p>
               <p className="text-[16px] leading-relaxed text-[#424245]">
-                If your business doesn&apos;t show up in the top three for
-                &quot;plumber [suburb]&quot; or &quot;electrician
-                Adelaide&quot;, you&apos;re paying for clicks your competitors
-                get for free. Word of mouth still matters — but in 2026
-                it&apos;s your website and your Google Business Profile that
-                decide whether that word-of-mouth lead becomes your customer or
-                someone else&apos;s.
+                The useful question is which services and suburbs can bring
+                work you want and have capacity to deliver. We compare the
+                current search visibility with enquiries, then prioritise clear
+                service pages, accurate local information and easier contact steps.
               </p>
             </div>
           </Reveal>
@@ -338,8 +342,7 @@ export default function SeoForTradiesAdelaidePage() {
               <Link href="/websites-for-electricians-adelaide" className={linkCls}>
                 electrician website
               </Link>{" "}
-              — and if you work the southern suburbs, we build dedicated pages
-              for areas like{" "}
+              — and our website-design service also supports businesses in{" "}
               <Link href="/marion" className={linkCls}>
                 Marion
               </Link>{" "}
@@ -423,14 +426,11 @@ export default function SeoForTradiesAdelaidePage() {
             </h2>
             <div className="mt-7 space-y-5 text-[15px] leading-relaxed text-[#424245] md:text-[16px]">
               <p>
-                Content is how a newer tradie outranks a competitor who&apos;s
-                been around for twenty years. Blog posts answering real
-                customer questions — &quot;how much does [X] cost in
-                Adelaide&quot;, &quot;how long does [X] take&quot; — build
-                trust and rank for long-tail searches. One well-written
-                2,000-word post beats five 300-word fillers. Pair every service
-                page with 5-10 FAQs; they double as Google &quot;People also
-                ask&quot; candidates and long-tail ranking content.
+                Write for the questions customers actually ask: what you do,
+                where you work, what affects the price and how to get a quote.
+                Use real expertise and approved job examples. A page should be
+                as long as it needs to answer the question; a word-count target
+                or a fixed number of FAQs does not make it more useful.
               </p>
               <p>
                 Links from other sites signal authority. For tradies, the
@@ -644,7 +644,7 @@ export default function SeoForTradiesAdelaidePage() {
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="/contact#send-message"
+                href="/contact?service=seo#send-message"
                 data-track="quote_tradie_cta"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
               >

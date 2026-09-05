@@ -349,12 +349,21 @@
     "customFaqs": [
       {
         "question": "Do you help healthcare practices near Westfield Marion get more patient bookings?",
-      "answer": "Yes. We build healthcare websites for practices around Marion and the southern corridor — with online booking, clear service information, patient enquiry pathways and optional reminder systems. We agree how bookings will be measured before launch rather than promise a fixed result."
+        "answer": "Yes. We build healthcare websites for practices around Marion and the southern corridor — with online booking, clear service information, patient enquiry pathways and optional reminder systems. We agree how bookings will be measured before launch rather than promise a fixed result."
       }
     ],
     "region": "South",
     "seoTitle": "Website Designer Marion — {websiteFromTitle} | AI Adelaide",
-    "seoDescription": "Website designer in Marion, Adelaide. Custom small-business sites {websiteFrom}, live in 48 hours, with local SEO. Also serving Hallett Cove and Morphett Vale."
+    "seoDescription": "Website designer in Marion, Adelaide. Small-business websites {websiteFrom}, with clear services, mobile enquiries and an agreed scope. Get a fixed quote.",
+    "websiteBrief": {
+      "heading": "A clear next step for each Marion customer",
+      "intro": "The right starting point depends on what a customer needs to do. These are examples we can scope around your business, rather than assumed inclusions or local client results.",
+      "items": [
+        "For a practice or appointment business: make services, access details and the existing booking link easy to find.",
+        "For a trade or home-service business: explain jobs accepted, actual service coverage and what to include in a quote request.",
+        "For a shop or professional service: make opening hours, location, services and the right contact person clear."
+      ]
+    }
   },
   {
     "name": "Port Adelaide",
@@ -744,7 +753,16 @@
     ],
     "region": "South",
     "seoTitle": "Web Design Reynella — Websites {websiteFromTitle} | AI Adelaide",
-    "seoDescription": "Web design in Reynella, Adelaide. Custom websites {websiteFrom}, live in 48 hours, plus local SEO to get found. Also serving Morphett Vale and Seaford."
+    "seoDescription": "Web design for Reynella businesses {websiteFrom}. Clear services, mobile quote forms and service-area information. Compare website packages and get a fixed quote.",
+    "websiteBrief": {
+      "heading": "A website that explains the jobs you take on",
+      "intro": "For a Reynella trade or service business, begin with a useful brief: the work you want, the places you attend and how you want customers to make contact.",
+      "items": [
+        "Separate routine quotes from urgent calls and show your real availability.",
+        "Ask for the job type and suburb so a new enquiry contains enough detail for a useful first conversation.",
+        "Keep any existing booking or job-management tool; agree integration work separately after checking what it supports."
+      ]
+    }
   },
   {
     "name": "Aberfoyle Park",
@@ -808,7 +826,16 @@
     ],
     "region": "South",
     "seoTitle": "Website Designer Morphett Vale — {websiteFromTitle} | AI Adelaide",
-    "seoDescription": "Website designer in Morphett Vale, Adelaide. Small-business websites {websiteFrom}, live in 48 hours, with local SEO. Also serving Reynella and Hallett Cove."
+    "seoDescription": "Website designer for Morphett Vale businesses {websiteFrom}. Mobile design, clear services and quote forms. See inclusions, ownership and hosting before you choose.",
+    "websiteBrief": {
+      "heading": "Help customers choose the right service",
+      "intro": "A clear website can answer the practical questions before a customer calls. We choose the content and enquiry path around the services your Morphett Vale business actually provides.",
+      "items": [
+        "For an automotive business: distinguish the services and vehicle types you accept, then make a booking enquiry straightforward.",
+        "For a trade: show approved job photos, relevant credentials and actual service-area limits.",
+        "For a local service business: explain what happens after an enquiry and link to existing appointment tools where appropriate."
+      ]
+    }
   },
   {
     "name": "Campbelltown",

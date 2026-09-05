@@ -12,10 +12,13 @@ import { publishedPosts } from "@/data/posts";
 // Path (relative, no leading site URL) -> ISO date string.
 const PAGE_DATES: Record<string, string> = {
   "/": "2026-09-05",
+  "/marion": "2026-09-05",
+  "/reynella": "2026-09-05",
+  "/morphett-vale": "2026-09-05",
   "/website-pricing": "2026-09-05",
   "/website-design-adelaide": "2026-09-05",
   "/seo": "2026-08-22",
-  "/seo-for-tradies-adelaide": "2026-08-22",
+  "/seo-for-tradies-adelaide": "2026-09-05",
   "/services": "2026-08-22",
   "/contact": "2026-09-05",
   "/audit": "2026-07-16",
@@ -24,7 +27,7 @@ const PAGE_DATES: Record<string, string> = {
   "/websites-for-hairdressers-adelaide": "2026-06-23",
   "/websites-for-cafes-adelaide": "2026-06-23",
   "/websites-for-plumbers-adelaide": "2026-06-22",
-  "/websites-for-electricians-adelaide": "2026-06-23",
+  "/websites-for-electricians-adelaide": "2026-09-05",
   "/websites-for-clinics-adelaide": "2026-06-23",
   "/websites-for-beauty-salons-adelaide": "2026-06-23",
   "/websites-for-retail-shops-adelaide": "2026-06-23",
@@ -455,7 +458,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Suburb routes — dynamic via [suburb] route
   const suburbRoutes: MetadataRoute.Sitemap = suburbs.map((suburb) => ({
     url: `${siteConfig.url}/${suburb.slug}`,
-    lastModified: new Date(SUBURBS_LAST_MODIFIED),
+    lastModified: new Date(PAGE_DATES[`/${suburb.slug}`] ?? SUBURBS_LAST_MODIFIED),
     changeFrequency: "monthly" as const,
     priority: 0.75,
   }));

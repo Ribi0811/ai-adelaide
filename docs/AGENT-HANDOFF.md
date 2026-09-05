@@ -5,6 +5,8 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 
 ## Current state
 
+- **2026-09-05 commercial SEO follow-through:** priority electricians/tradie SEO/Marion/Reynella/Morphett Vale pages improved and locally verified; see `SEO-RELEASE-2026-09-05.md`. Production test email was found in the business inbox and Telegram accepted it; durable storage remains absent and Ivan’s destination choice is pending. Managed GBP audit now confirms Web Designer primary, one review, no service area, and 26 website clicks/one call metric versus 179 direction requests for the displayed Apr–Sep period. No profile settings changed. Release preparation in progress.
+
 - **Current homepage candidate, 2026-09-05:** Ivan rejected the first Studio/Wow iterations after comparing them with the stronger live One Day narrative. The new Business World concept uses original miniature-street artwork and a personalised three-stage customer journey (local search, website, enquiry follow-up), while preserving pricing, metadata, real portfolio/testimonials and quote handoff. See the latest section of `HOMEPAGE-PREVIEW-2026-09-05.md`. Earlier Studio hero bullets are historical. Awaiting Ivan’s visual judgment; local only.
 
 - **2026-09-05 homepage visual-impact pass:** Ivan requested more wow. The Studio hero now has oversized italic-accent typography and a charcoal/teal dimensional showcase with user-controlled switching between the two real portfolio projects; the selected-work and closing sections have stronger presentation. SEO copy/schema, prices and enquiry paths are retained. See the added section in `HOMEPAGE-PREVIEW-2026-09-05.md`. Local only, no push.

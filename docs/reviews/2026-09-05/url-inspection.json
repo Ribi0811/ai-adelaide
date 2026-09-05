@@ -1,0 +1,90 @@
+{
+  "/": {
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-29T02:51:24Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://aiadelaide.com.au/",
+    "userCanonical": "https://aiadelaide.com.au/",
+    "referringUrls": [
+      "https://aiadelaide.com.au/websites-for-plumbers-adelaide",
+      "https://aiadelaide.com.au/audit/report",
+      "https://aibrisbane.com.au/",
+      "https://aihobart.com.au/"
+    ],
+    "crawledAs": "MOBILE"
+  },
+  "/website-design-adelaide": {
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-26T13:18:20Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://aiadelaide.com.au/website-design-adelaide",
+    "userCanonical": "https://aiadelaide.com.au/website-design-adelaide",
+    "sitemap": [
+      "https://aiadelaide.com.au/sitemap.xml"
+    ],
+    "referringUrls": [
+      "https://aiadelaide.com.au/ai-automation-burnside"
+    ],
+    "crawledAs": "MOBILE"
+  },
+  "/local-seo-adelaide": {
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-08-28T23:13:02Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://aiadelaide.com.au/local-seo-adelaide",
+    "userCanonical": "https://aiadelaide.com.au/local-seo-adelaide",
+    "sitemap": [
+      "https://aiadelaide.com.au/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+  },
+  "/seo": {
+    "verdict": "PASS",
+    "coverageState": "Submitted and indexed",
+    "robotsTxtState": "ALLOWED",
+    "indexingState": "INDEXING_ALLOWED",
+    "lastCrawlTime": "2026-07-04T12:30:48Z",
+    "pageFetchState": "SUCCESSFUL",
+    "googleCanonical": "https://aiadelaide.com.au/seo",
+    "userCanonical": "https://aiadelaide.com.au/seo",
+    "sitemap": [
+      "https://aiadelaide.com.au/sitemap.xml"
+    ],
+    "referringUrls": [
+      "https://www.aiadelaide.com.au/sitemap.xml"
+    ],
+    "crawledAs": "MOBILE"
+  },
+  "/ai-receptionist-adelaide": {
+    "verdict": "NEUTRAL",
+    "coverageState": "Discovered \u2013 currently not indexed",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+    "sitemap": [
+      "https://aiadelaide.com.au/sitemap.xml"
+    ],
+    "referringUrls": [
+      "https://aiadelaide.com.au/",
+      "https://aiadelaide.com.au/ai-automation-prospect",
+      "https://aiadelaide.com.au/ai-automation-for-tradies-adelaide"
+    ],
+    "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+  },
+  "/ai-automation-setup-tradies": {
+    "verdict": "NEUTRAL",
+    "coverageState": "URL is unknown to Google",
+    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+    "indexingState": "INDEXING_STATE_UNSPECIFIED",
+    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+  }
+}

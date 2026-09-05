@@ -1,0 +1,4088 @@
+{
+  "sitemapCount": 110,
+  "rows": [
+    {
+      "url": "https://aiadelaide.com.au",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/",
+      "title": "Website Design, SEO & AI Automation Adelaide | AI Adelaide",
+      "h1": [
+        "Your Adelaide business. Open 24 hours."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/website-pricing",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/website-pricing",
+      "title": "Website Pricing Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "Affordable Websites for Adelaide Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/website-pricing"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "Offer",
+        "Offer",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/website-design-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/website-design-adelaide",
+      "title": "Website Design Adelaide | AI Adelaide",
+      "h1": [
+        "Website Design Adelaide for Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/website-design-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/seo",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/seo",
+      "title": "SEO Services Adelaide \u2014 Plans from $399/mo | AI Adelaide",
+      "h1": [
+        "SEO Services Adelaide for More Enquiries"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/seo"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/seo-for-tradies-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/seo-for-tradies-adelaide",
+      "title": "SEO for Tradies Adelaide | AI Adelaide",
+      "h1": [
+        "SEO for Tradies Adelaide: How Plumbers, Electricians & Builders Rank on Google"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/seo-for-tradies-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/services",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/services",
+      "title": "Websites, SEO & AI for Adelaide | AI Adelaide",
+      "h1": [
+        "Websites, SEO & AI Automation for Adelaide Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/services"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "Organization",
+        "City",
+        "Offer",
+        "Service",
+        "Organization",
+        "City",
+        "Offer",
+        "Service",
+        "Organization",
+        "City",
+        "Offer"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/contact",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/contact",
+      "title": "Contact AI Adelaide \u2014 Free Website, SEO & Automation Quote",
+      "h1": [
+        "Send Us a Message"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/contact"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "ContactPage",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/audit",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/audit",
+      "title": "Free AI Audit for Adelaide SMBs | AI Adelaide",
+      "h1": [
+        "Find where you're losing customers online \u2014 in 3 minutes"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/audit"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/website-cost-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/website-cost-adelaide",
+      "title": "Website Cost Adelaide | From $699 (2026 Guide) | AI Adelaide",
+      "h1": [
+        "How Much Does a Website Cost in Adelaide?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/website-cost-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/seo-vs-google-ads-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/seo-vs-google-ads-adelaide",
+      "title": "SEO vs Google Ads Adelaide | 2026 | AI Adelaide",
+      "h1": [
+        "SEO vs Google Ads: Which Is Better for Your Adelaide Business?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/seo-vs-google-ads-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-hairdressers-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-hairdressers-adelaide",
+      "title": "Websites for Hairdressers Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Salon Website That Books Clients While You Work"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-hairdressers-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-cafes-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-cafes-adelaide",
+      "title": "Cafe Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Cafe Website That Brings Customers Through the Door"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-cafes-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-plumbers-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-plumbers-adelaide",
+      "title": "Plumber Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Plumbing Website That Picks Up the Phone While You're on a Job"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-plumbers-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+      "title": "Websites for Electricians Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "An Electrical Website That Books Jobs While You're on the Tools"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-electricians-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-clinics-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-clinics-adelaide",
+      "title": "Websites for Clinics Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Clinic Website That Books Patients 24/7 \u2014 Even When You're Closed"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-clinics-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-beauty-salons-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-beauty-salons-adelaide",
+      "title": "Beauty Salon Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Beauty Salon Website That Books Treatments Around the Clock"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-beauty-salons-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-retail-shops-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-retail-shops-adelaide",
+      "title": "Retail Shop Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Retail Website That Brings Customers Through Your Door"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-retail-shops-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-builders-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-builders-adelaide",
+      "title": "Builder Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Builder's Website That Wins the Quote Before the First Call"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-builders-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-landscapers-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-landscapers-adelaide",
+      "title": "Landscaper Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Landscaping Website That Shows the Work, Not Just Tells It"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-landscapers-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/websites-for-painters-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/websites-for-painters-adelaide",
+      "title": "Painter Website Adelaide | From $699 | AI Adelaide",
+      "h1": [
+        "A Painter's Website That Proves the Finish Before You Quote"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/websites-for-painters-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-automation-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-automation-adelaide",
+      "title": "AI Automation Adelaide | From $199/mo | AI Adelaide",
+      "h1": [
+        "AI Automation Adelaide \u2014 Automate the Admin, Capture Every Lead"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-automation-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-receptionist-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-receptionist-adelaide",
+      "title": "AI Receptionist Adelaide | 24/7 Call Answering & Booking | AI Adelaide",
+      "h1": [
+        "An AI Receptionist That Answers Every Call \u2014 So You Never Miss a Job"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-receptionist-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/virtual-receptionist-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/virtual-receptionist-adelaide",
+      "title": "Virtual Receptionist Adelaide | AI From $199 | AI Adelaide",
+      "h1": [
+        "Virtual Receptionist Adelaide \u2014 AI That Answers Every Call"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/virtual-receptionist-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/answering-service-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/answering-service-adelaide",
+      "title": "Answering Service Adelaide | 24/7 AI Calls | AI Adelaide",
+      "h1": [
+        "AI Answering Service for Adelaide Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/answering-service-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/missed-call-text-back-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/missed-call-text-back-adelaide",
+      "title": "Missed Call Text-Back Adelaide | AI Adelaide",
+      "h1": [
+        "Missed Call Text Back Adelaide \u2014 Reply in 20 Seconds, Win the Job"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/missed-call-text-back-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/quote-chaser-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/quote-chaser-adelaide",
+      "title": "Quote Chaser \u2014 Quote Follow-Up Adelaide | AI Adelaide",
+      "h1": [
+        "Quote Chaser: the follow-up you never have to remember"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/quote-chaser-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/after-hours-answering-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/after-hours-answering-adelaide",
+      "title": "After Hours Answering Adelaide | 24/7 | AI Adelaide",
+      "h1": [
+        "24/7 After Hours Answering for Adelaide Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/after-hours-answering-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/missed-call-answering-service-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/missed-call-answering-service-adelaide",
+      "title": "Missed Call Answering Adelaide | AI From $199 | AI Adelaide",
+      "h1": [
+        "Missed Call Answering Service for Adelaide Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/missed-call-answering-service-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-receptionist-cost-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-receptionist-cost-adelaide",
+      "title": "AI Receptionist Cost Adelaide | 2026 | AI Adelaide",
+      "h1": [
+        "How Much Does an AI Receptionist Cost in Adelaide?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-receptionist-cost-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-automation-vs-hiring-staff-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-automation-vs-hiring-staff-adelaide",
+      "title": "AI Automation vs Hiring Staff Adelaide | Cost | AI Adelaide",
+      "h1": [
+        "AI Automation vs Hiring Staff: The Real Cost for Adelaide Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-automation-vs-hiring-staff-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-receptionist-vs-virtual-receptionist",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-receptionist-vs-virtual-receptionist",
+      "title": "Virtual Receptionist Adelaide: AI vs Human | AI Adelaide",
+      "h1": [
+        "AI Receptionist vs Virtual Receptionist: Which One Actually Works Better for Adelaide Businesses?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-receptionist-vs-virtual-receptionist"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/best-ai-receptionist-australia",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/best-ai-receptionist-australia",
+      "title": "Best AI Receptionist Australia (2026) | AI Adelaide",
+      "h1": [
+        "Best AI Receptionist Australia 2026: An Honest Comparison"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/best-ai-receptionist-australia"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/bookkeeping-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/bookkeeping-adelaide",
+      "title": "AI Bookkeeping Adelaide | From $299/mo | AI Adelaide",
+      "h1": [
+        "AI Bookkeeping Adelaide \u2014 Smarter Than a Bookkeeper, Cheaper Than an Agency"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/bookkeeping-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/tradie-website-bundle",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/tradie-website-bundle",
+      "title": "Tradie Website Bundle Adelaide | AI Adelaide",
+      "h1": [
+        "Tradie Website Bundle Adelaide \u2014 Website, AI Call Capture, Local SEO"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/tradie-website-bundle"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-consulting-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-consulting-adelaide",
+      "title": "AI Consulting Adelaide | No-Bullshit Implementation for SMBs | AI Adelaide",
+      "h1": [
+        "AI Consulting That Actually Ships \u2014 No Strategy Decks, Just Working Systems"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-consulting-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-consulting-brisbane",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-consulting-brisbane",
+      "title": "AI Consulting Brisbane \u2014 Stop Losing Leads While You Sleep | AI Adelaide",
+      "h1": [
+        "AI Consulting Brisbane \u2014 Stop Losing Leads While You Sleep"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-consulting-brisbane"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-consulting-melbourne",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-consulting-melbourne",
+      "title": "AI Consulting Melbourne \u2014 Practical AI for Small Businesses | AI Adelaide",
+      "h1": [
+        "AI Consulting Melbourne \u2014 Practical AI for Melbourne Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-consulting-melbourne"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-office-worker-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-office-worker-adelaide",
+      "title": "AI Office Worker Adelaide | $399/mo | AI Adelaide",
+      "h1": [
+        "AI Office Worker Adelaide \u2014 Your Admin, On Autopilot"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-office-worker-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-marketing-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-marketing-adelaide",
+      "title": "AI Marketing Adelaide | From $399/mo | AI Adelaide",
+      "h1": [
+        "AI Marketing That Actually Moves the Needle for Adelaide Small Businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-marketing-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/locations",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/locations",
+      "title": "Adelaide Locations | Web Design, SEO & AI | AI Adelaide",
+      "h1": [
+        "Websites, SEO & AI Automation Across Adelaide"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/locations"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "CollectionPage",
+        "ItemList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/local-seo-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/local-seo-adelaide",
+      "title": "Local SEO Adelaide \u2014 Get Found on Google | AI Adelaide",
+      "h1": [
+        "Local SEO Adelaide \u2014 Get Found by Adelaide Customers"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/local-seo-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/automotive-seo-services",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/automotive-seo-services",
+      "title": "Automotive SEO Services Adelaide | AI Adelaide",
+      "h1": [
+        "Automotive SEO Services \u2014 Rank Your Auto Business in Adelaide"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/automotive-seo-services"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/hotel-seo-services",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/hotel-seo-services",
+      "title": "Hotel SEO Services Adelaide | AI Adelaide",
+      "h1": [
+        "Hotel SEO Services \u2014 Get Direct Bookings from Google"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/hotel-seo-services"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-seo-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-seo-adelaide",
+      "title": "AI SEO Adelaide \u2014 AI Search Visibility | AI Adelaide",
+      "h1": [
+        "AI SEO Adelaide \u2014 Build Visibility Across Google and AI Search"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-seo-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/aged-care-seo-services",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/aged-care-seo-services",
+      "title": "Aged Care SEO Services Adelaide | AI Adelaide",
+      "h1": [
+        "Aged Care SEO Services \u2014 Be Found When Families Search"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/aged-care-seo-services"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ndis-provider-marketing-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ndis-provider-marketing-adelaide",
+      "title": "NDIS Provider Websites & SEO Adelaide | AI Adelaide",
+      "h1": [
+        "Help the participants who need your NDIS service actually find it"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ndis-provider-marketing-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-app-development-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-app-development-adelaide",
+      "title": "AI Development Company & AI Apps Adelaide | AI Adelaide",
+      "h1": [
+        "AI App Development Adelaide \u2014 Custom AI for Your Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-app-development-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/google-business-profile-optimisation-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/google-business-profile-optimisation-adelaide",
+      "title": "Google Business Profile Adelaide | Local SEO | AI Adelaide",
+      "h1": [
+        "Google Business Profile Optimisation Adelaide \u2014 Show Up in the Local 3-Pack"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/google-business-profile-optimisation-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Service",
+        "City",
+        "Offer",
+        "UnitPriceSpecification",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/about",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/about",
+      "title": "About AI Adelaide \u2014 Websites, SEO & AI Automation",
+      "h1": [
+        "We're the Adelaide team building websites, SEO & AI automation for local businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/about"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "AboutPage",
+        "Organization",
+        "Person",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/faq",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/faq",
+      "title": "FAQ \u2014 Websites, SEO & AI Automation Questions Answered",
+      "h1": [
+        "Common Questions, Straight Answers"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/faq"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/testimonials",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/testimonials",
+      "title": "Website Portfolio & Verified Work | AI Adelaide",
+      "h1": [
+        "Live website examples and honest proof"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/testimonials"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/lost-leads-calculator",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/lost-leads-calculator",
+      "title": "Missed Call Calculator \u2014 What Are You Losing? | AI Adelaide",
+      "h1": [
+        "How Much Are Missed Calls Costing You?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/lost-leads-calculator"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/tools/ai-readiness-calculator",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/tools/ai-readiness-calculator",
+      "title": "Free AI Readiness Calculator | AI Adelaide",
+      "h1": [
+        "Find out how ready your business really is for AI."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/tools/ai-readiness-calculator"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/privacy-policy",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/privacy-policy",
+      "title": "Privacy Policy | AI Adelaide",
+      "h1": [
+        "Privacy Policy"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/privacy-policy"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/terms",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/terms",
+      "title": "Terms of Service | AI Adelaide",
+      "h1": [
+        "Terms of Service"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/terms"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/cookie-policy",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/cookie-policy",
+      "title": "Cookie Policy | AI Adelaide",
+      "h1": [
+        "Cookie Policy"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/cookie-policy"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/norwood",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/norwood",
+      "title": "Norwood Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & AI automation for businesses on The Parade."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/norwood"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/glenelg",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/glenelg",
+      "title": "Glenelg Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Glenelg's tourism and hospitality scene."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/glenelg"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/unley",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/unley",
+      "title": "Unley Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for King William Road professionals."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/unley"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/prospect",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/prospect",
+      "title": "Prospect Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Prospect's growing business scene."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/prospect"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/burnside",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/burnside",
+      "title": "Burnside Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Premium websites, SEO & automation for Burnside's high-end market."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/burnside"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/walkerville",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/walkerville",
+      "title": "Walkerville Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Walkerville's boutique professionals."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/walkerville"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/hindmarsh",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/hindmarsh",
+      "title": "Hindmarsh Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Hindmarsh's industrial contractors."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/hindmarsh"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/mawson-lakes",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/mawson-lakes",
+      "title": "Mawson Lakes Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Mawson Lakes' tech-forward businesses."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/mawson-lakes"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/modbury",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/modbury",
+      "title": "Modbury Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Modbury's busy northern tradies."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/modbury"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/marion",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/marion",
+      "title": "Website Designer Marion \u2014 From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Marion for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/marion"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/port-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/port-adelaide",
+      "title": "Port Adelaide Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Port Adelaide's creative boom."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/port-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/mount-barker",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/mount-barker",
+      "title": "Mount Barker Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Mount Barker's growth boom."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/mount-barker"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/mitcham",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/mitcham",
+      "title": "Mitcham Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Mitcham's family-focused businesses."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/mitcham"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/north-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/north-adelaide",
+      "title": "North Adelaide Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for North Adelaide's heritage strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/north-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/henley-beach",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/henley-beach",
+      "title": "Website Designer Henley Beach \u2014 From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Henley Beach for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/henley-beach"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/magill",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/magill",
+      "title": "Magill Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Magill's education and family scene."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/magill"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/salisbury",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/salisbury",
+      "title": "Salisbury Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Salisbury's northern commercial hub."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/salisbury"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/elizabeth",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/elizabeth",
+      "title": "Elizabeth Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Elizabeth's working northern families."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/elizabeth"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/stirling",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/stirling",
+      "title": "Stirling Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Stirling's premium Hills market."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/stirling"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/hallett-cove",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/hallett-cove",
+      "title": "Hallett Cove Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Hallett Cove's established coastal families."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/hallett-cove"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/reynella",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/reynella",
+      "title": "Web Design Reynella \u2014 Websites From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Reynella for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/reynella"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/aberfoyle-park",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/aberfoyle-park",
+      "title": "Aberfoyle Park Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Aberfoyle Park's established Hills families."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/aberfoyle-park"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/morphett-vale",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/morphett-vale",
+      "title": "Website Designer Morphett Vale \u2014 From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Morphett Vale for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/morphett-vale"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/campbelltown",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/campbelltown",
+      "title": "Campbelltown Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Campbelltown's eastern linear strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/campbelltown"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/payneham",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/payneham",
+      "title": "Payneham Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Payneham's Portrush Road strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/payneham"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/hahndorf",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/hahndorf",
+      "title": "Hahndorf Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Hahndorf's tourism and premium food scene."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/hahndorf"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/seaford",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/seaford",
+      "title": "Website Designer Seaford \u2014 From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Seaford for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/seaford"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/west-beach",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/west-beach",
+      "title": "West Beach Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for West Beach's coastal family strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/west-beach"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/findon",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/findon",
+      "title": "Findon Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Findon's western commercial strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/findon"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/crafers",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/crafers",
+      "title": "Crafers Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Crafers' Hills tourism gateway."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/crafers"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/stepney",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/stepney",
+      "title": "Stepney Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Stepney's inner east commercial strip."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/stepney"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/kent-town",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/kent-town",
+      "title": "Kent Town Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Kent Town's tech and creative corridor."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/kent-town"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/moana",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/moana",
+      "title": "Website Designer Moana \u2014 From $699 | AI Adelaide",
+      "h1": [
+        "Website Designer Moana for Local Business"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/moana"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/newton",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/newton",
+      "title": "Newton Web Design, SEO & AI Automation | AI Adelaide",
+      "h1": [
+        "Websites, SEO & automation for Newton's established eastern families."
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/newton"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Service",
+        "AdministrativeArea",
+        "WebPage",
+        "Organization",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog",
+      "title": "AI Adelaide Blog \u2014 Websites, SEO & AI Automation Tips",
+      "h1": [
+        "Practical insights for Adelaide small businesses"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/how-much-does-seo-cost-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/how-much-does-seo-cost-adelaide",
+      "title": "How Much Does SEO Cost in Adelaide? (2026) | AI Adelaide",
+      "h1": [
+        "How Much Does SEO Cost in Adelaide? (2026)"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/how-much-does-seo-cost-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/do-i-need-a-website-if-i-have-facebook-instagram",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/do-i-need-a-website-if-i-have-facebook-instagram",
+      "title": "Do You Need a Website If You Have Facebook? | AI Adelaide",
+      "h1": [
+        "Do You Need a Website If You Have Facebook?"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/do-i-need-a-website-if-i-have-facebook-instagram"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/adelaide-hills-ai-automation",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/adelaide-hills-ai-automation",
+      "title": "AI Automation for Adelaide Hills | AI Adelaide",
+      "h1": [
+        "AI Automation for Adelaide Hills"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/adelaide-hills-ai-automation"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/5-signs-ready-for-ai-automation",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/5-signs-ready-for-ai-automation",
+      "title": "5 Signs You Need AI Automation | AI Adelaide",
+      "h1": [
+        "5 Signs You Need AI Automation"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/5-signs-ready-for-ai-automation"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/admin-tasks-killing-adelaide-tradies",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/admin-tasks-killing-adelaide-tradies",
+      "title": "Stop Admin Killing Your Trade Biz | AI Adelaide",
+      "h1": [
+        "Stop Admin Killing Your Trade Biz"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/admin-tasks-killing-adelaide-tradies"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-for-plumbers-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-for-plumbers-adelaide",
+      "title": "AI for Adelaide Plumbers | AI Adelaide",
+      "h1": [
+        "AI for Adelaide Plumbers"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-for-plumbers-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-for-electricians-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-for-electricians-adelaide",
+      "title": "AI for Adelaide Electricians | AI Adelaide",
+      "h1": [
+        "AI for Adelaide Electricians"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-for-electricians-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-for-physiotherapists-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-for-physiotherapists-adelaide",
+      "title": "AI for Adelaide Physio Clinics | AI Adelaide",
+      "h1": [
+        "AI for Adelaide Physio Clinics"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-for-physiotherapists-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-for-builders-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-for-builders-adelaide",
+      "title": "AI for Builders Adelaide: Stop Losing Jobs | AI Adelaide",
+      "h1": [
+        "AI for Builders Adelaide: Stop Losing Jobs"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-for-builders-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-for-hvac-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-for-hvac-adelaide",
+      "title": "AI for Adelaide HVAC Techs | AI Adelaide",
+      "h1": [
+        "AI for Adelaide HVAC Techs"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-for-hvac-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/how-much-does-website-cost-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/how-much-does-website-cost-adelaide",
+      "title": "Website Cost Adelaide (2026) | AI Adelaide",
+      "h1": [
+        "Website Cost Adelaide (2026)"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/how-much-does-website-cost-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/cheap-website-design-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/cheap-website-design-adelaide",
+      "title": "Cheap Website Design Adelaide: What $699 Buys | AI Adelaide",
+      "h1": [
+        "Cheap Website Design Adelaide: What $699 Buys"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/cheap-website-design-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/best-website-builder-adelaide-small-business",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/best-website-builder-adelaide-small-business",
+      "title": "Best Website Builder Adelaide 2026 | AI Adelaide",
+      "h1": [
+        "Best Website Builder Adelaide 2026"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/best-website-builder-adelaide-small-business"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/local-seo-adelaide-small-business-guide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/local-seo-adelaide-small-business-guide",
+      "title": "Adelaide Local SEO Guide | AI Adelaide",
+      "h1": [
+        "Adelaide Local SEO Guide"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/local-seo-adelaide-small-business-guide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/seo-vs-google-ads-adelaide-small-business",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/seo-vs-google-ads-adelaide-small-business",
+      "title": "SEO vs Google Ads: Adelaide SMB | AI Adelaide",
+      "h1": [
+        "SEO vs Google Ads: Adelaide SMB"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/seo-vs-google-ads-adelaide-small-business"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/website-design-for-hairdressers-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/website-design-for-hairdressers-adelaide",
+      "title": "Websites for Adelaide Salons | AI Adelaide",
+      "h1": [
+        "Websites for Adelaide Salons"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/website-design-for-hairdressers-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/adelaide-cafe-website-guide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/adelaide-cafe-website-guide",
+      "title": "Adelaide Caf\u00e9 Website Guide | AI Adelaide",
+      "h1": [
+        "Adelaide Caf\u00e9 Website Guide"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/adelaide-cafe-website-guide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/ai-automation-for-adelaide-retail-shops",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/ai-automation-for-adelaide-retail-shops",
+      "title": "AI Automation for Adelaide Retail | AI Adelaide",
+      "h1": [
+        "AI Automation for Adelaide Retail"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/ai-automation-for-adelaide-retail-shops"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/blog/google-business-profile-adelaide-guide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/blog/google-business-profile-adelaide-guide",
+      "title": "GBP Adelaide: 2026 Setup Guide | AI Adelaide",
+      "h1": [
+        "GBP Adelaide: 2026 Setup Guide"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/blog/google-business-profile-adelaide-guide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "Article",
+        "Organization",
+        "Organization",
+        "ImageObject",
+        "WebPage",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-automation-setup-tradies",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-automation-setup-tradies",
+      "title": "AI Automation Setup for Adelaide Tradies | Plumbers, Sparkies, Builders | AI Adelaide",
+      "h1": [
+        "AI Automation Setup \u2014 Miss Fewer Calls, Win More Jobs"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-automation-setup-tradies"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-consulting-small-business-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-consulting-small-business-adelaide",
+      "title": "AI Consulting for Small Business Adelaide | No-Bullshit Implementation | AI Adelaide",
+      "h1": [
+        "AI Consulting That Actually Ships \u2014 Not Just Strategy Decks"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-consulting-small-business-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    },
+    {
+      "url": "https://aiadelaide.com.au/ai-for-sole-traders-adelaide",
+      "status": 200,
+      "finalUrl": "https://aiadelaide.com.au/ai-for-sole-traders-adelaide",
+      "title": "AI for Sole Traders Adelaide | Automation for One-Person Businesses | AI Adelaide",
+      "h1": [
+        "You're the Plumber, the Receptionist, the Bookkeeper \u2014 AI Handles Two of Three"
+      ],
+      "canonical": [
+        "https://aiadelaide.com.au/ai-for-sole-traders-adelaide"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem"
+      ]
+    }
+  ],
+  "robots": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /_next/\n\nHost: https://aiadelaide.com.au\nSitemap: https://aiadelaide.com.au/sitemap.xml\n",
+  "newPagesMissingFromSitemap": [
+    "https://aiadelaide.com.au/ai-automation-setup-tradies",
+    "https://aiadelaide.com.au/ai-consulting-small-business-adelaide",
+    "https://aiadelaide.com.au/ai-for-sole-traders-adelaide"
+  ]
+}

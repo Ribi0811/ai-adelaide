@@ -2,7 +2,7 @@
 
 **Decision: the redesigned homepage has a sound foundation after the fixes below, but the site is not yet fully optimised or commercially validated.** The shortest credible SEO route is to improve existing electrician, tradie SEO and southern-suburb pages that already earn relevant impressions. Creating another batch of keyword pages is a weaker use of time.
 
-All implementation in this audit is **local only**, on `codex/customer-first-homepage`. Nothing was pushed, deployed or submitted for indexing. Search Console describes the existing live site, not the new preview. The preview cannot improve Google rankings until it is approved, deployed and recrawled.
+Release update: these fixes and the accepted Business World homepage were deployed on 5 September from `fc1c295`, followed by canonical-host checks and sitemap submission. See `SEO-RELEASE-2026-09-05.md`. The audit and Search Console baseline below were collected before release; they do not establish post-release ranking gains.
 
 ## What was checked
 

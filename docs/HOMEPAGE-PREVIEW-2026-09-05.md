@@ -1,6 +1,6 @@
-# Customer-first homepage — local review, 5 September 2026
+# Customer-first homepage — design record, 5 September 2026
 
-Status: current candidate is the Business World concept described below; earlier Studio hero iterations are superseded. Implemented on `codex/customer-first-homepage`; local review only. No push, deployment, campaign changes or outreach. The previous homepage remains recoverable in git and its `components/home-day/` files remain available.
+Status: the Business World concept below was accepted and deployed on 5 September from `fc1c295`. See `SEO-RELEASE-2026-09-05.md` for canonical-host verification and real browser-to-inbox delivery. Earlier Studio/Wow iterations and local-only test statements below are historical. No git push, campaign change or customer outreach was performed. The previous homepage remains recoverable in git.
 
 ## Original Studio pass (superseded hero)
 

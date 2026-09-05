@@ -10,7 +10,7 @@
 - Positioning: sell outcomes; AI is the *reason* for the speed/price, never the product label
 - BDM lead pool: ~1,169 leads (saturating — inbound SEO is the replacement strategy)
 - Twilio number: 08 7100 9788 (Retell AI voice receptionist — it really answers; we market that)
-- Homepage in this branch = customer-first Studio preview (`components/home-studio/`), local review only as of 2026-09-05. Live remains the earlier One Day design until Ivan approves and pushes. See `docs/HOMEPAGE-PREVIEW-2026-09-05.md`.
+- Current production homepage = Business World (`components/home-studio/`), approved and deployed 2026-09-05 by Vercel CLI from `fc1c295`. Canonical-host browser and enquiry delivery checks passed. See `docs/SEO-RELEASE-2026-09-05.md`; no git push was performed.
 
 ## Standing Orders
 - Show on localhost before any Vercel deploy

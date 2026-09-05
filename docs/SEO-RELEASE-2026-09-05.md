@@ -1,6 +1,6 @@
 # Commercial SEO follow-through — 5 September 2026
 
-Status: landing-page changes built and checked locally; production release being prepared. Ivan accepted the recommendation to improve priority pages, verify enquiries, release the changes and review Google Business Profile. The new Business World homepage is retained. No git push, customer outreach, campaign change or Business Profile edit is included.
+Status: approved changes deployed and verified on `https://aiadelaide.com.au`. Source commit: `fc1c29527afb70267011c0eff39c184b84f14bbe`, branch `codex/customer-first-homepage`. Vercel production deployment `dpl_9UrXyza4hpxDhiuS6CLau35Pt4ee` is Ready and aliased to the canonical domain. Deployment used an archive of the committed source through the existing project, with no local environment files. Ivan accepted the recommendation to improve priority pages, verify enquiries, release changes and review Google Business Profile. Durable lead-storage selection remains pending. No git push, customer outreach, campaign change or Business Profile edit was performed.
 
 ## Priority pages
 
@@ -16,13 +16,19 @@ Production build, TypeScript and targeted lint pass. All 97 internal-link destin
 
 Initial HTML on the homepage and five priority pages returns 200, one H1, the expected canonical, one layout-owned LocalBusiness and one FAQPage. Homepage metadata and identity are unchanged by this pass. Browser checks cover desktop electrician presentation, all five priority pages at 390px with no horizontal overflow, the tradie review form and the Marion quote link opening Contact with website selected. Evidence: `reviews/2026-09-05/seo-release/`.
 
-Core Web Vitals remain unmeasured; the earlier PageSpeed request returned 429. These checks do not prove ranking or conversion gains.
+Post-release checks on the canonical host confirm the new homepage and all five priority pages return 200 with one H1, expected canonical, one LocalBusiness and one FAQPage. All 23 sampled script, stylesheet and image assets return 200 and are allowed to Googlebot; the earlier `/_next/` robots block is removed. All five edited landing-page sitemap dates are 5 September. The desktop homepage and 390px Marion page were visually checked; Marion had no horizontal overflow. The quote link preselected website in the live contact form. Screenshots and HTTP results are saved in the evidence directory.
+
+Core Web Vitals remain unmeasured: the earlier PageSpeed request returned 429, and the authenticated Search Console overview showed no mobile or desktop CWV data. These checks do not prove ranking or conversion gains. The production install also reported 15 dependency vulnerabilities; dependency remediation was not included in this content release and needs a separate triage before any upgrade.
 
 ## Real enquiry delivery
 
 A clearly labelled internal test (`AIA-SEO-20260905-01`) was submitted to the existing production contact endpoint. It returned HTTP 200, Telegram accepted the notification, and SMTP accepted the email. A read-only IMAP check found the matching message in the business inbox and confirmed its test marker. No customer was contacted. Exclude this test from commercial reporting.
 
-The response explicitly reported `persisted: false`. Production contact/audit routes still rely on notifications and cannot use the deployment filesystem as a durable lead database. No CRM/database/Sheet configuration was present in the production environment listing. A private Google Sheet is recommended as a simple initial record; Ivan's destination choice is pending. No database or paid service was created, and no customer records were copied.
+A second clearly labelled test (`AIA-SEO-20260905-02`) followed the live Marion quote link at 390px, submitted the real Contact form and displayed the success state. Read-only IMAP found exactly one matching message in the business inbox, dated 5 September 13:46:50 UTC, with the test marker verified. This confirms the browser-to-inbox path on the new release. Both synthetic tests must be excluded from commercial reporting.
+
+The first API response explicitly reported `persisted: false`. Production contact/audit routes still rely on notifications and cannot use the deployment filesystem as a durable lead database. No CRM/database/Sheet configuration was present in the production environment listing. A private Google Sheet is recommended as a simple initial record; Ivan's destination choice is pending. No database or paid service was created, and no customer records were copied.
+
+The general Contact page still carries an existing two-business-hour response promise; its operational basis remains unverified. Confirm the service standard or revise that copy in the next focused conversion pass.
 
 Recommended record fields: lead ID, enquiry date, requested service, business/contact details, enquiry, source, consented attribution, stage (new/qualified/quoted/won/lost), next action/date, quote value, won value, recurring fee and outcome notes. Use the same ID in notifications and the record. A live write/read-back test is required after connecting the selected destination.
 
@@ -49,6 +55,7 @@ The selected period is April–September 2026 as displayed on 5 September. Septe
 | Direction requests | 179 |
 | Website clicks | 26 |
 | Calls metric | 1 |
+| Bookings metric | 0 |
 
 Monthly interaction totals: April 56, May 25, June 42, July 45, August 38, September 0 at inspection. August comprises 34 direction requests, four website clicks and zero recorded calls. A call action or direction request is not a verified enquiry or completed visit.
 
@@ -60,8 +67,8 @@ Suggested review-request wording, prepared only for a real completed client: “
 
 ## Release and follow-up
 
-Pre-release production rollback target verified in Vercel: `dpl_3bANipgayrvwSXX4DGcTXw2J7737`, `https://ai-adelaide-ccxi5notq-ivans-projects-9bc72bf6.vercel.app`, created 30 August 2026, Ready. Release should use the existing `ai-adelaide` project. A deployment must be checked at the canonical host for the homepage, changed pages, assets/robots, schema and real enquiry flow before calling it live-verified.
+Pre-release production rollback target verified in Vercel: `dpl_3bANipgayrvwSXX4DGcTXw2J7737`, `https://ai-adelaide-ccxi5notq-ivans-projects-9bc72bf6.vercel.app`, created 30 August 2026, Ready. Released through the existing `ai-adelaide` project at `https://ai-adelaide-c89ee5p0i-ivans-projects-9bc72bf6.vercel.app`, aliased to `https://aiadelaide.com.au`. Canonical-host and real enquiry checks are recorded above. Subsequent documentation-only commits are not the deployed application source.
 
-After release, submit the sitemap and request indexing for the changed priority pages where supported. Repeated indexing requests do not accelerate crawling. Use early checks for crawl/delivery health, then compare equal final-data commercial search windows and qualified enquiries. No ranking date or sales uplift is promised.
+The Search Console API accepted the sitemap submission at 13:46:38 UTC. Read-back showed `isPending: true`, zero errors and warnings; `lastDownloaded` still referred to the earlier 05:06 crawl. This confirms acceptance, not processing of the new 113-URL sitemap. The returned 110 submitted URLs belong to that earlier read, and the returned zero indexed field is not a valid sitewide index count. The owner interface reported all five priority URLs already on Google and accepted one fresh indexing request for each after release: electricians, tradie SEO, Marion, Reynella and Morphett Vale. Each displayed “Indexing requested” and confirmed addition to the priority crawl queue. This is not confirmation that Google has replaced its indexed copy. Evidence: `reviews/2026-09-05/seo-release/google-recrawl-requests.json`. Repeated indexing requests do not accelerate crawling. Use early checks for crawl/delivery health, then compare equal final-data commercial search windows and qualified enquiries. No ranking date or sales uplift is promised.
 
 Sources: [Google helpful-content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content), [Google local-ranking guidance](https://support.google.com/business/answer/7091?hl=en), [Google recrawl guidance](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl). Actual profile settings and performance above were read in the owner interface on 5 September 2026.

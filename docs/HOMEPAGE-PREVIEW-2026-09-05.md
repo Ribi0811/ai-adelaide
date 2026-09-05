@@ -49,3 +49,11 @@ Before declaring lead capture production-ready, connect and verify durable stora
 ## SEO audit follow-up
 
 [`SEO-PREVIEW-AUDIT-2026-09-05.md`](./SEO-PREVIEW-AUDIT-2026-09-05.md) records the full 113-page local crawl and current Search Console opportunities. Local fixes allow Next.js assets in robots.txt, server-render business schema and all service-selector descriptions, and add relevant commercial internal links. The visual design and personal-name privacy preference are preserved. For phone review on the same Wi-Fi, the current server binds `0.0.0.0` and is available at <http://192.168.68.106:3000>; the address can change with the network.
+
+## More expressive homepage pass, 5 September
+
+At Ivan's request for more visual impact, the hero now uses larger Manrope typography with same-family italic emphasis, a charcoal/teal dimensional project frame, and explicit buttons to choose between CarHire.global and 365CarHire. Both screenshots and their outbound links are genuine portfolio records. The showcase has no autoplay; selection is available through normal keyboard-accessible buttons. Short entrance, selection and hover transitions respect reduced motion. Selected-work image spacing and the closing section's composition have also been strengthened.
+
+This is a focused evolution of the established light/teal design, using its permitted single dark moment. Real portfolio assets are retained. Pricing, public-name privacy, route structure, metadata, FAQ answers, schema and all enquiry/service paths are preserved. The previous version is recoverable at commit `3d57b0b`. No new animation dependencies or remote visual assets were added.
+
+Validation: production build, TypeScript, targeted lint, internal links, responsive browser inspection and project-selection checks. Final browser evidence is under `reviews/2026-09-05/homepage-wow/`. The existing frozen receptionist-title metadata exception still applies. These are local functional and visual checks, not measured Core Web Vitals or evidence of improved conversion.

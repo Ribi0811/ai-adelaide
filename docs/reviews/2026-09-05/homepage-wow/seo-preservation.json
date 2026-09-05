@@ -1,0 +1,12 @@
+{
+  "title": true,
+  "meta": true,
+  "canonical": true,
+  "h1": true,
+  "serverJsonLd": true,
+  "http200": true,
+  "heroImagePriority": true,
+  "allImagesHaveAlt": true,
+  "keyInternalLinksRetained": true,
+  "noPersonalName": true
+}

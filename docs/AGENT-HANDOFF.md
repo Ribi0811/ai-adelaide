@@ -5,6 +5,8 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 
 ## Current state
 
+- **2026-09-05 homepage visual-impact pass:** Ivan requested more wow. The Studio hero now has oversized italic-accent typography and a charcoal/teal dimensional showcase with user-controlled switching between the two real portfolio projects; the selected-work and closing sections have stronger presentation. SEO copy/schema, prices and enquiry paths are retained. See the added section in `HOMEPAGE-PREVIEW-2026-09-05.md`. Local only, no push.
+
 - **2026-09-05 local SEO audit:** [`SEO-PREVIEW-AUDIT-2026-09-05.md`](./SEO-PREVIEW-AUDIT-2026-09-05.md) and source evidence cover 113 local sitemap URLs, 25 AU query/page opportunities and seven live indexed samples. Fixed robots blocking `/_next/`, rendered layout LocalBusiness and all service-selector panels in server HTML, added homepage commercial links and linked the small-business consulting orphan. All local sitemap pages pass basic crawl checks. AU final clicks are 15 versus 30 in equal 28-day windows through 2 Sep; no uplift claim. Prioritise electricians, tradie SEO and southern suburbs; remaining landing-page 48-hour scope cleanup, genuine proof, durable lead storage/delivery and owner GBP audit are open. PageSpeed returned 429, so CWV remain unverified. No push or indexing submission.
 
 - **Privacy preference, 2026-09-05:** Ivan does not want his personal name displayed on the site yet. The local preview uses AI Adelaide, “we” and “small Adelaide business”; no invented staff count. Homepage identity, About copy/metadata/schema and footer links have been updated. Do not restore founder-name promotion without his instruction.

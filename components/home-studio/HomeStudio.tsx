@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PRICING, testimonials } from "@/lib/constants";
 import { selectedWork } from "@/lib/portfolio";
 import ServicePicker from "./ServicePicker";
+import WorkShowcase from "./WorkShowcase";
 import styles from "./studio.module.css";
 
 const faqs = [
@@ -28,17 +29,7 @@ export default function HomeStudio() {
             <a href="#selected-work" className={styles.textLink} data-track="home_view_work">See our work <span aria-hidden>↓</span></a>
           </div>
         </div>
-        <div className={styles.heroVisual}>
-          <div className={styles.heroCanvas}>
-            <div className={styles.canvasGrid} aria-hidden />
-            <div className={styles.canvasWord} aria-hidden>Made<br />to work.</div>
-            <a href="#selected-work" className={styles.heroProject} aria-label="Explore our work on CarHire.global" data-track="home_featured_work">
-              <div className={styles.browserBar}><span aria-hidden>↗</span><span>carhire.global</span><span>Selected work</span></div>
-              <Image src={selectedWork[0].screenshotSrc} alt={selectedWork[0].screenshotAlt} width={1440} height={900} priority sizes="(max-width: 760px) 90vw, 50vw" />
-            </a>
-          </div>
-            <div className={styles.projectCaption}><span>Real work. Live on the web.</span><a href={selectedWork[0].url} target="_blank" rel="noopener noreferrer" aria-label="Visit CarHire.global in a new tab">Visit the site ↗</a></div>
-        </div>
+        <WorkShowcase />
       </section>
 
       <div className={`${styles.container} ${styles.priceStrip}`} aria-label="Starting prices">

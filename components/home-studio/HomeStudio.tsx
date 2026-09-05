@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PRICING, testimonials } from "@/lib/constants";
 import { selectedWork } from "@/lib/portfolio";
-import ServicePicker from "./ServicePicker";
-import WorkShowcase from "./WorkShowcase";
+import BusinessWorld from "./BusinessWorld";
 import styles from "./studio.module.css";
 
 const faqs = [
@@ -19,28 +18,17 @@ const quotes = [testimonials[3], testimonials[2]];
 export default function HomeStudio() {
   return (
     <div className={styles.studio}>
-      <section className={`${styles.container} ${styles.hero}`} aria-labelledby="home-title">
-        <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>Adelaide websites, SEO &amp; AI automation</p>
-          <h1 id="home-title">Websites that<br /><span>mean business.</span></h1>
-          <p className={styles.heroDescription}>Website design, local SEO and practical automation for Adelaide small businesses. Look the part, get found locally and spend less time on admin.</p>
-          <div className={styles.heroActions}>
-            <Link href="/contact#send-message" className={styles.primaryButton} data-track="quote_hero">Get a fixed quote <span aria-hidden>↗</span></Link>
-            <a href="#selected-work" className={styles.textLink} data-track="home_view_work">See our work <span aria-hidden>↓</span></a>
-          </div>
-        </div>
-        <WorkShowcase />
-      </section>
+      <BusinessWorld>
 
       <div className={`${styles.container} ${styles.priceStrip}`} aria-label="Starting prices">
         <Link href="/website-pricing"><span>Website design</span><strong>From {PRICING.website.from}<small> one-off</small></strong><span aria-hidden>↗</span></Link>
         <Link href="/local-seo-adelaide"><span>Local SEO</span><strong>From {PRICING.seo.from}</strong><span aria-hidden>↗</span></Link>
         <Link href="/ai-automation-adelaide"><span>Practical automation</span><strong>From {PRICING.automation.from}</strong><span aria-hidden>↗</span></Link>
       </div>
+      </BusinessWorld>
 
       <section id="services" className={`${styles.container} ${styles.services}`} aria-labelledby="services-title">
-        <div className={styles.sectionHeading}><p className={styles.eyebrow}>A useful place to start</p><h2 id="services-title">What would make<br />business easier?</h2><p>Pick the thing you need most. We&apos;ll help you take it from there.</p></div>
-        <ServicePicker />
+        <div className={styles.sectionHeading}><h2 id="services-title">Your business is different.<br />Your starting point can be, too.</h2><p>A website, local SEO or one practical automation. Start with the work that makes sense for you.</p></div>
         <div className={styles.serviceFallbackLinks}><span>Explore:</span><Link href="/website-design-adelaide">Website design Adelaide</Link><Link href="/seo">SEO services Adelaide</Link><Link href="/local-seo-adelaide">Local SEO</Link><Link href="/ai-automation-adelaide">AI automation</Link></div>
         <div className={styles.businessPaths}>
           <h3>Built around your kind of business.</h3>

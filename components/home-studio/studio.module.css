@@ -1,6 +1,6 @@
 .studio { --studio-ink: #1d1d1f; --studio-sub: #606568; --studio-teal: #0c7a65; color: var(--studio-ink); background: #fbfbfd; }
 .container { width: min(1380px, calc(100% - 96px)); margin-inline: auto; }
-.studio h1, .studio h2, .studio h3, .studio p { margin: 0; }
+.studio :where(h1, h2, h3, p) { margin: 0; }
 .studio h1, .studio h2, .studio h3 { font-weight: 600; text-wrap: balance; }
 .studio a, .studio button, .studio summary { -webkit-tap-highlight-color: transparent; }
 .studio a:focus-visible, .studio button:focus-visible, .studio summary:focus-visible { outline: 3px solid #0c7a65; outline-offset: 6px; }

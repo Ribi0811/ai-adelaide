@@ -1,8 +1,8 @@
 # Customer-first homepage — local review, 5 September 2026
 
-Status: implemented on `codex/customer-first-homepage`; local review only. No push, deployment, campaign changes or outreach. The previous homepage remains recoverable in git and its `components/home-day/` files remain available.
+Status: current candidate is the Business World concept described below; earlier Studio hero iterations are superseded. Implemented on `codex/customer-first-homepage`; local review only. No push, deployment, campaign changes or outreach. The previous homepage remains recoverable in git and its `components/home-day/` files remain available.
 
-## What changed
+## Original Studio pass (superseded hero)
 
 The new Studio homepage leads with “Websites that mean business”, a real portfolio image, a fixed-quote action and visible starting prices. An interactive service selector separates website, local SEO and practical automation enquiries and carries the chosen service into the existing contact form. Selected work, genuine abbreviated customer comments, process, pricing/ownership FAQs and a local business introduction support the decision. All prices come from `PRICING`; no new customer or performance claims were created.
 
@@ -50,10 +50,22 @@ Before declaring lead capture production-ready, connect and verify durable stora
 
 [`SEO-PREVIEW-AUDIT-2026-09-05.md`](./SEO-PREVIEW-AUDIT-2026-09-05.md) records the full 113-page local crawl and current Search Console opportunities. Local fixes allow Next.js assets in robots.txt, server-render business schema and all service-selector descriptions, and add relevant commercial internal links. The visual design and personal-name privacy preference are preserved. For phone review on the same Wi-Fi, the current server binds `0.0.0.0` and is available at <http://192.168.68.106:3000>; the address can change with the network.
 
-## More expressive homepage pass, 5 September
+## Earlier expressive homepage pass, 5 September (superseded hero)
 
 At Ivan's request for more visual impact, the hero now uses larger Manrope typography with same-family italic emphasis, a charcoal/teal dimensional project frame, and explicit buttons to choose between CarHire.global and 365CarHire. Both screenshots and their outbound links are genuine portfolio records. The showcase has no autoplay; selection is available through normal keyboard-accessible buttons. Short entrance, selection and hover transitions respect reduced motion. Selected-work image spacing and the closing section's composition have also been strengthened.
 
 This is a focused evolution of the established light/teal design, using its permitted single dark moment. Real portfolio assets are retained. Pricing, public-name privacy, route structure, metadata, FAQ answers, schema and all enquiry/service paths are preserved. The previous version is recoverable at commit `3d57b0b`. No new animation dependencies or remote visual assets were added.
 
 Validation: production build, TypeScript, targeted lint, internal links, responsive browser inspection and project-selection checks. Final browser evidence is under `reviews/2026-09-05/homepage-wow/`. The existing frozen receptionist-title metadata exception still applies. These are local functional and visual checks, not measured Core Web Vitals or evidence of improved conversion.
+
+## Current candidate: Small business. Big presence.
+
+Ivan rejected the restrained Studio design and its first visual-impact pass as weaker than the live One Day homepage. A direct browser comparison confirmed that the live page has a coherent day-long narrative, scene changes and a personalised website demo; the Studio iteration had reduced those qualities to conventional sales sections and portfolio screenshots.
+
+The current candidate uses `BusinessWorld.tsx` and `world.module.css`: an original miniature business-street illustration, clickable industry entry points and an interactive customer journey. Visitors can enter a business name, select trades, hospitality or local services, and explore local search, website design and enquiry follow-up. The miniature website buttons advance the example; the real quote link carries the business name and chosen service into the existing contact form. A user-started sequence has pause/reset controls and timer cleanup. Reduced-motion users get manual scene selection. No searches, messages, enquiries or bookings are sent by the illustrative interaction.
+
+The illustration is explicitly imagined in its alternative text. The illustrative scenes have no fabricated reviews, customers, rankings or commercial outcomes. The actual CarHire.global and 365CarHire portfolio remains below, together with genuine abbreviated testimonials, prices from PRICING, commercial internal links and existing FAQ answers/schema. The homepage H1 deliberately changes to the concept line; metadata and canonical remain the audited values. The business name is held in component state and only enters the contact URL when the visitor follows the quote link; analytics events do not include it.
+
+Artwork: `public/images/small-business-world.jpg`, 1300px, approximately 116KB. Generated with the built-in image tool; full prompt and provenance are in `reviews/2026-09-05/business-world/ARTWORK.md`. No new runtime dependencies. The earlier hero and service-selector files remain available for comparison; `0232c9c` is the pre-concept rollback point.
+
+Validation covers production build, TypeScript, targeted lint, 97 internal-link destinations, initial HTML metadata/schema, real browser desktop/mobile checks, manual scene progression, timed play/pause/completion, business-type selection and personalised website/automation quote preselection. Screenshots and check records are in `reviews/2026-09-05/business-world/`. No form was submitted. The frozen receptionist title is still the single known check-meta failure; no production performance or conversion improvement is claimed. Local review only; no push, deployment or index submission.

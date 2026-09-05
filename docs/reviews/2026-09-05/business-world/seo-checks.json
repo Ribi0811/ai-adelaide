@@ -1,0 +1,10 @@
+{
+  "title": true,
+  "meta": true,
+  "canonical": true,
+  "serverJsonLd": true,
+  "oneH1": true,
+  "status200": true,
+  "newH1": "Small business.Big presence.",
+  "allImageAlt": true
+}

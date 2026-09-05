@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-05",
+  "environment": "Local Next.js production build at port 3000; not deployed",
+  "responsive": {
+    "desktop1280": "Hero and customer journey visually inspected; no horizontal document overflow",
+    "tablet768": "Hero visually inspected; no horizontal document overflow",
+    "mobile390": "Hero and customer journey visually inspected; no horizontal document overflow",
+    "mobile320": "Hero visually inspected; no horizontal document overflow"
+  },
+  "interactions": {
+    "businessType": "Switching business type updates the example website and copy",
+    "businessName": "Typing a name updates the example and quote URL",
+    "manualJourney": "Search result advances to website; website buttons advance to enquiry; follow-up control displays acknowledgement",
+    "playPause": "Pause stops progression; replay reaches the follow-up and returns the play control to its initial label",
+    "websiteQuote": "Contact URL, business input and website service preselection verified in the browser",
+    "automationQuote": "Contact URL, business input and automation service preselection verified in the final production build"
+  },
+  "limitations": [
+    "No contact form was submitted and notification delivery was not tested",
+    "Reduced-motion handling was inspected in code; browser emulation was not performed",
+    "These are functional and visual checks, not Core Web Vitals measurements or conversion evidence"
+  ]
+}

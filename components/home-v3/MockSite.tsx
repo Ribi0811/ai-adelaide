@@ -38,7 +38,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "Blocked drains", from: "from $189" },
       { name: "Burst pipe repair", from: "24/7 callout" },
     ],
-    review: { text: "Fixed our hot water the same afternoon. Spotless work.", name: "Karen M.", suburb: "Norwood" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "G'day! Saw we missed you — how can we help?",
   },
   electrician: {
@@ -53,7 +53,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "EV charger install", from: "from $650" },
       { name: "Fault finding", from: "from $120" },
     ],
-    review: { text: "Quoted on the phone, arrived on time, no surprises.", name: "Steve T.", suburb: "Mawson Lakes" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "Hi! Missed your call — after a quote or an urgent fix?",
   },
   builder: {
@@ -68,7 +68,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "Extensions", from: "free quote" },
       { name: "Decks & pergolas", from: "from $6k" },
     ],
-    review: { text: "Our extension finished two weeks early. Unheard of.", name: "Priya S.", suburb: "Burnside" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "G'day! Saw we missed you — how can we help?",
   },
   salon: {
@@ -83,7 +83,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "Full colour", from: "from $160" },
       { name: "Bridal packages", from: "POA" },
     ],
-    review: { text: "Best balayage in Adelaide, and I can book at midnight.", name: "Jess L.", suburb: "Norwood" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "Hi lovely! We missed you — want me to book you in?",
   },
   cafe: {
@@ -98,7 +98,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "Functions & events", from: "from $39pp" },
       { name: "Office catering", from: "next-day" },
     ],
-    review: { text: "The banana bread alone is worth the drive.", name: "Tom R.", suburb: "Glenelg" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "Hi! We missed your call — after a booking or catering?",
   },
   clinic: {
@@ -113,7 +113,7 @@ export const BASE: Record<PhotoKey, Omit<Trade, "domain" | "biz">> = {
       { name: "Sports physio", from: "from $89" },
       { name: "NDIS plans", from: "welcome" },
     ],
-    review: { text: "Reminders mean I never miss a session now.", name: "Mark D.", suburb: "Unley" },
+    review: { text: "Your verified customer feedback belongs here.", name: "Your customer", suburb: "" },
     sms: "Hi! We missed you — want me to find you an appointment?",
   },
 };
@@ -251,8 +251,7 @@ export default function MockSite({ d, step, chars }: { d: Trade; step: number; c
               Our work
             </span>
             <span className="ml-1 hidden items-center gap-1 text-[10px] font-medium text-white/90 sm:flex">
-              <span className="tracking-[0.06em] text-[#FFC531]">★★★★★</span>
-              4.9 · 127 reviews
+              Illustrative design preview
             </span>
           </div>
         </div>
@@ -287,11 +286,11 @@ export default function MockSite({ d, step, chars }: { d: Trade; step: number; c
           {d.review.name.charAt(0)}
         </span>
         <p className="min-w-0 truncate text-[10px] text-[#6E6E73]">
-          <span className="text-[#F5A623]">★★★★★</span>{" "}
+          <span>Review placeholder</span>{" "}
           <span className="font-medium" style={{ color: INK }}>
             &ldquo;{d.review.text}&rdquo;
           </span>{" "}
-          — {d.review.name}, {d.review.suburb}
+          — {d.review.name}
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { legalLinks, siteConfig } from "@/lib/constants";
+import { legalLinks, PRICING, siteConfig } from "@/lib/constants";
 import SuburbNav from "@/components/SuburbNav";
 
 // v3/v4 design language: quiet, editorial, hairline-separated. This block is
@@ -53,6 +53,7 @@ const resourceLinks = [
 ];
 
 const companyLinks = [
+  { href: "/about", label: "About Ivan & AI Adelaide" },
   { href: "/audit", label: "Free audit" },
   { href: "/tools/ai-readiness-calculator", label: "AI readiness score" },
   { href: "/testimonials", label: "Selected work" },
@@ -91,8 +92,8 @@ export default function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-[#6E6E73]">
               Website design, local SEO and AI automation for Adelaide small
-              businesses. Websites from $699 — yours in 48 hours, yours
-              forever.
+              businesses. Websites from {PRICING.website.from}, with clear scope,
+              practical support and an easy next step.
             </p>
             <div className="mt-6 space-y-2 text-[14px]">
               <a
@@ -175,7 +176,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#98989D]">
-            Adelaide owned &amp; operated · No lock-in · From $699
+            Adelaide owned &amp; operated · Websites from {PRICING.website.from}
           </p>
         </div>
       </div>

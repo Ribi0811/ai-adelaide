@@ -158,7 +158,7 @@ const included = [
   },
   {
     title: "No lock-in",
-    body: "You own your site. You own your domain. You can leave anytime — no contracts.",
+    body: "One-off builds are yours once paid in full. Monthly plans include hosting; ownership transfers only if you buy out the site.",
   },
   {
     title: "Local Adelaide support",
@@ -174,7 +174,7 @@ const faqs = [
   {
     question: "What's not included in the website price?",
     answer:
-      "Domain name registration (~$20/year) and hosting (~$15-30/month) are separate. We help you set these up but you own them. No hidden fees, no lock-in contracts.",
+      "For one-off builds, domain registration and hosting are separate and confirmed before work starts. The monthly website plan includes hosting; domain registration remains separate.",
   },
   {
     question: "Can I upgrade from Starter to Business later?",
@@ -204,7 +204,7 @@ const faqs = [
   {
     question: "Can I pay monthly instead of upfront?",
     answer:
-      `Yes. The Monthly Website Plan is ${PRICING.website.monthly.setup} setup and then ${PRICING.website.monthly.price} — a Business-level website with hosting, unlimited small content edits, and ongoing updates all included. It's month-to-month with no lock-in: cancel anytime, or buy your site out whenever you want to own it outright.`,
+      `Yes. The Monthly Website Plan is ${PRICING.website.monthly.setup} setup and then ${PRICING.website.monthly.price} — a Business-level website with hosting, unlimited small content edits, and ongoing updates all included. It's month-to-month with no lock-in: cancel anytime. We own the website until you buy it out. Cancelling without a buy-out ends hosting and takes the site offline; your domain and supplied content remain yours. See our terms for the buy-out calculation.`,
   },
 ];
 
@@ -239,7 +239,7 @@ export default function WebsitePricingPage() {
     provider: { "@id": "https://aiadelaide.com.au/#organization" },
     areaServed: { "@type": "City", name: "Adelaide" },
     description:
-      "Website design and build for Adelaide small businesses. Three tiers: Starter $699, Business $1,299, Growth $2,499. Live in 48 hours, mobile-first, Google-ready.",
+      "Website design and build for Adelaide small businesses. Three tiers: Starter $699, Business $1,299, Growth $2,499. Starter delivery from 48 hours once content and access are ready. Mobile-first and Google-ready.",
     offers: [
       {
         "@type": "Offer",
@@ -402,8 +402,7 @@ export default function WebsitePricingPage() {
                     <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                   </Link>
                   <p className="text-center text-[12.5px] leading-relaxed text-white/45">
-                    Cancel anytime. Want to own it outright later? Buy your
-                    site out whenever you like — just ask.
+                    We own the site until you buy it out. Cancelling without a buy-out ends hosting and takes the site offline. Your domain and supplied content remain yours. Buy-out: Business one-off price, less your setup fee and half the monthly fees paid, subject to the minimum in our terms. <Link href="/terms" className="underline underline-offset-4">Read the buy-out terms.</Link>
                   </p>
                 </div>
               </div>
@@ -466,7 +465,7 @@ export default function WebsitePricingPage() {
 
       {/* Case studies + Testimonials — same components, same headings */}
       <CaseStudies count={3} heading="What changed for these Adelaide businesses" />
-      <Testimonials count={3} heading="More from our Adelaide clients" />
+      <Testimonials names={["Chloe M.", "Sarah P.", "Aisha N."]} count={3} heading="More from our Adelaide clients" />
 
       {/* CTA — same words */}
       <section className="relative overflow-hidden px-6 py-24 md:py-32">

@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How long does setup take?",
     answer:
-      "Websites are live in 48 hours (Starter) to 14 days (Growth). SEO shows first movement in 30-60 days. AI automation is live in 2-5 business days.",
+      "Starter websites can be ready in 48 hours once the brief, content and access are confirmed. Larger builds and automations follow an agreed schedule. SEO timing depends on your starting point and competition; rankings are not guaranteed.",
   },
   {
     question: "Do I need any technical knowledge?",
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <a
-                href="https://cal.com/aiadelaide"
+                href="https://cal.com/aiadelaide/15min"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-track="book_call_contact"

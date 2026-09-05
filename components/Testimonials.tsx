@@ -3,6 +3,7 @@ import { testimonials } from "@/lib/constants";
 
 type TestimonialsProps = {
   industry?: string;
+  names?: readonly string[];
   count?: number;
   heading?: string;
   eyebrow?: string;
@@ -11,12 +12,15 @@ type TestimonialsProps = {
 
 export default function Testimonials({
   industry,
+  names,
   count = 3,
   heading = "What Adelaide customers say",
   eyebrow = "Customer feedback",
   subheadline = "Genuine customer comments. Names are shortened for privacy.",
 }: TestimonialsProps) {
-  const filtered = industry
+  const filtered = names
+    ? testimonials.filter((testimonial) => names.includes(testimonial.name))
+    : industry
     ? testimonials.filter((testimonial) => testimonial.industry === industry)
     : testimonials;
   const items = (filtered.length > 0 ? filtered : testimonials).slice(0, count);

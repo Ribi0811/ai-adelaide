@@ -6,29 +6,29 @@ import Reveal from "@/components/home-v3/Reveal";
 import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Consulting Adelaide | No-Bullshit Implementation for SMBs",
+  title: "AI Consulting Adelaide for Small Business",
   description:
-    "AI consulting for Adelaide businesses: free audit, fixed pricing, implementation in days not months. For tradies, clinics, retailers, sole traders. Call 08 7100 9788.",
+    "Practical AI consulting for Adelaide small businesses. Review your workflows, agree a clear scope and build useful automation with local support. Free audit.",
   alternates: { canonical: "/ai-consulting-adelaide" },
 };
 
 const problems = [
   {
     title: "You're Losing Leads to Missed Calls",
-    stat: "5-15 calls/week missed",
-    cost: "$2,000-5,000/month in lost revenue",
+    stat: "Calls waiting for a reply",
+    cost: "Assess missed enquiries using your call records",
     fix: "AI answers every call, books jobs, sends you the details",
   },
   {
     title: "Quotes Get Sent But Never Followed Up",
-    stat: "30-40% of quotes never get a second touch",
-    cost: "$3,000-8,000/month in lost work",
+    stat: "Follow-up relies on memory",
+    cost: "Measure accepted quotes and follow-up completion",
     fix: "AI follows up every quote automatically, in your voice",
   },
   {
     title: "Admin Eats Your Evenings and Weekends",
-    stat: "10-20 hours/week on paperwork",
-    cost: "$2,000-4,000/month of your time",
+    stat: "Repetitive work takes time",
+    cost: "Track the hours spent on a repeatable task",
     fix: "AI handles invoices, payments, bookings, reviews",
   },
 ];
@@ -88,17 +88,17 @@ const faqItems = [
   {
     question: "How long does it take to see results?",
     answer:
-      "Most clients see measurable impact in the first week. Missed calls get answered immediately. Quotes get followed up on schedule. The ROI is usually obvious by week 2-3 when you see jobs you would have missed show up in your calendar.",
+      "We test that the workflow runs correctly before launch. Business results take longer to assess: we agree a baseline and review time saved, enquiry quality or follow-up completion against it. Results depend on your volume, process and offer.",
   },
   {
     question: "Do you work with businesses outside Adelaide?",
     answer:
-      "We're Adelaide-based and prefer working locally, but we've done remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you're a good fit, we'll consider it.",
+      "We're Adelaide-based and prefer working locally, but can assess remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you're a good fit, we'll consider it.",
   },
   {
     question: "What if I've already tried AI tools and they didn't work?",
     answer:
-      "Most DIY AI fails because people try to automate everything at once or pick the wrong tool. We start small (usually just missed-call text-back), prove ROI in week one, then expand. We also know which tools actually work for Australian SMBs vs. which ones are just hype.",
+      "We review what you tried, identify where it broke down and start with one useful workflow. We check the integrations and measure the result before recommending further work.",
   },
 ];
 
@@ -124,7 +124,7 @@ export default function AiConsultingAdelaidePage() {
               AI Consulting That Actually Ships — No Strategy Decks, Just Working Systems
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed mb-8">
-              Most AI consultants sell you a 200-page PDF and a $50K roadmap. We identify what's costing you money, build the fix in days, and support you as you use it. Fixed pricing, Adelaide-based, no lock-in.
+              Start with one task that costs you time: quote follow-up, reminders or preparing information for your accountant. We review your process, quote the work and help you use the finished system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

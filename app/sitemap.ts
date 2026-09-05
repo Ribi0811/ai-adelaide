@@ -11,13 +11,13 @@ import { publishedPosts } from "@/data/posts";
 //
 // Path (relative, no leading site URL) -> ISO date string.
 const PAGE_DATES: Record<string, string> = {
-  "/": "2026-08-22",
-  "/website-pricing": "2026-07-16",
-  "/website-design-adelaide": "2026-08-22",
+  "/": "2026-09-05",
+  "/website-pricing": "2026-09-05",
+  "/website-design-adelaide": "2026-09-05",
   "/seo": "2026-08-22",
   "/seo-for-tradies-adelaide": "2026-08-22",
   "/services": "2026-08-22",
-  "/contact": "2026-07-16",
+  "/contact": "2026-09-05",
   "/audit": "2026-07-16",
   "/website-cost-adelaide": "2026-07-16",
   "/seo-vs-google-ads-adelaide": "2026-07-13",
@@ -41,7 +41,7 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-automation-vs-hiring-staff-adelaide": "2026-07-17",
   "/ai-receptionist-vs-virtual-receptionist": "2026-07-11",
   "/tradie-website-bundle": "2026-06-25",
-  "/ai-consulting-adelaide": "2026-07-11",
+  "/ai-consulting-adelaide": "2026-09-05",
   "/ai-consulting-brisbane": "2026-06-20",
   "/ai-consulting-melbourne": "2026-06-20",
   "/ai-office-worker-adelaide": "2026-07-11",
@@ -49,13 +49,16 @@ const PAGE_DATES: Record<string, string> = {
   "/local-seo-adelaide": "2026-08-22",
   "/automotive-seo-services": "2026-07-13",
   "/hotel-seo-services": "2026-07-13",
+  "/ai-automation-setup-tradies": "2026-09-05",
+  "/ai-for-sole-traders-adelaide": "2026-09-05",
+  "/ai-consulting-small-business-adelaide": "2026-09-05",
   // Added 2026-07-11 (Tier 12 content-gap fill: "ai seo adelaide" and
   // "aged care seo services" queries had impressions but no page).
   "/ai-seo-adelaide": "2026-07-13",
   "/aged-care-seo-services": "2026-07-13",
   "/ndis-provider-marketing-adelaide": "2026-08-22",
   "/ai-app-development-adelaide": "2026-07-11",
-  "/about": "2026-06-23",
+  "/about": "2026-09-05",
   "/faq": "2026-06-20",
   "/lost-leads-calculator": "2026-07-11",
   "/privacy-policy": "2026-07-17",
@@ -302,6 +305,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // Existing August pages, now included after claim review.
+    { url: `${siteConfig.url}/ai-automation-setup-tradies`, lastModified: dateFor("/ai-automation-setup-tradies"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteConfig.url}/ai-for-sole-traders-adelaide`, lastModified: dateFor("/ai-for-sole-traders-adelaide"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${siteConfig.url}/ai-consulting-small-business-adelaide`, lastModified: dateFor("/ai-consulting-small-business-adelaide"), changeFrequency: "monthly", priority: 0.7 },
     // Consulting pages
     {
       url: `${siteConfig.url}/ai-consulting-adelaide`,

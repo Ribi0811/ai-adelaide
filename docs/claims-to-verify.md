@@ -212,3 +212,8 @@ exists:
 Note: the page describes how participants research providers online
 qualitatively (no hard percentages) so nothing needs sourcing. If specific
 stats are added later (e.g. "% who research online"), cite a real source.
+
+
+## 2026-09-05 local preview correction
+
+The customer-first preview removes the August consulting/automation numerical result claims, the alleged Morphett Vale electrician case study, and the “50+” implementation claim. The concept demo now uses review placeholders without invented names, star ratings or counts. Genuine abbreviated testimonials from `lib/constants.ts` are preserved; website pages select relevant website feedback. The About page no longer asserts an unverified team size, launch history or sister brand in invisible FAQ schema. See `HOMEPAGE-PREVIEW-2026-09-05.md` for scope and verification. These corrections are local until Ivan approves deployment.

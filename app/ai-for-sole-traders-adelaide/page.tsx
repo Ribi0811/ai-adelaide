@@ -6,7 +6,7 @@ import Reveal from "@/components/home-v3/Reveal";
 import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI for Sole Traders Adelaide | Automation for One-Person Businesses",
+  title: "AI Automation for Adelaide Sole Traders",
   description:
     "AI automation for Adelaide sole traders: calls, bookings, invoices, reviews handled without hiring staff. Priced for one-person businesses. Free audit.",
   alternates: { canonical: "/ai-for-sole-traders-adelaide" },
@@ -39,22 +39,22 @@ const automations = [
   {
     title: "Call Answering & Booking",
     body: "Every call answered, every job booked straight into your calendar. Works with Google Calendar, Calendly, or your job management app.",
-    time: "Saves 5-10 hrs/week",
+    time: "Enquiry handling",
   },
   {
     title: "Quote Follow-Up",
     body: "Sends the quote, follows up at 3 days, 7 days, 14 days. Stops when they say yes or no. No more 'I forgot to call them back.'",
-    time: "30-40% more quotes accepted",
+    time: "Scheduled follow-up",
   },
   {
     title: "Invoice & Payment Chasing",
     body: "Sends invoices automatically. Polite payment reminders at 3, 7, 14 days. You stop chasing money, cash flow improves.",
-    time: "Get paid 25-40% faster",
+    time: "Payment reminders",
   },
   {
     title: "Review Collection",
     body: "Job done → review request sent 24 hours later. Builds your Google rating without you asking awkwardly.",
-    time: "3-5x more reviews",
+    time: "Review requests",
   },
   {
     title: "Customer Replies",
@@ -64,7 +64,7 @@ const automations = [
   {
     title: "Bookkeeping Prep",
     body: "Receipts photographed, expenses categorised, mileage logged. Hand your accountant a clean file, not a shoebox.",
-    time: "Saves 2-4 hrs/week",
+    time: "Organised records",
   },
 ];
 
@@ -87,7 +87,7 @@ const faqItems = [
   {
     question: "What if I want to try it first?",
     answer:
-      "Book a free audit. We'll look at your call history, show you exactly what you're missing, and give you a clear quote. No obligation. You can even trial the AI receptionist for a week to see how many calls it catches.",
+      "Book a free audit. We'll look at your call history, show you exactly what you're missing, and give you a clear quote. No obligation. We agree a review period and the measures that matter to your business.",
   },
   {
     question: "Will my customers know it's AI?",
@@ -206,15 +206,15 @@ export default function AiForSoleTradersPage() {
                 <ul className="space-y-3 text-slate-700">
                   <li className="flex gap-3">
                     <span className="text-red-600">✗</span>
-                    <span>10-15 missed calls/week = $2,000-4,000/month in lost jobs</span>
+                    <span>Missed enquiries need someone to call back</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-600">✗</span>
-                    <span>4-6 hours/week on admin = $800-1,200/month of your time</span>
+                    <span>Repeated admin uses time you could spend on customers</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-600">✗</span>
-                    <span>30-40% of quotes never followed up = thousands in lost work</span>
+                    <span>Quotes can sit without an agreed follow-up</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-red-600">✗</span>
@@ -227,26 +227,26 @@ export default function AiForSoleTradersPage() {
                 <ul className="space-y-3 text-slate-700">
                   <li className="flex gap-3">
                     <span className="text-green-600">✓</span>
-                    <span>Every call answered, 80%+ convert to bookings</span>
+                    <span>Enquiries enter an agreed response workflow</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-green-600">✓</span>
-                    <span>Admin drops to 1-2 hours/week</span>
+                    <span>Repeated tasks follow a consistent process</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-green-600">✓</span>
-                    <span>Quotes get followed up automatically, 30-40% more accepted</span>
+                    <span>Quotes receive scheduled reminders with reply handling</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-green-600">✓</span>
-                    <span>Invoices chased on schedule, paid 25-40% faster</span>
+                    <span>Invoice reminders follow the schedule you approve</span>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-accent/20 text-center">
               <p className="text-xl font-bold text-slate-900">
-                Cost: {PRICING.automation.from} • Typical ROI: 10-15x in first month
+                Plans from {PRICING.automation.from}. Setup and any usage charges are confirmed in your quote. Results depend on your workflow and volume.
               </p>
             </div>
           </div>

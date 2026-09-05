@@ -6,7 +6,7 @@ import Reveal from "@/components/home-v3/Reveal";
 import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Consulting for Small Business Adelaide | No-Bullshit Implementation",
+  title: "Small Business AI Consulting in Adelaide",
   description:
     "AI consulting for Adelaide SMBs: free audit, transparent pricing, systems shipped in days. We build what we recommend. Tradies, clinics, retail, services.",
   alternates: { canonical: "/ai-consulting-small-business-adelaide" },
@@ -19,9 +19,9 @@ const problems = [
       "Sunday night is invoice night",
       "Quotes get sent but never followed up",
       "Customer details live in 4 different places",
-      "You're doing $40/hour work when you should be doing $150/hour work",
+      "Repetitive admin takes time away from customers",
     ],
-    cost: "10-15 hours/week on admin = $2,000-3,000/month of your time",
+    cost: "Measure the time your business spends on repeated admin",
   },
   {
     title: "You're Losing Leads to Faster Competitors",
@@ -31,14 +31,14 @@ const problems = [
       "Prospects book with whoever answers first",
       "You know you're losing jobs but can't quantify it",
     ],
-    cost: "5-10 missed calls/month = $2,000-5,000/month in lost revenue",
+    cost: "Review actual missed enquiries and whether they received a follow-up",
   },
   {
     title: "Your Business Doesn't Scale Past You",
     symptoms: [
       "You can't take a holiday without your phone going off",
       "Hiring staff feels like trading one set of problems for another",
-      "You're already working 50-60 hours a week",
+      "Work regularly spills into your evenings",
       "Growth means more admin, not more profit",
     ],
     cost: "Stuck at your current revenue ceiling because you can't clone yourself",
@@ -72,7 +72,7 @@ const services = [
 const faqItems = [
   {
     question: "How is this different from enterprise AI consulting?",
-    answer: "Enterprise consultants charge $50K-$500K, take 6-12 months, and deliver a strategy deck. We're priced for small businesses, implement in days, and deliver working systems - not PDFs.",
+    answer: "The scope starts with a small-business workflow and an agreed budget. We can review the process, build an appropriate solution and support the handover. Complex integrations are quoted separately.",
   },
   {
     question: "What if I don't know what AI could help with?",
@@ -80,7 +80,7 @@ const faqItems = [
   },
   {
     question: "Do you work with businesses outside Adelaide?",
-    answer: "We're Adelaide-based and prefer working locally, but we've done remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you're a good fit, we'll consider it.",
+    answer: "We're Adelaide-based and prefer working locally, but can assess remote setups for businesses in other SA regions and interstate. If the work can be done remotely and you're a good fit, we'll consider it.",
   },
   {
     question: "What tools do you integrate with?",
@@ -88,11 +88,11 @@ const faqItems = [
   },
   {
     question: "Can I just buy the software myself?",
-    answer: "You could, but you'd spend 20-30 hours figuring out which tools to use, how to connect them, and how to write the scripts. We've done this 50+ times. We know what works and what doesn't. You're paying for the shortcut.",
+    answer: "Yes. If a standard tool solves the problem, that may be enough. Our work covers choosing and connecting tools, setting the rules, testing the workflow and showing you how to use it. We agree the scope before you commit.",
   },
   {
     question: "What if it doesn't work for my business?",
-    answer: "No lock-in. Cancel anytime. You'll know within the first month if it's working — more booked jobs, faster payments, fewer Sunday nights doing admin. If you're not seeing ROI, we'll help you wind it down.",
+    answer: "We agree how to assess the workflow before building it, including the baseline and a review period. If it is not useful, we can adjust or wind it down under the agreed service terms.",
   },
 ];
 

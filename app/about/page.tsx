@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: { absolute: "About AI Adelaide — Websites, SEO & AI Automation" },
-  description: "Meet Ivan Ribicic at AI Adelaide. Practical website design, local SEO and automation for Adelaide small businesses, with clear scope and local support.",
+  description: "AI Adelaide is a small Adelaide business providing practical website design, local SEO and automation, with clear project scope and helpful local support.",
   alternates: { canonical: "/about" },
 };
 
@@ -21,21 +21,21 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org", "@type": "AboutPage", "@id": `${siteConfig.url}/about#webpage`,
         name: "About AI Adelaide", url: `${siteConfig.url}/about`, inLanguage: "en-AU",
-        about: { "@type": "Person", name: "Ivan Ribicic", jobTitle: "Founder of AI Adelaide" },
+        about: { "@id": `${siteConfig.url}/#organization` },
       }) }} />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About" }]} />
       <section className="mx-auto grid max-w-container gap-12 px-6 py-12 md:grid-cols-[1.4fr_1fr] md:items-center md:py-20">
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-[#0C7A65]">Ivan Ribicic · Adelaide, SA</p>
-          <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-[-0.04em] text-[#1D1D1F] md:text-6xl">A local person.<br />Practical digital help.</h1>
-          <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-600">I run AI Adelaide to help small businesses build a useful website, improve their local visibility and make repetitive work easier.</p>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600">My background spans enterprise technology, mobility and digital systems. Here, the focus is on the work your business needs next, with a scope and price you can understand before you commit.</p>
-          <Link href="/contact#send-message" className="btn-primary mt-8 inline-flex px-7 py-4">Tell me about your business <span aria-hidden>↗</span></Link>
+          <p className="font-mono text-xs uppercase tracking-widest text-[#0C7A65]">AI Adelaide · Adelaide, SA</p>
+          <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.1] tracking-[-0.04em] text-[#1D1D1F] md:text-6xl">Small business.<br />Practical digital help.</h1>
+          <p className="mt-7 max-w-xl text-lg leading-relaxed text-slate-600">We are a small Adelaide business helping other small businesses build useful websites, improve their local visibility and make repetitive work easier.</p>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600">We keep things personal and practical. The focus is on the work your business needs next, with a scope and price you can understand before you commit.</p>
+          <Link href="/contact#send-message" className="btn-primary mt-8 inline-flex px-7 py-4">Tell us about your business <span aria-hidden>↗</span></Link>
         </div>
         <div className="rounded-[28px] bg-[#EAF3EF] p-10 md:p-14">
-          <div className="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#0C7A65] text-3xl font-semibold text-white" aria-hidden>IR</div>
-          <h2 className="mt-9 text-2xl font-semibold tracking-tight text-[#1D1D1F]">Ivan Ribicic</h2>
-          <p className="mt-2 text-sm text-slate-600">Founder · Your contact at AI Adelaide</p>
+          <div className="flex h-24 w-24 items-center justify-center rounded-3xl bg-[#0C7A65] text-3xl font-semibold text-white" aria-hidden>AI</div>
+          <h2 className="mt-9 text-2xl font-semibold tracking-tight text-[#1D1D1F]">AI Adelaide</h2>
+          <p className="mt-2 text-sm text-slate-600">Local support. A direct conversation.</p>
           <p className="mt-6 text-base leading-relaxed text-slate-600">Start with a conversation about your customers, your services and what is slowing you down. We can work out the right first step together.</p>
           <a href="https://cal.com/aiadelaide/15min" target="_blank" rel="noopener noreferrer" className="mt-7 inline-block font-semibold text-[#0C7A65] underline underline-offset-4">Book a free 15-minute call ↗</a>
         </div>

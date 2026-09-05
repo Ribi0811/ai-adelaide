@@ -93,8 +93,8 @@ export default function HomeStudio() {
       </section>
 
       <section className={`${styles.container} ${styles.founderSection}`} aria-labelledby="founder-title">
-        <div className={styles.founderIdentity}><span className={styles.founderMonogram} aria-hidden>IR</span><div><strong>Ivan Ribicic</strong><span>Your contact at AI Adelaide</span><Link href="/about">A little about us ↗</Link></div></div>
-        <div><h2 id="founder-title">Local knowledge.<br />A direct conversation.</h2><p>Tell me about your business and what you want to improve. We&apos;ll work out a practical starting point, with a clear scope before you commit.</p></div>
+        <div className={styles.founderIdentity}><span className={styles.founderMonogram} aria-hidden>AI</span><div><strong>AI Adelaide</strong><span>Small business. Local support.</span><Link href="/about">A little about us ↗</Link></div></div>
+        <div><h2 id="founder-title">Local knowledge.<br />A direct conversation.</h2><p>Tell us about your business and what you want to improve. We&apos;ll work out a practical starting point, with a clear scope before you commit.</p></div>
       </section>
 
       <section className={styles.closingSection} aria-labelledby="closing-title">

@@ -4,13 +4,13 @@ Status: implemented on `codex/customer-first-homepage`; local review only. No pu
 
 ## What changed
 
-The new Studio homepage leads with “Websites that mean business”, a real portfolio image, a fixed-quote action and visible starting prices. An interactive service selector separates website, local SEO and practical automation enquiries and carries the chosen service into the existing contact form. Selected work, genuine abbreviated customer comments, process, pricing/ownership FAQs and Ivan's identity support the decision. All prices come from `PRICING`; no new customer or performance claims were created.
+The new Studio homepage leads with “Websites that mean business”, a real portfolio image, a fixed-quote action and visible starting prices. An interactive service selector separates website, local SEO and practical automation enquiries and carries the chosen service into the existing contact form. Selected work, genuine abbreviated customer comments, process, pricing/ownership FAQs and a local business introduction support the decision. All prices come from `PRICING`; no new customer or performance claims were created.
 
 Navigation makes Websites, Pricing, SEO, Automation, Our work and About easy to find. The mobile menu includes Escape handling and keyboard cycling; the chat launcher is smaller and does not render on contact/audit pages.
 
 Supporting corrections:
 
-- About names Ivan Ribicic and replaces the unnamed-team narrative and unsupported invisible FAQ schema with a concise founder introduction. No invented portrait or personal LinkedIn URL.
+- About introduces AI Adelaide as a small Adelaide business. At Ivan's request, his personal name is absent from the public copy, metadata and schema. No invented portrait, staff count or personal LinkedIn URL.
 - Website pricing explains one-off versus monthly ownership, cancellation, hosting and the existing buy-out basis. The legal terms and actual prices are unchanged.
 - The 48-hour claim is conditional on a ready-to-start Starter build. Website pages use relevant existing website testimonials, separate from portfolio examples.
 - The website concept demo clearly labels placeholder content and removes fabricated named reviews, star ratings and review counts.
@@ -44,4 +44,4 @@ Review the homepage, switch all three service options, follow a quote action, an
 
 The page is a clearer sales surface; it is not proof of demand or conversion uplift. Use the existing business review's acquisition plan: reconcile current leads and paying customers, choose an existing durable enquiry record, then run a small founder-led website/SEO sales effort with an agreed next action for every opportunity. Sell one useful automation only where the workflow and economics justify it. The receptionist remains a secondary legacy service.
 
-Before declaring lead capture production-ready, connect and verify durable storage plus real notification delivery. A local success message or writable JSON file does not prove persistence on Vercel. Founder photo, further attributable proof and current financial/customer figures still require supplied evidence.
+Before declaring lead capture production-ready, connect and verify durable storage plus real notification delivery. A local success message or writable JSON file does not prove persistence on Vercel. Further attributable proof and current financial/customer figures still require supplied evidence. Keep the public site brand-led; Ivan has chosen not to display his personal name yet.

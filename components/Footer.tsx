@@ -53,7 +53,7 @@ const resourceLinks = [
 ];
 
 const companyLinks = [
-  { href: "/about", label: "About Ivan & AI Adelaide" },
+  { href: "/about", label: "About AI Adelaide" },
   { href: "/audit", label: "Free audit" },
   { href: "/tools/ai-readiness-calculator", label: "AI readiness score" },
   { href: "/testimonials", label: "Selected work" },

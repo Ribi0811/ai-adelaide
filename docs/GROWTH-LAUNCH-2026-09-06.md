@@ -22,3 +22,7 @@ Native Codex permits one active heartbeat per task, so the originally proposed s
 At the first unattended run, verify it started on the intended local host/time, loaded this repository, read the private register and wrote its private deduplication state. If credential/browser/runtime access fails, report that exact boundary once and continue independent work. Do not label an ACTIVE schedule or successful HTTP request as completed customer acquisition.
 
 The first complete 28-day post-release GSC window is 6 September–3 October, available no earlier than 6 October with the conservative three-day lag. Compare with 8 August–4 September, excluding release day. Real delivery defects should be corrected immediately; broad SEO rewrites should wait for useful evidence.
+
+## Outreach authority update
+
+Later on 6 September, Ivan delegated proactive email outreach content and frequency to the operator. The active automation and standing brief now include up to five new eligible contacts per week and one follow-up after seven business days, with ten initial/follow-up emails total per week. Per-message approval is superseded within that scope; sender readiness, recipient consent and contact/opt-out evidence still require verification before sending. No emails were sent as part of this configuration update.

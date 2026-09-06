@@ -5,6 +5,8 @@ Rule: whoever finishes an item strikes it here and re-dates this header. This fi
 
 ## Current state
 
+- **2026-09-06 Outlook signature configured:** `hello@aiadelaide.com.au` now defaults to the branded AI Adelaide Team HTML signature for new messages and replies/forwards. Both dropdown settings verified; automatic insertion and appearance verified in a recipient-free new draft. Draft remains unsent for preview. Reusable source: `AI-ADELAIDE-EMAIL-SIGNATURE.html`. This changes this Mac's Outlook only; OpenClaw/SMTP templates are not connected to it.
+
 - **2026-09-06 MDEX offer clarified and discovery PDF completed:** Ivan has already offered the redesign free; hosting, ongoing SEO and continuing services are separate. `output/pdf/MDEX-Website-Discovery.pdf` supersedes the earlier Word proposal. Three branded pages and 11 fillable questions, visually checked; field save/read-back verified. No fixed care price or mandatory subscription introduced. Not sent; no website changes made.
 
 - **2026-09-06 MDEX client pack prepared:** `docs/proposals/mdex/MDEX-Website-Proposal.docx` is a three-page client-facing outline covering design, WordPress/Next.js, social updates, migration, care scope and discovery questions. Rendered and visually checked; authoring source and unsent accompanying message included. No pricing, free build or customer commitment made; not sent.

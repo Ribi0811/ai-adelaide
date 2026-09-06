@@ -29,7 +29,13 @@ This integration covers Contact and Tradie SEO forms. Separate audit, chat, book
 - Chrome verified restricted sharing and the saved row, date formatting, readable headings and editable follow-up fields.
 - Sanitised setup and local evidence: `docs/reviews/2026-09-06/lead-sheet/`.
 
-Production deployment and the final live delivery check are recorded below after verification. No git push is used.
+## Production result
+
+Deployed source `3f60c75bfa5880daf1ad48f08e37168f1932bcb0` through Vercel CLI. Deployment `dpl_F7j3PrPeW2PLqBGqtoNBrHXssXEX` is Ready and aliased to `https://aiadelaide.com.au`. The canonical Contact page was checked in the browser after release. No git push was performed.
+
+The labelled live POST `AIA-SHEET-20260906-PROD-01` returned HTTP 200 in 3.63 seconds with `telegram.ok: true`, `email.ok: true`, `sheet.status: saved` and `persisted: true`. Independent Sheets API read-back confirmed exactly one matching row, including lead ID, marker, business and email. Read-only IMAP verified exactly one matching message in the business inbox. Telegram API acceptance is verified; on-device notification display was not independently observed. Chrome displayed the saved production row. Both local and production synthetic rows are marked Test record `Yes`.
+
+Evidence: `reviews/2026-09-06/lead-sheet/production-runtime.json`. This verifies delivery and persistence, not a qualified enquiry or revenue result. Body rows were expanded to 64 pixels with wrapping for readability; longer enquiries can be expanded further in Sheets.
 
 ## Rollback
 

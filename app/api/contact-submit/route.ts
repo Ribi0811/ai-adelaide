@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
 import nodemailer from "nodemailer";
+import { appendLeadToGoogleSheet } from "@/lib/lead-sheet";
+import { deliverContactEnquiry } from "@/lib/enquiry-delivery";
 
 const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_HOME_CHAT_ID || "1140438132";
@@ -213,10 +215,11 @@ async function appendLead(entry: Record<string, unknown>) {
   let existing: unknown[] = [];
   try {
     const txt = await fs.readFile(leadsFile, "utf8");
-    existing = JSON.parse(txt);
-    if (!Array.isArray(existing)) existing = [];
-  } catch {
-    existing = [];
+    const parsed: unknown = JSON.parse(txt);
+    if (!Array.isArray(parsed)) throw new Error("Invalid local lead file");
+    existing = parsed;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
   }
   existing.push(entry);
   await fs.writeFile(leadsFile, JSON.stringify(existing, null, 2));
@@ -252,18 +255,23 @@ export async function POST(req: NextRequest) {
   const timestamp = new Date().toISOString();
   const entry = { id: `lead_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`, timestamp, ...lead };
 
-  const telegram = await notifyTelegram(lead);
-  const email = await sendContactEmail(lead);
-
-  let persisted = false;
-  try {
-    await appendLead(entry);
-    persisted = true;
-  } catch (e) {
-    console.error("contact-submit: failed to persist lead", e);
+  const delivery = await deliverContactEnquiry({
+    telegram: () => notifyTelegram(lead),
+    email: () => sendContactEmail(lead),
+    sheet: () => appendLeadToGoogleSheet(entry),
+    local: async () => {
+      // The deployment filesystem is not a durable production lead store.
+      if (process.env.VERCEL) return false;
+      await appendLead(entry);
+      return true;
+    },
+  });
+  const { telegram, email, persisted, sheet } = delivery;
+  if (!sheet.ok && sheet.status !== "not_configured") {
+    console.error("contact-submit: Google Sheet copy not confirmed", { leadId: entry.id, status: sheet.status });
   }
 
-  if (!telegram.ok && !email.ok && !persisted) {
+  if (!delivery.ok) {
     return NextResponse.json(
       {
         ok: false,
@@ -281,6 +289,7 @@ export async function POST(req: NextRequest) {
     telegram,
     email,
     persisted,
+    sheet,
   });
 }
 

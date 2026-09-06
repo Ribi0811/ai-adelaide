@@ -1,0 +1,36 @@
+# Private enquiry register — 6 September 2026
+
+Ivan authorised retaining immediate Telegram notifications and adding a private Google Sheet, then authorised using signed-in Chrome to create and connect it.
+
+## Register and everyday use
+
+[Open AI Adelaide Enquiries](https://docs.google.com/spreadsheets/d/17u860RvhIwEXvaQPmLVZEscVvrhi4q0MbXAWW2wTyME/edit).
+
+New Contact and Tradie SEO form submissions through `/api/contact-submit` append to the `Enquiries` tab. Telegram, email and the Sheet start independently, so Google authentication or writing does not hold up starting the Telegram notification. The existing Telegram recipient and message format are unchanged.
+
+Update the amber columns after each follow-up: Stage, Next action, Follow-up date, quote/won values, monthly fee, cash received and outcome notes. Stages are New, Qualified, Quoted, Won, Lost and Spam. Dates are UTC; money is AUD. Mark internal tests `Yes` in the final Test record column and exclude them from commercial reporting. New real records default to `No`. Revenue and qualification are manual, evidence-based entries; submitting a form is not a sale.
+
+Keep the tab name and row-5 headings unchanged. Column order is checked against `lib/lead-sheet-columns.json` before every append. The website does not overwrite earlier enquiries or sales outcomes. The blank XLSX in `outputs/2026-09-06-lead-register/` is the reproducible template, not a copy of customer records. Do not commit exports containing customer information.
+
+## Access and operation
+
+General access was verified as **Restricted** in Chrome. Ivan owns the file; the dedicated `aiadelaide-lead-sheet` service account has Editor access to this file and no Google Cloud project roles. The Sheets API is enabled in the existing `car-hire-seo-reporting` project. The dedicated JSON credential is protected outside the repository; production uses sensitive Vercel variables `AIADELAIDE_LEAD_SHEET_ID` and `AIADELAIDE_LEAD_SHEET_SERVICE_ACCOUNT`. Never put credential values in documentation or logs.
+
+Writes use the Sheets API with `RAW` input and inserted rows, preserving phone numbers and treating formula-like customer input as text. A successful API result requires one updated row and a matching returned lead ID. Total Sheet time is limited to seven seconds. Ambiguous writes are not automatically retried, to avoid duplicates. Failed copies log only lead ID and status. Telegram/email may still succeed if Sheets is unavailable; reconcile missing copies from those notifications. There is no automatic retry queue or historical backfill.
+
+This integration covers Contact and Tradie SEO forms. Separate audit, chat, booking and phone workflows are not connected by this change. No new analytics, public sharing or customer outreach was added.
+
+## Verification
+
+- Ten focused tests pass, including unchanged literal input, header mismatch, Google failure, ambiguous response, late authentication, and notification independence.
+- TypeScript, targeted lint and the production build pass.
+- Metadata check retains the existing frozen receptionist title-length warning; no page content or metadata changed in this integration.
+- Actual localhost Contact form submission displayed success and produced exactly one matching Sheet row with the production filesystem disabled. Local Telegram/email were deliberately disabled for this test. The test record was marked `Yes`.
+- Chrome verified restricted sharing and the saved row, date formatting, readable headings and editable follow-up fields.
+- Sanitised setup and local evidence: `docs/reviews/2026-09-06/lead-sheet/`.
+
+Production deployment and the final live delivery check are recorded below after verification. No git push is used.
+
+## Rollback
+
+The preceding verified production deployment is `dpl_9UrXyza4hpxDhiuS6CLau35Pt4ee` (source `fc1c295`). Reverting to it restores the prior notification-only behaviour and leaves the private Sheet intact. Any future deployment or rollback requires current user authorisation. Removing the integration account from the Sheet stops writes; Telegram/email remain independent.

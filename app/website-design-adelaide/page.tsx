@@ -559,7 +559,7 @@ export default function WebsiteDesignAdelaidePage() {
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="/contact#send-message"
+                href="/contact?service=website#send-message"
                 data-track="quote_design_cta"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
               >

@@ -17,6 +17,6 @@ The closing Local SEO button previously opened `/contact`; the website-design cl
 
 ## Release
 
-Pending exact-source commit and approved routine Vercel release. Confirmed rollback target: `dpl_F7j3PrPeW2PLqBGqtoNBrHXssXEX` (`ai-adelaide-hw37et9cf-ivans-projects-9bc72bf6.vercel.app`). No git push.
+Released from exact commit `7c95f9bc6548480986eab76e1cbe10cc6e770cdd` through a clean git archive with no local environment files. Vercel deployment `dpl_7rY73ARvENApxemtXb4MT7ejPRTf` is Ready and aliased to `https://aiadelaide.com.au`. Production URL: `https://ai-adelaide-ttre4m3g8-ivans-projects-9bc72bf6.vercel.app`. Canonical-host browser clicks for both closing links passed at desktop and mobile sizes, with the expected service option selected. Live mobile form rendering inspected; both live sitemap lastModified values are 8 September. Confirmed rollback target: `dpl_F7j3PrPeW2PLqBGqtoNBrHXssXEX` (`ai-adelaide-hw37et9cf-ivans-projects-9bc72bf6.vercel.app`). No git push.
 
 Wednesday continues the second weekly item: audit/calculator channel mapping and a scoped proposal; no new data collection is authorised by that mapping task.

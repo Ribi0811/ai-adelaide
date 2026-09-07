@@ -21,6 +21,8 @@ Native Codex permits one active heartbeat per task, so the originally proposed s
 
 At the first unattended run, verify it started on the intended local host/time, loaded this repository, read the private register and wrote its private deduplication state. If credential/browser/runtime access fails, report that exact boundary once and continue independent work. Do not label an ACTIVE schedule or successful HTTP request as completed customer acquisition.
 
+**Verified 7 September:** the first unattended run reached this repository and read the register, but fired at 18:31 Adelaide rather than 09:00. The original expected-times simulation was insufficient. The native rule was repaired, and the app now records the next run at 8 September 09:01:10 Adelaide. The expiry option was removed to restore local-time scheduling; a final-review pause and start-of-run date gate retain the 5 December pilot limit. See [first-run evidence and correction](./reviews/2026-09-07/growth-operations/run-summary.md). Corrected-time execution remains to be observed.
+
 The first complete 28-day post-release GSC window is 6 September–3 October, available no earlier than 6 October with the conservative three-day lag. Compare with 8 August–4 September, excluding release day. Real delivery defects should be corrected immediately; broad SEO rewrites should wait for useful evidence.
 
 ## Outreach authority update

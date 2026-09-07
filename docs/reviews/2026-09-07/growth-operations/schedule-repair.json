@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-07T09:09:13.096703+00:00",
+  "automationId": "ai-adelaide-enquiry-desk",
+  "status": "ACTIVE",
+  "observedFirstRunUTC": "2026-09-07T09:01:29.078Z",
+  "observedFirstRunAdelaide": "2026-09-07T18:31:29.078+09:30",
+  "originalNextRunAdelaide": "2026-09-07T21:31:41+09:30",
+  "explicitTimezoneAttemptNextRunAdelaide": "2026-09-08T18:30:22+09:30",
+  "correctedNextRunAdelaide": "2026-09-08T09:01:10+09:30",
+  "nativeSchedulerDatabaseReadBack": true,
+  "firstUnattendedRunVerified": true,
+  "firstRunAtCorrectedTimeVerified": false,
+  "cause": "Original expiry option bypassed app local wall-clock scheduling; anchored timezone rule also produced evening run. Plain weekly rule produces intended local morning time.",
+  "sourceEvidence": {
+    "bundle": ".vite/build/src-VqXTPopo.js",
+    "functions": [
+      "oI",
+      "AI",
+      "jI",
+      "kI"
+    ],
+    "localClockOptionAllowlistExcludesUntil": true,
+    "maximumJitterSeconds": 119
+  },
+  "pilotEndEnforcement": "Prompt date gate pauses after 5 Dec; final Fri 4 Dec review pauses after completion."
+}

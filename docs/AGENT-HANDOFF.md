@@ -1,10 +1,11 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-09-06** (growth operation configured; private enquiry register live and verified).
+**Last updated: 2026-09-07** (first growth run verified; schedule timing repaired; Monday plan prepared).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
 
+- **2026-09-07 first unattended growth run:** actual wake occurred at 18:31 Adelaide because the original expiry rule bypassed the app's local-time scheduling. Native-tool repair now queues 8 September at about 09:01 Adelaide, verified from the scheduler; corrected execution remains to be observed. Pilot end is enforced by final-review pause plus a prompt date gate. Register has only two excluded tests; seven HTTP checks pass. Sender DNS is configured, receiving authentication and first prospects' consent/history remain unverified; no emails sent. Monday plan selects closing-CTA service prefill repairs and an audit/calculator channel map. See `reviews/2026-09-07/growth-operations/run-summary.md` and the shared growth brief.
 - **2026-09-06 Outlook signature configured:** `hello@aiadelaide.com.au` now defaults to the branded AI Adelaide Team HTML signature for new messages and replies/forwards. Both dropdown settings verified; automatic insertion and appearance verified in a recipient-free new draft. Draft remains unsent for preview. Reusable source: `AI-ADELAIDE-EMAIL-SIGNATURE.html`. This changes this Mac's Outlook only; OpenClaw/SMTP templates are not connected to it.
 
 - **2026-09-06 MDEX offer clarified and discovery PDF completed:** Ivan has already offered the redesign free; hosting, ongoing SEO and continuing services are separate. `output/pdf/MDEX-Website-Discovery.pdf` supersedes the earlier Word proposal. Three branded pages and 11 fillable questions, visually checked; field save/read-back verified. No fixed care price or mandatory subscription introduced. Not sent; no website changes made.

@@ -28,3 +28,7 @@ The first complete 28-day post-release GSC window is 6 September–3 October, av
 ## Outreach authority update
 
 Later on 6 September, Ivan delegated proactive email outreach content and frequency to the operator. The active automation and standing brief now include up to five new eligible contacts per week and one follow-up after seven business days, with ten initial/follow-up emails total per week. Per-message approval is superseded within that scope; sender readiness, recipient consent and contact/opt-out evidence still require verification before sending. No emails were sent as part of this configuration update.
+
+## 8 September efficiency update
+
+Ivan authorised reducing routine runs and selective Luna delegation. Existing automation updated and read back: weekdays 09:00 Adelaide only, five scheduled runs per week instead of fifteen. Friday 09:00 includes the progress report, first due 11 September. Monthly reviews are included on 5 October, 5 November and final 4 December. No new automation; immediate Telegram notifications preserved. Saved prompt specifies Luna low/medium for suitable bounded subtasks and coordinator ownership of final judgments. This verifies configuration, not future execution or measured token savings.

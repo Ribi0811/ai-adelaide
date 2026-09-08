@@ -1,9 +1,11 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-09-08** (corrected morning schedule verified; service-context link repair live).
+**Last updated: 2026-09-09** (audit/calculator channel review complete; reduced cadence executed).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
+
+- **2026-09-09 channel review:** self-serve audit is browser-only; calculator requests use Telegram/best-effort local JSON and are outside the Contact Sheet. Calculator success copy claims report email that its API does not send. Scoped correction/integration proposal: `reviews/2026-09-09/growth-operations/channel-map.md`. No collection or live code change. Reduced schedule ran at 09:00; health passed. One raw Contact submission triaged privately as vendor outreach, not a qualified enquiry.
 
 - **2026-09-08 operating cadence reduced:** authorised five runs weekly, weekdays 09:00 Adelaide, replacing three daily checks. Friday morning scorecard starts 11 September; monthly reviews use existing runs on 5 October, 5 November and final 4 December. Selective Luna low/medium subagents for bounded work; coordinator retains judgment/release responsibility. Configuration read back; token savings not measured. See growth brief and launch log.
 

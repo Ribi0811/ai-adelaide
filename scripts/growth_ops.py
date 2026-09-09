@@ -82,7 +82,7 @@ def summarize_rows(values, now):
     new7 = sum(1 for r in records if r[7] != 'Spam' and date_value(r[0]) and now - timedelta(days=7) <= date_value(r[0]) <= now)
     valid_amounts = [x for x in amounts if x is not None]
     return {
-        'status': 'read_verified', 'scope': 'Contact and Tradie SEO register only; not all business revenue',
+        'status': 'read_verified', 'scope': 'Contact, Tradie SEO and submitted AI-readiness requests only; not all business revenue',
         'nonTestRecords': None if invalid_flags else len(records), 'knownNonTestRecords': len(records),
         'testRecordsExcluded': tests, 'stagesKnownRecords': stages,
         'nonSpamRecordsCreatedLast7Days': None if invalid_flags or missing_received else new7, 'actionRows': action_rows,

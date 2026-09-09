@@ -67,7 +67,7 @@ export default function AuditResultsPage() {
                 Start the Free Audit <span aria-hidden>→</span>
               </Link>
               <Link
-                href="/contact"
+                href="/contact?service=audit#send-message"
                 className="inline-flex items-center rounded-xl border border-accent/40 bg-white px-6 py-3 text-base font-semibold text-accent transition-all hover:bg-accent/5"
               >
                 Book a Free Chat
@@ -178,7 +178,7 @@ export default function AuditResultsPage() {
             Free 15-minute chat. We&apos;ll walk through your score and tell you which fixes will actually move the needle.
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary inline-flex px-5 py-3 text-sm">
+            <Link href="/contact?service=audit#send-message" className="btn-primary inline-flex px-5 py-3 text-sm">
               Book Free Chat <span aria-hidden>→</span>
             </Link>
             <Link

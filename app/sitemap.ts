@@ -21,7 +21,7 @@ const PAGE_DATES: Record<string, string> = {
   "/seo-for-tradies-adelaide": "2026-09-05",
   "/services": "2026-08-22",
   "/contact": "2026-09-05",
-  "/audit": "2026-07-16",
+  "/audit": "2026-09-09",
   "/website-cost-adelaide": "2026-07-16",
   "/seo-vs-google-ads-adelaide": "2026-07-13",
   "/websites-for-hairdressers-adelaide": "2026-06-23",
@@ -64,7 +64,7 @@ const PAGE_DATES: Record<string, string> = {
   "/about": "2026-09-05",
   "/faq": "2026-06-20",
   "/lost-leads-calculator": "2026-07-11",
-  "/privacy-policy": "2026-07-17",
+  "/privacy-policy": "2026-09-09",
   "/terms": "2026-07-16",
   "/cookie-policy": "2026-07-17",
   "/blog": "2026-07-11",
@@ -76,7 +76,7 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
   "/testimonials": "2026-08-22",
-  "/tools/ai-readiness-calculator": "2026-07-13",
+  "/tools/ai-readiness-calculator": "2026-09-09",
 };
 
 // Suburb content lives in one data file with no per-suburb history yet —

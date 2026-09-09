@@ -138,7 +138,7 @@ export default function AuditReportPage() {
           <p className="text-sm text-slate-800">
             Want help implementing this roadmap? Book a free chat and we can scope your next website, SEO, or AI automation win.
           </p>
-          <Link href="/contact" className="btn-primary mt-4 inline-flex w-full justify-center">
+          <Link href="/contact?service=audit#send-message" className="btn-primary mt-4 inline-flex w-full justify-center">
             Book Free Chat →
           </Link>
         </div>

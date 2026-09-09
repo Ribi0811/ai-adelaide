@@ -1,5 +1,7 @@
 # Audit and calculator channel review — 9 September 2026
 
+Ivan approved the bounded proposal below on 9 September. The map records the pre-correction state; implementation and release evidence are tracked in [calculator-release.md](calculator-release.md).
+
 ## Verified map
 
 | Journey | Visitor action | Current handling | Included in Contact register? |
@@ -26,6 +28,6 @@ One Luna medium subagent independently inspected the source while the coordinato
 2. With scoped approval for the collection change, save only submitted calculator requests into the existing Restricted enquiry Sheet using the existing adapter. Map name, business, email, optional phone, source=ai-readiness-calculator, score/tier summary and existing attribution; assign New, leave quote/win/cash blank. Do not store raw answers in the Sheet, create a new destination, or treat anonymous quiz completion as a lead. Review the actual form disclosure/privacy wording before release.
 3. Preserve self-serve audit download. Make any human-help handoff an explicit Contact request with service=audit; do not silently turn its email prefill into outreach consent or server-side collection.
 
-Acceptance: desktop/mobile request and retry/error states; one labelled test creates exactly one identifiable Sheet row; notification failures cannot falsely claim report delivery; rollback target recorded; no raw answers/customer data committed. Test against controlled local dependencies first, then one approved live integration check. Existing consent/privacy limits mean step 2 remains a proposal, not a deployed integration.
+Acceptance: desktop/mobile request and retry/error states; one labelled test creates exactly one identifiable Sheet row; notification failures cannot falsely claim report delivery; rollback target recorded; no raw answers/customer data committed. Test against controlled local dependencies first, then one approved live integration check. The approved extension is limited to submitted calculator requests and the existing Restricted register.
 
 Secondary observations for a later bounded content pass: audit fallback mentions 15 questions while actual quiz has ten; calculator shows a 50+ trust count that needs evidence; audit results use strong payback language. These were observed, not newly introduced, and were not changed in this mapping task.

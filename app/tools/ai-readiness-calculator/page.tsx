@@ -1,8 +1,9 @@
 'use client';
 
-import { FormEvent, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { READINESS_QUESTIONS, scoreAnswers } from './questions';
+import { READINESS_QUESTIONS, READINESS_TIERS, scoreAnswers } from './questions';
 import { track } from '@/lib/track';
 import { getAttribution } from '@/lib/attribution';
 
@@ -22,33 +23,11 @@ const initialLeadForm: LeadForm = {
   phone: '',
 };
 
-const readinessBreakdown = [
-  {
-    title: 'AI Novice',
-    range: '0-20',
-    description: 'You rely heavily on manual processes. Measure repetitive tasks before choosing an automation target.',
-  },
-  {
-    title: 'AI Explorer',
-    range: '21-40',
-    description: "Free AI readiness score for your Adelaide small business. Get a PDF report in 5 minutes covering website, SEO, automation gaps.",
-  },
-  {
-    title: 'AI Ready',
-    range: '41-60',
-    description: 'You have AI foundations in place. Small improvements can yield big results.',
-  },
-  {
-    title: 'AI Leader',
-    range: '61-80',
-    description: "You're ahead of most. Focus on advanced automation and AI strategy.",
-  },
-  {
-    title: 'AI Master',
-    range: '81-100',
-    description: "You're an AI leader. Consider consulting others or scaling your operations.",
-  },
-];
+const readinessBreakdown = READINESS_TIERS.map((tier) => ({
+  title: tier.key,
+  range: `${tier.min}-${tier.max}`,
+  description: tier.summary,
+}));
 
 export default function AIReadinessCalculatorPage() {
   const [answers, setAnswers] = useState<Answers>({});
@@ -57,8 +36,12 @@ export default function AIReadinessCalculatorPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
   const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submittedEmail, setSubmittedEmail] = useState('');
   const startedRef = useRef(false);
+  const confirmationRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (submitSuccess) confirmationRef.current?.focus();
+  }, [submitSuccess]);
 
   const recordAnswer = (questionId: string, value: string) => {
     if (!startedRef.current) {
@@ -97,9 +80,7 @@ export default function AIReadinessCalculatorPage() {
         body: JSON.stringify({
           ...leadForm,
           tool: 'ai-readiness-calculator',
-          answers,
           score: result.score,
-          rawScore: result.rawScore,
           tier: result.tier.key,
           attribution: getAttribution(),
         }),
@@ -113,7 +94,6 @@ export default function AIReadinessCalculatorPage() {
 
       track('audit_complete', { tier: result.tier.key, score: result.score });
       setSubmitSuccess(true);
-      setSubmittedEmail(leadForm.email);
       setLeadForm(initialLeadForm);
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
@@ -138,7 +118,7 @@ export default function AIReadinessCalculatorPage() {
                 Find out how ready your business really is for AI.
               </h1>
               <p className="max-w-2xl text-body-mobile leading-7 text-slate-700 sm:text-body">
-                Answer a few practical questions about your systems, data, team, and decision-making. We’ll score your AI readiness, show your tier instantly, then offer a detailed report you can use to plan the next step.
+                Answer a few practical questions about your systems, data, team, and decision-making. We’ll score your AI readiness, show your tier instantly, then let you choose whether to request help with the next step.
               </p>
             </div>
 
@@ -167,7 +147,7 @@ export default function AIReadinessCalculatorPage() {
               {[
                 ['9 questions', 'Built for Adelaide businesses'],
                 ['0–100 score', 'Mapped to clear readiness tiers'],
-                ['Detailed report', 'Delivered after lead capture'],
+                ['Optional follow-up', 'Request help with your next step'],
               ].map(([title, copy]) => (
                 <div
                   key={title}
@@ -189,7 +169,7 @@ export default function AIReadinessCalculatorPage() {
                   </p>
                   <p className="mt-2 text-sm text-slate-600">
                     {isResultsStep
-                      ? 'You’re done. Review your score and request the detailed report.'
+                      ? 'You’re done. Review your score and choose whether to request a follow-up.'
                       : 'Choose the option that best reflects your business today.'}
                   </p>
                 </div>
@@ -320,7 +300,7 @@ export default function AIReadinessCalculatorPage() {
                       <div className="rounded-2xl border border-slate-200 bg-[#fafdff] p-5">
                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">Your next move</p>
                         <p className="mt-3 text-sm leading-7 text-slate-700">
-                          Get the detailed report and AI Adelaide can follow up with tailored recommendations for your business.
+                          Request a follow-up if you would like help choosing a practical next step for your business.
                         </p>
                       </div>
                     </div>
@@ -365,26 +345,18 @@ export default function AIReadinessCalculatorPage() {
 
                     <div className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_18px_50px_rgba(15,29,43,0.08)] sm:p-6">
                       <div className="mb-5">
-                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E8C74]">Get Your Detailed Report</p>
-                        <h3 className="mt-2 text-2xl font-semibold text-slate-950">Send my breakdown</h3>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0E8C74]">Optional follow-up</p>
+                        <h3 className="mt-2 text-2xl font-semibold text-slate-950">Talk through my results</h3>
                         <p className="mt-2 text-sm leading-7 text-slate-600">
-                          Leave your details and we’ll store your result for follow-up with a deeper AI readiness breakdown.
+                          Leave your details if you would like AI Adelaide to contact you about your result. Your score is available above without submitting this form.
                         </p>
                       </div>
 
                       {submitSuccess ? (
-                        <div className="rounded-2xl border border-[#bfeee6] bg-[#ecfffb] p-5 text-sm leading-7 text-slate-800">
-                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0E8C74]">📧 Check Your Inbox</p>
+                        <div ref={confirmationRef} tabIndex={-1} role="status" className="rounded-2xl border border-[#bfeee6] bg-[#ecfffb] p-5 text-sm leading-7 text-slate-800">
+                          <p className="font-semibold">Request received</p>
                           <p className="mt-3">
-                            We&apos;ve sent your detailed AI Readiness Report to <strong>{submittedEmail}</strong>. It includes:
-                          </p>
-                          <ul className="mt-3 space-y-1 text-slate-700">
-                            <li>• Your full score breakdown</li>
-                            <li>• 3 personalised next steps</li>
-                            <li>• Specific tools we recommend for your business type</li>
-                          </ul>
-                          <p className="mt-4">
-                            In the meantime, explore our AI receptionist solutions or book a free consultation.
+                            Your request has been received. AI Adelaide can follow up using the details you provided.
                           </p>
                         </div>
                       ) : (
@@ -407,7 +379,7 @@ export default function AIReadinessCalculatorPage() {
                                 value={leadForm.businessName}
                                 onChange={(event) => setLeadForm((prev) => ({ ...prev, businessName: event.target.value }))}
                                 className="w-full rounded-xl border border-slate-200 bg-[#fbfdff] px-4 py-3 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-[#5EF2D6] focus:bg-white"
-                                placeholder="Acme Electrical"
+                                placeholder="Your business"
                               />
                             </label>
                           </div>
@@ -421,7 +393,7 @@ export default function AIReadinessCalculatorPage() {
                                 value={leadForm.email}
                                 onChange={(event) => setLeadForm((prev) => ({ ...prev, email: event.target.value }))}
                                 className="w-full rounded-xl border border-slate-200 bg-[#fbfdff] px-4 py-3 text-sm text-slate-950 outline-none transition placeholder:text-slate-400 focus:border-[#5EF2D6] focus:bg-white"
-                                placeholder="jane@acme.com.au"
+                                placeholder="you@yourbusiness.com.au"
                               />
                             </label>
                             <label className="block">
@@ -435,6 +407,13 @@ export default function AIReadinessCalculatorPage() {
                             </label>
                           </div>
 
+                          <p className="text-xs leading-6 text-slate-600">
+                            By requesting a follow-up, you ask AI Adelaide to contact you about your result.
+                            We save your contact details, score, tier and how you found us in our private enquiry register.
+                            Your individual quiz answers are not sent with this request. See our{' '}
+                            <Link href="/privacy-policy" className="underline">Privacy Policy</Link>.
+                          </p>
+
                           {submitError ? <p className="text-sm text-[#c24141]">{submitError}</p> : null}
 
                           <button
@@ -442,7 +421,7 @@ export default function AIReadinessCalculatorPage() {
                             disabled={isSubmitting}
                             className="inline-flex w-full items-center justify-center rounded-xl bg-accent px-5 py-3.5 text-sm font-semibold text-[#0B1929] transition hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-60"
                           >
-                            {isSubmitting ? 'Saving your result…' : 'Get Your Detailed Report'}
+                            {isSubmitting ? 'Sending your request…' : 'Request a follow-up'}
                           </button>
                         </form>
                       )}

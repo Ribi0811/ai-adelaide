@@ -38,18 +38,20 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm text-slate-600 mb-8">
-            Last updated: 16 July 2026
+            Last updated: 9 September 2026
           </p>
 
           <div className="space-y-6 text-body-mobile text-slate-700 md:text-body">
             <p>
-              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") provides website design, local SEO, and AI automation services to small businesses in Adelaide. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"), our chat assistant, or our phone line. We handle personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.
+              <strong className="text-slate-950">AI Adelaide</strong> (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) provides website design, local SEO, and AI automation services to small businesses in Adelaide. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the &quot;Site&quot;), our chat assistant, or our phone line. We handle personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. Information We Collect</h2>
             <p className="font-semibold">Information you give us</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Enquiry forms:</strong> your name, business name, email, phone number, the service or plan you're interested in, and your message.</li>
+              <li><strong>Enquiry forms:</strong> your name, business name, email, phone number, the service or plan you&apos;re interested in, and your message.</li>
+              <li><strong>AI-readiness follow-up requests:</strong> if you submit the calculator form, we collect your name, business name, email, optional phone number, overall score, tier and marketing attribution. Your individual quiz answers are not sent with the request. We use these details to respond to your request, not to enrol you in marketing emails.</li>
+              <li><strong>Self-serve digital health check:</strong> answers and any email you enter to prefill the PDF stay in your browser. Generating that PDF does not submit an enquiry to us.</li>
               <li><strong>Chat assistant:</strong> the messages you type into the chat widget on our Site.</li>
               <li><strong>Phone calls:</strong> if you call us, your call may be answered by our AI voice assistant. Calls answered by the assistant are recorded and transcribed — this is how the assistant understands and responds to you, and how we take your message accurately and follow up.</li>
               <li><strong>Email and other correspondence</strong> you send us.</li>
@@ -70,7 +72,7 @@ export default function PrivacyPolicyPage() {
               <li>Take messages and book appointments via our AI assistants</li>
               <li>Understand how visitors use the Site and how our marketing performs</li>
               <li>Process payments and manage client accounts</li>
-              <li>Send administrative notices about services you've engaged us for</li>
+              <li>Send administrative notices about services you&apos;ve engaged us for</li>
               <li>Comply with legal obligations</li>
             </ul>
             <p>
@@ -82,9 +84,10 @@ export default function PrivacyPolicyPage() {
               We share information only with the service providers we use to run the business:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Hosting:</strong> our Site runs on Vercel's infrastructure.</li>
+              <li><strong>Hosting:</strong> our Site runs on Vercel&apos;s infrastructure.</li>
               <li><strong>Analytics:</strong> Google Analytics (you can opt out — see our Cookie Policy).</li>
-              <li><strong>Lead notifications:</strong> when you submit an enquiry or use the chat, the details are sent to our team by email and via Telegram so we can reply quickly.</li>
+              <li><strong>Lead notifications:</strong> when you submit an enquiry or use the chat, the details are sent to our team by email and/or Telegram so we can reply quickly.</li>
+              <li><strong>Enquiry register:</strong> submitted Contact, Tradie SEO and AI-readiness follow-up requests are saved in a private Google Sheet with restricted access. Calculator requests also notify our team via Telegram; they do not trigger an automatically emailed report.</li>
               <li><strong>AI processing:</strong> chat messages and phone conversations are processed by the AI model and voice providers that power our assistants, solely to generate responses and transcripts.</li>
               <li><strong>Payments:</strong> card and bank payments are handled by our payment providers.</li>
               <li><strong>Legal authorities</strong> when required by law.</li>
@@ -100,12 +103,12 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Your Rights</h2>
             <p>
-              You have the right to access, correct, or ask us to delete your personal information, and to ask how it has been handled. To exercise these rights, contact us at <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a> — we'll respond within a reasonable time. If you're not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au" className="text-accent hover:underline">oaic.gov.au</a>).
+              You have the right to access, correct, or ask us to delete your personal information, and to ask how it has been handled. To exercise these rights, contact us at <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a> — we&apos;ll respond within a reasonable time. If you&apos;re not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au" className="text-accent hover:underline">oaic.gov.au</a>).
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. Cookies</h2>
             <p>
-              We use Google Analytics and simple first-touch attribution to understand how the Site is used and how visitors find us. Australia doesn't require a cookie consent banner, so we don't use one, but you can opt out anytime. For full details, including exactly what is stored in your browser and how to opt out, see our <a href="/cookie-policy" className="text-accent hover:underline">Cookie Policy</a>.
+              We use Google Analytics and simple first-touch attribution to understand how the Site is used and how visitors find us. Australia doesn&apos;t require a cookie consent banner, so we don&apos;t use one, but you can opt out anytime. For full details, including exactly what is stored in your browser and how to opt out, see our <a href="/cookie-policy" className="text-accent hover:underline">Cookie Policy</a>.
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">7. Changes to This Privacy Policy</h2>

@@ -1,9 +1,11 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-09-09** (calculator correction live; labelled register delivery verified).
+**Last updated: 2026-09-10** (Thursday prospect refresh and proof outline complete).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
+
+- **2026-09-10 Thursday operation:** register and seven HTTP checks passed; no new actionable programme mail. Existing two priority prospects refreshed and remain held without a verified contact basis; no sends. Prepared a concrete permission-backed CarHire.global walkthrough outline with source/scope limits, not a published outcome case study. See `reviews/2026-09-10/growth-operations/run-summary.md`. First Friday scorecard due 11 September.
 
 - **2026-09-09 calculator correction approved and prepared:** Ivan approved the scoped channel-map proposal. Calculator copy now describes optional follow-up, submitted requests use the existing Restricted Sheet plus Telegram, and individual answers are excluded. Audit human-help links preselect the free audit in Contact. Privacy disclosure and tier explanations match this flow. Desktop/mobile controlled failure/retry/success, build, TypeScript, targeted lint and independent review passed. Live production `dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD`, source `5683fe0`; exactly one labelled test row saved and marked Yes, excluded from reporting. Canonical calculator confirmation and audit Contact preselection verified; see `reviews/2026-09-09/growth-operations/calculator-release.md`. Morning triage found vendor outreach, not a qualified enquiry.
 

@@ -18,4 +18,16 @@ Audit human-help links preselect service=audit in Contact. Browser-local audit s
 
 ## Release
 
-Pending. Rollback target verified before release: dpl_7rY73ARvENApxemtXb4MT7ejPRTf. No git push.
+Source commit: `5683fe0e03bd084dc69c34e1e05bcd50f9d0986a`.
+Production: `dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD`, Ready and aliased to https://aiadelaide.com.au.
+Deployment URL: https://ai-adelaide-7u5as46i0-ivans-projects-9bc72bf6.vercel.app.
+Rollback target verified before release: `dpl_7rY73ARvENApxemtXb4MT7ejPRTf`.
+Deployed a clean tracked-file archive into the existing project; only `.env.example` included. No git push.
+
+## Canonical verification
+
+The live nine-question calculator reached 20/100, displayed the new disclosure, and accepted one explicitly labelled internal follow-up request. Confirmation acknowledged receipt without any report-email claim. Desktop and mobile presentation checked. Read-back from the actual Sheet found exactly one matching row, correct service/source/score/tier, stage New, financial fields blank; Test record changed to Yes and read back. Sanitised evidence: `calculator-live-test.json`. No raw quiz answers were submitted. This verifies the register delivery, not recipient reading of a Telegram notification; no report email was expected or claimed.
+
+The reporting script now reads the expanded scope and excludes all three internal tests. The one non-test record remains the previously triaged vendor message; no qualified enquiry or revenue gain is claimed.
+
+Local audit completion still reaches its 40/100 report screen and enabled PDF button without contact collection. PDF-generation code is unchanged; the download itself was not revalidated. Audit result/report help links on localhost and the canonical report handoff select Free Digital Health Check (audit) in Contact; mobile and desktop states verified. The live sitemap reports 9 September for calculator/privacy. Audit result/report pages remain excluded from the sitemap as before.

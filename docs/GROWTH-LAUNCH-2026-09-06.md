@@ -32,3 +32,7 @@ Later on 6 September, Ivan delegated proactive email outreach content and freque
 ## 8 September efficiency update
 
 Ivan authorised reducing routine runs and selective Luna delegation. Existing automation updated and read back: weekdays 09:00 Adelaide only, five scheduled runs per week instead of fifteen. Friday 09:00 includes the progress report, first due 11 September. Monthly reviews are included on 5 October, 5 November and final 4 December. No new automation; immediate Telegram notifications preserved. Saved prompt specifies Luna low/medium for suitable bounded subtasks and coordinator ownership of final judgments. This verifies configuration, not future execution or measured token savings.
+
+## 9 September — approved calculator correction released
+
+Source `5683fe0` is live as `dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD`; rollback `dpl_7rY73ARvENApxemtXb4MT7ejPRTf`. Truthful follow-up copy, existing-register integration without raw answers, privacy disclosure and audit Contact preselection passed local checks, independent review and canonical verification. One labelled integration test produced exactly one Sheet row and was marked Yes; three tests excluded from reporting. See `reviews/2026-09-09/growth-operations/calculator-release.md`. No customer outreach, new destination or git push.

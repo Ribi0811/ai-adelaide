@@ -36,3 +36,7 @@ Ivan authorised reducing routine runs and selective Luna delegation. Existing au
 ## 9 September — approved calculator correction released
 
 Source `5683fe0` is live as `dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD`; rollback `dpl_7rY73ARvENApxemtXb4MT7ejPRTf`. Truthful follow-up copy, existing-register integration without raw answers, privacy disclosure and audit Contact preselection passed local checks, independent review and canonical verification. One labelled integration test produced exactly one Sheet row and was marked Yes; three tests excluded from reporting. See `reviews/2026-09-09/growth-operations/calculator-release.md`. No customer outreach, new destination or git push.
+
+## 11 September — first weekly scorecard
+
+The Friday run executed at 09:02 Adelaide. Register and seven HTTP checks pass; no actionable programme mail. Scorecard records the two verified weekly releases, no evidenced commercial outcome, zero ledger sends, held recipient eligibility and next-week priorities. Current native heartbeat is ACTIVE; next run 14 September around 09:00 Adelaide. Run-history rows and weekly token/cost totals are unavailable; no savings claim. See `reviews/2026-09-11/growth-operations/weekly-scorecard.md`.

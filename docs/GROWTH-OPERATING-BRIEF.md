@@ -77,6 +77,10 @@ Prioritise suitable previous enquiries, valid relationship-based opportunities a
 
 Use dated files under `docs/reviews/YYYY-MM-DD/growth-*` for non-sensitive evidence. Update this queue and `AGENT-HANDOFF.md` after completed work; commit artifacts to this repository. Automation IDs and verified launch results belong in `docs/GROWTH-LAUNCH-2026-09-06.md`.
 
+## Latest weekly assessment — 11 September
+
+First scorecard completed: `reviews/2026-09-11/growth-operations/weekly-scorecard.md`. Both selected website tasks were delivered; customer acquisition remains unproven. Next week, prioritise a suitable existing enquiry or permission-backed introduction, verify MDEX discovery status from actual records, and develop the existing proof outline only within documented contribution/permission. Retain outreach holds until recipient eligibility is established. Monday chooses at most two justified improvements after refreshing the valid search baseline; no new page or send quota.
+
 ## Efficiency and progress reporting — authorised 8 September
 
 Do small operating checks directly. Prefer `gpt-5.6-luna` for substantial bounded research, straightforward edits and first-pass review, using low/medium reasoning by default, high when needed and max only for a specific difficult subtask. Supply a concise self-contained brief with `fork_turns=none`; do not copy the full thread. Delegate only alongside useful independent coordinator work, with at most two agents. Commercial judgment, ambiguous problems, integration and final release decisions stay with the coordinator. This policy does not change the coordinator model or prove token savings.

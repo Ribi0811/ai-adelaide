@@ -1,9 +1,11 @@
 # Agent Handoff — Current State & Open Work
 
-**Last updated: 2026-09-10** (Thursday prospect refresh and proof outline complete).
+**Last updated: 2026-09-11** (first weekly scorecard complete; commercial outcomes unproven).
 Rule: whoever finishes an item strikes it here and re-dates this header. This file is the single answer to "what's the state and what do I do next?" — read `CLAUDE.md` first for the standing orders. **If you did work, the artifact must exist in THIS repo — work claimed in other workspaces doesn't count until it's committed here.**
 
 ## Current state
+
+- **2026-09-11 first weekly scorecard:** two selected improvements shipped and verified this week; no confirmed sales enquiry, qualified conversation, quote or paid outcome evidenced by the programme. One vendor submission and three excluded tests; zero outreach attempts. All seven HTTP checks pass. Current schedule ACTIVE, next Monday 14 September around 09:00 Adelaide. Next focus is a valid route to customer conversations and usable permission-backed proof, with no speculative page expansion. [Scorecard](reviews/2026-09-11/growth-operations/weekly-scorecard.md). Total token/cost savings are unavailable.
 
 - **2026-09-10 Thursday operation:** register and seven HTTP checks passed; no new actionable programme mail. Existing two priority prospects refreshed and remain held without a verified contact basis; no sends. Prepared a concrete permission-backed CarHire.global walkthrough outline with source/scope limits, not a published outcome case study. See `reviews/2026-09-10/growth-operations/run-summary.md`. First Friday scorecard due 11 September.
 

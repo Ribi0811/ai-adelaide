@@ -1,14 +1,9 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# AI Adelaide agent instructions
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+Use `CLAUDE.md` for the compact project rules. Read `docs/AGENT-HANDOFF.md` when selecting work or when current status affects the request; follow its history links only to resolve a relevant past decision.
 
-## Imported Claude Cowork project instructions
+Use `package.json` and the installed package for framework versions. For framework/API changes, consult matching documentation; use bundled Next.js docs if present. Do not assume this project uses a different Next.js release because a generated warning says so.
 
-Read `CLAUDE.md` (standing orders, pricing source of truth, SEO invariants)
-and `docs/AGENT-HANDOFF.md` (current state + prioritized queue) before any
-work. Rules that most often get violated: prices only from
-`lib/constants.ts PRICING`; never invent clients/stats; `git push` deploys
-production and is Ivan-only; if you did work, commit it to THIS repo —
-claims without artifacts here don't count.
+Read `docs/DESIGN-SYSTEM-V3.md` for visual changes. For growth-programme execution, releases or outreach, read the applicable authority and workflow in `docs/GROWTH-OPERATING-BRIEF.md`; ordinary local edits do not require the whole operating history.
+
+Carry authorised local implementation through relevant verification and repair. Keep artifacts in this repository and commit only the files belonging to the completed task, preserving unrelated work. `git push` remains Ivan-only. A documentation-only change needs document/link checks, not an application build.

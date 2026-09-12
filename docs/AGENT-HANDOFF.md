@@ -1,8 +1,10 @@
 # Agent handoff — current state and priorities
 
-Updated 12 September 2026: instruction cleanup only. Operational facts below are the latest recorded evidence through 11 September; they were not rechecked live during this cleanup. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
+Updated 13 September 2026: weekend-wake guard recorded. Commercial and website facts remain the latest evidence through 11 September; they were not rechecked during this scheduling exception. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
 
 ## Current evidence
+
+- **13 September scheduling exception:** Codex woke on Sunday despite the saved weekday rule. Business work was skipped; an explicit weekend execution guard was added and verified. Monday 14 September at approximately 09:00 remains queued; underlying scheduler cause unresolved. [Evidence](reviews/2026-09-13/growth-operations/weekend-wake.md).
 
 - The [11 September scorecard](reviews/2026-09-11/growth-operations/weekly-scorecard.md) records two shipped improvements, no confirmed sales enquiry, qualified conversation, quote or paid programme outcome, one vendor submission, three excluded tests and zero outreach attempts. Seven HTTP checks passed; token/cost savings remain unavailable.
 - Contact/Tradie SEO use the approved private register. The [9 September calculator release](reviews/2026-09-09/growth-operations/calculator-release.md) added optional follow-up requests to the same register and Telegram, excluded individual answers, and verified one labelled test row. Other audit/chat/booking/phone paths are not all captured there.

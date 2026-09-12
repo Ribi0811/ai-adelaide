@@ -41,6 +41,6 @@ Source `5683fe0` is live as `dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD`; rollback `dpl_7r
 
 The Friday run executed at 09:02 Adelaide. Register and seven HTTP checks pass; no actionable programme mail. Scorecard records the two verified weekly releases, no evidenced commercial outcome, zero ledger sends, held recipient eligibility and next-week priorities. Current native heartbeat is ACTIVE; next run 14 September around 09:00 Adelaide. Run-history rows and weekly token/cost totals are unavailable; no savings claim. See `reviews/2026-09-11/growth-operations/weekly-scorecard.md`.
 
-## 13 September — weekend execution guard
+## 13 September — manual-run clarification
 
-Unexpected Sunday native wake observed despite the unchanged weekday schedule. Routine business work skipped. Added a weekday gate to the same heartbeat, with the lifecycle gate first; read-back verified the guard and preserved settings. Monday 14 September around 09:00 remains queued. Root cause and future automatic guard behavior unverified. See `reviews/2026-09-13/growth-operations/weekend-wake.md`.
+Ivan confirmed the Sunday wake was a deliberately initiated unscheduled run. The coordinator's scheduler-fault diagnosis was incorrect and the temporary weekend guard was removed. Explicit manual-run support was saved and read back while preserving the weekday automatic schedule and other limits. Programme work resumed. See `reviews/2026-09-13/growth-operations/weekend-wake.md` and `manual-run-summary.md` in the same directory.

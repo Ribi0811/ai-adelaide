@@ -30,7 +30,7 @@ The programme ends after the 90-day pilot. At the final Friday review on 4 Decem
 
 ## Daily operation and privacy
 
-**Weekday gate, 13 September:** after the pilot lifecycle check, determine the Adelaide weekday before other programme work. If Saturday or Sunday, stop; only a minimal private skipped-wake record is allowed. Catch up missed work on the next weekday. An unexpected Sunday wake occurred despite the saved weekday rule; an explicit guard was added to the existing heartbeat and read back. Monday remains scheduled. This limits programme execution, not a verified scheduler repair; see `reviews/2026-09-13/growth-operations/weekend-wake.md`.
+**Manual runs, clarified 13 September:** Ivan may initiate an unscheduled run on any day, including weekends. The weekday cadence controls automatic scheduling and does not prevent explicitly initiated work. Do not infer a scheduler fault from an off-schedule day alone. Continue useful authorised programme work while preserving outreach sending-day/hour limits, privacy and all other external-action boundaries. The temporary weekend gate was removed after Ivan clarified that the Sunday run was manual; see `reviews/2026-09-13/growth-operations/weekend-wake.md`.
 
 Run `python3 scripts/growth_ops.py --health` for morning health; use this once per weekday run; do not repeat checks later the same day without an actionable reason. This uses the existing dedicated account with a read-only Sheets scope and prints aggregate counts and actionable row numbers, never customer fields or credentials. Python requires the existing `requests` and `google-auth` libraries. Missing credentials, access or changed headings must produce unavailable/mismatch status, never fabricated zeroes.
 

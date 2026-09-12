@@ -22,5 +22,12 @@
     "weekendBusinessWorkSkipped": true,
     "causeOfUnexpectedWake": "unresolved",
     "automaticFutureGuardExecution": "not_yet_observed"
+  },
+  "subsequentCorrection": {
+    "initiatedBy": "Ivan",
+    "classification": "authorised_manual_run",
+    "schedulerFaultEstablished": false,
+    "temporaryWeekendGuardRemoved": true,
+    "manualRunsSupported": true
   }
 }

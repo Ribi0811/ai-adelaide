@@ -282,7 +282,7 @@ export const postQualityOverrides: Record<string, PostQualityOverride> = {
       "Compare Adelaide SEO pricing, scope, contracts and reporting. Learn what AI Adelaide's $399 and $699 monthly plans include and what SEO cannot promise.",
     seoDescription:
       "Compare Adelaide SEO prices, scope and reporting. AI Adelaide offers $399 and $699 monthly plans with no lock-in and no fixed ranking guarantees.",
-    updatedAt: "2026-08-24",
+    updatedAt: "2026-09-15",
     readTime: "6 min read",
     content: `<p>SEO prices vary because providers quote different scopes. A useful Adelaide SEO quote should state the pages and locations in scope, what work will be completed, how it will be measured and whether you can leave without a long contract.</p>
 
@@ -293,6 +293,16 @@ export const postQualityOverrides: Record<string, PostQualityOverride> = {
   <li><strong>${PRICING.seo.tiers[1].name} — ${PRICING.seo.tiers[1].price}:</strong> for a broader service mix or a more competitive search market that justifies additional work.</li>
 </ul>
 <p>Both are month to month. The right level depends on the current website, search demand, competition, service area and the amount of useful content already available.</p>
+
+<h2>How to compare SEO packages in Adelaide</h2>
+<p>Ask each provider to price the same business brief: your website, two or three priority services, the areas you actually serve and the type of enquiry you want. A cheaper quote for one service is not directly comparable with a plan covering several locations.</p>
+<ul>
+  <li><strong>Work included:</strong> ask which existing pages will be improved, whether technical fixes are included and who writes or approves new content. A keyword or article count alone does not describe the work.</li>
+  <li><strong>Work excluded:</strong> ask about website rebuilds, hosting, advertising spend, paid tools and any setup fee. Get exclusions in writing before comparing the monthly totals.</li>
+  <li><strong>Evidence of delivery:</strong> ask for a list of completed changes alongside search results and genuine enquiries. A ranking report alone cannot show what the provider delivered.</li>
+  <li><strong>Access and exit:</strong> confirm that you retain access to your website, domain, Search Console and Business Profile, and ask how work is handed over when the service ends.</li>
+</ul>
+<p>For our Local SEO and Growth SEO plans, we agree the pages, services and work before you start. Choose the smaller scope when it addresses the main opportunity; consider more work only when the additional services or locations justify it. <a class="font-semibold text-accent underline underline-offset-4" href="/contact?service=seo#send-message">Request an SEO scope and quote</a> with your website and service area.</p>
 
 <h2>What should an SEO retainer cover?</h2>
 <ul>
@@ -322,7 +332,7 @@ export const postQualityOverrides: Record<string, PostQualityOverride> = {
 <h2>How should return be measured?</h2>
 <p>Start with a baseline for relevant queries, calls, forms and qualified leads. Record which leads become customers where practical. Ranking movement is useful, but the commercial test is whether the work produces more suitable opportunities at an acceptable cost.</p>
 
-<p>Review our <a href="/seo">Adelaide SEO services</a>, the more focused <a href="/local-seo-adelaide">local SEO service</a>, or request a <a href="/audit">free visibility audit</a>.</p>`,
+<p>Review our <a href="/seo">Adelaide SEO services</a> or the more focused <a href="/local-seo-adelaide">local SEO service</a>. Ready to compare a scope for your business? <a class="font-semibold text-accent underline underline-offset-4" href="/contact?service=seo#send-message">Request an SEO quote</a>. You can also try the <a href="/audit">free self-assessment</a> if you are still exploring your starting point.</p>`,
   },
 
   "do-i-need-a-website-if-i-have-facebook-instagram": {

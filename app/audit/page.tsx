@@ -5,22 +5,22 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Free AI Audit for Adelaide SMBs',
-  description: 'Free AI readiness audit for Adelaide small businesses. Get a scored PDF report on website, SEO, automation in 15 minutes.',
+  description: 'Free AI readiness self-assessment for Adelaide small businesses. Get a scored PDF report on website, SEO, lead capture and automation.',
   alternates: {
     canonical: '/audit',
   },
   openGraph: {
     title: 'Free Digital Health Check ',
-    description: 'Take our free 3-minute digital health check to find where you\'re losing customers online. Get an instant score with tailored recommendations for your Adelaide business.',
+    description: 'Take our free 3-minute digital health check to identify the digital areas to investigate next. Get an instant score with tailored recommendations for your Adelaide business.',
     url: 'https://aiadelaide.com.au/audit',
   },
 };
 
 const learnItems = [
   'Your Digital Health Score (out of 100)',
-  'Which areas are losing the most customers',
-  '3 recommendations tailored to your business type (website, SEO, or automation)',
-  'Estimated ROI for each recommendation',
+  'Which areas your answers suggest you should investigate first',
+  '3 recommendations based on your lowest-scoring areas and business context',
+  'Measurement guidance for each recommendation',
 ];
 
 const INK = '#1D1D1F';
@@ -49,7 +49,7 @@ export default function AuditLandingPage() {
               className="v3-rise mt-4 max-w-3xl text-[38px] font-semibold leading-[1.05] tracking-[-0.03em] [animation-delay:.12s] [text-wrap:balance] md:text-[60px]"
               style={{ color: INK }}
             >
-              Find where you&apos;re losing customers online — in 3 minutes
+              Find which digital areas to improve next — in 3 minutes
             </h1>
             <p className="v3-rise mt-6 max-w-2xl text-[16px] leading-relaxed text-[#6E6E73] [animation-delay:.24s] md:text-lg">
               Take the free digital health check, get your score instantly,
@@ -93,11 +93,11 @@ export default function AuditLandingPage() {
                 <ul className="mt-2.5 space-y-2">
                   <li className="flex items-start gap-2.5 text-[14.5px] leading-relaxed text-[#6E6E73]">
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0E8C74]" aria-hidden />
-                    See which commercially relevant queries already show your business
+                    See which website, SEO, lead-capture and automation areas to investigate
                   </li>
                   <li className="flex items-start gap-2.5 text-[14.5px] leading-relaxed text-[#6E6E73]">
                     <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0E8C74]" aria-hidden />
-                    Find where enquiries stall and what should be measured next
+                    Identify the enquiry stages to check and what should be measured next
                   </li>
                 </ul>
               </div>

@@ -17,11 +17,11 @@ const PAGE_DATES: Record<string, string> = {
   "/morphett-vale": "2026-09-05",
   "/website-pricing": "2026-09-05",
   "/website-design-adelaide": "2026-09-08",
-  "/seo": "2026-08-22",
+  "/seo": "2026-09-15",
   "/seo-for-tradies-adelaide": "2026-09-05",
   "/services": "2026-08-22",
   "/contact": "2026-09-05",
-  "/audit": "2026-09-09",
+  "/audit": "2026-09-15",
   "/website-cost-adelaide": "2026-07-16",
   "/seo-vs-google-ads-adelaide": "2026-07-13",
   "/websites-for-hairdressers-adelaide": "2026-06-23",
@@ -76,7 +76,7 @@ const PAGE_DATES: Record<string, string> = {
   "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
   "/testimonials": "2026-08-22",
-  "/tools/ai-readiness-calculator": "2026-09-09",
+  "/tools/ai-readiness-calculator": "2026-09-15",
 };
 
 // Suburb content lives in one data file with no per-suburb history yet —

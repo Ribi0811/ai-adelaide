@@ -139,7 +139,7 @@ export default function AIReadinessCalculatorPage() {
                 >
                   Start Quiz <span aria-hidden className="ml-2">↓</span>
                 </a>
-                <p className="text-sm text-slate-600">Join 50+ Adelaide businesses who trust AI Adelaide</p>
+                <p className="text-sm text-slate-600">A practical self-assessment for Adelaide businesses</p>
               </div>
             </div>
 
@@ -287,8 +287,8 @@ export default function AIReadinessCalculatorPage() {
                       <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-slate-700 sm:text-base">
                         {result.tier.summary}
                       </p>
-                      <p className="mt-5 text-sm font-medium text-slate-600">
-                        Join 50+ Adelaide businesses who trust AI Adelaide
+                      <p className="mt-5 text-xs leading-6 text-slate-500">
+                        Based on your answers about your systems, data, team and decision-making. This is not an independent assessment or a comparison with other businesses.
                       </p>
                     </div>
 

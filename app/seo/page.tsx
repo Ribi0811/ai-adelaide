@@ -236,15 +236,15 @@ export default function SeoPage() {
               </p>
               <div className="v3-rise mt-8 flex flex-col gap-3 sm:flex-row [animation-delay:.36s]">
                 <Link
-                  href="/audit"
+                  href="/contact?service=seo#send-message"
                   data-track="quote_seo_hero"
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#0E8C74] px-7 py-3.5 text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
                 >
-                  Get a Free SEO Audit
+                  Get an SEO quote
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </Link>
                 <Link
-                  href="/contact#send-message"
+                  href="/contact?service=seo#send-message"
                   className="inline-flex items-center justify-center gap-2 rounded-full border border-black/[0.12] px-7 py-3.5 text-[15px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
                 >
                   Talk to an Adelaide SEO Specialist <span aria-hidden>→</span>
@@ -499,24 +499,24 @@ export default function SeoPage() {
               Ready to Start Showing Up on Google?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-[#6E6E73] md:text-base">
-              Book a free audit — no obligation. We&apos;ll review your current
-              visibility, identify the strongest opportunities and explain what
-              we would prioritise to reach more Adelaide customers.
+              Tell us your website, main services and the areas you serve.
+              We&apos;ll discuss the work your business needs and prepare a
+              clear SEO scope and quote. No obligation to proceed.
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="/contact#send-message"
+                href="/contact?service=seo#send-message"
                 data-track="quote_seo_cta"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
               >
-                Send a Message
+                Request an SEO quote
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
               <Link
                 href="/audit"
                 className="inline-flex items-center gap-2 rounded-full border border-black/[0.12] px-8 py-4 text-[16px] font-semibold text-[#1D1D1F] transition hover:border-black/30 hover:bg-black/[0.03]"
               >
-                Book Free Chat <span aria-hidden>→</span>
+                Try the self-assessment <span aria-hidden>→</span>
               </Link>
             </div>
           </Reveal>

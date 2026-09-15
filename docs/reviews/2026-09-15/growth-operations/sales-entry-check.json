@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-14T23:37:38.852253+00:00",
+  "method": "Real in-app browser, read-only navigation; no form submitted or appointment booked",
+  "websiteQuote": {
+    "entry": "https://aiadelaide.com.au/website-design-adelaide",
+    "clicked": "Start with a free brief",
+    "destination": "https://aiadelaide.com.au/contact?service=website#send-message",
+    "selectedService": "New website or redesign"
+  },
+  "booking": {
+    "url": "https://cal.com/aiadelaide/15min",
+    "eventVisible": true,
+    "timezone": "Australia/Adelaide",
+    "sameDaySlotsVisible": true,
+    "bookingCompleted": false
+  },
+  "limits": [
+    "Does not retest enquiry delivery or prove completed bookings.",
+    "No acquisition improvement inferred from passing entry checks."
+  ]
+}

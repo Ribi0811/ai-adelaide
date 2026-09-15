@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-09-14T23:46:50.443525+00:00",
+  "method": "Read-only Search Console URL Inspection API; recorded Google index state, not a live indexing request",
+  "results": [
+    {
+      "path": "/",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-09T21:06:52Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://aiadelaide.com.au/",
+      "userCanonical": "https://aiadelaide.com.au/",
+      "crawledAs": "MOBILE"
+    },
+    {
+      "path": "/local-seo-adelaide",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-08-28T23:13:02Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://aiadelaide.com.au/local-seo-adelaide",
+      "userCanonical": "https://aiadelaide.com.au/local-seo-adelaide",
+      "crawledAs": "MOBILE"
+    },
+    {
+      "path": "/seo",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-10T05:49:56Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://aiadelaide.com.au/seo",
+      "userCanonical": "https://aiadelaide.com.au/seo",
+      "crawledAs": "MOBILE"
+    },
+    {
+      "path": "/reynella",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-05T13:54:36Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://aiadelaide.com.au/reynella",
+      "userCanonical": "https://aiadelaide.com.au/reynella",
+      "crawledAs": "MOBILE"
+    },
+    {
+      "path": "/websites-for-electricians-adelaide",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "lastCrawlTime": "2026-09-05T13:53:08Z",
+      "pageFetchState": "SUCCESSFUL",
+      "googleCanonical": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+      "userCanonical": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+      "crawledAs": "MOBILE"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-09-15T00:01:11.849555+00:00",
+  "source": "2eb3b9283f3ab520a75cd8e05d3022538717b74c",
+  "deploymentId": "dpl_GCDBjEX7VH9QT3Gf4UR9roRxqvxJ",
+  "deploymentUrl": "https://ai-adelaide-pax4qhu3i-ivans-projects-9bc72bf6.vercel.app",
+  "canonical": "https://aiadelaide.com.au",
+  "status": "Ready; canonical browser journeys verified",
+  "rollbackDeploymentId": "dpl_EgYkznF7WtvZEpcUVtc9dnVwHABD",
+  "desktopSeoHero": "clicked; contact service SEO selected",
+  "mobileGuideClosing": "clicked; contact service SEO selected",
+  "guideComparisonSection": "visible on canonical page",
+  "auditMaximum": 100,
+  "auditCategoryScores": [
+    25,
+    25,
+    25,
+    25
+  ],
+  "livePdf": {
+    "downloaded": true,
+    "textVerified": true,
+    "sha256": "80b58a2d4f8fe57c645bec5df5869b6c7467f9ed864ec50eb69aedba354b481a"
+  },
+  "calculatorUnsupported50PlusClaimAbsent": true,
+  "sitemapLastmod": {
+    "https://aiadelaide.com.au/seo": "2026-09-15T00:00:00.000Z",
+    "https://aiadelaide.com.au/audit": "2026-09-15T00:00:00.000Z",
+    "https://aiadelaide.com.au/tools/ai-readiness-calculator": "2026-09-15T00:00:00.000Z",
+    "https://aiadelaide.com.au/blog/how-much-does-seo-cost-adelaide": "2026-09-15T00:00:00.000Z"
+  },
+  "manualActions": {
+    "source": "Authenticated Search Console browser report",
+    "status": "No issues detected",
+    "property": "sc-domain:aiadelaide.com.au"
+  },
+  "securityIssuesReport": "not assessed",
+  "newEnquirySubmitted": false,
+  "customerOrRankingGainEstablished": false,
+  "gitPush": false
+}

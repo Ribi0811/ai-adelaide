@@ -7,3 +7,5 @@ Local production build and TypeScript pass. All 354 generated public HTML/RSC/bo
 This reduces new harvesting from the current website. It cannot erase copied addresses, historical deployments, third-party listings or purchased lists, prevent guessed addresses, or guarantee less spam. Mailbox filtering is a separate next step; no mailbox rules, DNS, regional blocks or account settings changed. Contact-form bot abuse also remains a separate issue.
 
 Independent review found one stale catch-message email instruction; it was corrected to match the phone fallback. No other public exposure or delivery/consent changes were found.
+
+Released source `2e1e168` to `dpl_3minStWYLXrCh59BF74QKyPBmXZn` through the existing production project. Canonical alias verified Ready. Rollback target: `dpl_GCDBjEX7VH9QT3Gf4UR9roRxqvxJ`. Seven canonical HTML/text responses contain no target email; live Contact message link reaches the form. See [live checks](live-checks.json). No git push.

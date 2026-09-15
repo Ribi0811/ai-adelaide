@@ -4,6 +4,8 @@ Updated 15 September 2026: paid website and SEO customers are the growth priorit
 
 ## Current evidence
 
+- **15 September, email scraping:** at Ivan's request removed public mailbox exposure from pages, metadata, AI text routes and generated assets. Contact form/phone remain; mail delivery unchanged. Live source `2e1e168`, deployment `dpl_3minStWYLXrCh59BF74QKyPBmXZn`. [Verification](reviews/2026-09-15/email-exposure/review.md). Do not reintroduce a public email field or mailto link; mailbox spam filtering remains separate work.
+
 - **15 September:** released `2eb3b92` to production `dpl_GCDBjEX7VH9QT3Gf4UR9roRxqvxJ`. SEO service and pricing-guide links preserve SEO quote intent; the guide now helps buyers compare packages. Audit scores and advice are corrected. Canonical desktop/mobile quote journeys and live 100/100 PDF verified. No new qualified enquiry or paid outcome recorded. [Run evidence](reviews/2026-09-15/growth-operations/run-summary.md).
 
 - **13 September manual run:** Ivan initiated the Sunday run; the earlier scheduler-fault inference was wrong. Removed the unnecessary weekend gate and verified manual-run support. Automatic weekday cadence remains intact. [Correction](reviews/2026-09-13/growth-operations/weekend-wake.md). [Completed checks](reviews/2026-09-13/growth-operations/manual-run-summary.md): seven HTTP checks pass; the new form submission is another vendor pitch, not sales intent. No new delivery commitment verified. Ivan subsequently removed the free MDEX project from growth priorities.

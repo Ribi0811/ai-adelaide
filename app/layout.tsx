@@ -130,7 +130,6 @@ export default function RootLayout({
               description: "AI Adelaide provides website design, local SEO and practical automation for Adelaide small businesses.",
               url: "https://aiadelaide.com.au",
               telephone: siteConfig.phoneHref.replace("tel:", ""),
-              email: "hello@aiadelaide.com.au",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "5 Peel St",

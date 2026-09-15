@@ -143,7 +143,7 @@ export default function TermsPage() {
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <p className="mt-2">
-              <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a>
+              <a href="/contact#send-message" className="text-accent hover:underline">our contact form</a>
             </p>
           </div>
         </div>

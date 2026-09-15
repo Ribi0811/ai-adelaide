@@ -145,7 +145,6 @@ export const siteConfig = {
   name: "AI Adelaide",
   description:
     "Website design from $699, local SEO, and practical automation for Adelaide small businesses. Clear scope, local support, and measurable work.",
-  email: "hello@aiadelaide.com.au",
   // Display phone + click-to-call. Set NEXT_PUBLIC_PHONE in env (e.g. "+61871009788")
   // and NEXT_PUBLIC_PHONE_DISPLAY (e.g. "(08) 7100 9788"). Falls back to masked
   // placeholder if env not set so local dev still works.

@@ -170,7 +170,7 @@ export default function ContactForm() {
       setForm(initialState);
     } catch {
       setStatus("error");
-      setErrorMessage("Your enquiry was not confirmed. Please try again or email us directly.");
+      setErrorMessage("Your enquiry was not confirmed. Please try again or call us.");
     }
   }
 
@@ -310,7 +310,7 @@ export default function ContactForm() {
 
         {status === "error" && (
           <div role="alert" className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
-            {errorMessage} <a href="mailto:hello@aiadelaide.com.au" className="underline">hello@aiadelaide.com.au</a>
+            {errorMessage} <a href="tel:+61871009788" className="underline">Call (08) 7100 9788</a>
           </div>
         )}
       </form>

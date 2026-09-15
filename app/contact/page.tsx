@@ -192,7 +192,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Prefer email — the dark moment */}
+      {/* Message contact — the dark moment */}
       <section className="px-6 pb-16 md:pb-20">
         <div className="mx-auto max-w-container">
           <Reveal>
@@ -202,13 +202,13 @@ export default function ContactPage() {
                 aria-hidden
               />
               <p className="relative font-mono text-[12px] font-semibold uppercase tracking-[0.18em] text-[#5EF2D6]">
-                Prefer email?
+                Prefer to write?
               </p>
               <a
-                href={`mailto:${siteConfig.email}`}
+                href="/contact#send-message"
                 className="relative mt-4 inline-block text-[24px] font-semibold tracking-tight text-white underline decoration-[#5EF2D6]/40 underline-offset-8 transition hover:decoration-[#5EF2D6] md:text-[32px]"
               >
-                {siteConfig.email}
+                Send a message
               </a>
               <p className="relative mt-5 text-[15px] text-white/55">
                 Response time: Within 2 business hours

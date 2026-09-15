@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Your Rights</h2>
             <p>
-              You have the right to access, correct, or ask us to delete your personal information, and to ask how it has been handled. To exercise these rights, contact us at <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a> — we&apos;ll respond within a reasonable time. If you&apos;re not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au" className="text-accent hover:underline">oaic.gov.au</a>).
+              You have the right to access, correct, or ask us to delete your personal information, and to ask how it has been handled. To exercise these rights, contact us through <a href="/contact#send-message" className="text-accent hover:underline">our contact form</a> — we&apos;ll respond within a reasonable time. If you&apos;re not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (<a href="https://www.oaic.gov.au" className="text-accent hover:underline">oaic.gov.au</a>).
             </p>
 
             <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. Cookies</h2>
@@ -121,7 +121,7 @@ export default function PrivacyPolicyPage() {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <p className="mt-2">
-              <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a>
+              <a href="/contact#send-message" className="text-accent hover:underline">our contact form</a>
             </p>
           </div>
         </div>

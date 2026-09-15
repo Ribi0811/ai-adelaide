@@ -97,10 +97,10 @@ export default function Footer() {
             </p>
             <div className="mt-6 space-y-2 text-[14px]">
               <a
-                href="mailto:hello@aiadelaide.com.au"
+                href="/contact#send-message"
                 className="block text-[#6E6E73] transition-colors hover:text-[#0E8C74]"
               >
-                hello@aiadelaide.com.au
+                Send a message
               </a>
               <a
                 href={siteConfig.phoneHref}

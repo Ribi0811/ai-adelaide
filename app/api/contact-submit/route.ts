@@ -275,7 +275,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         ok: false,
-        error: "Could not deliver your details. Please email hello@aiadelaide.com.au.",
+        error: "Could not deliver your details. Please call (08) 7100 9788.",
         telegram,
         email,
       },

@@ -57,6 +57,6 @@ export async function POST(request: Request) {
   };
   const delivery = await deliverCalculatorLead({ telegram: () => notifyTelegram(lead), sheet: () => appendLeadToGoogleSheet(calculatorSheetLead(lead)) });
   const result = { leadId: lead.id, telegram: delivery.telegram, persisted: delivery.persisted, sheet: delivery.sheet };
-  if (!delivery.ok) return NextResponse.json({ ok: false, error: "Could not deliver your details. Please email hello@aiadelaide.com.au.", ...result }, { status: 502 });
+  if (!delivery.ok) return NextResponse.json({ ok: false, error: "Could not deliver your details. Please call (08) 7100 9788.", ...result }, { status: 502 });
   return NextResponse.json({ ok: true, ...result });
 }

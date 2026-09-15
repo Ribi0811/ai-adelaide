@@ -57,7 +57,7 @@ export default function TradieLeadForm() {
       setPhone("");
     } catch {
       setStatus("error");
-      setError("Something went wrong — please call (08) 7100 9788 or email hello@aiadelaide.com.au.");
+      setError("Something went wrong — please call (08) 7100 9788 for help.");
     }
   }
 

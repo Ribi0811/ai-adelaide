@@ -53,8 +53,8 @@ export default function FooterCTA() {
                 {siteConfig.phone}
               </a>{" "}
               &middot;{" "}
-              <a href={`mailto:${siteConfig.email}`} className="font-semibold text-textPrimary underline hover:text-accent">
-                {siteConfig.email}
+              <a href="/contact#send-message" className="font-semibold text-textPrimary underline hover:text-accent">
+                Send a message
               </a>
             </p>
           </div>

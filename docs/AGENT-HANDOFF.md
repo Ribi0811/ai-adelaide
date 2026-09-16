@@ -1,8 +1,10 @@
 # Agent handoff — current state and priorities
 
-Updated 16 September 2026: paid website and SEO customers are the growth priority; search-loss diagnosis, the audit scoring repair and paid SEO quote-path improvements are complete and live. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
+Updated 17 September 2026: paid website and SEO customers are the growth priority; search-loss diagnosis, the audit scoring repair and paid SEO quote-path improvements are complete and live. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
 
 ## Current evidence
+
+- **17 September:** completed a source-backed mobile website work sample; three new research candidates remain low-priority holds without buyer invitations or cleared contact eligibility. No sends or new qualified outcomes. [Run record](reviews/2026-09-17/growth-operations/run-summary.md).
 
 - **16 September:** prepared a private tailored reply and paid qualification brief for a reverified historical inbound invitation. Ivan subsequently dismissed this opportunity after confirming the invitation was seen too late and no conversation occurred. No send or follow-up; do not resurface it. All discovered IMAP folders checked; use INBOX-prefixed special-folder names. [Run record](reviews/2026-09-16/growth-operations/run-summary.md).
 

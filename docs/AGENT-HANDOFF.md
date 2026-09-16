@@ -4,7 +4,7 @@ Updated 16 September 2026: paid website and SEO customers are the growth priorit
 
 ## Current evidence
 
-- **16 September:** prepared a private tailored reply and paid qualification brief for a reverified historical inbound invitation. Current status outside the mailbox awaits Ivan; no send or new qualified outcome. All discovered IMAP folders checked; use INBOX-prefixed special-folder names. [Run record](reviews/2026-09-16/growth-operations/run-summary.md).
+- **16 September:** prepared a private tailored reply and paid qualification brief for a reverified historical inbound invitation. Ivan subsequently dismissed this opportunity after confirming the invitation was seen too late and no conversation occurred. No send or follow-up; do not resurface it. All discovered IMAP folders checked; use INBOX-prefixed special-folder names. [Run record](reviews/2026-09-16/growth-operations/run-summary.md).
 
 - **15 September, email scraping:** at Ivan's request removed public mailbox exposure from pages, metadata, AI text routes and generated assets. Contact form/phone remain; mail delivery unchanged. Live source `2e1e168`, deployment `dpl_3minStWYLXrCh59BF74QKyPBmXZn`. [Verification](reviews/2026-09-15/email-exposure/review.md). Do not reintroduce a public email field or mailto link; mailbox spam filtering remains separate work.
 

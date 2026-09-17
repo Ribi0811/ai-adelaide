@@ -1,8 +1,10 @@
 # Agent handoff — current state and priorities
 
-Updated 17 September 2026: paid website and SEO customers are the growth priority; search-loss diagnosis, the audit scoring repair and paid SEO quote-path improvements are complete and live. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
+Updated 18 September 2026: paid website and SEO customers are the growth priority; search-loss diagnosis, the audit scoring repair and paid SEO quote-path improvements are complete and live. Use `CLAUDE.md` for project rules. Keep this file focused on current state, open work and source links; put detailed evidence in dated reviews.
 
 ## Current evidence
+
+- **18 September Friday review:** three verified production releases this week, no genuine new sales enquiry or evidenced paid outcome; cash unknown and outreach sends zero. Prioritise active buyer requests over further held-site research. [Weekly scorecard](reviews/2026-09-18/growth-operations/weekly-scorecard.md). Seven morning HTTP checks pass.
 
 - **17 September publication:** portfolio example live as source `81e2993`, deployment `dpl_2dvVDraYM5j897yDLLrGDmtHUwrd`; canonical content and website-prefilled enquiry CTA verified. [Release record](reviews/2026-09-17/portfolio-publication/release.md). Ranking/customer impact unproven.
 

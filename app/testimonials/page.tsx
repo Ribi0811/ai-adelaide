@@ -77,6 +77,67 @@ export default function TestimonialsPage() {
         subheadline="A Next.js / React booking platform and a WordPress car-hire site, each shaped around a clear customer journey and search-ready content."
       />
 
+      <section id="carhire-mobile-search" className="section-shell scroll-mt-24 bg-bgPrimary py-section-mobile md:py-section" aria-labelledby="carhire-work-heading">
+        <div className="mx-auto max-w-4xl px-6">
+          <span className="eyebrow">CarHire.global · Mobile website improvement</span>
+          <h2 id="carhire-work-heading" className="mt-4 text-h2-mobile text-textPrimary md:text-h2">
+            Keeping the search controls clear on mobile
+          </h2>
+          <p className="mt-4 text-sm text-textSecondary">
+            Released 13 September 2026 · Website usability · Next.js / React
+          </p>
+          <p className="mt-6 text-body-mobile text-textSecondary md:text-body">
+            On CarHire.global, the floating chat launcher and attention graphic could
+            cover rental-search controls as visitors scrolled on a phone. We updated
+            the chat behaviour so visitors could use the search area without that overlap.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <article className="brand-card p-6">
+              <h3 className="text-xl font-semibold text-textPrimary">The problem</h3>
+              <p className="mt-3 leading-relaxed text-textSecondary">
+                Two useful features competed for the same screen space: finding a
+                rental car and asking for help. The floating support controls could
+                get in the way of the main task.
+              </p>
+            </article>
+            <article className="brand-card p-6">
+              <h3 className="text-xl font-semibold text-textPrimary">The change</h3>
+              <p className="mt-3 leading-relaxed text-textSecondary">
+                Floating chat controls hide while mobile search is on screen and on
+                the booking page. They return outside that area and remain available
+                on desktop. A chat deliberately opened by a visitor stays open.
+              </p>
+            </article>
+          </div>
+          <h3 className="mt-8 text-xl font-semibold text-textPrimary">What we checked</h3>
+          <p className="mt-3 leading-relaxed text-textSecondary">
+            Release checks covered the mobile search and date picker, moving back to
+            Contact, opening and minimising chat, and desktop support. The Contact page
+            remained available throughout. These checks verified the usability change;
+            they do not establish a booking, revenue or ranking increase.
+          </p>
+          <h3 className="mt-8 text-xl font-semibold text-textPrimary">The same approach for your business</h3>
+          <p className="mt-3 leading-relaxed text-textSecondary">
+            For an Adelaide service business, the task might be requesting a quote or
+            choosing a service from a phone. Our <Link href="/website-design-adelaide" className="font-semibold text-accent underline underline-offset-4">website design and improvement work</Link> starts
+            with that customer journey: identify the obstacle, make a defined change,
+            and check that the enquiry path works. Sales outcomes need their own measurement.
+          </p>
+          <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <Link href="/contact?service=website#send-message" className="btn-primary inline-flex px-6 py-3">
+              Discuss your website <span aria-hidden>→</span>
+            </Link>
+            <a href="https://www.carhire.global/" target="_blank" rel="noopener noreferrer" className="font-semibold text-accent underline underline-offset-4">
+              Visit CarHire.global
+            </a>
+          </div>
+          <p className="mt-6 text-sm leading-relaxed text-textSecondary">
+            Featured with permission. This example covers the specific update above,
+            not ownership or authorship of the entire platform.
+          </p>
+        </div>
+      </section>
+
       <section className="section-shell bg-bgSecondary py-section-mobile md:py-section">
         <div className="max-w-container mx-auto px-6">
           <div className="mx-auto max-w-3xl text-center">
@@ -110,7 +171,7 @@ export default function TestimonialsPage() {
               <Link href="/audit" className="btn-primary inline-flex px-6 py-3">
                 Get a Free Audit <span aria-hidden>→</span>
               </Link>
-              <Link href="/contact?service=website" className="btn-secondary inline-flex px-6 py-3">
+              <Link href="/contact?service=website#send-message" className="btn-secondary inline-flex px-6 py-3">
                 Discuss a Website
               </Link>
             </div>

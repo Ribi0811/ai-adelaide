@@ -75,7 +75,7 @@ const PAGE_DATES: Record<string, string> = {
   "/google-business-profile-optimisation-adelaide": "2026-08-22",
   "/ai-marketing-adelaide": "2026-07-11",
   "/best-ai-receptionist-australia": "2026-06-23",
-  "/testimonials": "2026-08-22",
+  "/testimonials": "2026-09-17",
   "/tools/ai-readiness-calculator": "2026-09-15",
 };
 

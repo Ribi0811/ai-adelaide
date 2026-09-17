@@ -4,7 +4,9 @@ Updated 17 September 2026: paid website and SEO customers are the growth priorit
 
 ## Current evidence
 
-- **17 September:** completed a source-backed mobile website work sample; three new research candidates remain low-priority holds without buyer invitations or cleared contact eligibility. No sends or new qualified outcomes. [Run record](reviews/2026-09-17/growth-operations/run-summary.md).
+- **17 September publication:** portfolio example live as source `81e2993`, deployment `dpl_2dvVDraYM5j897yDLLrGDmtHUwrd`; canonical content and website-prefilled enquiry CTA verified. [Release record](reviews/2026-09-17/portfolio-publication/release.md). Ranking/customer impact unproven.
+
+- **17 September:** completed and subsequently published the source-backed mobile website work sample at `/testimonials#carhire-mobile-search` under Ivan's explicit instruction; three new research candidates remain low-priority holds without buyer invitations or cleared contact eligibility. No sends or new qualified outcomes. [Run record](reviews/2026-09-17/growth-operations/run-summary.md).
 
 - **16 September:** prepared a private tailored reply and paid qualification brief for a reverified historical inbound invitation. Ivan subsequently dismissed this opportunity after confirming the invitation was seen too late and no conversation occurred. No send or follow-up; do not resurface it. All discovered IMAP folders checked; use INBOX-prefixed special-folder names. [Run record](reviews/2026-09-16/growth-operations/run-summary.md).
 

@@ -14,3 +14,5 @@ This advances the 10 September outline into a complete, narrowly scoped sales-co
 The work sample describes the specific documented overlap repair and its tested behavior. It does not claim bookings, commission, traffic or ranking gains; no provider search completion or payment is claimed. The later Adelaide Airport content commit was inspected but excluded because its evidence identifies it as prepared, not deployed. No reliance on invented customer quotes or before/after numbers.
 
 Use the existing portfolio permission only within this narrow scope. Public expansion or screenshots remain subject to the programme's separate proof-publication boundary. The practical next use is a relevant, eligible website conversation; do not send it to held cold prospects merely because the asset exists.
+
+Publication update: Ivan subsequently authorised publication on 17 September. The adapted section is being released at https://aiadelaide.com.au/testimonials#carhire-mobile-search; see [release record](../portfolio-publication/release.md) for verified deployment status. Earlier draft-only status is historical.

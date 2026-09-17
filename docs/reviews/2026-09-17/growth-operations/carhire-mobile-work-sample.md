@@ -23,3 +23,5 @@ Any proposed work should name the problem, define the change and explain how it 
 [View the website](https://www.carhire.global/) · [Discuss your website](https://aiadelaide.com.au/contact#send-message)
 
 *Permission-backed website/SEO work sample. Limited to the documented update described here; no claim of ownership or authorship of the entire platform. Prepared 17 September 2026 from the 13 September release evidence.*
+
+Publication update: Ivan subsequently authorised publication on 17 September. The adapted section is being released at https://aiadelaide.com.au/testimonials#carhire-mobile-search; see [release record](../portfolio-publication/release.md) for verified deployment status. Earlier draft-only status is historical.

@@ -9,9 +9,14 @@ export const metadata: Metadata = {
   // while this page sits at pos 50. Title/copy now carry the "AI development
   // company" entity so Google hands this page the cluster. Also fixes
   // check-meta failures (title was 82 rendered chars, description 187).
-  title: "AI Development Company & AI Apps Adelaide",
+  // 2026-09-18 (GSC P0): exact-match "ai application development adelaide"
+  // gets 316 impr/week at pos 22-27 with 0 clicks. Page never used the
+  // literal phrase — updated title/description/H1 to lock exact match.
+  // NOTE: rendered title must stay <=60 chars (check-meta) — the layout
+  // template appends " | AI Adelaide" (13 chars), so base title <=47.
+  title: "AI Application Development Adelaide",
   description:
-    "Adelaide AI development company building custom AI apps — chatbots, voice agents, workflow tools, integrations — for tradies, clinics and SMBs. From $2,497.",
+    "AI application development Adelaide: custom chatbots, voice agents, workflow tools and integrations for local businesses. From $2,497, free consult.",
   alternates: { canonical: "/ai-app-development-adelaide" },
 };
 
@@ -25,7 +30,7 @@ const whatsIncluded = [
 ];
 
 const faqs = [
-  { question: "What is AI app development?", answer: "AI app development is building software that uses artificial intelligence (large language models, voice AI, computer vision, etc.) to do tasks that previously required a human. For Adelaide businesses, the most common AI apps we build are: AI chatbots for websites, AI phone agents for call handling, internal workflow automation tools, and custom AI integrations with existing software. It's not \"use ChatGPT\" — it's building specific AI-powered tools that solve specific problems in your business." },
+  { question: "What is AI application development?", answer: "AI application development is building software that uses artificial intelligence (large language models, voice AI, computer vision, etc.) to do tasks that previously required a human. For Adelaide businesses, the most common applications we build are: AI chatbots for websites, AI phone agents for call handling, internal workflow automation tools, and custom AI integrations with existing software. It's not \"use ChatGPT\" — it's AI application development in Adelaide that solves specific business problems with specific tools built around your workflow." },
   { question: "How much does custom AI app development cost in Adelaide?", answer: "Simple AI chatbots start at $2,497 one-off. AI phone agents (full setup with your phone number, scripts, calendar integration) start at $3,997 + $99-297/mo for the voice AI service. Internal workflow tools and dashboards range from $4,997-$15,000+ depending on complexity. All builds include 30 days post-launch support." },
   { question: "How long does it take to build a custom AI app?", answer: "AI chatbots: 1-2 weeks. AI phone agents: 1-2 weeks. Custom workflow tools and dashboards: 3-6 weeks. Complex integrations with multiple business systems: 6-10 weeks. We give you an exact timeline in your free consultation." },
   { question: "Can AI really replace a receptionist?", answer: "It can handle defined tasks such as FAQs, message-taking, routing and simple booking, while sensitive or unusual calls still need a human escalation path. We scope the call types first and measure containment, transfer quality and customer outcomes rather than assume a replacement percentage." },
@@ -52,10 +57,10 @@ export default function AiAppDevelopmentAdelaidePage() {
       />
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
-          <span className="eyebrow-light">AI App Development Adelaide</span>
-          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">AI App Development Adelaide — Custom AI for Your Business</h1>
+          <span className="eyebrow-light">AI Application Development Adelaide</span>
+          <h1 className="mt-4 mb-6 text-h1-mobile text-slate-950 md:text-h1">AI Application Development Adelaide — Custom AI Apps for Your Business</h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Chatbots, voice agents, workflow tools, internal dashboards — built for your Adelaide business, integrated with your existing software, supported by a local team. We&apos;re an AI development company based in Adelaide, not an offshore dev shop. Not "use ChatGPT". Real AI that solves real business problems.
+            AI application development Adelaide businesses actually use — chatbots, voice agents, workflow tools, internal dashboards — built for your Adelaide business, integrated with your existing software, supported by a local team. We&apos;re an AI development company based in Adelaide, not an offshore dev shop. Not &quot;use ChatGPT&quot;. Real AI application development that solves real business problems.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/contact" className="btn-primary px-8 py-4">Book Free AI App Chat <span aria-hidden>→</span></Link>

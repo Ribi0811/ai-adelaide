@@ -67,6 +67,13 @@ const nextConfig = {
         destination: "/services",
         permanent: true,
       },
+      // 2026-09-18 GSC P0: duplicate suburb URL splitting signals.
+      // /aberfoyle_park (underscore) was pos 1, /aberfoyle-park (hyphen) pos 12.3.
+      {
+        source: "/aberfoyle_park",
+        destination: "/aberfoyle-park",
+        permanent: true,
+      },
       // Tier 7 — consolidate /ai-for-X onto /websites-for-X (web dev focus)
       {
         source: "/ai-for-plumbers-adelaide",

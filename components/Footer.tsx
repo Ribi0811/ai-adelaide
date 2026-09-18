@@ -42,7 +42,7 @@ const resourceLinks = [
   { href: "/ai-seo-adelaide", label: "AI SEO Adelaide" },
   { href: "/ai-marketing-adelaide", label: "AI marketing" },
   { href: "/ai-consulting-adelaide", label: "AI consulting Adelaide" },
-  { href: "/ai-app-development-adelaide", label: "AI app development" },
+  { href: "/ai-app-development-adelaide", label: "AI application development Adelaide" },
   { href: "/automotive-seo-services", label: "Automotive SEO" },
   { href: "/hotel-seo-services", label: "Hotel SEO" },
   { href: "/aged-care-seo-services", label: "Aged care SEO" },

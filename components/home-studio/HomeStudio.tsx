@@ -29,7 +29,7 @@ export default function HomeStudio() {
 
       <section id="services" className={`${styles.container} ${styles.services}`} aria-labelledby="services-title">
         <div className={styles.sectionHeading}><h2 id="services-title">Your business is different.<br />Your starting point can be, too.</h2><p>A website, local SEO or one practical automation. Start with the work that makes sense for you.</p></div>
-        <div className={styles.serviceFallbackLinks}><span>Explore:</span><Link href="/website-design-adelaide">Website design Adelaide</Link><Link href="/seo">SEO services Adelaide</Link><Link href="/local-seo-adelaide">Local SEO</Link><Link href="/ai-automation-adelaide">AI automation</Link></div>
+        <div className={styles.serviceFallbackLinks}><span>Explore:</span><Link href="/website-design-adelaide">Website design Adelaide</Link><Link href="/seo">SEO services Adelaide</Link><Link href="/local-seo-adelaide">Local SEO</Link><Link href="/ai-automation-adelaide">AI automation</Link><Link href="/ai-app-development-adelaide">AI application development Adelaide</Link></div>
         <div className={styles.businessPaths}>
           <h3>Built around your kind of business.</h3>
           <p>Explore website and search support for local trades, cafés and owner-operated businesses, or compare what a website build includes.</p>

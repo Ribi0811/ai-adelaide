@@ -37,6 +37,7 @@ const industryLinks = [
 
 const resourceLinks = [
   { href: "/website-cost-adelaide", label: "Website cost guide" },
+  { href: "/affordable-web-design-adelaide", label: "Affordable web design Adelaide" },
   { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads" },
   { href: "/seo-for-tradies-adelaide", label: "SEO for tradies" },
   { href: "/ai-seo-adelaide", label: "AI SEO Adelaide" },

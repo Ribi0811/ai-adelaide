@@ -560,6 +560,25 @@ export default function SeoForTradiesAdelaidePage() {
                 person still reviews and approves everything before it goes
                 live — AI removes the grunt work, not the oversight.
               </p>
+              <p>
+                Search visibility is only half the job. A tradie who ranks well
+                but misses the call still loses the work, which is why most of
+                our clients pair{" "}
+                <Link href="/local-seo-adelaide" className={linkCls}>
+                  local SEO
+                </Link>{" "}
+                with{" "}
+                <Link href="/ai-automation-adelaide" className={linkCls}>
+                  AI automation for Adelaide businesses
+                </Link>{" "}
+                — missed-call text-back, quote follow-up and booking reminders
+                that hold onto the enquiries search brings in. Tradies wanting
+                something built around their own workflow can also look at{" "}
+                <Link href="/ai-app-development-adelaide" className={linkCls}>
+                  AI application development
+                </Link>
+                .
+              </p>
             </div>
           </Reveal>
         </div>

@@ -5,14 +5,14 @@ import suburbs from "@/data/suburbs.json";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Adelaide Locations | Website Design, SEO & AI Automation Near You",
+  title: "Adelaide Locations | Web Design, SEO & AI",
   description:
     "We build websites, do local SEO, and set up AI automation for Adelaide small businesses across 13 metro suburbs and the Adelaide Hills. Find your local page.",
   alternates: {
     canonical: `${siteConfig.url}/locations`,
   },
   openGraph: {
-    title: "Adelaide Locations | AI Adelaide",
+    title: "Adelaide Locations ",
     description: "Websites, SEO, and AI automation for Adelaide small businesses across 13 metro suburbs and the Adelaide Hills. Find your local page.",
     url: `${siteConfig.url}/locations`,
     siteName: siteConfig.name,
@@ -22,23 +22,28 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsPage() {
-  const localBusinessJsonLd = {
+  const locationsJsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: siteConfig.name,
+    "@type": "CollectionPage",
+    name: "AI Adelaide service locations",
     url: `${siteConfig.url}/locations`,
-    areaServed: suburbs.map((suburb) => ({
-      "@type": "City",
-      name: `${suburb.name} ${suburb.postcode}`,
-    })),
-    serviceType: ["Website Design", "Local SEO", "AI Automation"],
+    about: { "@id": `${siteConfig.url}/#organization` },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: suburbs.map((suburb, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: `${suburb.name} ${suburb.postcode}`,
+        url: `${siteConfig.url}/${suburb.slug}`,
+      })),
+    },
   };
 
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(locationsJsonLd) }}
       />
       <Breadcrumbs
         items={[

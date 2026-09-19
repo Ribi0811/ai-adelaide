@@ -9,13 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bgPrimary: "#F7FBFF",
-        bgSecondary: "#EEF5FB",
-        bgTertiary: "#E4EEF7",
-        textPrimary: "#0F1D2B",
-        textSecondary: "#53697A",
-        accent: "#5EF2D6",
-        "accent-hover": "#3FE4C7",
+        // v4 design language (DESIGN-SYSTEM-V3.md): ink on porcelain, teal
+        // accent. Tokens re-pointed 2026-07-16 so every legacy page that
+        // consumes them inherits the v4 palette without any markup change.
+        bgPrimary: "#FBFBFD",
+        bgSecondary: "#F5F5F7",
+        bgTertiary: "#E8E8ED",
+        textPrimary: "#1D1D1F",
+        textSecondary: "#6E6E73",
+        accent: "#0E8C74",
+        "accent-hover": "#0C7A63",
         electric: "#82A6FF",
         line: "#1C3444",
       },
@@ -26,10 +29,10 @@ const config: Config = {
         mono: ["var(--font-mono)", "monospace"],
       },
       fontSize: {
-        h1: ["72px", { lineHeight: "1.02", fontWeight: "700" }],
-        "h1-mobile": ["40px", { lineHeight: "1.05", fontWeight: "700" }],
-        h2: ["48px", { lineHeight: "1.1", fontWeight: "600" }],
-        "h2-mobile": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+        h1: ["64px", { lineHeight: "1.05", fontWeight: "600", letterSpacing: "-0.03em" }],
+        "h1-mobile": ["38px", { lineHeight: "1.08", fontWeight: "600", letterSpacing: "-0.02em" }],
+        h2: ["44px", { lineHeight: "1.12", fontWeight: "600", letterSpacing: "-0.02em" }],
+        "h2-mobile": ["30px", { lineHeight: "1.2", fontWeight: "600", letterSpacing: "-0.02em" }],
         h3: ["24px", { lineHeight: "1.3", fontWeight: "600" }],
         "h3-mobile": ["20px", { lineHeight: "1.3", fontWeight: "600" }],
         body: ["18px", { lineHeight: "1.6", fontWeight: "400" }],
@@ -44,9 +47,9 @@ const config: Config = {
         container: "1200px",
       },
       boxShadow: {
-        card: "0 18px 60px rgba(15, 23, 42, 0.10)",
-        glow: "0 0 0 1px rgba(94,242,214,0.14), 0 12px 48px rgba(94,242,214,0.12)",
-        "light-card": "0 18px 60px rgba(15, 23, 42, 0.08)",
+        card: "0 2px 12px rgba(29, 29, 31, 0.05)",
+        glow: "0 0 0 1px rgba(14,140,116,0.18), 0 12px 48px rgba(14,140,116,0.12)",
+        "light-card": "0 2px 12px rgba(29, 29, 31, 0.05)",
       },
       backgroundImage: {
         "grid-lines":

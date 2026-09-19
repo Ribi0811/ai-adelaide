@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-09-10T23:32:32.721820+00:00",
+  "timezone": "Australia/Adelaide",
+  "register": {
+    "status": "read_verified",
+    "scope": "Contact, Tradie SEO and submitted AI-readiness requests only; not all business revenue",
+    "nonTestRecords": 1,
+    "knownNonTestRecords": 1,
+    "testRecordsExcluded": 3,
+    "stagesKnownRecords": {
+      "New": 1,
+      "Qualified": 0,
+      "Quoted": 0,
+      "Won": 0,
+      "Lost": 0,
+      "Spam": 0,
+      "Unclassified": 0
+    },
+    "nonSpamRecordsCreatedLast7Days": 1,
+    "actionRows": [
+      {
+        "row": 9,
+        "reasons": [
+          "needs_triage"
+        ]
+      }
+    ],
+    "unclassifiedTestFlagRowsExcluded": [],
+    "invalidFollowupDateRows": [],
+    "invalidReceivedDateRows": [],
+    "enteredCashSubtotalAUD": null,
+    "cashAmountEntryCount": 0,
+    "invalidCashAmountCount": 0,
+    "missingCashAmountCount": 1,
+    "cashCompleteForKnownRecords": false,
+    "needsDataReview": false,
+    "limitations": [
+      "Cash is manually reported, not bank-verified.",
+      "Blank cash values mean unknown, not zero.",
+      "Won dates and payment dates are not recorded; current stages cannot prove wins or cash this week."
+    ]
+  },
+  "website": {
+    "checks": [
+      {
+        "route": "/",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/",
+        "ok": true,
+        "h1Count": 1,
+        "canonicalMatches": true,
+        "noindex": false
+      },
+      {
+        "route": "/contact",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/contact",
+        "ok": true,
+        "h1Count": 1,
+        "canonicalMatches": true,
+        "noindex": false
+      },
+      {
+        "route": "/website-design-adelaide",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/website-design-adelaide",
+        "ok": true,
+        "h1Count": 1,
+        "canonicalMatches": true,
+        "noindex": false
+      },
+      {
+        "route": "/seo-for-tradies-adelaide",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/seo-for-tradies-adelaide",
+        "ok": true,
+        "h1Count": 1,
+        "canonicalMatches": true,
+        "noindex": false
+      },
+      {
+        "route": "/websites-for-electricians-adelaide",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+        "ok": true,
+        "h1Count": 1,
+        "canonicalMatches": true,
+        "noindex": false
+      },
+      {
+        "route": "/robots.txt",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/robots.txt",
+        "ok": true,
+        "googlebotBlockedPaths": []
+      },
+      {
+        "route": "/sitemap.xml",
+        "httpStatus": 200,
+        "finalUrl": "https://aiadelaide.com.au/sitemap.xml",
+        "ok": true
+      }
+    ],
+    "ok": true,
+    "limits": "Read-only HTTP checks do not prove browser rendering, indexing or notification delivery."
+  }
+}

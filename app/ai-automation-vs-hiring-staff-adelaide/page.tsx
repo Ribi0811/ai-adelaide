@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import CostRace from "./parts";
 
 export const metadata: Metadata = {
-  title: "AI Automation vs Hiring Staff Adelaide — The Real Cost Comparison",
+  title: "AI Automation vs Hiring Staff Adelaide | Cost",
   description:
-    "Hiring a receptionist in Adelaide costs $55K+ per year. AI automation costs from $99/mo. Here's the honest comparison for Adelaide small businesses.",
+    "Hiring a receptionist in Adelaide costs $55K+ per year. AI automation costs from $199/mo. Here's the honest comparison for Adelaide small businesses.",
   alternates: {
     canonical: "/ai-automation-vs-hiring-staff-adelaide",
   },
@@ -12,7 +14,15 @@ export const metadata: Metadata = {
 
 export default function AIAutomationVsHiringStaffPage() {
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Automation vs Hiring Staff" },
+        ]}
+      />
+
       <section className="max-w-container mx-auto px-6">
         <div className="panel-light grid-overlay-light p-8 md:p-12">
           <div className="mb-6">
@@ -25,6 +35,11 @@ export default function AIAutomationVsHiringStaffPage() {
             You've thought about hiring someone to handle your calls and admin. You've also heard about AI. Here's the honest side-by-side comparison — including when AI makes sense, and when it doesn't.
           </p>
         </div>
+      </section>
+
+      {/* Animated headline comparison — figures from this page's own content */}
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <CostRace />
       </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
@@ -70,7 +85,7 @@ export default function AIAutomationVsHiringStaffPage() {
             <li><strong>FAQ handling:</strong> Answers common questions so you don't have to</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body">
-            <strong>Total cost: $99–$299/month</strong>, plus a one-off setup fee. That's $1,188–$3,588 per year for round-the-clock coverage.
+            <strong>Total cost: $199–$399/month</strong>, plus a one-off setup fee. That's $2,388–$4,788 per year for round-the-clock coverage.
           </p>
         </div>
       </section>
@@ -185,7 +200,7 @@ export default function AIAutomationVsHiringStaffPage() {
             <li><strong>Staff handle complex conversations</strong> — and have full context from the AI handoff</li>
           </ul>
           <p className="text-body-mobile text-slate-700 md:text-body mb-4">
-            A tradie in Mitcham we work with runs a 3-person team. They used to have a part-time admin at $28/hr. Now the AI handles 80% of their call volume, and one of their existing team members does the rest — saving about $22,000/year in wages.
+            A useful comparison starts with the work, not a generic wage-saving claim. Record weekly call volume, tasks requiring human judgement, escalation rates, admin hours and the fully loaded cost of each option. Automation should support staff where the workflow is repetitive and safely bounded; it should not be presented as a guaranteed replacement.
           </p>
           <p className="text-body-mobile text-slate-700 md:text-body">
             The AI doesn't replace the human relationship. It protects it by making sure every enquiry gets a response fast enough that the customer doesn't go elsewhere first.

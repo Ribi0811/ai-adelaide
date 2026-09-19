@@ -1,0 +1,9 @@
+{
+  "status": "ACTIVE",
+  "last_run_at": "2026-09-11T09:02:07.884000+09:30",
+  "next_run_at": "2026-09-14T09:00:55+09:30",
+  "model": null,
+  "reasoning_effort": null,
+  "kind": "heartbeat",
+  "recordedRuns": []
+}

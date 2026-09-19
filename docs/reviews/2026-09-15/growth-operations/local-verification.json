@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-09-14T23:53:33.335368+00:00",
+  "review": "Independent reviewer found no material blockers in audit and SEO buying-path patches, including final inline link styling.",
+  "audit": {
+    "unitTestsPassed": 5,
+    "maximumBrowserResult": 100,
+    "minimumBrowserResult": 20,
+    "categoryCount": 4,
+    "contextNotScored": true,
+    "viewportsVerified": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 1440,
+        "height": 1000
+      }
+    ],
+    "pdf": {
+      "actualFileDownloaded": true,
+      "score": 100,
+      "pages": 1,
+      "textAndRenderedLayoutVerified": true,
+      "sha256": "c11d4b4e903b3f5fd1e97e58dbc971f467283b3f76e8058494081a900cfae386"
+    },
+    "mobileReportContactService": "audit",
+    "newLeadSubmission": false
+  },
+  "seo": {
+    "desktopHeroContactService": "seo",
+    "mobileClosingContactService": "seo",
+    "mobileGuideClosingContactService": "seo",
+    "desktopGuideContentReviewed": true,
+    "titleAndCanonicalChanges": false
+  },
+  "checks": {
+    "typescript": "pass",
+    "targetedLint": "pass",
+    "metadata": "existing unrelated ai-receptionist-adelaide title-length failure; no new failures"
+  },
+  "limits": [
+    "No enquiry delivery retest; no API or register adapter change.",
+    "No customer acquisition or ranking improvement established."
+  ]
+}

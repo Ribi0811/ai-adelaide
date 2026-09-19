@@ -1,0 +1,70 @@
+{
+  "verifiedAt": "2026-09-13T23:34:27.245Z",
+  "method": "Execute current TypeScript source after in-memory CommonJS transpilation; no application or network mutations",
+  "source": [
+    "lib/audit/questions.ts",
+    "lib/audit/scoring.ts"
+  ],
+  "questionCount": 10,
+  "highestValidAnswers": {
+    "q1": "modern",
+    "q2": "instant",
+    "q3": "page1-strong",
+    "q4": "optimised",
+    "q5": "multi",
+    "q6": "instant",
+    "q7": "under-1",
+    "q8": "auto",
+    "q9": "other",
+    "q10": "20-plus"
+  },
+  "totalScore": 137,
+  "declaredMax": 100,
+  "categories": [
+    {
+      "key": "website",
+      "label": "Website",
+      "score": 25,
+      "max": 25,
+      "rawScore": 50,
+      "rawMax": 50
+    },
+    {
+      "key": "seo-visibility",
+      "label": "SEO & Google Visibility",
+      "score": 25,
+      "max": 25,
+      "rawScore": 50,
+      "rawMax": 50
+    },
+    {
+      "key": "lead-capture",
+      "label": "Lead Capture",
+      "score": 25,
+      "max": 25,
+      "rawScore": 50,
+      "rawMax": 50
+    },
+    {
+      "key": "automation-admin",
+      "label": "Automation & Admin",
+      "score": 25,
+      "max": 25,
+      "rawScore": 50,
+      "rawMax": 50
+    },
+    {
+      "key": "business-profile",
+      "label": "Business Profile",
+      "score": 37,
+      "max": 25,
+      "rawScore": 37,
+      "rawMax": 25
+    }
+  ],
+  "unscoredQuestionIds": [
+    "q9"
+  ],
+  "withoutBusinessContextScore": 100,
+  "liveBrowserReproduction": false
+}

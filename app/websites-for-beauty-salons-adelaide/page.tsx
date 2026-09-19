@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Beauty Salons Adelaide | Salon Website Design",
+  title: "Beauty Salon Website Adelaide | From $699",
   description:
     "Beauty salon websites for Adelaide. Online booking, service menus, transformation galleries, retail integration. From $699, live in 48 hours.",
   alternates: {
@@ -36,7 +36,7 @@ const buildItems = [
   {
     title: "Mobile-first design",
     body:
-      "80%+ of beauty searches happen on a phone. Your site loads in under 2 seconds, looks beautiful on every screen, and makes booking effortless.",
+      "The booking journey is designed for phones first, then checked across desktop sizes. Clear services, readable pricing and a prominent booking action reduce friction.",
   },
   {
     title: "Google reviews + local SEO",
@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What does it cost?",
     answer:
-      "Websites start from $699 for a complete, custom-built beauty site. One setup fee, then a small monthly for hosting and maintenance. SEO add-on from $399/month for sustained page-1 rankings.",
+      "Websites start from $699 for a custom-built beauty site. One setup fee, then a small monthly charge for hosting and maintenance. Ongoing SEO starts from $399/month and is measured against an agreed search and enquiry baseline.",
   },
   {
     question: "Can I sell retail products on the site?",
@@ -114,7 +114,7 @@ const faqs = [
   {
     question: "Will it rank on Google for beauty salons in my area?",
     answer:
-      "Yes — the site is set up with local SEO from day one. For competitive suburbs (&lsquo;beauty salon Norwood&rsquo;), we recommend the SEO retainer for sustained page-1 rankings. Most beauty searches have strong buying intent — high commercial value keywords.",
+      "The site includes crawlable pages, relevant titles, useful service copy and local-search foundations. Rankings depend on the market, competition, reputation and ongoing authority, so we establish a baseline and never promise a position.",
   },
   {
     question: "Can I offer gift vouchers online?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche suburbs in 2-4 weeks, competitive suburbs in 2-3 months. The SEO retainer accelerates this significantly.",
+      "The website build can be live in 48 hours once we have the required business details and approvals. Search movement has no fixed timetable; we report it against the starting position and the work completed.",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function WebsitesForBeautySalonsPage() {
     })),
   };
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -158,7 +158,7 @@ export default function WebsitesForBeautySalonsPage() {
             A Beauty Salon Website That Books Treatments Around the Clock
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            Your clients are on Instagram and TikTok — but they book treatments through Google. If your salon doesn&apos;t have a beautiful, fast, mobile-first website with online booking, they&apos;re booking the salon down the road. We build beauty salon websites for Adelaide — with online booking, transformation galleries, and retail integration. From $699, live in 48 hours.
+            Give clients a clear mobile path from search or social media to services, genuine work and online booking. We build beauty salon websites for Adelaide from $699, with scope and timing confirmed from your content, booking platform and approval needs.
           </p>
         </div>
       </section>
@@ -246,6 +246,47 @@ export default function WebsitesForBeautySalonsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Beauty Salons
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for Adelaide beauty and wellness businesses. Browse related guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/websites-for-hairdressers-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Hairdresser Websites Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/website-design-for-hairdressers-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Website Design for Hairdressers Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/best-website-builder-adelaide-small-business"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Best Website Builder for Adelaide SMBs</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

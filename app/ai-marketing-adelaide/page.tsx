@@ -5,9 +5,9 @@ import Testimonials from "@/components/Testimonials";
 import CaseStudies from "@/components/CaseStudies";
 
 export const metadata: Metadata = {
-  title: "AI Marketing Adelaide | AI-Powered Marketing for Small Businesses",
+  title: "AI Marketing Adelaide | From $399/mo",
   description:
-    "AI marketing for Adelaide small businesses. AI-powered SEO, content, lead capture, and follow-up at a fraction of the cost of a traditional agency. Fixed pricing, no lock-in. From $699.",
+    "AI marketing for Adelaide small businesses — AI-powered SEO, content and lead capture with fixed pricing from $399/mo. No agency retainers, no lock-in.",
   alternates: {
     canonical: "/ai-marketing-adelaide",
   },
@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Website: live in 48 hours. SEO: first movement in 2-4 weeks for niche suburbs, 2-3 months for competitive areas. Lead capture: working from day one. AI follow-up sequences: first conversions in 1-2 weeks. We&apos;ll give you an honest timeline on the free chat.",
+      "A website can be live in 48 hours once the required content and approvals are ready. Lead tracking can start at launch. Search and follow-up outcomes depend on the baseline, demand, offer and execution, so we measure the response rather than promise a timetable.",
   },
   {
     question: "What if I already have a website?",
@@ -140,7 +140,7 @@ export default function AIMarketingAdelaidePage() {
   };
 
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

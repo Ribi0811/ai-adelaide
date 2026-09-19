@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Cafes Adelaide | Cafe Website Design",
+  title: "Cafe Website Adelaide | From $699",
   description:
     "Cafe websites for Adelaide coffee shops and restaurants. Menu display, online reservations, location maps, Google reviews. Built fast, mobile-first, from $699.",
   alternates: {
@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Niche suburbs (like &lsquo;cafe Mitcham&rsquo;) can show movement in 2-4 weeks. Competitive areas (&lsquo;cafe Glenelg&rsquo;, &lsquo;cafe Norwood&rsquo;) take 2-3 months for page 1. We&apos;ll give you an honest timeline on the free chat.",
+      "There is no reliable fixed timetable. The starting website, Google Business Profile, reviews, competition and local demand all matter. We establish the baseline first and report relevant search and enquiry movement over time.",
   },
   {
     question: "Can I add AI automation later?",
@@ -139,7 +139,7 @@ export default function WebsitesForCafesPage() {
     })),
   };
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -237,6 +237,47 @@ export default function WebsitesForCafesPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Cafes
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for Adelaide hospitality businesses. Browse related guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/blog/adelaide-cafe-website-guide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Adelaide Cafe Website Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/google-business-profile-adelaide-guide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Google Business Profile Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/local-seo-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Local SEO Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

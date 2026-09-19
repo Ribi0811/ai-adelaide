@@ -54,6 +54,7 @@ export async function generateAuditPdf(payload: AuditReportPayload): Promise<Buf
     doc.moveDown(0.2);
     doc.font('Helvetica-Bold').fontSize(44).fillColor(BRAND.dark).text(`${score.totalScore}/100`);
     doc.font('Helvetica').fontSize(11).fillColor(BRAND.dark).text(score.interpretation);
+    doc.fontSize(10).fillColor(BRAND.muted).text(score.scoreNote);
 
     drawSectionTitle(doc, 'Category Breakdown');
     for (const category of score.categoryScores) {
@@ -72,21 +73,21 @@ export async function generateAuditPdf(payload: AuditReportPayload): Promise<Buf
       doc.moveDown(0.1);
       doc.text(`Problem: ${item.problem}`);
       doc.text(`AI Solution: ${item.solution}`);
-      doc.text(`Estimated ROI: ${item.roiEstimate}`);
-      doc.text(`Complexity: ${item.complexity} • Estimated monthly cost: ${item.monthlyCost}`);
+      doc.text(`Measurement guidance: ${item.measurementGuidance}`);
+      doc.text(`Complexity: ${item.complexity} • Scope: ${item.monthlyCost}`);
       doc.moveDown(0.4);
     });
 
     drawSectionTitle(doc, 'Next Steps');
     doc.font('Helvetica').fontSize(11).fillColor(BRAND.dark)
-      .text('Your $47 assessment fee is credited toward our $247 Full AI Audit.');
+      .text('Want help acting on this report? Book a free 15-minute chat.');
     doc.moveDown(0.2);
-    doc.text('The full audit includes:');
-    doc.text('• On-site or remote process analysis');
-    doc.text('• Tailored implementation roadmap');
-    doc.text('• Vendor/tool recommendations for your budget');
+    doc.text('The free chat covers:');
+    doc.text('• A walkthrough of your recommendations');
+    doc.text('• A fixed quote for whichever service fits first');
+    doc.text('• Honest advice on what to prioritise and what to skip');
     doc.moveDown(0.4);
-    doc.font('Helvetica-Bold').text('Book your full audit: https://aiadelaide.com.au/contact');
+    doc.font('Helvetica-Bold').text('Book your free chat: https://aiadelaide.com.au/contact');
     doc.moveDown(0.5);
     doc.font('Helvetica').fontSize(10).fillColor(BRAND.muted).text('AI Adelaide · Adelaide, South Australia');
 

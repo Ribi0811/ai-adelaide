@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Retail Shops Adelaide | Shop Website Design",
+  title: "Retail Shop Website Adelaide | From $699",
   description:
     "Retail websites for Adelaide shops. Product showcase, location & hours, Google reviews, e-commerce integration. From $699, live in 48 hours.",
   alternates: {
@@ -114,7 +114,7 @@ const faqs = [
   {
     question: "Will it rank on Google for shops in my area?",
     answer:
-      "Yes — the site is set up with local SEO from day one. For competitive suburbs (&lsquo;vintage shop Norwood&rsquo;), add the SEO retainer for sustained page-1 rankings. Retail searches have strong local intent — high conversion potential.",
+      "The site includes clear product and location information, crawlable pages and local-search foundations. Rankings depend on competition, reputation and ongoing work, so we establish a baseline rather than promise a position.",
   },
   {
     question: "Can I show in-store events?",
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche suburbs in 2-4 weeks, competitive suburbs in 2-3 months. The SEO retainer accelerates this significantly.",
+      "The website build can be live in 48 hours once the required content and approvals are ready. Search movement has no fixed timetable; we measure relevant queries and enquiries against the starting baseline.",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function WebsitesForRetailShopsPage() {
     })),
   };
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -246,6 +246,47 @@ export default function WebsitesForRetailShopsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Retail Shops
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for Adelaide retail and small businesses. Browse related guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/website-design-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Website Design Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/ai-automation-for-adelaide-retail-shops"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation for Adelaide Retail</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/google-business-profile-adelaide-guide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Google Business Profile Adelaide Guide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

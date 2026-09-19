@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Cookie Policy",
-  description: "Cookie policy for AI Adelaide - how we use cookies and similar tracking technologies on our website.",
+  description: "Cookie policy for AI Adelaide — how we use cookies and similar tracking technologies on our website, what they do, and how you can manage or disable them.",
   alternates: {
     canonical: "/cookie-policy",
   },
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
 export default function CookiePolicyPage() {
   return (
     <div className="section-shell pb-section-mobile pt-28 md:pb-section md:pt-32">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Cookie Policy" },
+        ]}
+      />
       <section className="max-w-3xl mx-auto px-6">
         <div className="panel-light p-8 md:p-12">
           <div className="mb-8">
@@ -31,65 +38,56 @@ export default function CookiePolicyPage() {
             Cookie Policy
           </h1>
           <p className="text-sm text-slate-600 mb-8">
-            Last updated: March 2026
+            Last updated: 16 July 2026
           </p>
 
           <div className="space-y-6 text-body-mobile text-slate-700 md:text-body">
             <p>
-              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses cookies and similar tracking technologies to enhance your experience on our website <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This Cookie Policy explains what cookies are, how we use them, and your choices regarding their use.
+              <strong className="text-slate-950">AI Adelaide</strong> ("we", "our", or "us") uses a small number of cookies and browser-storage technologies on <a href="https://aiadelaide.com.au" className="text-accent hover:underline">aiadelaide.com.au</a> (the "Site"). This policy explains exactly what we store, why, and how you can control it. The short version: we use Google Analytics to understand how the Site is used, we use no advertising or cross-site tracking cookies at all, and you can opt out at any time using the methods below.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. What Are Cookies?</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">1. What Are Cookies and Browser Storage?</h2>
             <p>
-              Cookies are small text files that are placed on your device (computer, smartphone, tablet) when you visit a website. They are widely used to make websites work more efficiently and provide information to the site owners.
+              Cookies are small text files placed on your device when you visit a website. Browser storage (localStorage) works similarly but stays in your browser and is never sent automatically to servers. We use both, sparingly.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">2. Types of Cookies We Use</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">2. What We Actually Use</h2>
 
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Essential Cookies</h3>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics — Google Analytics 4</h3>
             <p>
-              Essential cookies are necessary for the operation of our Site. They enable basic functions such as page navigation and access to secure areas. You cannot opt-out of essential cookies as they are required for the Site to function properly.
-            </p>
-
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Analytics Cookies</h3>
-            <p>
-              Analytics cookies help us understand how visitors interact with our Site by collecting and reporting information anonymously. We use Google Analytics to track:
+              We use Google Analytics 4, which sets its own cookies and collects:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Pages visited and time spent on the Site</li>
               <li>Referring websites and marketing campaigns</li>
               <li>Device and browser information</li>
-              <li>Geographic location (country/city level)</li>
+              <li>Approximate location (city level) — Google Analytics 4 does not log or store individual IP addresses</li>
             </ul>
-
-            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Functionality Cookies</h3>
             <p>
-              Functionality cookies allow our Site to remember choices you make (such as your language preference or region) and provide enhanced, more personal features.
+              You can opt out of Google Analytics in any browser via <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a>, or block cookies using your browser settings (see below).
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">3. How We Use Analytics Cookies</h2>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Marketing attribution</h3>
             <p>
-              We use Google Analytics with the following configuration:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>We anonymize IP addresses before processing</li>
-              <li>We do not share data with third parties except Google</li>
-              <li>We use data to improve user experience and site performance</li>
-              <li>You can opt-out of Google Analytics by visiting <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">https://tools.google.com/dlpage/gaoptout</a></li>
-            </ul>
-
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">4. Your Choices</h2>
-            <p>
-              Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies or notify you when cookies are sent. Please note that if you disable cookies, some features of our Site may not function properly.
+              We note the first page you landed on, the site that referred you, and any campaign tags in the link you clicked. This stays in your own browser (localStorage) and is only sent to us if you submit an enquiry — it tells us how you found us so we know which marketing actually works.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Third-Party Cookies</h2>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">Chat assistant history</h3>
             <p>
-              We may also allow third-party service providers to place cookies on your device to help us analyze our traffic and deliver targeted advertising. These third parties have their own privacy policies regarding the use of cookies.
+              If you use the chat widget, your conversation and a random session ID are kept in your own browser's localStorage so the chat remembers where you were if you reload the page. Messages you send are processed as described in our <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. How to Manage Cookie Preferences</h2>
-            <p>To manage your cookie preferences:</p>
+            <h3 className="text-h4-mobile text-slate-950 md:text-h4 mt-6 mb-3 font-semibold">What we don't use</h3>
+            <p>
+              No advertising cookies, no remarketing pixels, no cross-site tracking, no social media trackers. If that ever changes, this policy will be updated first.
+            </p>
+
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">3. Your Choices</h2>
+            <p>
+              Australia does not require a cookie consent banner, so we don't interrupt your visit with one. If you'd rather not be included in analytics, you can opt out with <a href="https://tools.google.com/dlpage/gaoptout" className="text-accent hover:underline">Google's opt-out add-on</a> or block cookies in your browser settings (see below) — the Site works fine either way.
+            </p>
+
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">4. Managing Cookies in Your Browser</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong className="text-slate-950">Chrome:</strong> Settings &gt; Privacy and security &gt; Cookies and other site data</li>
               <li><strong className="text-slate-950">Safari:</strong> Preferences &gt; Privacy &gt; Manage Website Data</li>
@@ -97,17 +95,17 @@ export default function CookiePolicyPage() {
               <li><strong className="text-slate-950">Edge:</strong> Settings &gt; Cookies and site permissions</li>
             </ul>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">7. Changes to This Cookie Policy</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">5. Changes to This Cookie Policy</h2>
             <p>
               We may update this Cookie Policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated effective date.
             </p>
 
-            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">8. Contact Us</h2>
+            <h2 className="text-h3-mobile text-slate-950 md:text-h3 mt-8 mb-4">6. Contact Us</h2>
             <p>
               If you have any questions about this Cookie Policy, please contact us at:
             </p>
             <p className="mt-2">
-              <a href="mailto:hello@aiadelaide.com.au" className="text-accent hover:underline">hello@aiadelaide.com.au</a>
+              <a href="/contact#send-message" className="text-accent hover:underline">our contact form</a>
             </p>
           </div>
         </div>

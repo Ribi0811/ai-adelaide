@@ -1,0 +1,33 @@
+{
+  "before": {
+    "id": "ai-adelaide-enquiry-desk",
+    "status": "ACTIVE",
+    "last_run_at": "2026-09-13T09:00:56.582000+09:30",
+    "next_run_at": "2026-09-14T09:00:55+09:30",
+    "updated_at": "2026-09-08T12:10:14.435000+09:30",
+    "kind": "heartbeat",
+    "model": null,
+    "reasoning_effort": null,
+    "notification_policy": null
+  },
+  "after": {
+    "status": "ACTIVE",
+    "last_run_at": "2026-09-13T09:00:56.582000+09:30",
+    "next_run_at": "2026-09-14T09:00:55+09:30",
+    "notification_policy": null,
+    "kind": "heartbeat",
+    "weekdayRulePreserved": true,
+    "onlyPromptGuardChanged": true,
+    "guardSavedInFileAndDatabase": true,
+    "weekendBusinessWorkSkipped": true,
+    "causeOfUnexpectedWake": "unresolved",
+    "automaticFutureGuardExecution": "not_yet_observed"
+  },
+  "subsequentCorrection": {
+    "initiatedBy": "Ivan",
+    "classification": "authorised_manual_run",
+    "schedulerFaultEstablished": false,
+    "temporaryWeekendGuardRemoved": true,
+    "manualRunsSupported": true
+  }
+}

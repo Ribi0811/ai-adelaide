@@ -1,0 +1,183 @@
+{
+  "reportDateAdelaide": "2026-09-15",
+  "checkedAtUTC": "2026-09-14T23:38:53Z",
+  "site": "sc-domain:aiadelaide.com.au",
+  "searchType": "web",
+  "dataState": "final",
+  "commonFinalDataEnd": "2026-09-11",
+  "windows": {
+    "current28": {
+      "start": "2026-08-15",
+      "end": "2026-09-11",
+      "days": 28,
+      "dateRowsReturned": {
+        "global": 28,
+        "australia": 28
+      }
+    },
+    "previous28": {
+      "start": "2026-07-18",
+      "end": "2026-08-14",
+      "days": 28,
+      "dateRowsReturned": {
+        "global": 28,
+        "australia": 28
+      }
+    }
+  },
+  "headlineAggregates": {
+    "method": "One no-dimension Search Console aggregate row per window and region. Query, page and date rows are diagnostics only and are not summed into these totals.",
+    "global": {
+      "previous": {
+        "clicks": 29,
+        "impressions": 24332,
+        "ctrPercent": 0.1192,
+        "averagePosition": 30.2281
+      },
+      "current": {
+        "clicks": 10,
+        "impressions": 4255,
+        "ctrPercent": 0.2350,
+        "averagePosition": 28.0313
+      },
+      "delta": {
+        "clicks": -19,
+        "clicksPercent": -65.5,
+        "impressions": -20077,
+        "impressionsPercent": -82.5,
+        "ctrPercentagePoints": 0.1158,
+        "averagePositionChange": -2.1968
+      }
+    },
+    "australia": {
+      "previous": {
+        "clicks": 26,
+        "impressions": 23128,
+        "ctrPercent": 0.1124,
+        "averagePosition": 30.2283
+      },
+      "current": {
+        "clicks": 6,
+        "impressions": 4099,
+        "ctrPercent": 0.1464,
+        "averagePosition": 27.8243
+      },
+      "delta": {
+        "clicks": -20,
+        "clicksPercent": -76.9,
+        "impressions": -19029,
+        "impressionsPercent": -82.3,
+        "ctrPercentagePoints": 0.0340,
+        "averagePositionChange": -2.4040
+      }
+    }
+  },
+  "diagnosticRowCounts": {
+    "current28": {
+      "global": { "date": 28, "page": 80, "query": 308, "queryPage": 369 },
+      "australia": { "date": 28, "page": 56, "query": 301, "queryPage": 362 }
+    },
+    "previous28": {
+      "global": { "date": 28, "page": 107, "query": 730, "queryPage": 1007 },
+      "australia": { "date": 28, "page": 77, "query": 706, "queryPage": 972 }
+    },
+    "note": "These dimension row counts and their metrics are diagnostic samples. They must not be used as headline totals."
+  },
+  "dateTrend": {
+    "interpretation": "Date rows are used for coverage and timing only. The current window has a sharp step-down between 17 and 18 August, before the 5 September release cohort.",
+    "stepChange": {
+      "global": {
+        "2026-08-17": { "clicks": 0, "impressions": 646 },
+        "2026-08-18": { "clicks": 0, "impressions": 111 },
+        "impressionsChangePercent": -82.8,
+        "currentAfterStepAverageDailyImpressions": 88.0
+      },
+      "australia": {
+        "2026-08-17": { "clicks": 0, "impressions": 626 },
+        "2026-08-18": { "clicks": 0, "impressions": 107 },
+        "impressionsChangePercent": -82.9,
+        "currentAfterStepAverageDailyImpressions": 84.6
+      }
+    },
+    "currentDaily": [
+      { "date": "2026-08-15", "globalImpressions": 507, "globalClicks": 0, "australiaImpressions": 494, "australiaClicks": 0 },
+      { "date": "2026-08-16", "globalImpressions": 902, "globalClicks": 4, "australiaImpressions": 864, "australiaClicks": 2 },
+      { "date": "2026-08-17", "globalImpressions": 646, "globalClicks": 0, "australiaImpressions": 626, "australiaClicks": 0 },
+      { "date": "2026-08-18", "globalImpressions": 111, "globalClicks": 0, "australiaImpressions": 107, "australiaClicks": 0 },
+      { "date": "2026-08-19", "globalImpressions": 98, "globalClicks": 1, "australiaImpressions": 90, "australiaClicks": 0 },
+      { "date": "2026-08-20", "globalImpressions": 85, "globalClicks": 0, "australiaImpressions": 84, "australiaClicks": 0 },
+      { "date": "2026-08-21", "globalImpressions": 60, "globalClicks": 0, "australiaImpressions": 52, "australiaClicks": 0 },
+      { "date": "2026-08-22", "globalImpressions": 108, "globalClicks": 0, "australiaImpressions": 106, "australiaClicks": 0 },
+      { "date": "2026-08-23", "globalImpressions": 88, "globalClicks": 0, "australiaImpressions": 83, "australiaClicks": 0 },
+      { "date": "2026-08-24", "globalImpressions": 106, "globalClicks": 0, "australiaImpressions": 97, "australiaClicks": 0 },
+      { "date": "2026-08-25", "globalImpressions": 97, "globalClicks": 1, "australiaImpressions": 92, "australiaClicks": 1 },
+      { "date": "2026-08-26", "globalImpressions": 63, "globalClicks": 0, "australiaImpressions": 57, "australiaClicks": 0 },
+      { "date": "2026-08-27", "globalImpressions": 115, "globalClicks": 0, "australiaImpressions": 112, "australiaClicks": 0 },
+      { "date": "2026-08-28", "globalImpressions": 78, "globalClicks": 0, "australiaImpressions": 77, "australiaClicks": 0 },
+      { "date": "2026-08-29", "globalImpressions": 102, "globalClicks": 0, "australiaImpressions": 99, "australiaClicks": 0 },
+      { "date": "2026-08-30", "globalImpressions": 88, "globalClicks": 1, "australiaImpressions": 83, "australiaClicks": 0 },
+      { "date": "2026-08-31", "globalImpressions": 84, "globalClicks": 1, "australiaImpressions": 84, "australiaClicks": 1 },
+      { "date": "2026-09-01", "globalImpressions": 109, "globalClicks": 0, "australiaImpressions": 107, "australiaClicks": 0 },
+      { "date": "2026-09-02", "globalImpressions": 87, "globalClicks": 0, "australiaImpressions": 82, "australiaClicks": 0 },
+      { "date": "2026-09-03", "globalImpressions": 89, "globalClicks": 0, "australiaImpressions": 89, "australiaClicks": 0 },
+      { "date": "2026-09-04", "globalImpressions": 75, "globalClicks": 0, "australiaImpressions": 69, "australiaClicks": 0 },
+      { "date": "2026-09-05", "globalImpressions": 77, "globalClicks": 1, "australiaImpressions": 77, "australiaClicks": 1 },
+      { "date": "2026-09-06", "globalImpressions": 70, "globalClicks": 0, "australiaImpressions": 68, "australiaClicks": 0 },
+      { "date": "2026-09-07", "globalImpressions": 70, "globalClicks": 0, "australiaImpressions": 69, "australiaClicks": 0 },
+      { "date": "2026-09-08", "globalImpressions": 87, "globalClicks": 1, "australiaImpressions": 84, "australiaClicks": 1 },
+      { "date": "2026-09-09", "globalImpressions": 80, "globalClicks": 0, "australiaImpressions": 79, "australiaClicks": 0 },
+      { "date": "2026-09-10", "globalImpressions": 90, "globalClicks": 0, "australiaImpressions": 87, "australiaClicks": 0 },
+      { "date": "2026-09-11", "globalImpressions": 83, "globalClicks": 0, "australiaImpressions": 81, "australiaClicks": 0 }
+    ]
+  },
+  "pageDiagnosticsAustralia": [
+    { "path": "/local-seo-adelaide", "previous": { "impressions": 1582, "clicks": 0, "position": 36.38 }, "current": { "impressions": 134, "clicks": 0, "position": 25.37 }, "impressionDelta": -1448, "positionChange": -11.02, "reading": "Exposure fell while average position improved." },
+    { "path": "/websites-for-electricians-adelaide", "previous": { "impressions": 581, "clicks": 1, "position": 27.37 }, "current": { "impressions": 67, "clicks": 0, "position": 19.46 }, "impressionDelta": -514, "positionChange": -7.91, "reading": "Exposure fell while average position improved." },
+    { "path": "/reynella", "previous": { "impressions": 460, "clicks": 0, "position": 16.95 }, "current": { "impressions": 78, "clicks": 0, "position": 45.27 }, "impressionDelta": -382, "positionChange": 28.31, "reading": "Only principal commercial page with a clear average-position regression; query-level high-intent terms remain strong." },
+    { "path": "/morphett-vale", "previous": { "impressions": 356, "clicks": 0, "position": 10.98 }, "current": { "impressions": 36, "clicks": 0, "position": 8.39 }, "impressionDelta": -320, "positionChange": -2.59, "reading": "Exposure fell while average position improved." },
+    { "path": "/seo", "previous": { "impressions": 1511, "clicks": 0, "position": 64.98 }, "current": { "impressions": 133, "clicks": 0, "position": 65.11 }, "impressionDelta": -1378, "positionChange": 0.13, "reading": "Low-ranking broad SEO page lost exposure; no indexing defect shown." },
+    { "path": "/seo-for-tradies-adelaide", "previous": { "impressions": 235, "clicks": 1, "position": 25.73 }, "current": { "impressions": 80, "clicks": 1, "position": 21.21 }, "impressionDelta": -155, "positionChange": -4.52, "reading": "Exposure fell while average position improved." },
+    { "path": "/marion", "previous": { "impressions": 197, "clicks": 0, "position": 10.47 }, "current": { "impressions": 23, "clicks": 0, "position": 6.04 }, "impressionDelta": -174, "positionChange": -4.43, "reading": "Exposure fell while average position improved." },
+    { "path": "/website-cost-adelaide", "previous": { "impressions": 225, "clicks": 1, "position": 35.58 }, "current": { "impressions": 22, "clicks": 0, "position": 20.36 }, "impressionDelta": -203, "positionChange": -15.22, "reading": "Exposure fell while average position improved." },
+    { "path": "/", "previous": { "impressions": 3417, "clicks": 1, "position": 18.61 }, "current": { "impressions": 1726, "clicks": 0, "position": 18.65 }, "impressionDelta": -1691, "positionChange": 0.04, "reading": "Large broad-page exposure loss with stable average position." },
+    { "path": "/answering-service-adelaide", "previous": { "impressions": 3342, "clicks": 0, "position": 39.30 }, "current": { "impressions": 304, "clicks": 0, "position": 65.31 }, "impressionDelta": -3038, "positionChange": 26.01, "reading": "Largest page loss, but this is the frozen lower-priority answering cluster." }
+  ],
+  "queryDiagnosticsAustralia": [
+    { "query": "local seo adelaide", "intent": "commercial local SEO", "previous": { "impressions": 657, "clicks": 0, "position": 27.13 }, "current": { "impressions": 66, "clicks": 0, "position": 26.74 }, "impressionDelta": -591, "positionChange": -0.39 },
+    { "query": "adelaide local seo", "intent": "commercial local SEO", "previous": { "impressions": 358, "clicks": 0, "position": 25.61 }, "current": { "impressions": 37, "clicks": 0, "position": 20.35 }, "impressionDelta": -321, "positionChange": -5.26 },
+    { "query": "websites for electricians", "intent": "commercial trade website", "previous": { "impressions": 206, "clicks": 1, "position": 13.50 }, "current": { "impressions": 25, "clicks": 0, "position": 7.16 }, "impressionDelta": -181, "positionChange": -6.34 },
+    { "query": "website for electricians", "intent": "commercial trade website", "previous": { "impressions": 133, "clicks": 0, "position": 19.33 }, "current": { "impressions": 10, "clicks": 0, "position": 8.80 }, "impressionDelta": -123, "positionChange": -10.53 },
+    { "query": "website designer marion", "intent": "commercial suburb website", "previous": { "impressions": 135, "clicks": 0, "position": 9.68 }, "current": { "impressions": 10, "clicks": 0, "position": 6.00 }, "impressionDelta": -125, "positionChange": -3.68 },
+    { "query": "reynella website designer", "intent": "commercial suburb website", "previous": { "impressions": 134, "clicks": 0, "position": 6.93 }, "current": { "impressions": 10, "clicks": 0, "position": 6.20 }, "impressionDelta": -124, "positionChange": -0.73 },
+    { "query": "web design reynella", "intent": "commercial suburb website", "previous": { "impressions": 133, "clicks": 0, "position": 8.25 }, "current": { "impressions": 9, "clicks": 0, "position": 7.00 }, "impressionDelta": -124, "positionChange": -1.25 },
+    { "query": "morphett vale website designer", "intent": "commercial suburb website", "previous": { "impressions": 122, "clicks": 0, "position": 4.71 }, "current": { "impressions": 11, "clicks": 0, "position": 4.55 }, "impressionDelta": -111, "positionChange": -0.16 },
+    { "query": "seo packages adelaide", "intent": "commercial SEO pricing", "previous": { "impressions": 178, "clicks": 0, "position": 35.07 }, "current": { "impressions": 15, "clicks": 0, "position": 70.47 }, "impressionDelta": -163, "positionChange": 35.40 },
+    { "query": "seo for ndis providers", "intent": "industry SEO", "previous": { "impressions": 123, "clicks": 0, "position": 55.63 }, "current": { "impressions": 0, "clicks": 0, "position": null }, "impressionDelta": -123, "positionChange": null },
+    { "query": "website design adelaide prices", "intent": "commercial website pricing", "previous": { "impressions": 107, "clicks": 1, "position": 22.03 }, "current": { "impressions": 15, "clicks": 0, "position": 20.36 }, "impressionDelta": -92, "positionChange": -1.67 },
+    { "query": "cheap website design adelaide", "intent": "commercial website pricing", "previous": { "impressions": 107, "clicks": 0, "position": 10.75 }, "current": { "impressions": 21, "clicks": 0, "position": 13.24 }, "impressionDelta": -86, "positionChange": 2.49 },
+    { "query": "local seo with thealites for plumber", "intent": "noisy/low-confidence local SEO query", "previous": { "impressions": 297, "clicks": 0, "position": 6.07 }, "current": { "impressions": 21, "clicks": 0, "position": 9.95 }, "impressionDelta": -276, "positionChange": 3.88, "reading": "Do not optimise content to this anomalous phrase." }
+  ],
+  "urlInspection": [
+    { "path": "/websites-for-electricians-adelaide", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/websites-for-electricians-adelaide", "lastCrawlTime": "2026-09-05T13:53:08Z" },
+    { "path": "/local-seo-adelaide", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/local-seo-adelaide", "lastCrawlTime": "2026-08-28T23:13:02Z" },
+    { "path": "/seo-for-tradies-adelaide", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/seo-for-tradies-adelaide", "lastCrawlTime": "2026-09-05T13:54:37Z" },
+    { "path": "/marion", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/marion", "lastCrawlTime": "2026-09-05T13:54:37Z" },
+    { "path": "/reynella", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/reynella", "lastCrawlTime": "2026-09-05T13:54:36Z" },
+    { "path": "/morphett-vale", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/morphett-vale", "lastCrawlTime": "2026-09-05T13:54:37Z" },
+    { "path": "/website-design-adelaide", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/website-design-adelaide", "lastCrawlTime": "2026-08-26T13:18:20Z" },
+    { "path": "/seo", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/seo", "lastCrawlTime": "2026-09-10T05:49:56Z" },
+    { "path": "/ndis-provider-marketing-adelaide", "verdict": "PASS", "coverageState": "Submitted and indexed", "robotsTxtState": "ALLOWED", "indexingState": "INDEXING_ALLOWED", "pageFetchState": "SUCCESSFUL", "googleCanonical": "https://aiadelaide.com.au/ndis-provider-marketing-adelaide", "lastCrawlTime": "2026-07-18T23:43:02Z" }
+  ],
+  "findings": [
+    "The principal change is an exposure/coverage collapse beginning 18 August, not a broad ranking or CTR collapse: average position improved and CTR increased in both no-dimension aggregates while impressions fell about 82%.",
+    "Commercial intent losses span local SEO, trade website and suburb website queries. The largest examples generally retain or improve query/page position, so the data does not identify a title, canonical, robots or rendering defect.",
+    "Reynella is the only principal commercial page with a clear page-level average-position regression; its exact commercial queries remain around positions 6-17, so it needs observation and a structural check rather than speculative copy changes.",
+    "The 5 September cohort is not a plausible explanation for the initial step change: the fall occurred on 18 August. The current comparison is not the complete post-release window; preserve the cohort until the 6 October final-data assessment unless a real defect is found.",
+    "The anomalous query 'local seo with thealites for plumber' supplied prior impressions but is not a buyer-intent brief and should not drive content changes."
+  ],
+  "action": {
+    "recommendation": "No additional SEO title, copy, URL or redirect change is justified by this extract.",
+    "smallest_bounded_follow_up": "At the next final pull, recheck /reynella rendered metadata/content and query-page mapping; only edit if a concrete defect is found. Continue monitoring /local-seo-adelaide and /websites-for-electricians-adelaide without rewriting them from impression loss alone.",
+    "next_complete_postReleaseWindow": "2026-09-06 to 2026-10-03, available no earlier than 2026-10-06"
+  }
+}

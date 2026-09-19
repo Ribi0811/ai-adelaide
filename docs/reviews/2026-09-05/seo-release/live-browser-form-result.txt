@@ -1,0 +1,119 @@
+- banner:
+  - navigation:
+    - link "AI Adelaide home":
+      - /url: /
+      - generic: AI Adelaide
+    - button "Open menu"
+- navigation:
+  - link:
+    - /url: /
+    - text: Home
+  - link:
+    - /url: /website-design-adelaide
+    - text: Websites
+  - link:
+    - /url: /website-pricing
+    - text: Pricing
+  - link:
+    - /url: /seo
+    - text: SEO
+  - link:
+    - /url: /ai-automation-adelaide
+    - text: Automation
+  - link:
+    - /url: /testimonials
+    - text: Our work
+  - link:
+    - /url: /about
+    - text: About
+  - link:
+    - /url: /contact
+    - text: Contact
+- link:
+  - /url: /contact#send-message
+  - text: Get a fixed quote →
+- link:
+  - /url: tel:+61871009788
+  - text: (08) 7100 9788 — AI answers now
+- main:
+  - navigation "Breadcrumb":
+    - list:
+      - link "Home":
+        - /url: /
+      - listitem: ›
+      - generic: Contact
+  - paragraph: Message us — we reply within 2 business hours
+  - heading "Send Us a Message" [level=1]
+  - paragraph: Browsing at night? Send a message now, we'll reply in the morning. Tell us about your Adelaide business — what you do, what's not working, what you're trying to figure out. We'll send a useful reply (and a fixed quote if a website, SEO, or AI automation makes sense).
+  - paragraph: Step 01
+  - paragraph: Tell us about your business
+  - paragraph: Step 02
+  - paragraph: We recommend the right service (website, SEO, or automation)
+  - paragraph: Step 03
+  - paragraph: You get a fixed quote on the spot
+  - paragraph: Prefer a form?
+  - heading "Send your details" [level=2]
+  - paragraph: Tell us what is slowing the business down. We'll reply within 2 business hours.
+  - generic: Name *
+  - textbox "Name *":
+    - /placeholder: Jane Smith
+  - generic: Business name
+  - textbox "Business name":
+    - /placeholder: Smith Plumbing
+  - generic: Email *
+  - textbox "Email *":
+    - /placeholder: you@business.com.au
+  - generic: Phone
+  - textbox "Phone":
+    - /placeholder: 0400 000 000
+  - generic: What do you need help with?
+  - combobox "What do you need help with?":
+    - option "Select what you need" [selected]
+    - option "New website or redesign"
+    - option "Local SEO — rank on Google"
+    - option "Practical automation — admin, reminders, follow-ups"
+    - option "Website + SEO together"
+    - option "Website + SEO + automation"
+    - option "Free Digital Health Check (audit)"
+    - option "Not sure yet — just want a chat"
+  - generic: Tell us about your business — what do you do and what's not working? *
+  - textbox "Tell us about your business — what do you do and what's not working? *":
+    - /placeholder: "Example: I'm a plumber in Norwood. I don't have a website and I'm missing calls while on jobs. I want to rank on Google and capture more leads."
+  - button "Send enquiry"
+  - paragraph: We reply within 2 business hours.
+  - status: ✅Thanks! We'll get back to you within 2 business hours.
+  - paragraph: Prefer to pick a time?
+  - heading "Book a free 15-minute call" [level=2]
+  - paragraph: Grab a slot that suits you — no forms, no phone tag.
+  - link "Pick a time":
+    - /url: https://cal.com/aiadelaide/15min
+    - text: Pick a time
+    - generic: →
+  - paragraph: Prefer email?
+  - link "hello@aiadelaide.com.au":
+    - /url: mailto:hello@aiadelaide.com.au
+  - paragraph: "Response time: Within 2 business hours"
+  - paragraph: Questions before booking?
+  - heading "Frequently Asked Questions" [level=2]
+  - generic "How long does setup take?":
+    - text: How long does setup take?
+    - generic: +
+  - paragraph: Starter websites can be ready in 48 hours once the brief, content and access are confirmed. Larger builds and automations follow an agreed schedule. SEO timing depends on your starting point and competition; rankings are not guaranteed.
+  - generic "Do I need any technical knowledge?":
+    - text: Do I need any technical knowledge?
+    - generic: +
+  - generic "What if it doesn't work for my business?":
+    - text: What if it doesn't work for my business?
+    - generic: +
+  - generic "How much does it cost?":
+    - text: How much does it cost?
+    - generic: +
+- contentinfo:
+  - link "AI Adelaide home":
+    - /url: /
+    - generic: AI Adelaide
+  - paragraph: Website design, local SEO and AI automation for Adelaide small businesses. Websites from $699, with clear scope, practical support and an easy next step.
+  - link "hello@aiadelaide.com.au":
+    - /url: mailto:hello@aiadelaide.com.au
+  - link "(08) 7100 9788 — AI answers 24/7":
+    - /url: tel:+61

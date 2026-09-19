@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Clinics Adelaide | Health Practice Website Design",
+  title: "Websites for Clinics Adelaide | From $699",
   description:
     "Healthcare websites for Adelaide clinics — physio, chiro, dental, allied health. Online booking, practitioner profiles, patient forms. From $699.",
   alternates: {
@@ -31,7 +31,7 @@ const buildItems = [
   {
     title: "No-show reduction system",
     body:
-      "Connect with our AI automation to send SMS + email reminders 24hr and 2hr before appointments. Most clinics cut no-shows by 30-65% — that&apos;s thousands in recovered revenue each month.",
+      "Connect approved SMS and email reminders to the clinic booking workflow. Establish the current no-show and late-cancellation baseline, then measure the actual change after launch.",
   },
   {
     title: "Treatment & service pages",
@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What about the no-show problem?",
     answer:
-      "The site is built to connect with our AI automation system. SMS + email reminders at 24hr and 2hr before appointments cut no-shows by 30-65%. Most clinics recover $2-8k/month in previously lost revenue.",
+      "The site can connect with an approved reminder workflow. Timing, consent, privacy and rescheduling rules are configured for the clinic, then no-shows and filled cancellation slots are compared with the pre-launch baseline. No fixed reduction or revenue result is promised.",
   },
   {
     question: "What does it cost?",
@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see SEO results?",
     answer:
-      "Your site is live in 48 hours. Google movement depends on competition — niche practices (&lsquo;physio Mitcham&rsquo;) in 2-4 weeks, competitive areas (&lsquo;physio Norwood&rsquo;) in 2-3 months. We&apos;ll give you an honest timeline.",
+      "The website build can be live in 48 hours once the practice details and approvals are ready. Search movement depends on the starting site, competition, reputation and Google&apos;s systems, so we report against a baseline instead of promising a date.",
   },
   {
     question: "Are you AHPRA-compliant?",
@@ -139,7 +139,7 @@ export default function WebsitesForClinicsPage() {
     })),
   };
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -246,6 +246,47 @@ export default function WebsitesForClinicsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+            <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Health Clinics
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for all Adelaide small businesses. Browse related clinic and allied health resources:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/blog/ai-for-physiotherapists-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI for Adelaide Physio Clinics</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/local-seo-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Local SEO for Adelaide Clinics</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Automation for Adelaide Clinics</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/ai-automation-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI Automation Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

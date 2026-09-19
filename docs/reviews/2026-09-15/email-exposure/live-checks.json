@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-09-15T07:23:58.596776+00:00",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/cookie-policy",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "emailPresent": false
+    },
+    {
+      "path": "/llms-full.txt",
+      "status": 200,
+      "emailPresent": false
+    }
+  ]
+}

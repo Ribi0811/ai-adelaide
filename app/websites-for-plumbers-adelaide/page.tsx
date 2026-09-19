@@ -4,9 +4,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Websites for Plumbers Adelaide | Plumbing Website Design",
+  title: "Plumber Website Adelaide | From $699",
   description:
-    "Professional plumbing websites for Adelaide. Tap-to-call emergency buttons, service area maps, quote forms, Google reviews. Mobile-first, Google-ready. From $699.",
+    "Plumber websites built for Adelaide tradies — mobile-first, Google-ready, click-to-call button, quote forms, AI-built in 48 hours. From $699.",
   alternates: {
     canonical: "/websites-for-plumbers-adelaide",
   },
@@ -31,7 +31,7 @@ const buildItems = [
   {
     title: "Mobile-first design",
     body:
-      "80%+ of plumbing searches happen on a phone. Your site loads fast, shows your number prominently, and makes contact effortless on any screen.",
+      "The mobile page keeps emergency contact, service details and quote actions prominent, then we test the finished journey across relevant screen sizes.",
   },
   {
     title: "24/7 lead capture ready",
@@ -41,7 +41,7 @@ const buildItems = [
   {
     title: "Google-ready local SEO",
     body:
-      "Proper title tags, local schema markup, suburb targeting, and Google Business Profile sync. Your site is set up to rank for &lsquo;plumber [suburb]&rsquo; from day one.",
+      "Relevant title tags, appropriate structured data, useful service-area content and Google Business Profile alignment create clear search foundations without promising a ranking.",
   },
 ];
 
@@ -94,7 +94,7 @@ const faqs = [
   {
     question: "Can you show which suburbs I service?",
     answer:
-      "Absolutely. We build dedicated suburb pages so you rank for &lsquo;plumber [suburb]&rsquo; searches. If you cover 20 suburbs, we build 20 pages. Google loves that.",
+      "Yes, where there is enough genuine local information to make each page useful. We prioritise the suburbs that matter commercially and avoid mass-producing near-identical pages.",
   },
   {
     question: "What does it cost?",
@@ -109,7 +109,7 @@ const faqs = [
   {
     question: "Will it rank on Google for plumbers in my area?",
     answer:
-      "Yes. We build every site with local SEO — suburb targeting, Google Business Profile integration, and schema markup. Your site is set up to rank for &lsquo;plumber [your suburb]&rsquo; from day one.",
+      "We build the technical and content foundations for local search, but no provider controls Google. We assess your services and suburbs, record the current baseline and explain what ongoing work may be needed.",
   },
   {
     question: "Do I need to provide photos of past jobs?",
@@ -119,7 +119,7 @@ const faqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Your site is live in 48 hours. Google ranking depends on competition — niche suburbs can move in 2-4 weeks, competitive areas take 2-3 months. We&apos;ll give you an honest timeline.",
+      "The website build can be live in 48 hours once the required details and approvals are ready. Search movement has no fixed timetable, so we report it against the starting baseline.",
   },
   {
     question: "Can the site handle quote forms with photos?",
@@ -139,7 +139,7 @@ export default function WebsitesForPlumbersPage() {
     })),
   };
   return (
-    <div className="section-shell bg-[#edf4f8] pb-section-mobile pt-28 md:pb-section md:pt-32">
+    <div className="section-shell bg-[#FBFBFD] pb-section-mobile pt-28 md:pb-section md:pt-32">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -255,6 +255,47 @@ export default function WebsitesForPlumbersPage() {
         heading="What Adelaide tradies say"
         eyebrow="From our clients"
       />
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
+            Related Resources for Adelaide Tradies
+          </h2>
+          <p className="mb-6 text-body-mobile text-slate-700 md:text-body">
+            We build websites for all Adelaide trade businesses. Browse our industry-specific pages or read our latest tradie guides:
+          </p>
+          <div className="grid gap-3 md:grid-cols-2">
+            <Link
+              href="/websites-for-electricians-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Electrician Websites Adelaide</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/seo-for-tradies-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">SEO for Adelaide Tradies</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/lost-leads-calculator"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">Lost Leads Calculator</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+            <Link
+              href="/blog/ai-for-plumbers-adelaide"
+              className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
+            >
+              <span className="font-semibold text-slate-900">AI for Adelaide Plumbers</span>
+              <span className="text-accent" aria-hidden>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

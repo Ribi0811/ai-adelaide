@@ -1,15 +1,23 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: 'AI Consulting Melbourne — Practical AI for Small Businesses',
-  description: 'AI Adelaide helps Melbourne tradies, cafes, clinics & retail automate phone calls, bookings & admin. Remote setup. From $247 audit. Book your free call.',
+  description: 'AI Adelaide helps Melbourne tradies, cafes, clinics & retail automate phone calls, bookings & admin. Remote setup. Free audit. Book your free call.',
   alternates: { canonical: "/ai-consulting-melbourne" },
 }
 
 export default function AIConsultingMelbournePage() {
   return (
     <main className="pt-28 pb-16 bg-white">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Services", href: "/services" },
+          { label: "AI Consulting Melbourne" },
+        ]}
+      />
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 leading-tight" style={{ color: '#09162b' }}>
           AI Consulting Melbourne — Practical AI for Melbourne Small Businesses
@@ -43,7 +51,7 @@ export default function AIConsultingMelbournePage() {
         <p className="text-lg text-zinc-700 mb-8"><strong>Retail:</strong> After-hours calls about stock and sizes get answered even when closed.</p>
 
         <h2 className="text-3xl font-semibold mt-8 mb-4" style={{ color: '#09162b' }}>How It Works</h2>
-        <h3 className="text-2xl font-semibold mt-6 mb-3" style={{ color: '#09162b' }}>1) AI Audit — $247</h3>
+        <h3 className="text-2xl font-semibold mt-6 mb-3" style={{ color: '#09162b' }}>1) AI Audit — Free</h3>
         <p className="text-lg text-zinc-700 mb-6">In 30 minutes, we identify where calls, bookings, and admin are leaking time and revenue. You get a written action plan with clear priorities and pricing.</p>
 
         <h3 className="text-2xl font-semibold mt-6 mb-3" style={{ color: '#09162b' }}>2) Implementation — $1,500 to $3,000</h3>
@@ -59,7 +67,7 @@ export default function AIConsultingMelbournePage() {
         <p className="text-lg text-zinc-700 mb-3"><strong>Do I need to be technical?</strong> No. We handle setup and training.</p>
         <p className="text-lg text-zinc-700 mb-3"><strong>How long to go live?</strong> Usually 5 to 10 business days.</p>
         <p className="text-lg text-zinc-700 mb-3"><strong>What if AI can&apos;t answer something?</strong> It captures details and flags you for follow-up.</p>
-        <p className="text-lg text-zinc-700 mb-8"><strong>Can I trial first?</strong> Start with the $247 audit and decide from there.</p>
+        <p className="text-lg text-zinc-700 mb-8"><strong>Can I trial first?</strong> Start with the free audit and decide from there.</p>
 
         <div className="mt-12 p-8 bg-slate-50 rounded-2xl text-center">
           <Link href="/contact" className="inline-flex items-center gap-2 rounded-xl px-8 py-4 text-base font-semibold text-white transition-colors" style={{ backgroundColor: '#00D4AA' }}>

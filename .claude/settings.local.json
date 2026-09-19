@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/check-meta.mjs)",
+      "mcp__obsidian-vaults__search_vault",
+      "Read(//Users/ivanribicic/.openclaw/**)"
+    ]
+  }
+}

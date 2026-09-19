@@ -16,6 +16,7 @@ const JOB_VALUE_MAX = 2000;
 
 const DEFAULT_MISSED_CALLS = 8;
 const DEFAULT_JOB_VALUE = 450;
+const DEFAULT_WIN_RATE = 20;
 
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
@@ -33,6 +34,7 @@ export default function LostLeadsCalculator({ compact = false }: LostLeadsCalcul
   const HeadingTag = compact ? "h2" : "h1";
   const [missedCalls, setMissedCalls] = useState(DEFAULT_MISSED_CALLS);
   const [jobValue, setJobValue] = useState(DEFAULT_JOB_VALUE);
+  const [winRate, setWinRate] = useState(DEFAULT_WIN_RATE);
   const [animatedLeakage, setAnimatedLeakage] = useState(0);
   const animationRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -41,12 +43,10 @@ export default function LostLeadsCalculator({ compact = false }: LostLeadsCalcul
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>("idle");
   const [submitError, setSubmitError] = useState("");
 
-  const lostLeadsPerWeek = useMemo(() => missedCalls * 0.85, [missedCalls]);
-
   // Live leakage — recalculates instantly on every slider change
   const calculatedLeakage = useMemo(
-    () => Math.round(lostLeadsPerWeek * jobValue * 52),
-    [lostLeadsPerWeek, jobValue],
+    () => Math.round(missedCalls * jobValue * (winRate / 100) * 52),
+    [missedCalls, jobValue, winRate],
   );
 
   // Animate the number whenever it changes
@@ -102,6 +102,7 @@ export default function LostLeadsCalculator({ compact = false }: LostLeadsCalcul
           email: email.trim(),
           missed_calls: missedCalls,
           job_value: jobValue,
+          estimated_win_rate: winRate,
           annual_leakage: calculatedLeakage,
         }),
       });
@@ -162,6 +163,27 @@ export default function LostLeadsCalculator({ compact = false }: LostLeadsCalcul
 
             <label className="block">
               <div className="mb-2 flex items-center justify-between gap-4">
+                <span className="text-sm font-semibold text-slate-800">Estimated share that would become jobs</span>
+                <span className="rounded-lg bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-900">
+                  {winRate}%
+                </span>
+              </div>
+              <input
+                type="range"
+                min={5}
+                max={100}
+                step={5}
+                value={winRate}
+                onChange={(event) => setWinRate(clamp(Number(event.target.value), 5, 100))}
+                className="h-2 w-full cursor-pointer appearance-none rounded-lg bg-slate-200 accent-[#0f766e]"
+              />
+              <p className="mt-2 text-xs leading-relaxed text-slate-500">
+                Use your own historical close rate if you know it. This is an assumption, not an industry benchmark.
+              </p>
+            </label>
+
+            <label className="block">
+              <div className="mb-2 flex items-center justify-between gap-4">
                 <span className="text-sm font-semibold text-slate-800">Average job value</span>
                 <span className="rounded-lg bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-900">
                   {formatCurrency(jobValue)}
@@ -185,20 +207,19 @@ export default function LostLeadsCalculator({ compact = false }: LostLeadsCalcul
 
         <div className="mt-6 panel-light-soft border border-rose-200 bg-rose-50/70 p-5 md:p-7">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-slate-700">
-              You&apos;re losing an estimated
+              Estimated annual opportunity value
             </p>
             <p className="mt-2 break-words text-5xl font-black leading-tight text-rose-600 md:text-6xl">
               {formatCurrency(animatedLeakage)}
               <span className="ml-2 text-2xl font-bold md:text-3xl">/ year</span>
             </p>
             <p className="mt-3 text-body-mobile text-slate-700 md:text-body">
-              Based on {missedCalls} missed calls/week × {formatCurrency(jobValue)} job value × 85% never-call-back
-              rate × 52 weeks.
+              Based on {missedCalls} missed calls/week × {formatCurrency(jobValue)} job value × {winRate}% estimated win rate × 52 weeks. This is scenario arithmetic, not measured lost revenue or a promised recovery.
             </p>
 
             <div className="mt-7 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
               <h3 className="text-h4-mobile text-slate-950 md:text-h4">
-                Want to recover part of this within your first week?
+                Want to measure the real missed-call gap?
               </h3>
 
               {submitStatus === "success" ? (

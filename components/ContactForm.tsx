@@ -1,6 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
+import { track } from "@/lib/track";
+import { getAttribution } from "@/lib/attribution";
+import { PRICING } from "@/lib/constants";
 
 type FormState = {
   name: string;
@@ -22,10 +25,86 @@ const initialState: FormState = {
   website: "",
 };
 
+const validServices = new Set([
+  "website",
+  "seo",
+  "automation",
+  "website-seo",
+  "all-three",
+  "audit",
+  "other",
+]);
+
+// ?plan= slugs → human labels. Whitelisted so arbitrary URL params can never
+// inject text into the form. Prices come from PRICING (single source of truth).
+const planLabels: Record<string, string> = {
+  monthly: `${PRICING.website.monthly.name} — ${PRICING.website.monthly.label}, month-to-month`,
+  starter: `Starter website — ${PRICING.website.tiers[0].price} one-off`,
+  business: `Business website — ${PRICING.website.tiers[1].price} one-off`,
+  growth: `Growth website — ${PRICING.website.tiers[2].price} one-off`,
+  "local-seo": `Local SEO — ${PRICING.seo.tiers[0].price}`,
+  "growth-seo": `Growth SEO — ${PRICING.seo.tiers[1].price}`,
+  "automation-starter": `Automation Starter — ${PRICING.automation.tiers[0].price}`,
+  "automation-business": `Automation Business — ${PRICING.automation.tiers[1].price}`,
+};
+
+// ?addons= values (| separated) — must match the pricing page add-on names.
+const validAddons = new Set([
+  "Local SEO Retainer",
+  "Growth SEO Retainer",
+  "Automation Starter",
+  "Automation Business",
+]);
+
 export default function ContactForm() {
   const [form, setForm] = useState<FormState>(initialState);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const [planLabel, setPlanLabel] = useState<string>("");
+  const startedRef = useRef(false);
+
+  // T2: prefill business + service from ?business / ?service query params
+  // (used by the homepage "build my website" personal CTA). Read from the URL
+  // directly — useSearchParams would force a Suspense boundary on the server
+  // page that renders this form.
+  //
+  // 2026-07-16: also honours ?plan= and ?addons= (from the pricing builder,
+  // tier CTAs and the Monthly Website Plan) so the enquiry arrives knowing
+  // exactly what the visitor picked — no re-explaining.
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search);
+    const business = p.get("business");
+    const service = p.get("service");
+    const plan = p.get("plan");
+    const addons = (p.get("addons") ?? "")
+      .split("|")
+      .map((a) => a.trim())
+      .filter((a) => validAddons.has(a));
+
+    const label = plan ? planLabels[plan] : undefined;
+    if (label) {
+      const addonText = addons.length ? ` Plus add-ons: ${addons.join(", ")}.` : "";
+      setPlanLabel(label + (addons.length ? ` + ${addons.join(" + ")}` : ""));
+      setForm((prev) => ({
+        ...prev,
+        message: prev.message || `Hi — I'd like to go ahead with the ${label}.${addonText}`,
+      }));
+    }
+
+    if (business || service) {
+      setForm((prev) => ({
+        ...prev,
+        business: business ?? prev.business,
+        service: service && validServices.has(service) ? service : prev.service,
+      }));
+    }
+  }, []);
+
+  function markStarted() {
+    if (startedRef.current) return;
+    startedRef.current = true;
+    track("form_start");
+  }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -39,52 +118,59 @@ export default function ContactForm() {
     }
 
     try {
-      const payload = {
-        _subject: `New enquiry from ${form.name.trim()} — AI Adelaide`,
-        _captcha: "false",
-        _template: "table",
-        _replyto: form.email.trim(),
-        name: form.name.trim(),
-        email: form.email.trim(),
-        phone: form.phone.trim() || "Not provided",
-        business: form.business.trim() || "Not provided",
-        service: form.service.trim() || "Not provided",
-        message: form.message.trim(),
-      };
-
-      const res = await fetch("https://formsubmit.co/ajax/hello@aiadelaide.com.au", {
+      // Single endpoint fires BOTH Telegram ping AND email (via SMTP)
+      const res = await fetch("/api/contact-submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          business: form.business.trim(),
+          service: form.service.trim(),
+          plan: planLabel,
+          message: form.message.trim(),
+          source: typeof window !== "undefined" ? window.location.pathname : "contact form",
+          attribution: getAttribution(),
+        }),
       });
 
       const raw = await res.text();
-      let data = {} as { success?: string | boolean; message?: string };
+      let data = {} as {
+        ok?: boolean;
+        telegram?: { ok: boolean; error?: string };
+        email?: { ok: boolean; error?: string };
+      };
       try {
-        data = (JSON.parse(raw) as { success?: string | boolean; message?: string }) || {};
+        data = (JSON.parse(raw) as typeof data) || {};
       } catch {
         data = {};
       }
 
-      const failed = !res.ok || data.success === "false" || data.success === false;
-      if (failed) {
-        const activationDetected = /needs\s*Activation|Activate Form/i.test(`${data.message || ""} ${raw}`);
-        const message = activationDetected
-          ? 'Form is awaiting activation. Open the FormSubmit email sent to hello@aiadelaide.com.au and click "Activate Form", then try again.'
-          : data.message || "Something went wrong. Please email us instead.";
-        throw new Error(message);
+      if (!res.ok || !data.ok) {
+        const telegramMsg = data.telegram?.error ? `Telegram: ${data.telegram.error}` : null;
+        const emailMsg = data.email?.error ? `Email: ${data.email.error}` : null;
+        const detail = [telegramMsg, emailMsg].filter(Boolean).join("; ");
+        throw new Error(detail || `HTTP ${res.status}`);
       }
 
+      // Warn (non-blocking) if either channel failed but lead still captured
+      const channelErrors: string[] = [];
+      if (data.telegram && !data.telegram.ok) channelErrors.push("Telegram");
+      if (data.email && !data.email.ok) channelErrors.push("Email");
+      if (channelErrors.length) {
+        console.warn(`Enquiry delivered through one channel; ${channelErrors.join(" and ")} notification(s) failed.`);
+      }
+
+      track("form_submit", {
+        service: form.service || "unspecified",
+        plan: planLabel || "none",
+      });
       setStatus("success");
       setForm(initialState);
-    } catch (error) {
+    } catch {
       setStatus("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Something went wrong. Please email us instead.",
-      );
+      setErrorMessage("Your enquiry was not confirmed. Please try again or call us.");
     }
   }
 
@@ -98,9 +184,18 @@ export default function ContactForm() {
         <p className="mt-2 text-body-mobile md:text-body text-slate-600">
           Tell us what is slowing the business down. We&apos;ll reply within 2 business hours.
         </p>
+        {planLabel && (
+          <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#0E8C74]/25 bg-[#0E8C74]/[0.06] px-4 py-2 text-[13px] font-semibold text-[#0E8C74]">
+            <span
+              className="h-2 w-2 shrink-0 rounded-full bg-[#0E8C74]"
+              aria-hidden
+            />
+            You picked: {planLabel}
+          </p>
+        )}
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} onFocusCapture={markStarted} className="space-y-4">
         <input
           type="text"
           name="website"
@@ -172,16 +267,16 @@ export default function ContactForm() {
             <option value="">Select what you need</option>
             <option value="website">New website or redesign</option>
             <option value="seo">Local SEO — rank on Google</option>
-            <option value="automation">AI Automation — receptionist, missed calls, follow-ups</option>
+            <option value="automation">Practical automation — admin, reminders, follow-ups</option>
             <option value="website-seo">Website + SEO together</option>
-            <option value="all-three">Website + SEO + AI Automation (full stack)</option>
+            <option value="all-three">Website + SEO + automation</option>
             <option value="audit">Free Digital Health Check (audit)</option>
             <option value="other">Not sure yet — just want a chat</option>
           </select>
         </label>
 
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-slate-700">Tell us about your business — what do you do and what's not working? *</span>
+          <span className="mb-2 block text-sm font-medium text-slate-700">Tell us about your business — what do you do and what&apos;s not working? *</span>
           <textarea
             required
             rows={5}
@@ -207,16 +302,15 @@ export default function ContactForm() {
         </div>
 
         {status === "success" && (
-          <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+          <div role="status" className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
             <span className="mr-2">✅</span>
             Thanks! We&apos;ll get back to you within 2 business hours.
           </div>
         )}
 
         {status === "error" && (
-          <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
-            Something went wrong — please try hello@aiadelaide.com.au directly.
-            {errorMessage ? ` (${errorMessage})` : ""}
+          <div role="alert" className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
+            {errorMessage} <a href="tel:+61871009788" className="underline">Call (08) 7100 9788</a>
           </div>
         )}
       </form>

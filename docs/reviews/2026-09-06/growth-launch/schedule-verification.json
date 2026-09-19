@@ -1,0 +1,16 @@
+{
+  "id": "ai-adelaide-enquiry-desk",
+  "name": "AI Adelaide \u2014 growth operator",
+  "status": "ACTIVE",
+  "targetThreadId": "01a070e9-975d-7f70-b866-e2ba683e5174",
+  "savedRuleValidated": true,
+  "timezoneAssumption": "Australia/Adelaide host local timezone",
+  "firstThreeExpectedRuns": [
+    "2026-09-07T09:00:00+09:30",
+    "2026-09-07T12:00:00+09:30",
+    "2026-09-07T16:00:00+09:30"
+  ],
+  "lastExpectedRun": "2026-12-04T16:00:00+10:30",
+  "expectedRunCount": 195,
+  "unattendedExecutionVerified": false
+}

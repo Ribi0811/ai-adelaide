@@ -1,0 +1,32 @@
+{
+  "terms": [
+    "local seo adelaide",
+    "adelaide local seo",
+    "websites for electricians",
+    "website for electricians",
+    "cheap website design adelaide"
+  ],
+  "note": "Fixed five-query buying-intent sample; excludes brand, competitor and informational terms; not all commercial searches.",
+  "current": {
+    "rows": [
+      {
+        "clicks": 0,
+        "impressions": 758,
+        "ctr": 0,
+        "position": 18.650395778364118
+      }
+    ],
+    "responseAggregationType": "byProperty"
+  },
+  "previous": {
+    "rows": [
+      {
+        "clicks": 1,
+        "impressions": 1299,
+        "ctr": 0.0007698229407236335,
+        "position": 27.992301770592764
+      }
+    ],
+    "responseAggregationType": "byProperty"
+  }
+}

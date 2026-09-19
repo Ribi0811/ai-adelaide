@@ -1,0 +1,23 @@
+{
+  "checked": "2026-09-05T13:46:39.503136+00:00",
+  "site": "sc-domain:aiadelaide.com.au",
+  "sitemap": "https://aiadelaide.com.au/sitemap.xml",
+  "submissionAccepted": true,
+  "state": {
+    "path": "https://aiadelaide.com.au/sitemap.xml",
+    "lastSubmitted": "2026-09-05T13:46:38.620Z",
+    "isPending": true,
+    "isSitemapsIndex": false,
+    "type": "sitemap",
+    "lastDownloaded": "2026-09-05T05:06:28.080Z",
+    "warnings": "0",
+    "errors": "0",
+    "contents": [
+      {
+        "type": "web",
+        "submitted": "110",
+        "indexed": "0"
+      }
+    ]
+  }
+}

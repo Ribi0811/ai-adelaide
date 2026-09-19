@@ -63,6 +63,7 @@ export default function AuditReportPage() {
       y += 24;
       write(`${score.totalScore}/100 (${score.band})`, 20, [15, 23, 42], 8);
       write(score.interpretation, 11, [15, 23, 42], 8);
+      write(score.scoreNote, 10, [71, 85, 105], 8);
 
       y += 6;
       doc.setFont('helvetica', 'bold');
@@ -81,13 +82,13 @@ export default function AuditReportPage() {
       recommendations.slice(0, 3).forEach((item, index) => {
         write(`${index + 1}. ${item.title}`, 12, [15, 23, 42], 4);
         write(item.summary, 11, [51, 65, 85], 4);
-        write(`Estimated ROI: ${item.roiEstimate}`, 10, [71, 85, 105], 8);
+        write(`Measurement guidance: ${item.measurementGuidance}`, 10, [71, 85, 105], 8);
       });
 
       y += 8;
       doc.setFont('helvetica', 'bold');
       doc.setFontSize(12);
-      doc.text('Next Step: Book your $247 Efficiency Audit at aiadelaide.com.au/contact', 52, y);
+      doc.text('Next Step: Book a free 15-minute chat at aiadelaide.com.au/contact', 52, y);
 
       doc.save('ai-adelaide-audit-report.pdf');
       setStatus('done');
@@ -103,7 +104,7 @@ export default function AuditReportPage() {
         <section className="panel-light p-6 sm:p-8">
         <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl">Generate Your Full PDF Report</h1>
         <p className="mt-3 text-sm text-slate-700">
-          Thanks for purchasing the detailed digital health report. Click below to generate and download your personalised PDF covering websites, SEO, and AI automation for your Adelaide business.
+          Click below to generate and download your free personalised PDF covering websites, SEO, and AI automation for your Adelaide business.
         </p>
 
         <div className="mt-5 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
@@ -138,7 +139,7 @@ export default function AuditReportPage() {
           <p className="text-sm text-slate-800">
             Want help implementing this roadmap? Book a free chat and we can scope your next website, SEO, or AI automation win.
           </p>
-          <Link href="/contact" className="btn-primary mt-4 inline-flex w-full justify-center">
+          <Link href="/contact?service=audit#send-message" className="btn-primary mt-4 inline-flex w-full justify-center">
             Book Free Chat →
           </Link>
         </div>

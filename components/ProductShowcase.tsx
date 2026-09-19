@@ -54,7 +54,7 @@ const products = [
     subheadline:
       "Sent a quote and heard nothing? We follow up automatically — polite, timely nudges that keep your business front of mind without lifting a finger.",
     stats: [
-      { label: "Win Rate", value: "+30%", detail: "more quotes turning into jobs" },
+      { label: "Win Rate", value: "Tracked", detail: "quotes compared with booked jobs" },
       { label: "Setup Time", value: "2-5 days", detail: "for most clients" },
       { label: "Contract", value: "No lock-in", detail: "month to month" },
     ],

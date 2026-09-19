@@ -1,0 +1,16 @@
+{
+  "checked": "2026-09-05",
+  "sourceCommit": "fc1c29527afb70267011c0eff39c184b84f14bbe",
+  "deploymentId": "dpl_9UrXyza4hpxDhiuS6CLau35Pt4ee",
+  "deploymentUrl": "https://ai-adelaide-c89ee5p0i-ivans-projects-9bc72bf6.vercel.app",
+  "target": "production",
+  "status": "Ready",
+  "canonical": "https://aiadelaide.com.au",
+  "aliases": [
+    "https://aiadelaide.com.au",
+    "https://www.aiadelaide.com.au"
+  ],
+  "method": "Vercel CLI from committed-source archive, local environment files excluded",
+  "rollbackDeploymentId": "dpl_3bANipgayrvwSXX4DGcTXw2J7737",
+  "gitPushPerformed": false
+}

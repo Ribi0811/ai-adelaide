@@ -6,7 +6,7 @@ import Reveal from "@/components/home-v3/Reveal";
 import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "AI Automation Setup for Adelaide Tradies | Plumbers, Sparkies, Builders",
+  title: "AI Automation Setup for Adelaide Tradies",
   description:
     "AI automation setup for Adelaide tradies: missed-call text-back, quote follow-up, invoice chasing, review collection. Connected to your tools. Free audit.",
   alternates: { canonical: "/ai-automation-setup-tradies" },
@@ -16,32 +16,32 @@ const automations = [
   {
     title: "Missed-Call Text-Back",
     body: "You're under a house, on a roof, or elbow-deep in a switchboard. You can't answer. AI texts the caller back in 20 seconds, qualifies the job, and books it into your calendar.",
-    stat: "Catches 80%+ of missed calls",
+    stat: "Prompt follow-up",
   },
   {
     title: "Quote Follow-Up That Actually Happens",
     body: "You sent the quote Tuesday. It's Friday. You forgot to follow up. AI sends the nudge for you — professionally, in your voice, at the right time.",
-    stat: "30-40% more quotes accepted",
+    stat: "Scheduled nudges",
   },
   {
     title: "Invoice Chasing Without the Awkwardness",
     body: "AI sends payment reminders at 3 days, 7 days, 14 days. Polite but persistent. You don't have to make the 'hey mate, about that invoice' call.",
-    stat: "25-40% faster payment",
+    stat: "Consistent reminders",
   },
   {
     title: "Review Collection on Autopilot",
     body: "Job done → AI sends Google review link 24 hours later. One gentle reminder at day 7. Your rating climbs while you're on the tools.",
-    stat: "3-5x more reviews per month",
+    stat: "Review requests",
   },
   {
     title: "After-Hours Call Handling",
     body: "Emergency call at 9pm? AI answers, qualifies urgency, books the job or escalates to your mobile. You decide what counts as urgent.",
-    stat: "Never miss a $2K emergency job",
+    stat: "Your escalation rules",
   },
   {
     title: "Booking Confirmations & Reminders",
     body: "Customer books Tuesday 9am. AI confirms Monday arvo, reminds Tuesday 8am. No-shows drop. Your schedule stays full.",
-    stat: "50-70% fewer no-shows",
+    stat: "Booking reminders",
   },
 ];
 
@@ -81,12 +81,12 @@ const faqItems = [
   {
     question: "How much does AI automation setup cost for tradies?",
     answer:
-      "Depends on your setup. Most tradies start with missed-call text-back and quote follow-up — that combo usually pays for itself in the first month if you're missing 2-3 calls a week. Book a free audit and we'll quote your specific workflow.",
+      "Setup is quoted after reviewing your workflow, software and access. We confirm the setup cost, ongoing fees and any third-party usage charges before you commit.",
   },
   {
     question: "Do I need to change my phone number or software?",
     answer:
-      "No. Your number stays the same. We connect to whatever you're already using — ServiceM8, Tradify, Jobber, Xero, Google Calendar. If you don't use job management software yet, we can recommend one that fits your trade.",
+      "No. Your number stays the same. We check whether we can connect to the tools you are using — ServiceM8, Tradify, Jobber, Xero, Google Calendar. If you don't use job management software yet, we can recommend one that fits your trade.",
   },
   {
     question: "What if the AI says something wrong to a customer?",
@@ -137,7 +137,7 @@ export default function AiAutomationSetupTradiesPage() {
               AI Automation Setup — Miss Fewer Calls, Win More Jobs
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed mb-8">
-              You're a plumber, electrician, builder, or chippy. You're on the tools all day. You miss 10-15 calls a week. Each one is worth $200-2,000. AI automation catches them.
+              Quotes, reminders and invoice follow-up can slip when you are on the tools. Start with one repetitive task and build a workflow that fits the way your business operates.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -160,9 +160,9 @@ export default function AiAutomationSetupTradiesPage() {
       {/* The 6 Core Automations */}
       <section className="max-w-6xl mx-auto px-6 mt-20">
         <Reveal>
-          <h2 className="text-3xl font-bold mb-4 text-slate-900">The 6 Automations Every Tradie Needs</h2>
+          <h2 className="text-3xl font-bold mb-4 text-slate-900">Six Workflows Worth Considering</h2>
           <p className="text-lg text-slate-600 mb-12 max-w-3xl">
-            These aren't "nice to have" features. These are the difference between a $80K year and a $120K year for most Adelaide tradies.
+            Choose the task that costs your business the most time. We check your tools, agree the rules and measure whether the new workflow helps.
           </p>
         </Reveal>
 
@@ -170,9 +170,9 @@ export default function AiAutomationSetupTradiesPage() {
           {automations.map((automation, i) => (
             <Reveal key={i}>
               <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-                <div className="flex items-start justify-between mb-4">
+                <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                   <h3 className="text-xl font-bold text-slate-900">{automation.title}</h3>
-                  <span className="text-sm font-mono text-accent bg-accent/10 px-3 py-1 rounded-full whitespace-nowrap ml-4">
+                  <span className="text-sm font-mono text-accent bg-accent/10 px-3 py-1 rounded-full whitespace-normal">
                     {automation.stat}
                   </span>
                 </div>
@@ -236,20 +236,20 @@ export default function AiAutomationSetupTradiesPage() {
         </div>
       </section>
 
-      {/* Real Example */}
+      {/* Illustrative workflow, not a customer result */}
       <section className="max-w-4xl mx-auto px-6 mt-20">
         <Reveal>
           <div className="bg-gradient-to-br from-accent/5 to-transparent border border-accent/20 rounded-2xl p-8 md:p-12">
-            <h2 className="text-2xl font-bold mb-6 text-slate-900">Real Example: Electrician in Morphett Vale</h2>
+            <h2 className="text-2xl font-bold mb-6 text-slate-900">Example Workflow: Quote Follow-Up</h2>
             <div className="space-y-4 text-slate-700 leading-relaxed">
               <p>
-                <strong>Before:</strong> Missing 12-15 calls a week. Most went to voicemail. Maybe 2 called back. Lost roughly $3,000-4,000/month in missed work.
+                <strong>Before:</strong> A quote is sent, but the next step relies on someone remembering to follow up.
               </p>
               <p>
-                <strong>After:</strong> AI texts back every missed call in 20 seconds. Books 6-8 extra jobs a month. Caught a $12,000 switchboard upgrade from a 6pm call he would have missed.
+                <strong>After:</strong> An agreed reminder is scheduled. It stops when the customer replies or the quote is accepted, and exceptions return to you.
               </p>
               <p>
-                <strong>ROI:</strong> $350/month cost. $3,500+/month in recovered jobs. Paid for itself week one.
+                <strong>How to assess it:</strong> Compare follow-up completion, accepted quotes and time spent against your starting point. This is an illustrative workflow, not a customer case study or earnings promise.
               </p>
             </div>
           </div>

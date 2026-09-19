@@ -40,3 +40,7 @@ next-env.d.ts
 data/contact-leads.json
 data/chat-leads.json
 data/chat-leads.csv
+
+# Private operating state, customer drafts and working exports; never commit
+data/growth-ops/
+__pycache__/

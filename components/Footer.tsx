@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { legalLinks, siteConfig } from "@/lib/constants";
+import { legalLinks, PRICING, siteConfig } from "@/lib/constants";
 import SuburbNav from "@/components/SuburbNav";
 
 // v3/v4 design language: quiet, editorial, hairline-separated. This block is
@@ -37,12 +37,13 @@ const industryLinks = [
 
 const resourceLinks = [
   { href: "/website-cost-adelaide", label: "Website cost guide" },
+  { href: "/affordable-web-design-adelaide", label: "Affordable web design Adelaide" },
   { href: "/seo-vs-google-ads-adelaide", label: "SEO vs Google Ads" },
   { href: "/seo-for-tradies-adelaide", label: "SEO for tradies" },
   { href: "/ai-seo-adelaide", label: "AI SEO Adelaide" },
   { href: "/ai-marketing-adelaide", label: "AI marketing" },
   { href: "/ai-consulting-adelaide", label: "AI consulting Adelaide" },
-  { href: "/ai-app-development-adelaide", label: "AI app development" },
+  { href: "/ai-app-development-adelaide", label: "AI application development Adelaide" },
   { href: "/automotive-seo-services", label: "Automotive SEO" },
   { href: "/hotel-seo-services", label: "Hotel SEO" },
   { href: "/aged-care-seo-services", label: "Aged care SEO" },
@@ -53,6 +54,7 @@ const resourceLinks = [
 ];
 
 const companyLinks = [
+  { href: "/about", label: "About AI Adelaide" },
   { href: "/audit", label: "Free audit" },
   { href: "/tools/ai-readiness-calculator", label: "AI readiness score" },
   { href: "/testimonials", label: "Selected work" },
@@ -91,15 +93,15 @@ export default function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-[14px] leading-relaxed text-[#6E6E73]">
               Website design, local SEO and AI automation for Adelaide small
-              businesses. Websites from $699 — yours in 48 hours, yours
-              forever.
+              businesses. Websites from {PRICING.website.from}, with clear scope,
+              practical support and an easy next step.
             </p>
             <div className="mt-6 space-y-2 text-[14px]">
               <a
-                href="mailto:hello@aiadelaide.com.au"
+                href="/contact#send-message"
                 className="block text-[#6E6E73] transition-colors hover:text-[#0E8C74]"
               >
-                hello@aiadelaide.com.au
+                Send a message
               </a>
               <a
                 href={siteConfig.phoneHref}
@@ -175,7 +177,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-[#98989D]">
-            Adelaide owned &amp; operated · No lock-in · From $699
+            Adelaide owned &amp; operated · Websites from {PRICING.website.from}
           </p>
         </div>
       </div>

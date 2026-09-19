@@ -147,6 +147,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
   const faqs = extractFaqs(post.content);
   const articlePath = articlePathFor(post.slug, post.category);
+  const isSeoCostGuide = post.slug === "how-much-does-seo-cost-adelaide";
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -294,14 +295,14 @@ export default function BlogPostPage({ params }: PageProps) {
                 {articlePath.ctaBody}
               </p>
               <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-                <Link href={articlePath.href} className="btn-primary px-6 py-3 text-base">
-                  View the Service <span aria-hidden>→</span>
+                <Link href={isSeoCostGuide ? "/contact?service=seo#send-message" : articlePath.href} className="btn-primary px-6 py-3 text-base">
+                  {isSeoCostGuide ? "Request an SEO quote" : "View the Service"} <span aria-hidden>→</span>
                 </Link>
                 <Link
-                  href="/contact"
+                  href={isSeoCostGuide ? "/seo" : "/contact"}
                   className="inline-flex items-center justify-center rounded-xl border border-accent/40 bg-white px-6 py-3 text-base font-semibold text-accent transition-all hover:bg-accent/5"
                 >
-                  Book a Free Chat
+                  {isSeoCostGuide ? "See our SEO services" : "Book a Free Chat"}
                 </Link>
               </div>
             </div>

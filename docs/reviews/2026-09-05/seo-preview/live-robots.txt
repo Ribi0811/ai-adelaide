@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Host: https://aiadelaide.com.au
+Sitemap: https://aiadelaide.com.au/sitemap.xml

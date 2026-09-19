@@ -63,7 +63,7 @@ const steps = [
   {
     title: "Step 4 — Live",
     body:
-      "We push it live, set up your domain, and hand you the keys. Total time: 48 hours from first call to live site.",
+      "We push it live, set up your domain, and hand you the keys. Starter builds can take 48 hours once content and access are ready. Larger builds follow the agreed project schedule.",
   },
 ];
 
@@ -108,7 +108,7 @@ const faqs = [
   {
     question: "How long until my website is live?",
     answer:
-      "48 hours from our kickoff call. We do a 15-minute brief, build the site overnight using AI-assisted workflows, you review the next day, we make your changes, and it's live the following morning. If we need a custom domain, add 24 hours for DNS setup.",
+      "Starter builds can be ready in 48 hours after we confirm the brief, content and access. Business builds usually take 5–7 days; Growth builds 10–14 days. Your feedback, approvals, domain setup and integrations can affect the final launch date.",
   },
   {
     question: "Do you write the SEO content too?",
@@ -392,7 +392,7 @@ export default function WebsiteDesignAdelaidePage() {
           <Reveal>
             <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">03</p>
             <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
-              From Brief to Live in 48 Hours
+              From Brief to a Website You Can Use
             </h2>
           </Reveal>
           <div className="relative mt-12 hidden h-1 rounded-full bg-black/[0.07] md:block" aria-hidden>
@@ -445,10 +445,11 @@ export default function WebsiteDesignAdelaidePage() {
       </section>
 
       <Testimonials
+        names={["Chloe M.", "Sarah P.", "Aisha N."]}
         count={3}
         heading="What Adelaide businesses say"
         eyebrow="Real results"
-        subheadline="These are outcomes clients have reported from the work shown; individual results depend on the business, offer and traffic."
+        subheadline="Customer comments about website work. Names shortened for privacy; individual results vary. These are separate from the portfolio examples above."
       />
 
       {/* FAQs — accordion */}
@@ -558,7 +559,7 @@ export default function WebsiteDesignAdelaidePage() {
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="/contact#send-message"
+                href="/contact?service=website#send-message"
                 data-track="quote_design_cta"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#0E8C74] px-8 py-4 text-[16px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(14,140,116,0.35)]"
               >

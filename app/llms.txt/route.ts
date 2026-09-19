@@ -112,7 +112,7 @@ AI Adelaide works with Adelaide tradies (plumbers, electricians, builders, HVAC,
 - **Contracts**: no lock-in on any plan.
 - **Location**: ${siteConfig.address}. Serving greater Adelaide, South Australia.
 - **Phone**: ${siteConfig.phone} — answered 24/7 by our own AI receptionist, which is the same system we install for clients.
-- **Email**: ${siteConfig.email}
+- **Contact form**: https://aiadelaide.com.au/contact#send-message
 
 ## Core pages
 
@@ -144,7 +144,7 @@ ${blogList}
 
 - **Name**: AI Adelaide
 - **Website**: ${U}
-- **Email**: ${siteConfig.email}
+- **Contact form**: https://aiadelaide.com.au/contact#send-message
 - **Phone**: ${siteConfig.phone}
 - **Address**: ${siteConfig.address}
 - **Service area**: Greater Adelaide, South Australia

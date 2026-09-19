@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { JetBrains_Mono, Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -9,7 +8,7 @@ import AnalyticsListener from "@/components/AnalyticsListener";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import dynamic from "next/dynamic";
 const ChatWidget = dynamic(() => import("@/components/ChatWidget"), { ssr: false });
-import { siteConfig } from "@/lib/constants";
+import { PRICING, siteConfig } from "@/lib/constants";
 
 const sans = Manrope({
   subsets: ["latin"],
@@ -119,10 +118,9 @@ export default function RootLayout({
         {/* Basic consent mode: no Google script or measurement request exists
             until the visitor explicitly accepts analytics. */}
         <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
-        <Script
+        <script
           id="site-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -131,8 +129,7 @@ export default function RootLayout({
               name: "AI Adelaide",
               description: "AI Adelaide provides website design, local SEO and practical automation for Adelaide small businesses.",
               url: "https://aiadelaide.com.au",
-              telephone: process.env.NEXT_PUBLIC_PHONE || "+618****9788",
-              email: "hello@aiadelaide.com.au",
+              telephone: siteConfig.phoneHref.replace("tel:", ""),
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "5 Peel St",
@@ -164,9 +161,9 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "AI-Powered Website Design",
-                      description: "AI-powered website design for Adelaide small businesses, from $699. AI-accelerated builds, copywriting, and SEO setup.",
+                      description: `Website design for Adelaide small businesses, ${PRICING.website.fromLabel}. Copywriting, design and search foundations.`,
                     },
-                    price: "699",
+                    price: PRICING.website.from.replace(/[^0-9.]/g, ""),
                     priceCurrency: "AUD",
                   },
                   {
@@ -174,9 +171,9 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "AI-Driven Local SEO",
-                      description: "AI-driven local SEO for Adelaide businesses, from $399/month. AI keyword research, content, and rank tracking.",
+                      description: `Local SEO for Adelaide businesses, ${PRICING.seo.fromLabel}. Relevant content, Google Business Profile and search reporting.`,
                     },
-                    price: "399",
+                    price: PRICING.seo.from.replace(/[^0-9.]/g, ""),
                     priceCurrency: "AUD",
                   },
                   {
@@ -184,9 +181,9 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "AI Automation",
-                      description: "AI automation for Adelaide small businesses — missed call text-back, AI receptionist, quote follow-up, from $199/month.",
+                      description: `Practical automation for Adelaide small businesses, ${PRICING.automation.fromLabel}. Quote follow-ups, reminders and admin workflows.`,
                     },
-                    price: "199",
+                    price: PRICING.automation.from.replace(/[^0-9.]/g, ""),
                     priceCurrency: "AUD",
                   },
                 ],

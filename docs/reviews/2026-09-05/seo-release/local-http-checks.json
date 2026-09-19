@@ -1,0 +1,105 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "title": "Website Design, SEO & AI Automation Adelaide | AI Adelaide",
+    "description": "Websites from $699, local SEO from $399/mo and practical automation for Adelaide small businesses. Clear project scope, local support. Get a quote.",
+    "h1": [
+      "Small business. Big presence."
+    ],
+    "canonical": "https://aiadelaide.com.au",
+    "schemas": [
+      "LocalBusiness",
+      "WebSite",
+      "FAQPage"
+    ],
+    "imageAlt": true
+  },
+  {
+    "path": "/websites-for-electricians-adelaide",
+    "status": 200,
+    "title": "Websites for Electricians Adelaide | From $699 | AI Adelaide",
+    "description": "Websites for Adelaide electricians from $699. Mobile design, clear services, licence details and quote forms. Compare scope and get a fixed quote.",
+    "h1": [
+      "Websites for Adelaide Electricians"
+    ],
+    "canonical": "https://aiadelaide.com.au/websites-for-electricians-adelaide",
+    "schemas": [
+      "LocalBusiness",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "imageAlt": true
+  },
+  {
+    "path": "/seo-for-tradies-adelaide",
+    "status": 200,
+    "title": "SEO for Tradies Adelaide | AI Adelaide",
+    "description": "SEO for Adelaide tradies from $399/mo. Get a free visibility review, prioritised local search plan and clear monthly progress reporting. No lock-in.",
+    "h1": [
+      "SEO for Tradies Adelaide: How Plumbers, Electricians & Builders Rank on Google"
+    ],
+    "canonical": "https://aiadelaide.com.au/seo-for-tradies-adelaide",
+    "schemas": [
+      "LocalBusiness",
+      "Service",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "imageAlt": true
+  },
+  {
+    "path": "/marion",
+    "status": 200,
+    "title": "Website Designer Marion \u2014 From $699 | AI Adelaide",
+    "description": "Website designer in Marion, Adelaide. Small-business websites from $699, with clear services, mobile enquiries and an agreed scope. Get a fixed quote.",
+    "h1": [
+      "Website Designer Marion for Local Business"
+    ],
+    "canonical": "https://aiadelaide.com.au/marion",
+    "schemas": [
+      "LocalBusiness",
+      "FAQPage",
+      "Service",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "imageAlt": true
+  },
+  {
+    "path": "/reynella",
+    "status": 200,
+    "title": "Web Design Reynella \u2014 Websites From $699 | AI Adelaide",
+    "description": "Web design for Reynella businesses from $699. Clear services, mobile quote forms and service-area information. Compare website packages and get a fixed quote.",
+    "h1": [
+      "Website Designer Reynella for Local Business"
+    ],
+    "canonical": "https://aiadelaide.com.au/reynella",
+    "schemas": [
+      "LocalBusiness",
+      "FAQPage",
+      "Service",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "imageAlt": true
+  },
+  {
+    "path": "/morphett-vale",
+    "status": 200,
+    "title": "Website Designer Morphett Vale \u2014 From $699 | AI Adelaide",
+    "description": "Website designer for Morphett Vale businesses from $699. Mobile design, clear services and quote forms. See inclusions, ownership and hosting before you choose.",
+    "h1": [
+      "Website Designer Morphett Vale for Local Business"
+    ],
+    "canonical": "https://aiadelaide.com.au/morphett-vale",
+    "schemas": [
+      "LocalBusiness",
+      "FAQPage",
+      "Service",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "imageAlt": true
+  }
+]

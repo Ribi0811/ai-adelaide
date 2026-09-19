@@ -57,7 +57,7 @@ export default function TradieLeadForm() {
       setPhone("");
     } catch {
       setStatus("error");
-      setError("Something went wrong — please call (08) 7100 9788 or email hello@aiadelaide.com.au.");
+      setError("Something went wrong — please call (08) 7100 9788 for help.");
     }
   }
 
@@ -66,8 +66,7 @@ export default function TradieLeadForm() {
       <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-emerald-900 md:p-8">
         <p className="text-lg font-semibold">Thanks — request received.</p>
         <p className="mt-1 text-sm">
-          We&apos;ll review where your business ranks now and reply within 2 business hours with
-          the quick wins.
+          We&apos;ll review your business details and get in touch about the most useful next steps.
         </p>
       </div>
     );
@@ -80,8 +79,7 @@ export default function TradieLeadForm() {
         Get a free tradie visibility review
       </h2>
       <p className="mt-2 max-w-xl text-body-mobile text-slate-600 md:text-body">
-        Tell us your trade and where you work — we&apos;ll show you where you rank now, what your
-        competitors are doing, and the fastest wins. No pitch unless you want one.
+        Tell us your trade, website and service area. We&apos;ll review your current visibility and recommend priorities before discussing any paid work.
       </p>
       <form onSubmit={handleSubmit} className="mt-5 grid gap-3 sm:grid-cols-2">
         <input

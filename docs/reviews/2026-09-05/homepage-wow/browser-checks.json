@@ -1,0 +1,19 @@
+{
+  "checked": "2026-09-05",
+  "build": "production localhost:3000",
+  "viewportWidthsChecked": [
+    1280,
+    768,
+    390,
+    320
+  ],
+  "horizontalOverflowObserved": false,
+  "bothProjectsSelectable": true,
+  "selectedProjectImagesLoaded": true,
+  "onlySelectedProjectVisible": true,
+  "quoteVisibleInInitialPhoneViewport": true,
+  "mobileClosingSectionVisuallyChecked": true,
+  "desktopViewportRestored": true,
+  "notificationSent": false,
+  "reducedMotion": "CSS rules disable animations and transitions; system preference was not changed"
+}

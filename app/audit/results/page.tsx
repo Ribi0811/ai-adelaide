@@ -60,14 +60,14 @@ export default function AuditResultsPage() {
               Your AI Audit Results
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-body-mobile text-slate-600 md:text-body">
-              Take the 15-question AI readiness audit to see your personalised score, recommendations, and ROI estimates for your Adelaide business.
+              Take the 10-question AI readiness audit to see your personalised score and recommendations for your Adelaide business.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link href="/audit/quiz" className="btn-primary inline-flex px-6 py-3 text-base">
                 Start the Free Audit <span aria-hidden>→</span>
               </Link>
               <Link
-                href="/contact"
+                href="/contact?service=audit#send-message"
                 className="inline-flex items-center rounded-xl border border-accent/40 bg-white px-6 py-3 text-base font-semibold text-accent transition-all hover:bg-accent/5"
               >
                 Book a Free Chat
@@ -80,15 +80,15 @@ export default function AuditResultsPage() {
             <ul className="mt-4 space-y-3 text-sm text-slate-700">
               <li className="flex gap-3">
                 <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/10 text-accent">✓</span>
-                <span><strong>Scored AI readiness</strong> across website, SEO, automation, and review presence (0-100).</span>
+                <span><strong>Scored AI readiness</strong> across website, SEO, lead capture, and automation (0-100).</span>
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/10 text-accent">✓</span>
-                <span><strong>Personalised recommendations</strong> prioritised by ROI for your specific business type.</span>
+                <span><strong>Personalised recommendations</strong> prioritised by your lowest-scoring areas and business context.</span>
               </li>
               <li className="flex gap-3">
                 <span className="mt-0.5 inline-flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/10 text-accent">✓</span>
-                <span><strong>Free PDF report</strong> with detailed action plan and dollar estimates.</span>
+                <span><strong>Free PDF report</strong> with a detailed action plan and measurement guidance.</span>
               </li>
             </ul>
           </section>
@@ -114,6 +114,7 @@ export default function AuditResultsPage() {
             <span className="mb-2 text-lg text-slate-500">/100</span>
           </div>
           <p className="mt-3 text-sm text-slate-700"><strong>{score.band}:</strong> {score.interpretation}</p>
+          <p className="mt-3 text-xs leading-6 text-slate-500">{score.scoreNote}</p>
 
           <div className="mt-6 space-y-3">
             {score.categoryScores.map((category) => (
@@ -161,7 +162,7 @@ export default function AuditResultsPage() {
 
           <div className="mt-6 rounded-2xl border border-[#00D4AA]/30 bg-[#00D4AA]/10 p-4">
             <p className="text-sm text-slate-800">
-              Your score is free. Get the full personalised PDF with detailed ROI estimates and an action plan for websites, SEO, and AI automation — no charge.
+              Your score is free. Get the full personalised PDF with measurement guidance and an action plan for websites, SEO, lead capture and automation — no charge.
             </p>
             <div className="mt-4">
               <Link href="/audit/report" className="btn-primary w-full text-center block">
@@ -178,7 +179,7 @@ export default function AuditResultsPage() {
             Free 15-minute chat. We&apos;ll walk through your score and tell you which fixes will actually move the needle.
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact" className="btn-primary inline-flex px-5 py-3 text-sm">
+            <Link href="/contact?service=audit#send-message" className="btn-primary inline-flex px-5 py-3 text-sm">
               Book Free Chat <span aria-hidden>→</span>
             </Link>
             <Link
@@ -193,4 +194,3 @@ export default function AuditResultsPage() {
     </main>
   );
 }
-

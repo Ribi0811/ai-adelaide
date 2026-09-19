@@ -54,6 +54,7 @@ export async function generateAuditPdf(payload: AuditReportPayload): Promise<Buf
     doc.moveDown(0.2);
     doc.font('Helvetica-Bold').fontSize(44).fillColor(BRAND.dark).text(`${score.totalScore}/100`);
     doc.font('Helvetica').fontSize(11).fillColor(BRAND.dark).text(score.interpretation);
+    doc.fontSize(10).fillColor(BRAND.muted).text(score.scoreNote);
 
     drawSectionTitle(doc, 'Category Breakdown');
     for (const category of score.categoryScores) {
@@ -72,8 +73,8 @@ export async function generateAuditPdf(payload: AuditReportPayload): Promise<Buf
       doc.moveDown(0.1);
       doc.text(`Problem: ${item.problem}`);
       doc.text(`AI Solution: ${item.solution}`);
-      doc.text(`Estimated ROI: ${item.roiEstimate}`);
-      doc.text(`Complexity: ${item.complexity} • Estimated monthly cost: ${item.monthlyCost}`);
+      doc.text(`Measurement guidance: ${item.measurementGuidance}`);
+      doc.text(`Complexity: ${item.complexity} • Scope: ${item.monthlyCost}`);
       doc.moveDown(0.4);
     });
 

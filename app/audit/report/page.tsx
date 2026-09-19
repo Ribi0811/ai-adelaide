@@ -63,6 +63,7 @@ export default function AuditReportPage() {
       y += 24;
       write(`${score.totalScore}/100 (${score.band})`, 20, [15, 23, 42], 8);
       write(score.interpretation, 11, [15, 23, 42], 8);
+      write(score.scoreNote, 10, [71, 85, 105], 8);
 
       y += 6;
       doc.setFont('helvetica', 'bold');
@@ -81,7 +82,7 @@ export default function AuditReportPage() {
       recommendations.slice(0, 3).forEach((item, index) => {
         write(`${index + 1}. ${item.title}`, 12, [15, 23, 42], 4);
         write(item.summary, 11, [51, 65, 85], 4);
-        write(`Estimated ROI: ${item.roiEstimate}`, 10, [71, 85, 105], 8);
+        write(`Measurement guidance: ${item.measurementGuidance}`, 10, [71, 85, 105], 8);
       });
 
       y += 8;
@@ -138,7 +139,7 @@ export default function AuditReportPage() {
           <p className="text-sm text-slate-800">
             Want help implementing this roadmap? Book a free chat and we can scope your next website, SEO, or AI automation win.
           </p>
-          <Link href="/contact" className="btn-primary mt-4 inline-flex w-full justify-center">
+          <Link href="/contact?service=audit#send-message" className="btn-primary mt-4 inline-flex w-full justify-center">
             Book Free Chat →
           </Link>
         </div>

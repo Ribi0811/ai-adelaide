@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   // was 211 chars (want 140-160).
   title: "Local SEO Adelaide — Get Found on Google",
   description:
-    `Local SEO for Adelaide businesses: improve Google Business Profile, local pages, reviews, citations, tracking and enquiries. ${PRICING.seo.fromLabel}, no lock-in.`,
+    `Local SEO Adelaide: improve your Google Business Profile, local pages, reviews, citations, tracking and enquiries. ${PRICING.seo.fromLabel}, no lock-in.`,
   alternates: { canonical: "/local-seo-adelaide" },
 };
 
@@ -139,7 +139,7 @@ export default function LocalSeoAdelaidePage() {
           <p className="mx-auto mb-8 max-w-2xl text-body-mobile text-slate-600 md:text-body">
             Free 15-minute chat. We&apos;ll establish your current visibility, identify the clearest gaps and explain which local-search improvements we would prioritise.
           </p>
-          <Link href="/contact" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
+          <Link href="/contact?service=seo#send-message" className="btn-primary px-8 py-4">Book Free Local SEO Chat <span aria-hidden>→</span></Link>
         </div>
       </section>
     </div>

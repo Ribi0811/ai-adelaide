@@ -134,7 +134,7 @@ export default async function Image({ params }: { params: { suburb: string } }) 
             opacity: 0.7,
           }}
         >
-          <div style={{ display: "flex" }}>(08) 7100 9788 · hello@aiadelaide.com.au</div>
+          <div style={{ display: "flex" }}>(08) 7100 9788 · aiadelaide.com.au/contact</div>
           <div style={{ display: "flex" }}>aiadelaide.com.au/{suburb.slug}</div>
         </div>
       </div>

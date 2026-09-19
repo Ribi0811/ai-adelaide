@@ -149,7 +149,9 @@ export const AUDIT_QUESTIONS: AuditQuestion[] = [
     category: 'business-profile',
     categoryLabel: 'Business Profile',
     text: 'How many staff including yourself?',
-    scored: true,
+    // Context for recommendations only; staffing level must not change the
+    // four-area readiness score.
+    scored: false,
     options: [
       { label: 'Just me', value: 'just-me', points: 8 },
       { label: '2-5', value: '2-5', points: 12 },

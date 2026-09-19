@@ -1,0 +1,14 @@
+{
+  "checked": "2026-09-05T13:47:14.385132+00:00",
+  "testMarker": "AIA-SEO-20260905-02",
+  "testType": "live mobile browser Marion quote to Contact form",
+  "matchingInboxMessages": 1,
+  "messages": [
+    {
+      "date": "Sat, 05 Sep 2026 13:46:50 +0000",
+      "messageId": "<6dbeb7af-e2df-14c1-2c01-031a4f9792fc@aiadelaide.com.au>",
+      "markerVerified": true
+    }
+  ],
+  "readOnly": true
+}

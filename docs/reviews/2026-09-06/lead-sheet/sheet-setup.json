@@ -1,0 +1,16 @@
+{
+  "spreadsheetId": "17u860RvhIwEXvaQPmLVZEscVvrhi4q0MbXAWW2wTyME",
+  "title": "AI-Adelaide-Enquiries",
+  "integrationAccount": "aiadelaide-lead-sheet@car-hire-seo-reporting.iam.gserviceaccount.com",
+  "headerCount": 23,
+  "headerMatches": true,
+  "apiAccessStatus": 200,
+  "generalAccess": "Restricted",
+  "accessListVerifiedInChrome": true,
+  "accessRoles": [
+    "Ivan: Owner",
+    "Dedicated integration account: Editor"
+  ],
+  "productionEnvironmentConfigured": true,
+  "headerHeightPixels": 64
+}

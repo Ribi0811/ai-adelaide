@@ -159,7 +159,7 @@ export default function ContactForm() {
       if (data.telegram && !data.telegram.ok) channelErrors.push("Telegram");
       if (data.email && !data.email.ok) channelErrors.push("Email");
       if (channelErrors.length) {
-        console.warn(`Lead saved, but ${channelErrors.join(" and ")} notification(s) failed.`);
+        console.warn(`Enquiry delivered through one channel; ${channelErrors.join(" and ")} notification(s) failed.`);
       }
 
       track("form_submit", {
@@ -168,11 +168,9 @@ export default function ContactForm() {
       });
       setStatus("success");
       setForm(initialState);
-    } catch (error) {
+    } catch {
       setStatus("error");
-      setErrorMessage(
-        error instanceof Error ? error.message : "Something went wrong. Please email us instead.",
-      );
+      setErrorMessage("Your enquiry was not confirmed. Please try again or call us.");
     }
   }
 
@@ -269,16 +267,16 @@ export default function ContactForm() {
             <option value="">Select what you need</option>
             <option value="website">New website or redesign</option>
             <option value="seo">Local SEO — rank on Google</option>
-            <option value="automation">AI Automation — receptionist, missed calls, follow-ups</option>
+            <option value="automation">Practical automation — admin, reminders, follow-ups</option>
             <option value="website-seo">Website + SEO together</option>
-            <option value="all-three">Website + SEO + AI Automation (full stack)</option>
+            <option value="all-three">Website + SEO + automation</option>
             <option value="audit">Free Digital Health Check (audit)</option>
             <option value="other">Not sure yet — just want a chat</option>
           </select>
         </label>
 
         <label className="block">
-          <span className="mb-2 block text-sm font-medium text-slate-700">Tell us about your business — what do you do and what's not working? *</span>
+          <span className="mb-2 block text-sm font-medium text-slate-700">Tell us about your business — what do you do and what&apos;s not working? *</span>
           <textarea
             required
             rows={5}
@@ -304,16 +302,15 @@ export default function ContactForm() {
         </div>
 
         {status === "success" && (
-          <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+          <div role="status" className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
             <span className="mr-2">✅</span>
             Thanks! We&apos;ll get back to you within 2 business hours.
           </div>
         )}
 
         {status === "error" && (
-          <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
-            Something went wrong — please try hello@aiadelaide.com.au directly.
-            {errorMessage ? ` (${errorMessage})` : ""}
+          <div role="alert" className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
+            {errorMessage} <a href="tel:+61871009788" className="underline">Call (08) 7100 9788</a>
           </div>
         )}
       </form>

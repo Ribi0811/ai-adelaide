@@ -12,6 +12,7 @@ import SuburbHero from "@/components/SuburbHero";
 type Suburb = (typeof suburbs)[number] & {
   seoTitle?: string;
   seoDescription?: string;
+  websiteBrief?: { heading: string; intro: string; items: string[] };
 };
 
 interface SuburbPageProps {
@@ -104,7 +105,9 @@ function buildFaqs(suburb: Suburb) {
     },
     {
       question: `How quickly can you build a website for my ${suburb.name} business?`,
-      answer: `Starter websites are live in 48 hours. Business tier takes 5-7 days. Growth tier takes 10-14 days. We handle all copywriting, design and setup — you just tell us about your business and review the result.`,
+      answer: suburb.websiteBrief
+        ? "Starter builds can be ready in 48 hours once the brief, content and access are confirmed. Larger builds follow an agreed schedule. Your review, approvals, domain setup and integrations affect the final launch date."
+        : `Starter websites are live in 48 hours. Business tier takes 5-7 days. Growth tier takes 10-14 days. We handle all copywriting, design and setup — you just tell us about your business and review the result.`,
     },
     {
       question: `Do you offer automation for ${suburb.name} businesses?`,
@@ -117,7 +120,11 @@ function buildFaqs(suburb: Suburb) {
   ];
   // Merge suburb-specific FAQs (1-2 unique Qs per suburb from data/suburbs.json)
   const custom = (suburb as { customFaqs?: { question: string; answer: string }[] }).customFaqs ?? [];
-  return [...standard, ...custom];
+  const ownership = suburb.websiteBrief ? [{
+    question: "Do I own the website, and what about hosting?",
+    answer: "One-off builds are yours once paid in full. Domain registration, hosting and optional maintenance are separate and confirmed before work begins. The monthly website plan includes hosting and has separate ownership and buy-out terms. Compare both options on our website pricing page.",
+  }] : [];
+  return [...standard, ...custom, ...ownership];
 }
 
 export default function SuburbPage({ params }: SuburbPageProps) {
@@ -298,8 +305,8 @@ export default function SuburbPage({ params }: SuburbPageProps) {
                 <strong>Websites {PRICING.website.fromLabel}, SEO {PRICING.seo.fromLabel}, automation {PRICING.automation.fromLabel} — Adelaide-based, no lock-in contracts.</strong>
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/contact" className="btn-primary px-8 py-4">
-                  Book Free Chat <span aria-hidden>→</span>
+                <Link href={suburb.websiteBrief ? "/contact?service=website#send-message" : "/contact"} className="btn-primary px-8 py-4">
+                  {suburb.websiteBrief ? "Get a website quote" : "Book Free Chat"} <span aria-hidden>→</span>
                 </Link>
               <a href={siteConfig.phoneHref} className="btn-outline-light px-8 py-4">
                 {siteConfig.phone}
@@ -308,6 +315,18 @@ export default function SuburbPage({ params }: SuburbPageProps) {
             </div>
           </div>
         </section>
+
+        {suburb.websiteBrief && (
+          <section className="max-w-container mx-auto px-6 pt-10 md:pt-12">
+            <div className="panel-light p-6 md:p-8">
+              <h2 className="text-h2-mobile text-slate-950 md:text-h2">{suburb.websiteBrief.heading}</h2>
+              <p className="mt-4 max-w-3xl text-body-mobile leading-relaxed text-slate-600 md:text-body">{suburb.websiteBrief.intro}</p>
+              <ul className="mt-6 grid gap-4 md:grid-cols-3">{suburb.websiteBrief.items.map(item => <li key={item} className="panel-light-soft p-5 text-sm leading-relaxed text-slate-700">{item}</li>)}</ul>
+              <p className="mt-6 text-sm leading-relaxed text-slate-600">The {PRICING.website.tiers[0].price} Starter covers Home, Services and Contact, mobile design, click-to-call, a contact form and basic search setup. Domain and hosting are separate. Additional pages and integrations follow an agreed quote.</p>
+              <div className="mt-5 flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold text-accent"><Link href="/website-pricing">Compare inclusions and ownership →</Link><Link href="/testimonials">See real work and customer feedback →</Link></div>
+            </div>
+          </section>
+        )}
 
         {/* Inline hero image — ranks in Google Images + gives the page a visual anchor */}
         <section className="max-w-container mx-auto px-6 pt-10 md:pt-12">

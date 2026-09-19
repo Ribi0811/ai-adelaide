@@ -1,18 +1,19 @@
 "use client";
 
-// Day-aware glass navbar (Phase A + A1b of docs/PROMOTE-V2-PLAN.md).
-// Three tricks, one component:
-//   1. Transparent over the dawn hero, frosts to glass once you scroll.
-//   2. Inverts to dark glass while any [data-nav-dark] section (dusk, night,
-//      new-dawn) is under it — light nav never goes invisible again.
-//   3. The bottom hairline is a day-progress bar: fills dawn-amber → teal →
-//      midnight-blue as you scroll, echoing the homepage's 24-hour arc.
+// Shared navigation. Dark-section awareness supports existing interior pages.
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { navLinks, siteConfig } from "@/lib/constants";
+import { siteConfig } from "@/lib/constants";
 
-const LINKS = navLinks.filter((l) => l.href !== "/" && l.href !== "/contact");
+const LINKS = [
+  { href: "/website-design-adelaide", label: "Websites" },
+  { href: "/website-pricing", label: "Pricing" },
+  { href: "/seo", label: "SEO" },
+  { href: "/ai-automation-adelaide", label: "Automation" },
+  { href: "/testimonials", label: "Our work" },
+  { href: "/about", label: "About" },
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -77,6 +78,27 @@ export default function Navbar() {
   }, [open]);
 
   useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    if (!open) return;
+    const toggle = document.querySelector<HTMLButtonElement>('[aria-controls="site-mobile-menu"]');
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") { setOpen(false); toggle?.focus(); }
+      if (event.key === "Tab") {
+        const links = Array.from(sheetRef.current?.querySelectorAll<HTMLAnchorElement>("a[href]") ?? []);
+        const first = links[0];
+        const last = links[links.length - 1];
+        if (!event.shiftKey && (document.activeElement === last || document.activeElement === toggle)) {
+          event.preventDefault();
+          (document.activeElement === last ? toggle : first)?.focus();
+        } else if (event.shiftKey && (document.activeElement === first || document.activeElement === toggle)) {
+          event.preventDefault();
+          (document.activeElement === first ? toggle : last)?.focus();
+        }
+      }
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [open]);
 
   const ink = dark ? "text-white" : "text-[#1D1D1F]";
   const sub = dark ? "text-white/70 hover:text-white" : "text-[#6E6E73] hover:text-[#1D1D1F]";
@@ -95,7 +117,7 @@ export default function Navbar() {
         <nav className="mx-auto flex h-16 max-w-container items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-2.5" aria-label="AI Adelaide home">
             <span className="relative flex h-2.5 w-2.5" aria-hidden>
-              <span className="absolute h-full w-full animate-ping rounded-full bg-[#0E8C74] opacity-50" />
+              <span className="absolute h-full w-full rounded-full bg-[#0E8C74] opacity-20" />
               <span className="relative h-2.5 w-2.5 rounded-full bg-[#0E8C74]" />
             </span>
             <span className={`text-[17px] font-bold tracking-tight transition-colors duration-500 ${ink}`}>
@@ -104,16 +126,17 @@ export default function Navbar() {
             <span
               className={`hidden font-mono text-[10px] uppercase tracking-[0.18em] transition-colors duration-500 lg:block ${dark ? "text-[#5EF2D6]" : "text-[#0E8C74]"}`}
             >
-              · Open 24 hrs
+              Adelaide, SA
             </span>
           </Link>
 
-          <div className="hidden items-center gap-7 md:flex">
+          <div className="hidden items-center gap-6 lg:flex">
             {LINKS.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                className={`text-[14px] font-medium transition-colors duration-300 ${sub}`}
+                aria-current={pathname === l.href ? "page" : undefined}
+                className={`text-[13px] font-medium transition-colors duration-300 ${sub}`}
               >
                 {l.label}
               </Link>
@@ -124,7 +147,7 @@ export default function Navbar() {
             <a
               href={siteConfig.phoneHref}
               data-track="tel_nav"
-              className={`hidden font-mono text-[13px] font-semibold transition-colors duration-500 lg:block ${sub}`}
+              className={`hidden font-mono text-[12px] font-semibold transition-colors duration-500 xl:block ${sub}`}
             >
               {siteConfig.phone}
             </a>
@@ -138,9 +161,10 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setOpen(!open)}
+              aria-controls="site-mobile-menu"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className={`flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full transition-colors md:hidden ${dark ? "text-white" : "text-[#1D1D1F]"}`}
+              className={`flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-full transition-colors lg:hidden ${dark ? "text-white" : "text-[#1D1D1F]"}`}
             >
               <span
                 className={`h-[1.5px] w-5 bg-current transition-transform duration-300 ${open ? "translate-y-[6.5px] rotate-45" : ""}`}
@@ -155,7 +179,7 @@ export default function Navbar() {
 
         {/* Day-progress hairline: dawn → day → night as you scroll */}
         <div
-          className="absolute bottom-[-1px] left-0 h-[2px] w-full origin-left bg-gradient-to-r from-[#F5B96E] via-[#5EF2D6] to-[#8FA8D8] transition-transform duration-150 ease-out"
+          className="absolute bottom-[-1px] left-0 h-[2px] w-full origin-left bg-[#0E8C74] transition-transform duration-150 ease-out"
           style={{ transform: `scaleX(${progress})` }}
           aria-hidden
         />
@@ -163,8 +187,9 @@ export default function Navbar() {
 
       {/* Mobile sheet */}
       <div
+        id="site-mobile-menu"
         ref={sheetRef}
-        className={`fixed inset-0 z-40 bg-[#FBFBFD] transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-40 bg-[#FBFBFD] transition-opacity duration-300 lg:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
         aria-hidden={!open}
@@ -178,7 +203,7 @@ export default function Navbar() {
                   href={l.href}
                   onClick={() => setOpen(false)}
                   style={{ transitionDelay: open ? `${80 + i * 45}ms` : "0ms" }}
-                  className={`border-b border-black/[0.05] py-4 text-[26px] font-semibold tracking-tight text-[#1D1D1F] transition-all duration-300 ${
+                  className={`border-b border-black/[0.05] py-3 text-[24px] font-semibold tracking-tight text-[#1D1D1F] transition-all duration-300 ${
                     open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
                   }`}
                 >
@@ -202,7 +227,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 rounded-full border border-black/[0.12] px-6 py-4 text-[16px] font-semibold text-[#1D1D1F]"
             >
               <span className="relative flex h-2 w-2" aria-hidden>
-                <span className="absolute h-full w-full animate-ping rounded-full bg-[#0E8C74] opacity-50" />
+                <span className="absolute h-full w-full rounded-full bg-[#0E8C74] opacity-20" />
                 <span className="relative h-2 w-2 rounded-full bg-[#0E8C74]" />
               </span>
               {siteConfig.phone} — AI answers now

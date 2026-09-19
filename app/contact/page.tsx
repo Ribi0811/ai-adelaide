@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "How long does setup take?",
     answer:
-      "Websites are live in 48 hours (Starter) to 14 days (Growth). SEO shows first movement in 30-60 days. AI automation is live in 2-5 business days.",
+      "Starter websites can be ready in 48 hours once the brief, content and access are confirmed. Larger builds and automations follow an agreed schedule. SEO timing depends on your starting point and competition; rankings are not guaranteed.",
   },
   {
     question: "Do I need any technical knowledge?",
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <a
-                href="https://cal.com/aiadelaide"
+                href="https://cal.com/aiadelaide/15min"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-track="book_call_contact"
@@ -192,7 +192,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Prefer email — the dark moment */}
+      {/* Message contact — the dark moment */}
       <section className="px-6 pb-16 md:pb-20">
         <div className="mx-auto max-w-container">
           <Reveal>
@@ -202,13 +202,13 @@ export default function ContactPage() {
                 aria-hidden
               />
               <p className="relative font-mono text-[12px] font-semibold uppercase tracking-[0.18em] text-[#5EF2D6]">
-                Prefer email?
+                Prefer to write?
               </p>
               <a
-                href={`mailto:${siteConfig.email}`}
+                href="/contact#send-message"
                 className="relative mt-4 inline-block text-[24px] font-semibold tracking-tight text-white underline decoration-[#5EF2D6]/40 underline-offset-8 transition hover:decoration-[#5EF2D6] md:text-[32px]"
               >
-                {siteConfig.email}
+                Send a message
               </a>
               <p className="relative mt-5 text-[15px] text-white/55">
                 Response time: Within 2 business hours

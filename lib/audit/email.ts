@@ -24,7 +24,7 @@ export async function sendAuditReportEmail({ to, score, pdfBuffer }: SendAuditEm
         <div style="font-family: Arial, sans-serif; color: #0f172a; line-height:1.5">
           <h2 style="margin-bottom:8px">Your AI Readiness Report is here</h2>
           <p>Your score: <strong>${score}/100</strong></p>
-          <p>We attached your personalised report with recommendations and ROI opportunities.</p>
+          <p>We attached your personalised report with recommendations and measurement guidance.</p>
           <p>Want help acting on it? Book a free 15-minute chat and we'll scope your next website, SEO, or AI automation win.</p>
           <p><a href="https://aiadelaide.com.au/contact">Book your free chat →</a></p>
           <hr style="border:none;border-top:1px solid #e2e8f0;margin:16px 0"/>

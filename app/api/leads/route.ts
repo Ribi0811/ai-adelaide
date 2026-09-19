@@ -1,172 +1,62 @@
-import { promises as fs } from 'fs';
-import path from 'path';
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
+import { appendLeadToGoogleSheet } from "@/lib/lead-sheet";
+import { calculatorSheetLead, deliverCalculatorLead, type CalculatorAttribution, type CalculatorLead } from "@/lib/calculator-delivery";
 
-// T1 fix (2026-07-13): the audit / AI-readiness form used to ONLY write
-// data/leads.json. On Vercel the deployment filesystem is read-only, so that
-// write threw and the whole POST 500'd — every audit lead was lost AND the
-// user saw an error. Now: notify Telegram first (durable delivery, same
-// channel as the contact form), attach first-touch attribution, and treat the
-// JSON write as a best-effort local-dev convenience that can never fail the
-// response. Durable CRM/DB/Sheet storage remains Ivan's decision (handoff Q1).
-
-type Attribution = {
-  landing?: string;
-  referrer?: string;
-  utm_source?: string;
-  utm_medium?: string;
-  utm_campaign?: string;
-  ts?: string;
-};
-
-type LeadPayload = {
-  name?: string;
-  email?: string;
-  businessName?: string;
-  phone?: string;
-  tool?: string;
-  answers?: Record<string, string>;
-  score?: number;
-  rawScore?: number;
-  tier?: string;
-  attribution?: Attribution | null;
-};
-
+type LeadPayload = Partial<Record<"name" | "email" | "businessName" | "phone" | "score" | "tier" | "attribution", unknown>>;
 const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_HOME_CHAT_ID || '1140438132';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_HOME_CHAT_ID || "1140438132";
 
-const dataDir = path.join(process.cwd(), 'data');
-const leadsFile = path.join(dataDir, 'leads.json');
-
-function clean(value: string | undefined) {
-  return value?.trim() || '';
+function clean(value: unknown): string { return typeof value === "string" ? value.trim() : ""; }
+const READINESS_TIERS = new Set(["AI Novice", "AI Explorer", "AI Ready", "AI Leader"]);
+function safeTier(value: unknown): string | null {
+  const tier = clean(value);
+  return READINESS_TIERS.has(tier) ? tier : null;
 }
-
-function attributionLine(a: Attribution | null | undefined): string {
-  if (!a) return '—';
-  const bits = [
-    a.landing ? `landing ${a.landing}` : '',
-    a.referrer && a.referrer !== 'direct' ? `ref ${a.referrer}` : a.referrer === 'direct' ? 'direct' : '',
-    a.utm_source ? `utm_source ${a.utm_source}` : '',
-    a.utm_medium ? `utm_medium ${a.utm_medium}` : '',
-    a.utm_campaign ? `utm_campaign ${a.utm_campaign}` : '',
-  ].filter(Boolean);
-  return bits.length ? bits.join(' · ') : '—';
+function attribution(value: unknown): CalculatorAttribution | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const input = value as Record<string, unknown>;
+  return { landing: clean(input.landing) || undefined, referrer: clean(input.referrer) || undefined, utm_source: clean(input.utm_source) || undefined, utm_medium: clean(input.utm_medium) || undefined, utm_campaign: clean(input.utm_campaign) || undefined };
 }
-
-async function notifyTelegram(entry: {
-  name: string;
-  email: string;
-  businessName: string;
-  phone: string;
-  tool: string;
-  score: number | null;
-  tier: string | null;
-  attribution: Attribution | null;
-}): Promise<{ ok: boolean; error?: string }> {
-  if (!TELEGRAM_TOKEN) return { ok: false, error: 'Telegram token not configured' };
-  const text = [
-    '🧮 New Audit / AI-Readiness Lead — AI Adelaide',
-    '',
-    `Name: ${entry.name || '—'}`,
-    `Email: ${entry.email || '—'}`,
-    `Phone: ${entry.phone || '—'}`,
-    `Business: ${entry.businessName || '—'}`,
-    `Tool: ${entry.tool}`,
-    `Score: ${entry.score ?? '—'}${entry.tier ? ` (${entry.tier})` : ''}`,
-    `Attribution: ${attributionLine(entry.attribution)}`,
-  ].join('\n');
+function attributionLine(value: CalculatorAttribution | null): string {
+  if (!value) return "—";
+  const bits = [value.landing ? `landing ${value.landing}` : "", value.referrer === "direct" ? "direct" : value.referrer ? `ref ${value.referrer}` : "", value.utm_source ? `utm_source ${value.utm_source}` : "", value.utm_medium ? `utm_medium ${value.utm_medium}` : "", value.utm_campaign ? `utm_campaign ${value.utm_campaign}` : ""].filter(Boolean);
+  return bits.length ? bits.join(" · ") : "—";
+}
+async function notifyTelegram(lead: CalculatorLead): Promise<{ ok: boolean; error?: string }> {
+  if (!TELEGRAM_TOKEN) return { ok: false, error: "Telegram token not configured" };
+  const text = ["🧮 New AI Readiness Calculator Lead — AI Adelaide", "", `Name: ${lead.name || "—"}`, `Email: ${lead.email || "—"}`, `Phone: ${lead.phone || "—"}`, `Business: ${lead.businessName || "—"}`, `Score: ${lead.score ?? "—"}${lead.tier ? ` (${lead.tier})` : ""}`, `Attribution: ${attributionLine(lead.attribution)}`].join("\n");
   try {
-    const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
-        text,
-        disable_web_page_preview: true,
-      }),
-    });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) return { ok: false, error: data?.description || `HTTP ${res.status}` };
-    return { ok: true };
-  } catch (e) {
-    return { ok: false, error: e instanceof Error ? e.message : 'Telegram call failed' };
-  }
-}
-
-async function appendLeadBestEffort(entry: Record<string, unknown>): Promise<boolean> {
-  // Local-dev convenience only. Read-only FS on Vercel makes this throw; we
-  // swallow it so the response never depends on a filesystem write.
-  try {
-    await fs.mkdir(dataDir, { recursive: true });
-    let existing: unknown[] = [];
-    try {
-      const raw = await fs.readFile(leadsFile, 'utf8');
-      const parsed = JSON.parse(raw);
-      existing = Array.isArray(parsed) ? parsed : [];
-    } catch {
-      existing = [];
-    }
-    existing.push(entry);
-    await fs.writeFile(leadsFile, `${JSON.stringify(existing, null, 2)}\n`, 'utf8');
-    return true;
-  } catch {
-    return false;
-  }
+    const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, disable_web_page_preview: true }), signal: AbortSignal.timeout(7000) });
+    const data = await response.json().catch(() => ({}));
+    return response.ok ? { ok: true } : { ok: false, error: data?.description || `HTTP ${response.status}` };
+  } catch (error) { return { ok: false, error: error instanceof Error ? error.message : "Telegram call failed" }; }
 }
 
 export async function POST(request: Request) {
   let payload: LeadPayload;
-
   try {
-    payload = (await request.json()) as LeadPayload;
-  } catch {
-    return NextResponse.json({ ok: false, error: 'Invalid request body.' }, { status: 400 });
-  }
-
-  const name = clean(payload.name);
-  const email = clean(payload.email);
-  const businessName = clean(payload.businessName);
-  const phone = clean(payload.phone);
-
-  if (!name || !email || !businessName) {
-    return NextResponse.json(
-      { ok: false, error: 'Please provide your name, business name, and email.' },
-      { status: 400 },
-    );
-  }
-
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return NextResponse.json({ ok: false, error: 'Please enter a valid email address.' }, { status: 400 });
-  }
-
-  const entry = {
+    const parsed: unknown = await request.json();
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return NextResponse.json({ ok: false, error: "Invalid request body." }, { status: 400 });
+    payload = parsed as LeadPayload;
+  } catch { return NextResponse.json({ ok: false, error: "Invalid request body." }, { status: 400 }); }
+  const name = clean(payload.name), email = clean(payload.email), businessName = clean(payload.businessName), phone = clean(payload.phone);
+  if (!name || !email || !businessName) return NextResponse.json({ ok: false, error: "Please provide your name, business name, and email." }, { status: 400 });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return NextResponse.json({ ok: false, error: "Please enter a valid email address." }, { status: 400 });
+  const score = typeof payload.score === "number" && Number.isFinite(payload.score) && payload.score >= 0 && payload.score <= 100 ? payload.score : null;
+  const lead: CalculatorLead = {
     id: `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`,
     createdAt: new Date().toISOString(),
-    tool: clean(payload.tool) || 'ai-readiness-calculator',
+    tool: "ai-readiness-calculator",
     name,
     email,
     businessName,
     phone,
-    score: typeof payload.score === 'number' ? payload.score : null,
-    rawScore: typeof payload.rawScore === 'number' ? payload.rawScore : null,
-    tier: clean(payload.tier) || null,
-    answers: payload.answers && typeof payload.answers === 'object' ? payload.answers : {},
-    attribution: payload.attribution ?? null,
+    score,
+    tier: safeTier(payload.tier),
+    attribution: attribution(payload.attribution),
   };
-
-  // Durable delivery first, storage best-effort second.
-  const telegram = await notifyTelegram(entry);
-  const persisted = await appendLeadBestEffort(entry);
-
-  // Succeed as long as the lead was delivered somewhere. In production that's
-  // Telegram; in local dev the file write also works.
-  if (!telegram.ok && !persisted) {
-    return NextResponse.json(
-      { ok: false, error: 'Could not deliver your details. Please email hello@aiadelaide.com.au.' },
-      { status: 502 },
-    );
-  }
-
-  return NextResponse.json({ ok: true, leadId: entry.id, telegram, persisted });
+  const delivery = await deliverCalculatorLead({ telegram: () => notifyTelegram(lead), sheet: () => appendLeadToGoogleSheet(calculatorSheetLead(lead)) });
+  const result = { leadId: lead.id, telegram: delivery.telegram, persisted: delivery.persisted, sheet: delivery.sheet };
+  if (!delivery.ok) return NextResponse.json({ ok: false, error: "Could not deliver your details. Please call (08) 7100 9788.", ...result }, { status: 502 });
+  return NextResponse.json({ ok: true, ...result });
 }

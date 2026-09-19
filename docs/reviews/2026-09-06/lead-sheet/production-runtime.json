@@ -1,0 +1,44 @@
+{
+  "marker": "AIA-SHEET-20260906-PROD-01",
+  "httpStatus": 200,
+  "elapsedSeconds": 3.63,
+  "result": {
+    "ok": true,
+    "leadId": "lead_1788660296418_siycsv",
+    "telegram": {
+      "ok": true
+    },
+    "email": {
+      "ok": true
+    },
+    "persisted": true,
+    "sheet": {
+      "ok": true,
+      "status": "saved"
+    }
+  },
+  "sheetReadback": {
+    "matchingRowCount": 1,
+    "row": 8,
+    "leadIdMatches": true,
+    "messageMarkerMatches": true,
+    "businessAndEmailMatch": true,
+    "testRecord": "Yes"
+  },
+  "businessInboxReadback": {
+    "matchingMessageCount": 1,
+    "messages": [
+      {
+        "date": "Sun, 06 Sep 2026 02:04:56 +0000",
+        "markerVerified": true
+      }
+    ]
+  },
+  "deployment": {
+    "id": "dpl_F7j3PrPeW2PLqBGqtoNBrHXssXEX",
+    "sourceCommit": "3f60c75bfa5880daf1ad48f08e37168f1932bcb0",
+    "status": "Ready",
+    "canonicalAlias": "https://aiadelaide.com.au",
+    "url": "https://ai-adelaide-hw37et9cf-ivans-projects-9bc72bf6.vercel.app"
+  }
+}

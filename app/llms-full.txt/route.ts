@@ -95,7 +95,7 @@ ${blogList}
 
 - **Name**: AI Adelaide
 - **Website**: ${U}
-- **Email**: ${siteConfig.email}
+- **Contact form**: https://aiadelaide.com.au/contact#send-message
 - **Phone**: ${siteConfig.phone} (answered 24/7 by AI)
 - **Address**: ${siteConfig.address}
 - **Service area**: Greater Adelaide, South Australia

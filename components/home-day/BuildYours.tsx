@@ -109,8 +109,8 @@ export default function BuildYours() {
             Watch yours get built. Right now.
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[16px] leading-relaxed text-[#7A6A55]">
-            Type your business name — a 10-second preview of the real thing.
-            The finished website is custom-designed and live in 48 hours.
+            Type your business name to explore an illustrative design concept.
+            Demo content is placeholder only. A finished Starter website can be ready in 48 hours once your brief, content and access are confirmed.
           </p>
         </div>
 

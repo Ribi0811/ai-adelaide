@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   // was 167 chars (want 140-160).
   title: "SEO for Tradies Adelaide",
   description:
-    `SEO for Adelaide tradies ${PRICING.seo.fromLabel}. Get a free visibility review, prioritised local search plan and clear monthly progress reporting. No lock-in.`,
+    `SEO for tradies Adelaide ${PRICING.seo.fromLabel}. Get a free visibility review, prioritised local search plan and clear monthly progress reporting. No lock-in.`,
   alternates: {
     canonical: "/seo-for-tradies-adelaide",
   },
@@ -592,7 +592,7 @@ export default function SeoForTradiesAdelaidePage() {
           <Reveal>
             <p className="font-mono text-[13px] font-semibold tracking-[0.08em] text-[#0E8C74]">08</p>
             <h2 className="mt-3 text-[30px] font-semibold leading-tight tracking-[-0.02em] md:text-[40px]" style={{ color: INK }}>
-              SEO for Tradies FAQs
+              SEO for Tradies Adelaide — FAQs
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

@@ -25,7 +25,7 @@ const integrations = ["ServiceM8", "Tradify", "Jobber", "Xero", "MYOB", "Google 
 export const metadata: Metadata = {
   title: "AI Automation Adelaide | From $199/mo",
   description:
-    "AI and business automation for Adelaide small businesses — missed-call text-back, quote follow-ups, admin workflows. Setup in 2-5 days. From $199/mo.",
+    "AI automation Adelaide for small businesses — missed-call text-back, quote follow-ups and admin workflows. Live in 2-5 days. From $199/mo, no lock-in.",
   alternates: { canonical: "/ai-automation-adelaide" },
 };
 

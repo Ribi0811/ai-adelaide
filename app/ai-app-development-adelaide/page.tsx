@@ -86,7 +86,75 @@ export default function AiAppDevelopmentAdelaidePage() {
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">AI App Development FAQs</h2>
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
+            How an AI Application Build Actually Runs
+          </h2>
+          <div className="space-y-6 text-body-mobile text-slate-700 md:text-body">
+            <p>
+              Most Adelaide businesses arrive with a symptom rather than a spec —
+              quotes going out late, the phone ringing while someone is on the
+              tools, admin eating a day a week. AI application development starts
+              by turning that symptom into a defined scope, because the most
+              expensive mistake in this work is building the wrong thing quickly.
+            </p>
+            <h3 className="text-h3-mobile text-slate-950 md:text-h3">
+              Step one: scope the task, not the technology
+            </h3>
+            <p>
+              We map the specific task you want handled — what triggers it, what
+              information it needs, what a good outcome looks like, and where a
+              person still needs to be in the loop. That conversation usually
+              reveals that one narrow, well-built tool beats a broad one, and it
+              tells us whether the right fit is a custom build at all. If our{" "}
+              <Link href="/ai-automation-adelaide" className="underline decoration-accent/30 underline-offset-4 font-semibold text-accent">
+                AI automation service
+              </Link>{" "}
+              covers it off the shelf, we will say so rather than sell you a build.
+            </p>
+            <h3 className="text-h3-mobile text-slate-950 md:text-h3">
+              Step two: build against your real systems
+            </h3>
+            <p>
+              An AI app that cannot reach your job system, calendar or accounting
+              software is a demo, not a tool. Integration work is where most of
+              the effort goes, which is why we scope it before quoting rather than
+              after. For a bookkeeping workflow that means Xero or MYOB; for a
+              tradie business it is typically ServiceM8, JobAdder or a phone
+              system. If your workflow is closer to a process than a build, our{" "}
+              <Link href="/bookkeeping-adelaide" className="underline decoration-accent/30 underline-offset-4 font-semibold text-accent">
+                bookkeeping automation
+              </Link>{" "}
+              page covers those specific patterns.
+            </p>
+            <h3 className="text-h3-mobile text-slate-950 md:text-h3">
+              Step three: measure whether it worked
+            </h3>
+            <p>
+              We agree the number that matters before launch — calls contained
+              without transfer, hours of admin removed, quotes followed up on
+              time — then report against it. A build that cannot be measured
+              cannot be defended, and we would rather tell you it is not working
+              than let it sit there quietly costing money.
+            </p>
+            <h3 className="text-h3-mobile text-slate-950 md:text-h3">
+              What we will not tell you
+            </h3>
+            <p>
+              We will not promise a ranking position, a fixed percentage saving or
+              a specific revenue lift, because those depend on factors outside any
+              build. Sensitive or unusual cases still need human escalation, and
+              a tool that quietly guesses on those is worse than no tool. Scope
+              the task honestly, measure it properly, and improve it from there.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
+        <div className="panel-light p-6 md:p-8">
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">
+            AI Application Development Adelaide — FAQs
+          </h2>
           <div className="space-y-5">
             {faqs.map((faq) => (
               <div key={faq.question} className="panel-light-soft p-5 md:p-6">

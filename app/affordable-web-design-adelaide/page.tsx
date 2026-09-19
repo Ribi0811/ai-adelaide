@@ -236,7 +236,7 @@ export default function AffordableWebDesignAdelaidePage() {
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
           <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">
-            What "affordable" actually means here
+            What affordable web design Adelaide actually means here
           </h2>
           <p className="mb-6 text-body-mobile text-slate-600 md:text-body">
             Most Adelaide agencies charge $3,000–$8,000 for a basic small business website. We charge less because we use AI-assisted production for speed, not because we cut corners on quality. Here's how it breaks down.

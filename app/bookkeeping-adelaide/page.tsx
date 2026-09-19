@@ -7,7 +7,7 @@ import StackCTA from "@/components/StackCTA";
 export const metadata: Metadata = {
   title: "AI Bookkeeping Adelaide | From $299/mo",
   description:
-    "AI bookkeeping for Adelaide small businesses. Automated invoice processing, BAS-ready reports, and Xero/MYOB workflows. From $299/mo, no lock-in.",
+    "AI bookkeeping Adelaide — automated invoice processing, BAS-ready reports and Xero/MYOB workflows for small businesses. From $299/mo, no lock-in.",
   alternates: {
     canonical: "/bookkeeping-adelaide",
   },
@@ -281,7 +281,7 @@ export default function BookkeepingAdelaidePage() {
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">Common Questions</h2>
+          <h2 className="mb-6 text-h2-mobile text-slate-950 md:text-h2">AI bookkeeping Adelaide — common questions</h2>
           <div className="space-y-5">
             {faqItems.map((faq) => (
               <div key={faq.question} className="panel-light-soft p-5 md:p-6">

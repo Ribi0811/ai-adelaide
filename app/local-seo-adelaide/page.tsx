@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   // was 211 chars (want 140-160).
   title: "Local SEO Adelaide — Get Found on Google",
   description:
-    `Local SEO for Adelaide businesses: improve Google Business Profile, local pages, reviews, citations, tracking and enquiries. ${PRICING.seo.fromLabel}, no lock-in.`,
+    `Local SEO Adelaide: improve your Google Business Profile, local pages, reviews, citations, tracking and enquiries. ${PRICING.seo.fromLabel}, no lock-in.`,
   alternates: { canonical: "/local-seo-adelaide" },
 };
 

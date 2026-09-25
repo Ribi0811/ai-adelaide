@@ -350,6 +350,13 @@ export default function WebsiteDesignAdelaidePage() {
               </Reveal>
             ))}
           </div>
+          <p className="mt-10 text-[15px] leading-relaxed text-[#6E6E73] md:text-[17px]">
+            Want the detail?{" "}
+            <Link href="/testimonials#carhire-mobile-search" className="font-semibold text-[#0E8C74] underline underline-offset-4">
+              Read how we kept CarHire.global&apos;s mobile search clear of chat controls
+            </Link>
+            : the problem, the change and what we checked.
+          </p>
         </div>
       </section>
 

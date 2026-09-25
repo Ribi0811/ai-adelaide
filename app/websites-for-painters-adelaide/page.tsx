@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import WorkSampleNote from "@/components/WorkSampleNote";
 
 export const metadata: Metadata = {
   title: "Painter Website Adelaide | From $699",
@@ -153,19 +154,7 @@ export default function WebsitesForPaintersPage() {
       </section>
 
       {/* HUMAN INPUT NEEDED: real painter before/after screenshots, client list, and permissions — populate once supplied. Logged in docs/claims-to-verify.md. */}
-      <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
-        <div className="panel-light p-6 md:p-8">
-          <h2 className="mb-4 text-h2-mobile text-slate-950 md:text-h2">Recent Painting Work</h2>
-          <div className="panel-light-soft flex flex-col items-center gap-3 p-8 text-center md:p-10">
-            <p className="text-body-mobile text-slate-600 md:text-body">
-              Before/after screenshots and live examples for Adelaide painter sites go here — coming soon.
-            </p>
-            <Link href="/contact" className="btn-secondary px-6 py-3">
-              Ask to See Examples <span aria-hidden>→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <WorkSampleNote />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

@@ -199,10 +199,10 @@ export default function WebsitesForElectriciansPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/ai-for-electricians-adelaide"
+              href="/ai-automation-setup-tradies"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI for Adelaide Electricians</span>
+              <span className="font-semibold text-slate-900">AI Automation for Electricians & Tradies</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link

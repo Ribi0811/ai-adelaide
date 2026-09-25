@@ -262,6 +262,53 @@ const nextConfig = {
         destination: "/tools/ai-readiness-calculator",
         permanent: true,
       },
+      // 2026-09-25: thin posts (170-260 words, no meaningful GSC visibility)
+      // consolidated into the closest service page or tool.
+      {
+        source: "/blog/ai-for-plumbers-adelaide",
+        destination: "/ai-automation-setup-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-electricians-adelaide",
+        destination: "/ai-automation-setup-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-builders-adelaide",
+        destination: "/ai-automation-setup-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-hvac-adelaide",
+        destination: "/ai-automation-setup-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/admin-tasks-killing-adelaide-tradies",
+        destination: "/ai-automation-setup-tradies",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-for-physiotherapists-adelaide",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/ai-automation-for-adelaide-retail-shops",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/adelaide-hills-ai-automation",
+        destination: "/ai-automation-adelaide",
+        permanent: true,
+      },
+      {
+        source: "/blog/5-signs-ready-for-ai-automation",
+        destination: "/tools/ai-readiness-calculator",
+        permanent: true,
+      },
       {
         source: "/blog/how-much-does-a-missed-call-cost-your-business-adelaide",
         destination: "/lost-leads-calculator",

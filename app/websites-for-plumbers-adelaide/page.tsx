@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Testimonials from "@/components/Testimonials";
+import WorkSampleNote from "@/components/WorkSampleNote";
+import { PRICING } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Plumber Website Adelaide | From $699",
@@ -87,6 +89,10 @@ const localAdelaide = [
 
 const faqs = [
   {
+    question: "Who can build a website for my plumbing business in Adelaide?",
+    answer: `AI Adelaide builds websites for Adelaide plumbers. Each site is built around how plumbing customers actually search and call: tap-to-call on every page, a page for each service you want more of, the suburbs you genuinely cover, and a quote form that accepts photos. Websites start ${PRICING.website.fromLabel}, and we confirm the scope and price with you before any work begins.`,
+  },
+  {
     question: "Can I have a tap-to-call button for emergencies?",
     answer:
       "Yes. Every page has a prominent tap-to-call button that works on any mobile phone. When someone has a plumbing emergency, one tap connects them straight to your phone.",
@@ -99,7 +105,7 @@ const faqs = [
   {
     question: "What does it cost?",
     answer:
-      "Websites start from $699 for a complete, custom-built plumbing site. One setup fee, then a small monthly for hosting and maintenance. SEO add-on from $399/month. Book a call for a specific quote.",
+      `One-off websites are ${PRICING.website.tiers[0].price} (Starter), ${PRICING.website.tiers[1].price} (Business) or ${PRICING.website.tiers[2].price} (Growth); domain and hosting are separate. Or choose the ${PRICING.website.monthly.name} at ${PRICING.website.monthly.label}, which includes hosting and ongoing care. Local SEO is an optional add-on ${PRICING.seo.fromLabel}. Book a call for a specific quote.`,
   },
   {
     question: "Can I add the AI receptionist for after-hours calls?",
@@ -124,7 +130,7 @@ const faqs = [
   {
     question: "Can the site handle quote forms with photos?",
     answer:
-      "Yes. Customers can describe their plumbing issue, upload photos (great for leak diagnosis), and submit. You get the details in your email with the photos attached. Saves 10 minutes per enquiry.",
+      "Yes. Customers can describe their plumbing issue, upload photos (great for leak diagnosis), and submit. You get the details in your email with the photos attached, so you can often judge the job before calling back.",
   },
 ];
 
@@ -158,7 +164,7 @@ export default function WebsitesForPlumbersPage() {
             A Plumbing Website That Picks Up the Phone While You&apos;re on a Job
           </h1>
           <p className="max-w-3xl text-body-mobile text-slate-600 md:text-body">
-            When someone searches &lsquo;plumber near me&rsquo;, they need help right now. If your website is slow, confusing, or doesn&apos;t have a call button, they&apos;re calling the next result on Google. We build websites for Adelaide plumbers — with tap-to-call, service area pages, and quote forms that capture leads even when you can&apos;t answer. From $699, live in 48 hours.
+            When someone searches &lsquo;plumber near me&rsquo;, they need help right now. If your website is slow, confusing, or doesn&apos;t have a call button, they&apos;re calling the next result on Google. We build websites for Adelaide plumbers — with tap-to-call, service area pages, and quote forms that capture leads even when you can&apos;t answer. Websites start {PRICING.website.fromLabel}, and Starter builds can be live in 48 hours once your content and access are ready.
           </p>
         </div>
       </section>
@@ -287,15 +293,17 @@ export default function WebsitesForPlumbersPage() {
               <span className="text-accent" aria-hidden>→</span>
             </Link>
             <Link
-              href="/blog/ai-for-plumbers-adelaide"
+              href="/ai-automation-setup-tradies"
               className="panel-light-soft flex items-center justify-between p-5 transition-colors hover:border-accent/40 md:p-6"
             >
-              <span className="font-semibold text-slate-900">AI for Adelaide Plumbers</span>
+              <span className="font-semibold text-slate-900">AI Automation for Plumbers & Tradies</span>
               <span className="text-accent" aria-hidden>→</span>
             </Link>
           </div>
         </div>
       </section>
+
+      <WorkSampleNote />
 
       <section className="max-w-container mx-auto px-6 pt-12 md:pt-16">
         <div className="panel-light p-6 md:p-8">

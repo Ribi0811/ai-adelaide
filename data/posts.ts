@@ -6127,6 +6127,17 @@ export const retiredPostSlugs = new Set([
   "how-much-does-a-missed-call-cost-your-business-adelaide",
   "ai-for-retail-shops-adelaide",
   "adelaide-small-business-digital-checklist",
+  // 2026-09-25: thin (<260 words) posts with no meaningful GSC visibility in
+  // the July-September windows; consolidated into the closest service page.
+  "ai-for-plumbers-adelaide",
+  "ai-for-electricians-adelaide",
+  "ai-for-builders-adelaide",
+  "ai-for-hvac-adelaide",
+  "admin-tasks-killing-adelaide-tradies",
+  "ai-for-physiotherapists-adelaide",
+  "ai-automation-for-adelaide-retail-shops",
+  "adelaide-hills-ai-automation",
+  "5-signs-ready-for-ai-automation",
 ]);
 
 export const publishedPosts = posts

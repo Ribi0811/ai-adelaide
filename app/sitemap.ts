@@ -16,7 +16,7 @@ const PAGE_DATES: Record<string, string> = {
   "/reynella": "2026-09-05",
   "/morphett-vale": "2026-09-05",
   "/website-pricing": "2026-09-05",
-  "/website-design-adelaide": "2026-09-08",
+  "/website-design-adelaide": "2026-09-25",
   "/seo": "2026-09-15",
   "/seo-for-tradies-adelaide": "2026-09-05",
   "/services": "2026-08-22",
@@ -26,14 +26,14 @@ const PAGE_DATES: Record<string, string> = {
   "/seo-vs-google-ads-adelaide": "2026-07-13",
   "/websites-for-hairdressers-adelaide": "2026-06-23",
   "/websites-for-cafes-adelaide": "2026-06-23",
-  "/websites-for-plumbers-adelaide": "2026-06-22",
-  "/websites-for-electricians-adelaide": "2026-09-05",
-  "/websites-for-clinics-adelaide": "2026-06-23",
+  "/websites-for-plumbers-adelaide": "2026-09-25",
+  "/websites-for-electricians-adelaide": "2026-09-25",
+  "/websites-for-clinics-adelaide": "2026-09-25",
   "/websites-for-beauty-salons-adelaide": "2026-06-23",
-  "/websites-for-retail-shops-adelaide": "2026-06-23",
-  "/websites-for-builders-adelaide": "2026-07-04",
-  "/websites-for-landscapers-adelaide": "2026-07-04",
-  "/websites-for-painters-adelaide": "2026-07-04",
+  "/websites-for-retail-shops-adelaide": "2026-09-25",
+  "/websites-for-builders-adelaide": "2026-09-25",
+  "/websites-for-landscapers-adelaide": "2026-09-25",
+  "/websites-for-painters-adelaide": "2026-09-25",
   "/ai-automation-adelaide": "2026-09-05",
   "/ai-receptionist-adelaide": "2026-06-21",
   "/missed-call-text-back-adelaide": "2026-06-25",
@@ -68,7 +68,7 @@ const PAGE_DATES: Record<string, string> = {
   "/privacy-policy": "2026-09-15",
   "/terms": "2026-09-15",
   "/cookie-policy": "2026-09-15",
-  "/blog": "2026-07-11",
+  "/blog": "2026-09-25",
   // Added to sitemap 2026-07-03 (previously live but missing from sitemap.ts)
   "/virtual-receptionist-adelaide": "2026-06-25",
   "/answering-service-adelaide": "2026-06-23",
@@ -83,7 +83,7 @@ const PAGE_DATES: Record<string, string> = {
 // Suburb content lives in one data file with no per-suburb history yet —
 // use the file's last commit date for all suburb routes until Phase 5
 // (suburb depth pass) gives each one real edit history.
-const SUBURBS_LAST_MODIFIED = "2026-07-13";
+const SUBURBS_LAST_MODIFIED = "2026-09-25";
 
 // Fallback for any route not yet in PAGE_DATES (shouldn't normally hit this —
 // add new pages to the map above when you add them to this sitemap).
